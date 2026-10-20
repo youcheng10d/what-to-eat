@@ -116,3 +116,7 @@ python -m http.server 8080
 ## 开发记录
 
 本项目由 AI 辅助编程完成，需求拆解、设计决策与演进过程详见 [docs/AI-Collaboration.md](docs/AI-Collaboration.md)。
+
+开发日志系列（docs/blog/）：
+
+- [01 · v0.1：从一句 Prompt 到第一个上线项目](docs/blog/blog-01-v0.1.md)
