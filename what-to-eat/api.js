@@ -39,7 +39,8 @@
   // —— 2) 硬过滤（预算 / 卡路里 / 忌辣 / 素食），无解时逐级放宽 ——
   function filterPool(text, excludeIds) {
     const prefs = parsePreferences(text);
-    const base = window.DB.dishes.filter((d) => !excludeIds.includes(d.id));
+    const all = (window.DB_REAL && window.DB_REAL.dishes) || window.DB.dishes;
+    const base = all.filter((d) => !excludeIds.includes(d.id));
     const hard = (p, pool) => pool.filter((d) =>
       (p.maxPrice == null || d.price <= p.maxPrice) &&
       (p.maxCal == null || d.cal <= p.maxCal) &&
