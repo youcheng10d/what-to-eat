@@ -28,7 +28,7 @@
     if (/炒菜|小炒|家常菜|下饭/.test(s)) p.preferCat.push("家常小炒");
     if (/沙拉|轻食/.test(s)) p.preferCat.push("轻食沙拉");
     if (/汤|粥|暖胃/.test(s)) p.preferCat.push("汤粥");
-    if (/甜|甜品|下午茶/.test(s)) { p.preferCat.push("甜品饮品"); p.preferTaste.push("甜"); }
+    if (/甜|甜品|下午茶|奶茶|糖水|饮料|想喝|喝点/.test(s)) { p.preferCat.push("甜品饮品"); p.preferTaste.push("甜"); }
     if (/早餐|早上/.test(s)) p.preferCat.push("早餐小吃");
     if (/清淡|养生|健康/.test(s)) { p.preferTaste.push("清淡"); if (p.maxCal == null) p.maxCal = 600; }
     if (/高蛋白|健身|增肌/.test(s)) p.preferTag.push("高蛋白");
@@ -70,6 +70,9 @@
     if (p.preferTaste.some((t) => d.taste.includes(t))) sc += 10;
     if (p.preferTag.some((t) => d.tags.includes(t))) sc += 8;
     if (d.tags.includes("人气")) sc += 2;
+    // 糖水/甜品饮品不当正餐推：用户没表达甜品意图时降权
+    const wantDessert = p.preferCat.includes("甜品饮品") || p.preferTaste.includes("甜");
+    if (d.category === "甜品饮品" && !wantDessert) sc -= 8;
     return sc;
   }
   function weightedTopPick(pool, p) {

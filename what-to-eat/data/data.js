@@ -1,5 +1,5 @@
 ﻿// data.js — 真实食堂菜品（自动从 LCSW API 清洗生成）
-// Source: 重庆城市科技学院 ｜ Generated: 2026-10-21 12:15
+// Source: 重庆城市科技学院 ｜ Generated: 2026-10-21 12:33
 (function () {
   window.DB_REAL = {
     school: "重庆城市科技学院",
@@ -5754,1868 +5754,6 @@
     },
     {
         "id":  10269,
-        "name":  "统一茄皇方便面（口味可选）",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/09dd1d581856450a9d385614204b4586.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10270,
-        "name":  "康师傅泡椒牛肉面大食桶",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/c90810166b284fd2888aca2eb6b83e01.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10271,
-        "name":  "康师傅藤椒牛肉面大食桶",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/075f4a1ed9e5477db36e9c28930e2205.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10272,
-        "name":  "康师傅大食桶酸辣牛肉面161g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/2c43605c4cfb495aa8dd8de87d3d3d46.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10273,
-        "name":  "康师傅麻辣牛肉面大食桶",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/079261e79ddf4fa4a3389060c3ef8bb8.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10274,
-        "name":  "康师傅酸菜牛肉面大食桶",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/5e3256e09d144421a1a2f08800707823.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10275,
-        "name":  "粉面菜蛋Plus加肠版",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  8,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "口味可选，约 550 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/eeb93f8a46ef46de86db095ddadb6d11.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10276,
-        "name":  "康师傅鲜虾鱼板面袋装98g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10277,
-        "name":  "今麦郎板面泡椒牛肉137g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10278,
-        "name":  "康师傅桶装泡椒牛肉面112g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/d85935bb6a704e5aa01f5f04543cb1aa.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10279,
-        "name":  "统一老成都担担碗面(碗)125g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10280,
-        "name":  "统一杯汤达人杯面（口味可选）",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10281,
-        "name":  "康师傅桶装藤椒牛肉面104g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/171f042d23d84ff685884c51f07e2a02.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10282,
-        "name":  "杨掌柜碗高人拉面（口味可选）",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6.5,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/ZZZCKWNK51SYFMRDCHEQA035G5SI14RQ.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10283,
-        "name":  "统一汤达人拉面125g（口味可选）",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  8,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10284,
-        "name":  "康师傅大食桶红烧牛肉面143g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10285,
-        "name":  "杨掌柜碗宽粉+花生（口味可选）",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/NRAU36BOJXPGX8YEA5ZENQ8SURG8XM1J.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10286,
-        "name":  "南方黑芝麻糊560G",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  24,
-        "cal":  550,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "14小袋，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/ea4236a5211a474ab08e0c4b2db27479.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10287,
-        "name":  "康师傅袋装麻辣笋子面110g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10288,
-        "name":  "统一贵州豆豉辣酱125g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10289,
-        "name":  "康师傅大食袋泡椒牛肉面147g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/saobei/app/b131973e7fcc4f4ea4862962f4bfdd60.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10290,
-        "name":  "康师傅韩式火鸡拌面袋装133g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/R62IJRDX0JMJEZSIBVEL434DD42FUZCL.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10291,
-        "name":  "今麦郎一袋半火鸡拌面",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "口味可选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/d2a649bc58b54a0693562b205bdff605.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10292,
-        "name":  "康师傅汤大师桶装番茄鸡蛋面84g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10293,
-        "name":  "海福盛粥",
-        "category":  "汤粥",
-        "icon":  "soup",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6.5,
-        "cal":  200,
-        "tags":  [
-                     "性价比",
-                     "低卡",
-                     "素食友好"
-                 ],
-        "desc":  "「方便速食」之选，约 200 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/95baf7c536ce48ca951e998b07b4d808.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10294,
-        "name":  "康师傅桶装番茄鸡蛋面115g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/8d4182b003ad45b8b960b72e6543d61c.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10295,
-        "name":  "康师傅桶装红烧牛肉面106g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/8c0e93ff9d5044f38bd2cc7157ab777c.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10296,
-        "name":  "自热煲仔饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  8.9,
-        "cal":  700,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/70678b052c6b42dc8fff3488dfcf2c14.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10297,
-        "name":  "康师傅桶装酸菜牛肉面122g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/07565e4265f249e7b1679c30fd0e30a5.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10298,
-        "name":  "白象多半袋袋装方便面",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/C8D35YEUX0F450S6QR96YC0JEUO8ZIJU.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10299,
-        "name":  "自热米饭",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  11.5,
-        "cal":  550,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/8edafa1730b14ff1ae89044b3e30f451.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10300,
-        "name":  "康师傅桶装酸萝卜老鸭汤面124g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/5629f023f70346ef9df72e55697f98db.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10301,
-        "name":  "阿宽红油面皮酸辣味(袋装)110g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  4,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/DCTCCQY9KSDA5EBLT3WJ9CT81Y8E7N6T.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10302,
-        "name":  "白象大辣娇拌面",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5.5,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/3abb994192fa499f97373cc0ce263463.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10303,
-        "name":  "巧面馆辣酱碗110g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10304,
-        "name":  "雅士利大正味营养麦片600ｇ",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  23,
-        "cal":  550,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/84cf7312cc584620bc47cc96a35dffb0.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10305,
-        "name":  "康师傅大食袋红烧牛肉面145g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10306,
-        "name":  "阿宽重庆小面麻辣味(袋装)105g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  3.9,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/TJV34YU436BBJTO1SH6GTQD4K1UE90FP.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10307,
-        "name":  "统一2块面饼方便面桶装（口味可选）",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/3526272f1f5e4d57918e3a03709019e4.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10308,
-        "name":  "维维豆奶粉460g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  16,
-        "cal":  550,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/9478826eef874f57ad59d7964991b0f0.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10309,
-        "name":  "康师傅袋装泡椒牛肉面104克",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10310,
-        "name":  "康师傅大食袋酸菜牛肉面162g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10311,
-        "name":  "康师傅鲜虾鱼板面桶装",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/e49047c808744dcfafa6c885a9d7e86f.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10312,
-        "name":  "统一方便面袋装",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/8e06e5f501e64c66857ecd8776e711b5.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10313,
-        "name":  "康师傅大食桶香菇炖鸡面138g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10314,
-        "name":  "康师傅干拌面（碗装）（口味可选）",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/5KWLQYN0BX8XA3OJLQERRFASKST0GZ5Y.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10315,
-        "name":  "康师傅金汤肥牛桶装",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/292c49db0ac4438489815d47abb89f01.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10316,
-        "name":  "康师傅桶装麻辣牛肉面113g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/3d41efefd4064111973d41f0b144441c.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10317,
-        "name":  "大食袋金汤肥牛袋面120g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10318,
-        "name":  "康师傅袋装红烧牛肉面98g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10319,
-        "name":  "咚咚鹌鹑蛋卤香味70g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  4,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/d0f984db7af54a238f581ff51c6e6c86.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10320,
-        "name":  "康师傅大食袋麻辣牛肉面143g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10321,
-        "name":  "康师傅袋装酸菜牛肉面114g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10322,
-        "name":  "三养火鸡面140g/包",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  9,
-        "cal":  550,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "口味可选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/41a01c6feb7943359c38c8b7b7f5a66a.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10323,
-        "name":  "三养辣鸡肉味火鸡面140g/包",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  8,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/e3caaf47cf4942f2ab42e416a724bd1d.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10324,
-        "name":  "阿宽红油面皮酸辣味(桶装)105g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/e0105582be204653833312a276624e17.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10325,
-        "name":  "白象-大辣娇-韩式火鸡拌面袋装119g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  3.5,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10326,
-        "name":  "白家阿宽红油面皮麻酱味袋105g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  4,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/W21347961JC6PJAPU1BAQOXY9H5XA6VY.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10327,
-        "name":  "康师傅桶装香菇炖鸡面105g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/e6d99363245045e3bf1ed4e9f845ae96.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10328,
-        "name":  "白家阿宽红油面皮麻酱味（桶装）120g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/B2WUVO57H1H67EYGYUTVASRKEUBO54C8.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10329,
-        "name":  "白象-汤好喝-袋装方便面",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/669TRRZVC52DQ7UMNJMX0D15NTTJ1LEZ.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10330,
-        "name":  "康师傅大食袋酸辣牛肉面163G",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10331,
-        "name":  "白象-汤好喝-桶装方便面",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/CRN32HGUB56EE0IBKOWINWMZKQQ7MVVY.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10332,
-        "name":  "康师傅桶装酸辣牛肉面125g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/44b993598cae492e8ac12b50e8c1d7fc.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10333,
-        "name":  "白象大辣娇BIG桶桶装方便面",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/2ZYP7GM6MPXDHJZDSKRO0E8GFOBC5X07.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10334,
-        "name":  "康师傅干拌面碗麻辣牛肉129g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  6,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10335,
-        "name":  "白象粉面菜蛋",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/2C2YPHJDIQ09RJFFBG69Y3V527MB3ZN9.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10336,
-        "name":  "康师傅袋装酸萝卜老鸭汤面112g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10337,
-        "name":  "阿宽重庆小面麻辣味(桶装)105g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  5.5,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/84P0498UCWQZD4CS0M1TCA610OP76DH7.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10338,
-        "name":  "康师傅袋装番茄鸡蛋面107g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10339,
-        "name":  "白象大辣娇桶装火锅面",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/middle-platform/tuancan/APYADP2PECE123EV6NKAFXB9TWSQPO27.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10340,
-        "name":  "康师傅大食袋藤椒牛肉面145g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10341,
-        "name":  "康师傅袋装香菇炖鸡面100g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10342,
-        "name":  "康师傅大食袋香辣牛肉面145g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  3.5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10343,
-        "name":  "康师傅袋装麻辣牛肉面103g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10344,
-        "name":  "康师傅桶装香辣牛肉面114g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  5,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/9789cbff050149009941c8992a70aaec.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10345,
-        "name":  "康师傅大食袋香菇炖鸡141g",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「方便速食」之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10346,
-        "name":  "康师傅袋装酸辣牛肉面115g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10347,
-        "name":  "康师傅袋装香辣牛肉面109g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10348,
-        "name":  "康师傅干拌面碗藤椒牛肉123g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10349,
-        "name":  "康师傅干拌面碗酸菜牛肉145g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  6,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10350,
-        "name":  "康师傅袋装藤椒牛肉面102g",
-        "category":  "方便速食",
-        "icon":  "package",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  3,
-        "cal":  550,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 550 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10351,
-        "name":  "白象-大辣娇BIG桶-麻辣香锅牛肉面14",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  5,
-        "cal":  750,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 750 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10352,
-        "name":  "白象-汤好喝-辣牛肉汤面袋装111g",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "微辣"
-                  ],
-        "price":  3,
-        "cal":  600,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10353,
-        "name":  "李子柒柳州螺蛳粉",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  12,
-        "cal":  600,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「方便速食」之选，约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "stall":  "惠盈便利店",
-        "canteen":  "商业街",
-        "img":  "https://img.lcsw.cn/scan-order/foods/703f2a859af547c2a97a3e0eba18aa1d.jpg",
-        "rawGroup":  "方便速食"
-    },
-    {
-        "id":  10354,
         "name":  "芒芒爆珠双皮奶",
         "category":  "其他",
         "icon":  "utensils",
@@ -7638,7 +5776,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10355,
+        "id":  10270,
         "name":  "玫瑰荔枝酒酿冰奶",
         "category":  "其他",
         "icon":  "utensils",
@@ -7661,7 +5799,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10356,
+        "id":  10271,
         "name":  "荔枝红豆阿达子",
         "category":  "其他",
         "icon":  "utensils",
@@ -7684,7 +5822,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10357,
+        "id":  10272,
         "name":  "芒芒青提椰",
         "category":  "其他",
         "icon":  "utensils",
@@ -7707,7 +5845,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10358,
+        "id":  10273,
         "name":  "荔枝桃胶炖奶",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7729,7 +5867,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10359,
+        "id":  10274,
         "name":  "浓香·紫米芋泥大满贯",
         "category":  "其他",
         "icon":  "utensils",
@@ -7752,7 +5890,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10360,
+        "id":  10275,
         "name":  "金榜·杨枝甘露",
         "category":  "其他",
         "icon":  "utensils",
@@ -7775,7 +5913,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  10361,
+        "id":  10276,
         "name":  "招牌榴芒",
         "category":  "其他",
         "icon":  "utensils",
@@ -7798,7 +5936,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  10362,
+        "id":  10277,
         "name":  "多芒小丸子",
         "category":  "其他",
         "icon":  "utensils",
@@ -7821,7 +5959,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  10363,
+        "id":  10278,
         "name":  "滑嫩·芋圆仙草大满贯",
         "category":  "其他",
         "icon":  "utensils",
@@ -7844,7 +5982,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  10364,
+        "id":  10279,
         "name":  "离火·古春堂龟苓膏大满贯",
         "category":  "其他",
         "icon":  "utensils",
@@ -7866,7 +6004,7 @@
         "rawGroup":  "九大必点"
     },
     {
-        "id":  10365,
+        "id":  10280,
         "name":  "胖大海炖整梨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7887,7 +6025,7 @@
         "rawGroup":  "九大必点"
     },
     {
-        "id":  10366,
+        "id":  10281,
         "name":  "古春堂招牌枇杷膏",
         "category":  "其他",
         "icon":  "utensils",
@@ -7909,7 +6047,7 @@
         "rawGroup":  "九大必点"
     },
     {
-        "id":  10367,
+        "id":  10282,
         "name":  "特色酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -7931,7 +6069,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10368,
+        "id":  10283,
         "name":  "盐酥鸡米花",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -7952,7 +6090,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10369,
+        "id":  10284,
         "name":  "网红锅巴土豆【小吃必点】",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -7973,7 +6111,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10370,
+        "id":  10285,
         "name":  "爆汁鲜肉肠2根",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -7995,7 +6133,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10371,
+        "id":  10286,
         "name":  "香酥薯条",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -8016,7 +6154,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10372,
+        "id":  10287,
         "name":  "海苔蒜香薯角",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -8037,7 +6175,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10373,
+        "id":  10288,
         "name":  "咖喱鱼蛋王",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -8059,7 +6197,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10374,
+        "id":  10289,
         "name":  "肉松酱酱薯",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -8080,7 +6218,7 @@
         "rawGroup":  "老广特色小吃"
     },
     {
-        "id":  10375,
+        "id":  10290,
         "name":  "胶润·桃胶莲子大满贯",
         "category":  "其他",
         "icon":  "utensils",
@@ -8103,7 +6241,7 @@
         "rawGroup":  "招牌大满贯"
     },
     {
-        "id":  10376,
+        "id":  10291,
         "name":  "清新·椰芒海石花大满贯",
         "category":  "其他",
         "icon":  "utensils",
@@ -8125,7 +6263,7 @@
         "rawGroup":  "招牌大满贯"
     },
     {
-        "id":  10377,
+        "id":  10292,
         "name":  "红豆双皮奶",
         "category":  "其他",
         "icon":  "utensils",
@@ -8148,7 +6286,7 @@
         "rawGroup":  "双皮奶"
     },
     {
-        "id":  10378,
+        "id":  10293,
         "name":  "古春堂双皮奶",
         "category":  "其他",
         "icon":  "utensils",
@@ -8171,7 +6309,7 @@
         "rawGroup":  "双皮奶"
     },
     {
-        "id":  10379,
+        "id":  10294,
         "name":  "椰汁嫩仙草",
         "category":  "其他",
         "icon":  "utensils",
@@ -8194,7 +6332,7 @@
         "rawGroup":  "广式经典"
     },
     {
-        "id":  10380,
+        "id":  10295,
         "name":  "手工汤圆",
         "category":  "其他",
         "icon":  "utensils",
@@ -8217,7 +6355,7 @@
         "rawGroup":  "广式经典"
     },
     {
-        "id":  10381,
+        "id":  10296,
         "name":  "椰汁西米露",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -8240,7 +6378,7 @@
         "rawGroup":  "广式经典"
     },
     {
-        "id":  10382,
+        "id":  10297,
         "name":  "黄金木薯小丸子",
         "category":  "其他",
         "icon":  "utensils",
@@ -8263,7 +6401,7 @@
         "rawGroup":  "广式经典"
     },
     {
-        "id":  10383,
+        "id":  10298,
         "name":  "山楂梅梅饮品",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -8286,7 +6424,7 @@
         "rawGroup":  "草本饮品 草本鲜膏"
     },
     {
-        "id":  10384,
+        "id":  10299,
         "name":  "小青柠",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -8309,7 +6447,7 @@
         "rawGroup":  "草本饮品 草本鲜膏"
     },
     {
-        "id":  10385,
+        "id":  10300,
         "name":  "糯米小丸子",
         "category":  "其他",
         "icon":  "utensils",
@@ -8331,7 +6469,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10386,
+        "id":  10301,
         "name":  "西米喳",
         "category":  "其他",
         "icon":  "utensils",
@@ -8353,7 +6491,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10387,
+        "id":  10302,
         "name":  "芒果",
         "category":  "其他",
         "icon":  "utensils",
@@ -8375,7 +6513,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10388,
+        "id":  10303,
         "name":  "一只龟苓膏",
         "category":  "其他",
         "icon":  "utensils",
@@ -8397,7 +6535,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10389,
+        "id":  10304,
         "name":  "手工芋圆（8颗）",
         "category":  "其他",
         "icon":  "utensils",
@@ -8419,7 +6557,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10390,
+        "id":  10305,
         "name":  "芋泥球",
         "category":  "其他",
         "icon":  "utensils",
@@ -8441,7 +6579,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10391,
+        "id":  10306,
         "name":  "燕麦",
         "category":  "其他",
         "icon":  "utensils",
@@ -8463,7 +6601,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10392,
+        "id":  10307,
         "name":  "马蹄爆珠",
         "category":  "其他",
         "icon":  "utensils",
@@ -8485,7 +6623,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10393,
+        "id":  10308,
         "name":  "紫米球",
         "category":  "其他",
         "icon":  "utensils",
@@ -8507,7 +6645,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10394,
+        "id":  10309,
         "name":  "莲子",
         "category":  "其他",
         "icon":  "utensils",
@@ -8530,7 +6668,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10395,
+        "id":  10310,
         "name":  "洛神冻",
         "category":  "其他",
         "icon":  "utensils",
@@ -8552,7 +6690,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10396,
+        "id":  10311,
         "name":  "青团小丸子",
         "category":  "其他",
         "icon":  "utensils",
@@ -8574,7 +6712,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10397,
+        "id":  10312,
         "name":  "榴莲球",
         "category":  "其他",
         "icon":  "utensils",
@@ -8595,7 +6733,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10398,
+        "id":  10313,
         "name":  "手工汤圆（4颗）",
         "category":  "其他",
         "icon":  "utensils",
@@ -8617,7 +6755,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10399,
+        "id":  10314,
         "name":  "红豆",
         "category":  "其他",
         "icon":  "utensils",
@@ -8639,7 +6777,7 @@
         "rawGroup":  "加料系列"
     },
     {
-        "id":  10400,
+        "id":  10315,
         "name":  "秘制龟苓膏",
         "category":  "其他",
         "icon":  "utensils",
@@ -8662,7 +6800,7 @@
         "rawGroup":  "镇店之宝\n龟苓膏"
     },
     {
-        "id":  10401,
+        "id":  10316,
         "name":  "香芒西米露",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -8685,7 +6823,7 @@
         "rawGroup":  "鲜果糖水"
     },
     {
-        "id":  10402,
+        "id":  10317,
         "name":  "榴莲忘返",
         "category":  "其他",
         "icon":  "utensils",
@@ -8706,7 +6844,7 @@
         "rawGroup":  "鲜果糖水"
     },
     {
-        "id":  10403,
+        "id":  10318,
         "name":  "打包盒",
         "category":  "其他",
         "icon":  "utensils",
@@ -8728,7 +6866,7 @@
         "rawGroup":  "打包"
     },
     {
-        "id":  10404,
+        "id":  10319,
         "name":  "山楂大枣醒食饮（盒）",
         "category":  "其他",
         "icon":  "utensils",
@@ -8749,7 +6887,7 @@
         "rawGroup":  "真材实料\n凉茶好礼"
     },
     {
-        "id":  10405,
+        "id":  10320,
         "name":  "人参阿胶素颜饮（盒）",
         "category":  "其他",
         "icon":  "utensils",
@@ -8771,7 +6909,7 @@
         "rawGroup":  "真材实料\n凉茶好礼"
     },
     {
-        "id":  10406,
+        "id":  10321,
         "name":  "秋梨枇杷罗汉果软糖（盒）",
         "category":  "其他",
         "icon":  "utensils",

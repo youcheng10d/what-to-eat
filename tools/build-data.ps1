@@ -96,8 +96,8 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     $isNonFoodGroup = $NON_FOOD | Where-Object { $group -like "*$_*" }
     $isDrinkItem = $drinkKeywords | Where-Object { $f.food_name -like "*$_*" }
     if ($isNonFoodGroup) { continue }
-    # 便利店只保留"方便速食"分组（能当正餐），其余分组全部排除
-    if ($stallName -like "*便利店*" -and $group -ne "方便速食") { continue }
+    # 便利店档口整体排除出推荐池（SKU 不是菜品，且用户明确：便利店食品不进推荐列表）
+    if ($stallName -like "*便利店*") { continue }
     # 非便利店的饮品单品（散在食品分组里的饮料）排除
     if ($stallName -notlike "*便利店*" -and $isDrinkItem -and $f.food_name -notmatch "奶茶|豆浆|牛奶|酸奶") { continue }
     if ($f.food_status -and $f.food_status -ne 0) { continue }
