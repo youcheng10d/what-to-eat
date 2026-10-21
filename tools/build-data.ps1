@@ -137,7 +137,7 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     if ($veg) { $autoTags += "素食友好" }
     if ($cal -ge 500) { $autoTags += "管饱" }
 
-    $descBase = if ($f.food_introduce) { $f.food_introduce } else { "来自 $stallName 的 $group" }
+    $descBase = if ($f.food_introduce) { $f.food_introduce } else { "「$group」之选" }
     $desc = $descBase + "，约 $cal kcal"
 
     $dishes += [PSCustomObject]@{

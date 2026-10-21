@@ -104,7 +104,8 @@
   }
   function buildReason(d, m) {
     const head = m.length ? m.slice(0, 3).join("，") + "。" : rand(OPENERS);
-    return head + d.desc + rand(CLOSINGS);
+    const desc = String(d.desc || "").replace(/[，,。；;、\s]*$/, "") + "。";
+    return head + desc + rand(CLOSINGS);
   }
 
   async function recommendDish(preferences = "", { excludeIds = [] } = {}) {

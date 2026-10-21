@@ -186,6 +186,20 @@ body {
 }
 .dish-card.is-loading { animation: none; box-shadow: var(--sh-sm); }
 
+.dish-stall {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--text-sub);
+}
+.dish-stall .ic { flex: none; color: var(--primary); }
+
 .dish-head { display: flex; gap: 14px; align-items: flex-start; }
 .dish-badge {
   flex: none;

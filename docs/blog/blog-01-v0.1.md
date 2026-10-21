@@ -85,4 +85,4 @@ v0.1 已发布：github.com/youcheng10d/what-to-eat（public）。除 README 外
 
 ---
 
-wte 开发日志系列：01 v0.1（本篇）· 02 v1.0 真实数据管道（待撰写）
+上一篇：无（本篇为首篇） ｜ 下一篇：
