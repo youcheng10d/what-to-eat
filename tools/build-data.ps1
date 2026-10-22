@@ -8,7 +8,8 @@ param(
   [string]$SchoolShops = "..\what-to-eat\data\raw\cqcst-shops.json",
   [string]$SchoolMenus = "..\what-to-eat\data\raw\cqcst-menus.json",
   [string]$OutPath     = "..\what-to-eat\data\data.js",
-  [string]$School      = "重庆城市科技学院"
+  [string]$School      = "重庆城市科技学院",
+  [string]$ManualJson  = ".\staging\manual-dishes.json"
 )
 
 $ErrorActionPreference = "Stop"
@@ -170,6 +171,19 @@ foreach ($d in $dishes) {
   if (-not $seen.ContainsKey($key)) { $seen[$key] = $true; $uniq += $d }
 }
 $dishes = $uniq
+
+# ---------- 6.5) 合并线下拍照手工录入数据（stall+name 冲突时以线下为准） ----------
+$manualPath = Join-Path $PSScriptRoot $ManualJson
+if (Test-Path $manualPath) {
+  $manual = Get-Content $manualPath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $byKey = @{}
+  foreach ($d in $dishes) { $byKey["$($d.stall)|$($d.name)"] = $d }
+  foreach ($md in $manual) { $byKey["$($md.stall)|$($md.name)"] = $md }
+  $dishes = @($byKey.Values)
+  $id = 10000
+  foreach ($d in $dishes) { $d.id = $id; $id++ }
+  Write-Host "合并线下录入：$($manual.Count) 道，合并后总计 $($dishes.Count) 道" -ForegroundColor Cyan
+}
 
 # ---------- 7) 输出 JS ----------
 $jsBody = $dishes | ConvertTo-Json -Depth 10

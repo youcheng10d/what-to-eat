@@ -1,0 +1,2084 @@
+{
+    "photos":  [
+                   {
+                       "file":  "IMG20261022181508.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "锅庐 三汁焖锅",
+                                            "group":  "",
+                                            "items":  [
+                                                          {
+                                                              "name":  "招牌甜辣黑鸭煲",
+                                                              "priceText":  "14.8元/份",
+                                                              "price":  14.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "无骨烤鱼焖锅",
+                                                              "priceText":  "16元/份",
+                                                              "price":  16.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉沫豆腐",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉沫茄子",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "毛豆烧鸡",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肥肠鸡焖锅",
+                                                              "priceText":  "17元/份",
+                                                              "price":  17.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "黄金酥肉焖锅",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香酥烤鸭焖锅",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14.0,
+                                                              "note":  "菜名按字形辨认，与牌面拼音标注不完全一致，存疑"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "锅庐 三汁焖锅",
+                                            "group":  "加菜专区",
+                                            "items":  [
+                                                          {
+                                                              "name":  "肉沫",
+                                                              "priceText":  "2元",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉",
+                                                              "priceText":  "3元",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡丁",
+                                                              "priceText":  "3元",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "烤鸭",
+                                                              "priceText":  "3元",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "黑鸭",
+                                                              "priceText":  "4元",
+                                                              "price":  4.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼块",
+                                                              "priceText":  "5元",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肥肠",
+                                                              "priceText":  "6元",
+                                                              "price":  6.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "汤萌",
+                                            "group":  "酥肉小锅",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鸭血小锅",
+                                                              "priceText":  "11",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "培根小锅",
+                                                              "priceText":  "12",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "三鲜小锅",
+                                                              "priceText":  "12",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉卷小锅",
+                                                              "priceText":  "13",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉小锅",
+                                                              "priceText":  "13",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "里脊肉片小锅",
+                                                              "priceText":  "13",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鲜肉小锅",
+                                                              "priceText":  "14",
+                                                              "price":  14.0,
+                                                              "note":  "该档口牌面被画面右缘裁切，仅见「鲜肉…」与价格14"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "「香酥烤鸭焖锅」六字中部分字迹被反光遮盖，牌面下方拼音为 CHUN XIANG KAO ROU MEN GUO，与所辨字形不完全对应，菜名存疑",
+                                         "右侧汤萌小锅价目牌被画面右缘裁切，只显示到「鲜肉小锅」，其后菜品未知",
+                                         "招牌甜辣黑鸭煲下方红色小字（似为「黑鸭菌菇」及口感描述）过小无法辨清",
+                                         "牌面另有「口味选择：酱香/麻辣」与汤萌「锅底可选：清油麻辣/青春藤椒/老坛酸菜…」口味选项，非计价菜品未录入"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181514.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "汤萌",
+                                            "group":  "酥肉小锅",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鸭血小锅",
+                                                              "priceText":  "11",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "培根小锅",
+                                                              "priceText":  "12",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "三鲜小锅",
+                                                              "priceText":  "12",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉卷小锅",
+                                                              "priceText":  "13",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉小锅",
+                                                              "priceText":  "13",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "里脊肉片小锅",
+                                                              "priceText":  "13",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鲜肉小锅",
+                                                              "priceText":  "14",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "雪花鸡柳小锅",
+                                                              "priceText":  "14",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香酥鸡小锅",
+                                                              "priceText":  "15",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "全家福小锅",
+                                                              "priceText":  "15",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "锅庐 三汁焖锅",
+                                            "group":  "",
+                                            "items":  [
+                                                          {
+                                                              "name":  "肥肠鸡焖锅",
+                                                              "priceText":  "17元/份",
+                                                              "price":  17.0,
+                                                              "note":  "仅见牌面右端，左侧被裁切"
+                                                          },
+                                                          {
+                                                              "name":  "黄金酥肉焖锅",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香酥烤鸭焖锅",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14.0,
+                                                              "note":  "菜名按字形辨认，与牌面拼音标注不完全一致，存疑"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "本图下方另一档口（锅庐 三汁焖锅）价目牌只露出右端三格，其余菜品被画面下缘裁切，未录",
+                                         "下方「加菜专区」仅见「…2元、鸡丁3元、黑鸭4元、肥肠6元」等残缺条目，未逐条录入",
+                                         "牌面另有「口味选择」及汤萌「锅底可选」口味选项，非计价菜品未录入"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181524.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "擂震子擂椒拌饭",
+                                            "group":  "炒菜擂饭系列",
+                                            "items":  [
+                                                          {
+                                                              "name":  "外婆菜擂饭",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "麻辣炒鸡架擂饭",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉沫茄子擂饭",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "照烧腿肉块擂饭",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  "牌面标「新」"
+                                                          },
+                                                          {
+                                                              "name":  "小炒鸡擂饭",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "孜然鸡柳擂饭",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香干炒肉擂饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "辣椒炒肉擂饭",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "擂震子擂椒拌饭",
+                                            "group":  "酱焖擂饭系列",
+                                            "items":  [
+                                                          {
+                                                              "name":  "酱焖鸡块擂饭",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酱烧猪脆骨擂饭",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酱焖牛肉擂饭",
+                                                              "priceText":  "16元/份",
+                                                              "price":  16.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "擂震子擂椒拌饭",
+                                            "group":  "卤肉擂饭系列",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鸡腿擂饭",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸭腿擂饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "台式烧肉擂饭",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "擂震子擂椒拌饭",
+                                            "group":  "卤味小吃",
+                                            "items":  [
+                                                          {
+                                                              "name":  "卤鸡蛋",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "卤香肠",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "卤豆干",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "卤鸡腿",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "卤鸭腿",
+                                                              "priceText":  "6元/份",
+                                                              "price":  6.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "左侧灯箱档口招牌只拍到「□子」「□饭」两字，其余文字被裁切，档口全名无法辨认",
+                                         "底部绿色提示「注：加米饭免费（每份餐≥500克）」为规则说明，非菜品未录入"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181534.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "粤式烧腊",
+                                            "group":  "",
+                                            "items":  [
+                                                          {
+                                                              "name":  "脆皮烧鸭饭",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "照烧鸡腿饭",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "姜葱白切鸡",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "秘制叉烧饭",
+                                                              "priceText":  "16元",
+                                                              "price":  16.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "炙烤鸡肉饭",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "牌面竖排「双拼+2元」为加价说明，非独立菜品，未录入",
+                                         "画面右侧另有「烤卤」档口招牌及「鸭腿饭」图案，被裁切且无清晰价目，未录入",
+                                         "底部红条口号「现点现斩·酱汁现调·少油下饭」非菜品未录入"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181541.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "烤肉饭",
+                                            "group":  "单拼套饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鸭腿单拼套饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "烤鸡单拼套饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "核桃肉单拼套饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡腿单拼套饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡排单拼套饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "里脊单拼套饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "烤肉饭",
+                                            "group":  "双拼",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鸭腿鸡排双拼",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "烤鸡双拼",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "核桃肉双拼",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "蜜汁烤肉双拼",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香菇酿肉双拼",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "蛋饼双拼",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181552.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "米线",
+                                            "items":  [
+                                                          {
+                                                              "name":  "藤椒金针菇米线",
+                                                              "priceText":  "￥10.0元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香辣花甲米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "泡椒火腿米线",
+                                                              "priceText":  "￥11.0元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "番茄鱼丸米线",
+                                                              "priceText":  "￥12.0元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "菌汤肉丸子米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "火锅全家福米线",
+                                                              "priceText":  "￥14.0元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "冬阴功全家福米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "超级三鲜米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸菜酥肉米线",
+                                                              "priceText":  "￥14.0元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸萝卜鸡丝米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "现煮现卖",
+                                            "items":  [
+                                                          {
+                                                              "name":  "牛肉米线/面块/河粉",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "猪杂米线/面块/河粉",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉丝米线/面块/河粉",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "辣味干拌米线/面块/河粉",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "剁椒干拌米线/面块/河粉",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "土家焖饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "土家腊肉焖饭",
+                                                              "priceText":  "□元",
+                                                              "price":  null,
+                                                              "note":  "价格被前景人物头部遮挡，未读出"
+                                                          },
+                                                          {
+                                                              "name":  "土家腊肠焖饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土家鸡腿焖饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土家原味焖饭",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "点菜",
+                                            "items":  [
+                                                          {
+                                                              "name":  "素米线/面块",
+                                                              "priceText":  "8元/份",
+                                                              "price":  8.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "油条/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "豆皮米线/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "金针菇米线/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土豆米线/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "炸蛋米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼豆腐米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "火腿米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸭血米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼丸米线/面块",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鹌鹑蛋米线/面块",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "猪肝米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "花甲米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉米线/面块",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉丸子米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肥牛米线/面块",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "午餐肉/面块",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "全家福/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "加菜",
+                                            "items":  [
+                                                          {
+                                                              "name":  "油条",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "豆皮",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "金针菇",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土豆",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "炸蛋",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼豆腐",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "火腿",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸭血",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼丸",
+                                                              "priceText":  "4元/份",
+                                                              "price":  4.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鹌鹑蛋",
+                                                              "priceText":  "4元/份",
+                                                              "price":  4.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "猪肝",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "花甲",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉",
+                                                              "priceText":  "6元/份",
+                                                              "price":  6.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉丸子",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肥牛",
+                                                              "priceText":  "7元/份",
+                                                              "price":  7.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "午餐肉",
+                                                              "priceText":  "7元/份",
+                                                              "price":  7.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "全家福",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "海带丝",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "红色价格条右端「土家腊肉焖饭」的价格数字被前景人物头部遮挡，只能确认首位为1，未录入数值",
+                                         "红色价格条右侧「土家」系列是否为独立档口，画面内未见独立档口牌，暂归入外公家米线",
+                                         "顶部「口味选择：泡椒/藤椒/香辣/菌汤/酸菜/酸萝卜/冬阴功/番茄/火锅」为口味选项，非计价菜品未录入",
+                                         "「点菜」栏英文误印为「OEDER DISHES」"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181556.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "米线",
+                                            "items":  [
+                                                          {
+                                                              "name":  "藤椒金针菇米线",
+                                                              "priceText":  "￥10.0元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香辣花甲米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "泡椒火腿米线",
+                                                              "priceText":  "￥11.0元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "番茄鱼丸米线",
+                                                              "priceText":  "￥12.0元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "菌汤肉丸子米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "火锅全家福米线",
+                                                              "priceText":  "￥14.0元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "冬阴功全家福米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "超级三鲜米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸菜酥肉米线",
+                                                              "priceText":  "￥14.0元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸萝卜鸡丝米线",
+                                                              "priceText":  "￥13.0元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "点菜",
+                                            "items":  [
+                                                          {
+                                                              "name":  "素米线/面块",
+                                                              "priceText":  "8元/份",
+                                                              "price":  8.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "油条/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "豆皮米线/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "金针菇米线/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土豆米线/面块",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "炸蛋米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼豆腐米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "火腿米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸭血米线/面块",
+                                                              "priceText":  "11元/份",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼丸米线/面块",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鹌鹑蛋米线/面块",
+                                                              "priceText":  "12元/份",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "猪肝米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "花甲米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉米线/面块",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉丸子米线/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肥牛米线/面块",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "午餐肉/面块",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "全家福/面块",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "外公家米线",
+                                            "group":  "加菜",
+                                            "items":  [
+                                                          {
+                                                              "name":  "油条",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "豆皮",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "金针菇",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土豆",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "炸蛋",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼豆腐",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "火腿",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸭血",
+                                                              "priceText":  "3元/份",
+                                                              "price":  3.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼丸",
+                                                              "priceText":  "4元/份",
+                                                              "price":  4.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鹌鹑蛋",
+                                                              "priceText":  "4元/份",
+                                                              "price":  4.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "猪肝",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "花甲",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酥肉",
+                                                              "priceText":  "6元/份",
+                                                              "price":  6.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉丸子",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肥牛",
+                                                              "priceText":  "7元/份",
+                                                              "price":  7.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "午餐肉",
+                                                              "priceText":  "7元/份",
+                                                              "price":  7.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "全家福",
+                                                              "priceText":  "5元/份",
+                                                              "price":  5.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "海带丝",
+                                                              "priceText":  "2元/份",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "顶部「口味选择：泡椒/藤椒/香辣/菌汤/酸菜/酸萝卜/冬阴功/番茄/火锅（口味□选一）」为口味选项，非计价菜品未录入",
+                                         "「点菜」「加菜」两栏英文误印为「OEDER DISHES」「ADD FOOD」",
+                                         "右下角两张小图为「火锅全家福米线14.0元」「超级三鲜米线13.0元」的重复宣传图，未重复录入"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181606.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "精品套餐",
+                                            "group":  "精品套餐",
+                                            "items":  [
+                                                          {
+                                                              "name":  "一荤一素",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "一荤两素",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "二荤",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "二荤一素",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "照片内未见档口名称，牌面只有「精品套餐」标题，stall 留空",
+                                         "左侧红色招牌只露一角，无法辨认归属档口"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181617.jpg",
+                       "contentType":  "stall_sign",
+                       "sections":  [
+                                        {
+                                            "stall":  "稻香热卤",
+                                            "group":  "",
+                                            "items":  [
+
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "牌面只有档口名「稻香热卤」与计价方式「50克 1.8元」，没有任何菜品名称，items 留空",
+                                         "右侧卤味实物图为配图，无价目信息"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022181645.jpg",
+                       "contentType":  "menu_board",
+                       "sections":  [
+                                        {
+                                            "stall":  "抄手 馄饨大王",
+                                            "group":  "香猪大肉云吞",
+                                            "items":  [
+                                                          {
+                                                              "name":  "清汤云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "海味云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "海味云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "海味云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "海味云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "红油云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "红油云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "红油云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "红油云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳云吞",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜云吞",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜云吞",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜云吞",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜云吞",
+                                                              "priceText":  "18元",
+                                                              "price":  18.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄云吞",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄云吞",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄云吞",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄云吞",
+                                                              "priceText":  "18元",
+                                                              "price":  18.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤云吞",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤云吞",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤云吞",
+                                                              "priceText":  "16元",
+                                                              "price":  16.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤云吞",
+                                                              "priceText":  "19元",
+                                                              "price":  19.0,
+                                                              "note":  "加大份"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "抄手 馄饨大王",
+                                            "group":  "汤锅类",
+                                            "items":  [
+                                                          {
+                                                              "name":  "沾水抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "沾水抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "沾水抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "老麻抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "老麻抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "老麻抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "海味抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "海味抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "海味抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳抄手",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳抄手",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳抄手",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄抄手",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄抄手",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄抄手",
+                                                              "priceText":  "18元",
+                                                              "price":  18.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜抄手",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜抄手",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜抄手",
+                                                              "priceText":  "18元",
+                                                              "price":  18.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤抄手",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤抄手",
+                                                              "priceText":  "16元",
+                                                              "price":  16.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤抄手",
+                                                              "priceText":  "19元",
+                                                              "price":  19.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "火锅抄手",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "火锅抄手",
+                                                              "priceText":  "16元",
+                                                              "price":  16.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "火锅抄手",
+                                                              "priceText":  "19元",
+                                                              "price":  19.0,
+                                                              "note":  "加大份"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "抄手 馄饨大王",
+                                            "group":  "特色干拌",
+                                            "items":  [
+                                                          {
+                                                              "name":  "红油干拌抄手/云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "红油干拌抄手/云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "红油干拌抄手/云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "干海椒干拌抄手/云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "干海椒干拌抄手/云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "干海椒干拌抄手/云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒干拌抄手/云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒干拌抄手/云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒干拌抄手/云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "双椒干拌抄手/云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "双椒干拌抄手/云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "双椒干拌抄手/云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "蒜蓉干拌抄手/云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "蒜蓉干拌抄手/云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "蒜蓉干拌抄手/云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳干拌抄手/云吞",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳干拌抄手/云吞",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳干拌抄手/云吞",
+                                                              "priceText":  "17元",
+                                                              "price":  17.0,
+                                                              "note":  "加大份"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "抄手 馄饨大王",
+                                            "group":  "特色馄饨",
+                                            "items":  [
+                                                          {
+                                                              "name":  "清汤馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "清汤馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "海味馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "海味馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "海味馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "藤椒馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "酸汤馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "红油馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "红油馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "红油馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "金汤馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳馄饨",
+                                                              "priceText":  "8元",
+                                                              "price":  8.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "糊辣壳馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜馄饨",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜馄饨",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜馄饨",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄馄饨",
+                                                              "priceText":  "9元",
+                                                              "price":  9.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄馄饨",
+                                                              "priceText":  "11元",
+                                                              "price":  11.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄馄饨",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤馄饨",
+                                                              "priceText":  "10元",
+                                                              "price":  10.0,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤馄饨",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  "中份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡汤馄饨",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  "大份"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "抄手 馄饨大王",
+                                            "group":  "",
+                                            "items":  [
+                                                          {
+                                                              "name":  "小太阳煎蛋",
+                                                              "priceText":  "2元/个",
+                                                              "price":  2.0,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+
+                                     ]
+                   }
+               ]
+}
