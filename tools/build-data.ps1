@@ -35,15 +35,19 @@ $catMap = @{
 }
 function mapCategory($group, $name) {
   # 菜名优先（更准）
-  if ($name -match "盖饭|拌饭|炒饭|煲仔|木桶饭|铁板饭|焗饭|抓饭") { return "盖浇饭" }
-  if ($name -match "米线|面条|拉面|小面|拌面|汤面|炒面|粉$|米粉|河粉|酸辣粉|馄饨|抄手|水饺|云吞|饵丝") { return "面食" }
-  if ($name -match "麻辣烫|冒菜|香锅|串串香") { return "麻辣系列" }
+  if ($name -match "盖饭|拌饭|炒饭|煲仔|木桶饭|铁板饭|焗饭|抓饭|饭$") { return "盖浇饭" }
+  if ($name -match "米线|面条|拉面|小面|拌面|汤面|炒面|面$|面块|粉$|米粉|河粉|酸辣粉|螺蛳粉|馄饨|抄手|水饺|云吞|饵丝") { return "面食" }
+  if ($name -match "麻辣烫|冒菜|香锅|串串香|干锅|麻辣拌|毛血旺|麻辣鱼|麻辣什锦") { return "麻辣系列" }
   if ($name -match "沙拉|轻食") { return "轻食沙拉" }
   if ($name -match "粥$|羹$|汤$|汤面|炖汤") { return "汤粥" }
-  if ($name -match "包子|馒头|花卷|饼$|煎饺|烧麦|茶叶蛋|鸡蛋饼|手抓饼|烤肠|肉肠|玉米$|饭团|三明治") { return "早餐小吃" }
-  if ($name -match "奶茶|牛奶|酸奶|豆浆|豆花|糖水|甜品|蛋糕|面包|咖啡|果汁|冰粉|凉虾|西米露") { return "甜品饮品" }
+  if ($name -match "包子|小笼包|豆沙包|粉丝包|紫薯包|馒头|花卷|饼$|煎饺|烧麦|茶叶蛋|鸡蛋饼|手抓饼|烤肠|肉肠|玉米$|饭团|三明治|糕$|糕（") { return "早餐小吃" }
+  # 荤豆花/鸡哈豆花是川味咸口菜，不能进甜品
+  if ($name -match "荤豆花|鸡哈豆花") { return "家常小炒" }
+  if ($name -match "奶茶|牛奶|酸奶|豆浆|豆花|糖水|甜品|蛋糕|面包|咖啡|果汁|冰粉|凉虾|西米露|双皮奶|龟苓膏|汤圆|布丁") { return "甜品饮品" }
   if ($name -match "烤串|烧烤|炸串|炸鸡|铁板|烤鸡|烤腿|鸡排|鸡柳") { return "烧烤" }
   if ($name -match "炒|烧|炖|焖|蒸|煮|煲|干锅|小炒") { return "家常小炒" }
+  # 主料兜底：含肉禽水产/素料但上面都没归类的，按家常小炒处理，尽量不留「其他」
+  if ($name -match "鸡|鸭|鹅|鱼|虾|牛|羊|肉|排骨|翅|腿|丸|蛋|豆腐|菌|菇|藕|茄|菜") { return "家常小炒" }
   # 分组名兜底
   foreach ($key in $catMap.Keys) { if ($group -like "*$key*") { return $catMap[$key] } }
   return "其他"
@@ -52,18 +56,46 @@ function mapCategory($group, $name) {
 # ---------- 3) 辣味推断 ----------
 function inferSpicy($name, $desc) {
   $s = "$name $desc"
+  if ($s -match "甜不辣")                    { return 0 }  # 日式食材，非辣味
   if ($s -match "特辣|变态辣|地狱辣|魔鬼辣") { return 3 }
+  if ($s -match "毛血旺|水煮|麻婆|夫妻肺片|香水鱼") { return 2 }  # 经典川菜，名无辣字也中辣
   if ($s -match "麻辣|中辣|辣度3|重辣")      { return 2 }
   if ($s -match "微辣|中微辣|少辣|轻辣")     { return 1 }
   if ($s -match "不辣|免辣|原汤|清汤")       { return 0 }
-  if ($s -match "辣")                        { return 1 }  # 笼统含辣兜底
+  if ($s -match "辣")                        { return 1 }  # 笼统含辣兜底（辣番茄等）
+  if ($s -match "番茄|三鲜")                 { return 0 }  # 放在辣之后，避免"辣番茄"被短路
   return 0
 }
 
-# ---------- 4) 素食推断（保守：仅明确关键词才标素） ----------
+# ---------- 4) 素食推断（明确素食材关键词；荤食材优先级更高，见 inferMain） ----------
+$vegKeywords = "素|菠菜|青菜|小白菜|上海青|鸡毛菜|生菜|油麦菜|空心菜|包菜|紫甘蓝|白菜|西兰花|花菜|菜花|土豆|马铃薯|藕|莲藕|山药|冬瓜|南瓜|黄瓜|丝瓜|苦瓜|西葫芦|萝卜|胡萝卜|茄子|番茄|西红柿|玉米|青豆|豌豆|毛豆|豆角|四季豆|豇豆|荷兰豆|芹菜|西芹|韭菜|蒜苔|蒜苗|青椒|尖椒|彩椒|莴笋|竹笋|芦笋|豆芽|豆苗|菌|菇|木耳|银耳|海带|紫菜|粉条|粉丝|面筋|腐竹|豆皮|千叶豆腐|豆腐|豆花|豆浆|牛奶|酸奶|苕皮|凉皮|凉粉|腰果|牛油果|牛蒡|鱼腥草|蔬菜|时蔬|地三鲜|水果|沙拉|粥|莲子|馒头|花卷|包子（素）"
 function inferVeg($name) {
-  $vegKeywords = "素|菠菜|青菜|白菜|土豆丝|西兰花|豆腐|番茄|鸡蛋|蛋|玉米|南瓜|银耳|莲子|粥|沙拉|水果|牛奶|酸奶|豆花|豆浆|馒头|花卷|包子（素）"
   return ($name -match $vegKeywords)
+}
+
+# ---------- 4.1) 主料推断（只分荤/素，蛋算荤——用户规则） ----------
+# 先删「名字像荤、其实是素」的食材，再判荤，最后才看素关键词。
+# 否则「白菜猪肉水饺」会被「白菜」抢先判素（2026-10-22 审计出 54 道误标）。
+$vegLookalikes = "鸡腿菇|鸡枞菌|牛肝菌|羊肚菌|蟹味菇|贝贝南瓜|鱼腥草|面筋|腰果|牛油果|牛蒡|鸡毛菜"
+function inferMain($name) {
+  $n = $name -replace "鱼香", ""      # 川菜味型，不含鱼
+  if ($n -match "荤") { return "荤" }  # 一荤两素/两荤两素等套餐
+  if ($n -match "素鸡|素鸭|素肉|素丸子|素肠|素火腿|素排") { return "素" }
+  $m = $n -replace $vegLookalikes, ""
+  if ($m -match "蛋|卵") { return "荤" }
+  if ($m -match "肉|猪|牛|羊|鸡|鸭|鹅|鱼|虾|蟹|贝|丸|肠|排骨|火腿|培根|腊|翅|腿|蹄|肚|肝|腰|筋|鱿|蚝|蛤|螺|蛙|鳝|泥鳅|花甲|蛏|蚬|蚌|渔") { return "荤" }
+  if ($n -match "素") { return "素" }  # 名字明确写了「素」的馅料/菜品（素三鲜水饺、素包子）
+  if ($m -match "抄手|馄饨|云吞|水饺|饺子|锅贴|烧麦") { return "荤" }  # 默认肉馅，名字没写素就不当素菜
+  if (inferVeg $n) { return "素" }
+  return "荤"
+}
+
+# ---------- 4.2) 分量推断（小份/常规/大份，为「预算→份量」推荐留结构位） ----------
+function inferPortion($name, $note) {
+  $s = "$name $note"
+  if ($s -match "小份|半份|小碗|一两|mini") { return "small" }
+  if ($s -match "大份|加大|加量|大碗|三两") { return "large" }
+  return "regular"
 }
 
 # ---------- 5) 图标映射 ----------
@@ -89,6 +121,8 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
   $stallName = $m.shop_name
   $canteen = "商业街"
   if ($stallName -match "_(.+)$") { $canteen = $Matches[1] + "餐厅" }
+  # 仅保留汇百味 / 北山苑（2026-10-22 用户决定：商业街的古茗、古春堂等全部不进推荐池）
+  if ($canteen -notmatch "汇百味|北山苑") { continue }
 
   foreach ($f in $m.foods) {
     if (-not $f) { continue }
@@ -106,14 +140,19 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     $rawName = $f.food_name
     $cleanName = $rawName -replace $junkEmojis, "" -replace "^\s+|\s+$", ""
     if ($cleanName.Length -eq 0) { continue }
+    # 米饭单点不是菜（用户既定规则：只推荐主食菜品）
+    if ($cleanName -match "^(米饭|白米饭)$") { continue }
 
     $priceCent = if ($f.food_discount_price) { $f.food_discount_price } else { $f.food_price }
     $price = [math]::Round($priceCent / 100, 2)
     if ($price -le 0 -or $price -gt 60) { continue }
 
     $cat = mapCategory $group $cleanName
+    # 糖水铺/奶茶店档口残留的「其他」类菜品兜底为甜品饮品（名字多为杨枝甘露等无关键词甜点）
+    if ($cat -eq "其他" -and ($stallName -match "古春堂|糖水铺|古茗")) { $cat = "甜品饮品" }
     $spicy = inferSpicy $cleanName $f.food_introduce
-    $veg = inferVeg $cleanName
+    $main  = inferMain $cleanName
+    $veg   = ($main -eq "素")   # 与主料保持一致（蛋算荤）
     $icon = $iconMap[$cat]; if (-not $icon) { $icon = "utensils" }
     $cal = $calMap[$cat]; if (-not $cal) { $cal = 500 }
 
@@ -128,6 +167,11 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
       if ($f.food_introduce -match "鲜")  { $tasteTags += "鲜香" }
       if ($f.food_introduce -match "清淡"){ $tasteTags += "清淡" }
     }
+    # 菜名口味关键词：甜味系（含鱼香/糖醋/宫保/蜜汁等咸甜口）与甜品饮品兜底
+    if ($cleanName -match "鱼香|糖醋|宫保|蜜汁|茄汁|拔丝|甜|双皮奶|龟苓膏|汤圆|布丁|冰粉|西米露|糖水|蛋糕|红豆沙|绿豆沙|银耳") {
+      if (-not ($tasteTags -contains "甜")) { $tasteTags += "甜" }
+    }
+    if ($cat -eq "甜品饮品" -and -not ($tasteTags -contains "甜") -and $cleanName -notmatch "咸|卤|辣") { $tasteTags += "甜" }
     if ($tasteTags.Count -eq 0) { $tasteTags = @("咸香") }
 
     $autoTags = @()
@@ -153,6 +197,8 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
       desc      = $desc
       veg       = $veg
       spicy     = $spicy
+      main      = $main
+      portion   = (inferPortion $cleanName "")
       # 扩展字段（前端可用）
       stall     = $stallName
       canteen   = $canteen
@@ -183,6 +229,11 @@ if (Test-Path $manualPath) {
   $id = 10000
   foreach ($d in $dishes) { $d.id = $id; $id++ }
   Write-Host "合并线下录入：$($manual.Count) 道，合并后总计 $($dishes.Count) 道" -ForegroundColor Cyan
+}
+
+# ---------- 6.8) 档口名显示清理：去掉「_食堂」后缀（canteen 字段已单独存食堂名） ----------
+foreach ($d in $dishes) {
+  if ($d.stall -match "^([^_]+)_") { $d.stall = $Matches[1] }
 }
 
 # ---------- 7) 输出 JS ----------
