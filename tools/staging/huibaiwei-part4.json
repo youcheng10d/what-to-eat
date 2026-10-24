@@ -1,0 +1,27 @@
+{
+  "photos": [
+    {
+      "file": "IMG20261023181524.jpg",
+      "contentType": "menu_board",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "脆香鸭",
+          "group": "套餐",
+          "items": [
+            { "name": "脆香鸭饭", "priceText": "15元", "price": 15, "note": "米饭+素菜+香料+可乐" },
+            { "name": "脆香鸭腿", "priceText": "15元", "price": 15, "note": "米饭+素菜+香料+可乐" }
+          ]
+        },
+        {
+          "stall": "脆香鸭",
+          "group": "单点",
+          "items": [
+            { "name": "炸全鸭", "priceText": "28元", "price": 28, "note": "高温现烤整只" }
+          ]
+        }
+      ],
+      "uncertain": []
+    }
+  ]
+}

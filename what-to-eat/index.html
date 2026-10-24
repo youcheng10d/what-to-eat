@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="吃嘛 —— 拯救干饭人的选择困难症，从 1055 道真实食堂菜品里替你做决定。" />
+  <meta name="description" content="吃嘛 —— 拯救干饭人的选择困难症，从 1143 道真实食堂菜品里替你做决定。" />
   <title>吃嘛 · 拯救选择困难症</title>
-  <link rel="stylesheet" href="styles.css?v=20261022-12" />
+  <link rel="stylesheet" href="styles.css?v=20261024-6" />
 </head>
 <body>
   <div class="app">
@@ -35,14 +35,24 @@
         <button type="button" class="chip" data-add="想吃面食">来碗面</button>
         <button type="button" class="chip" data-add="清淡养生">清淡养生</button>
       </div>
+      <div class="pref-foot">
+        <button type="button" id="profileBtn" class="ghost-btn compact">建立口味档案</button>
+        <p id="profileSummary" class="profile-summary" hidden></p>
+      </div>
     </section>
 
     <!-- 决定按钮 -->
-    <button type="button" id="decide" class="decide reveal" style="--d:3">
-      <svg class="dice-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg>
-      <span class="spinner" aria-hidden="true"></span>
-      <span id="decideText">替我决定！</span>
-    </button>
+    <div class="actions reveal" style="--d:3">
+      <button type="button" id="decide" class="decide">
+        <svg class="dice-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg>
+        <span class="spinner" aria-hidden="true"></span>
+        <span id="decideText">替我决定！</span>
+      </button>
+      <button type="button" id="novelty" class="ghost-btn novelty-btn">
+        <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
+        试试新的！
+      </button>
+    </div>
 
     <!-- 结果区 -->
     <section id="result" class="reveal" style="--d:4" aria-live="polite">
@@ -56,13 +66,73 @@
     <!-- 页脚 -->
     <footer class="foot reveal" style="--d:5">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      数据来自汇百味 + 北山苑餐厅菜单与线下档口实拍（1055 道，持续扩充中） · 卡路里为品类估算值，仅供参考
+      数据来自汇百味 + 北山苑餐厅菜单与线下档口实拍（1143 道，持续扩充中） · 卡路里为品类估算值，仅供参考
     </footer>
   </div>
 
-  <script src="mock.js?v=20261022-12" defer></script>
-  <script src="data/data.js?v=20261022-12" defer></script>
-  <script src="api.js?v=20261022-12" defer></script>
-  <script src="app.js?v=20261022-12" defer></script>
+  <!-- 口味档案弹窗（首次使用可跳过） -->
+  <div class="modal" id="profileModal" hidden>
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <div class="modal-head">
+        <div>
+          <h2 id="profileTitle">先认识一下你的口味</h2>
+          <p>选几项就好，随时可以改；不想选也可以直接跳过。</p>
+        </div>
+        <button type="button" class="modal-x" data-close="1" aria-label="关闭">×</button>
+      </div>
+      <div class="modal-body">
+        <section class="field">
+          <h3>喜欢的口味 <span>可多选</span></h3>
+          <div class="picks" id="flavorChips">
+            <button type="button" class="pick" data-value="辣" aria-pressed="false">辣</button>
+            <button type="button" class="pick" data-value="麻" aria-pressed="false">麻</button>
+            <button type="button" class="pick" data-value="酸甜" aria-pressed="false">酸甜</button>
+            <button type="button" class="pick" data-value="咸鲜" aria-pressed="false">咸鲜</button>
+            <button type="button" class="pick" data-value="清淡" aria-pressed="false">清淡</button>
+            <button type="button" class="pick" data-value="甜" aria-pressed="false">甜</button>
+          </div>
+        </section>
+        <section class="field">
+          <h3>荤素倾向</h3>
+          <div class="seg" id="mainSeg">
+            <button type="button" class="seg-btn" data-value="any" aria-pressed="true">都行</button>
+            <button type="button" class="seg-btn" data-value="veg" aria-pressed="false">偏素</button>
+            <button type="button" class="seg-btn" data-value="meat" aria-pressed="false">无肉不欢</button>
+          </div>
+        </section>
+        <section class="field">
+          <h3>每顿预算</h3>
+          <div class="seg" id="budgetSeg">
+            <button type="button" class="seg-btn" data-value="10" aria-pressed="false">≤10 元</button>
+            <button type="button" class="seg-btn" data-value="10-15" aria-pressed="false">10-15 元</button>
+            <button type="button" class="seg-btn" data-value="15-20" aria-pressed="false">15-20 元</button>
+            <button type="button" class="seg-btn" data-value="any" aria-pressed="true">不限</button>
+          </div>
+        </section>
+        <section class="field">
+          <h3>避雷 <span>可不填</span></h3>
+          <input type="text" id="avoidInput" placeholder="例如：香菜、肥肉、葱" />
+        </section>
+        <section class="field">
+          <h3>显示模式</h3>
+          <div class="seg" id="modeSeg">
+            <button type="button" class="seg-btn" data-value="1" aria-pressed="true">单卡</button>
+            <button type="button" class="seg-btn" data-value="3" aria-pressed="false">三卡</button>
+          </div>
+          <p class="field-hint">三卡一次给三个不同档口，点「整组换一个」一起刷新。</p>
+        </section>
+      </div>
+      <div class="modal-foot">
+        <button type="button" class="ghost-btn compact" id="profileSkip">先跳过，直接点菜</button>
+        <button type="button" class="decide compact" id="profileSave">保存偏好</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="mock.js?v=20261024-6" defer></script>
+  <script src="data/data.js?v=20261024-6" defer></script>
+  <script src="api.js?v=20261024-6" defer></script>
+  <script src="app.js?v=20261024-6" defer></script>
 </body>
 </html>

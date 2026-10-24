@@ -36,6 +36,8 @@ $catMap = @{
 function mapCategory($group, $name) {
   # 菜名优先（更准）
   if ($name -match "盖饭|拌饭|炒饭|煲仔|木桶饭|铁板饭|焗饭|抓饭|饭$") { return "盖浇饭" }
+  if ($name -match "焖面|焖饼") { return "面食" }
+  if ($name -match "石锅") { return "盖浇饭" }  # 石锅xx 都是带饭套餐（焖面已在上一行归面食）
   if ($name -match "米线|面条|拉面|小面|拌面|汤面|炒面|面$|面块|粉$|米粉|河粉|酸辣粉|螺蛳粉|馄饨|抄手|水饺|云吞|饵丝") { return "面食" }
   if ($name -match "麻辣烫|冒菜|香锅|串串香|干锅|麻辣拌|毛血旺|麻辣鱼|麻辣什锦") { return "麻辣系列" }
   if ($name -match "沙拉|轻食") { return "轻食沙拉" }
@@ -58,7 +60,7 @@ function inferSpicy($name, $desc) {
   $s = "$name $desc"
   if ($s -match "甜不辣")                    { return 0 }  # 日式食材，非辣味
   if ($s -match "特辣|变态辣|地狱辣|魔鬼辣") { return 3 }
-  if ($s -match "毛血旺|水煮|麻婆|夫妻肺片|香水鱼") { return 2 }  # 经典川菜，名无辣字也中辣
+  if ($s -match "毛血旺|水煮|麻婆|夫妻肺片|香水鱼|冒菜|干锅") { return 2 }  # 经典川菜，名无辣字也中辣
   if ($s -match "麻辣|中辣|辣度3|重辣")      { return 2 }
   if ($s -match "微辣|中微辣|少辣|轻辣")     { return 1 }
   if ($s -match "不辣|免辣|原汤|清汤")       { return 0 }
@@ -96,6 +98,24 @@ function inferPortion($name, $note) {
   if ($s -match "小份|半份|小碗|一两|mini") { return "small" }
   if ($s -match "大份|加大|加量|大碗|三两") { return "large" }
   return "regular"
+}
+
+# ---------- 4.3) 六味标签（v2.0：辣/麻/酸甜/咸鲜/清淡/甜，可多选） ----------
+# 咸鲜按做法严格标（卤/酱/蒸/炖/烧/白灼），不用「咸香」兜底；烧麦不算烧。
+function inferFlavors($name, $spicy, $cat, $taste) {
+  $fl = @()
+  if ($spicy -ge 1) { $fl += "辣" }
+  if ($name -match "麻辣|麻婆|花椒|藤椒|椒麻|水煮|夫妻肺片") {
+    if ($fl -notcontains "辣") { $fl += "辣" }
+    $fl += "麻"
+  }
+  $sweet = ($taste -contains "甜") -or ($cat -eq "甜品饮品" -and $name -notmatch "咸|卤|辣") -or
+           ($name -match "鱼香|糖醋|宫保|蜜汁|茄汁|拔丝|甜|双皮奶|龟苓膏|汤圆|布丁|冰粉|西米露|糖水|蛋糕|红豆沙|绿豆沙|银耳|咕咾|菠萝")
+  if ($sweet) { $fl += "甜" }
+  if ($name -match "糖醋|酸甜|咕咾|茄汁|番茄|西红柿|菠萝|山楂|酸梅|柠檬|百香果|酸奶") { $fl += "酸甜" }
+  if ($name -match "卤|酱|蒸|炖|烧(?!麦|烤)|白灼") { $fl += "咸鲜" }
+  if (($taste -contains "清淡") -or ($name -match "清汤|白汤|清蒸|白灼|粥")) { $fl += "清淡" }
+  return @($fl | Select-Object -Unique)
 }
 
 # ---------- 5) 图标映射 ----------
@@ -182,7 +202,8 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     if ($veg) { $autoTags += "素食友好" }
     if ($cal -ge 500) { $autoTags += "管饱" }
 
-    $descBase = if ($f.food_introduce) { $f.food_introduce } else { "「$group」之选" }
+    $descBase = if ($f.food_introduce -and $f.food_introduce -notmatch "此处为菜品描述") { $f.food_introduce } else { "「$group」之选" }
+    $descBase = $descBase -replace "[，,。；;、\s]+$", ""  # 去掉结尾标点，避免「，，约 xx kcal」
     $desc = $descBase + "，约 $cal kcal"
 
     $dishes += [PSCustomObject]@{
@@ -191,6 +212,7 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
       category  = $cat
       icon      = $icon
       taste     = $tasteTags
+      flavors   = (inferFlavors $cleanName $spicy $cat $tasteTags)
       price     = $price
       cal       = $cal
       tags      = $autoTags
@@ -236,14 +258,35 @@ foreach ($d in $dishes) {
   if ($d.stall -match "^([^_]+)_") { $d.stall = $Matches[1] }
 }
 
+# ---------- 6.9) 档口级元数据：人气菜占比（v2.0 推荐加成 = 2 × hotRate） ----------
+$stallMeta = @{}
+foreach ($g in ($dishes | Group-Object stall)) {
+  $cnt = $g.Count
+  $hot = @($g.Group | Where-Object { $_.tags -contains "人气" }).Count
+  $canteen = [string]($g.Group | Select-Object -First 1).canteen
+  $floor = if ($canteen -match "汇百味") { "2楼" } elseif ($canteen -match "北山苑") { "3楼" } else { "" }
+  $stallMeta[$g.Name] = [PSCustomObject]@{
+    dishCount = $cnt
+    hotCount  = $hot
+    hotRate   = if ($cnt) { [math]::Round($hot / $cnt, 3) } else { 0 }
+    canteen   = $canteen
+    floor     = $floor
+  }
+}
+
 # ---------- 7) 输出 JS ----------
 $jsBody = $dishes | ConvertTo-Json -Depth 10
+# PS 5.1 的 ConvertTo-Json 会把单元素数组压成字符串、空数组写成 {}，flavors 统一修回数组
+$jsBody = $jsBody -replace '"flavors":\s*\{\s*\}', '"flavors": []'
+$jsBody = $jsBody -replace '"flavors":\s*"([^"]*)"', '"flavors": ["$1"]'
+$metaBody = $stallMeta | ConvertTo-Json -Depth 5
 $js = @"
 // data.js — 真实食堂菜品（自动从 LCSW API 清洗生成）
 // Source: $School ｜ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm")
 (function () {
   window.DB_REAL = {
     school: "$School",
+    stallMeta: $metaBody,
     dishes: $jsBody
   };
 })();

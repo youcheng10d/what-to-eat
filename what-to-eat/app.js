@@ -1,4 +1,4 @@
-// app.js — 状态管理 + 视图渲染（数据来自 mock.js，服务来自 api.js，图标为内联 Lucide SVG）
+// app.js — 状态管理 + 视图渲染（数据来自 data.js，服务来自 api.js，图标为内联 Lucide SVG）
 (function () {
   // Lucide v1.59.0 内联图标（根元素内的子元素）
   const ICONS = {
@@ -29,15 +29,42 @@
     `<svg class="ic" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ""}</svg>`;
 
   const $ = (sel) => document.querySelector(sel);
+  const $$ = (sel) => Array.from(document.querySelectorAll(sel));
   const els = {
     pref: $("#pref"),
     decide: $("#decide"),
     decideText: $("#decideText"),
+    novelty: $("#novelty"),
     result: $("#result"),
     date: $("#dateLine"),
+    profileBtn: $("#profileBtn"),
+    profileSummary: $("#profileSummary"),
+    modal: $("#profileModal"),
+    avoid: $("#avoidInput"),
+    profileSave: $("#profileSave"),
+    profileSkip: $("#profileSkip"),
   };
-  const state = { loading: false, lastId: null, slotTimer: null };
+  const state = {
+    loading: false,
+    profile: loadJSON("wte.profile", null),
+    feedback: loadJSON("wte.feedback", { stalls: {}, flavors: {}, categories: {}, clickedStalls: [] }),
+    recentStalls: loadJSON("wte.recentStalls", []),
+    lastCards: [],
+    slotTimer: null,
+  };
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function loadJSON(key, fallback) {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : fallback;
+    } catch (e) {
+      return fallback;
+    }
+  }
+  function saveJSON(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* 忽略隐私模式写入失败 */ }
+  }
 
   // —— 初始化：日期问候 + 偏好草稿回填 ——
   function initHeader() {
@@ -53,7 +80,7 @@
   els.pref.addEventListener("input", () => localStorage.setItem("wte.pref", els.pref.value));
 
   // —— 快捷偏好 chips：点击追加进输入框 ——
-  document.querySelectorAll(".chip").forEach((chip) =>
+  $$(".chip[data-add]").forEach((chip) =>
     chip.addEventListener("click", () => {
       const text = chip.dataset.add;
       const cur = els.pref.value.trim();
@@ -66,12 +93,96 @@
     })
   );
 
-  // —— 主流程：加载骨架（菜名轮换）→ 推荐卡片 ——
+  // —— 口味档案：一屏可跳过，跳过后从偏好面板随时进入 ——
+  const FLAVOR_LABELS = { "10": "≤10 元", "10-15": "10-15 元", "15-20": "15-20 元", any: "预算不限" };
+  const MAIN_LABELS = { any: "荤素都行", veg: "偏素", meat: "无肉不欢" };
+
+  function profileSummary() {
+    const p = state.profile;
+    if (!p) return "";
+    const bits = [];
+    if (p.flavors && p.flavors.length) bits.push(p.flavors.join("、"));
+    if (p.main && p.main !== "any") bits.push(MAIN_LABELS[p.main] || "");
+    bits.push(FLAVOR_LABELS[p.budget] || FLAVOR_LABELS.any);
+    bits.push(p.mode === 3 ? "三卡" : "单卡");
+    return bits.filter(Boolean).join(" · ");
+  }
+  function updateProfileUI() {
+    const has = !!state.profile;
+    els.profileBtn.textContent = has ? "调整口味档案" : "建立口味档案";
+    els.profileSummary.textContent = profileSummary();
+    els.profileSummary.hidden = !has;
+    els.profileSkip.textContent = has ? "取消" : "先跳过，直接点菜";
+  }
+
+  function setPick(group, value) {
+    $$(`${group} .pick, ${group} .seg-btn`).forEach((b) => {
+      b.setAttribute("aria-pressed", String(b.dataset.value === String(value)));
+    });
+  }
+  function getPick(group, fallback) {
+    const active = $(`${group} [aria-pressed="true"]`);
+    return active ? active.dataset.value : fallback;
+  }
+  function fillProfileForm() {
+    const p = state.profile || {};
+    $$("#flavorChips .pick").forEach((b) => {
+      b.setAttribute("aria-pressed", String((p.flavors || []).includes(b.dataset.value)));
+    });
+    setPick("#mainSeg", p.main || "any");
+    setPick("#budgetSeg", p.budget || "any");
+    setPick("#modeSeg", String(p.mode || 1));
+    els.avoid.value = p.avoid || "";
+  }
+  function openProfile() {
+    fillProfileForm();
+    els.modal.hidden = false;
+    requestAnimationFrame(() => els.modal.classList.add("is-open"));
+    document.body.classList.add("modal-open");
+  }
+  function closeProfile() {
+    els.modal.classList.remove("is-open");
+    document.body.classList.remove("modal-open");
+    setTimeout(() => { els.modal.hidden = true; }, 180);
+  }
+  function saveProfile() {
+    const profile = {
+      flavors: $$("#flavorChips .pick").filter((b) => b.getAttribute("aria-pressed") === "true").map((b) => b.dataset.value),
+      main: getPick("#mainSeg", "any"),
+      budget: getPick("#budgetSeg", "any"),
+      avoid: els.avoid.value.trim(),
+      mode: Number(getPick("#modeSeg", "1")) === 3 ? 3 : 1,
+    };
+    state.profile = profile;
+    saveJSON("wte.profile", profile);
+    localStorage.setItem("wte.profileSeen", "1");
+    updateProfileUI();
+    closeProfile();
+  }
+
+  els.profileBtn.addEventListener("click", openProfile);
+  els.profileSave.addEventListener("click", saveProfile);
+  els.profileSkip.addEventListener("click", () => {
+    localStorage.setItem("wte.profileSeen", "1");
+    closeProfile();
+  });
+  els.modal.addEventListener("click", (e) => {
+    if (e.target.closest("[data-close]")) { localStorage.setItem("wte.profileSeen", "1"); closeProfile(); }
+    const pick = e.target.closest("#flavorChips .pick");
+    if (pick) pick.setAttribute("aria-pressed", String(pick.getAttribute("aria-pressed") !== "true"));
+    const seg = e.target.closest(".seg-btn");
+    if (seg) setPick(`#${seg.closest(".seg").id}`, seg.dataset.value);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !els.modal.hidden) { localStorage.setItem("wte.profileSeen", "1"); closeProfile(); }
+  });
+
+  // —— 主流程：加载骨架 → 推荐卡片（单卡 1 张 / 三卡 3 张纵向堆叠）——
   function stopSlot() {
     if (state.slotTimer) { clearInterval(state.slotTimer); state.slotTimer = null; }
   }
-  function renderLoading() {
-    els.result.innerHTML = `
+  function skeletonCard(withSlot) {
+    return `
       <div class="dish-card is-loading" aria-busy="true">
         <div class="dish-head">
           <div class="sk" style="width:52px;height:52px;border-radius:16px"></div>
@@ -86,28 +197,34 @@
         </div>
         <div class="sk" style="height:14px;width:85%;border-radius:8px"></div>
         <div class="sk" style="height:14px;width:70%;border-radius:8px;margin-top:8px"></div>
-        <p class="slot-hint">正在翻找：<span id="slotName">…</span></p>
+        ${withSlot ? '<p class="slot-hint">正在翻找：<span id="slotName">…</span></p>' : ""}
       </div>`;
+  }
+  function renderLoading(count) {
+    const n = count === 3 ? 3 : 1;
+    els.result.innerHTML = `<div class="card-stack${n === 3 ? " is-multi" : ""}">${Array.from({ length: n }, (_, i) => skeletonCard(i === 0)).join("")}</div>`;
     if (reducedMotion) return;
-    const names = window.DB.dishes.map((d) => d.name);
+    const names = (window.DB_REAL && window.DB_REAL.dishes ? window.DB_REAL.dishes : window.DB.dishes).map((d) => d.name);
     const slot = $("#slotName");
+    if (!slot) return;
     state.slotTimer = setInterval(() => {
       slot.textContent = names[Math.floor(Math.random() * names.length)];
     }, 90);
   }
 
-  function renderResult(data) {
-    stopSlot();
-    const { dish: d, matched, reason, relaxed, relaxedNote } = data;
-    els.result.innerHTML = `
+  function cardHTML(card, idx, total) {
+    const { dish: d, matched, reason, relaxed, relaxedNote } = card;
+    const tastes = Array.isArray(d.taste) ? d.taste : [];
+    return `
       <article class="dish-card">
+        ${total > 1 ? `<div class="card-index">推荐 ${idx + 1} / ${total}</div>` : ""}
         <div class="dish-head">
           <div class="dish-badge">${icon(d.icon, 26)}</div>
           <div class="dish-title">
             <h2>${d.name}</h2>
             <div class="trow">
               <span class="ttag">${d.category}</span>
-              ${d.taste.map((t) => `<span class="ttag${t.includes("辣") ? " spicy" : ""}">${t}</span>`).join("")}
+              ${tastes.map((t) => `<span class="ttag${t.includes("辣") ? " spicy" : ""}">${t}</span>`).join("")}
             </div>
           </div>
         </div>
@@ -123,10 +240,38 @@
         </div>
         ${matched.length ? `<div class="match">${matched.map((m) => `<span class="mchip">${icon("check", 13)}${m}</span>`).join("")}</div>` : ""}
         <div class="dish-actions">
-          <button class="ghost-btn" id="reroll">${icon("refresh-cw", 16)}换一个</button>
+          <button class="ghost-btn pick-btn" data-action="pick" data-idx="${idx}">${icon("check", 16)}就这个</button>
         </div>
       </article>`;
-    state.lastId = d.id;
+  }
+
+  // 出结果后把第一张卡滚到舒服的位置，避免卡片卡在屏幕底部只露半截
+  function focusResult() {
+    const card = els.result.querySelector(".dish-card");
+    if (!card) return;
+    const rect = card.getBoundingClientRect();
+    const gap = 14;
+    if (rect.top >= gap && rect.top <= window.innerHeight * 0.32) return;
+    window.scrollTo({ top: Math.max(0, window.scrollY + rect.top - gap), behavior: reducedMotion ? "auto" : "smooth" });
+  }
+
+  function renderResult(data) {
+    stopSlot();
+    const cards = data.cards || [];
+    const multi = cards.length > 1;
+    els.result.innerHTML = `
+      <div class="card-stack${multi ? " is-multi" : ""}">${cards.map((c, i) => cardHTML(c, i, cards.length)).join("")}</div>
+      ${multi ? `<p class="swipe-hint">← 左右滑动，看看另外两张 →</p>` : ""}
+      <div class="group-actions">
+        <button class="ghost-btn" data-action="reroll">${icon("refresh-cw", 16)}${multi ? "整组换一个" : "换一个"}</button>
+      </div>`;
+    focusResult();
+    state.lastCards = cards;
+    cards.forEach((c) => {
+      if (c.dish && c.dish.stall) state.recentStalls.push(c.dish.stall);
+    });
+    state.recentStalls = state.recentStalls.slice(-10);
+    saveJSON("wte.recentStalls", state.recentStalls);
   }
 
   function renderError() {
@@ -139,16 +284,46 @@
       </div>`;
   }
 
-  async function roll() {
+  function recordPick(idx) {
+    const card = state.lastCards[idx];
+    if (!card || !card.dish) return;
+    const d = card.dish;
+    const fb = state.feedback;
+    if (!fb.stalls) fb.stalls = {};
+    if (!fb.flavors) fb.flavors = {};
+    if (!fb.categories) fb.categories = {};
+    if (!fb.clickedStalls) fb.clickedStalls = [];
+    if (d.stall) {
+      fb.stalls[d.stall] = (fb.stalls[d.stall] || 0) + 1;
+      if (!fb.clickedStalls.includes(d.stall)) fb.clickedStalls.push(d.stall);
+    }
+    const flavors = Array.isArray(d.flavors) ? d.flavors : (typeof d.flavors === "string" ? d.flavors.split("|") : []);
+    flavors.filter(Boolean).forEach((f) => { fb.flavors[f] = (fb.flavors[f] || 0) + 1; });
+    if (d.category) fb.categories[d.category] = (fb.categories[d.category] || 0) + 1;
+    saveJSON("wte.feedback", fb);
+    const btn = els.result.querySelector(`[data-action="pick"][data-idx="${idx}"]`);
+    if (btn) { btn.classList.add("is-picked"); btn.disabled = true; btn.innerHTML = `${icon("check", 16)}已记下`; }
+  }
+
+  async function roll({ novelty = false, excludeCurrent = false } = {}) {
     if (state.loading) return;
+    const mode = state.profile && state.profile.mode === 3 ? 3 : 1;
+    const excludeIds = excludeCurrent ? state.lastCards.map((c) => c.dish && c.dish.id).filter(Boolean) : [];
     state.loading = true;
     els.decide.disabled = true;
+    els.novelty.disabled = true;
     els.decide.classList.add("loading");
     els.decideText.textContent = "正在翻找菜谱…";
-    renderLoading();
+    renderLoading(mode);
     try {
-      const res = await window.API.recommendDish(els.pref.value.trim(), {
-        excludeIds: state.lastId ? [state.lastId] : [],
+      const res = await window.API.recommend({
+        text: els.pref.value.trim(),
+        profile: state.profile,
+        feedback: state.feedback,
+        excludeIds,
+        recentStalls: state.recentStalls,
+        mode,
+        novelty,
       });
       renderResult(res.data);
     } catch (err) {
@@ -156,16 +331,24 @@
     } finally {
       state.loading = false;
       els.decide.disabled = false;
+      els.novelty.disabled = false;
       els.decide.classList.remove("loading");
       els.decideText.textContent = "替我决定！";
     }
   }
 
-  els.decide.addEventListener("click", roll);
+  els.decide.addEventListener("click", () => roll());
+  els.novelty.addEventListener("click", () => roll({ novelty: true, excludeCurrent: true }));
   els.result.addEventListener("click", (e) => {
-    if (e.target.closest("#reroll")) roll();
+    const pick = e.target.closest('[data-action="pick"]');
+    if (pick) { recordPick(Number(pick.dataset.idx)); return; }
+    if (e.target.closest('[data-action="reroll"]') || e.target.closest("#reroll")) roll({ excludeCurrent: true });
   });
 
   initHeader();
   initDraft();
+  updateProfileUI();
+  if (!state.profile && !localStorage.getItem("wte.profileSeen")) {
+    setTimeout(openProfile, 450);
+  }
 })();

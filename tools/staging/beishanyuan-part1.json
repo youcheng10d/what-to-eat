@@ -1,709 +1,1592 @@
 {
-  "photos": [
-    {
-      "file": "Image_1447100380461097.jpg",
-      "contentType": "stall_sign",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "香灶 XIANGZAO 火锅冒菜",
-          "group": "",
-          "items": [
-            {"name":"荤素同价（称重计价）","priceText":"2.19元/50g","price":2.19,"note":"按50g单价称重计费；红幅写“是牛油火锅味！火锅油碟是免费的！”"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "冷藏展示柜内具体菜品完全看不清",
-        "招牌右侧小字（火锅后面的字）被裁切，疑似“火锅冒菜/火锅烫”",
-        "右上方电子条屏有“经典鲜味”等字但菜品名无法辨认"
-      ]
-    },
-    {
-      "file": "Image_1447102362482711.jpg",
-      "contentType": "menu_board",
-      "quality": "blurry",
-      "sections": [
-        {
-          "stall": "犟稻 超级酱骨饭 SUPER SAUCE BONE RICE（NO.911 重庆城市科技学院店）",
-          "group": "套餐",
-          "items": [
-            {"name":"超级酱大骨套餐","priceText":"□元","price":0,"note":"价格看不清"},
-            {"name":"韩式甜辣鸡套餐","priceText":"□元","price":0,"note":"价格看不清"},
-            {"name":"肉酱土豆泥套餐","priceText":"□元","price":0,"note":"价格看不清"}
-          ]
-        },
-        {
-          "stall": "犟稻 超级酱骨饭 SUPER SAUCE BONE RICE（NO.911 重庆城市科技学院店）",
-          "group": "右侧电子屏（疑为五谷鱼粉类）",
-          "items": [
-            {"name":"玉米渔粉","priceText":"11元","price":11,"note":""},
-            {"name":"招牌渔粉","priceText":"12元","price":12,"note":""},
-            {"name":"□渔粉","priceText":"12元","price":12,"note":"菜名第二字看不清"},
-            {"name":"□渔粉","priceText":"12元","price":12,"note":"菜名看不清"},
-            {"name":"香辣渔粉","priceText":"12元","price":12,"note":"菜名前二字不确定"},
-            {"name":"火锅味渔粉","priceText":"13元","price":13,"note":"菜名不确定"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "档口主张“酱骨加浇汤 拌饭会更香”“米饭免费续 汤品免费喝”",
-        "左侧套餐价格全部看不清",
-        "中间小字菜单（状元□肉套餐等）基本无法辨认",
-        "右侧电子屏整体模糊，菜名与价格对应关系不确定，可能属于隔壁档口"
-      ]
-    },
-    {
-      "file": "Image_1447112674001196.jpg",
-      "contentType": "menu_board",
-      "quality": "blurry",
-      "sections": [
-        {
-          "stall": "擂椒拌饭（饭要拌 擂椒酱 现炒现拌）",
-          "group": "招牌",
-          "items": [
-            {"name":"农家一碗香","priceText":"13.8元/份","price":13.8,"note":""}
-          ]
-        },
-        {
-          "stall": "擂椒拌饭（饭要拌 擂椒酱 现炒现拌）",
-          "group": "擂椒现拌系列",
-          "items": [
-            {"name":"肉沫土豆","priceText":"□元/份","price":0,"note":"价格看不清"},
-            {"name":"肉沫茄子","priceText":"12.8元/份","price":12.8,"note":"价格存疑"},
-            {"name":"□","priceText":"12.8元/份","price":12.8,"note":"菜名看不清"},
-            {"name":"□","priceText":"12.8元/份","price":12.8,"note":"菜名看不清"},
-            {"name":"□","priceText":"13.8元/份","price":13.8,"note":"菜名看不清"}
-          ]
-        },
-        {
-          "stall": "擂椒拌饭（饭要拌 擂椒酱 现炒现拌）",
-          "group": "现点现擂系列",
-          "items": [
-            {"name":"□鸡□","priceText":"12.8元/份","price":12.8,"note":"菜名部分看不清"},
-            {"name":"□鸭□","priceText":"12.8元/份","price":12.8,"note":"菜名部分看不清"},
-            {"name":"□","priceText":"13.8元/份","price":13.8,"note":"菜名看不清"},
-            {"name":"□","priceText":"14.8元/份","price":14.8,"note":"菜名看不清"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "菜单板字小且被顾客遮挡，绝大多数菜名无法可靠辨认",
-        "中间“擂椒鸡□系列”菜名基本看不清",
-        "价格大致在11.8/12.8/13.8/14.8元/份档位，但菜名与价格对应关系不可靠",
-        "建议重拍"
-      ]
-    },
-    {
-      "file": "Image_1447114989726664.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "滑蛋饭",
-          "group": "滑蛋饭系列（左列）",
-          "items": [
-            {"name":"双椒回锅肉滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"鱼香肉丝滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"香菇鸡滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"双椒肉丝滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"黑椒□滑蛋饭","priceText":"13元/份","price":13,"note":"菜名中间字看不清"},
-            {"name":"□肉丝滑蛋饭","priceText":"13元/份","price":13,"note":"菜名首字看不清"},
-            {"name":"泡椒□滑蛋饭","priceText":"13元/份","price":13,"note":"菜名中间字看不清"},
-            {"name":"葱爆肉丝滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"双椒香肠滑蛋饭","priceText":"13元/份","price":13,"note":""}
-          ]
-        },
-        {
-          "stall": "滑蛋饭",
-          "group": "滑蛋饭系列（右列）",
-          "items": [
-            {"name":"烧椒肉丝滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"青菜肉丝滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"烧椒回锅肉滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"韭菜肉丝滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"泡椒鱼片滑蛋饭","priceText":"13元/份","price":13,"note":""},
-            {"name":"烧椒□滑蛋饭","priceText":"13元/份","price":13,"note":"菜名中间字看不清"},
-            {"name":"□肉片滑蛋饭","priceText":"14元/份","price":14,"note":"菜名首字看不清"},
-            {"name":"孜然肉片滑蛋饭","priceText":"14元/份","price":14,"note":""},
-            {"name":"青菜牛肉滑蛋饭","priceText":"16元/份","price":16,"note":""}
-          ]
-        },
-        {
-          "stall": "滑蛋饭",
-          "group": "其他",
-          "items": [
-            {"name":"打包费","priceText":"1元","price":1,"note":"打包附加费"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "右下“新/鲜/食/材”宣传语旁菜品图配文未录",
-        "最右侧露出另一块菜单边缘（香辣干□鸡等），不属于本档口完整画面"
-      ]
-    },
-    {
-      "file": "Image_1447120487240829.jpg",
-      "contentType": "menu_board",
-      "quality": "blurry",
-      "sections": [
-        {
-          "stall": "一万家干锅",
-          "group": "干锅系列",
-          "items": [
-            {"name":"香辣干锅鸡","priceText":"15元","price":15,"note":"配图菜，价格存疑"},
-            {"name":"干锅香酥□","priceText":"15元","price":15,"note":"菜名尾字看不清"},
-            {"name":"五香干锅□","priceText":"15元","price":15,"note":"菜名尾字看不清"}
-          ]
-        },
-        {
-          "stall": "一万家干锅",
-          "group": "午餐现炒",
-          "items": [
-            {"name":"素菜米饭免费续","priceText":"0元","price":0,"note":"米饭/素菜免费续加规则"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "中间“午餐现炒/营养套餐饭”小字菜单基本看不清",
-        "右侧两列菜品名与价格（约11.9-13.9元）无法可靠辨认",
-        "干锅三个配图菜的价格标注位置近，均疑似15元，建议重拍确认"
-      ]
-    },
-    {
-      "file": "Image_1447123268353588.jpg",
-      "contentType": "menu_board",
-      "quality": "blurry",
-      "sections": [
-        {
-          "stall": "曾记面食（爱这碗 地道重庆味）",
-          "group": "汤面系列",
-          "items": [
-            {"name":"汤面（□面/刀削面/米线）","priceText":"7元","price":7,"note":"二两","priceText2":"11元","note2":"三两"},
-            {"name":"□汤面","priceText":"8元","price":8,"note":"二两；菜名看不清"},
-            {"name":"□汤面","priceText":"10元","price":10,"note":"二两；菜名看不清"},
-            {"name":"□汤面","priceText":"12元","price":12,"note":"二两；菜名看不清"},
-            {"name":"□汤面","priceText":"13元","price":13,"note":"二两；菜名看不清"}
-          ]
-        },
-        {
-          "stall": "曾记面食（爱这碗 地道重庆味）",
-          "group": "干拌系列",
-          "items": [
-            {"name":"□干拌面","priceText":"7元","price":7,"note":"二两；菜名看不清"},
-            {"name":"□干拌面","priceText":"8元","price":8,"note":"二两；菜名看不清"},
-            {"name":"□干拌面","priceText":"9元","price":9,"note":"二两；菜名看不清"}
-          ]
-        },
-        {
-          "stall": "曾记面食（爱这碗 地道重庆味）",
-          "group": "凉面系列",
-          "items": [
-            {"name":"凉面/凉皮","priceText":"7元/二两 9元/三两","price":7,"note":"二两7元 三两9元"},
-            {"name":"凉面凉皮双拼","priceText":"7元/二两 10元/三两","price":7,"note":"二两7元 三两10元"},
-            {"name":"□凉面","priceText":"10元/二两 12元/三两","price":10,"note":"二两10元 三两12元；菜名首字看不清"},
-            {"name":"□稀饭","priceText":"2.5元","price":2.5,"note":"菜名首字看不清"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "“城科10年老店 大碗面不够吃，可免费续面”",
-        "特色招牌区（左上配图）菜名完全看不清",
-        "汤面/干拌系列菜名小字大多无法辨认，仅价格档可见",
-        "底部红色区域“手工□/烤面筋”等12-15元档菜名看不清",
-        "建议重拍"
-      ]
-    },
-    {
-      "file": "Image_1447125855313379.jpg",
-      "contentType": "menu_board",
-      "quality": "blurry",
-      "sections": [
-        {
-          "stall": "浏阳蒸碗（非遗浏阳蒸碗 小碗荤素自选）",
-          "group": "蒸菜自选",
-          "items": [
-            {"name":"素菜（自选）","priceText":"2-4元","price":2,"note":"素菜价格区间2-4元"},
-            {"name":"荤菜（自选）","priceText":"6-12元","price":6,"note":"荤菜价格区间6-12元"},
-            {"name":"□（蒸菜）","priceText":"2元","price":2,"note":"价签可见、菜名看不清"},
-            {"name":"□（蒸菜）","priceText":"3元","price":3,"note":"价签可见、菜名看不清"},
-            {"name":"□（蒸菜）","priceText":"4元","price":4,"note":"价签可见、菜名看不清"},
-            {"name":"□（蒸菜）","priceText":"5元","price":5,"note":"价签可见、菜名看不清"},
-            {"name":"□（蒸菜）","priceText":"8元","price":8,"note":"价签可见、菜名看不清"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "菜名主要在蒸碗实物标签和电子屏上，均无法辨认",
-        "右侧还有“鸡公煲”小屏边缘，不完整",
-        "建议重拍近景"
-      ]
-    },
-    {
-      "file": "Image_1447127848821659.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "开饭了",
-          "group": "套餐",
-          "items": [
-            {"name":"一荤一素","priceText":"8元","price":8,"note":""},
-            {"name":"一荤两素","priceText":"9元","price":9,"note":""},
-            {"name":"两荤","priceText":"9元","price":9,"note":""},
-            {"name":"两荤一素","priceText":"11元","price":11,"note":""},
-            {"name":"两荤两素","priceText":"13元","price":13,"note":""},
-            {"name":"三荤","priceText":"13元","price":13,"note":""}
-          ]
-        }
-      ],
-      "uncertain": [
-        "右侧菜品展示图可见但具体菜名无法辨认",
-        "“营养美味 健康新鲜”为宣传语"
-      ]
-    },
-    {
-      "file": "Image_1447130990959314.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "你过来鸭 COME OVER DUCK 烤鸭饭（美味佳肴）",
-          "group": "铁板/烤鸭饭",
-          "items": [
-            {"name":"铁板烤鸭","priceText":"13元/份","price":13,"note":""},
-            {"name":"铁板鸡排","priceText":"13元/份","price":13,"note":""},
-            {"name":"铁板里脊","priceText":"13元/份","price":13,"note":""},
-            {"name":"原味烤鸭","priceText":"14元/份","price":14,"note":""},
-            {"name":"铁板五花肉","priceText":"15元/份","price":15,"note":""}
-          ]
-        },
-        {
-          "stall": "（左侧相邻档口屏幕，疑似炒饭类）",
-          "group": "炒饭",
-          "items": [
-            {"name":"蛋炒饭","priceText":"10.8元","price":10.8,"note":"左侧露出屏幕，归属档口不明"},
-            {"name":"□炒饭","priceText":"10.8元","price":10.8,"note":"菜名首字看不清，归属档口不明"},
-            {"name":"□丝蛋炒饭","priceText":"10.8元","price":10.8,"note":"菜名部分看不清，归属档口不明"},
-            {"name":"炒饭","priceText":"12元","price":12,"note":"菜名前缀看不清，归属档口不明"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "左侧露出的炒饭屏幕可能属于另一档口，未能拍到其招牌"
-      ]
-    },
-    {
-      "file": "Image_1447132815339991.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "小炒·公社食堂",
-          "group": "盖饭/小炒（左一列）",
-          "items": [
-            {"name":"土豆肉丝","priceText":"盖饭11元 小炒16元","price":11,"note":"盖饭"},
-            {"name":"土豆肉丝","priceText":"盖饭11元 小炒16元","price":16,"note":"小炒"},
-            {"name":"鱼香茄子","priceText":"盖饭11元 小炒16元","price":11,"note":"盖饭"},
-            {"name":"鱼香茄子","priceText":"盖饭11元 小炒16元","price":16,"note":"小炒"},
-            {"name":"韭菜炒鸡蛋","priceText":"盖饭11元 小炒16元","price":11,"note":"盖饭"},
-            {"name":"韭菜炒鸡蛋","priceText":"盖饭11元 小炒16元","price":16,"note":"小炒"},
-            {"name":"西红柿炒鸡蛋","priceText":"盖饭11元 小炒16元","price":11,"note":"盖饭"},
-            {"name":"西红柿炒鸡蛋","priceText":"盖饭11元 小炒16元","price":16,"note":"小炒"},
-            {"name":"苕皮肉丝","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"苕皮肉丝","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"青椒肉丝","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"青椒肉丝","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"宫保鸡丁","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"宫保鸡丁","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"青椒鸡蛋","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"青椒鸡蛋","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"}
-          ]
-        },
-        {
-          "stall": "小炒·公社食堂",
-          "group": "盖饭/小炒（左二列）",
-          "items": [
-            {"name":"鱼香肉丝","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"鱼香肉丝","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"辣子鸡丁","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"辣子鸡丁","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"莴笋炒肉","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"莴笋炒肉","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"蒜苔炒肉","priceText":"盖饭12元 小炒18元","price":12,"note":"盖饭"},
-            {"name":"蒜苔炒肉","priceText":"盖饭12元 小炒18元","price":18,"note":"小炒"},
-            {"name":"梅菜扣肉（烧白）","priceText":"盖饭13元 小炒20元","price":13,"note":"盖饭"},
-            {"name":"梅菜扣肉（烧白）","priceText":"盖饭13元 小炒20元","price":20,"note":"小炒"},
-            {"name":"回锅肉","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"回锅肉","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"小炒肉","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"小炒肉","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"}
-          ]
-        },
-        {
-          "stall": "小炒·公社食堂",
-          "group": "盖饭/小炒（左三列）",
-          "items": [
-            {"name":"黑椒肉柳","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"黑椒肉柳","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"酸菜滑肉","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"酸菜滑肉","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"泡椒鸡杂","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"泡椒鸡杂","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"香辣鸡腿肉","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"香辣鸡腿肉","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"串香烤肉饭","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"串香烤肉饭","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"豆角茄子炒肉","priceText":"盖饭13元 小炒18元","price":13,"note":"盖饭"},
-            {"name":"豆角茄子炒肉","priceText":"盖饭13元 小炒18元","price":18,"note":"小炒"},
-            {"name":"香煎鸡排饭","priceText":"盖饭14元 小炒20元","price":14,"note":"盖饭"},
-            {"name":"香煎鸡排饭","priceText":"盖饭14元 小炒20元","price":20,"note":"小炒"},
-            {"name":"香辣牙签肉","priceText":"盖饭14元 小炒20元","price":14,"note":"盖饭"},
-            {"name":"香辣牙签肉","priceText":"盖饭14元 小炒20元","price":20,"note":"小炒"}
-          ]
-        },
-        {
-          "stall": "小炒·公社食堂",
-          "group": "盖饭/小炒（右列）",
-          "items": [
-            {"name":"糖醋里脊","priceText":"盖饭14元 小炒20元","price":14,"note":"盖饭"},
-            {"name":"糖醋里脊","priceText":"盖饭14元 小炒20元","price":20,"note":"小炒"},
-            {"name":"香辣干锅鸡","priceText":"盖饭14元 小炒20元","price":14,"note":"盖饭"},
-            {"name":"香辣干锅鸡","priceText":"盖饭14元 小炒20元","price":20,"note":"小炒"},
-            {"name":"农家一碗香","priceText":"盖饭14元 小炒20元","price":14,"note":"盖饭"},
-            {"name":"农家一碗香","priceText":"盖饭14元 小炒20元","price":20,"note":"小炒"},
-            {"name":"毛血旺","priceText":"盖饭15元 小炒25元","price":15,"note":"盖饭"},
-            {"name":"毛血旺","priceText":"盖饭15元 小炒25元","price":25,"note":"小炒"},
-            {"name":"酸菜鱼","priceText":"盖饭15元 小炒25元","price":15,"note":"盖饭"},
-            {"name":"酸菜鱼","priceText":"盖饭15元 小炒25元","price":25,"note":"小炒"},
-            {"name":"麻辣鱼","priceText":"盖饭15元 小炒25元","price":15,"note":"盖饭"},
-            {"name":"麻辣鱼","priceText":"盖饭15元 小炒25元","price":25,"note":"小炒"},
-            {"name":"水煮肉片","priceText":"盖饭15元 小炒25元","price":15,"note":"盖饭"},
-            {"name":"水煮肉片","priceText":"盖饭15元 小炒25元","price":25,"note":"小炒"},
-            {"name":"□肉片","priceText":"盖饭15元 小炒25元","price":15,"note":"盖饭；菜名首字看不清"},
-            {"name":"□肉片","priceText":"盖饭15元 小炒25元","price":25,"note":"小炒；菜名首字看不清"}
-          ]
-        },
-        {
-          "stall": "小炒·公社食堂",
-          "group": "炒饭",
-          "items": [
-            {"name":"三鲜炒饭","priceText":"10.8元","price":10.8,"note":""},
-            {"name":"鱼香肉丝蛋炒饭","priceText":"10.8元","price":10.8,"note":""},
-            {"name":"酸菜肉丝蛋炒饭","priceText":"10.8元","price":10.8,"note":""},
-            {"name":"青椒肉丝蛋炒饭","priceText":"10.8元","price":10.8,"note":""},
-            {"name":"土豆肉丝蛋炒饭","priceText":"10.8元","price":10.8,"note":""},
-            {"name":"老干妈肉丝蛋炒饭","priceText":"10.8元","price":10.8,"note":""},
-            {"name":"扬州炒饭","priceText":"12元","price":12,"note":""},
-            {"name":"孜然牛肉炒饭","priceText":"12元","price":12,"note":""}
-          ]
-        },
-        {
-          "stall": "小炒·公社食堂",
-          "group": "规则",
-          "items": [
-            {"name":"盖饭双拼","priceText":"14元","price":14,"note":"15元以上不拼"},
-            {"name":"小炒双拼","priceText":"20元","price":20,"note":"25元以上不拼"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "左三列与右列衔接处一行（“串香烤肉饭”附近）略有遮挡",
-        "右列最末一行菜名被屏幕边框遮挡"
-      ]
-    },
-    {
-      "file": "Image_1447138184533218.jpg",
-      "contentType": "menu_board",
-      "quality": "blurry",
-      "sections": [
-        {
-          "stall": "缘味先 YUAN WEI XIAN 石锅饭（传统石锅饭创始品牌）",
-          "group": "石锅系列（右侧）",
-          "items": [
-            {"name":"石锅□","priceText":"9.9元/份","price":9.9,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"12元/份","price":12,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"12元/份","price":12,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"13元/份","price":13,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"13元/份","price":13,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"14元/份","price":14,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"14元/份","price":14,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"15元/份","price":15,"note":"菜名看不清"},
-            {"name":"石锅□","priceText":"15元/份","price":15,"note":"菜名看不清"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "左侧“焖面双拼系列/鸡蛋双拼系列/豆腐双拼系列”小字基本看不清，价格多为12元/13元每份",
-        "中间“石锅鸡”配图菜名可见但小字读不出",
-        "建议重拍"
-      ]
-    },
-    {
-      "file": "Image_1447140548645196.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "拉面类",
-          "items": [
-            {"name":"素拉面/刀削面","priceText":"小6元 大7元","price":6,"note":"小份"},
-            {"name":"素拉面/刀削面","priceText":"小6元 大7元","price":7,"note":"大份"},
-            {"name":"牛肉拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"牛肉拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"},
-            {"name":"鸡丝拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"鸡丝拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"},
-            {"name":"鸡块拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"鸡块拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"},
-            {"name":"泡椒牛肉拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"泡椒牛肉拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"},
-            {"name":"酸菜牛肉拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"酸菜牛肉拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"},
-            {"name":"番茄牛肉拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"番茄牛肉拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"},
-            {"name":"番茄鸡蛋拉面/刀削面","priceText":"8元 10元","price":8,"note":"小份"},
-            {"name":"番茄鸡蛋拉面/刀削面","priceText":"8元 10元","price":10,"note":"大份"}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "干拌面类",
-          "items": [
-            {"name":"鸡块干拌面/刀削面","priceText":"9元 11元","price":9,"note":"小份"},
-            {"name":"鸡块干拌面/刀削面","priceText":"9元 11元","price":11,"note":"大份"},
-            {"name":"鸡丝干拌面/刀削面","priceText":"9元 11元","price":9,"note":"小份"},
-            {"name":"鸡丝干拌面/刀削面","priceText":"9元 11元","price":11,"note":"大份"},
-            {"name":"香菇牛肉干拌面/刀削面","priceText":"9元 11元","price":9,"note":"小份"},
-            {"name":"香菇牛肉干拌面/刀削面","priceText":"9元 11元","price":11,"note":"大份"},
-            {"name":"泡椒牛肉干拌面/刀削面","priceText":"9元 11元","price":9,"note":"小份"},
-            {"name":"泡椒牛肉干拌面/刀削面","priceText":"9元 11元","price":11,"note":"大份"},
-            {"name":"酸菜牛肉干拌面/刀削面","priceText":"9元 11元","price":9,"note":"小份"},
-            {"name":"酸菜牛肉干拌面/刀削面","priceText":"9元 11元","price":11,"note":"大份"},
-            {"name":"番茄鸡蛋干拌面/刀削面","priceText":"9元 11元","price":9,"note":"小份"},
-            {"name":"番茄鸡蛋干拌面/刀削面","priceText":"9元 11元","price":11,"note":"大份"}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "盖浇面/饭",
-          "items": [
-            {"name":"大盘鸡盖浇面/饭","priceText":"14元","price":14,"note":""},
-            {"name":"土豆牛肉盖浇面/饭","priceText":"14元","price":14,"note":""},
-            {"name":"青椒牛肉盖浇面/饭","priceText":"14元","price":14,"note":""},
-            {"name":"香菇牛肉盖浇面/饭","priceText":"14元","price":14,"note":""},
-            {"name":"洋葱牛肉盖浇面/饭","priceText":"14元","price":14,"note":""},
-            {"name":"番茄鸡蛋盖浇面/饭","priceText":"14元","price":14,"note":""},
-            {"name":"葱爆牛肉盖浇面/饭","priceText":"14元","price":14,"note":""}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "炒饭",
-          "items": [
-            {"name":"蛋炒饭","priceText":"8元","price":8,"note":""},
-            {"name":"牛肉蛋炒饭","priceText":"12元","price":12,"note":""},
-            {"name":"孜然牛肉蛋炒饭","priceText":"12元","price":12,"note":""},
-            {"name":"青椒牛肉蛋炒饭","priceText":"12元","price":12,"note":""},
-            {"name":"酸菜牛肉蛋炒饭","priceText":"12元","price":12,"note":""}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "炒拉面/刀削面",
-          "items": [
-            {"name":"牛肉炒拉面/刀削面","priceText":"14元","price":14,"note":""},
-            {"name":"鸡肉炒拉面/刀削面","priceText":"14元","price":14,"note":""},
-            {"name":"鸡蛋炒拉面/刀削面","priceText":"13元","price":13,"note":""}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "特色",
-          "items": [
-            {"name":"油泼面","priceText":"11元","price":11,"note":""},
-            {"name":"牛肉水饺","priceText":"13元","price":13,"note":""},
-            {"name":"酸汤水饺","priceText":"13元","price":13,"note":""},
-            {"name":"新疆拌面","priceText":"18元","price":18,"note":""}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "特色小吃",
-          "items": [
-            {"name":"煎蛋","priceText":"2元","price":2,"note":"加料"},
-            {"name":"卤蛋","priceText":"2元","price":2,"note":"加料"},
-            {"name":"炸香肠","priceText":"2元","price":2,"note":"加料"},
-            {"name":"炸鸡腿","priceText":"3元","price":3,"note":"加料"},
-            {"name":"卤鸡腿","priceText":"6元","price":6,"note":"加料"},
-            {"name":"炸鸡腿","priceText":"3元","price":3,"note":"加料；菜单重复出现，原文如此"},
-            {"name":"辣子饼","priceText":"5元","price":5,"note":""}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "加料",
-          "items": [
-            {"name":"单加牛肉","priceText":"10元/份","price":10,"note":"加料"}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "左侧配图（新疆特色手抓饭）",
-          "items": [
-            {"name":"素手抓饭","priceText":"8元","price":8,"note":""},
-            {"name":"鸡肉手抓饭","priceText":"12元","price":12,"note":""},
-            {"name":"牛肉手抓饭","priceText":"14元","price":14,"note":""}
-          ]
-        },
-        {
-          "stall": "兰州拉面 西北风味",
-          "group": "特色大盘鸡",
-          "items": [
-            {"name":"特色大盘鸡（大份）","priceText":"80元","price":80,"note":"大份"},
-            {"name":"特色大盘鸡（小份）","priceText":"60元","price":60,"note":"小份"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "特色小吃列中“炸鸡腿3元”出现两次，疑一处为炸鸡柳等，待重拍确认",
-        "顶部小字“单加牛肉10元/份 一碗面，一座城”"
-      ]
-    },
-    {
-      "file": "Image_1447143448919518.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "煎扒档 法式铁板烧 TEPPANYAKI（法式风味）",
-          "group": "炙烤类",
-          "items": [
-            {"name":"原味炙烤五花肉饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"泡菜炙烤五花肉饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"香辣炙烤五花肉饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"蜜汁炙烤五花肉饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"焗豉汁滑鸡饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"焗豉汁排骨饭","priceText":"14.9元","price":14.9,"note":""},
-            {"name":"鸡酱松板肉饭","priceText":"14.9元","price":14.9,"note":""}
-          ]
-        },
-        {
-          "stall": "煎扒档 法式铁板烧 TEPPANYAKI（法式风味）",
-          "group": "料理扒类",
-          "items": [
-            {"name":"铁板鸡扒饭","priceText":"12.9元","price":12.9,"note":""},
-            {"name":"铁板猪扒饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"铁板葱油鸡饭","priceText":"13.9元","price":13.9,"note":""},
-            {"name":"焗鲜虾肉饼饭","priceText":"14.9元","price":14.9,"note":""},
-            {"name":"铁板牛肉饼饭","priceText":"14.9元","price":14.9,"note":""}
-          ]
-        },
-        {
-          "stall": "煎扒档 法式铁板烧 TEPPANYAKI（法式风味）",
-          "group": "口味选择",
-          "items": [
-            {"name":"黑胡椒酱","priceText":"0元","price":0,"note":"免费酱料"},
-            {"name":"奶油蘑菇酱","priceText":"0元","price":0,"note":"免费酱料"},
-            {"name":"葡式咖喱酱","priceText":"0元","price":0,"note":"免费酱料"},
-            {"name":"西式番茄酱","priceText":"0元","price":0,"note":"免费酱料"}
-          ]
-        }
-      ],
-      "uncertain": [
-        "招牌左半部分被灯光过曝，仅辨出“煎扒档”三字，完整品牌名不确定（与候选“兴旺法式铁板烧”待核对）",
-        "“铁板现煎 香到上头”“新店开业 品尝”为宣传语"
-      ]
-    },
-    {
-      "file": "Image_1447303621715238.jpg",
-      "contentType": "stall_sign",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "南邻汤包",
-          "group": "",
-          "items": []
-        }
-      ],
-      "uncertain": [
-        "仅拍到招牌特写，无菜单内容，菜单见 Image_1447307640797736.jpg"
-      ]
-    },
-    {
-      "file": "Image_1447307640797736.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "南邻汤包（早餐啦）",
-          "group": "包子类",
-          "items": [
-            {"name":"牛肉包","priceText":"2.5元","price":2.5,"note":""},
-            {"name":"酱肉包","priceText":"2元","price":2,"note":""},
-            {"name":"鲜肉包","priceText":"2元","price":2,"note":""},
-            {"name":"梅菜扣肉包","priceText":"2元","price":2,"note":""},
-            {"name":"老坛酸菜包","priceText":"1.5元","price":1.5,"note":""},
-            {"name":"肉末豆角包","priceText":"1.5元","price":1.5,"note":""},
-            {"name":"香辣粉丝包","priceText":"1.5元","price":1.5,"note":""},
-            {"name":"香菇青菜包","priceText":"1.5元","price":1.5,"note":""},
-            {"name":"玫瑰豆沙包","priceText":"1.5元","price":1.5,"note":""}
-          ]
-        },
-        {
-          "stall": "南邻汤包（早餐啦）",
-          "group": "糕点/蛋/粥",
-          "items": [
-            {"name":"小笼包（笼）","priceText":"8元","price":8,"note":""},
-            {"name":"桂花糕","priceText":"3元","price":3,"note":""},
-            {"name":"紫薯糕","priceText":"3元","price":3,"note":""},
-            {"name":"奶香糕","priceText":"3元","price":3,"note":""},
-            {"name":"淋糖糕","priceText":"3元","price":3,"note":""},
-            {"name":"五香卤蛋","priceText":"2元","price":2,"note":""},
-            {"name":"白水蛋","priceText":"1.5元","price":1.5,"note":""},
-            {"name":"白粥","priceText":"2元","price":2,"note":""},
-            {"name":"南瓜粥","priceText":"3元","price":3,"note":""}
-          ]
-        },
-        {
-          "stall": "南邻汤包（早餐啦）",
-          "group": "粥/面点/饮品（右列）",
-          "items": [
-            {"name":"黑米粥","priceText":"3元","price":3,"note":""},
-            {"name":"燕麦粥","priceText":"3元","price":3,"note":""},
-            {"name":"八宝粥","priceText":"3元","price":3,"note":""},
-            {"name":"红糖馒头","priceText":"2元","price":2,"note":""},
-            {"name":"白馒头","priceText":"1元","price":1,"note":""},
-            {"name":"蒸饺（8个）","priceText":"6元","price":6,"note":""},
-            {"name":"肉丁烧卖","priceText":"2元","price":2,"note":""},
-            {"name":"现磨豆浆","priceText":"2元","price":2,"note":"饮品"},
-            {"name":"甜玉米","priceText":"5元","price":5,"note":""}
-          ]
-        },
-        {
-          "stall": "南邻汤包（早餐啦）",
-          "group": "左侧加页",
-          "items": [
-            {"name":"灌汤包","priceText":"8元一笼（7个）","price":8,"note":"一笼7个"},
-            {"name":"灌汤包（单买）","priceText":"1.5元一个","price":1.5,"note":"单买"},
-            {"name":"椰奶","priceText":"3.5元/杯","price":3.5,"note":"饮品"},
-            {"name":"鲜肉蔬菜粥","priceText":"4元/碗","price":4,"note":""},
-            {"name":"紫薯包","priceText":"3元/个","price":3,"note":""},
-            {"name":"香辣花卷","priceText":"2元/个","price":2,"note":""}
-          ]
-        }
-      ],
-      "uncertain": [
-        "最右侧露出“纯手工□灌汤□”宣传图边缘，未完整入镜"
-      ]
-    }
-  ],
-  "reshoot": [
-    "Image_1447112674001196.jpg: 擂椒拌饭菜单板字小且有顾客遮挡，除农家一碗香13.8元外大部分菜名不可靠",
-    "Image_1447120487240829.jpg: 一万家干锅中间及右侧菜单小字无法辨认，仅3个干锅图名可见",
-    "Image_1447123268353588.jpg: 曾记面食汤面/干拌/特色招牌菜名基本看不清，只有凉面系列部分可读",
-    "Image_1447125855313379.jpg: 浏阳蒸碗需近拍菜品价签，现图只见2/3/4/5/8元价签不见菜名",
-    "Image_1447138184533218.jpg: 缘味先左侧焖面/鸡蛋/豆腐双拼系列小字与菜名无法辨认",
-    "Image_1447102362482711.jpg: 犟稻超级酱骨饭套餐价格看不清，右侧五谷渔粉屏菜名大半模糊"
-  ]
+    "photos":  [
+                   {
+                       "file":  "Image_1447100380461097.jpg",
+                       "contentType":  "stall_sign",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "香灶 XIANGZAO 火锅冒菜",
+                                            "group":  "",
+                                            "items":  [
+                                                          {
+                                                              "name":  "荤素同价（称重计价）",
+                                                              "priceText":  "2.19元/50g",
+                                                              "price":  2.19,
+                                                              "note":  "按50g单价称重计费；红幅写“是牛油火锅味！火锅油碟是免费的！”"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "冷藏展示柜内具体菜品完全看不清",
+                                         "招牌右侧小字（火锅后面的字）被裁切，疑似“火锅冒菜/火锅烫”",
+                                         "右上方电子条屏有“经典鲜味”等字但菜品名无法辨认"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447114989726664.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "滑蛋饭",
+                                            "group":  "滑蛋饭系列（左列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "双椒回锅肉滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼香肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香菇鸡滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "双椒肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "黑椒□滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  "菜名中间字看不清"
+                                                          },
+                                                          {
+                                                              "name":  "□肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  "菜名首字看不清"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒□滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  "菜名中间字看不清"
+                                                          },
+                                                          {
+                                                              "name":  "葱爆肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "双椒香肠滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "滑蛋饭",
+                                            "group":  "滑蛋饭系列（右列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "烧椒肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "青菜肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "烧椒回锅肉滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "韭菜肉丝滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "泡椒鱼片滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "烧椒□滑蛋饭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  "菜名中间字看不清"
+                                                          },
+                                                          {
+                                                              "name":  "□肉片滑蛋饭",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14,
+                                                              "note":  "菜名首字看不清"
+                                                          },
+                                                          {
+                                                              "name":  "孜然肉片滑蛋饭",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "青菜牛肉滑蛋饭",
+                                                              "priceText":  "16元/份",
+                                                              "price":  16,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "滑蛋饭",
+                                            "group":  "其他",
+                                            "items":  [
+                                                          {
+                                                              "name":  "打包费",
+                                                              "priceText":  "1元",
+                                                              "price":  1,
+                                                              "note":  "打包附加费"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "右下“新/鲜/食/材”宣传语旁菜品图配文未录",
+                                         "最右侧露出另一块菜单边缘（香辣干□鸡等），不属于本档口完整画面"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447127848821659.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "开饭了",
+                                            "group":  "套餐",
+                                            "items":  [
+                                                          {
+                                                              "name":  "一荤一素",
+                                                              "priceText":  "8元",
+                                                              "price":  8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "一荤两素",
+                                                              "priceText":  "9元",
+                                                              "price":  9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "两荤",
+                                                              "priceText":  "9元",
+                                                              "price":  9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "两荤一素",
+                                                              "priceText":  "11元",
+                                                              "price":  11,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "两荤两素",
+                                                              "priceText":  "13元",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "三荤",
+                                                              "priceText":  "13元",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "右侧菜品展示图可见但具体菜名无法辨认",
+                                         "“营养美味 健康新鲜”为宣传语"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447130990959314.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "你过来鸭 COME OVER DUCK 烤鸭饭（美味佳肴）",
+                                            "group":  "铁板/烤鸭饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "铁板烤鸭",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "铁板鸡排",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "铁板里脊",
+                                                              "priceText":  "13元/份",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "原味烤鸭",
+                                                              "priceText":  "14元/份",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "铁板五花肉",
+                                                              "priceText":  "15元/份",
+                                                              "price":  15,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "（左侧相邻档口屏幕，疑似炒饭类）",
+                                            "group":  "炒饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  "左侧露出屏幕，归属档口不明"
+                                                          },
+                                                          {
+                                                              "name":  "□炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  "菜名首字看不清，归属档口不明"
+                                                          },
+                                                          {
+                                                              "name":  "□丝蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  "菜名部分看不清，归属档口不明"
+                                                          },
+                                                          {
+                                                              "name":  "炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  "菜名前缀看不清，归属档口不明"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "左侧露出的炒饭屏幕可能属于另一档口，未能拍到其招牌"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447132815339991.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "小炒·公社食堂",
+                                            "group":  "盖饭/小炒（左一列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "土豆肉丝",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  11,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "土豆肉丝",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  16,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "鱼香茄子",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  11,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "鱼香茄子",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  16,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "韭菜炒鸡蛋",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  11,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "韭菜炒鸡蛋",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  16,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "西红柿炒鸡蛋",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  11,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "西红柿炒鸡蛋",
+                                                              "priceText":  "盖饭11元 小炒16元",
+                                                              "price":  16,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "苕皮肉丝",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "苕皮肉丝",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "青椒肉丝",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "青椒肉丝",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "宫保鸡丁",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "宫保鸡丁",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "青椒鸡蛋",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "青椒鸡蛋",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "小炒·公社食堂",
+                                            "group":  "盖饭/小炒（左二列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鱼香肉丝",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "鱼香肉丝",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "辣子鸡丁",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "辣子鸡丁",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "莴笋炒肉",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "莴笋炒肉",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "蒜苔炒肉",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  12,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "蒜苔炒肉",
+                                                              "priceText":  "盖饭12元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "梅菜扣肉（烧白）",
+                                                              "priceText":  "盖饭13元 小炒20元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "梅菜扣肉（烧白）",
+                                                              "priceText":  "盖饭13元 小炒20元",
+                                                              "price":  20,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "回锅肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "回锅肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "小炒肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "小炒肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "小炒·公社食堂",
+                                            "group":  "盖饭/小炒（左三列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "黑椒肉柳",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "黑椒肉柳",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜滑肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜滑肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒鸡杂",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒鸡杂",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "香辣鸡腿肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "香辣鸡腿肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "串香烤肉饭",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "串香烤肉饭",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "豆角茄子炒肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  13,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "豆角茄子炒肉",
+                                                              "priceText":  "盖饭13元 小炒18元",
+                                                              "price":  18,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "香煎鸡排饭",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  14,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "香煎鸡排饭",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  20,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "香辣牙签肉",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  14,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "香辣牙签肉",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  20,
+                                                              "note":  "小炒"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "小炒·公社食堂",
+                                            "group":  "盖饭/小炒（右列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "糖醋里脊",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  14,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "糖醋里脊",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  20,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "香辣干锅鸡",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  14,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "香辣干锅鸡",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  20,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "农家一碗香",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  14,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "农家一碗香",
+                                                              "priceText":  "盖饭14元 小炒20元",
+                                                              "price":  20,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "毛血旺",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  15,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "毛血旺",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  25,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜鱼",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  15,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜鱼",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  25,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "麻辣鱼",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  15,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "麻辣鱼",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  25,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "水煮肉片",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  15,
+                                                              "note":  "盖饭"
+                                                          },
+                                                          {
+                                                              "name":  "水煮肉片",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  25,
+                                                              "note":  "小炒"
+                                                          },
+                                                          {
+                                                              "name":  "□肉片",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  15,
+                                                              "note":  "盖饭；菜名首字看不清"
+                                                          },
+                                                          {
+                                                              "name":  "□肉片",
+                                                              "priceText":  "盖饭15元 小炒25元",
+                                                              "price":  25,
+                                                              "note":  "小炒；菜名首字看不清"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "小炒·公社食堂",
+                                            "group":  "炒饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "三鲜炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鱼香肉丝蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸菜肉丝蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "青椒肉丝蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土豆肉丝蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "老干妈肉丝蛋炒饭",
+                                                              "priceText":  "10.8元",
+                                                              "price":  10.8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "扬州炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "孜然牛肉炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "小炒·公社食堂",
+                                            "group":  "规则",
+                                            "items":  [
+                                                          {
+                                                              "name":  "盖饭双拼",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  "15元以上不拼"
+                                                          },
+                                                          {
+                                                              "name":  "小炒双拼",
+                                                              "priceText":  "20元",
+                                                              "price":  20,
+                                                              "note":  "25元以上不拼"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "左三列与右列衔接处一行（“串香烤肉饭”附近）略有遮挡",
+                                         "右列最末一行菜名被屏幕边框遮挡"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447140548645196.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "拉面类",
+                                            "items":  [
+                                                          {
+                                                              "name":  "素拉面/刀削面",
+                                                              "priceText":  "小6元 大7元",
+                                                              "price":  6,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "素拉面/刀削面",
+                                                              "priceText":  "小6元 大7元",
+                                                              "price":  7,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡块拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡块拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄牛肉拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄鸡蛋拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  8,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄鸡蛋拉面/刀削面",
+                                                              "priceText":  "8元 10元",
+                                                              "price":  10,
+                                                              "note":  "大份"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "干拌面类",
+                                            "items":  [
+                                                          {
+                                                              "name":  "鸡块干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  9,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡块干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  11,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  9,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "鸡丝干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  11,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "香菇牛肉干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  9,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "香菇牛肉干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  11,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒牛肉干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  9,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "泡椒牛肉干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  11,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜牛肉干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  9,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "酸菜牛肉干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  11,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄鸡蛋干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  9,
+                                                              "note":  "小份"
+                                                          },
+                                                          {
+                                                              "name":  "番茄鸡蛋干拌面/刀削面",
+                                                              "priceText":  "9元 11元",
+                                                              "price":  11,
+                                                              "note":  "大份"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "盖浇面/饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "大盘鸡盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "土豆牛肉盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "青椒牛肉盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香菇牛肉盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "洋葱牛肉盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "番茄鸡蛋盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "葱爆牛肉盖浇面/饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "炒饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "蛋炒饭",
+                                                              "priceText":  "8元",
+                                                              "price":  8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "牛肉蛋炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "孜然牛肉蛋炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "青椒牛肉蛋炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸菜牛肉蛋炒饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "炒拉面/刀削面",
+                                            "items":  [
+                                                          {
+                                                              "name":  "牛肉炒拉面/刀削面",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡肉炒拉面/刀削面",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡蛋炒拉面/刀削面",
+                                                              "priceText":  "13元",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "特色",
+                                            "items":  [
+                                                          {
+                                                              "name":  "油泼面",
+                                                              "priceText":  "11元",
+                                                              "price":  11,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "牛肉水饺",
+                                                              "priceText":  "13元",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酸汤水饺",
+                                                              "priceText":  "13元",
+                                                              "price":  13,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "新疆拌面",
+                                                              "priceText":  "18元",
+                                                              "price":  18,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "特色小吃",
+                                            "items":  [
+                                                          {
+                                                              "name":  "煎蛋",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  "加料"
+                                                          },
+                                                          {
+                                                              "name":  "卤蛋",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  "加料"
+                                                          },
+                                                          {
+                                                              "name":  "炸香肠",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  "加料"
+                                                          },
+                                                          {
+                                                              "name":  "炸鸡腿",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  "加料"
+                                                          },
+                                                          {
+                                                              "name":  "卤鸡腿",
+                                                              "priceText":  "6元",
+                                                              "price":  6,
+                                                              "note":  "加料"
+                                                          },
+                                                          {
+                                                              "name":  "炸鸡腿",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  "加料；菜单重复出现，原文如此"
+                                                          },
+                                                          {
+                                                              "name":  "辣子饼",
+                                                              "priceText":  "5元",
+                                                              "price":  5,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "加料",
+                                            "items":  [
+                                                          {
+                                                              "name":  "单加牛肉",
+                                                              "priceText":  "10元/份",
+                                                              "price":  10,
+                                                              "note":  "加料"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "左侧配图（新疆特色手抓饭）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "素手抓饭",
+                                                              "priceText":  "8元",
+                                                              "price":  8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡肉手抓饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "牛肉手抓饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兰州拉面 西北风味",
+                                            "group":  "特色大盘鸡",
+                                            "items":  [
+                                                          {
+                                                              "name":  "特色大盘鸡（大份）",
+                                                              "priceText":  "80元",
+                                                              "price":  80,
+                                                              "note":  "大份"
+                                                          },
+                                                          {
+                                                              "name":  "特色大盘鸡（小份）",
+                                                              "priceText":  "60元",
+                                                              "price":  60,
+                                                              "note":  "小份"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "特色小吃列中“炸鸡腿3元”出现两次，疑一处为炸鸡柳等，待重拍确认",
+                                         "顶部小字“单加牛肉10元/份 一碗面，一座城”"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447143448919518.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "煎扒档 法式铁板烧 TEPPANYAKI（法式风味）",
+                                            "group":  "炙烤类",
+                                            "items":  [
+                                                          {
+                                                              "name":  "原味炙烤五花肉饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "泡菜炙烤五花肉饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香辣炙烤五花肉饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "蜜汁炙烤五花肉饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "焗豉汁滑鸡饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "焗豉汁排骨饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鸡酱松板肉饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "煎扒档 法式铁板烧 TEPPANYAKI（法式风味）",
+                                            "group":  "料理扒类",
+                                            "items":  [
+                                                          {
+                                                              "name":  "铁板鸡扒饭",
+                                                              "priceText":  "12.9元",
+                                                              "price":  12.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "铁板猪扒饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "铁板葱油鸡饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "焗鲜虾肉饼饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "铁板牛肉饼饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "煎扒档 法式铁板烧 TEPPANYAKI（法式风味）",
+                                            "group":  "口味选择",
+                                            "items":  [
+                                                          {
+                                                              "name":  "黑胡椒酱",
+                                                              "priceText":  "0元",
+                                                              "price":  0,
+                                                              "note":  "免费酱料"
+                                                          },
+                                                          {
+                                                              "name":  "奶油蘑菇酱",
+                                                              "priceText":  "0元",
+                                                              "price":  0,
+                                                              "note":  "免费酱料"
+                                                          },
+                                                          {
+                                                              "name":  "葡式咖喱酱",
+                                                              "priceText":  "0元",
+                                                              "price":  0,
+                                                              "note":  "免费酱料"
+                                                          },
+                                                          {
+                                                              "name":  "西式番茄酱",
+                                                              "priceText":  "0元",
+                                                              "price":  0,
+                                                              "note":  "免费酱料"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "招牌左半部分被灯光过曝，仅辨出“煎扒档”三字，完整品牌名不确定（与候选“兴旺法式铁板烧”待核对）",
+                                         "“铁板现煎 香到上头”“新店开业 品尝”为宣传语"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447303621715238.jpg",
+                       "contentType":  "stall_sign",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "南邻汤包",
+                                            "group":  "",
+                                            "items":  [
+
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "仅拍到招牌特写，无菜单内容，菜单见 Image_1447307640797736.jpg"
+                                     ]
+                   },
+                   {
+                       "file":  "Image_1447307640797736.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "南邻汤包（早餐啦）",
+                                            "group":  "包子类",
+                                            "items":  [
+                                                          {
+                                                              "name":  "牛肉包",
+                                                              "priceText":  "2.5元",
+                                                              "price":  2.5,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "酱肉包",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鲜肉包",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "梅菜扣肉包",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "老坛酸菜包",
+                                                              "priceText":  "1.5元",
+                                                              "price":  1.5,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉末豆角包",
+                                                              "priceText":  "1.5元",
+                                                              "price":  1.5,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香辣粉丝包",
+                                                              "priceText":  "1.5元",
+                                                              "price":  1.5,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香菇青菜包",
+                                                              "priceText":  "1.5元",
+                                                              "price":  1.5,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "玫瑰豆沙包",
+                                                              "priceText":  "1.5元",
+                                                              "price":  1.5,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "南邻汤包（早餐啦）",
+                                            "group":  "糕点/蛋/粥",
+                                            "items":  [
+                                                          {
+                                                              "name":  "小笼包（笼）",
+                                                              "priceText":  "8元",
+                                                              "price":  8,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "桂花糕",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "紫薯糕",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "奶香糕",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "淋糖糕",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "五香卤蛋",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "白水蛋",
+                                                              "priceText":  "1.5元",
+                                                              "price":  1.5,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "白粥",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "南瓜粥",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "南邻汤包（早餐啦）",
+                                            "group":  "粥/面点/饮品（右列）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "黑米粥",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "燕麦粥",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "八宝粥",
+                                                              "priceText":  "3元",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "红糖馒头",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "白馒头",
+                                                              "priceText":  "1元",
+                                                              "price":  1,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "蒸饺（8个）",
+                                                              "priceText":  "6元",
+                                                              "price":  6,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "肉丁烧卖",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "现磨豆浆",
+                                                              "priceText":  "2元",
+                                                              "price":  2,
+                                                              "note":  "饮品"
+                                                          },
+                                                          {
+                                                              "name":  "甜玉米",
+                                                              "priceText":  "5元",
+                                                              "price":  5,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "南邻汤包（早餐啦）",
+                                            "group":  "左侧加页",
+                                            "items":  [
+                                                          {
+                                                              "name":  "灌汤包",
+                                                              "priceText":  "8元一笼（7个）",
+                                                              "price":  8,
+                                                              "note":  "一笼7个"
+                                                          },
+                                                          {
+                                                              "name":  "灌汤包（单买）",
+                                                              "priceText":  "1.5元一个",
+                                                              "price":  1.5,
+                                                              "note":  "单买"
+                                                          },
+                                                          {
+                                                              "name":  "椰奶",
+                                                              "priceText":  "3.5元/杯",
+                                                              "price":  3.5,
+                                                              "note":  "饮品"
+                                                          },
+                                                          {
+                                                              "name":  "鲜肉蔬菜粥",
+                                                              "priceText":  "4元/碗",
+                                                              "price":  4,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "紫薯包",
+                                                              "priceText":  "3元/个",
+                                                              "price":  3,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香辣花卷",
+                                                              "priceText":  "2元/个",
+                                                              "price":  2,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "最右侧露出“纯手工□灌汤□”宣传图边缘，未完整入镜"
+                                     ]
+                   }
+               ],
+    "reshoot":  [
+                    "Image_1447112674001196.jpg: 擂椒拌饭菜单板字小且有顾客遮挡，除农家一碗香13.8元外大部分菜名不可靠",
+                    "Image_1447120487240829.jpg: 一万家干锅中间及右侧菜单小字无法辨认，仅3个干锅图名可见",
+                    "Image_1447123268353588.jpg: 曾记面食汤面/干拌/特色招牌菜名基本看不清，只有凉面系列部分可读",
+                    "Image_1447125855313379.jpg: 浏阳蒸碗需近拍菜品价签，现图只见2/3/4/5/8元价签不见菜名",
+                    "Image_1447138184533218.jpg: 缘味先左侧焖面/鸡蛋/豆腐双拼系列小字与菜名无法辨认",
+                    "Image_1447102362482711.jpg: 犟稻超级酱骨饭套餐价格看不清，右侧五谷渔粉屏菜名大半模糊"
+                ]
 }

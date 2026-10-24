@@ -34,6 +34,8 @@ $excludeNames     = @("米饭","打包盒","打包费","餐盒","打包袋","餐
 # ---------- 推断函数（与 build-data.ps1 同规则） ----------
 function mapCategory($group, $name) {
   if ($name -match "盖饭|拌饭|炒饭|煲仔|木桶饭|铁板饭|焗饭|抓饭|焖饭|擂饭|烤盘饭|烧腊饭|饭$") { return "盖浇饭" }
+  if ($name -match "焖面|焖饼") { return "面食" }
+  if ($name -match "石锅") { return "盖浇饭" }  # 石锅xx 都是带饭套餐（焖面已在上一行归面食）
   if ($name -match "米线|面条|拉面|小面|拌面|汤面|炒面|面$|面块|粉$|米粉|河粉|酸辣粉|螺蛳粉|馄饨|抄手|水饺|云吞|饵丝|铺盖面") { return "面食" }
   if ($name -match "麻辣烫|冒菜|香锅|串串香|干锅|麻辣拌|毛血旺|麻辣鱼|麻辣什锦") { return "麻辣系列" }
   if ($name -match "沙拉|轻食") { return "轻食沙拉" }
@@ -50,13 +52,14 @@ function mapCategory($group, $name) {
   if ($group -match "轻食|沙拉") { return "轻食沙拉" }
   if ($group -match "小吃|早餐|饼") { return "早餐小吃" }
   if ($group -match "焖|炒|烧|蒸") { return "家常小炒" }
+  if ($group -match "套餐") { return "盖浇饭" }
   # 主料兜底：含肉禽水产/素料但上面都没归类的，按家常小炒处理，尽量不留「其他」
   if ($name -match "鸡|鸭|鹅|鱼|虾|牛|羊|肉|排骨|翅|腿|丸|蛋|豆腐|菌|菇|藕|茄|菜") { return "家常小炒" }
   return "其他"
 }
 function inferSpicy($name) {
   if ($name -match "特辣|变态辣|地狱辣|魔鬼辣") { return 3 }
-  if ($name -match "毛血旺|水煮|麻婆|夫妻肺片|香水鱼") { return 2 }  # 经典川菜，名无辣字也中辣
+  if ($name -match "毛血旺|水煮|麻婆|夫妻肺片|香水鱼|冒菜|干锅") { return 2 }  # 经典川菜，名无辣字也中辣
   if ($name -match "麻辣|中辣|重辣|香辣|剁椒|泡椒|辣子") { return 2 }
   if ($name -match "微辣|少辣|轻辣") { return 1 }
   if ($name -match "不辣|免辣|原汤|清汤") { return 0 }
@@ -89,6 +92,23 @@ function inferPortion($name, $note) {
   if ($s -match "小份|半份|小碗|一两|mini") { return "small" }
   if ($s -match "大份|加大|加量|大碗|三两") { return "large" }
   return "regular"
+}
+# 六味标签（v2.0 用户定义：辣 / 麻 / 酸甜 / 咸鲜 / 清淡 / 甜，可多选）
+# 咸鲜按做法严格标（卤/酱/蒸/炖/烧/白灼），不用「咸香」兜底；烧麦不算烧。
+function inferFlavors($name, $spicy, $cat, $taste) {
+  $fl = @()
+  if ($spicy -ge 1) { $fl += "辣" }
+  if ($name -match "麻辣|麻婆|花椒|藤椒|椒麻|水煮|夫妻肺片") {
+    if ($fl -notcontains "辣") { $fl += "辣" }
+    $fl += "麻"
+  }
+  $sweet = ($taste -contains "甜") -or ($cat -eq "甜品饮品" -and $name -notmatch "咸|卤|辣") -or
+           ($name -match "鱼香|糖醋|宫保|蜜汁|茄汁|拔丝|甜|双皮奶|龟苓膏|汤圆|布丁|冰粉|西米露|糖水|蛋糕|红豆沙|绿豆沙|银耳|咕咾|菠萝")
+  if ($sweet) { $fl += "甜" }
+  if ($name -match "糖醋|酸甜|咕咾|茄汁|番茄|西红柿|菠萝|山楂|酸梅|柠檬|百香果|酸奶") { $fl += "酸甜" }
+  if ($name -match "卤|酱|蒸|炖|烧(?!麦|烤)|白灼") { $fl += "咸鲜" }
+  if (($taste -contains "清淡") -or ($name -match "清汤|白汤|清蒸|白灼|粥")) { $fl += "清淡" }
+  return @($fl | Select-Object -Unique)
 }
 $iconMap = @{
   "盖浇饭"="utensils"; "面食"="wheat"; "麻辣系列"="cooking-pot"; "家常小炒"="beef"
@@ -123,6 +143,7 @@ foreach ($prefix in $floorMap.Keys) {
             grp   = [string]$s.group
             name  = ([string]$i.name).Trim(); price = [double]$i.price
             ptext = [string]$i.priceText;    note = [string]$i.note
+            spicyOv = $i.spicy;              mainOv = [string]$i.main
           }
         }
       }
@@ -178,8 +199,10 @@ foreach ($g in ($kept | Group-Object stall, name)) {
   $altText = ($alt | Select-Object -Unique) -join "；"
 
   $cat   = mapCategory $canon.grp $canon.name
-  $spicy = inferSpicy $canon.name
-  $veg   = ((inferMain $canon.name) -eq "素")   # 与主料保持一致（蛋算荤）
+  # staging 可显式指定 spicy / main 覆盖推断（如称重档口味可选）
+  $spicy = if ($null -ne $canon.spicyOv) { [int]$canon.spicyOv } else { inferSpicy $canon.name }
+  $mainV = if ($canon.mainOv) { $canon.mainOv } else { inferMain $canon.name }
+  $veg   = ($mainV -eq "素")   # 与主料保持一致（蛋算荤）
   $icon  = $iconMap[$cat]; if (-not $icon) { $icon = "utensils" }
   $cal   = $calMap[$cat];  if (-not $cal)  { $cal = 500 }
 
@@ -209,9 +232,10 @@ foreach ($g in ($kept | Group-Object stall, name)) {
 
   $dishes += [PSCustomObject]@{
     id = $id; name = $canon.name; category = $cat; icon = $icon
-    taste = $taste; price = $canon.price; cal = $cal; tags = $tags
+    taste = $taste; flavors = (inferFlavors $canon.name $spicy $cat $taste)
+    price = $canon.price; cal = $cal; tags = $tags
     desc = $desc; veg = $veg; spicy = $spicy
-    main = (inferMain $canon.name); portion = (inferPortion $canon.name $canon.note)
+    main = $mainV; portion = (inferPortion $canon.name $canon.note)
     stall = $canon.stall; canteen = ($canon.stall -replace "^.*_", "") + "餐厅"
     img = ""; rawGroup = $canon.grp
   }
@@ -219,6 +243,11 @@ foreach ($g in ($kept | Group-Object stall, name)) {
 }
 
 $outFull = Join-Path $PSScriptRoot $OutPath
-[IO.File]::WriteAllText($outFull, ($dishes | ConvertTo-Json -Depth 10), [Text.UTF8Encoding]::new($true))
+# PowerShell 5.1 的 ConvertTo-Json 会把单元素数组压成字符串、空数组写成 {}，
+# 这里把 flavors 统一修回数组，前端可以直接做包含判断。
+$jsonOut = ($dishes | ConvertTo-Json -Depth 10)
+$jsonOut = $jsonOut -replace '"flavors":\s*\{\s*\}', '"flavors": []'
+$jsonOut = $jsonOut -replace '"flavors":\s*"([^"]*)"', '"flavors": ["$1"]'
+[IO.File]::WriteAllText($outFull, $jsonOut, [Text.UTF8Encoding]::new($true))
 Write-Host "合并规格后菜品：$($dishes.Count) ｜ 输出：$outFull" -ForegroundColor Green
 $dishes | Group-Object stall | Sort-Object Count -Descending | Format-Table Name, Count -AutoSize

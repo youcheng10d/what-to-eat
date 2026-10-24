@@ -1,8 +1,353 @@
 ﻿// data.js — 真实食堂菜品（自动从 LCSW API 清洗生成）
-// Source: 重庆城市科技学院 ｜ Generated: 2026-10-22 23:02
+// Source: 重庆城市科技学院 ｜ Generated: 2026-10-24 14:46
 (function () {
   window.DB_REAL = {
     school: "重庆城市科技学院",
+    stallMeta: {
+    "章尚村麻辣烫":  {
+                   "dishCount":  1,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "汇百味餐厅",
+                   "floor":  "2楼"
+               },
+    "现烤掉渣饼·杂粮煎饼":  {
+                       "dishCount":  3,
+                       "hotCount":  0,
+                       "hotRate":  0,
+                       "canteen":  "汇百味餐厅",
+                       "floor":  "2楼"
+                   },
+    "胖妹面庄":  {
+                 "dishCount":  24,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "椰子鸡黄焖鸡":  {
+                   "dishCount":  12,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "北山苑餐厅",
+                   "floor":  "3楼"
+               },
+    "抄手馄饨大王":  {
+                   "dishCount":  38,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "汇百味餐厅",
+                   "floor":  "2楼"
+               },
+    "川粤坊曹鸭子":  {
+                   "dishCount":  23,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "汇百味餐厅",
+                   "floor":  "2楼"
+               },
+    "四季轻食":  {
+                 "dishCount":  11,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "南邻汤包":  {
+                 "dishCount":  23,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "牛伯叔铁锅炖":  {
+                   "dishCount":  17,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "汇百味餐厅",
+                   "floor":  "2楼"
+               },
+    "锅庐三汁焖锅":  {
+                   "dishCount":  8,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "汇百味餐厅",
+                   "floor":  "2楼"
+               },
+    "浏阳蒸碗":  {
+                 "dishCount":  2,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "犟稻超级酱骨饭":  {
+                    "dishCount":  6,
+                    "hotCount":  0,
+                    "hotRate":  0,
+                    "canteen":  "北山苑餐厅",
+                    "floor":  "3楼"
+                },
+    "你过来鸭":  {
+                 "dishCount":  5,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "奥利堡炸鸡汉堡":  {
+                    "dishCount":  43,
+                    "hotCount":  0,
+                    "hotRate":  0,
+                    "canteen":  "北山苑餐厅",
+                    "floor":  "3楼"
+                },
+    "兴旺烧腊饭":  {
+                  "dishCount":  24,
+                  "hotCount":  0,
+                  "hotRate":  0,
+                  "canteen":  "北山苑餐厅",
+                  "floor":  "3楼"
+              },
+    "木桶饭":  {
+                "dishCount":  20,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "汇百味餐厅",
+                "floor":  "2楼"
+            },
+    "花小小新疆炒米粉":  {
+                     "dishCount":  32,
+                     "hotCount":  0,
+                     "hotRate":  0,
+                     "canteen":  "汇百味餐厅",
+                     "floor":  "2楼"
+                 },
+    "牛牛粉面":  {
+                 "dishCount":  12,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "汇百味餐厅",
+                 "floor":  "2楼"
+             },
+    "汇小面":  {
+                "dishCount":  13,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "汇百味餐厅",
+                "floor":  "2楼"
+            },
+    "水城羊肉粉":  {
+                  "dishCount":  9,
+                  "hotCount":  0,
+                  "hotRate":  0,
+                  "canteen":  "汇百味餐厅",
+                  "floor":  "2楼"
+              },
+    "霍嘉饼专家":  {
+                  "dishCount":  19,
+                  "hotCount":  0,
+                  "hotRate":  0,
+                  "canteen":  "汇百味餐厅",
+                  "floor":  "2楼"
+              },
+    "烤肉饭":  {
+                "dishCount":  12,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "汇百味餐厅",
+                "floor":  "2楼"
+            },
+    "脆香鸭":  {
+                "dishCount":  3,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "汇百味餐厅",
+                "floor":  "2楼"
+            },
+    "公社食堂小炒":  {
+                   "dishCount":  112,
+                   "hotCount":  37,
+                   "hotRate":  0.33,
+                   "canteen":  "北山苑餐厅",
+                   "floor":  "3楼"
+               },
+    "朱家小馆":  {
+                 "dishCount":  35,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "汇百味餐厅",
+                 "floor":  "2楼"
+             },
+    "精品套餐":  {
+                 "dishCount":  4,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "汇百味餐厅",
+                 "floor":  "2楼"
+             },
+    "食野轻食":  {
+                 "dishCount":  13,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "汇百味餐厅",
+                 "floor":  "2楼"
+             },
+    "川小炒哥炒饭":  {
+                   "dishCount":  51,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "汇百味餐厅",
+                   "floor":  "2楼"
+               },
+    "惠芯意鲜饺坊":  {
+                   "dishCount":  26,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "北山苑餐厅",
+                   "floor":  "3楼"
+               },
+    "滑蛋饭":  {
+                "dishCount":  13,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "北山苑餐厅",
+                "floor":  "3楼"
+            },
+    "汤萌":  {
+               "dishCount":  10,
+               "hotCount":  0,
+               "hotRate":  0,
+               "canteen":  "汇百味餐厅",
+               "floor":  "2楼"
+           },
+    "兰州拉面":  {
+                 "dishCount":  38,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "一万家干锅":  {
+                  "dishCount":  20,
+                  "hotCount":  0,
+                  "hotRate":  0,
+                  "canteen":  "北山苑餐厅",
+                  "floor":  "3楼"
+              },
+    "西域烤肉饭·自选烤盘饭":  {
+                        "dishCount":  17,
+                        "hotCount":  0,
+                        "hotRate":  0,
+                        "canteen":  "北山苑餐厅",
+                        "floor":  "3楼"
+                    },
+    "柳州螺蛳粉":  {
+                  "dishCount":  2,
+                  "hotCount":  0,
+                  "hotRate":  0,
+                  "canteen":  "北山苑餐厅",
+                  "floor":  "3楼"
+              },
+    "陈姐拌饭瓦罐汤":  {
+                    "dishCount":  9,
+                    "hotCount":  0,
+                    "hotRate":  0,
+                    "canteen":  "汇百味餐厅",
+                    "floor":  "2楼"
+                },
+    "曾记面食":  {
+                 "dishCount":  35,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "粤式烧腊":  {
+                 "dishCount":  5,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "汇百味餐厅",
+                 "floor":  "2楼"
+             },
+    "沈大爷":  {
+                "dishCount":  38,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "汇百味餐厅",
+                "floor":  "2楼"
+            },
+    "开饭了":  {
+                "dishCount":  6,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "北山苑餐厅",
+                "floor":  "3楼"
+            },
+    "外公家米线":  {
+                  "dishCount":  224,
+                  "hotCount":  4,
+                  "hotRate":  0.018,
+                  "canteen":  "汇百味餐厅",
+                  "floor":  "2楼"
+              },
+    "缘味先石锅饭":  {
+                   "dishCount":  30,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "北山苑餐厅",
+                   "floor":  "3楼"
+               },
+    "擂震子擂椒拌饭":  {
+                    "dishCount":  14,
+                    "hotCount":  0,
+                    "hotRate":  0,
+                    "canteen":  "汇百味餐厅",
+                    "floor":  "2楼"
+                },
+    "椒顶汇":  {
+                "dishCount":  8,
+                "hotCount":  0,
+                "hotRate":  0,
+                "canteen":  "北山苑餐厅",
+                "floor":  "3楼"
+            },
+    "香灶火锅冒菜":  {
+                   "dishCount":  1,
+                   "hotCount":  0,
+                   "hotRate":  0,
+                   "canteen":  "北山苑餐厅",
+                   "floor":  "3楼"
+               },
+    "擂椒拌饭":  {
+                 "dishCount":  25,
+                 "hotCount":  0,
+                 "hotRate":  0,
+                 "canteen":  "北山苑餐厅",
+                 "floor":  "3楼"
+             },
+    "名厨哥现炒浇头面粉":  {
+                      "dishCount":  25,
+                      "hotCount":  0,
+                      "hotRate":  0,
+                      "canteen":  "汇百味餐厅",
+                      "floor":  "2楼"
+                  },
+    "兴旺法式铁板烧":  {
+                    "dishCount":  12,
+                    "hotCount":  0,
+                    "hotRate":  0,
+                    "canteen":  "北山苑餐厅",
+                    "floor":  "3楼"
+                },
+    "铺盖面系列":  {
+                  "dishCount":  10,
+                  "hotCount":  0,
+                  "hotRate":  0,
+                  "canteen":  "汇百味餐厅",
+                  "floor":  "2楼"
+              }
+},
     dishes: [
     {
         "id":  10000,
@@ -12,13 +357,14 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "小清新的口味，，约 700 kcal",
+        "desc":  "小清新的口味，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -36,6 +382,9 @@
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10.8,
         "cal":  700,
         "tags":  [
@@ -59,6 +408,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -82,6 +434,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2.5,
         "cal":  400,
         "tags":  [
@@ -105,12 +460,13 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -126,8 +482,9 @@
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "微辣"
+                      "中辣"
                   ],
+        "flavors": ["辣"],
         "price":  21,
         "cal":  750,
         "tags":  [
@@ -135,7 +492,7 @@
                  ],
         "desc":  "「炒菜」之选，约 750 kcal",
         "veg":  false,
-        "spicy":  1,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "公社食堂小炒",
@@ -151,6 +508,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  700,
         "tags":  [
@@ -174,6 +534,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -197,6 +560,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -220,6 +586,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -243,6 +612,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -266,6 +638,9 @@
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -289,6 +664,9 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  400,
         "tags":  [
@@ -312,12 +690,13 @@
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -335,6 +714,9 @@
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -352,19 +734,46 @@
     },
     {
         "id":  10015,
+        "name":  "石锅鸡蛋豆腐",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭12元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10016,
         "name":  "酸菜金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -375,13 +784,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10016,
+        "id":  10017,
         "name":  "全家福/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -398,13 +810,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10017,
+        "id":  10018,
         "name":  "芝士鳕鱼中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.8,
         "cal":  650,
         "tags":  [
@@ -421,13 +836,16 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10018,
+        "id":  10019,
         "name":  "荤菜（肉丝、腊肉、广式腊肠、肉沫、回锅肉、小炒肉）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  450,
         "tags":  [
@@ -444,19 +862,20 @@
         "rawGroup":  "加配菜"
     },
     {
-        "id":  10019,
+        "id":  10020,
         "name":  "菌汤火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -467,20 +886,24 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10020,
+        "id":  10021,
         "name":  "排骨红烧肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜",
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "香甜可口的红烧肉配上排骨，还等什么呢，，约 700 kcal",
+        "desc":  "香甜可口的红烧肉配上排骨，还等什么呢，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -491,19 +914,46 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10021,
+        "id":  10022,
+        "name":  "干拌辣子鸡面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10023,
         "name":  "酸菜炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -514,19 +964,20 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10022,
+        "id":  10024,
         "name":  "泡椒鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -537,13 +988,14 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10023,
+        "id":  10025,
         "name":  "西红柿鸡蛋小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  17,
         "cal":  450,
         "tags":  [
@@ -560,36 +1012,45 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10024,
-        "name":  "绝味招牌‼️酱香大鸭腿",
+        "id":  10026,
+        "name":  "麻辣酱香鸭子套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
-        "price":  15.9,
+        "flavors":  [
+                        "辣",
+                        "麻",
+                        "咸鲜"
+                    ],
+        "price":  16,
         "cal":  450,
         "tags":  [
 
                  ],
-        "desc":  "「推荐」之选（另有：推荐¥15.9），约 450 kcal",
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭16元），约 450 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "一万家干锅",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  10025,
+        "id":  10027,
         "name":  "鬼城麻辣鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  21.9,
         "cal":  450,
         "tags":  [
@@ -606,13 +1067,16 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10026,
+        "id":  10028,
         "name":  "烧椒回锅肉滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -629,13 +1093,16 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10027,
+        "id":  10029,
         "name":  "黑胡椒牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -652,19 +1119,20 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10028,
+        "id":  10030,
         "name":  "冬阴功鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -675,19 +1143,20 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10029,
+        "id":  10031,
         "name":  "香辣肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -698,13 +1167,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10030,
+        "id":  10032,
         "name":  "土家鸡腿焖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -721,7 +1193,7 @@
         "rawGroup":  "土家焖饭"
     },
     {
-        "id":  10031,
+        "id":  10033,
         "name":  "香辣牙签肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -729,6 +1201,7 @@
                       "微辣",
                       "鲜香"
                   ],
+        "flavors": ["辣"],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -746,19 +1219,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10032,
+        "id":  10034,
         "name":  "火锅鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -769,13 +1243,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10033,
+        "id":  10035,
         "name":  "小馆辣肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -792,13 +1269,16 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10034,
+        "id":  10036,
         "name":  "港式香妃鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  20.9,
         "cal":  450,
         "tags":  [
@@ -815,13 +1295,14 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10035,
+        "id":  10037,
         "name":  "豆角茄子小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -838,13 +1319,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10036,
+        "id":  10038,
         "name":  "肉酱土豆泥拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -861,13 +1345,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10037,
+        "id":  10039,
         "name":  "香辣干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  750,
         "tags":  [
@@ -884,13 +1371,14 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10038,
+        "id":  10040,
         "name":  "包菜炒肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -907,13 +1395,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10039,
+        "id":  10041,
         "name":  "隆江猪蹄饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16.9,
         "cal":  700,
         "tags":  [
@@ -930,13 +1421,16 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10040,
+        "id":  10042,
         "name":  "里脊肉片小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -953,13 +1447,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10041,
+        "id":  10043,
         "name":  "焗鲜虾肉饼饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -976,13 +1473,16 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  10042,
+        "id":  10044,
         "name":  "任意双拼饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  700,
         "tags":  [
@@ -999,20 +1499,21 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10043,
+        "id":  10045,
         "name":  "香辣金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  true,
         "spicy":  1,
         "main":  "素",
@@ -1023,13 +1524,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10044,
+        "id":  10046,
         "name":  "香辣牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -1046,13 +1550,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10045,
+        "id":  10047,
         "name":  "肉酱土豆泥拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -1069,13 +1576,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10046,
+        "id":  10048,
         "name":  "酸汤云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -1093,13 +1603,16 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10047,
+        "id":  10049,
         "name":  "香芋地瓜丸",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  450,
         "tags":  [
@@ -1116,13 +1629,16 @@
         "rawGroup":  "单点(右侧邻屏)"
     },
     {
-        "id":  10048,
+        "id":  10050,
         "name":  "经典鸡排套餐",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  650,
         "tags":  [
@@ -1139,13 +1655,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10049,
+        "id":  10051,
         "name":  "双椒回锅肉滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -1162,19 +1681,20 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  10050,
+        "id":  10052,
         "name":  "酸萝卜火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -1185,37 +1705,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10051,
-        "name":  "干锅千叶豆腐盖饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  11.9,
-        "cal":  700,
-        "tags":  [
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥11.9），约 700 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "main":  "素",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10052,
+        "id":  10053,
         "name":  "炒螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -1232,13 +1731,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10053,
+        "id":  10054,
         "name":  "盖饭双拼",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -1255,19 +1757,46 @@
         "rawGroup":  "规则"
     },
     {
-        "id":  10054,
+        "id":  10055,
+        "name":  "红烧牛肉面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10056,
         "name":  "火锅鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -1278,13 +1807,14 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10055,
+        "id":  10057,
         "name":  "肉丸+火腿",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14.8,
         "cal":  450,
         "tags":  [
@@ -1301,13 +1831,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10056,
+        "id":  10058,
         "name":  "黑椒肉片拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -1324,13 +1857,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10057,
+        "id":  10059,
         "name":  "贵州红酸汤螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -1347,13 +1883,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10058,
+        "id":  10060,
         "name":  "干溜面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -1371,13 +1910,14 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10059,
+        "id":  10061,
         "name":  "肥牛+火腿🍳",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15.8,
         "cal":  450,
         "tags":  [
@@ -1394,13 +1934,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10060,
+        "id":  10062,
         "name":  "农家一碗香",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -1417,19 +1960,20 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10061,
+        "id":  10063,
         "name":  "火锅全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -1440,19 +1984,48 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10062,
+        "id":  10064,
+        "name":  "手工杂酱酸辣粉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微辣",
+                      "微酸"
+                  ],
+        "flavors":  [
+                        "辣",
+                        "咸鲜"
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「酸辣粉系列」之选（另有：酸辣粉系列三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "酸辣粉系列"
+    },
+    {
+        "id":  10065,
         "name":  "番茄花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -1463,13 +2036,70 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10063,
+        "id":  10066,
+        "name":  "石锅焖面+红烧肉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  15,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价15元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10067,
+        "name":  "石锅焖面+茄子",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底+1元、豆腐底同价12元/份），约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10068,
         "name":  "番茄鸡蛋盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -1486,13 +2116,16 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10064,
+        "id":  10069,
         "name":  "日式烧牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15.9,
         "cal":  450,
         "tags":  [
@@ -1509,37 +2142,16 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10065,
-        "name":  "干锅时蔬盲盒搭配",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  11.8,
-        "cal":  750,
-        "tags":  [
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥11.8），约 750 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "main":  "素",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10066,
+        "id":  10070,
         "name":  "特色鸡肉炒石榴花粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -1556,13 +2168,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10067,
+        "id":  10071,
         "name":  "套餐九（七虾堡1个+辣翅一对+薯条1份+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  22.8,
         "cal":  650,
         "tags":  [
@@ -1579,36 +2194,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10068,
-        "name":  "酱香麻辣鸡翅尖试吃",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  0.6,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐试吃装¥0.6），约 450 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10069,
+        "id":  10072,
         "name":  "铁板里脊",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  650,
         "tags":  [
@@ -1625,13 +2220,16 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10070,
+        "id":  10073,
         "name":  "松脆酪酪薯",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  400,
         "tags":  [
@@ -1648,13 +2246,16 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10071,
+        "id":  10074,
         "name":  "流沙鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -1671,13 +2272,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10072,
+        "id":  10075,
         "name":  "软皮牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -1694,19 +2298,20 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10073,
+        "id":  10076,
         "name":  "冬阴功鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -1717,13 +2322,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10074,
+        "id":  10077,
         "name":  "鳕鱼堡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  450,
         "tags":  [
@@ -1740,13 +2348,16 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10075,
+        "id":  10078,
         "name":  "贡菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -1763,13 +2374,14 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10076,
+        "id":  10079,
         "name":  "鱼香肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "甜"
                   ],
+        "flavors": ["甜"],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -1786,13 +2398,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10077,
+        "id":  10080,
         "name":  "酸菜馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -1809,13 +2424,17 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10078,
+        "id":  10081,
         "name":  "椒麻拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -1832,13 +2451,17 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10079,
+        "id":  10082,
         "name":  "番茄",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -1857,13 +2480,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10080,
+        "id":  10083,
         "name":  "冬阴功全家福米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -1880,13 +2506,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10081,
+        "id":  10084,
         "name":  "小馆特色卤肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -1903,13 +2532,16 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10082,
+        "id":  10085,
         "name":  "牛肉饼/鱼肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  400,
         "tags":  [
@@ -1926,13 +2558,16 @@
         "rawGroup":  "自选健康餐"
     },
     {
-        "id":  10083,
+        "id":  10086,
         "name":  "杂粮饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2,
         "cal":  700,
         "tags":  [
@@ -1950,13 +2585,16 @@
         "rawGroup":  "自选健康餐"
     },
     {
-        "id":  10084,
+        "id":  10087,
         "name":  "湖南小炒肉茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -1973,13 +2611,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10085,
+        "id":  10088,
         "name":  "套餐3（火鸡面+辣翅1对+年糕条3个+锅巴土豆3个）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  15.8,
         "cal":  450,
         "tags":  [
@@ -1996,20 +2637,24 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  10086,
+        "id":  10089,
         "name":  "藤椒肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "折扣",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2020,13 +2665,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10087,
+        "id":  10090,
         "name":  "鸡丝干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -2043,13 +2691,17 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10088,
+        "id":  10091,
         "name":  "藤椒抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -2066,19 +2718,23 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10089,
+        "id":  10092,
         "name":  "藤椒鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2089,19 +2745,20 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10090,
+        "id":  10093,
         "name":  "番茄炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2112,13 +2769,17 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10091,
+        "id":  10094,
         "name":  "番茄云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -2135,36 +2796,68 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10092,
+        "id":  10095,
         "name":  "脆香鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
-        "price":  13,
+        "flavors":  [
+
+                    ],
+        "price":  15,
         "cal":  700,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「招牌」之选（另有：规格：大份；含米饭+素菜+酱料+可乐15.0元），约 700 kcal",
+        "desc":  "「套餐」之选（另有：套餐米饭+素菜+香料+可乐15元），约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
-        "portion":  "small",
+        "portion":  "regular",
         "stall":  "脆香鸭",
         "canteen":  "汇百味餐厅",
         "img":  "",
-        "rawGroup":  ""
+        "rawGroup":  "套餐"
     },
     {
-        "id":  10093,
+        "id":  10096,
+        "name":  "大块卤肉面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10097,
         "name":  "本帮咸水鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -2181,13 +2874,40 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10094,
+        "id":  10098,
+        "name":  "石锅红烧肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  15,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭15元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10099,
         "name":  "排骨红烧肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["咸鲜"],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -2204,13 +2924,14 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10095,
+        "id":  10100,
         "name":  "酸菜滑肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -2227,19 +2948,20 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10096,
+        "id":  10101,
         "name":  "酸菜鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2250,19 +2972,20 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10097,
+        "id":  10102,
         "name":  "菌汤肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2273,36 +2996,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10098,
-        "name":  "香辣干锅鸡",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  15,
-        "cal":  750,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「干锅系列」之选（另有：干锅系列配图菜，价格存疑15元），约 750 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "干锅系列"
-    },
-    {
-        "id":  10099,
+        "id":  10103,
         "name":  "铁板鸡扒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12.9,
         "cal":  700,
         "tags":  [
@@ -2319,13 +3022,66 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  10100,
+        "id":  10104,
+        "name":  "干拌牛肉面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10105,
+        "name":  "牛肉包",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  2.5,
+        "cal":  450,
+        "tags":  [
+                     "性价比"
+                 ],
+        "desc":  "「包子类」之选（另有：包子类2.5元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "南邻汤包",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "包子类"
+    },
+    {
+        "id":  10106,
         "name":  "辣子鸡丁小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -2342,13 +3098,17 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10101,
+        "id":  10107,
         "name":  "番茄馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -2366,19 +3126,20 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10102,
+        "id":  10108,
         "name":  "番茄午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2389,13 +3150,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10103,
+        "id":  10109,
         "name":  "酸菜牛肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  17,
         "cal":  600,
         "tags":  [
@@ -2412,13 +3176,16 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  10104,
+        "id":  10110,
         "name":  "鱼香肉丝拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -2435,13 +3202,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10105,
+        "id":  10111,
         "name":  "曹鸭子",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -2458,13 +3228,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10106,
+        "id":  10112,
         "name":  "香菇鸡滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -2481,19 +3254,20 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  10107,
+        "id":  10113,
         "name":  "酸菜全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2504,13 +3278,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10108,
+        "id":  10114,
         "name":  "黑椒肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  9.9,
         "cal":  600,
         "tags":  [
@@ -2527,19 +3304,20 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10109,
+        "id":  10115,
         "name":  "冬阴功酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -2550,13 +3328,14 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10110,
+        "id":  10116,
         "name":  "香辣鸡腿肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -2574,13 +3353,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10111,
+        "id":  10117,
         "name":  "姜鸭",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -2597,13 +3379,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10112,
+        "id":  10118,
         "name":  "海味云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -2621,13 +3406,16 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10113,
+        "id":  10119,
         "name":  "香菇酱肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -2644,13 +3432,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10114,
+        "id":  10120,
         "name":  "泡椒羊杂米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -2667,13 +3458,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10115,
+        "id":  10121,
         "name":  "蒜蓉龙虾尾盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -2690,13 +3484,42 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10116,
+        "id":  10122,
+        "name":  "泡椒鸡杂面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10123,
         "name":  "肉末丝瓜土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  700,
         "tags":  [
@@ -2713,13 +3536,42 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  10117,
+        "id":  10124,
+        "name":  "川香回锅肉",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10125,
         "name":  "干海椒干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -2736,13 +3588,16 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10118,
+        "id":  10126,
         "name":  "地锅鸭",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -2759,7 +3614,60 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10119,
+        "id":  10127,
+        "name":  "石锅焖面+金针菇",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底+1元、豆腐底同价12元/份），约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10128,
+        "name":  "石锅双椒鸡丁",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭14元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10129,
         "name":  "杂酱酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2767,6 +3675,10 @@
                       "微辣",
                       "微酸"
                   ],
+        "flavors":  [
+                        "辣",
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -2783,13 +3695,43 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  10120,
+        "id":  10130,
+        "name":  "素蒸碗",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  3,
+        "cal":  450,
+        "tags":  [
+                     "性价比",
+                     "素食友好"
+                 ],
+        "desc":  "「小份蒸菜」之选（另有：小份蒸菜小份蒸菜，一碗一份，不辣素菜2-4元/碗），约 450 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "small",
+        "stall":  "浏阳蒸碗",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "小份蒸菜"
+    },
+    {
+        "id":  10131,
         "name":  "泡椒火腿米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -2806,13 +3748,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10121,
+        "id":  10132,
         "name":  "天妇罗蟹柳中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.8,
         "cal":  650,
         "tags":  [
@@ -2829,13 +3774,16 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10122,
+        "id":  10133,
         "name":  "肉丸套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -2852,13 +3800,16 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10123,
+        "id":  10134,
         "name":  "鲜肉小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -2875,13 +3826,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10124,
+        "id":  10135,
         "name":  "小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -2898,13 +3852,16 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10125,
+        "id":  10136,
         "name":  "海味馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -2922,13 +3879,16 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10126,
+        "id":  10137,
         "name":  "沾水抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -2945,13 +3905,16 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10127,
+        "id":  10138,
         "name":  "土豆米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -2969,13 +3932,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10128,
+        "id":  10139,
         "name":  "鸡蛋炒拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -2992,13 +3958,16 @@
         "rawGroup":  "炒拉面/刀削面"
     },
     {
-        "id":  10129,
+        "id":  10140,
         "name":  "去皮鸡腿排大满配",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -3015,13 +3984,16 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10130,
+        "id":  10141,
         "name":  "烤肠芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -3038,13 +4010,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10131,
+        "id":  10142,
         "name":  "招牌干锅鸡套餐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  15,
         "cal":  750,
         "tags":  [
@@ -3052,7 +4027,7 @@
                  ],
         "desc":  "「炸串拌饭套餐类」之选（另有：炸串拌饭套餐类15元），约 750 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "椒顶汇",
@@ -3061,13 +4036,42 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10132,
+        "id":  10143,
+        "name":  "石锅鸡柳",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭13元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10144,
         "name":  "经典浓酱牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -3084,13 +4088,16 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10133,
+        "id":  10145,
         "name":  "鸡腿擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -3107,13 +4114,16 @@
         "rawGroup":  "卤肉擂饭系列"
     },
     {
-        "id":  10134,
+        "id":  10146,
         "name":  "泡椒嫩滑肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -3130,13 +4140,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10135,
+        "id":  10147,
         "name":  "小炒肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -3153,13 +4166,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10136,
+        "id":  10148,
         "name":  "农家一碗香盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -3176,19 +4192,20 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10137,
+        "id":  10149,
         "name":  "酸萝卜鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -3199,13 +4216,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10138,
+        "id":  10150,
         "name":  "金汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -3223,13 +4243,16 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10139,
+        "id":  10151,
         "name":  "小馆鲜肉炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -3246,13 +4269,42 @@
         "rawGroup":  "小馆炒面"
     },
     {
-        "id":  10140,
+        "id":  10152,
+        "name":  "肉沫豆腐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列11.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10153,
         "name":  "梅菜扣肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -3269,13 +4321,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10141,
+        "id":  10154,
         "name":  "木耳肉片",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -3292,13 +4347,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10142,
+        "id":  10155,
         "name":  "肉肠拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -3315,20 +4373,21 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10143,
+        "id":  10156,
         "name":  "泡椒土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -3339,13 +4398,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10144,
+        "id":  10157,
         "name":  "两荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -3362,13 +4424,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10145,
+        "id":  10158,
         "name":  "羊杂米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -3385,13 +4450,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10146,
+        "id":  10159,
         "name":  "招牌五拼烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.6,
         "cal":  700,
         "tags":  [
@@ -3408,13 +4476,16 @@
         "rawGroup":  "招牌五拼烤肉饭"
     },
     {
-        "id":  10147,
+        "id":  10160,
         "name":  "虾滑",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -3431,13 +4502,16 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10148,
+        "id":  10161,
         "name":  "小面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -3455,13 +4529,14 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10149,
+        "id":  10162,
         "name":  "鱼香茄子小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "甜"
                   ],
+        "flavors": ["甜"],
         "price":  17,
         "cal":  450,
         "tags":  [
@@ -3478,13 +4553,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10150,
+        "id":  10163,
         "name":  "二荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -3501,19 +4579,20 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  10151,
+        "id":  10164,
         "name":  "烧白（梅菜扣肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["咸鲜"],
         "price":  13,
         "cal":  450,
         "tags":  [
                      "人气"
                  ],
-        "desc":  "五花肉，梅菜，香软糯，梅干菜下饭，太香了，，约 450 kcal",
+        "desc":  "五花肉，梅菜，香软糯，梅干菜下饭，太香了，约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -3524,13 +4603,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10152,
+        "id":  10165,
         "name":  "鱼排芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -3547,13 +4629,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10153,
+        "id":  10166,
         "name":  "小馆酸豆角汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -3571,13 +4656,42 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10154,
+        "id":  10167,
+        "name":  "干锅鸭架",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干锅现炒」之选（另有：干锅现炒13元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干锅现炒"
+    },
+    {
+        "id":  10168,
         "name":  "香辣粉丝包",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  1.5,
         "cal":  400,
         "tags":  [
@@ -3595,13 +4709,16 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10155,
+        "id":  10169,
         "name":  "地锅小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -3618,13 +4735,16 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10156,
+        "id":  10170,
         "name":  "辣子鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -3641,13 +4761,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10157,
+        "id":  10171,
         "name":  "招牌纯素炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -3665,13 +4788,16 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10158,
+        "id":  10172,
         "name":  "套餐三（香辣鸡腿堡1个+脆皮鸡腿1个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  15.8,
         "cal":  450,
         "tags":  [
@@ -3688,13 +4814,14 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10159,
+        "id":  10173,
         "name":  "肉丸+金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13.8,
         "cal":  450,
         "tags":  [
@@ -3711,13 +4838,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10160,
+        "id":  10174,
         "name":  "瓦香鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -3734,13 +4864,43 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10161,
+        "id":  10175,
+        "name":  "红烧肥肠面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  14,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两16元二两14元/三两16元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10176,
         "name":  "椒麻拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -3757,13 +4917,42 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10162,
+        "id":  10177,
+        "name":  "脆香鸭腿",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  15,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「套餐」之选（另有：套餐米饭+素菜+香料+可乐15元），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "脆香鸭",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "套餐"
+    },
+    {
+        "id":  10178,
         "name":  "广式叉烧",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -3780,20 +4969,21 @@
         "rawGroup":  ""
     },
     {
-        "id":  10163,
+        "id":  10179,
         "name":  "酸萝卜土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -3804,13 +4994,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10164,
+        "id":  10180,
         "name":  "小馆辣肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -3827,13 +5020,16 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10165,
+        "id":  10181,
         "name":  "红油馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -3851,13 +5047,16 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10166,
+        "id":  10182,
         "name":  "热狗卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -3874,13 +5073,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10167,
+        "id":  10183,
         "name":  "鸡酱松板肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -3897,13 +5099,16 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10168,
+        "id":  10184,
         "name":  "韭菜肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -3920,13 +5125,16 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10169,
+        "id":  10185,
         "name":  "炸蛋米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -3943,19 +5151,20 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10170,
+        "id":  10186,
         "name":  "香辣鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -3966,13 +5175,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10171,
+        "id":  10187,
         "name":  "土豆肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -3989,13 +5201,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10172,
+        "id":  10188,
         "name":  "土豆丁腊肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4012,13 +5227,17 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10173,
+        "id":  10189,
         "name":  "番茄炒鸡蛋拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -4035,13 +5254,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10174,
+        "id":  10190,
         "name":  "鸡排拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -4058,13 +5280,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10175,
+        "id":  10191,
         "name":  "炒粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -4081,13 +5306,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10176,
+        "id":  10192,
         "name":  "辣子鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4104,13 +5332,16 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10177,
+        "id":  10193,
         "name":  "葱爆牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -4127,19 +5358,23 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10178,
+        "id":  10194,
         "name":  "藤椒鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -4150,13 +5385,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10179,
+        "id":  10195,
         "name":  "鲜椒拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -4173,19 +5411,20 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10180,
+        "id":  10196,
         "name":  "冬阴功鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -4196,13 +5435,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10181,
+        "id":  10197,
         "name":  "双椒干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -4219,13 +5461,16 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10182,
+        "id":  10198,
         "name":  "酥肉小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -4242,13 +5487,42 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10183,
+        "id":  10199,
+        "name":  "辣子鸡面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10200,
         "name":  "炙烤鸡肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -4265,13 +5539,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10184,
+        "id":  10201,
         "name":  "招牌酱香拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -4288,13 +5565,16 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10185,
+        "id":  10202,
         "name":  "泡椒肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4311,13 +5591,43 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10186,
+        "id":  10203,
+        "name":  "麻酱凉面凉皮",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  10,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「凉面系列」之选（另有：凉面系列三两12元二两10元/三两12元），约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "凉面系列"
+    },
+    {
+        "id":  10204,
         "name":  "小馆鸡蛋火腿炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -4334,13 +5644,17 @@
         "rawGroup":  "小馆炒面"
     },
     {
-        "id":  10187,
+        "id":  10205,
         "name":  "番茄鸡蛋面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -4357,13 +5671,16 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10188,
+        "id":  10206,
         "name":  "红汤鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -4380,13 +5697,42 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  10189,
+        "id":  10207,
+        "name":  "五香鸡腿套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭13元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "辣味拌饭"
+    },
+    {
+        "id":  10208,
         "name":  "铁板猪扒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -4403,13 +5749,14 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  10190,
+        "id":  10209,
         "name":  "午餐肉米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -4427,13 +5774,16 @@
         "rawGroup":  "🫅交个朋友🫅"
     },
     {
-        "id":  10191,
+        "id":  10210,
         "name":  "香菇冬瓜乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11.9,
         "cal":  700,
         "tags":  [
@@ -4450,13 +5800,16 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  10192,
+        "id":  10211,
         "name":  "豆角茄子炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -4473,13 +5826,16 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10193,
+        "id":  10212,
         "name":  "一荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  700,
         "tags":  [
@@ -4497,13 +5853,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10194,
+        "id":  10213,
         "name":  "金汤酸菜抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -4520,13 +5879,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10195,
+        "id":  10214,
         "name":  "莲白肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4543,19 +5905,20 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10196,
+        "id":  10215,
         "name":  "菌汤猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -4566,13 +5929,17 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10197,
+        "id":  10216,
         "name":  "番茄烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4589,13 +5956,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10198,
+        "id":  10217,
         "name":  "酥肉米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -4612,13 +5982,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10199,
+        "id":  10218,
         "name":  "紫薯糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  400,
         "tags":  [
@@ -4635,13 +6008,17 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10200,
+        "id":  10219,
         "name":  "肉末番茄土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  8.8,
         "cal":  700,
         "tags":  [
@@ -4658,13 +6035,42 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  10201,
+        "id":  10220,
+        "name":  "双椒面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  10,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两12元二两10元/三两12元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10221,
         "name":  "脆饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2.5,
         "cal":  400,
         "tags":  [
@@ -4681,13 +6087,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10202,
+        "id":  10222,
         "name":  "双人套餐十二（脆皮小鸡腿4个+洋葱鸡肉圈5个+锅巴土豆5块+无骨鸡块4块+薯条1份+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  41.8,
         "cal":  650,
         "tags":  [
@@ -4704,13 +6113,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10203,
+        "id":  10223,
         "name":  "土豆丁火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4727,13 +6139,17 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10204,
+        "id":  10224,
         "name":  "番茄鸡蛋铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -4750,13 +6166,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10205,
+        "id":  10225,
         "name":  "鸭腿鸡排双拼",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  650,
         "tags":  [
@@ -4773,19 +6192,20 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  10206,
+        "id":  10226,
         "name":  "冬阴功油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -4796,13 +6216,17 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10207,
+        "id":  10227,
         "name":  "水煮肉片",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -4819,38 +6243,42 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10208,
-        "name":  "凉面/凉皮",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  10228,
+        "name":  "白水蛋",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
-        "price":  7,
-        "cal":  600,
+        "flavors":  [
+
+                    ],
+        "price":  1.5,
+        "cal":  450,
         "tags":  [
-                     "性价比",
-                     "素食友好",
-                     "管饱"
+                     "性价比"
                  ],
-        "desc":  "「凉面系列」之选（另有：凉面系列二两7元 三两9元7元/二两 9元/三两），约 600 kcal",
-        "veg":  true,
+        "desc":  "「糕点/蛋/粥」之选（另有：糕点/蛋/粥1.5元），约 450 kcal",
+        "veg":  false,
         "spicy":  0,
-        "main":  "素",
-        "portion":  "large",
-        "stall":  "曾记面食",
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "南邻汤包",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "凉面系列"
+        "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10209,
+        "id":  10229,
         "name":  "孜然烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -4867,13 +6295,14 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10210,
+        "id":  10230,
         "name":  "农家一碗香小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  20,
         "cal":  450,
         "tags":  [
@@ -4890,13 +6319,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10211,
+        "id":  10231,
         "name":  "日式烧牛肉饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15.9,
         "cal":  450,
         "tags":  [
@@ -4913,13 +6345,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10212,
+        "id":  10232,
         "name":  "香酥烤鸭焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -4936,13 +6371,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10213,
+        "id":  10233,
         "name":  "泡椒铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -4959,13 +6397,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10214,
+        "id":  10234,
         "name":  "一荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  700,
         "tags":  [
@@ -4982,13 +6423,44 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  10215,
+        "id":  10235,
+        "name":  "酱香麻辣鸭子半边",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣",
+                        "麻",
+                        "咸鲜"
+                    ],
+        "price":  25,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭半边鸭25元），约 700 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "辣味拌饭"
+    },
+    {
+        "id":  10236,
         "name":  "串香烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5005,13 +6477,16 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10216,
+        "id":  10237,
         "name":  "甜不辣芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -5029,13 +6504,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10217,
+        "id":  10238,
         "name":  "青菜肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5052,19 +6530,20 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10218,
+        "id":  10239,
         "name":  "菌汤鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -5075,20 +6554,24 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10219,
+        "id":  10240,
         "name":  "藤椒土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -5099,13 +6582,17 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10220,
+        "id":  10241,
         "name":  "猪排麻辣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -5122,13 +6609,16 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  10221,
+        "id":  10242,
         "name":  "辣子鸡",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5145,13 +6635,17 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10222,
+        "id":  10243,
         "name":  "椒麻鸡+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -5168,13 +6662,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10223,
+        "id":  10244,
         "name":  "澳洲肉扒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5191,13 +6688,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10224,
+        "id":  10245,
         "name":  "清汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -5215,13 +6715,14 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10225,
+        "id":  10246,
         "name":  "火锅素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -5229,7 +6730,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「推荐」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -5240,13 +6741,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10226,
+        "id":  10247,
         "name":  "酱肉包",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  2,
         "cal":  450,
         "tags":  [
@@ -5263,13 +6767,14 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10227,
+        "id":  10248,
         "name":  "鹌鹑蛋+火腿",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12.6,
         "cal":  450,
         "tags":  [
@@ -5286,13 +6791,14 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10228,
+        "id":  10249,
         "name":  "包菜炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5310,13 +6816,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10229,
+        "id":  10250,
         "name":  "曹鸭子+叉烧",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -5333,13 +6842,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10230,
+        "id":  10251,
         "name":  "黑椒肉柳",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5356,19 +6868,20 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10231,
+        "id":  10252,
         "name":  "香辣鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -5379,13 +6892,14 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10232,
+        "id":  10253,
         "name":  "莴笋肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -5402,13 +6916,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10233,
+        "id":  10254,
         "name":  "孜然肉片滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -5425,19 +6942,20 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10234,
+        "id":  10255,
         "name":  "香辣油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -5448,19 +6966,20 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10235,
+        "id":  10256,
         "name":  "酸萝卜鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -5471,13 +6990,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10236,
+        "id":  10257,
         "name":  "地锅锅包肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -5494,13 +7016,42 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10237,
+        "id":  10258,
+        "name":  "红油核桃肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  18,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭18元），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "辣味拌饭"
+    },
+    {
+        "id":  10259,
         "name":  "酸汤抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -5517,19 +7068,20 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10238,
+        "id":  10260,
         "name":  "泡椒猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -5540,13 +7092,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10239,
+        "id":  10261,
         "name":  "鸡排拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -5563,13 +7118,16 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10240,
+        "id":  10262,
         "name":  "土家腊肠焖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5586,13 +7144,16 @@
         "rawGroup":  "土家焖饭"
     },
     {
-        "id":  10241,
+        "id":  10263,
         "name":  "维C摇鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5609,13 +7170,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10242,
+        "id":  10264,
         "name":  "王牌茄子",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -5632,13 +7196,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10243,
+        "id":  10265,
         "name":  "鲍菇肉片茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5655,13 +7222,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10244,
+        "id":  10266,
         "name":  "鸡汤云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -5678,13 +7248,16 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10245,
+        "id":  10267,
         "name":  "铁板鸡排",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  650,
         "tags":  [
@@ -5701,13 +7274,44 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10246,
+        "id":  10268,
+        "name":  "酸萝卜面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微酸"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  8,
+        "cal":  600,
+        "tags":  [
+                     "性价比",
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两10元二两8元/三两10元），约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10269,
         "name":  "香菇青菜包",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  1.5,
         "cal":  450,
         "tags":  [
@@ -5725,13 +7329,16 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10247,
+        "id":  10270,
         "name":  "香菇滑鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5748,13 +7355,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10248,
+        "id":  10271,
         "name":  "套餐四（香辣鸡腿堡1个+薯条1份+脆皮鸡腿1个+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  21.8,
         "cal":  650,
         "tags":  [
@@ -5771,13 +7381,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10249,
+        "id":  10272,
         "name":  "清汤云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -5795,13 +7408,16 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10250,
+        "id":  10273,
         "name":  "二荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  700,
         "tags":  [
@@ -5818,13 +7434,17 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  10251,
+        "id":  10274,
         "name":  "番茄抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -5841,13 +7461,16 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10252,
+        "id":  10275,
         "name":  "青椒肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -5864,13 +7487,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10253,
+        "id":  10276,
         "name":  "香煎鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -5887,13 +7513,14 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10254,
+        "id":  10277,
         "name":  "蒜苔肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -5910,13 +7537,42 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10255,
+        "id":  10278,
+        "name":  "金牌猪肘饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14.8,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「现卤现捞」之选（另有：现卤现捞14.8元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "现卤现捞"
+    },
+    {
+        "id":  10279,
         "name":  "红烧排骨",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -5933,13 +7589,17 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10256,
+        "id":  10280,
         "name":  "红番茄牛肉炒米粉(不辣)",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -5956,13 +7616,17 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10257,
+        "id":  10281,
         "name":  "椒麻干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -5979,13 +7643,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10258,
+        "id":  10282,
         "name":  "地锅烤肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -6002,13 +7669,16 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10259,
+        "id":  10283,
         "name":  "锅包肉+小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -6025,13 +7695,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10260,
+        "id":  10284,
         "name":  "牛肉炒拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -6048,13 +7721,17 @@
         "rawGroup":  "炒拉面/刀削面"
     },
     {
-        "id":  10261,
+        "id":  10285,
         "name":  "红番茄鸡肉炒米粉(不辣)",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -6071,13 +7748,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10262,
+        "id":  10286,
         "name":  "薯格",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  400,
         "tags":  [
@@ -6094,13 +7774,16 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10263,
+        "id":  10287,
         "name":  "酸汤水饺",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -6117,19 +7800,20 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10264,
+        "id":  10288,
         "name":  "香辣花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -6140,13 +7824,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10265,
+        "id":  10289,
         "name":  "新派口水鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15.9,
         "cal":  700,
         "tags":  [
@@ -6163,19 +7850,22 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10266,
-        "name":  "酱香绝味大大大鸭腿",
-        "category":  "家常小炒",
-        "icon":  "beef",
+        "id":  10290,
+        "name":  "红油肘子瘦瘦肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
-        "price":  7,
-        "cal":  450,
+        "flavors":  [
+
+                    ],
+        "price":  14.8,
+        "cal":  700,
         "tags":  [
-                     "性价比"
+                     "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐只有一个鸭腿，没有菜，没有饭¥7），约 450 kcal",
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭14.8元），约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6183,16 +7873,19 @@
         "stall":  "一万家干锅",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  10267,
+        "id":  10291,
         "name":  "辣白菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  17,
         "cal":  600,
         "tags":  [
@@ -6209,20 +7902,21 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10268,
+        "id":  10292,
         "name":  "火锅油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「推荐」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6233,19 +7927,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10269,
+        "id":  10293,
         "name":  "火锅火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6256,13 +7951,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10270,
+        "id":  10294,
         "name":  "小馆鸡蛋炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -6279,13 +7977,16 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10271,
+        "id":  10295,
         "name":  "原子蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12.9,
         "cal":  450,
         "tags":  [
@@ -6302,13 +8003,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10272,
+        "id":  10296,
         "name":  "山椒酸萝卜铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -6326,13 +8030,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10273,
+        "id":  10297,
         "name":  "南瓜粥",
         "category":  "汤粥",
         "icon":  "soup",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  3,
         "cal":  200,
         "tags":  [
@@ -6351,13 +8058,16 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10274,
+        "id":  10298,
         "name":  "小馆麻酱鸡丝拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -6374,13 +8084,14 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  10275,
+        "id":  10299,
         "name":  "鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -6399,13 +8110,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10276,
+        "id":  10300,
         "name":  "泡椒鸡杂盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -6422,19 +8136,20 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10277,
+        "id":  10301,
         "name":  "冬阴功鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6445,20 +8160,21 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10278,
+        "id":  10302,
         "name":  "菌汤全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -6469,13 +8185,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10279,
+        "id":  10303,
         "name":  "黑椒牛肉拼大满配",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -6492,13 +8211,16 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10280,
+        "id":  10304,
         "name":  "秘汁烤堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7.5,
         "cal":  650,
         "tags":  [
@@ -6516,13 +8238,16 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10281,
+        "id":  10305,
         "name":  "青椒肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -6539,13 +8264,16 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10282,
+        "id":  10306,
         "name":  "照烧鸡肉饭（招牌）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13.9,
         "cal":  450,
         "tags":  [
@@ -6562,13 +8290,16 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10283,
+        "id":  10307,
         "name":  "扬州炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -6585,13 +8316,43 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10284,
+        "id":  10308,
+        "name":  "干锅素拼",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  11.9,
+        "cal":  750,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「干锅现炒」之选（另有：干锅现炒花菜、包菜、土豆、魔芋、千叶豆腐11.9元），约 750 kcal",
+        "veg":  true,
+        "spicy":  2,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干锅现炒"
+    },
+    {
+        "id":  10309,
         "name":  "泡椒鸡杂",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -6608,13 +8369,14 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10285,
+        "id":  10310,
         "name":  "猪肝+火腿🍳",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14.8,
         "cal":  450,
         "tags":  [
@@ -6631,13 +8393,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10286,
+        "id":  10311,
         "name":  "土家原味焖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  700,
         "tags":  [
@@ -6654,13 +8419,16 @@
         "rawGroup":  "土家焖饭"
     },
     {
-        "id":  10287,
+        "id":  10312,
         "name":  "鸡排拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -6677,19 +8445,20 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10288,
+        "id":  10313,
         "name":  "番茄鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6700,19 +8469,20 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10289,
+        "id":  10314,
         "name":  "酸菜鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6723,19 +8493,20 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10290,
+        "id":  10315,
         "name":  "菌汤鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6746,13 +8517,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10291,
+        "id":  10316,
         "name":  "香菇酿肉双拼",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -6769,19 +8543,20 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  10292,
+        "id":  10317,
         "name":  "番茄鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6792,13 +8567,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10293,
+        "id":  10318,
         "name":  "牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -6815,13 +8593,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10294,
+        "id":  10319,
         "name":  "鹌鹑蛋米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -6838,13 +8619,14 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10295,
+        "id":  10320,
         "name":  "酸萝卜素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -6852,7 +8634,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -6863,13 +8645,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10296,
+        "id":  10321,
         "name":  "清汤抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -6886,19 +8671,23 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10297,
+        "id":  10322,
         "name":  "藤椒鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6909,19 +8698,20 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10298,
+        "id":  10323,
         "name":  "火锅花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -6932,13 +8722,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10299,
+        "id":  10324,
         "name":  "外婆菜擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -6955,13 +8748,16 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10300,
+        "id":  10325,
         "name":  "牛肉面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -6978,13 +8774,14 @@
         "rawGroup":  ""
     },
     {
-        "id":  10301,
+        "id":  10326,
         "name":  "蒙古烤肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  21,
         "cal":  450,
         "tags":  [
@@ -7001,13 +8798,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10302,
+        "id":  10327,
         "name":  "碗碗羊肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -7024,13 +8824,16 @@
         "rawGroup":  "特色菜"
     },
     {
-        "id":  10303,
+        "id":  10328,
         "name":  "蒜蓉干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7047,13 +8850,42 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10304,
+        "id":  10329,
+        "name":  "酱香鸭腿饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  15,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭15元），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "辣味拌饭"
+    },
+    {
+        "id":  10330,
         "name":  "本帮酱鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12.9,
         "cal":  700,
         "tags":  [
@@ -7070,20 +8902,24 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10305,
+        "id":  10331,
         "name":  "藤椒金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -7094,13 +8930,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10306,
+        "id":  10332,
         "name":  "焦香尖椒鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -7117,13 +8956,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10307,
+        "id":  10333,
         "name":  "鸡翅尖火腿肠套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -7140,19 +8982,20 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10308,
+        "id":  10334,
         "name":  "泡椒鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -7163,13 +9006,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10309,
+        "id":  10335,
         "name":  "酸菜滑肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -7186,13 +9032,16 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10310,
+        "id":  10336,
         "name":  "香菇牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -7209,13 +9058,16 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10311,
+        "id":  10337,
         "name":  "火锅抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7232,13 +9084,16 @@
         "rawGroup":  "抄手(按两)"
     },
     {
-        "id":  10312,
+        "id":  10338,
         "name":  "笑脸薯",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -7255,13 +9110,16 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10313,
+        "id":  10339,
         "name":  "肉夹馍",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  450,
         "tags":  [
@@ -7278,43 +9136,47 @@
         "rawGroup":  ""
     },
     {
-        "id":  10314,
-        "name":  "香辣渔粉",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  10340,
+        "name":  "肉酱土豆泥套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
-                      "中辣"
+                      "咸香"
                   ],
-        "price":  12,
-        "cal":  600,
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  10.8,
+        "cal":  450,
         "tags":  [
-                     "管饱"
+
                  ],
-        "desc":  "「右侧电子屏（疑为五谷鱼粉类）」之选（另有：右侧电子屏（疑为五谷鱼粉类）菜名前二字不确定12元），约 600 kcal",
+        "desc":  "「套餐」之选（另有：套餐素菜任选5+米饭10.8元），约 450 kcal",
         "veg":  false,
-        "spicy":  2,
+        "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "犟稻超级酱骨饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "右侧电子屏（疑为五谷鱼粉类）"
+        "rawGroup":  "套餐"
     },
     {
-        "id":  10315,
+        "id":  10341,
         "name":  "酸菜豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -7325,13 +9187,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10316,
+        "id":  10342,
         "name":  "鸡柳卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -7348,13 +9213,17 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10317,
+        "id":  10343,
         "name":  "鸡柳麻辣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -7371,13 +9240,14 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10318,
+        "id":  10344,
         "name":  "青椒肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -7394,13 +9264,17 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10319,
+        "id":  10345,
         "name":  "番茄鸡蛋",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7417,13 +9291,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10320,
+        "id":  10346,
         "name":  "大盘鸡盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -7440,13 +9317,16 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10321,
+        "id":  10347,
         "name":  "焗豉汁滑鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -7463,19 +9343,20 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10322,
+        "id":  10348,
         "name":  "泡椒鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -7486,19 +9367,20 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10323,
+        "id":  10349,
         "name":  "香辣酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -7509,19 +9391,20 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10324,
+        "id":  10350,
         "name":  "番茄猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -7532,7 +9415,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10325,
+        "id":  10351,
         "name":  "辣番茄鸡蛋拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -7540,6 +9423,11 @@
                       "微辣",
                       "清淡"
                   ],
+        "flavors":  [
+                        "辣",
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7556,19 +9444,20 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10326,
+        "id":  10352,
         "name":  "冬阴功肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -7579,13 +9468,17 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10327,
+        "id":  10353,
         "name":  "麻辣香锅炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -7602,13 +9495,43 @@
         "rawGroup":  "新增香锅"
     },
     {
-        "id":  10328,
+        "id":  10354,
+        "name":  "干锅香酥麻辣鱼块",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
+        "price":  15,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「招牌」之选（另有：招牌有刺注意15元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "招牌"
+    },
+    {
+        "id":  10355,
         "name":  "鸡蛋卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -7625,13 +9548,42 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10329,
+        "id":  10356,
+        "name":  "干拌豌杂面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10357,
         "name":  "蒜蓉剁椒干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7648,13 +9600,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10330,
+        "id":  10358,
         "name":  "鱼豆腐米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7671,13 +9626,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10331,
+        "id":  10359,
         "name":  "地锅肉片",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -7694,13 +9652,42 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10332,
+        "id":  10360,
+        "name":  "干锅香辣鸭",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  16,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干锅现炒」之选（另有：干锅现炒双人30元16元/双人30元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干锅现炒"
+    },
+    {
+        "id":  10361,
         "name":  "原味螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -7717,19 +9704,20 @@
         "rawGroup":  "主食"
     },
     {
-        "id":  10333,
+        "id":  10362,
         "name":  "酸萝卜午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -7740,13 +9728,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10334,
+        "id":  10363,
         "name":  "豌杂铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -7763,13 +9754,73 @@
         "rawGroup":  ""
     },
     {
-        "id":  10335,
+        "id":  10364,
+        "name":  "剁椒番茄拌面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣",
+                      "清淡"
+                  ],
+        "flavors":  [
+                        "辣",
+                        "酸甜",
+                        "清淡"
+                    ],
+        "price":  9,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列三两11元二两9元/三两11元），约 600 kcal",
+        "veg":  true,
+        "spicy":  2,
+        "main":  "素",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10365,
+        "name":  "干拌面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  7,
+        "cal":  600,
+        "tags":  [
+                     "性价比",
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两9元二两7元/三两9元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10366,
         "name":  "套餐八（双层牛肉堡1个+脆皮鸡腿1个+薯条1份+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  22.8,
         "cal":  650,
         "tags":  [
@@ -7786,13 +9837,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10336,
+        "id":  10367,
         "name":  "热干面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -7809,13 +9863,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10337,
+        "id":  10368,
         "name":  "宫保鸡丁盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -7832,36 +9889,16 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10338,
-        "name":  "干煸牛肉丸",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  13.8,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥13.8），约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10339,
+        "id":  10369,
         "name":  "肉丸面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -7878,13 +9915,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10340,
+        "id":  10370,
         "name":  "青椒肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10.8,
         "cal":  700,
         "tags":  [
@@ -7901,13 +9941,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10341,
+        "id":  10371,
         "name":  "外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -7924,13 +9967,42 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10342,
+        "id":  10372,
+        "name":  "红油猪头肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  18,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭18元），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "辣味拌饭"
+    },
+    {
+        "id":  10373,
         "name":  "杂酱",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -7947,13 +10019,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10343,
+        "id":  10374,
         "name":  "馕芹菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  18,
         "cal":  600,
         "tags":  [
@@ -7970,13 +10045,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10344,
+        "id":  10375,
         "name":  "奥尔良去皮鸡腿排套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  450,
         "tags":  [
@@ -7993,37 +10071,42 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10345,
-        "name":  "素菜（自选）",
-        "category":  "家常小炒",
-        "icon":  "beef",
+        "id":  10376,
+        "name":  "回锅肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
-        "price":  2,
-        "cal":  450,
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  700,
         "tags":  [
-                     "性价比",
-                     "素食友好"
+                     "管饱"
                  ],
-        "desc":  "「蒸菜自选」之选（另有：蒸菜自选素菜价格区间2-4元2-4元），约 450 kcal",
-        "veg":  true,
+        "desc":  "「盖饭/小炒（左二列）」之选（另有：盖饭/小炒（左二列）小炒盖饭13元 小炒18元），约 700 kcal",
+        "veg":  false,
         "spicy":  0,
-        "main":  "素",
+        "main":  "荤",
         "portion":  "regular",
-        "stall":  "浏阳蒸碗",
+        "stall":  "公社食堂小炒",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "蒸菜自选"
+        "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10346,
+        "id":  10377,
         "name":  "菌香鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -8040,13 +10123,16 @@
         "rawGroup":  "新增香锅"
     },
     {
-        "id":  10347,
+        "id":  10378,
         "name":  "玫瑰豆沙包",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  1.5,
         "cal":  400,
         "tags":  [
@@ -8063,13 +10149,16 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10348,
+        "id":  10379,
         "name":  "澳门烧肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15.9,
         "cal":  700,
         "tags":  [
@@ -8086,13 +10175,16 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10349,
+        "id":  10380,
         "name":  "黄瓜肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -8109,13 +10201,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10350,
+        "id":  10381,
         "name":  "鸡肉米粉炒年糕",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -8132,13 +10227,14 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  10351,
+        "id":  10382,
         "name":  "黑椒肉柳盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -8156,13 +10252,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10352,
+        "id":  10383,
         "name":  "木耳肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -8179,13 +10278,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10353,
+        "id":  10384,
         "name":  "套餐一（香辣鸡腿堡1个+上校鸡块3个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12.8,
         "cal":  450,
         "tags":  [
@@ -8202,13 +10304,40 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10354,
+        "id":  10385,
+        "name":  "广东香肠",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列12.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10386,
         "name":  "肉沫茄子盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "鲜香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -8226,13 +10355,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10355,
+        "id":  10387,
         "name":  "花菜蔬菜套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  450,
         "tags":  [
@@ -8249,13 +10381,17 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10356,
+        "id":  10388,
         "name":  "麻婆豆腐",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -8273,13 +10409,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10357,
+        "id":  10389,
         "name":  "肉沫粉丝",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -8296,13 +10435,16 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10358,
+        "id":  10390,
         "name":  "泡椒羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -8319,13 +10461,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10359,
+        "id":  10391,
         "name":  "辣子鸡拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -8342,19 +10487,20 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10360,
+        "id":  10392,
         "name":  "香辣鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -8365,13 +10511,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10361,
+        "id":  10393,
         "name":  "清汤鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -8388,13 +10537,17 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  10362,
+        "id":  10394,
         "name":  "番茄抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -8411,13 +10564,43 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10363,
+        "id":  10395,
+        "name":  "石锅小酥肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭14元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10396,
         "name":  "鸡柳麻辣拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -8434,13 +10617,16 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10364,
+        "id":  10397,
         "name":  "牛肉米粉炒年糕",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  18,
         "cal":  600,
         "tags":  [
@@ -8457,13 +10643,16 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  10365,
+        "id":  10398,
         "name":  "地锅鱼丸",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -8480,13 +10669,16 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10366,
+        "id":  10399,
         "name":  "玫瑰豉油鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -8503,13 +10695,16 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10367,
+        "id":  10400,
         "name":  "功夫脆皮鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -8526,13 +10721,14 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10368,
+        "id":  10401,
         "name":  "回锅肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -8549,13 +10745,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10369,
+        "id":  10402,
         "name":  "酸菜酥肉米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -8572,19 +10771,20 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10370,
+        "id":  10403,
         "name":  "香辣全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -8595,20 +10795,21 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10371,
+        "id":  10404,
         "name":  "菌汤油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -8619,13 +10820,43 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10372,
+        "id":  10405,
+        "name":  "番茄丸子面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "清淡"
+                  ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10406,
         "name":  "辣子饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -8642,13 +10873,14 @@
         "rawGroup":  "特色小吃"
     },
     {
-        "id":  10373,
+        "id":  10407,
         "name":  "青椒鸡蛋小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -8665,36 +10897,14 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10374,
-        "name":  "【新品】干锅蟹排组合丸子",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  13.9,
-        "cal":  750,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥13.9），约 750 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10375,
+        "id":  10408,
         "name":  "孜然肉片盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -8712,13 +10922,17 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10376,
+        "id":  10409,
         "name":  "藤椒云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -8736,19 +10950,46 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10377,
+        "id":  10410,
+        "name":  "茶树菇鸡汤面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10411,
         "name":  "冬阴功全福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -8759,13 +11000,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10378,
+        "id":  10412,
         "name":  "孜然鸡柳擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -8782,19 +11026,20 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10379,
+        "id":  10413,
         "name":  "番茄火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -8805,13 +11050,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10380,
+        "id":  10414,
         "name":  "重庆小面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -8829,13 +11077,16 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10381,
+        "id":  10415,
         "name":  "豌豆面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -8854,13 +11105,14 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10382,
+        "id":  10416,
         "name":  "西红柿鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -8878,19 +11130,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10383,
+        "id":  10417,
         "name":  "冬阴功肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -8901,19 +11154,20 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10384,
+        "id":  10418,
         "name":  "火锅炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -8924,13 +11178,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10385,
+        "id":  10419,
         "name":  "小酥肉焖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -8947,13 +11204,17 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10386,
+        "id":  10420,
         "name":  "藤椒肉丝拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -8970,13 +11231,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10387,
+        "id":  10421,
         "name":  "小馆酸菜汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -8993,19 +11257,46 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10388,
+        "id":  10422,
+        "name":  "石锅鸡",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭14元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10423,
         "name":  "酸菜火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9016,19 +11307,20 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10389,
+        "id":  10424,
         "name":  "泡椒油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9039,13 +11331,42 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10390,
+        "id":  10425,
+        "name":  "石锅焖面+鱼丸",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底+1元、豆腐底同价13元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10426,
         "name":  "麦穗肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -9062,19 +11383,20 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10391,
+        "id":  10427,
         "name":  "菌汤炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9085,19 +11407,20 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10392,
+        "id":  10428,
         "name":  "酸萝卜鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9108,13 +11431,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10393,
+        "id":  10429,
         "name":  "套餐二（香辣鸡腿堡1个+鸡肉卷1个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -9131,36 +11457,42 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10394,
-        "name":  "荤菜（自选）",
-        "category":  "家常小炒",
-        "icon":  "beef",
+        "id":  10430,
+        "name":  "青椒肉丝炒面/刀削/河粉/米粉/泡面",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
-        "price":  6,
-        "cal":  450,
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
         "tags":  [
-                     "性价比"
+                     "管饱"
                  ],
-        "desc":  "「蒸菜自选」之选（另有：蒸菜自选荤菜价格区间6-12元6-12元），约 450 kcal",
+        "desc":  "「炒面」之选（另有：炒面12元），约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "浏阳蒸碗",
+        "stall":  "胖妹面庄",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "蒸菜自选"
+        "rawGroup":  "炒面"
     },
     {
-        "id":  10395,
+        "id":  10431,
         "name":  "奥尔良鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -9177,13 +11509,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10396,
+        "id":  10432,
         "name":  "秘制叉烧饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  16,
         "cal":  700,
         "tags":  [
@@ -9200,20 +11535,47 @@
         "rawGroup":  ""
     },
     {
-        "id":  10397,
+        "id":  10433,
+        "name":  "肉沫土豆",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列11.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10434,
         "name":  "泡椒豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -9224,13 +11586,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10398,
+        "id":  10435,
         "name":  "小馆招牌炸酱面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -9247,19 +11612,20 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  10399,
+        "id":  10436,
         "name":  "香辣午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -9270,13 +11636,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10400,
+        "id":  10437,
         "name":  "香菇牛肉干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -9293,13 +11662,43 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10401,
+        "id":  10438,
+        "name":  "石锅糖醋里脊",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "甜"
+                  ],
+        "flavors":  [
+                        "甜",
+                        "酸甜"
+                    ],
+        "price":  15,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭15元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10439,
         "name":  "西红柿炒鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "酸甜"
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -9316,13 +11715,16 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10402,
+        "id":  10440,
         "name":  "套餐十三（香辣鸡腿堡+鸡肉卷 二选一 +小鸡腿1个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11.8,
         "cal":  450,
         "tags":  [
@@ -9339,13 +11741,42 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10403,
+        "id":  10441,
+        "name":  "超级酱大骨套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「套餐」之选（另有：套餐酱大骨1份+素菜任选5+米饭11.8元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "犟稻超级酱骨饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "套餐"
+    },
+    {
+        "id":  10442,
         "name":  "鱼香茄子",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -9363,7 +11794,87 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10404,
+        "id":  10443,
+        "name":  "石锅焖面+土豆",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底+1元、豆腐底同价12元/份），约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10444,
+        "name":  "卤香鸭腿饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  13.8,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「现卤现捞」之选（另有：现卤现捞13.8元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "现卤现捞"
+    },
+    {
+        "id":  10445,
+        "name":  "老坛酸菜面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微酸"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  8,
+        "cal":  600,
+        "tags":  [
+                     "性价比",
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两10元二两8元/三两10元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10446,
         "name":  "豌杂酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -9371,6 +11882,9 @@
                       "微辣",
                       "微酸"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -9387,13 +11901,40 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  10405,
+        "id":  10447,
+        "name":  "西红柿炒蛋",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "酸甜"
+                    ],
+        "price":  12.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列12.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10448,
         "name":  "火锅豆皮面皮/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -9401,7 +11942,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「推荐」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -9412,13 +11953,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10406,
+        "id":  10449,
         "name":  "蜜汁烤肉双拼",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -9435,13 +11979,16 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  10407,
+        "id":  10450,
         "name":  "火锅抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -9458,20 +12005,21 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10408,
+        "id":  10451,
         "name":  "火锅午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "折扣",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9482,13 +12030,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10409,
+        "id":  10452,
         "name":  "扬州炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -9505,13 +12056,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10410,
+        "id":  10453,
         "name":  "地锅肉丸",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -9528,13 +12082,16 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10411,
+        "id":  10454,
         "name":  "特色牛肉炒石榴花粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  17,
         "cal":  600,
         "tags":  [
@@ -9551,13 +12108,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10412,
+        "id":  10455,
         "name":  "伊美牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -9574,13 +12134,17 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10413,
+        "id":  10456,
         "name":  "番茄鱼丸米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -9597,13 +12161,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10414,
+        "id":  10457,
         "name":  "小馆羊杂面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -9620,13 +12187,16 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10415,
+        "id":  10458,
         "name":  "梅菜扣肉（烧白）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -9643,13 +12213,14 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10416,
+        "id":  10459,
         "name":  "香辣素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -9657,7 +12228,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  true,
         "spicy":  1,
         "main":  "素",
@@ -9668,13 +12239,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10417,
+        "id":  10460,
         "name":  "鸡块干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -9691,13 +12265,17 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10418,
+        "id":  10461,
         "name":  "藤椒金针菇米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -9715,13 +12293,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10419,
+        "id":  10462,
         "name":  "经典酱肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -9738,13 +12319,42 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10420,
+        "id":  10463,
+        "name":  "招牌卤肉饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  14.8,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「现卤现捞」之选（另有：现卤现捞14.8元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "现卤现捞"
+    },
+    {
+        "id":  10464,
         "name":  "红油干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -9761,19 +12371,49 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10421,
+        "id":  10465,
+        "name":  "石锅焖面+鸡块",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  15,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价15元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10466,
         "name":  "藤椒鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9784,13 +12424,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10422,
+        "id":  10467,
         "name":  "小馆鸡蛋炸酱面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -9807,13 +12450,16 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  10423,
+        "id":  10468,
         "name":  "鸡蛋火腿炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -9830,13 +12476,16 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  10424,
+        "id":  10469,
         "name":  "龙江锅包肉茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -9853,13 +12502,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10425,
+        "id":  10470,
         "name":  "灌汤包",
         "category":  "汤粥",
         "icon":  "soup",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  200,
         "tags":  [
@@ -9877,13 +12529,17 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  10426,
+        "id":  10471,
         "name":  "糖醋里脊",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜",
+                        "酸甜"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -9900,13 +12556,16 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10427,
+        "id":  10472,
         "name":  "鲜肉蔬菜粥",
         "category":  "汤粥",
         "icon":  "soup",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  4,
         "cal":  200,
         "tags":  [
@@ -9924,19 +12583,20 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  10428,
+        "id":  10473,
         "name":  "冬阴功猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -9947,13 +12607,14 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10429,
+        "id":  10474,
         "name":  "泡椒素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -9961,7 +12622,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -9972,7 +12633,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10430,
+        "id":  10475,
         "name":  "酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -9980,6 +12641,9 @@
                       "微辣",
                       "微酸"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -9996,13 +12660,16 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  10431,
+        "id":  10476,
         "name":  "青椒鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -10019,13 +12686,16 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10432,
+        "id":  10477,
         "name":  "泡椒肉丝拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -10042,13 +12712,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10433,
+        "id":  10478,
         "name":  "剁椒干拌米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -10066,13 +12739,17 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10434,
+        "id":  10479,
         "name":  "鬼城麻辣鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  15.9,
         "cal":  700,
         "tags":  [
@@ -10089,13 +12766,16 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10435,
+        "id":  10480,
         "name":  "酸汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -10113,13 +12793,16 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10436,
+        "id":  10481,
         "name":  "泡椒肉丝盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -10136,13 +12819,16 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10437,
+        "id":  10482,
         "name":  "老干妈肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10.8,
         "cal":  700,
         "tags":  [
@@ -10159,13 +12845,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10438,
+        "id":  10483,
         "name":  "酸菜鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -10182,13 +12871,16 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  10439,
+        "id":  10484,
         "name":  "黄焖千叶豆腐鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -10205,13 +12897,17 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10440,
+        "id":  10485,
         "name":  "糖醋里脊小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜",
+                        "酸甜"
+                    ],
         "price":  21,
         "cal":  450,
         "tags":  [
@@ -10228,13 +12924,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10441,
+        "id":  10486,
         "name":  "蛋饼双拼",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -10251,13 +12950,42 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  10442,
+        "id":  10487,
+        "name":  "石锅焖面+烤肠",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价13元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10488,
         "name":  "香菇卤肉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -10274,13 +13002,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10443,
+        "id":  10489,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -10297,13 +13028,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10444,
+        "id":  10490,
         "name":  "地锅鲜肉片",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -10320,13 +13054,16 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10445,
+        "id":  10491,
         "name":  "铁板葱油鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -10343,13 +13080,16 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  10446,
+        "id":  10492,
         "name":  "新疆拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  18,
         "cal":  600,
         "tags":  [
@@ -10366,13 +13106,16 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10447,
+        "id":  10493,
         "name":  "泡椒鸡杂铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -10389,13 +13132,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10448,
+        "id":  10494,
         "name":  "鸡腿单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -10412,13 +13158,14 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10449,
+        "id":  10495,
         "name":  "午餐肉+煎蛋🍳",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15.8,
         "cal":  450,
         "tags":  [
@@ -10435,13 +13182,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10450,
+        "id":  10496,
         "name":  "肉丸子米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -10458,13 +13208,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10451,
+        "id":  10497,
         "name":  "秘制拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -10481,13 +13234,41 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10452,
+        "id":  10498,
+        "name":  "鸡杂酸辣粉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微辣",
+                      "微酸"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「酸辣粉系列」之选（另有：酸辣粉系列三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "酸辣粉系列"
+    },
+    {
+        "id":  10499,
         "name":  "土豆肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  9.9,
         "cal":  700,
         "tags":  [
@@ -10506,13 +13287,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10453,
+        "id":  10500,
         "name":  "香辣鸡腿中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  10.8,
         "cal":  650,
         "tags":  [
@@ -10529,13 +13313,16 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10454,
+        "id":  10501,
         "name":  "筋头巴脑牛肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -10552,13 +13339,17 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10455,
+        "id":  10502,
         "name":  "藤椒馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -10576,13 +13367,16 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10456,
+        "id":  10503,
         "name":  "黄焖金针菇鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -10599,13 +13393,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10457,
+        "id":  10504,
         "name":  "叉烧+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -10622,13 +13419,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10458,
+        "id":  10505,
         "name":  "肉酱土豆泥拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -10645,13 +13445,14 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10459,
+        "id":  10506,
         "name":  "鱼豆腐+豆皮",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11.6,
         "cal":  450,
         "tags":  [
@@ -10668,13 +13469,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10460,
+        "id":  10507,
         "name":  "明炉烧鸭/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  20.9,
         "cal":  450,
         "tags":  [
@@ -10691,13 +13495,16 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10461,
+        "id":  10508,
         "name":  "香辣牙签肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -10714,13 +13521,16 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10462,
+        "id":  10509,
         "name":  "凉皮凉面双拼",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -10739,13 +13549,16 @@
         "rawGroup":  "凉面凉皮"
     },
     {
-        "id":  10463,
+        "id":  10510,
         "name":  "酸菜鸡肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -10762,13 +13575,16 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  10464,
+        "id":  10511,
         "name":  "肉沫茄子拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -10785,13 +13601,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10465,
+        "id":  10512,
         "name":  "可乐鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -10808,59 +13627,42 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10466,
-        "name":  "墨西哥鸡肉卷",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  7.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「汉堡/卷」之选（另有：汉堡/卷7.5元/个），约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "汉堡/卷"
-    },
-    {
-        "id":  10467,
-        "name":  "干锅香辣鸭（肉多学姐推荐）",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
+        "id":  10513,
+        "name":  "干拌泡椒肉丝面",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
-        "price":  15.9,
-        "cal":  750,
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐折扣价¥15.9（9.4折，原价¥17）），约 750 kcal",
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
         "veg":  false,
         "spicy":  2,
         "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
+        "portion":  "large",
+        "stall":  "曾记面食",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "干拌系列"
     },
     {
-        "id":  10468,
+        "id":  10514,
         "name":  "小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -10877,13 +13679,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10469,
+        "id":  10515,
         "name":  "沙拉烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -10900,13 +13705,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10470,
+        "id":  10516,
         "name":  "牛肉手抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -10923,13 +13731,16 @@
         "rawGroup":  "左侧配图（新疆特色手抓饭）"
     },
     {
-        "id":  10471,
+        "id":  10517,
         "name":  "肉末豆腐土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  700,
         "tags":  [
@@ -10946,19 +13757,20 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  10472,
+        "id":  10518,
         "name":  "冬阴功火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -10969,13 +13781,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10473,
+        "id":  10519,
         "name":  "回锅肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -10992,13 +13807,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10474,
+        "id":  10520,
         "name":  "红烧肥肠",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -11015,13 +13833,17 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10475,
+        "id":  10521,
         "name":  "椒麻鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -11038,13 +13860,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10476,
+        "id":  10522,
         "name":  "新派口水鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  20.9,
         "cal":  450,
         "tags":  [
@@ -11061,13 +13886,16 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10477,
+        "id":  10523,
         "name":  "豆干肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -11084,19 +13912,49 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10478,
+        "id":  10524,
+        "name":  "鲜肉酸汤面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微酸"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10525,
         "name":  "藤椒花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11107,19 +13965,20 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10479,
+        "id":  10526,
         "name":  "番茄肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11130,13 +13989,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10480,
+        "id":  10527,
         "name":  "毛豆烧鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -11153,19 +14015,23 @@
         "rawGroup":  ""
     },
     {
-        "id":  10481,
+        "id":  10528,
         "name":  "藤椒鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11176,13 +14042,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10482,
+        "id":  10529,
         "name":  "照烧鸡肉饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13.9,
         "cal":  450,
         "tags":  [
@@ -11199,19 +14068,20 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10483,
+        "id":  10530,
         "name":  "火锅鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11222,13 +14092,14 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10484,
+        "id":  10531,
         "name":  "青椒鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11246,13 +14117,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10485,
+        "id":  10532,
         "name":  "干锅兔",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  750,
         "tags":  [
@@ -11260,7 +14134,7 @@
                  ],
         "desc":  "「店长推荐」之选（另有：店长推荐整板统一价13元/份，所有菜品均可双拼13元/份），约 750 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "木桶饭",
@@ -11269,13 +14143,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10486,
+        "id":  10533,
         "name":  "肉沫豇豆蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11292,36 +14169,17 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10487,
-        "name":  "椒麻藤椒鸡/例",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  21.9,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "「例份（右栏）」之选（另有：例份（右栏）例份21.9元），约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "兴旺烧腊饭",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "例份（右栏）"
-    },
-    {
-        "id":  10488,
+        "id":  10534,
         "name":  "麻辣鱼",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  15,
         "cal":  750,
         "tags":  [
@@ -11338,13 +14196,16 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10489,
+        "id":  10535,
         "name":  "双层鸡腿堡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -11361,13 +14222,16 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10490,
+        "id":  10536,
         "name":  "猪肝米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -11384,13 +14248,14 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10491,
+        "id":  10537,
         "name":  "肉丸+煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13.8,
         "cal":  450,
         "tags":  [
@@ -11407,13 +14272,14 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10492,
+        "id":  10538,
         "name":  "蒜苔炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors": ["清淡"],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11431,13 +14297,43 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10493,
+        "id":  10539,
+        "name":  "糖醋里脊",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "甜"
+                  ],
+        "flavors":  [
+                        "甜",
+                        "酸甜"
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10540,
         "name":  "香菇滑鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -11454,13 +14350,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10494,
+        "id":  10541,
         "name":  "雪花鸡柳小锅",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  650,
         "tags":  [
@@ -11477,13 +14376,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10495,
+        "id":  10542,
         "name":  "香干炒肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11500,13 +14402,14 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10496,
+        "id":  10543,
         "name":  "番茄素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -11514,7 +14417,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -11525,13 +14428,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10497,
+        "id":  10544,
         "name":  "卤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11548,13 +14454,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10498,
+        "id":  10545,
         "name":  "小馆鸡柳面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -11571,13 +14480,16 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10499,
+        "id":  10546,
         "name":  "小馆猪排面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -11594,19 +14506,20 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10500,
+        "id":  10547,
         "name":  "冬阴功炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11617,13 +14530,14 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10501,
+        "id":  10548,
         "name":  "辣子鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -11641,13 +14555,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10502,
+        "id":  10549,
         "name":  "鱼香肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11664,13 +14581,16 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  10503,
+        "id":  10550,
         "name":  "香辣里脊饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -11687,20 +14607,21 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10504,
+        "id":  10551,
         "name":  "火锅金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -11711,7 +14632,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10505,
+        "id":  10552,
         "name":  "麻辣鱼（小份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -11719,13 +14640,17 @@
                       "中辣",
                       "鲜香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  16,
         "cal":  750,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "不带刺的黑鱼好嫩滑，麻辣鲜香，，约 750 kcal",
+        "desc":  "不带刺的黑鱼好嫩滑，麻辣鲜香，约 750 kcal",
         "veg":  false,
         "spicy":  2,
         "main":  "荤",
@@ -11736,19 +14661,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10506,
+        "id":  10553,
         "name":  "冬阴功午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11759,13 +14685,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10507,
+        "id":  10554,
         "name":  "虫草花玉米乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11.9,
         "cal":  700,
         "tags":  [
@@ -11782,13 +14711,42 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  10508,
+        "id":  10555,
+        "name":  "泡椒鸡杂",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10556,
         "name":  "锅包肉焖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -11805,13 +14763,16 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10509,
+        "id":  10557,
         "name":  "尖椒仔鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -11828,13 +14789,17 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10510,
+        "id":  10558,
         "name":  "番茄鸡蛋拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -11851,13 +14816,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10511,
+        "id":  10559,
         "name":  "香辣猪头皮茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -11874,19 +14842,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10512,
+        "id":  10560,
         "name":  "火锅猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -11897,13 +14866,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10513,
+        "id":  10561,
         "name":  "土豆泥牛肉杂酱拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -11920,20 +14892,47 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  10514,
+        "id":  10562,
+        "name":  "火焰辣子鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  10563,
         "name":  "酸萝卜油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -11944,13 +14943,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10515,
+        "id":  10564,
         "name":  "红油云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -11968,13 +14970,45 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10516,
+        "id":  10565,
+        "name":  "麻辣小面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
+        "price":  7,
+        "cal":  600,
+        "tags":  [
+                     "性价比",
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两9元二两7元/三两9元），约 600 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10566,
         "name":  "番茄鸡蛋拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -11992,13 +15026,16 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10517,
+        "id":  10567,
         "name":  "泡菜炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -12015,13 +15052,16 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10518,
+        "id":  10568,
         "name":  "红油干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -12038,13 +15078,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10519,
+        "id":  10569,
         "name":  "小青菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -12061,19 +15104,20 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10520,
+        "id":  10570,
         "name":  "酸菜鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12084,20 +15128,21 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10521,
+        "id":  10571,
         "name":  "泡椒金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -12108,13 +15153,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10522,
+        "id":  10572,
         "name":  "鸡汤抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -12131,13 +15179,16 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10523,
+        "id":  10573,
         "name":  "港式香妃鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -12154,13 +15205,16 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10524,
+        "id":  10574,
         "name":  "糊辣壳云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -12178,13 +15232,16 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10525,
+        "id":  10575,
         "name":  "鸡蛋灌饼(生菜、鸡蛋)",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  450,
         "tags":  [
@@ -12201,19 +15258,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10526,
+        "id":  10576,
         "name":  "酸菜酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12224,13 +15282,14 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10527,
+        "id":  10577,
         "name":  "冬阴功素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -12238,7 +15297,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -12249,13 +15308,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10528,
+        "id":  10578,
         "name":  "台式烧肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -12272,13 +15334,16 @@
         "rawGroup":  "卤肉擂饭系列"
     },
     {
-        "id":  10529,
+        "id":  10579,
         "name":  "嫩烤鱼饼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  450,
         "tags":  [
@@ -12295,20 +15360,21 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10530,
+        "id":  10580,
         "name":  "回锅肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "川味十足。加以豆豉，盐煎肉的味道。，约 700 kcal",
+        "desc":  "川味十足。加以豆豉，盐煎肉的味道，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12319,19 +15385,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10531,
+        "id":  10581,
         "name":  "酸菜油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12342,13 +15409,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10532,
+        "id":  10582,
         "name":  "卤肉面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -12365,19 +15435,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10533,
+        "id":  10583,
         "name":  "菌汤鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12388,20 +15459,21 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10534,
+        "id":  10584,
         "name":  "番茄土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -12412,19 +15484,20 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10535,
+        "id":  10585,
         "name":  "酸萝卜酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12435,13 +15508,43 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10536,
+        "id":  10586,
+        "name":  "鲜甜酱汁鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "甜"
+                  ],
+        "flavors":  [
+                        "甜",
+                        "咸鲜"
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  10587,
         "name":  "辣子鸡",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -12458,13 +15561,16 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10537,
+        "id":  10588,
         "name":  "韭菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -12481,13 +15587,16 @@
         "rawGroup":  "手工现包水饺"
     },
     {
-        "id":  10538,
+        "id":  10589,
         "name":  "老麻抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -12504,13 +15613,16 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10539,
+        "id":  10590,
         "name":  "里脊单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -12527,13 +15639,42 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10540,
+        "id":  10591,
+        "name":  "石锅肥牛",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  15,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭15元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10592,
         "name":  "原汤羊杂米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -12550,19 +15691,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10541,
+        "id":  10593,
         "name":  "香辣鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -12573,13 +15715,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10542,
+        "id":  10594,
         "name":  "黄焖土豆鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11.99,
         "cal":  700,
         "tags":  [
@@ -12596,19 +15741,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10543,
+        "id":  10595,
         "name":  "泡椒花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12619,7 +15765,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10544,
+        "id":  10596,
         "name":  "豆角茄子炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12628,6 +15774,7 @@
                       "咸香",
                       "鲜香"
                   ],
+        "flavors": ["甜"],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -12645,13 +15792,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10545,
+        "id":  10597,
         "name":  "酸菜抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -12668,13 +15818,14 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10546,
+        "id":  10598,
         "name":  "辣子鸡小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -12691,13 +15842,14 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10547,
+        "id":  10599,
         "name":  "酸菜素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -12705,7 +15857,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -12716,13 +15868,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10548,
+        "id":  10600,
         "name":  "焗豉汁排骨饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -12739,13 +15894,16 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10549,
+        "id":  10601,
         "name":  "香酥鸡小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -12762,13 +15920,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10550,
+        "id":  10602,
         "name":  "金汤云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -12786,19 +15947,20 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10551,
+        "id":  10603,
         "name":  "菌汤肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -12809,13 +15971,14 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10552,
+        "id":  10604,
         "name":  "莴笋肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors": ["清淡"],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -12833,13 +15996,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10553,
+        "id":  10605,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  700,
         "tags":  [
@@ -12857,13 +16023,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10554,
+        "id":  10606,
         "name":  "油泼面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -12880,36 +16049,41 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10555,
-        "name":  "干锅去头小黄鱼（4条）",
+        "id":  10607,
+        "name":  "干锅琅琊土豆",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
-        "price":  14.8,
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  9.9,
         "cal":  750,
         "tags":  [
+                     "素食友好",
                      "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐¥14.8），约 750 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
+        "desc":  "「招牌」之选（另有：招牌9.9元），约 750 kcal",
+        "veg":  true,
+        "spicy":  2,
+        "main":  "素",
         "portion":  "regular",
         "stall":  "一万家干锅",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "招牌"
     },
     {
-        "id":  10556,
+        "id":  10608,
         "name":  "土豆肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  17,
         "cal":  450,
         "tags":  [
@@ -12926,13 +16100,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10557,
+        "id":  10609,
         "name":  "青椒肉丝盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -12949,36 +16126,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10558,
-        "name":  "干锅翅根（4个）",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  15.8,
-        "cal":  750,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥15.8），约 750 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10559,
+        "id":  10610,
         "name":  "明炉烧鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -12995,19 +16152,20 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10560,
+        "id":  10611,
         "name":  "冬阴功鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13018,13 +16176,14 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10561,
+        "id":  10612,
         "name":  "泡椒猪肝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -13041,13 +16200,42 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10562,
+        "id":  10613,
+        "name":  "香菇鸡拌面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10614,
         "name":  "招牌浓酱鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -13064,13 +16252,17 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10563,
+        "id":  10615,
         "name":  "藤椒干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -13087,19 +16279,20 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10564,
+        "id":  10616,
         "name":  "泡椒炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13110,13 +16303,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10565,
+        "id":  10617,
         "name":  "羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -13133,13 +16329,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10566,
+        "id":  10618,
         "name":  "青椒肉肠盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -13156,19 +16355,20 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10567,
+        "id":  10619,
         "name":  "番茄肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13179,36 +16379,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10568,
-        "name":  "热卤红油拌麻辣鸭（好评多多）",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  15.8,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "「推荐」之选（另有：推荐折扣价¥15.8（9.3折，原价¥17）），约 450 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10569,
+        "id":  10620,
         "name":  "洋葱牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -13225,21 +16405,24 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10570,
+        "id":  10621,
         "name":  "凉面凉皮双拼",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
-        "price":  7,
+        "flavors":  [
+
+                    ],
+        "price":  8,
         "cal":  600,
         "tags":  [
                      "性价比",
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "「凉面系列」之选（另有：凉面系列二两7元 三两10元7元/二两 10元/三两），约 600 kcal",
+        "desc":  "「凉面系列」之选（另有：凉面系列三两10元二两8元/三两10元），约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -13250,13 +16433,42 @@
         "rawGroup":  "凉面系列"
     },
     {
-        "id":  10571,
+        "id":  10622,
+        "name":  "炸全鸭",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  28,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「单点」之选（另有：单点高温现烤整只28元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "脆香鸭",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "单点"
+    },
+    {
+        "id":  10623,
         "name":  "肉沫火腿肠",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -13273,19 +16485,20 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10572,
+        "id":  10624,
         "name":  "番茄鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13296,13 +16509,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10573,
+        "id":  10625,
         "name":  "干锅排骨",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  750,
         "tags":  [
@@ -13310,7 +16526,7 @@
                  ],
         "desc":  "「店长推荐」之选（另有：店长推荐整板统一价13元/份，所有菜品均可双拼13元/份），约 750 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "木桶饭",
@@ -13319,13 +16535,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10574,
+        "id":  10626,
         "name":  "薯角",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -13342,13 +16561,14 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10575,
+        "id":  10627,
         "name":  "农家一碗香盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -13366,13 +16586,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10576,
+        "id":  10628,
         "name":  "毛血旺",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  15,
         "cal":  750,
         "tags":  [
@@ -13389,20 +16612,21 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10577,
+        "id":  10629,
         "name":  "番茄豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -13413,19 +16637,20 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10578,
+        "id":  10630,
         "name":  "酸萝卜猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13436,13 +16661,14 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10579,
+        "id":  10631,
         "name":  "香煎鸡排盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -13460,13 +16686,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10580,
+        "id":  10632,
         "name":  "套餐2（火鸡面+脆皮鸡腿1个+年糕条3个+锅巴土豆3个）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15.8,
         "cal":  450,
         "tags":  [
@@ -13483,20 +16712,21 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  10581,
+        "id":  10633,
         "name":  "冬阴功豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -13507,19 +16737,20 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10582,
+        "id":  10634,
         "name":  "酸萝卜鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13530,13 +16761,17 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10583,
+        "id":  10635,
         "name":  "水煮鱼片+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -13553,13 +16788,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10584,
+        "id":  10636,
         "name":  "特色牛肉炒年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  18,
         "cal":  400,
         "tags":  [
@@ -13576,20 +16814,21 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  10585,
+        "id":  10637,
         "name":  "冬阴功金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -13600,13 +16839,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10586,
+        "id":  10638,
         "name":  "三鲜炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  10.8,
         "cal":  700,
         "tags":  [
@@ -13623,13 +16865,42 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10587,
+        "id":  10639,
+        "name":  "孜然肉片",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10640,
         "name":  "鱼丸米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -13646,13 +16917,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10588,
+        "id":  10641,
         "name":  "特色鸡肉炒年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  400,
         "tags":  [
@@ -13669,13 +16943,16 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  10589,
+        "id":  10642,
         "name":  "蒜苔炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -13692,13 +16969,16 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10590,
+        "id":  10643,
         "name":  "台式烧肉茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -13715,13 +16995,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10591,
+        "id":  10644,
         "name":  "蒜香烤鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -13738,20 +17021,21 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10592,
+        "id":  10645,
         "name":  "菌汤豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -13762,7 +17046,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10593,
+        "id":  10646,
         "name":  "鸡杂酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -13770,6 +17054,9 @@
                       "微辣",
                       "微酸"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -13786,13 +17073,16 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  10594,
+        "id":  10647,
         "name":  "原味炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -13809,13 +17099,14 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10595,
+        "id":  10648,
         "name":  "香煎鸡排小炒",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  650,
         "tags":  [
@@ -13832,13 +17123,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10596,
+        "id":  10649,
         "name":  "清汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -13856,19 +17150,20 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10597,
+        "id":  10650,
         "name":  "酸萝卜炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -13879,13 +17174,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10598,
+        "id":  10651,
         "name":  "杂酱面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -13902,13 +17200,16 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10599,
+        "id":  10652,
         "name":  "海味鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -13925,13 +17226,16 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  10600,
+        "id":  10653,
         "name":  "桂花糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  400,
         "tags":  [
@@ -13948,7 +17252,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10601,
+        "id":  10654,
         "name":  "泡椒酸菜",
         "category":  "面食",
         "icon":  "wheat",
@@ -13956,6 +17260,9 @@
                       "中辣",
                       "微酸"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -13973,13 +17280,42 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10602,
+        "id":  10655,
+        "name":  "葱油拌面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  9,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两11元二两9元/三两11元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10656,
         "name":  "烤鸡单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -13996,43 +17332,21 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10603,
-        "name":  "招牌‼️酱香鸭子锅（好吃量足）卤烤",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  16.3,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "「推荐」之选（另有：推荐折扣价¥16.3（9.2折，原价¥17.8）），约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10604,
+        "id":  10657,
         "name":  "菌汤土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -14043,13 +17357,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10605,
+        "id":  10658,
         "name":  "手抓饼(生菜、鸡蛋)",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  400,
         "tags":  [
@@ -14066,13 +17383,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10606,
+        "id":  10659,
         "name":  "三鲜铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -14089,13 +17409,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10607,
+        "id":  10660,
         "name":  "孜然肉排",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -14112,13 +17435,42 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10608,
+        "id":  10661,
+        "name":  "泡椒猪肝面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10662,
         "name":  "一荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  700,
         "tags":  [
@@ -14136,13 +17488,16 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  10609,
+        "id":  10663,
         "name":  "豌豆拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -14161,13 +17516,17 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10610,
+        "id":  10664,
         "name":  "麻辣肉片",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -14184,13 +17543,14 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10611,
+        "id":  10665,
         "name":  "泡椒猪肝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -14208,13 +17568,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10612,
+        "id":  10666,
         "name":  "蒜台肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -14231,13 +17594,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10613,
+        "id":  10667,
         "name":  "火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -14254,13 +17620,44 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10614,
+        "id":  10668,
+        "name":  "绿豆粥",
+        "category":  "汤粥",
+        "icon":  "soup",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "清淡"
+                    ],
+        "price":  2.5,
+        "cal":  200,
+        "tags":  [
+                     "性价比",
+                     "低卡",
+                     "素食友好"
+                 ],
+        "desc":  "「凉面系列」之选（另有：凉面系列2.5元），约 200 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "凉面系列"
+    },
+    {
+        "id":  10669,
         "name":  "梅菜扣肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -14277,13 +17674,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10615,
+        "id":  10670,
         "name":  "豌杂",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -14300,13 +17700,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10616,
+        "id":  10671,
         "name":  "烤鸡双拼",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  650,
         "tags":  [
@@ -14323,13 +17726,16 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  10617,
+        "id":  10672,
         "name":  "绝味鸭",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -14346,13 +17752,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10618,
+        "id":  10673,
         "name":  "红烧茄子",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -14369,19 +17778,20 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10619,
+        "id":  10674,
         "name":  "番茄鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -14392,13 +17802,14 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10620,
+        "id":  10675,
         "name":  "菌汤素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -14406,7 +17817,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -14417,19 +17828,23 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10621,
+        "id":  10676,
         "name":  "藤椒肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -14440,13 +17855,43 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10622,
+        "id":  10677,
+        "name":  "金汤面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  8,
+        "cal":  600,
+        "tags":  [
+                     "性价比",
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两10元二两8元/三两10元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10678,
         "name":  "苕皮肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -14463,19 +17908,20 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10623,
+        "id":  10679,
         "name":  "香辣猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -14486,13 +17932,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10624,
+        "id":  10680,
         "name":  "泡椒牛肉干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -14509,13 +17958,16 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10625,
+        "id":  10681,
         "name":  "姜鸭铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -14532,19 +17984,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10626,
+        "id":  10682,
         "name":  "火锅肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -14555,13 +18008,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10627,
+        "id":  10683,
         "name":  "泡椒鱼片滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -14578,13 +18034,16 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10628,
+        "id":  10684,
         "name":  "肉蛋堡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  450,
         "tags":  [
@@ -14601,13 +18060,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10629,
+        "id":  10685,
         "name":  "糊辣壳干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -14624,13 +18086,16 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10630,
+        "id":  10686,
         "name":  "狼牙锅巴土豆双拼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -14647,13 +18112,16 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10631,
+        "id":  10687,
         "name":  "老干妈火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -14670,19 +18138,20 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10632,
+        "id":  10688,
         "name":  "酸菜肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -14693,13 +18162,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10633,
+        "id":  10689,
         "name":  "小青菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -14716,13 +18188,14 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10634,
+        "id":  10690,
         "name":  "酸菜鱼（小份）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微酸"
                   ],
+        "flavors": [],
         "price":  16,
         "cal":  450,
         "tags":  [
@@ -14739,13 +18212,42 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10635,
+        "id":  10691,
+        "name":  "西红柿鸡蛋面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "酸甜"
+                    ],
+        "price":  10,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两12元二两10元/三两12元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10692,
         "name":  "肉沫茄子擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -14762,36 +18264,68 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10636,
-        "name":  "招牌渔粉",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  10693,
+        "name":  "石锅招牌三样",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
-        "price":  12,
-        "cal":  600,
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  700,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「右侧电子屏（疑为五谷鱼粉类）」之选（另有：右侧电子屏（疑为五谷鱼粉类）12元），约 600 kcal",
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭13元/份），约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "犟稻超级酱骨饭",
+        "stall":  "缘味先石锅饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "右侧电子屏（疑为五谷鱼粉类）"
+        "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10637,
+        "id":  10694,
+        "name":  "墨西哥鸡肉卷",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  7.5,
+        "cal":  450,
+        "tags":  [
+                     "性价比"
+                 ],
+        "desc":  "「汉堡/卷」之选（另有：汉堡/卷7.5元/个），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "奥利堡炸鸡汉堡",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "汉堡/卷"
+    },
+    {
+        "id":  10695,
         "name":  "尖椒鸡",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -14808,19 +18342,20 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10638,
+        "id":  10696,
         "name":  "泡椒全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -14831,13 +18366,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10639,
+        "id":  10697,
         "name":  "黑椒肉柳",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -14854,13 +18392,14 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10640,
+        "id":  10698,
         "name":  "孜然肉片小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -14877,13 +18416,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10641,
+        "id":  10699,
         "name":  "伊美生煎饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -14900,13 +18442,43 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10642,
+        "id":  10700,
+        "name":  "石锅焖面+糖醋里脊",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "甜"
+                  ],
+        "flavors":  [
+                        "甜",
+                        "酸甜"
+                    ],
+        "price":  15,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价15元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10701,
         "name":  "千叶豆腐套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  450,
         "tags":  [
@@ -14923,13 +18495,42 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10643,
+        "id":  10702,
+        "name":  "石锅焖面+小酥肉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价14元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10703,
         "name":  "川香回锅肉盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -14946,13 +18547,16 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10644,
+        "id":  10704,
         "name":  "至尊七虾汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  650,
         "tags":  [
@@ -14969,13 +18573,16 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10645,
+        "id":  10705,
         "name":  "火腿外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -14992,13 +18599,16 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10646,
+        "id":  10706,
         "name":  "芝士厚牛堡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  450,
         "tags":  [
@@ -15015,13 +18625,17 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10647,
+        "id":  10707,
         "name":  "水煮猪瘦肉片+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -15038,13 +18652,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10648,
+        "id":  10708,
         "name":  "素菜（木耳、蒜台、青椒、土豆丝、莲白、鸡蛋、豆干、蔬菜、火腿肠、外婆菜、老干妈、豇豆）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2,
         "cal":  450,
         "tags":  [
@@ -15061,13 +18678,16 @@
         "rawGroup":  "加配菜"
     },
     {
-        "id":  10649,
+        "id":  10709,
         "name":  "酸菜肉丝",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -15084,13 +18704,42 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10650,
+        "id":  10710,
+        "name":  "石锅焖面+肥牛",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  15,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价15元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10711,
         "name":  "培根小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -15107,13 +18756,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10651,
+        "id":  10712,
         "name":  "小炒鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -15130,13 +18782,17 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10652,
+        "id":  10713,
         "name":  "椒麻鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -15153,13 +18809,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10653,
+        "id":  10714,
         "name":  "肉沫蒸蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -15176,13 +18835,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10654,
+        "id":  10715,
         "name":  "淋糖糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  400,
         "tags":  [
@@ -15199,13 +18861,17 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10655,
+        "id":  10716,
         "name":  "藤椒素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -15213,7 +18879,7 @@
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -15224,13 +18890,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10656,
+        "id":  10717,
         "name":  "酱焖牛肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  16,
         "cal":  700,
         "tags":  [
@@ -15247,13 +18916,16 @@
         "rawGroup":  "酱焖擂饭系列"
     },
     {
-        "id":  10657,
+        "id":  10718,
         "name":  "地锅鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -15270,20 +18942,21 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10658,
+        "id":  10719,
         "name":  "毛血旺（小份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors": ["辣"],
         "price":  16,
         "cal":  750,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "毛肚，火腿，鸭血配上其它菜，份量很大，，约 750 kcal",
+        "desc":  "毛肚，火腿，鸭血配上其它菜，份量很大，约 750 kcal",
         "veg":  false,
         "spicy":  2,
         "main":  "荤",
@@ -15294,13 +18967,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10659,
+        "id":  10720,
         "name":  "双人套餐十一（香辣鸡腿堡1个+鸡肉卷1个+无骨鸡块4块+锅巴土豆5块+洋葱鸡肉圈5个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  37.8,
         "cal":  450,
         "tags":  [
@@ -15317,13 +18993,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10660,
+        "id":  10721,
         "name":  "小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12.9,
         "cal":  450,
         "tags":  [
@@ -15340,13 +19019,17 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10661,
+        "id":  10722,
         "name":  "川味藤椒鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  15.9,
         "cal":  700,
         "tags":  [
@@ -15363,13 +19046,16 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10662,
+        "id":  10723,
         "name":  "鸡排单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -15386,13 +19072,16 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10663,
+        "id":  10724,
         "name":  "鲜椒油渣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -15409,13 +19098,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10664,
+        "id":  10725,
         "name":  "套餐1（火鸡面+无骨鸡块2个+年糕条2个+锅巴土豆2个）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.8,
         "cal":  450,
         "tags":  [
@@ -15432,13 +19124,16 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  10665,
+        "id":  10726,
         "name":  "照烧腿肉块擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -15455,13 +19150,16 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10666,
+        "id":  10727,
         "name":  "小馆辣肉拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -15478,13 +19176,17 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10667,
+        "id":  10728,
         "name":  "番茄牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -15502,13 +19204,16 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10668,
+        "id":  10729,
         "name":  "伊美葱油饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -15525,43 +19230,49 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10669,
-        "name":  "干锅千叶豆腐",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
+        "id":  10730,
+        "name":  "石锅焖面+西红柿鸡蛋",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
-        "price":  13.8,
-        "cal":  750,
+        "flavors":  [
+                        "酸甜"
+                    ],
+        "price":  13,
+        "cal":  600,
         "tags":  [
-                     "素食友好",
                      "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐¥13.8），约 750 kcal",
-        "veg":  true,
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底+1元、豆腐底同价13元/份），约 600 kcal",
+        "veg":  false,
         "spicy":  0,
-        "main":  "素",
+        "main":  "荤",
         "portion":  "regular",
-        "stall":  "一万家干锅",
+        "stall":  "缘味先石锅饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10670,
+        "id":  10731,
         "name":  "藤椒猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -15572,43 +19283,21 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10671,
-        "name":  "玉米渔粉",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  11,
-        "cal":  600,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「右侧电子屏（疑为五谷鱼粉类）」之选（另有：右侧电子屏（疑为五谷鱼粉类）11元），约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "犟稻超级酱骨饭",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "右侧电子屏（疑为五谷鱼粉类）"
-    },
-    {
-        "id":  10672,
+        "id":  10732,
         "name":  "盖饭双拼（备注菜名，15以上不拼）",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "一菜两吃 ，各有特色，，约 700 kcal",
+        "desc":  "一菜两吃 ，各有特色，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -15619,13 +19308,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10673,
+        "id":  10733,
         "name":  "七虾卷",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  450,
         "tags":  [
@@ -15642,13 +19334,16 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10674,
+        "id":  10734,
         "name":  "海味馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -15666,13 +19361,16 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10675,
+        "id":  10735,
         "name":  "雪花芝士无骨炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  650,
         "tags":  [
@@ -15690,19 +19388,20 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10676,
+        "id":  10736,
         "name":  "酸菜肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -15713,13 +19412,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10677,
+        "id":  10737,
         "name":  "香煎鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -15736,13 +19438,16 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10678,
+        "id":  10738,
         "name":  "软皮猪肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -15759,13 +19464,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10679,
+        "id":  10739,
         "name":  "牛肉水饺",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -15782,13 +19490,16 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10680,
+        "id":  10740,
         "name":  "套餐十四（香辣鸡腿堡2个 或 鸡肉卷2个）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -15805,13 +19516,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10681,
+        "id":  10741,
         "name":  "姜爆鸭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -15828,20 +19542,21 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10682,
+        "id":  10742,
         "name":  "酸萝卜豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -15852,13 +19567,14 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10683,
+        "id":  10743,
         "name":  "鸭血+煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11.6,
         "cal":  450,
         "tags":  [
@@ -15875,13 +19591,16 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10684,
+        "id":  10744,
         "name":  "肉酱土豆泥火鸡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -15898,19 +19617,20 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10685,
+        "id":  10745,
         "name":  "酸萝卜花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -15921,13 +19641,17 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10686,
+        "id":  10746,
         "name":  "番茄炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -15944,13 +19668,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10687,
+        "id":  10747,
         "name":  "炸酱拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -15967,13 +19694,16 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10688,
+        "id":  10748,
         "name":  "孜然牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -15990,13 +19720,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10689,
+        "id":  10749,
         "name":  "青椒鸡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -16013,13 +19746,14 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10690,
+        "id":  10750,
         "name":  "酸辣鸡杂盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -16037,36 +19771,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10691,
-        "name":  "火锅味渔粉",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  13,
-        "cal":  600,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「右侧电子屏（疑为五谷鱼粉类）」之选（另有：右侧电子屏（疑为五谷鱼粉类）菜名不确定13元），约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "犟稻超级酱骨饭",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "右侧电子屏（疑为五谷鱼粉类）"
-    },
-    {
-        "id":  10692,
+        "id":  10751,
         "name":  "火锅全家福米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -16083,13 +19797,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10693,
+        "id":  10752,
         "name":  "湖南小炒肉盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -16106,19 +19823,20 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10694,
+        "id":  10753,
         "name":  "冬阴功花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -16129,13 +19847,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10695,
+        "id":  10754,
         "name":  "嫩烧鱼肉饼大满配",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14.9,
         "cal":  450,
         "tags":  [
@@ -16152,7 +19873,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10696,
+        "id":  10755,
         "name":  "酸辣金汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -16160,6 +19881,9 @@
                       "微辣",
                       "微酸"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -16176,13 +19900,16 @@
         "rawGroup":  "抄手(按两)"
     },
     {
-        "id":  10697,
+        "id":  10756,
         "name":  "原味牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  5,
         "cal":  400,
         "tags":  [
@@ -16199,13 +19926,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10698,
+        "id":  10757,
         "name":  "宫保鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -16222,13 +19952,70 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10699,
+        "id":  10758,
+        "name":  "西红柿面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "酸甜"
+                    ],
+        "price":  10,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两12元二两10元/三两12元），约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10759,
+        "name":  "石锅焖面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  9.9,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭9.9元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10760,
         "name":  "番茄鸡蛋干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -16245,13 +20032,16 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10700,
+        "id":  10761,
         "name":  "火鸡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7.8,
         "cal":  600,
         "tags":  [
@@ -16269,13 +20059,16 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  10701,
+        "id":  10762,
         "name":  "香辣鸡腿肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -16292,13 +20085,16 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10702,
+        "id":  10763,
         "name":  "酸菜牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -16315,20 +20111,24 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10703,
+        "id":  10764,
         "name":  "麻辣什锦丸子（小份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  16,
         "cal":  750,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "肉丸，鱼丸，蟹排，小香肠，配上麻辣味，，约 750 kcal",
+        "desc":  "肉丸，鱼丸，蟹排，小香肠，配上麻辣味，约 750 kcal",
         "veg":  false,
         "spicy":  2,
         "main":  "荤",
@@ -16339,13 +20139,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10704,
+        "id":  10765,
         "name":  "曹鸭子+咖喱鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -16362,13 +20165,16 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10705,
+        "id":  10766,
         "name":  "翡翠烧椒干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -16385,13 +20191,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10706,
+        "id":  10767,
         "name":  "小馆清汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -16409,13 +20218,14 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  10707,
+        "id":  10768,
         "name":  "蒙古烤肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -16433,19 +20243,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10708,
+        "id":  10769,
         "name":  "酸菜花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -16456,13 +20267,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10709,
+        "id":  10770,
         "name":  "荤豆花",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  35,
         "cal":  450,
         "tags":  [
@@ -16479,19 +20293,20 @@
         "rawGroup":  "特色菜"
     },
     {
-        "id":  10710,
+        "id":  10771,
         "name":  "泡椒酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -16502,13 +20317,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10711,
+        "id":  10772,
         "name":  "咖啡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -16525,13 +20343,16 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10712,
+        "id":  10773,
         "name":  "澳门烧肉/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  24.9,
         "cal":  450,
         "tags":  [
@@ -16548,19 +20369,23 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10713,
+        "id":  10774,
         "name":  "藤椒午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -16571,20 +20396,21 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10714,
+        "id":  10775,
         "name":  "酸菜土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -16595,13 +20421,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10715,
+        "id":  10776,
         "name":  "素手抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  700,
         "tags":  [
@@ -16620,13 +20449,16 @@
         "rawGroup":  "左侧配图（新疆特色手抓饭）"
     },
     {
-        "id":  10716,
+        "id":  10777,
         "name":  "老坛酸菜包",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  1.5,
         "cal":  450,
         "tags":  [
@@ -16643,13 +20475,16 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10717,
+        "id":  10778,
         "name":  "小炒双拼",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  20,
         "cal":  450,
         "tags":  [
@@ -16666,13 +20501,43 @@
         "rawGroup":  "规则"
     },
     {
-        "id":  10718,
+        "id":  10779,
+        "name":  "卤香鸡腿套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  12.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「套餐」之选（另有：套餐素菜任选5+米饭12.8元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "犟稻超级酱骨饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "套餐"
+    },
+    {
+        "id":  10780,
         "name":  "椒麻鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -16689,13 +20554,40 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10719,
+        "id":  10781,
+        "name":  "清香小炒鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列12.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  10782,
         "name":  "青椒肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors": ["甜"],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -16713,19 +20605,20 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10720,
+        "id":  10783,
         "name":  "泡椒肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14.3,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -16736,13 +20629,14 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10721,
+        "id":  10784,
         "name":  "土豆肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微酸"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -16760,13 +20654,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10722,
+        "id":  10785,
         "name":  "黄金酥肉焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -16783,13 +20680,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10723,
+        "id":  10786,
         "name":  "秘制拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -16806,13 +20706,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10724,
+        "id":  10787,
         "name":  "猪肚面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -16829,13 +20732,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10725,
+        "id":  10788,
         "name":  "泡椒肉丝炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -16852,13 +20758,16 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10726,
+        "id":  10789,
         "name":  "菌汤抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -16875,13 +20784,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10727,
+        "id":  10790,
         "name":  "大脸鸡排",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  650,
         "tags":  [
@@ -16899,13 +20811,16 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10728,
+        "id":  10791,
         "name":  "大排",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -16922,20 +20837,21 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10729,
+        "id":  10792,
         "name":  "小炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  14,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "精瘦肉配二青条爆炒，就是一个香辣得流口水，，约 700 kcal",
+        "desc":  "精瘦肉配二青条爆炒，就是一个香辣得流口水，约 700 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -16946,13 +20862,66 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10730,
+        "id":  10793,
+        "name":  "干锅虾",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  17,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「招牌」之选（另有：招牌17元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "招牌"
+    },
+    {
+        "id":  10794,
+        "name":  "双椒爆香鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  10795,
         "name":  "苕皮肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -16970,7 +20939,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10731,
+        "id":  10796,
         "name":  "辣子鸡丁盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16978,13 +20947,14 @@
                       "中辣",
                       "鲜香"
                   ],
+        "flavors": ["辣"],
         "price":  14,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "二青条打底，喜欢麻辣鲜香的，不好吃你找我，，约 700 kcal",
+        "desc":  "二青条打底，喜欢麻辣鲜香的，不好吃你找我，约 700 kcal",
         "veg":  false,
         "spicy":  2,
         "main":  "荤",
@@ -16995,13 +20965,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10732,
+        "id":  10797,
         "name":  "油条/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -17018,13 +20991,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10733,
+        "id":  10798,
         "name":  "酸菜馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -17042,13 +21018,16 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10734,
+        "id":  10799,
         "name":  "肉卷小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -17065,13 +21044,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10735,
+        "id":  10800,
         "name":  "招牌四点金饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16.9,
         "cal":  700,
         "tags":  [
@@ -17088,13 +21070,16 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10736,
+        "id":  10801,
         "name":  "土豆肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -17111,19 +21096,23 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10737,
+        "id":  10802,
         "name":  "藤椒炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -17134,13 +21123,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10738,
+        "id":  10803,
         "name":  "金针菇米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -17158,13 +21150,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10739,
+        "id":  10804,
         "name":  "白菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -17181,13 +21176,16 @@
         "rawGroup":  "手工现包水饺"
     },
     {
-        "id":  10740,
+        "id":  10805,
         "name":  "素米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -17206,13 +21204,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10741,
+        "id":  10806,
         "name":  "辣味干拌米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -17230,13 +21231,16 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10742,
+        "id":  10807,
         "name":  "韭菜炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -17253,13 +21257,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10743,
+        "id":  10808,
         "name":  "香酥鸭茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -17276,13 +21283,14 @@
         "rawGroup":  ""
     },
     {
-        "id":  10744,
+        "id":  10809,
         "name":  "苕皮肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -17299,13 +21307,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10745,
+        "id":  10810,
         "name":  "包菜胡萝卜鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -17322,13 +21333,17 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10746,
+        "id":  10811,
         "name":  "番茄鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -17345,13 +21360,16 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  10747,
+        "id":  10812,
         "name":  "肉丝面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -17368,13 +21386,17 @@
         "rawGroup":  ""
     },
     {
-        "id":  10748,
+        "id":  10813,
         "name":  "麻辣炒鸡架擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -17391,13 +21413,17 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10749,
+        "id":  10814,
         "name":  "麻辣烫/麻辣拌",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  1.98,
         "cal":  750,
         "tags":  [
@@ -17415,37 +21441,17 @@
         "rawGroup":  ""
     },
     {
-        "id":  10750,
-        "name":  "琅琊土豆时蔬盖饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  11.9,
-        "cal":  700,
-        "tags":  [
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥11.9），约 700 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "main":  "素",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10751,
+        "id":  10815,
         "name":  "小馆麻辣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -17462,13 +21468,16 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  10752,
+        "id":  10816,
         "name":  "五香卤蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  2,
         "cal":  450,
         "tags":  [
@@ -17485,19 +21494,20 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10753,
+        "id":  10817,
         "name":  "菌汤花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -17508,19 +21518,20 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10754,
+        "id":  10818,
         "name":  "酸萝卜肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -17531,13 +21542,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10755,
+        "id":  10819,
         "name":  "套餐六（香辣鸡腿堡1个+无骨鸡块4块+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  17.8,
         "cal":  450,
         "tags":  [
@@ -17554,13 +21568,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10756,
+        "id":  10820,
         "name":  "土豆丝卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  400,
         "tags":  [
@@ -17578,13 +21595,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10757,
+        "id":  10821,
         "name":  "烧椒肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -17601,19 +21621,20 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10758,
+        "id":  10822,
         "name":  "泡椒火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -17624,13 +21645,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10759,
+        "id":  10823,
         "name":  "小馆肉燥酸菜汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -17647,13 +21671,16 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  10760,
+        "id":  10824,
         "name":  "香菇黄焖鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -17670,20 +21697,21 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10761,
+        "id":  10825,
         "name":  "酸萝卜全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -17694,13 +21722,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10762,
+        "id":  10826,
         "name":  "照烧鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -17717,13 +21748,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10763,
+        "id":  10827,
         "name":  "鲜肉包",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2,
         "cal":  450,
         "tags":  [
@@ -17740,19 +21774,23 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10764,
+        "id":  10828,
         "name":  "藤椒酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -17763,13 +21801,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10765,
+        "id":  10829,
         "name":  "肉丝米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -17786,13 +21827,16 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10766,
+        "id":  10830,
         "name":  "外婆菜老干妈蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -17809,13 +21853,16 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10767,
+        "id":  10831,
         "name":  "小馆招牌炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -17832,13 +21879,42 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10768,
+        "id":  10832,
+        "name":  "现捞套餐素拼",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  9.9,
+        "cal":  450,
+        "tags":  [
+                     "素食友好"
+                 ],
+        "desc":  "「辣味拌饭」之选（另有：辣味拌饭9.9元），约 450 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "辣味拌饭"
+    },
+    {
+        "id":  10833,
         "name":  "青笋肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -17855,13 +21931,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10769,
+        "id":  10834,
         "name":  "两荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  700,
         "tags":  [
@@ -17878,13 +21957,17 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10770,
+        "id":  10835,
         "name":  "番茄鸡蛋拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -17901,13 +21984,42 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10771,
+        "id":  10836,
+        "name":  "五香鸡腿饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12.8,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「现卤现捞」之选（另有：现卤现捞12.8元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "现卤现捞"
+    },
+    {
+        "id":  10837,
         "name":  "杂粮煎饼(生菜鸡蛋、薄脆)",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  450,
         "tags":  [
@@ -17924,13 +22036,40 @@
         "rawGroup":  ""
     },
     {
-        "id":  10772,
+        "id":  10838,
+        "name":  "泰式咖喱鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列11.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  10839,
         "name":  "香辣干锅鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
-                      "微辣"
+                      "中辣"
                   ],
+        "flavors": ["辣"],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -17939,7 +22078,7 @@
                  ],
         "desc":  "鸡腿肉腌制，干锅酱烧，味道没得说，约 700 kcal",
         "veg":  false,
-        "spicy":  1,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "公社食堂小炒",
@@ -17948,13 +22087,42 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10773,
+        "id":  10840,
+        "name":  "火锅冒菜",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "微辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  10,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「称重计价」之选（另有：称重计价荤素自选称重，口味可选：不辣/微辣/中辣称重2.19元/50g，一份约8-15元），约 750 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "香灶火锅冒菜",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "称重计价"
+    },
+    {
+        "id":  10841,
         "name":  "肉末菜心土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  700,
         "tags":  [
@@ -17971,13 +22139,16 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  10774,
+        "id":  10842,
         "name":  "凉面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -17995,13 +22166,16 @@
         "rawGroup":  "凉面凉皮"
     },
     {
-        "id":  10775,
+        "id":  10843,
         "name":  "酸菜面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -18019,19 +22193,20 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10776,
+        "id":  10844,
         "name":  "泡椒午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -18042,13 +22217,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10777,
+        "id":  10845,
         "name":  "酥肉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -18065,36 +22243,42 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10778,
-        "name":  "回锅肉",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
+        "id":  10846,
+        "name":  "石锅焖面+泡椒鸡杂",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
-        "price":  13,
-        "cal":  700,
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  14,
+        "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「盖饭/小炒（左二列）」之选（另有：盖饭/小炒（左二列）小炒盖饭13元 小炒18元），约 700 kcal",
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价14元/份），约 600 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "公社食堂小炒",
+        "stall":  "缘味先石锅饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "盖饭/小炒（左二列）"
+        "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10779,
+        "id":  10847,
         "name":  "西红柿鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "酸甜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -18111,36 +22295,42 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10780,
+        "id":  10848,
         "name":  "干锅鸡翅尖",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
-        "price":  14,
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
         "cal":  750,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐¥14），约 750 kcal",
+        "desc":  "「干锅现炒」之选（另有：干锅现炒13元），约 750 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "一万家干锅",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "干锅现炒"
     },
     {
-        "id":  10781,
+        "id":  10849,
         "name":  "鸭腿单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -18157,13 +22347,16 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10782,
+        "id":  10850,
         "name":  "经典牛肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -18180,13 +22373,16 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  10783,
+        "id":  10851,
         "name":  "鸭血米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -18203,13 +22399,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10784,
+        "id":  10852,
         "name":  "葱爆肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -18226,13 +22425,40 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  10785,
+        "id":  10853,
+        "name":  "石锅泡椒鸡杂",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  14,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭14元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  10854,
         "name":  "黑椒肉柳小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -18249,13 +22475,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10786,
+        "id":  10855,
         "name":  "清汤抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -18272,13 +22501,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10787,
+        "id":  10856,
         "name":  "黄焖火腿肠鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -18295,13 +22527,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10788,
+        "id":  10857,
         "name":  "香辣炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -18318,13 +22553,16 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10789,
+        "id":  10858,
         "name":  "酱烧猪脆骨擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -18341,13 +22579,16 @@
         "rawGroup":  "酱焖擂饭系列"
     },
     {
-        "id":  10790,
+        "id":  10859,
         "name":  "青椒牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -18364,20 +22605,21 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10791,
+        "id":  10860,
         "name":  "香辣豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  true,
         "spicy":  1,
         "main":  "素",
@@ -18388,13 +22630,18 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10792,
+        "id":  10861,
         "name":  "意式番茄肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "咸鲜",
+                        "清淡"
+                    ],
         "price":  9.9,
         "cal":  600,
         "tags":  [
@@ -18411,13 +22658,16 @@
         "rawGroup":  "低卡意面系列"
     },
     {
-        "id":  10793,
+        "id":  10862,
         "name":  "酱焖鸡块擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -18434,13 +22684,14 @@
         "rawGroup":  "酱焖擂饭系列"
     },
     {
-        "id":  10794,
+        "id":  10863,
         "name":  "韭菜鸡蛋小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  17,
         "cal":  450,
         "tags":  [
@@ -18457,13 +22708,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10795,
+        "id":  10864,
         "name":  "肥牛+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -18480,13 +22734,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10796,
+        "id":  10865,
         "name":  "伊美馅饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  4,
         "cal":  400,
         "tags":  [
@@ -18503,13 +22760,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10797,
+        "id":  10866,
         "name":  "三杯鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -18526,13 +22786,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10798,
+        "id":  10867,
         "name":  "素羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -18550,13 +22813,42 @@
         "rawGroup":  ""
     },
     {
-        "id":  10799,
+        "id":  10868,
+        "name":  "石锅焖面+双椒鸡丁",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底+1元、豆腐底同价14元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  10869,
         "name":  "火腿米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -18573,13 +22865,14 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10800,
+        "id":  10870,
         "name":  "酸菜鱼（大份）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  26,
         "cal":  450,
         "tags":  [
@@ -18596,13 +22889,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10801,
+        "id":  10871,
         "name":  "青椒牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -18619,19 +22915,20 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10802,
+        "id":  10872,
         "name":  "酸菜午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -18642,13 +22939,17 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10803,
+        "id":  10873,
         "name":  "麻辣鱼（大份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  26,
         "cal":  750,
         "tags":  [
@@ -18665,20 +22966,47 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10804,
+        "id":  10874,
+        "name":  "黑椒肉柳",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列12.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10875,
         "name":  "菌汤金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -18689,13 +23017,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10805,
+        "id":  10876,
         "name":  "猪排麻酱拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -18712,13 +23043,16 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  10806,
+        "id":  10877,
         "name":  "雪花芝士炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  650,
         "tags":  [
@@ -18736,13 +23070,16 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10807,
+        "id":  10878,
         "name":  "香辣鸡腿汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  7.5,
         "cal":  650,
         "tags":  [
@@ -18760,13 +23097,16 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10808,
+        "id":  10879,
         "name":  "芝士七虾中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.8,
         "cal":  650,
         "tags":  [
@@ -18783,13 +23123,16 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10809,
+        "id":  10880,
         "name":  "肥牛米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -18806,30 +23149,34 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10810,
-        "name":  "泡椒猪肝炒面/刀削/河粉/米粉/泡面",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  10881,
+        "name":  "椒麻藤椒鸡/例",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
-                      "中辣"
+                      "咸香"
                   ],
-        "price":  13,
-        "cal":  600,
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
+        "price":  21.9,
+        "cal":  450,
         "tags":  [
-                     "管饱"
+
                  ],
-        "desc":  "「炒面」之选（另有：炒面13元），约 600 kcal",
+        "desc":  "「例份（右栏）」之选（另有：例份（右栏）例份21.9元），约 450 kcal",
         "veg":  false,
-        "spicy":  2,
+        "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "胖妹面庄",
+        "stall":  "兴旺烧腊饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "炒面"
+        "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10811,
+        "id":  10882,
         "name":  "招牌甜辣黑鸭煲",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18837,6 +23184,10 @@
                       "微辣",
                       "甜"
                   ],
+        "flavors":  [
+                        "辣",
+                        "甜"
+                    ],
         "price":  14.8,
         "cal":  450,
         "tags":  [
@@ -18853,13 +23204,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10812,
+        "id":  10883,
         "name":  "牛肉铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -18876,13 +23230,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10813,
+        "id":  10884,
         "name":  "红油馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -18900,13 +23257,16 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10814,
+        "id":  10885,
         "name":  "奶汤抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -18923,13 +23283,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10815,
+        "id":  10886,
         "name":  "双拼米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -18946,13 +23309,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10816,
+        "id":  10887,
         "name":  "韭菜炒鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -18969,13 +23335,16 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10817,
+        "id":  10888,
         "name":  "经典鸡排大满配",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  650,
         "tags":  [
@@ -18992,30 +23361,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10818,
-        "name":  "干锅锁骨（锁骨量多）",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  14,
-        "cal":  750,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥14），约 750 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10819,
+        "id":  10889,
         "name":  "糖醋里脊盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19023,6 +23369,10 @@
                       "微酸",
                       "甜"
                   ],
+        "flavors":  [
+                        "甜",
+                        "酸甜"
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -19040,20 +23390,21 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10820,
+        "id":  10890,
         "name":  "番茄全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -19064,13 +23415,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10821,
+        "id":  10891,
         "name":  "鸭腿擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -19087,13 +23441,16 @@
         "rawGroup":  "卤肉擂饭系列"
     },
     {
-        "id":  10822,
+        "id":  10892,
         "name":  "素拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  6,
         "cal":  600,
         "tags":  [
@@ -19112,19 +23469,20 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10823,
+        "id":  10893,
         "name":  "火锅鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -19135,13 +23493,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10824,
+        "id":  10894,
         "name":  "干锅（鸡、兔、虾、排骨、里脊、黑椒肉柳、骨肉相连）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  30,
         "cal":  750,
         "tags":  [
@@ -19149,7 +23510,7 @@
                  ],
         "desc":  "「特色菜」之选（另有：特色菜大锅；大锅可双拼大锅50元），约 750 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
         "portion":  "regular",
         "stall":  "川小炒哥炒饭",
@@ -19158,13 +23519,16 @@
         "rawGroup":  "特色菜"
     },
     {
-        "id":  10825,
+        "id":  10895,
         "name":  "肥肠鸡焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  17,
         "cal":  450,
         "tags":  [
@@ -19181,13 +23545,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10826,
+        "id":  10896,
         "name":  "灌汤包（单买）",
         "category":  "汤粥",
         "icon":  "soup",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  1.5,
         "cal":  200,
         "tags":  [
@@ -19205,43 +23572,49 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  10827,
-        "name":  "干锅鸭翅软糯（现炒）3个、可以双拼翅根备",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
+        "id":  10897,
+        "name":  "凉面凉皮",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
-        "price":  14,
-        "cal":  750,
+        "flavors":  [
+
+                    ],
+        "price":  7,
+        "cal":  600,
         "tags":  [
+                     "性价比",
+                     "素食友好",
                      "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐¥14），约 750 kcal",
-        "veg":  false,
+        "desc":  "「凉面系列」之选（另有：凉面系列可选细面/韭叶面/刀削面/河粉；三两9元二两7元/三两9元），约 600 kcal",
+        "veg":  true,
         "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
+        "main":  "素",
+        "portion":  "large",
+        "stall":  "曾记面食",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "凉面系列"
     },
     {
-        "id":  10828,
+        "id":  10898,
         "name":  "酸菜滑肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微酸"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "酸菜配上红薯粉的嫩滑，，约 700 kcal",
+        "desc":  "酸菜配上红薯粉的嫩滑，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -19252,13 +23625,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10829,
+        "id":  10899,
         "name":  "小馆肉燥酸豆角汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -19275,13 +23651,16 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  10830,
+        "id":  10900,
         "name":  "小馆青椒鸡蛋炸酱面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -19298,13 +23677,17 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  10831,
+        "id":  10901,
         "name":  "麻辣什锦丸子（大份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  26,
         "cal":  750,
         "tags":  [
@@ -19321,13 +23704,42 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10832,
+        "id":  10902,
+        "name":  "豌杂面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  10903,
         "name":  "干捞螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -19344,13 +23756,16 @@
         "rawGroup":  "主食"
     },
     {
-        "id":  10833,
+        "id":  10904,
         "name":  "芝士牛肉中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.8,
         "cal":  650,
         "tags":  [
@@ -19367,13 +23782,42 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10834,
+        "id":  10905,
+        "name":  "韩式奶香鸡套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「套餐」之选（另有：套餐韩式奶香鸡1份+素菜任选5+米饭13.8元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "犟稻超级酱骨饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "套餐"
+    },
+    {
+        "id":  10906,
         "name":  "核桃肉单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -19390,13 +23834,16 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10835,
+        "id":  10907,
         "name":  "鱼香肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  10.8,
         "cal":  700,
         "tags":  [
@@ -19413,13 +23860,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10836,
+        "id":  10908,
         "name":  "自选健康餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  1.78,
         "cal":  450,
         "tags":  [
@@ -19436,19 +23886,22 @@
         "rawGroup":  "自选健康餐"
     },
     {
-        "id":  10837,
+        "id":  10909,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
-        "price":  12.8,
+        "flavors":  [
+
+                    ],
+        "price":  11.8,
         "cal":  450,
         "tags":  [
 
                  ],
-        "desc":  "「擂椒现拌系列」之选（另有：擂椒现拌系列价格存疑12.8元/份），约 450 kcal",
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列11.8元/份），约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -19456,16 +23909,20 @@
         "stall":  "擂椒拌饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "擂椒现拌系列"
+        "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  10838,
+        "id":  10910,
         "name":  "番茄肉沫拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -19482,13 +23939,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10839,
+        "id":  10911,
         "name":  "双层牛肉堡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.8,
         "cal":  450,
         "tags":  [
@@ -19505,20 +23965,24 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10840,
+        "id":  10912,
         "name":  "藤椒豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -19529,13 +23993,18 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10841,
+        "id":  10913,
         "name":  "番茄肉酱面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "咸鲜",
+                        "清淡"
+                    ],
         "price":  9.9,
         "cal":  600,
         "tags":  [
@@ -19552,13 +24021,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10842,
+        "id":  10914,
         "name":  "薯条三拼",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  650,
         "tags":  [
@@ -19575,13 +24047,16 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10843,
+        "id":  10915,
         "name":  "鸡丝拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -19599,13 +24074,16 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10844,
+        "id":  10916,
         "name":  "猪杂米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -19622,13 +24100,14 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10845,
+        "id":  10917,
         "name":  "毛血旺（大份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
         "taste":  [
                       "中辣"
                   ],
+        "flavors": ["辣"],
         "price":  26,
         "cal":  750,
         "tags":  [
@@ -19645,13 +24124,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10846,
+        "id":  10918,
         "name":  "酸菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  17,
         "cal":  600,
         "tags":  [
@@ -19668,13 +24150,16 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10847,
+        "id":  10919,
         "name":  "台湾卤肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -19691,19 +24176,20 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10848,
+        "id":  10920,
         "name":  "菌汤酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -19714,19 +24200,46 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10849,
+        "id":  10921,
+        "name":  "荤蒸碗",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  9,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「小份蒸菜」之选（另有：小份蒸菜小份蒸菜，一碗一份，不辣荤菜6-12元/碗，一份约6-14元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "small",
+        "stall":  "浏阳蒸碗",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "小份蒸菜"
+    },
+    {
+        "id":  10922,
         "name":  "番茄鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -19737,20 +24250,21 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10850,
+        "id":  10923,
         "name":  "番茄金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -19761,19 +24275,23 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10851,
+        "id":  10924,
         "name":  "藤椒火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -19784,13 +24302,16 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10852,
+        "id":  10925,
         "name":  "咖喱鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -19807,13 +24328,17 @@
         "rawGroup":  ""
     },
     {
-        "id":  10853,
+        "id":  10926,
         "name":  "水煮鸡肉片+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -19830,13 +24355,42 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10854,
+        "id":  10927,
+        "name":  "干锅五花肉",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  15,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干锅现炒」之选（另有：干锅现炒15元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干锅现炒"
+    },
+    {
+        "id":  10928,
         "name":  "土豆丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -19854,59 +24408,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10855,
-        "name":  "热卤拌红油 麻辣鸡（一个鸡腿量）",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  14.8,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥14.8），约 450 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10856,
-        "name":  "牛肉包",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  2.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「包子类」之选（另有：包子类2.5元），约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "南邻汤包",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "包子类"
-    },
-    {
-        "id":  10857,
+        "id":  10929,
         "name":  "蛋炒河粉/米粉/面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -19923,7 +24434,7 @@
         "rawGroup":  "全家福蛋炒饭"
     },
     {
-        "id":  10858,
+        "id":  10930,
         "name":  "鱼香肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19931,6 +24442,7 @@
                       "微酸",
                       "甜"
                   ],
+        "flavors": ["甜"],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -19948,13 +24460,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10859,
+        "id":  10931,
         "name":  "鸡杂",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -19971,13 +24486,16 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10860,
+        "id":  10932,
         "name":  "套餐七（鸡肉卷1个+鸡米花1份+无骨鸡块4块+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  21.8,
         "cal":  450,
         "tags":  [
@@ -19994,19 +24512,20 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10861,
+        "id":  10933,
         "name":  "火锅肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  16,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -20017,13 +24536,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10862,
+        "id":  10934,
         "name":  "秘制叉烧/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  23.9,
         "cal":  450,
         "tags":  [
@@ -20040,13 +24562,16 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10863,
+        "id":  10935,
         "name":  "金牌紫茄子茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -20064,13 +24589,42 @@
         "rawGroup":  ""
     },
     {
-        "id":  10864,
+        "id":  10936,
+        "name":  "柠檬手撕鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "酸甜"
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「现卤现捞」之选（另有：现卤现捞13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "现卤现捞"
+    },
+    {
+        "id":  10937,
         "name":  "鲜肉焖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -20087,13 +24641,16 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10865,
+        "id":  10938,
         "name":  "宫保鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -20110,13 +24667,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10866,
+        "id":  10939,
         "name":  "酸萝卜鸡丝米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -20133,13 +24693,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10867,
+        "id":  10940,
         "name":  "豆皮米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -20157,20 +24720,21 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10868,
+        "id":  10941,
         "name":  "香辣土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  true,
         "spicy":  1,
         "main":  "素",
@@ -20181,13 +24745,42 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10869,
+        "id":  10942,
+        "name":  "黑金排骨套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「套餐」之选（另有：套餐黑金土排骨1份+素菜任选5+米饭11.8元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "犟稻超级酱骨饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "套餐"
+    },
+    {
+        "id":  10943,
         "name":  "肉沫豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -20204,13 +24797,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10870,
+        "id":  10944,
         "name":  "肉沫焖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -20227,13 +24823,16 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10871,
+        "id":  10945,
         "name":  "玫瑰油鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  20.9,
         "cal":  450,
         "tags":  [
@@ -20250,20 +24849,21 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10872,
+        "id":  10946,
         "name":  "冬阴功土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥘冬阴功🥘」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -20274,13 +24874,16 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10873,
+        "id":  10947,
         "name":  "黑椒烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -20297,13 +24900,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10874,
+        "id":  10948,
         "name":  "鸭血小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -20320,19 +24926,20 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10875,
+        "id":  10949,
         "name":  "泡椒鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -20343,13 +24950,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10876,
+        "id":  10950,
         "name":  "日式烧牛肉拼鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -20366,13 +24976,43 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10877,
+        "id":  10951,
+        "name":  "绝味鸭翅套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「招牌」之选（另有：招牌11.8元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "招牌"
+    },
+    {
+        "id":  10952,
         "name":  "藤椒抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -20389,36 +25029,16 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10878,
-        "name":  "福利麻辣翅根（1人1单）",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  1.2,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐折扣价，限1人1单¥1.2（3.4折，原价¥3.5）），约 450 kcal",
-        "veg":  false,
-        "spicy":  2,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10879,
+        "id":  10953,
         "name":  "隆江猪脚饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15.9,
         "cal":  700,
         "tags":  [
@@ -20435,13 +25055,16 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10880,
+        "id":  10954,
         "name":  "香脆猪排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -20458,13 +25081,14 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10881,
+        "id":  10955,
         "name":  "煎蛋火锅米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  8.99,
         "cal":  600,
         "tags":  [
@@ -20482,13 +25106,16 @@
         "rawGroup":  "4月新品"
     },
     {
-        "id":  10882,
+        "id":  10956,
         "name":  "鸡哈豆花",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  450,
         "tags":  [
@@ -20505,13 +25132,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10883,
+        "id":  10957,
         "name":  "大盘鸡炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  18,
         "cal":  600,
         "tags":  [
@@ -20528,13 +25158,16 @@
         "rawGroup":  "新增香锅"
     },
     {
-        "id":  10884,
+        "id":  10958,
         "name":  "西红柿鸡蛋拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "酸甜"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -20551,13 +25184,16 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10885,
+        "id":  10959,
         "name":  "黄瓜鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -20574,13 +25210,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10886,
+        "id":  10960,
         "name":  "自选烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8.9,
         "cal":  700,
         "tags":  [
@@ -20597,13 +25236,16 @@
         "rawGroup":  "自选烤盘饭"
     },
     {
-        "id":  10887,
+        "id":  10961,
         "name":  "日式烧牛肉拼鸡排饭套餐",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  14.9,
         "cal":  650,
         "tags":  [
@@ -20620,13 +25262,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10888,
+        "id":  10962,
         "name":  "小太阳煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2,
         "cal":  450,
         "tags":  [
@@ -20643,13 +25288,42 @@
         "rawGroup":  ""
     },
     {
-        "id":  10889,
+        "id":  10963,
+        "name":  "湖南小炒肉",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒现炒系列"
+    },
+    {
+        "id":  10964,
         "name":  "鱼香肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -20666,13 +25340,16 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10890,
+        "id":  10965,
         "name":  "泡椒鸡杂茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -20689,13 +25366,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10891,
+        "id":  10966,
         "name":  "鱼香肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -20712,13 +25392,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10892,
+        "id":  10967,
         "name":  "紫薯包",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  400,
         "tags":  [
@@ -20735,13 +25418,14 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  10893,
+        "id":  10968,
         "name":  "小炒双拼（不含25元以上）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  21,
         "cal":  450,
         "tags":  [
@@ -20758,13 +25442,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10894,
+        "id":  10969,
         "name":  "三鲜小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -20781,13 +25468,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10895,
+        "id":  10970,
         "name":  "鸡汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -20804,13 +25494,16 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10896,
+        "id":  10971,
         "name":  "炙烧蟹柳大满配",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13.9,
         "cal":  450,
         "tags":  [
@@ -20827,19 +25520,20 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10897,
+        "id":  10972,
         "name":  "香辣鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -20850,13 +25544,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10898,
+        "id":  10973,
         "name":  "宫保鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -20873,13 +25570,16 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10899,
+        "id":  10974,
         "name":  "肉片焖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -20896,13 +25596,16 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10900,
+        "id":  10975,
         "name":  "馕芹菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -20919,13 +25622,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10901,
+        "id":  10976,
         "name":  "白粥",
         "category":  "汤粥",
         "icon":  "soup",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  2,
         "cal":  200,
         "tags":  [
@@ -20944,13 +25650,14 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10902,
+        "id":  10977,
         "name":  "宫保鸡丁小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "甜"
                   ],
+        "flavors": ["甜"],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -20967,13 +25674,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10903,
+        "id":  10978,
         "name":  "特色牛肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  450,
         "tags":  [
@@ -20990,13 +25700,16 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10904,
+        "id":  10979,
         "name":  "黑椒牛肉饼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  450,
         "tags":  [
@@ -21013,13 +25726,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10905,
+        "id":  10980,
         "name":  "特色大盘鸡（小份）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  60,
         "cal":  450,
         "tags":  [
@@ -21036,13 +25752,16 @@
         "rawGroup":  "特色大盘鸡"
     },
     {
-        "id":  10906,
+        "id":  10981,
         "name":  "鸡丝米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -21059,13 +25778,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10907,
+        "id":  10982,
         "name":  "全家福小锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -21082,13 +25804,16 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10908,
+        "id":  10983,
         "name":  "糊辣壳馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -21106,13 +25831,42 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10909,
+        "id":  10984,
+        "name":  "香辣干锅鸡",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  15,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「招牌」之选（另有：招牌15元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "招牌"
+    },
+    {
+        "id":  10985,
         "name":  "椰子鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  700,
         "tags":  [
@@ -21129,13 +25883,16 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10910,
+        "id":  10986,
         "name":  "香辣花卷",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  2,
         "cal":  400,
         "tags":  [
@@ -21153,13 +25910,42 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  10911,
+        "id":  10987,
+        "name":  "干拌鸡杂面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干拌系列」之选（另有：干拌系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干拌系列"
+    },
+    {
+        "id":  10988,
         "name":  "小馆肉燥拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -21176,13 +25962,16 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  10912,
+        "id":  10989,
         "name":  "红烧牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -21199,20 +25988,21 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10913,
+        "id":  10990,
         "name":  "番茄油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -21223,13 +26013,16 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10914,
+        "id":  10991,
         "name":  "法式黑椒肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  9.9,
         "cal":  600,
         "tags":  [
@@ -21246,13 +26039,14 @@
         "rawGroup":  "低卡意面系列"
     },
     {
-        "id":  10915,
+        "id":  10992,
         "name":  "小炒肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -21269,13 +26063,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10916,
+        "id":  10993,
         "name":  "小馆混合炸酱面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -21292,13 +26089,43 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  10917,
+        "id":  10994,
+        "name":  "大骨汤面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  7,
+        "cal":  600,
+        "tags":  [
+                     "性价比",
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两9元二两7元/三两9元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  10995,
         "name":  "老干妈火腿外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -21315,13 +26142,16 @@
         "rawGroup":  "全家福蛋炒饭"
     },
     {
-        "id":  10918,
+        "id":  10996,
         "name":  "原汤羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -21338,19 +26168,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10919,
+        "id":  10997,
         "name":  "香辣火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -21361,13 +26192,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10920,
+        "id":  10998,
         "name":  "广式盐焗鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -21384,13 +26218,16 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10921,
+        "id":  10999,
         "name":  "牛肉米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -21407,13 +26244,16 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10922,
+        "id":  11000,
         "name":  "猪脚",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -21430,13 +26270,16 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10923,
+        "id":  11001,
         "name":  "梅菜扣肉包",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2,
         "cal":  450,
         "tags":  [
@@ -21453,13 +26296,16 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10924,
+        "id":  11002,
         "name":  "肉沫油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -21476,19 +26322,20 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10925,
+        "id":  11003,
         "name":  "泡椒肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -21499,13 +26346,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10926,
+        "id":  11004,
         "name":  "三荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -21522,13 +26372,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10927,
+        "id":  11005,
         "name":  "奶香糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  3,
         "cal":  400,
         "tags":  [
@@ -21545,19 +26398,20 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10928,
+        "id":  11006,
         "name":  "酸萝卜鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -21568,13 +26422,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10929,
+        "id":  11007,
         "name":  "豌杂拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -21591,13 +26448,16 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10930,
+        "id":  11008,
         "name":  "铁板五花肉",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  650,
         "tags":  [
@@ -21614,13 +26474,16 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10931,
+        "id":  11009,
         "name":  "海味抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -21637,13 +26500,16 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10932,
+        "id":  11010,
         "name":  "肉末豆角包",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  1.5,
         "cal":  450,
         "tags":  [
@@ -21660,13 +26526,16 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10933,
+        "id":  11011,
         "name":  "黄焖香菇鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -21683,43 +26552,47 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10934,
-        "name":  "脆皮鸡饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
+        "id":  11012,
+        "name":  "泡椒猪肝炒面/刀削/河粉/米粉/泡面",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
-                      "咸香"
+                      "中辣"
                   ],
-        "price":  15,
-        "cal":  700,
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「招牌」之选（另有：规格：大份；含米饭+素菜+酱料+可乐15.0元），约 700 kcal",
+        "desc":  "「炒面」之选（另有：炒面13元），约 600 kcal",
         "veg":  false,
-        "spicy":  0,
+        "spicy":  2,
         "main":  "荤",
-        "portion":  "large",
-        "stall":  "脆香鸭",
-        "canteen":  "汇百味餐厅",
+        "portion":  "regular",
+        "stall":  "胖妹面庄",
+        "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  ""
+        "rawGroup":  "炒面"
     },
     {
-        "id":  10935,
+        "id":  11013,
         "name":  "火锅酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "折扣",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -21730,13 +26603,14 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10936,
+        "id":  11014,
         "name":  "香辣牙签肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  21,
         "cal":  450,
         "tags":  [
@@ -21753,37 +26627,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10937,
-        "name":  "现炒干锅麻辣素菜锅",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
-        "taste":  [
-                      "中辣"
-                  ],
-        "price":  12.9,
-        "cal":  750,
-        "tags":  [
-                     "素食友好",
-                     "管饱"
-                 ],
-        "desc":  "「推荐」之选（另有：推荐¥12.9），约 750 kcal",
-        "veg":  true,
-        "spicy":  2,
-        "main":  "素",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10938,
+        "id":  11015,
         "name":  "金枪鱼拌饭（镇店）",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14.9,
         "cal":  700,
         "tags":  [
@@ -21800,13 +26653,16 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10939,
+        "id":  11016,
         "name":  "全肉肠拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -21823,13 +26679,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10940,
+        "id":  11017,
         "name":  "小炒黄牛肉盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -21846,13 +26705,16 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10941,
+        "id":  11018,
         "name":  "土豆牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -21869,13 +26731,16 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10942,
+        "id":  11019,
         "name":  "香菇滑鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -21892,19 +26757,23 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10943,
+        "id":  11020,
         "name":  "藤椒全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -21915,7 +26784,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10944,
+        "id":  11021,
         "name":  "宫保鸡丁盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21923,13 +26792,14 @@
                       "微酸",
                       "甜"
                   ],
+        "flavors": ["甜"],
         "price":  13,
         "cal":  700,
         "tags":  [
                      "人气",
                      "管饱"
                  ],
-        "desc":  "带点酸甜味，不下饭你找我，，约 700 kcal",
+        "desc":  "带点酸甜味，不下饭你找我，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -21940,13 +26810,14 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10945,
+        "id":  11022,
         "name":  "泡椒鸡杂小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -21963,13 +26834,14 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10946,
+        "id":  11023,
         "name":  "火锅米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -21986,13 +26858,42 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10947,
+        "id":  11024,
+        "name":  "酸菜鸡丝面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微酸"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「清汤系列」之选（另有：清汤系列可选刀削/河粉；三两14元二两12元/三两14元），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "清汤系列"
+    },
+    {
+        "id":  11025,
         "name":  "土豆肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -22009,19 +26910,20 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10948,
+        "id":  11026,
         "name":  "番茄酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": ["酸甜"],
         "price":  14,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍅番茄🍅」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -22032,7 +26934,33 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10949,
+        "id":  11027,
+        "name":  "酱香土豆鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  11028,
         "name":  "火腿米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -22040,6 +26968,7 @@
                       "微辣",
                       "微酸"
                   ],
+        "flavors": ["辣"],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -22056,13 +26985,16 @@
         "rawGroup":  "🫅交个朋友🫅"
     },
     {
-        "id":  10950,
+        "id":  11029,
         "name":  "啤酒鸭",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -22079,19 +27011,20 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10951,
+        "id":  11030,
         "name":  "菌汤鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -22102,13 +27035,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10952,
+        "id":  11031,
         "name":  "香辣花甲米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -22125,13 +27061,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10953,
+        "id":  11032,
         "name":  "菌汤肉丸子米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -22148,13 +27087,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10954,
+        "id":  11033,
         "name":  "小馆酸菜拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -22171,13 +27113,16 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  10955,
+        "id":  11034,
         "name":  "红烧牛肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  16,
         "cal":  700,
         "tags":  [
@@ -22194,19 +27139,46 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10956,
+        "id":  11035,
+        "name":  "贵妃荔枝鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列12.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  11036,
         "name":  "火锅鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -22217,13 +27189,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10957,
+        "id":  11037,
         "name":  "孜香鸡排套餐",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.9,
         "cal":  650,
         "tags":  [
@@ -22240,13 +27215,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10958,
+        "id":  11038,
         "name":  "酸菜牛肉干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -22263,13 +27241,16 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10959,
+        "id":  11039,
         "name":  "金陵咸水鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12.9,
         "cal":  700,
         "tags":  [
@@ -22286,19 +27267,20 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10960,
+        "id":  11040,
         "name":  "泡椒鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  12,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️泡椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -22309,13 +27291,16 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10961,
+        "id":  11041,
         "name":  "孜然牛肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -22332,13 +27317,16 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10962,
+        "id":  11042,
         "name":  "酸菜牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -22356,13 +27344,14 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10963,
+        "id":  11043,
         "name":  "香辣鸡腿肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  19,
         "cal":  450,
         "tags":  [
@@ -22379,13 +27368,16 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10964,
+        "id":  11044,
         "name":  "肉肠拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -22402,13 +27394,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10965,
+        "id":  11045,
         "name":  "花生莲藕乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11.9,
         "cal":  700,
         "tags":  [
@@ -22425,13 +27420,16 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  10966,
+        "id":  11046,
         "name":  "辣椒炒肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -22448,13 +27446,16 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10967,
+        "id":  11047,
         "name":  "鸡肉手抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -22471,13 +27472,16 @@
         "rawGroup":  "左侧配图（新疆特色手抓饭）"
     },
     {
-        "id":  10968,
+        "id":  11048,
         "name":  "豌杂面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -22494,13 +27498,16 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10969,
+        "id":  11049,
         "name":  "野山椒蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -22517,13 +27524,16 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10970,
+        "id":  11050,
         "name":  "红烧排骨",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -22540,13 +27550,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10971,
+        "id":  11051,
         "name":  "糊辣壳抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -22563,19 +27576,22 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10972,
+        "id":  11052,
         "name":  "农家一碗香",
-        "category":  "其他",
-        "icon":  "utensils",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13.8,
-        "cal":  500,
+        "cal":  450,
         "tags":  [
-                     "管饱"
+
                  ],
-        "desc":  "「招牌」之选（另有：招牌13.8元/份），约 500 kcal",
+        "desc":  "「擂椒现炒系列」之选（另有：擂椒现炒系列13.8元/份），约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -22583,39 +27599,45 @@
         "stall":  "擂椒拌饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "招牌"
+        "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  10973,
-        "name":  "青椒肉丝炒面/刀削/河粉/米粉/泡面",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  11053,
+        "name":  "石锅鸡蛋",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
-        "price":  12,
-        "cal":  600,
+        "flavors":  [
+
+                    ],
+        "price":  11,
+        "cal":  700,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「炒面」之选（另有：炒面12元），约 600 kcal",
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭11元/份），约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "胖妹面庄",
+        "stall":  "缘味先石锅饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "炒面"
+        "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10974,
+        "id":  11054,
         "name":  "奥尔良鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -22632,13 +27654,16 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10975,
+        "id":  11055,
         "name":  "火腿鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -22655,13 +27680,42 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10976,
+        "id":  11056,
+        "name":  "石锅肉沫茄子",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭13元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  11057,
         "name":  "伊美春卷",
         "category":  "早餐小吃",
         "icon":  "croissant",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  2.5,
         "cal":  400,
         "tags":  [
@@ -22678,13 +27732,16 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10977,
+        "id":  11058,
         "name":  "花甲米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -22701,13 +27758,16 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10978,
+        "id":  11059,
         "name":  "土豆肉丝炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -22724,13 +27784,16 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10979,
+        "id":  11060,
         "name":  "酸菜米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -22748,19 +27811,20 @@
         "rawGroup":  ""
     },
     {
-        "id":  10980,
+        "id":  11061,
         "name":  "酸菜猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -22771,13 +27835,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10981,
+        "id":  11062,
         "name":  "青椒鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  700,
         "tags":  [
@@ -22794,13 +27861,16 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10982,
+        "id":  11063,
         "name":  "酸菜肉丝铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -22817,13 +27887,17 @@
         "rawGroup":  ""
     },
     {
-        "id":  10983,
+        "id":  11064,
         "name":  "蜜汁叉烧饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜",
+                        "咸鲜"
+                    ],
         "price":  15.9,
         "cal":  700,
         "tags":  [
@@ -22840,13 +27914,43 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10984,
+        "id":  11065,
+        "name":  "石锅豆腐",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  9.9,
+        "cal":  700,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭9.9元/份），约 700 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  11066,
         "name":  "贡菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  600,
         "tags":  [
@@ -22863,13 +27967,16 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10985,
+        "id":  11067,
         "name":  "姜葱白切鸡",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -22886,13 +27993,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  10986,
+        "id":  11068,
         "name":  "红烧肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -22909,13 +28019,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10987,
+        "id":  11069,
         "name":  "小馆酸豆角拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -22933,13 +28046,16 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  10988,
+        "id":  11070,
         "name":  "招牌鸡肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -22956,13 +28072,16 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  10989,
+        "id":  11071,
         "name":  "泡椒血旺",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -22979,13 +28098,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10990,
+        "id":  11072,
         "name":  "小馆混合炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -23002,19 +28124,23 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10991,
+        "id":  11073,
         "name":  "藤椒油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶️藤椒🌶️」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -23025,13 +28151,17 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10992,
+        "id":  11074,
         "name":  "番茄馄饨",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -23048,19 +28178,20 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10993,
+        "id":  11075,
         "name":  "菌汤午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍄菌汤🍄」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -23071,13 +28202,16 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10994,
+        "id":  11076,
         "name":  "酸菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -23094,13 +28228,16 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10995,
+        "id":  11077,
         "name":  "土豆肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10.8,
         "cal":  700,
         "tags":  [
@@ -23117,13 +28254,17 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10996,
+        "id":  11078,
         "name":  "藤椒肉丝拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "辣",
+                        "麻"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -23140,13 +28281,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10997,
+        "id":  11079,
         "name":  "双人套餐十（香辣鸡腿堡2个+薯条1份+辣翅一对+脆皮鸡腿1个+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  38.8,
         "cal":  650,
         "tags":  [
@@ -23163,13 +28307,42 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10998,
+        "id":  11080,
+        "name":  "泡椒肉丝面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「麻辣系列」之选（另有：麻辣系列可选刀削/河粉；三两15元二两13元/三两15元），约 600 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "large",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "麻辣系列"
+    },
+    {
+        "id":  11081,
         "name":  "青椒鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -23186,13 +28359,16 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10999,
+        "id":  11082,
         "name":  "鸡肉炒拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  600,
         "tags":  [
@@ -23209,13 +28385,16 @@
         "rawGroup":  "炒拉面/刀削面"
     },
     {
-        "id":  11000,
+        "id":  11083,
         "name":  "肥肠铺盖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -23232,20 +28411,21 @@
         "rawGroup":  ""
     },
     {
-        "id":  11001,
+        "id":  11084,
         "name":  "酸萝卜金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  10,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -23256,13 +28436,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11002,
+        "id":  11085,
         "name":  "杂酱拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -23279,13 +28462,16 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  11003,
+        "id":  11086,
         "name":  "生爆盐煎肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -23302,13 +28488,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11004,
+        "id":  11087,
         "name":  "小食拼盘（鸡米花/薯条/鸡肉圈/无骨鸡柳/锅巴土豆/香芋地瓜丸/上校鸡块/黄金鸡柳 八选四）",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  18,
         "cal":  650,
         "tags":  [
@@ -23325,13 +28514,16 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11005,
+        "id":  11088,
         "name":  "泡椒猪肝",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  14,
         "cal":  700,
         "tags":  [
@@ -23348,13 +28540,16 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11006,
+        "id":  11089,
         "name":  "鸡块拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -23372,13 +28567,16 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11007,
+        "id":  11090,
         "name":  "鱼香肉丝盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "甜"
                   ],
+        "flavors":  [
+                        "甜"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -23395,13 +28593,42 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  11008,
+        "id":  11091,
+        "name":  "百事可乐鸡",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  13.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「擂椒鸡肉系列」之选（另有：擂椒鸡肉系列13.8元/份），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "擂椒拌饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "擂椒鸡肉系列"
+    },
+    {
+        "id":  11092,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  700,
         "tags":  [
@@ -23419,19 +28646,20 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11009,
+        "id":  11093,
         "name":  "香辣肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  15,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -23442,13 +28670,17 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11010,
+        "id":  11094,
         "name":  "番茄炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -23465,13 +28697,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11011,
+        "id":  11095,
         "name":  "郡肝面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -23488,13 +28723,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  11012,
+        "id":  11096,
         "name":  "酸菜鱼",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -23511,13 +28749,42 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  11013,
+        "id":  11097,
+        "name":  "状元卤肉套餐",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  11.8,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "「套餐」之选（另有：套餐大块状元卤肉1份+素菜任选5+米饭11.8元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "犟稻超级酱骨饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "套餐"
+    },
+    {
+        "id":  11098,
         "name":  "两荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -23534,13 +28801,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11014,
+        "id":  11099,
         "name":  "莴笋炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -23557,13 +28827,16 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  11015,
+        "id":  11100,
         "name":  "土豆烧牛肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  16,
         "cal":  700,
         "tags":  [
@@ -23580,13 +28853,16 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11016,
+        "id":  11101,
         "name":  "青椒肉丝拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -23603,13 +28879,16 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  11017,
+        "id":  11102,
         "name":  "套餐五（香辣鸡腿堡1个+脆皮小鸡腿4个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  22.8,
         "cal":  450,
         "tags":  [
@@ -23626,19 +28905,46 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11018,
+        "id":  11103,
+        "name":  "干锅鸭翅",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
+        "cal":  750,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「干锅现炒」之选（另有：干锅现炒13元），约 750 kcal",
+        "veg":  false,
+        "spicy":  2,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干锅现炒"
+    },
+    {
+        "id":  11104,
         "name":  "香辣炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微辣"
                   ],
+        "flavors": ["辣"],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🌶香辣🌶」之选，约 600 kcal",
         "veg":  false,
         "spicy":  1,
         "main":  "荤",
@@ -23649,13 +28955,16 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11019,
+        "id":  11105,
         "name":  "肉沫豇豆炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  700,
         "tags":  [
@@ -23672,13 +28981,16 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11020,
+        "id":  11106,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -23695,13 +29007,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11021,
+        "id":  11107,
         "name":  "泡椒牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "中辣"
                   ],
+        "flavors":  [
+                        "辣"
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -23719,13 +29034,16 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11022,
+        "id":  11108,
         "name":  "脆皮烧鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  15,
         "cal":  700,
         "tags":  [
@@ -23742,13 +29060,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  11023,
+        "id":  11109,
         "name":  "小馆肉燥汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -23765,13 +29086,16 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  11024,
+        "id":  11110,
         "name":  "凉皮",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [
@@ -23790,13 +29114,16 @@
         "rawGroup":  "凉面凉皮"
     },
     {
-        "id":  11025,
+        "id":  11111,
         "name":  "炒腊肉",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  450,
         "tags":  [
@@ -23813,13 +29140,14 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  11026,
+        "id":  11112,
         "name":  "超级三鲜米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -23836,13 +29164,16 @@
         "rawGroup":  "🎉新品推荐🎉"
     },
     {
-        "id":  11027,
+        "id":  11113,
         "name":  "酸菜云吞",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  600,
         "tags":  [
@@ -23859,19 +29190,20 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  11028,
+        "id":  11114,
         "name":  "酸菜鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲酸菜🍲」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -23882,13 +29214,16 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11029,
+        "id":  11115,
         "name":  "双椒香肠滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -23905,13 +29240,43 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  11030,
+        "id":  11116,
+        "name":  "干锅土豆",
+        "category":  "麻辣系列",
+        "icon":  "cooking-pot",
+        "taste":  [
+                      "中辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  9.9,
+        "cal":  750,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "「干锅现炒」之选（另有：干锅现炒9.9元），约 750 kcal",
+        "veg":  true,
+        "spicy":  2,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "一万家干锅",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "干锅现炒"
+    },
+    {
+        "id":  11117,
         "name":  "蚂蚁上树",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  450,
         "tags":  [
@@ -23928,13 +29293,16 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11031,
+        "id":  11118,
         "name":  "一荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  9,
         "cal":  700,
         "tags":  [
@@ -23951,13 +29319,16 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11032,
+        "id":  11119,
         "name":  "超级三鲜米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "清淡"
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -23974,13 +29345,16 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  11033,
+        "id":  11120,
         "name":  "烤肉焖面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -23997,36 +29371,16 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  11034,
-        "name":  "白水蛋",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "price":  1.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "「糕点/蛋/粥」之选（另有：糕点/蛋/粥1.5元），约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "南邻汤包",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "糕点/蛋/粥"
-    },
-    {
-        "id":  11035,
+        "id":  11121,
         "name":  "原味烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  14,
         "cal":  450,
         "tags":  [
@@ -24043,13 +29397,16 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  11036,
+        "id":  11122,
         "name":  "海味抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -24066,13 +29423,16 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  11037,
+        "id":  11123,
         "name":  "薏仁山药乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  11.9,
         "cal":  700,
         "tags":  [
@@ -24089,13 +29449,16 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  11038,
+        "id":  11124,
         "name":  "牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  8,
         "cal":  600,
         "tags":  [
@@ -24113,13 +29476,16 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11039,
+        "id":  11125,
         "name":  "杂酱拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+                        "咸鲜"
+                    ],
         "price":  11,
         "cal":  600,
         "tags":  [
@@ -24136,13 +29502,16 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  11040,
+        "id":  11126,
         "name":  "蟹排芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  12,
         "cal":  600,
         "tags":  [
@@ -24159,13 +29528,16 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  11041,
+        "id":  11127,
         "name":  "五花肉火腿肠套餐",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  450,
         "tags":  [
@@ -24182,13 +29554,43 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  11042,
+        "id":  11128,
+        "name":  "石锅焖面+小鲜肉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价14元/份），约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "焖面双拼系列"
+    },
+    {
+        "id":  11129,
         "name":  "番茄鸡蛋拌面",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "清淡"
                   ],
+        "flavors":  [
+                        "酸甜",
+                        "清淡"
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -24205,20 +29607,21 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  11043,
+        "id":  11130,
         "name":  "火锅土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  11,
         "cal":  600,
         "tags":  [
                      "素食友好",
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🍲火锅🍲」之选，约 600 kcal",
         "veg":  true,
         "spicy":  0,
         "main":  "素",
@@ -24229,13 +29632,16 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  11044,
+        "id":  11131,
         "name":  "贵州红酸汤鱼",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "微酸"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -24252,13 +29658,16 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  11045,
+        "id":  11132,
         "name":  "铁板烤鸭",
         "category":  "烧烤",
         "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  650,
         "tags":  [
@@ -24275,13 +29684,16 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  11046,
+        "id":  11133,
         "name":  "午餐肉/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  15,
         "cal":  600,
         "tags":  [
@@ -24298,42 +29710,72 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11047,
-        "name":  "干锅鸡",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
+        "id":  11134,
+        "name":  "石锅焖面+鸡柳",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
-        "price":  16,
-        "cal":  750,
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "「推荐」之选（另有：推荐¥16），约 750 kcal",
+        "desc":  "「焖面双拼系列」之选（另有：焖面双拼系列另有鸡蛋底同价、豆腐底同价14元/份），约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "一万家干锅",
+        "stall":  "缘味先石锅饭",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "推荐"
+        "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11048,
+        "id":  11135,
+        "name":  "石锅滑肉",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "「俱味鲜石锅饭」之选（另有：俱味鲜石锅饭14元/份），约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "缘味先石锅饭",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "俱味鲜石锅饭"
+    },
+    {
+        "id":  11136,
         "name":  "酸萝卜肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "此处为菜品描述内容，最多50字，约 600 kcal",
+        "desc":  "「🥕酸萝卜🥕」之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
@@ -24344,13 +29786,16 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11049,
+        "id":  11137,
         "name":  "绝味鸭茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  13,
         "cal":  700,
         "tags":  [
@@ -24367,13 +29812,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  11050,
+        "id":  11138,
         "name":  "无骨烤鱼焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  16,
         "cal":  450,
         "tags":  [
@@ -24390,13 +29838,16 @@
         "rawGroup":  ""
     },
     {
-        "id":  11051,
+        "id":  11139,
         "name":  "蔬菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  700,
         "tags":  [
@@ -24413,13 +29864,16 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11052,
+        "id":  11140,
         "name":  "老麻抄手",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  10,
         "cal":  600,
         "tags":  [
@@ -24436,13 +29890,14 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  11053,
+        "id":  11141,
         "name":  "肉丝米线/面块",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors": [],
         "price":  13,
         "cal":  600,
         "tags":  [
@@ -24460,13 +29915,16 @@
         "rawGroup":  "🎉新品推荐🎉"
     },
     {
-        "id":  11054,
+        "id":  11142,
         "name":  "经典拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
+        "flavors":  [
+
+                    ],
         "price":  7,
         "cal":  600,
         "tags":  [

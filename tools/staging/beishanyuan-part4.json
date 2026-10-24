@@ -1,0 +1,293 @@
+{
+  "photos": [
+    {
+      "file": "IMG20261023175237.jpg",
+      "contentType": "menu_board",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "缘味先石锅饭",
+          "group": "俱味鲜石锅饭",
+          "items": [
+            { "name": "石锅豆腐", "priceText": "9.9元/份", "price": 9.9, "note": "" },
+            { "name": "石锅焖面", "priceText": "9.9元/份", "price": 9.9, "note": "" },
+            { "name": "石锅鸡蛋", "priceText": "11元/份", "price": 11, "note": "" },
+            { "name": "石锅鸡蛋豆腐", "priceText": "12元/份", "price": 12, "note": "" },
+            { "name": "石锅肉沫茄子", "priceText": "13元/份", "price": 13, "note": "" },
+            { "name": "石锅鸡柳", "priceText": "13元/份", "price": 13, "note": "" },
+            { "name": "石锅招牌三样", "priceText": "13元/份", "price": 13, "note": "" },
+            { "name": "石锅小酥肉", "priceText": "14元/份", "price": 14, "note": "" },
+            { "name": "石锅鸡", "priceText": "14元/份", "price": 14, "note": "" },
+            { "name": "石锅滑肉", "priceText": "14元/份", "price": 14, "note": "" },
+            { "name": "石锅泡椒鸡杂", "priceText": "14元/份", "price": 14, "note": "" },
+            { "name": "石锅双椒鸡丁", "priceText": "14元/份", "price": 14, "note": "" },
+            { "name": "石锅糖醋里脊", "priceText": "15元/份", "price": 15, "note": "" },
+            { "name": "石锅红烧肉", "priceText": "15元/份", "price": 15, "note": "" },
+            { "name": "石锅肥牛", "priceText": "15元/份", "price": 15, "note": "" }
+          ]
+        },
+        {
+          "stall": "缘味先石锅饭",
+          "group": "焖面双拼系列",
+          "items": [
+            { "name": "石锅焖面+茄子", "priceText": "12元/份", "price": 12, "note": "另有鸡蛋底+1元、豆腐底同价" },
+            { "name": "石锅焖面+土豆", "priceText": "12元/份", "price": 12, "note": "另有鸡蛋底+1元、豆腐底同价" },
+            { "name": "石锅焖面+金针菇", "priceText": "12元/份", "price": 12, "note": "另有鸡蛋底+1元、豆腐底同价" },
+            { "name": "石锅焖面+烤肠", "priceText": "13元/份", "price": 13, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+鱼丸", "priceText": "13元/份", "price": 13, "note": "另有鸡蛋底+1元、豆腐底同价" },
+            { "name": "石锅焖面+西红柿鸡蛋", "priceText": "13元/份", "price": 13, "note": "另有鸡蛋底+1元、豆腐底同价" },
+            { "name": "石锅焖面+小酥肉", "priceText": "14元/份", "price": 14, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+鸡柳", "priceText": "14元/份", "price": 14, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+小鲜肉", "priceText": "14元/份", "price": 14, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+泡椒鸡杂", "priceText": "14元/份", "price": 14, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+双椒鸡丁", "priceText": "14元/份", "price": 14, "note": "另有鸡蛋底+1元、豆腐底同价" },
+            { "name": "石锅焖面+鸡块", "priceText": "15元/份", "price": 15, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+肥牛", "priceText": "15元/份", "price": 15, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+糖醋里脊", "priceText": "15元/份", "price": 15, "note": "另有鸡蛋底同价、豆腐底同价" },
+            { "name": "石锅焖面+红烧肉", "priceText": "15元/份", "price": 15, "note": "另有鸡蛋底同价、豆腐底同价" }
+          ]
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "file": "IMG20261023175252.jpg",
+      "contentType": "menu_board",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "犟稻超级酱骨饭",
+          "group": "套餐",
+          "items": [
+            { "name": "超级酱大骨套餐", "priceText": "11.8元", "price": 11.8, "note": "酱大骨1份+素菜任选5+米饭" },
+            { "name": "韩式奶香鸡套餐", "priceText": "13.8元", "price": 13.8, "note": "韩式奶香鸡1份+素菜任选5+米饭" },
+            { "name": "肉酱土豆泥套餐", "priceText": "10.8元", "price": 10.8, "note": "素菜任选5+米饭" },
+            { "name": "黑金排骨套餐", "priceText": "11.8元", "price": 11.8, "note": "黑金土排骨1份+素菜任选5+米饭" },
+            { "name": "状元卤肉套餐", "priceText": "11.8元", "price": 11.8, "note": "大块状元卤肉1份+素菜任选5+米饭" },
+            { "name": "卤香鸡腿套餐", "priceText": "12.8元", "price": 12.8, "note": "素菜任选5+米饭" }
+          ]
+        },
+        {
+          "stall": "犟稻超级酱骨饭",
+          "group": "加料区",
+          "items": [
+            { "name": "超级酱大骨", "priceText": "6元", "price": 6, "note": "加料" },
+            { "name": "黑金排骨", "priceText": "6元", "price": 6, "note": "加料" },
+            { "name": "状元卤肉", "priceText": "6元", "price": 6, "note": "加料" },
+            { "name": "卤香鸡腿", "priceText": "5元", "price": 5, "note": "加料" },
+            { "name": "韩式奶香鸡", "priceText": "4元", "price": 4, "note": "加料" },
+            { "name": "黄金捞汁蛋", "priceText": "2元", "price": 2, "note": "加料" }
+          ]
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "file": "IMG20261023175300.jpg",
+      "contentType": "menu_board",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "擂椒拌饭",
+          "group": "擂椒现炒系列",
+          "items": [
+            { "name": "肉沫土豆", "priceText": "11.8元/份", "price": 11.8, "note": "" },
+            { "name": "肉沫茄子", "priceText": "11.8元/份", "price": 11.8, "note": "" },
+            { "name": "肉沫豆腐", "priceText": "11.8元/份", "price": 11.8, "note": "" },
+            { "name": "西红柿炒蛋", "priceText": "12.8元/份", "price": 12.8, "note": "" },
+            { "name": "黑椒肉柳", "priceText": "12.8元/份", "price": 12.8, "note": "" },
+            { "name": "广东香肠", "priceText": "12.8元/份", "price": 12.8, "note": "" },
+            { "name": "孜然肉片", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "糖醋里脊", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "泡椒鸡杂", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "农家一碗香", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "川香回锅肉", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "湖南小炒肉", "priceText": "13.8元/份", "price": 13.8, "note": "" }
+          ]
+        },
+        {
+          "stall": "擂椒拌饭",
+          "group": "擂椒鸡肉系列",
+          "items": [
+            { "name": "泰式咖喱鸡", "priceText": "11.8元/份", "price": 11.8, "note": "" },
+            { "name": "贵妃荔枝鸡", "priceText": "12.8元/份", "price": 12.8, "note": "" },
+            { "name": "清香小炒鸡", "priceText": "12.8元/份", "price": 12.8, "note": "" },
+            { "name": "鲜甜酱汁鸡", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "百事可乐鸡", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "酱香土豆鸡", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "双椒爆香鸡", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "火焰辣子鸡", "priceText": "13.8元/份", "price": 13.8, "note": "" }
+          ]
+        },
+        {
+          "stall": "擂椒拌饭",
+          "group": "现卤现捞",
+          "items": [
+            { "name": "五香鸡腿饭", "priceText": "12.8元/份", "price": 12.8, "note": "" },
+            { "name": "卤香鸭腿饭", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "柠檬手撕鸡", "priceText": "13.8元/份", "price": 13.8, "note": "" },
+            { "name": "金牌猪肘饭", "priceText": "14.8元/份", "price": 14.8, "note": "" },
+            { "name": "招牌卤肉饭", "priceText": "14.8元/份", "price": 14.8, "note": "" }
+          ]
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "file": "IMG20261023175319.jpg",
+      "contentType": "menu_board",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "曾记面食",
+          "group": "清汤系列",
+          "items": [
+            { "name": "大骨汤面", "priceText": "二两7元/三两9元", "price": 7, "note": "可选刀削/河粉；三两9元" },
+            { "name": "金汤面", "priceText": "二两8元/三两10元", "price": 8, "note": "可选刀削/河粉；三两10元" },
+            { "name": "酸萝卜面", "priceText": "二两8元/三两10元", "price": 8, "note": "可选刀削/河粉；三两10元" },
+            { "name": "老坛酸菜面", "priceText": "二两8元/三两10元", "price": 8, "note": "可选刀削/河粉；三两10元" },
+            { "name": "酸菜鸡丝面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "大块卤肉面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "番茄丸子面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "西红柿鸡蛋面", "priceText": "二两10元/三两12元", "price": 10, "note": "可选刀削/河粉；三两12元" },
+            { "name": "茶树菇鸡汤面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "鲜肉酸汤面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" }
+          ]
+        },
+        {
+          "stall": "曾记面食",
+          "group": "麻辣系列",
+          "items": [
+            { "name": "麻辣小面", "priceText": "二两7元/三两9元", "price": 7, "note": "可选刀削/河粉；三两9元" },
+            { "name": "豌杂面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "泡椒鸡杂面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "泡椒猪肝面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "泡椒肉丝面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "红烧牛肉面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "辣子鸡面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "红烧肥肠面", "priceText": "二两14元/三两16元", "price": 14, "note": "可选刀削/河粉；三两16元" }
+          ]
+        },
+        {
+          "stall": "曾记面食",
+          "group": "干拌系列",
+          "items": [
+            { "name": "干拌面", "priceText": "二两7元/三两9元", "price": 7, "note": "可选刀削/河粉；三两9元" },
+            { "name": "剁椒番茄拌面", "priceText": "二两9元/三两11元", "price": 9, "note": "三两11元" },
+            { "name": "葱油拌面", "priceText": "二两9元/三两11元", "price": 9, "note": "可选刀削/河粉；三两11元" },
+            { "name": "双椒面", "priceText": "二两10元/三两12元", "price": 10, "note": "可选刀削/河粉；三两12元" },
+            { "name": "西红柿面", "priceText": "二两10元/三两12元", "price": 10, "note": "可选刀削/河粉；三两12元" },
+            { "name": "干拌辣子鸡面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "干拌泡椒肉丝面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "干拌牛肉面", "priceText": "二两13元/三两15元", "price": 13, "note": "可选刀削/河粉；三两15元" },
+            { "name": "干拌鸡杂面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "干拌豌杂面", "priceText": "二两12元/三两14元", "price": 12, "note": "可选刀削/河粉；三两14元" },
+            { "name": "香菇鸡拌面", "priceText": "二两12元/三两14元", "price": 12, "note": "三两14元" }
+          ]
+        },
+        {
+          "stall": "曾记面食",
+          "group": "凉面系列",
+          "items": [
+            { "name": "凉面凉皮", "priceText": "二两7元/三两9元", "price": 7, "note": "可选细面/韭叶面/刀削面/河粉；三两9元" },
+            { "name": "凉面凉皮双拼", "priceText": "二两8元/三两10元", "price": 8, "note": "三两10元" },
+            { "name": "麻酱凉面凉皮", "priceText": "二两10元/三两12元", "price": 10, "note": "三两12元" },
+            { "name": "绿豆粥", "priceText": "2.5元", "price": 2.5, "note": "" }
+          ]
+        },
+        {
+          "stall": "曾记面食",
+          "group": "酸辣粉系列",
+          "items": [
+            { "name": "手工杂酱酸辣粉", "priceText": "二两12元/三两14元", "price": 12, "note": "三两14元" },
+            { "name": "鸡杂酸辣粉", "priceText": "二两13元/三两15元", "price": 13, "note": "三两15元" }
+          ]
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "file": "IMG20261023175330.jpg",
+      "contentType": "menu_board",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "一万家干锅",
+          "group": "干锅现炒",
+          "items": [
+            { "name": "干锅素拼", "priceText": "11.9元", "price": 11.9, "note": "花菜、包菜、土豆、魔芋、千叶豆腐" },
+            { "name": "干锅香辣鸭", "priceText": "16元/双人30元", "price": 16, "note": "双人30元" },
+            { "name": "干锅鸭翅", "priceText": "13元", "price": 13, "note": "" },
+            { "name": "干锅鸡翅尖", "priceText": "13元", "price": 13, "note": "" },
+            { "name": "干锅鸭架", "priceText": "13元", "price": 13, "note": "" },
+            { "name": "干锅五花肉", "priceText": "15元", "price": 15, "note": "" },
+            { "name": "干锅土豆", "priceText": "9.9元", "price": 9.9, "note": "" }
+          ]
+        },
+        {
+          "stall": "一万家干锅",
+          "group": "辣味拌饭",
+          "items": [
+            { "name": "五香鸡腿套餐", "priceText": "13元", "price": 13, "note": "" },
+            { "name": "酱香鸭腿饭", "priceText": "15元", "price": 15, "note": "" },
+            { "name": "现捞套餐素拼", "priceText": "9.9元", "price": 9.9, "note": "" },
+            { "name": "麻辣酱香鸭子套餐", "priceText": "16元", "price": 16, "note": "" },
+            { "name": "酱香麻辣鸭子半边", "priceText": "25元", "price": 25, "note": "半边鸭" },
+            { "name": "红油猪头肉", "priceText": "18元", "price": 18, "note": "" },
+            { "name": "红油核桃肉", "priceText": "18元", "price": 18, "note": "" },
+            { "name": "红油肘子瘦瘦肉", "priceText": "14.8元", "price": 14.8, "note": "" }
+          ]
+        },
+        {
+          "stall": "一万家干锅",
+          "group": "招牌",
+          "items": [
+            { "name": "香辣干锅鸡", "priceText": "15元", "price": 15, "note": "" },
+            { "name": "干锅香酥麻辣鱼块", "priceText": "15元", "price": 15, "note": "有刺注意" },
+            { "name": "绝味鸭翅套餐", "priceText": "11.8元", "price": 11.8, "note": "" },
+            { "name": "干锅琅琊土豆", "priceText": "9.9元", "price": 9.9, "note": "" },
+            { "name": "干锅虾", "priceText": "17元", "price": 17, "note": "" }
+          ]
+        },
+        {
+          "stall": "一万家干锅",
+          "group": "加菜",
+          "items": [
+            { "name": "藕片", "priceText": "3元", "price": 3, "note": "加菜" },
+            { "name": "花菜", "priceText": "3元", "price": 3, "note": "加菜" },
+            { "name": "酥肉", "priceText": "4元", "price": 4, "note": "加菜" },
+            { "name": "五花肉", "priceText": "5元", "price": 5, "note": "加菜" },
+            { "name": "鸭头", "priceText": "6元", "price": 6, "note": "加菜" },
+            { "name": "鸭脖", "priceText": "6元", "price": 6, "note": "加菜" }
+          ]
+        }
+      ],
+      "uncertain": []
+    },
+    {
+      "file": "IMG20261023175337.jpg",
+      "contentType": "stall_sign",
+      "quality": "clear",
+      "sections": [
+        {
+          "stall": "香灶火锅冒菜",
+          "group": "称重计价",
+          "items": [
+            { "name": "火锅冒菜", "priceText": "称重2.19元/50g，一份约8-15元", "price": 10, "note": "荤素自选称重，口味可选：不辣/微辣/中辣", "spicy": 1 }
+          ]
+        },
+        {
+          "stall": "浏阳蒸碗",
+          "group": "小份蒸菜",
+          "items": [
+            { "name": "荤蒸碗", "priceText": "荤菜6-12元/碗，一份约6-14元", "price": 9, "note": "小份蒸菜，一碗一份，不辣" },
+            { "name": "素蒸碗", "priceText": "素菜2-4元/碗", "price": 3, "note": "小份蒸菜，一碗一份，不辣" }
+          ]
+        }
+      ],
+      "uncertain": [
+        "浏阳蒸碗只有门头价目：素菜2-4元、荤菜6-12元（实际一份约6-14元），荤素自选，无逐项菜名，已按荤/素蒸碗两条通用条目进池"
+      ]
+    }
+  ]
+}

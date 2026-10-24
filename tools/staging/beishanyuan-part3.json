@@ -1,343 +1,506 @@
 {
-  "photos": [
-    {
-      "file": "IMG20261022174902.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "兴旺烧腊饭（正宗港味）",
-          "group": "烧腊饭（左栏）",
-          "items": [
-            { "name": "本帮酱鸭饭", "priceText": "12.9元", "price": 12.9, "note": "" },
-            { "name": "金陵咸水鸭饭", "priceText": "12.9元", "price": 12.9, "note": "" },
-            { "name": "蒜香烤鸭腿饭", "priceText": "13.9元", "price": 13.9, "note": "" },
-            { "name": "本帮咸水鸡饭", "priceText": "13.9元", "price": 13.9, "note": "" },
-            { "name": "明炉烧鸭饭", "priceText": "14.9元", "price": 14.9, "note": "" },
-            { "name": "玫瑰豉油鸡饭", "priceText": "14.9元", "price": 14.9, "note": "" },
-            { "name": "港式香妃鸡饭", "priceText": "14.9元", "price": 14.9, "note": "" },
-            { "name": "广式盐焗鸡饭", "priceText": "14.9元", "price": 14.9, "note": "" }
-          ]
-        },
-        {
-          "stall": "兴旺烧腊饭（正宗港味）",
-          "group": "烧腊饭（中栏）",
-          "items": [
-            { "name": "川味藤椒鸡饭", "priceText": "15.9元", "price": 15.9, "note": "" },
-            { "name": "新派口水鸡饭", "priceText": "15.9元", "price": 15.9, "note": "" },
-            { "name": "澳门烧肉饭", "priceText": "15.9元", "price": 15.9, "note": "" },
-            { "name": "蜜汁叉烧饭", "priceText": "15.9元", "price": 15.9, "note": "" },
-            { "name": "隆江猪脚饭", "priceText": "15.9元", "price": 15.9, "note": "" },
-            { "name": "鬼城麻辣鸡饭", "priceText": "15.9元", "price": 15.9, "note": "" },
-            { "name": "招牌四点金饭", "priceText": "16.9元", "price": 16.9, "note": "" },
-            { "name": "隆江猪蹄饭", "priceText": "16.9元", "price": 16.9, "note": "" }
-          ]
-        },
-        {
-          "stall": "兴旺烧腊饭（正宗港味）",
-          "group": "例份（右栏）",
-          "items": [
-            { "name": "明炉烧鸭/例", "priceText": "20.9元", "price": 20.9, "note": "例份" },
-            { "name": "玫瑰油鸡/例", "priceText": "20.9元", "price": 20.9, "note": "例份" },
-            { "name": "港式香妃鸡/例", "priceText": "20.9元", "price": 20.9, "note": "例份" },
-            { "name": "新派口水鸡/例", "priceText": "20.9元", "price": 20.9, "note": "例份" },
-            { "name": "椒麻藤椒鸡/例", "priceText": "21.9元", "price": 21.9, "note": "例份" },
-            { "name": "鬼城麻辣鸡/例", "priceText": "21.9元", "price": 21.9, "note": "例份" },
-            { "name": "秘制叉烧/例", "priceText": "23.9元", "price": 23.9, "note": "例份" },
-            { "name": "澳门烧肉/例", "priceText": "24.9元", "price": 24.9, "note": "例份" },
-            { "name": "例份加米饭蔬菜", "priceText": "2元/人", "price": 2.0, "note": "主食米饭" }
-          ]
-        },
-        {
-          "stall": "兴旺烧腊饭（正宗港味）",
-          "group": "双拼套餐规则",
-          "items": [
-            { "name": "双拼套餐", "priceText": "同价(12.9)13.9加2元；(12.9)13.9拼14.9加2元；同价14.9加3元；(12.9)13.9拼15.9加3元；同价15.9加4元；14.9拼15.9(16.9)加4元", "price": 0, "note": "加价规则，非单品价格" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "菜单板左下角有一竖排小字（似为档口号或标语），无法辨认",
-        "右上角海报文字仅见「正宗港…」「食过返…」，被裁切",
-        "中栏第一行「川味藤椒鸡饭」首字略反光，按上下文判断为川"
-      ]
-    },
-    {
-      "file": "IMG20261022174918.jpg",
-      "contentType": "menu_board",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "西域烤肉饭·自选烤盘饭",
-          "group": "西域烤肉饭",
-          "items": [
-            { "name": "番茄烤肉饭", "priceText": "12元", "price": 12.0, "note": "" },
-            { "name": "沙拉烤肉饭", "priceText": "12元", "price": 12.0, "note": "" },
-            { "name": "功夫脆皮鸡", "priceText": "13元", "price": 13.0, "note": "" },
-            { "name": "奥尔良鸭腿饭", "priceText": "13元", "price": 13.0, "note": "" },
-            { "name": "黑椒烤肉饭", "priceText": "12元", "price": 12.0, "note": "" },
-            { "name": "孜然烤肉饭", "priceText": "12元", "price": 12.0, "note": "" },
-            { "name": "奥尔良鸡腿饭", "priceText": "14元", "price": 14.0, "note": "" },
-            { "name": "三杯鸡饭", "priceText": "14元", "price": 14.0, "note": "" },
-            { "name": "香辣里脊饭", "priceText": "13元", "price": 13.0, "note": "" },
-            { "name": "澳洲肉扒饭", "priceText": "13元", "price": 13.0, "note": "" },
-            { "name": "香菇滑鸡饭", "priceText": "14元", "price": 14.0, "note": "" },
-            { "name": "麻辣肉片", "priceText": "15元", "price": 15.0, "note": "" },
-            { "name": "椒麻鸡饭", "priceText": "14元", "price": 14.0, "note": "" },
-            { "name": "香煎鸡排饭", "priceText": "13元", "price": 13.0, "note": "" },
-            { "name": "红烧牛肉饭", "priceText": "16元", "price": 16.0, "note": "" },
-            { "name": "任意双拼饭", "priceText": "16元", "price": 16.0, "note": "" },
-            { "name": "打包", "priceText": "+1元", "price": 1.0, "note": "打包费" }
-          ]
-        },
-        {
-          "stall": "西域烤肉饭·自选烤盘饭",
-          "group": "自选烤盘饭",
-          "items": [
-            { "name": "自选烤盘饭", "priceText": "8.9元/3两", "price": 8.9, "note": "自选称重，荤素搭配，米饭免费；口味：烧烤味/香辣味/酱香味，默认烧烤味" },
-            { "name": "打包", "priceText": "+1元", "price": 1.0, "note": "打包费" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "菜单板底部一行被遮挡/裁切，左下角仅见「2个素菜」「现点□ 分量十足」字样，疑似还有内容未入镜",
-        "「西域烤肉饭」分组旁有「食堂爆款」角标"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-46-14-49_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "椰子鸡黄焖鸡北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "椰子鸡+米饭", "priceText": "¥13.9起", "price": 13.9, "note": "选规格，起价" },
-            { "name": "肥牛+米饭", "priceText": "¥14.9起", "price": 14.9, "note": "选规格，起价" },
-            { "name": "水煮猪瘦肉片+米饭", "priceText": "¥13.9起", "price": 13.9, "note": "选规格，起价" },
-            { "name": "小酥肉", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「小酥肉」一行被截断，价格未显示（下一张截图显示为¥12.9起）",
-        "左侧分类栏：推荐、热销、米饭、加小料；本图仅「推荐」分组",
-        "价格为「起」价，需选规格确定最终价"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-46-21-59_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "椰子鸡黄焖鸡北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "小酥肉", "priceText": "¥12.9起", "price": 12.9, "note": "选规格，起价" },
-            { "name": "水煮鱼片+米饭", "priceText": "¥14.9起", "price": 14.9, "note": "选规格，起价" },
-            { "name": "水煮鸡肉片+米饭", "priceText": "¥13.9起", "price": 13.9, "note": "选规格，起价" },
-            { "name": "日本豆腐", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「日本豆腐」一行被截断，价格未显示"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-46-26-50_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "椰子鸡黄焖鸡北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "原子蛋", "priceText": "¥12.9起", "price": 12.9, "note": "选规格，起价" },
-            { "name": "黄焖土豆鸡+米饭", "priceText": "¥11.99起（8.6折，原价¥14）", "price": 11.99, "note": "选规格，起价，折扣价" },
-            { "name": "黄焖香菇鸡+米饭", "priceText": "¥14起", "price": 14.0, "note": "选规格，起价" },
-            { "name": "黄焖千叶豆腐鸡+米饭", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「黄焖千叶豆腐鸡+米饭」价格被截断（下一张截图显示为¥14起）"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-46-30-53_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "椰子鸡黄焖鸡北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "黄焖千叶豆腐鸡+米饭", "priceText": "¥14起", "price": 14.0, "note": "选规格，起价" },
-            { "name": "黄焖金针菇鸡+米饭", "priceText": "¥14起", "price": 14.0, "note": "选规格，起价" },
-            { "name": "黄焖火腿肠鸡+米饭", "priceText": "¥15起", "price": 15.0, "note": "选规格，起价" },
-            { "name": "黄焖肉丸鸡+米饭", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「黄焖肉丸鸡+米饭」价格被截断",
-        "「推荐」分组疑似未截完（热销/米饭/加小料分组未截图）"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-56-43-20_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑（页面标题「一万家十锅_北山苑」，横幅「万家干锅北山苑」）",
-          "group": "推荐",
-          "items": [
-            { "name": "干锅锁骨（锁骨量多）", "priceText": "¥14", "price": 14.0, "note": "" },
-            { "name": "干锅鸡", "priceText": "¥16", "price": 16.0, "note": "" },
-            { "name": "干锅香辣鸭（肉多学姐推荐）", "priceText": "¥15.9（9.4折，原价¥17）", "price": 15.9, "note": "折扣价" },
-            { "name": "热卤拌红油 麻辣鸡（一个鸡腿量）", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "店铺名标题首字符显示为「一万家十锅_北山苑」，疑为「万家干锅」类名称，横幅写「万家干锅北山苑」，确切店名存疑",
-        "底部「热卤拌红油 麻辣鸡」价格被截断（下一张截图显示为¥14.8）",
-        "左侧分类：推荐、现炒麻辣干锅、卤味套餐饭、夏季专属卤菜凉拌、热销、折扣、特色风味、干锅加菜、盖饭；本图仅「推荐」"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-56-46-98_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "热卤拌红油 麻辣鸡（一个鸡腿量）", "priceText": "¥14.8", "price": 14.8, "note": "" },
-            { "name": "干锅鸡翅尖", "priceText": "¥14", "price": 14.0, "note": "" },
-            { "name": "热卤红油拌麻辣鸭（好评多多）", "priceText": "¥15.8（9.3折，原价¥17）", "price": 15.8, "note": "折扣价" },
-            { "name": "现炒干锅麻辣素菜锅", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「现炒干锅麻辣素菜锅」价格被截断（下一张截图显示为¥12.9）"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-56-50-31_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "现炒干锅麻辣素菜锅", "priceText": "¥12.9", "price": 12.9, "note": "" },
-            { "name": "酱香麻辣鸡翅尖试吃", "priceText": "¥0.6", "price": 0.6, "note": "试吃装" },
-            { "name": "【新品】干锅蟹排组合丸子", "priceText": "¥13.9", "price": 13.9, "note": "" },
-            { "name": "招牌‼️鸡腿煲(酱香/五香）绝味", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「招牌‼️鸡腿煲(酱香/五香）绝味」价格被截断"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-56-53-24_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "干锅时蔬盲盒搭配", "priceText": "¥11.8", "price": 11.8, "note": "" },
-            { "name": "干锅千叶豆腐", "priceText": "¥13.8", "price": 13.8, "note": "" },
-            { "name": "绝味招牌‼️酱香大鸭腿", "priceText": "¥15.9", "price": 15.9, "note": "" },
-            { "name": "热卤猪头肉拌豆干（小肥）", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「热卤猪头肉拌豆干（小肥）」价格被截断"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-56-56-49_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "招牌‼️酱香鸭子锅（好吃量足）卤烤", "priceText": "¥16.3（9.2折，原价¥17.8）", "price": 16.3, "note": "折扣价" },
-            { "name": "干锅翅根（4个）", "priceText": "¥15.8", "price": 15.8, "note": "" },
-            { "name": "干锅鸭翅软糯（现炒）3个、可以双拼翅根备", "priceText": "¥14", "price": 14.0, "note": "" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "第三道菜名较长「干锅鸭翅软糯（现炒）3个、可以双拼翅根备」，末尾「备」字疑为描述文字混入，原文如此"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-57-07-51_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "酱香绝味大大大鸭腿", "priceText": "¥7", "price": 7.0, "note": "只有一个鸭腿，没有菜，没有饭" },
-            { "name": "干锅去头小黄鱼（4条）", "priceText": "¥14.8", "price": 14.8, "note": "" },
-            { "name": "干煸牛肉丸", "priceText": "¥13.8", "price": 13.8, "note": "" },
-            { "name": "干锅小酥肉", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「干锅小酥肉」价格被截断"
-      ]
-    },
-    {
-      "file": "Screenshot_2026-10-22-19-57-10-46_e39d2c7de19156b.jpg",
-      "contentType": "screenshot",
-      "quality": "clear",
-      "sections": [
-        {
-          "stall": "一万家干锅_北山苑",
-          "group": "推荐",
-          "items": [
-            { "name": "干锅千叶豆腐盖饭", "priceText": "¥11.9", "price": 11.9, "note": "" },
-            { "name": "琅琊土豆时蔬盖饭", "priceText": "¥11.9", "price": 11.9, "note": "" },
-            { "name": "福利麻辣翅根（1人1单）", "priceText": "¥1.2（3.4折，原价¥3.5）", "price": 1.2, "note": "折扣价，限1人1单" },
-            { "name": "干锅花菜", "priceText": "□（价格被截断）", "price": 0, "note": "截图底部截断，价格未入镜" }
-          ]
-        }
-      ],
-      "uncertain": [
-        "底部「干锅花菜」价格被截断",
-        "「推荐」分组疑似仍未截完，热销/折扣/特色风味/干锅加菜/盖饭等分组均无截图"
-      ]
-    }
-  ],
-  "reshoot": [
-    "Screenshot_2026-10-22-19-46-14-49：小酥肉价格被截断（已在下张补到¥12.9起，可不重截）",
-    "Screenshot_2026-10-22-19-46-21-59：日本豆腐价格被截断，需重截",
-    "Screenshot_2026-10-22-19-46-30-53：黄焖肉丸鸡+米饭价格被截断，且推荐分组末尾、热销/米饭/加小料分组未截，需补截",
-    "Screenshot_2026-10-22-19-56-50-31：招牌鸡腿煲(酱香/五香)价格被截断，需重截",
-    "Screenshot_2026-10-22-19-56-53-24：热卤猪头肉拌豆干（小肥）价格被截断，需重截",
-    "Screenshot_2026-10-22-19-57-07-51：干锅小酥肉价格被截断，需重截",
-    "Screenshot_2026-10-22-19-57-10-46：干锅花菜价格被截断，推荐分组末尾及热销/折扣/特色风味/干锅加菜/盖饭分组未截，需补截",
-    "IMG20261022174918.jpg：菜单板底部一行被遮挡，建议补拍底部"
-  ]
+    "photos":  [
+                   {
+                       "file":  "IMG20261022174902.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "兴旺烧腊饭（正宗港味）",
+                                            "group":  "烧腊饭（左栏）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "本帮酱鸭饭",
+                                                              "priceText":  "12.9元",
+                                                              "price":  12.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "金陵咸水鸭饭",
+                                                              "priceText":  "12.9元",
+                                                              "price":  12.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "蒜香烤鸭腿饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "本帮咸水鸡饭",
+                                                              "priceText":  "13.9元",
+                                                              "price":  13.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "明炉烧鸭饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "玫瑰豉油鸡饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "港式香妃鸡饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "广式盐焗鸡饭",
+                                                              "priceText":  "14.9元",
+                                                              "price":  14.9,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兴旺烧腊饭（正宗港味）",
+                                            "group":  "烧腊饭（中栏）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "川味藤椒鸡饭",
+                                                              "priceText":  "15.9元",
+                                                              "price":  15.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "新派口水鸡饭",
+                                                              "priceText":  "15.9元",
+                                                              "price":  15.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "澳门烧肉饭",
+                                                              "priceText":  "15.9元",
+                                                              "price":  15.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "蜜汁叉烧饭",
+                                                              "priceText":  "15.9元",
+                                                              "price":  15.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "隆江猪脚饭",
+                                                              "priceText":  "15.9元",
+                                                              "price":  15.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "鬼城麻辣鸡饭",
+                                                              "priceText":  "15.9元",
+                                                              "price":  15.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "招牌四点金饭",
+                                                              "priceText":  "16.9元",
+                                                              "price":  16.9,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "隆江猪蹄饭",
+                                                              "priceText":  "16.9元",
+                                                              "price":  16.9,
+                                                              "note":  ""
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兴旺烧腊饭（正宗港味）",
+                                            "group":  "例份（右栏）",
+                                            "items":  [
+                                                          {
+                                                              "name":  "明炉烧鸭/例",
+                                                              "priceText":  "20.9元",
+                                                              "price":  20.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "玫瑰油鸡/例",
+                                                              "priceText":  "20.9元",
+                                                              "price":  20.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "港式香妃鸡/例",
+                                                              "priceText":  "20.9元",
+                                                              "price":  20.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "新派口水鸡/例",
+                                                              "priceText":  "20.9元",
+                                                              "price":  20.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "椒麻藤椒鸡/例",
+                                                              "priceText":  "21.9元",
+                                                              "price":  21.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "鬼城麻辣鸡/例",
+                                                              "priceText":  "21.9元",
+                                                              "price":  21.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "秘制叉烧/例",
+                                                              "priceText":  "23.9元",
+                                                              "price":  23.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "澳门烧肉/例",
+                                                              "priceText":  "24.9元",
+                                                              "price":  24.9,
+                                                              "note":  "例份"
+                                                          },
+                                                          {
+                                                              "name":  "例份加米饭蔬菜",
+                                                              "priceText":  "2元/人",
+                                                              "price":  2.0,
+                                                              "note":  "主食米饭"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "兴旺烧腊饭（正宗港味）",
+                                            "group":  "双拼套餐规则",
+                                            "items":  [
+                                                          {
+                                                              "name":  "双拼套餐",
+                                                              "priceText":  "同价(12.9)13.9加2元；(12.9)13.9拼14.9加2元；同价14.9加3元；(12.9)13.9拼15.9加3元；同价15.9加4元；14.9拼15.9(16.9)加4元",
+                                                              "price":  0,
+                                                              "note":  "加价规则，非单品价格"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "菜单板左下角有一竖排小字（似为档口号或标语），无法辨认",
+                                         "右上角海报文字仅见「正宗港…」「食过返…」，被裁切",
+                                         "中栏第一行「川味藤椒鸡饭」首字略反光，按上下文判断为川"
+                                     ]
+                   },
+                   {
+                       "file":  "IMG20261022174918.jpg",
+                       "contentType":  "menu_board",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "西域烤肉饭·自选烤盘饭",
+                                            "group":  "西域烤肉饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "番茄烤肉饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "沙拉烤肉饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "功夫脆皮鸡",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "奥尔良鸭腿饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "黑椒烤肉饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "孜然烤肉饭",
+                                                              "priceText":  "12元",
+                                                              "price":  12.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "奥尔良鸡腿饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "三杯鸡饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香辣里脊饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "澳洲肉扒饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香菇滑鸡饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "麻辣肉片",
+                                                              "priceText":  "15元",
+                                                              "price":  15.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "椒麻鸡饭",
+                                                              "priceText":  "14元",
+                                                              "price":  14.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "香煎鸡排饭",
+                                                              "priceText":  "13元",
+                                                              "price":  13.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "红烧牛肉饭",
+                                                              "priceText":  "16元",
+                                                              "price":  16.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "任意双拼饭",
+                                                              "priceText":  "16元",
+                                                              "price":  16.0,
+                                                              "note":  ""
+                                                          },
+                                                          {
+                                                              "name":  "打包",
+                                                              "priceText":  "+1元",
+                                                              "price":  1.0,
+                                                              "note":  "打包费"
+                                                          }
+                                                      ]
+                                        },
+                                        {
+                                            "stall":  "西域烤肉饭·自选烤盘饭",
+                                            "group":  "自选烤盘饭",
+                                            "items":  [
+                                                          {
+                                                              "name":  "自选烤盘饭",
+                                                              "priceText":  "8.9元/3两",
+                                                              "price":  8.9,
+                                                              "note":  "自选称重，荤素搭配，米饭免费；口味：烧烤味/香辣味/酱香味，默认烧烤味"
+                                                          },
+                                                          {
+                                                              "name":  "打包",
+                                                              "priceText":  "+1元",
+                                                              "price":  1.0,
+                                                              "note":  "打包费"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "菜单板底部一行被遮挡/裁切，左下角仅见「2个素菜」「现点□ 分量十足」字样，疑似还有内容未入镜",
+                                         "「西域烤肉饭」分组旁有「食堂爆款」角标"
+                                     ]
+                   },
+                   {
+                       "file":  "Screenshot_2026-10-22-19-46-14-49_e39d2c7de19156b.jpg",
+                       "contentType":  "screenshot",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "椰子鸡黄焖鸡北山苑",
+                                            "group":  "推荐",
+                                            "items":  [
+                                                          {
+                                                              "name":  "椰子鸡+米饭",
+                                                              "priceText":  "¥13.9起",
+                                                              "price":  13.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "肥牛+米饭",
+                                                              "priceText":  "¥14.9起",
+                                                              "price":  14.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "水煮猪瘦肉片+米饭",
+                                                              "priceText":  "¥13.9起",
+                                                              "price":  13.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "小酥肉",
+                                                              "priceText":  "□（价格被截断）",
+                                                              "price":  0,
+                                                              "note":  "截图底部截断，价格未入镜"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "底部「小酥肉」一行被截断，价格未显示（下一张截图显示为¥12.9起）",
+                                         "左侧分类栏：推荐、热销、米饭、加小料；本图仅「推荐」分组",
+                                         "价格为「起」价，需选规格确定最终价"
+                                     ]
+                   },
+                   {
+                       "file":  "Screenshot_2026-10-22-19-46-21-59_e39d2c7de19156b.jpg",
+                       "contentType":  "screenshot",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "椰子鸡黄焖鸡北山苑",
+                                            "group":  "推荐",
+                                            "items":  [
+                                                          {
+                                                              "name":  "小酥肉",
+                                                              "priceText":  "¥12.9起",
+                                                              "price":  12.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "水煮鱼片+米饭",
+                                                              "priceText":  "¥14.9起",
+                                                              "price":  14.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "水煮鸡肉片+米饭",
+                                                              "priceText":  "¥13.9起",
+                                                              "price":  13.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "日本豆腐",
+                                                              "priceText":  "□（价格被截断）",
+                                                              "price":  0,
+                                                              "note":  "截图底部截断，价格未入镜"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "底部「日本豆腐」一行被截断，价格未显示"
+                                     ]
+                   },
+                   {
+                       "file":  "Screenshot_2026-10-22-19-46-26-50_e39d2c7de19156b.jpg",
+                       "contentType":  "screenshot",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "椰子鸡黄焖鸡北山苑",
+                                            "group":  "推荐",
+                                            "items":  [
+                                                          {
+                                                              "name":  "原子蛋",
+                                                              "priceText":  "¥12.9起",
+                                                              "price":  12.9,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "黄焖土豆鸡+米饭",
+                                                              "priceText":  "¥11.99起（8.6折，原价¥14）",
+                                                              "price":  11.99,
+                                                              "note":  "选规格，起价，折扣价"
+                                                          },
+                                                          {
+                                                              "name":  "黄焖香菇鸡+米饭",
+                                                              "priceText":  "¥14起",
+                                                              "price":  14.0,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "黄焖千叶豆腐鸡+米饭",
+                                                              "priceText":  "□（价格被截断）",
+                                                              "price":  0,
+                                                              "note":  "截图底部截断，价格未入镜"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "底部「黄焖千叶豆腐鸡+米饭」价格被截断（下一张截图显示为¥14起）"
+                                     ]
+                   },
+                   {
+                       "file":  "Screenshot_2026-10-22-19-46-30-53_e39d2c7de19156b.jpg",
+                       "contentType":  "screenshot",
+                       "quality":  "clear",
+                       "sections":  [
+                                        {
+                                            "stall":  "椰子鸡黄焖鸡北山苑",
+                                            "group":  "推荐",
+                                            "items":  [
+                                                          {
+                                                              "name":  "黄焖千叶豆腐鸡+米饭",
+                                                              "priceText":  "¥14起",
+                                                              "price":  14.0,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "黄焖金针菇鸡+米饭",
+                                                              "priceText":  "¥14起",
+                                                              "price":  14.0,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "黄焖火腿肠鸡+米饭",
+                                                              "priceText":  "¥15起",
+                                                              "price":  15.0,
+                                                              "note":  "选规格，起价"
+                                                          },
+                                                          {
+                                                              "name":  "黄焖肉丸鸡+米饭",
+                                                              "priceText":  "□（价格被截断）",
+                                                              "price":  0,
+                                                              "note":  "截图底部截断，价格未入镜"
+                                                          }
+                                                      ]
+                                        }
+                                    ],
+                       "uncertain":  [
+                                         "底部「黄焖肉丸鸡+米饭」价格被截断",
+                                         "「推荐」分组疑似未截完（热销/米饭/加小料分组未截图）"
+                                     ]
+                   }
+               ],
+    "reshoot":  [
+                    "Screenshot_2026-10-22-19-46-14-49：小酥肉价格被截断（已在下张补到¥12.9起，可不重截）",
+                    "Screenshot_2026-10-22-19-46-21-59：日本豆腐价格被截断，需重截",
+                    "Screenshot_2026-10-22-19-46-30-53：黄焖肉丸鸡+米饭价格被截断，且推荐分组末尾、热销/米饭/加小料分组未截，需补截",
+                    "Screenshot_2026-10-22-19-56-50-31：招牌鸡腿煲(酱香/五香)价格被截断，需重截",
+                    "Screenshot_2026-10-22-19-56-53-24：热卤猪头肉拌豆干（小肥）价格被截断，需重截",
+                    "Screenshot_2026-10-22-19-57-07-51：干锅小酥肉价格被截断，需重截",
+                    "Screenshot_2026-10-22-19-57-10-46：干锅花菜价格被截断，推荐分组末尾及热销/折扣/特色风味/干锅加菜/盖饭分组未截，需补截",
+                    "IMG20261022174918.jpg：菜单板底部一行被遮挡，建议补拍底部"
+                ]
 }
