@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="吃嘛 —— 拯救干饭人的选择困难症，从 1143 道真实食堂菜品里替你做决定。" />
   <title>吃嘛 · 拯救选择困难症</title>
-  <link rel="stylesheet" href="styles.css?v=20261024-7" />
+  <link rel="stylesheet" href="styles.css?v=20261024-8" />
 </head>
 <body>
   <div class="app">
@@ -27,6 +27,7 @@
     <section class="panel reveal" style="--d:2">
       <label for="pref">我的饮食偏好 <span class="opt">（可不填，随意聊聊）</span></label>
       <textarea id="pref" rows="2" placeholder="例如：减肥、预算 15 元、不想吃辣…"></textarea>
+      <p id="conflictHint" class="conflict-hint" hidden></p>
       <div class="chips" aria-label="快捷偏好">
         <button type="button" class="chip" data-add="减肥">减脂轻食</button>
         <button type="button" class="chip" data-add="预算15元">预算 15 元</button>
@@ -130,9 +131,9 @@
     </div>
   </div>
 
-  <script src="mock.js?v=20261024-7" defer></script>
-  <script src="data/data.js?v=20261024-7" defer></script>
-  <script src="api.js?v=20261024-7" defer></script>
-  <script src="app.js?v=20261024-7" defer></script>
+  <script src="mock.js?v=20261024-8" defer></script>
+  <script src="data/data.js?v=20261024-8" defer></script>
+  <script src="api.js?v=20261024-8" defer></script>
+  <script src="app.js?v=20261024-8" defer></script>
 </body>
 </html>

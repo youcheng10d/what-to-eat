@@ -23,14 +23,41 @@
     return Array.isArray(d.taste) ? d.taste : d.taste ? [d.taste] : [];
   }
 
+  // 意图词库：正向与否定都收齐，“不喜欢肉”“吃不了辣”这类口语不再漏识别
+  const VEG_RE = /吃素|素食|不吃肉|不想吃肉|素一点|不喜欢肉|不爱吃肉|不吃荤|吃不了肉|不想碰肉/;
+  const MEAT_RE = /想吃肉|无肉不欢|荤一点|大口吃肉|想吃点肉|来点肉/;
+  const NO_SPICY_RE = /不想吃辣|不吃辣|忌辣|不能吃辣|别太辣|不要辣|免辣|怕辣|不喜欢辣|不爱吃辣|吃不了辣|受不了辣/;
+  const SPICY_RE = /想吃辣|无辣不欢|能吃辣|爱吃辣|辣一点|重口/;
+
+  function lastIndexOfRe(s, re) {
+    let m, idx = -1;
+    const g = new RegExp(re.source, "g");
+    while ((m = g.exec(s))) idx = m.index;
+    return idx;
+  }
+
+  // 自相矛盾的输入不静默丢弃：后写的那句优先（人边想边改，后写通常是新主意），并把裁决讲出来
+  function resolveConflict(s, posRe, negRe, posName, negName, type) {
+    const pos = lastIndexOfRe(s, posRe);
+    const neg = lastIndexOfRe(s, negRe);
+    if (pos < 0 || neg < 0) return null;
+    return {
+      type,
+      keepPos: pos > neg,
+      note: `你先说了“${negName}”，后面又说“${posName}”，这次按后一句算。`,
+    };
+  }
+
   // —— 1) 偏好解析：把自然语言拆成结构化条件 ——
   function parsePreferences(text) {
-    const s = (text || "").toLowerCase();
+    // 叠词先归一：肉肉 → 肉，方便意图词表命中
+    const s = (text || "").replace(/(肉|菜|辣|甜|面|汤|粥)\1/g, "$1").toLowerCase();
     const p = {
       maxPrice: null, maxCal: null,
       noSpicy: false, wantSpicy: false, wantVeg: false, wantMeat: false, lightIntent: false,
       preferCat: [], preferTaste: [], preferTag: [], avoid: [],
       keyword: "",
+      conflicts: [],
     };
     // 预算分两档：说了“便宜/省钱”按 10 元档；写了“10-15 元”取上限，避免只取到 10 变成过严
     const range = s.match(/(\d+(?:\.\d+)?)\s*[-~到至]\s*(\d+(?:\.\d+)?)\s*(?:元|块|rmb|￥|¥)/);
@@ -43,10 +70,24 @@
       p.lightIntent = true;
       p.maxCal = 700;
     }
-    if (/不想吃辣|不吃辣|忌辣|不能吃辣|别太辣|不要辣|免辣|怕辣/.test(s)) p.noSpicy = true;
-    if (!p.noSpicy && /想吃辣|无辣不欢|能吃辣|爱吃辣|辣一点|重口/.test(s)) p.wantSpicy = true;
-    if (/吃素|素食|不吃肉|不想吃肉|素一点/.test(s)) p.wantVeg = true;
-    if (/想吃肉|无肉不欢|荤一点|大口吃肉/.test(s)) p.wantMeat = true;
+    const mainConflict = resolveConflict(s, MEAT_RE, VEG_RE, "想吃肉", "不吃肉", "荤素");
+    if (mainConflict) {
+      p.wantMeat = mainConflict.keepPos;
+      p.wantVeg = !mainConflict.keepPos;
+      p.conflicts.push(mainConflict);
+    } else {
+      p.wantVeg = VEG_RE.test(s);
+      p.wantMeat = MEAT_RE.test(s);
+    }
+    const spicyConflict = resolveConflict(s, SPICY_RE, NO_SPICY_RE, "想吃辣", "不吃辣", "辣度");
+    if (spicyConflict) {
+      p.wantSpicy = spicyConflict.keepPos;
+      p.noSpicy = !spicyConflict.keepPos;
+      p.conflicts.push(spicyConflict);
+    } else {
+      p.noSpicy = NO_SPICY_RE.test(s);
+      p.wantSpicy = !p.noSpicy && SPICY_RE.test(s);
+    }
     if (/面|饺子/.test(s)) p.preferCat.push("面食");
     if (/米饭|盖饭|盖浇饭|拌饭/.test(s)) p.preferCat.push("盖浇饭");
     if (/麻辣烫|冒菜|香锅/.test(s)) p.preferCat.push("麻辣系列");
@@ -62,9 +103,9 @@
     // 已经交给硬过滤/软偏好的意图词（肉、素、辣、甜、清淡…）要从 core 里剔除，
     // 否则“想吃肉”会被收窄成菜名带“肉”的 355 道，“吃素”只剩 28 道——都不是用户的本意。
     const core = s
-      .replace(/[^，,。、\s！？]*(?:不想|不吃|不喝|不要|别|忌)[^，,。、\s！？]*/g, "")
+      .replace(/[^，,。、\s！？]*(?:不想|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了)[^，,。、\s！？]*/g, "")
       .replace(/\d+(?:\.\d+)?\s*(?:元|块|rmb|￥|¥)|预算|减肥|减脂|瘦身|降重/g, "")
-      .replace(/想吃肉|无肉不欢|荤一点|大口吃肉|吃素|素食|素一点|无辣不欢|能吃辣|爱吃辣|辣一点|重口|清淡|养生|健康|低卡|低脂|轻食|控卡|轻负担|健身餐|高蛋白|健身|增肌|性价比|实惠|划算|便宜|省钱/g, "")
+      .replace(/想吃肉|想吃点肉|来点肉|无肉不欢|荤一点|大口吃肉|吃素|素食|素一点|无辣不欢|能吃辣|爱吃辣|辣一点|重口|清淡|养生|健康|低卡|低脂|轻食|控卡|轻负担|健身餐|高蛋白|健身|增肌|性价比|实惠|划算|便宜|省钱/g, "")
       .replace(/想吃|想喝|喝点|来碗|来份|来个|来点|吃点|给我|替我|帮我|决定|早餐|午餐|晚餐|宵夜|今天|明天|一下|一点|随便|都行|什么|啥|口味/g, "")
       .replace(/[，,。、\s！？]/g, "")
       .replace(/[吃喝]/g, "")
@@ -259,7 +300,7 @@
   }
 
   // —— 6) 对外接口：一次返回 1 张或 3 张卡（3 张强制不同档口，并遵守 10 次滑窗）——
-  async function recommend({ text = "", profile = null, feedback = null, excludeIds = [], recentStalls = [], mode = 1, novelty = false } = {}) {
+  async function recommend({ text = "", profile = null, feedback = null, excludeIds = [], recentStalls = [], mode = 1, novelty = false, override = null } = {}) {
     await delay(650); // 模拟网络延迟，保证 loading 态可见
     // TODO: replace with fetch('/api/recommend', { method: "POST", ... })
     const all = ((window.DB_REAL && window.DB_REAL.dishes) || window.DB.dishes);
@@ -267,6 +308,12 @@
     const cardCount = mode === 3 ? 3 : 1;
     const limit = MODE_LIMIT[cardCount] || 1;
     const prefs = buildPreferences(text, profile);
+    // “两种都看看”：按指定荤素倾向各推一张，不受冲突裁决影响
+    if (override) {
+      if (override.main === "veg") { prefs.wantVeg = true; prefs.wantMeat = false; }
+      if (override.main === "meat") { prefs.wantMeat = true; prefs.wantVeg = false; }
+      prefs.conflicts = [];
+    }
 
     const base = all.filter((d) => !excludeIds.includes(d.id));
     relaxKeyword(prefs, all, base);
@@ -307,6 +354,7 @@
         reason: buildReason(dish, matched),
         relaxed,
         relaxedNote,
+        ...(override ? { label: override.main === "veg" ? "按“不吃肉”挑的" : "按“想吃肉”挑的" } : {}),
       });
     }
 
@@ -322,7 +370,7 @@
       });
     }
 
-    return { code: 0, data: { cards, windowRelaxed } };
+    return { code: 0, data: { cards, windowRelaxed, conflicts: prefs.conflicts || [] } };
   }
 
   // 兼容旧调用（单卡）
@@ -332,5 +380,11 @@
     return { code: 0, data: { ...card, relaxed: card.relaxed } };
   }
 
-  window.API = { recommend, recommendDish };
+  // 输入框实时预检：只做解析，不抽卡，供 UI 提前提示条件冲突
+  function inspect(text, profile) {
+    const p = buildPreferences(text, profile);
+    return { conflicts: p.conflicts || [] };
+  }
+
+  window.API = { recommend, recommendDish, inspect };
 })();

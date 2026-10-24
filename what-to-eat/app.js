@@ -32,6 +32,7 @@
   const $$ = (sel) => Array.from(document.querySelectorAll(sel));
   const els = {
     pref: $("#pref"),
+    conflictHint: $("#conflictHint"),
     decide: $("#decide"),
     decideText: $("#decideText"),
     novelty: $("#novelty"),
@@ -76,8 +77,24 @@
   }
   function initDraft() {
     els.pref.value = localStorage.getItem("wte.pref") || "";
+    updateConflictHint();
   }
-  els.pref.addEventListener("input", () => localStorage.setItem("wte.pref", els.pref.value));
+  // 输入框实时预检：条件自相矛盾时立刻提示，并且说清楚按哪句执行
+  function updateConflictHint() {
+    if (!els.conflictHint || !window.API || !window.API.inspect) return;
+    try {
+      const { conflicts } = window.API.inspect(els.pref.value, state.profile);
+      const notes = conflicts.map((c) => c.note);
+      els.conflictHint.textContent = notes.join(" ");
+      els.conflictHint.hidden = !notes.length;
+    } catch (e) {
+      els.conflictHint.hidden = true;
+    }
+  }
+  els.pref.addEventListener("input", () => {
+    localStorage.setItem("wte.pref", els.pref.value);
+    updateConflictHint();
+  });
 
   // —— 快捷偏好 chips：点击追加进输入框 ——
   $$(".chip[data-add]").forEach((chip) =>
@@ -218,6 +235,7 @@
     return `
       <article class="dish-card">
         ${total > 1 ? `<div class="card-index">推荐 ${idx + 1} / ${total}</div>` : ""}
+        ${card.label ? `<div class="card-label">${card.label}</div>` : ""}
         <div class="dish-head">
           <div class="dish-badge">${icon(d.icon, 26)}</div>
           <div class="dish-title">
@@ -259,7 +277,16 @@
     stopSlot();
     const cards = data.cards || [];
     const multi = cards.length > 1;
+    const conflicts = data.conflicts || [];
+    const canCompare = conflicts.some((c) => c.type === "荤素");
+    const conflictHTML = conflicts.length
+      ? `<div class="conflict-note">
+          <span>${icon("info", 15)}${conflicts.map((c) => c.note).join(" ")}</span>
+          ${canCompare ? `<button type="button" class="ghost-btn compact" data-action="compare">两种都看看</button>` : ""}
+        </div>`
+      : "";
     els.result.innerHTML = `
+      ${conflictHTML}
       <div class="card-stack${multi ? " is-multi" : ""}">${cards.map((c, i) => cardHTML(c, i, cards.length)).join("")}</div>
       ${multi ? `<p class="swipe-hint">← 左右滑动，看看另外两张 →</p>` : ""}
       <div class="group-actions">
@@ -337,9 +364,44 @@
     }
   }
 
+  // “两种都看看”：把冲突的两句各执行一次，各给一张卡
+  async function compareBoth() {
+    if (state.loading) return;
+    state.loading = true;
+    els.decide.disabled = true;
+    els.novelty.disabled = true;
+    els.decide.classList.add("loading");
+    els.decideText.textContent = "两种都翻一下…";
+    renderLoading(1);
+    const args = {
+      text: els.pref.value.trim(),
+      profile: state.profile,
+      feedback: state.feedback,
+      excludeIds: [],
+      recentStalls: state.recentStalls,
+      mode: 1,
+    };
+    try {
+      const [a, b] = await Promise.all([
+        window.API.recommend({ ...args, override: { main: "veg" } }),
+        window.API.recommend({ ...args, override: { main: "meat" } }),
+      ]);
+      renderResult({ cards: [a.data.cards[0], b.data.cards[0]].filter(Boolean), conflicts: [] });
+    } catch (err) {
+      renderError();
+    } finally {
+      state.loading = false;
+      els.decide.disabled = false;
+      els.novelty.disabled = false;
+      els.decide.classList.remove("loading");
+      els.decideText.textContent = "替我决定！";
+    }
+  }
+
   els.decide.addEventListener("click", () => roll());
   els.novelty.addEventListener("click", () => roll({ novelty: true, excludeCurrent: true }));
   els.result.addEventListener("click", (e) => {
+    if (e.target.closest('[data-action="compare"]')) { compareBoth(); return; }
     const pick = e.target.closest('[data-action="pick"]');
     if (pick) { recordPick(Number(pick.dataset.idx)); return; }
     if (e.target.closest('[data-action="reroll"]') || e.target.closest("#reroll")) roll({ excludeCurrent: true });
