@@ -53,7 +53,7 @@ function mapCategory($group, $name) {
   if ($group -match "小吃|早餐|饼") { return "早餐小吃" }
   if ($group -match "焖|炒|烧|蒸") { return "家常小炒" }
   if ($group -match "套餐") { return "盖浇饭" }
-  # 主料兜底：含肉禽水产/素料但上面都没归类的，按家常小炒处理，尽量不留「其他」
+  # 主料兜底：含肉禽水产/素料但上面都没归类的，按家常小炒处理，尽量不留“其他”
   if ($name -match "鸡|鸭|鹅|鱼|虾|牛|羊|肉|排骨|翅|腿|丸|蛋|豆腐|菌|菇|藕|茄|菜") { return "家常小炒" }
   return "其他"
 }
@@ -72,7 +72,7 @@ function inferVeg($name) {
   return ($name -match $vegKeywords)
 }
 # 主料推断（只分荤/素，蛋算荤——用户规则）
-# 先删「名字像荤、其实是素」的食材，再判荤，最后才看素关键词。
+# 先删“名字像荤、其实是素”的食材，再判荤，最后才看素关键词。
 $vegLookalikes = "鸡腿菇|鸡枞菌|牛肝菌|羊肚菌|蟹味菇|贝贝南瓜|鱼腥草|面筋|腰果|牛油果|牛蒡|鸡毛菜"
 function inferMain($name) {
   $n = $name -replace "鱼香", ""
@@ -81,7 +81,7 @@ function inferMain($name) {
   $m = $n -replace $vegLookalikes, ""
   if ($m -match "蛋|卵") { return "荤" }
   if ($m -match "肉|猪|牛|羊|鸡|鸭|鹅|鱼|虾|蟹|贝|丸|肠|排骨|火腿|培根|腊|翅|腿|蹄|肚|肝|腰|筋|鱿|蚝|蛤|螺|蛙|鳝|泥鳅|花甲|蛏|蚬|蚌|渔") { return "荤" }
-  if ($n -match "素") { return "素" }  # 名字明确写了「素」的馅料/菜品（素三鲜水饺、素包子）
+  if ($n -match "素") { return "素" }  # 名字明确写了“素”的馅料/菜品（素三鲜水饺、素包子）
   if ($m -match "抄手|馄饨|云吞|水饺|饺子|锅贴|烧麦") { return "荤" }  # 默认肉馅，名字没写素就不当素菜
   if (inferVeg $n) { return "素" }
   return "荤"
@@ -94,7 +94,7 @@ function inferPortion($name, $note) {
   return "regular"
 }
 # 六味标签（v2.0 用户定义：辣 / 麻 / 酸甜 / 咸鲜 / 清淡 / 甜，可多选）
-# 咸鲜按做法严格标（卤/酱/蒸/炖/烧/白灼），不用「咸香」兜底；烧麦不算烧。
+# 咸鲜按做法严格标（卤/酱/蒸/炖/烧/白灼），不用“咸香”兜底；烧麦不算烧。
 function inferFlavors($name, $spicy, $cat, $taste) {
   $fl = @()
   if ($spicy -ge 1) { $fl += "辣" }
@@ -226,7 +226,7 @@ foreach ($g in ($kept | Group-Object stall, name)) {
   if ($cal -ge 500) { $tags += "管饱" }
 
   $grpLabel = if ($canon.grp) { $canon.grp } else { "招牌" }
-  $desc = "「$grpLabel」之选"
+  $desc = "“$grpLabel”之选"
   if ($altText) { $desc += "（另有：$altText）" }
   $desc += "，约 $cal kcal"
 

@@ -32,13 +32,13 @@
       preferCat: [], preferTaste: [], preferTag: [], avoid: [],
       keyword: "",
     };
-    // 预算分两档：说了「便宜/省钱」按 10 元档；写了「10-15 元」取上限，避免只取到 10 变成过严
+    // 预算分两档：说了“便宜/省钱”按 10 元档；写了“10-15 元”取上限，避免只取到 10 变成过严
     const range = s.match(/(\d+(?:\.\d+)?)\s*[-~到至]\s*(\d+(?:\.\d+)?)\s*(?:元|块|rmb|￥|¥)/);
     const budget = s.match(/(\d+(?:\.\d+)?)\s*(?:元|块|rmb|￥|¥)/);
     if (range) p.maxPrice = parseFloat(range[2]);
     else if (budget) p.maxPrice = parseFloat(budget[1]);
     if (/便宜|省钱|预算.{0,4}(紧|少)|生活费不多/.test(s)) p.maxPrice = Math.min(p.maxPrice ?? 10, 10);
-    // 减脂/轻食意图：不是「热量低就是轻食」（那样只会推出包子粥），而是优先轻食档口与轻食菜
+    // 减脂/轻食意图：不是“热量低就是轻食”（那样只会推出包子粥），而是优先轻食档口与轻食菜
     if (/减肥|减脂|瘦身|轻食|低卡|低脂|沙拉|卡路里|热量|控卡|轻负担|健身餐/.test(s)) {
       p.lightIntent = true;
       p.maxCal = 700;
@@ -58,9 +58,9 @@
     if (/清淡|养生|健康/.test(s)) { p.preferTaste.push("清淡"); if (p.maxCal == null) p.maxCal = 600; }
     if (/高蛋白|健身|增肌/.test(s)) p.preferTag.push("高蛋白");
     if (/性价比|实惠|划算/.test(s)) p.preferTag.push("性价比");
-    // 菜名关键词：先删含否定的片段（防「不想吃辣」提取出「辣」），再删虚词取核心词匹配菜名。
+    // 菜名关键词：先删含否定的片段（防“不想吃辣”提取出“辣”），再删虚词取核心词匹配菜名。
     // 已经交给硬过滤/软偏好的意图词（肉、素、辣、甜、清淡…）要从 core 里剔除，
-    // 否则「想吃肉」会被收窄成菜名带「肉」的 355 道，「吃素」只剩 28 道——都不是用户的本意。
+    // 否则“想吃肉”会被收窄成菜名带“肉”的 355 道，“吃素”只剩 28 道——都不是用户的本意。
     const core = s
       .replace(/[^，,。、\s！？]*(?:不想|不吃|不喝|不要|别|忌)[^，,。、\s！？]*/g, "")
       .replace(/\d+(?:\.\d+)?\s*(?:元|块|rmb|￥|¥)|预算|减肥|减脂|瘦身|降重/g, "")
@@ -69,7 +69,7 @@
       .replace(/[，,。、\s！？]/g, "")
       .replace(/[吃喝]/g, "")
       .replace(/的$/, "");
-    // 单字意图词留在 core 里会误当菜名（例如「辣」「面」），统一走偏好层，不再锁关键词
+    // 单字意图词留在 core 里会误当菜名（例如“辣”“面”），统一走偏好层，不再锁关键词
     const GENERIC = /^(?:肉|素|辣|甜|面|面食|饭|汤|粥|菜|早餐|午餐|晚餐|宵夜|清淡|健康|饮料|甜品)$/;
     if (core.length >= 1 && core.length <= 6 && !GENERIC.test(core) && !/^[的了吧呢吗]?$/.test(core)) p.keyword = core;
     return p;
@@ -193,7 +193,7 @@
       else if (d.category === "早餐小吃" || d.category === "汤粥") sc -= 14;
       else if (/包|粥|馒头|花卷|油条|豆浆|煎饼/.test(d.name)) sc -= 8;
     }
-    // 「试试新的！」：没点过「就这个」的档口优先，近期出现过的档口降权
+    // “试试新的！”：没点过“就这个”的档口优先，近期出现过的档口降权
     if (ctx.novelty) {
       const clicked = (fb.clickedStalls || []);
       if (d.stall && !clicked.includes(d.stall)) sc += 20;
@@ -202,7 +202,7 @@
     return sc;
   }
 
-  // 全池 softmax 抽样：不截 top5。截断会让「档口加成」变成最大值的优势
+  // 全池 softmax 抽样：不截 top5。截断会让“档口加成”变成最大值的优势
   // （菜多的档口 max(随机分+加成) 几乎必然排第一，公社 10 次 7 次就是这么来的）。
   function weightedPick(pool, p, ctx) {
     // 点名了菜品（关键词命中候选池）时只在命中菜里抽签，意图优先
@@ -238,11 +238,11 @@
     if (p.mainPref === "meat" && isMeat(d)) m.push("有肉，跟着直觉走");
     if (p.wantSpicy && (d.spicy >= 2 || dishFlavors(d).includes("辣"))) m.push("够辣够味");
     if (p.preferCat.includes(d.category)) m.push(`正是你想吃的${d.category}`);
-    if (p.keyword && d.name.includes(p.keyword)) m.push(`名字里就有「${p.keyword}」`);
+    if (p.keyword && d.name.includes(p.keyword)) m.push(`名字里就有“${p.keyword}”`);
     const fhits = p.wantFlavors.filter((f) => dishFlavors(d).includes(f));
     if (fhits.length) m.push(`口味${fhits.join("、")}，很对你的胃口`);
     const tg = p.preferTag.filter((t) => dishTaste(d).includes(t) || (d.tags || []).includes(t));
-    if (tg.length) m.push(`主打「${tg.join("、")}」`);
+    if (tg.length) m.push(`主打“${tg.join("、")}”`);
     if (p.lightIntent && isLightDish(d)) m.push("轻食档口，减脂友好");
     return m;
   }

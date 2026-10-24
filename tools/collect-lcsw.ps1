@@ -3,7 +3,7 @@
 # 项目：今天吃啥 what-to-eat ｜ 详见 docs/api-recon.md
 #
 # 用法（每次采集前必做）：
-#   1. PC 微信打开「学府e生活」小程序，Reqable 抓包
+#   1. PC 微信打开“学府e生活”小程序，Reqable 抓包
 #   2. 从任意 API 请求头复制新的 Authorization(JWT) 和 OpenID
 #   3. 填入下方配置区，运行：powershell -File tools\collect-lcsw.ps1
 #   注意：JWT 有效期仅 3 小时

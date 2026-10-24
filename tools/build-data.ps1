@@ -48,7 +48,7 @@ function mapCategory($group, $name) {
   if ($name -match "奶茶|牛奶|酸奶|豆浆|豆花|糖水|甜品|蛋糕|面包|咖啡|果汁|冰粉|凉虾|西米露|双皮奶|龟苓膏|汤圆|布丁") { return "甜品饮品" }
   if ($name -match "烤串|烧烤|炸串|炸鸡|铁板|烤鸡|烤腿|鸡排|鸡柳") { return "烧烤" }
   if ($name -match "炒|烧|炖|焖|蒸|煮|煲|干锅|小炒") { return "家常小炒" }
-  # 主料兜底：含肉禽水产/素料但上面都没归类的，按家常小炒处理，尽量不留「其他」
+  # 主料兜底：含肉禽水产/素料但上面都没归类的，按家常小炒处理，尽量不留“其他”
   if ($name -match "鸡|鸭|鹅|鱼|虾|牛|羊|肉|排骨|翅|腿|丸|蛋|豆腐|菌|菇|藕|茄|菜") { return "家常小炒" }
   # 分组名兜底
   foreach ($key in $catMap.Keys) { if ($group -like "*$key*") { return $catMap[$key] } }
@@ -76,8 +76,8 @@ function inferVeg($name) {
 }
 
 # ---------- 4.1) 主料推断（只分荤/素，蛋算荤——用户规则） ----------
-# 先删「名字像荤、其实是素」的食材，再判荤，最后才看素关键词。
-# 否则「白菜猪肉水饺」会被「白菜」抢先判素（2026-10-22 审计出 54 道误标）。
+# 先删“名字像荤、其实是素”的食材，再判荤，最后才看素关键词。
+# 否则“白菜猪肉水饺”会被“白菜”抢先判素（2026-10-22 审计出 54 道误标）。
 $vegLookalikes = "鸡腿菇|鸡枞菌|牛肝菌|羊肚菌|蟹味菇|贝贝南瓜|鱼腥草|面筋|腰果|牛油果|牛蒡|鸡毛菜"
 function inferMain($name) {
   $n = $name -replace "鱼香", ""      # 川菜味型，不含鱼
@@ -86,13 +86,13 @@ function inferMain($name) {
   $m = $n -replace $vegLookalikes, ""
   if ($m -match "蛋|卵") { return "荤" }
   if ($m -match "肉|猪|牛|羊|鸡|鸭|鹅|鱼|虾|蟹|贝|丸|肠|排骨|火腿|培根|腊|翅|腿|蹄|肚|肝|腰|筋|鱿|蚝|蛤|螺|蛙|鳝|泥鳅|花甲|蛏|蚬|蚌|渔") { return "荤" }
-  if ($n -match "素") { return "素" }  # 名字明确写了「素」的馅料/菜品（素三鲜水饺、素包子）
+  if ($n -match "素") { return "素" }  # 名字明确写了“素”的馅料/菜品（素三鲜水饺、素包子）
   if ($m -match "抄手|馄饨|云吞|水饺|饺子|锅贴|烧麦") { return "荤" }  # 默认肉馅，名字没写素就不当素菜
   if (inferVeg $n) { return "素" }
   return "荤"
 }
 
-# ---------- 4.2) 分量推断（小份/常规/大份，为「预算→份量」推荐留结构位） ----------
+# ---------- 4.2) 分量推断（小份/常规/大份，为“预算→份量”推荐留结构位） ----------
 function inferPortion($name, $note) {
   $s = "$name $note"
   if ($s -match "小份|半份|小碗|一两|mini") { return "small" }
@@ -101,7 +101,7 @@ function inferPortion($name, $note) {
 }
 
 # ---------- 4.3) 六味标签（v2.0：辣/麻/酸甜/咸鲜/清淡/甜，可多选） ----------
-# 咸鲜按做法严格标（卤/酱/蒸/炖/烧/白灼），不用「咸香」兜底；烧麦不算烧。
+# 咸鲜按做法严格标（卤/酱/蒸/炖/烧/白灼），不用“咸香”兜底；烧麦不算烧。
 function inferFlavors($name, $spicy, $cat, $taste) {
   $fl = @()
   if ($spicy -ge 1) { $fl += "辣" }
@@ -168,7 +168,7 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     if ($price -le 0 -or $price -gt 60) { continue }
 
     $cat = mapCategory $group $cleanName
-    # 糖水铺/奶茶店档口残留的「其他」类菜品兜底为甜品饮品（名字多为杨枝甘露等无关键词甜点）
+    # 糖水铺/奶茶店档口残留的“其他”类菜品兜底为甜品饮品（名字多为杨枝甘露等无关键词甜点）
     if ($cat -eq "其他" -and ($stallName -match "古春堂|糖水铺|古茗")) { $cat = "甜品饮品" }
     $spicy = inferSpicy $cleanName $f.food_introduce
     $main  = inferMain $cleanName
@@ -202,8 +202,8 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     if ($veg) { $autoTags += "素食友好" }
     if ($cal -ge 500) { $autoTags += "管饱" }
 
-    $descBase = if ($f.food_introduce -and $f.food_introduce -notmatch "此处为菜品描述") { $f.food_introduce } else { "「$group」之选" }
-    $descBase = $descBase -replace "[，,。；;、\s]+$", ""  # 去掉结尾标点，避免「，，约 xx kcal」
+    $descBase = if ($f.food_introduce -and $f.food_introduce -notmatch "此处为菜品描述") { $f.food_introduce } else { "“$group”之选" }
+    $descBase = $descBase -replace "[，,。；;、\s]+$", ""  # 去掉结尾标点，避免“，，约 xx kcal”
     $desc = $descBase + "，约 $cal kcal"
 
     $dishes += [PSCustomObject]@{
@@ -253,7 +253,7 @@ if (Test-Path $manualPath) {
   Write-Host "合并线下录入：$($manual.Count) 道，合并后总计 $($dishes.Count) 道" -ForegroundColor Cyan
 }
 
-# ---------- 6.8) 档口名显示清理：去掉「_食堂」后缀（canteen 字段已单独存食堂名） ----------
+# ---------- 6.8) 档口名显示清理：去掉“_食堂”后缀（canteen 字段已单独存食堂名） ----------
 foreach ($d in $dishes) {
   if ($d.stall -match "^([^_]+)_") { $d.stall = $Matches[1] }
 }
