@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: JS 语法检查
+        run: |
+          node --check what-to-eat/api.js
+          node --check what-to-eat/app.js
+          node --check what-to-eat/mock.js
+          node --check what-to-eat/data/data.js
+      - name: 数据契约校验
+        run: node tools/validate-data.mjs
+      - name: 推荐引擎回归
+        run: node tests/recommend.test.mjs

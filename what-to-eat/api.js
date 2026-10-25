@@ -28,6 +28,7 @@
   const MEAT_RE = /想吃肉|无肉不欢|荤一点|大口吃肉|想吃点肉|来点肉/;
   const NO_SPICY_RE = /不想吃辣|不吃辣|忌辣|不能吃辣|别太辣|不要辣|免辣|怕辣|不喜欢辣|不爱吃辣|吃不了辣|受不了辣/;
   const SPICY_RE = /想吃辣|无辣不欢|能吃辣|爱吃辣|辣一点|重口/;
+  const NEG_GROUP = "不想|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了|不能";
 
   function lastIndexOfRe(s, re) {
     let m, idx = -1;
@@ -36,10 +37,11 @@
     return idx;
   }
 
-  // 自相矛盾的输入不静默丢弃：后写的那句优先（人边想边改，后写通常是新主意），并把裁决讲出来
-  function resolveConflict(s, posRe, negRe, posName, negName, type) {
-    const pos = lastIndexOfRe(s, posRe);
-    const neg = lastIndexOfRe(s, negRe);
+  // 自相矛盾的输入不静默丢弃：后写的那句优先（人边想边改，后写通常是新主意），并把裁决讲出来。
+  // 正向意图必须在掩码句上检测，否则“不能吃辣”里的子串“能吃辣”会被误判成想吃辣。
+  function resolveConflict(posSrc, negSrc, posRe, negRe, posName, negName, type) {
+    const pos = lastIndexOfRe(posSrc, posRe);
+    const neg = lastIndexOfRe(negSrc, negRe);
     if (pos < 0 || neg < 0) return null;
     return {
       type,
@@ -70,23 +72,26 @@
       p.lightIntent = true;
       p.maxCal = 700;
     }
-    const mainConflict = resolveConflict(s, MEAT_RE, VEG_RE, "想吃肉", "不吃肉", "荤素");
+    // 否定片段等长掩码：索引与原句对齐，“不能吃辣”掩掉后不再误中“能吃辣”
+    const masked = s.replace(new RegExp(`[^，,。、\\s！？]*(?:${NEG_GROUP})[^，,。、\\s！？]*`, "g"), (m) => " ".repeat(m.length));
+
+    const mainConflict = resolveConflict(masked, s, MEAT_RE, VEG_RE, "想吃肉", "不吃肉", "荤素");
     if (mainConflict) {
       p.wantMeat = mainConflict.keepPos;
       p.wantVeg = !mainConflict.keepPos;
       p.conflicts.push(mainConflict);
     } else {
       p.wantVeg = VEG_RE.test(s);
-      p.wantMeat = MEAT_RE.test(s);
+      p.wantMeat = MEAT_RE.test(masked);
     }
-    const spicyConflict = resolveConflict(s, SPICY_RE, NO_SPICY_RE, "想吃辣", "不吃辣", "辣度");
+    const spicyConflict = resolveConflict(masked, s, SPICY_RE, NO_SPICY_RE, "想吃辣", "不吃辣", "辣度");
     if (spicyConflict) {
       p.wantSpicy = spicyConflict.keepPos;
       p.noSpicy = !spicyConflict.keepPos;
       p.conflicts.push(spicyConflict);
     } else {
       p.noSpicy = NO_SPICY_RE.test(s);
-      p.wantSpicy = !p.noSpicy && SPICY_RE.test(s);
+      p.wantSpicy = !p.noSpicy && SPICY_RE.test(masked);
     }
     if (/面|饺子/.test(s)) p.preferCat.push("面食");
     if (/米饭|盖饭|盖浇饭|拌饭/.test(s)) p.preferCat.push("盖浇饭");
@@ -103,7 +108,7 @@
     // 已经交给硬过滤/软偏好的意图词（肉、素、辣、甜、清淡…）要从 core 里剔除，
     // 否则“想吃肉”会被收窄成菜名带“肉”的 355 道，“吃素”只剩 28 道——都不是用户的本意。
     const core = s
-      .replace(/[^，,。、\s！？]*(?:不想|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了)[^，,。、\s！？]*/g, "")
+      .replace(/[^，,。、\s！？]*(?:不想|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了|不能)[^，,。、\s！？]*/g, "")
       .replace(/\d+(?:\.\d+)?\s*(?:元|块|rmb|￥|¥)|预算|减肥|减脂|瘦身|降重/g, "")
       .replace(/想吃肉|想吃点肉|来点肉|无肉不欢|荤一点|大口吃肉|吃素|素食|素一点|无辣不欢|能吃辣|爱吃辣|辣一点|重口|清淡|养生|健康|低卡|低脂|轻食|控卡|轻负担|健身餐|高蛋白|健身|增肌|性价比|实惠|划算|便宜|省钱/g, "")
       .replace(/想吃|想喝|喝点|来碗|来份|来个|来点|吃点|给我|替我|帮我|决定|早餐|午餐|晚餐|宵夜|今天|明天|一下|一点|随便|都行|什么|啥|口味/g, "")

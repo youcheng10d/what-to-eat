@@ -1,5 +1,11 @@
 # 吃嘛 · 移动端食堂菜品智能推荐
 
+[![CI](https://github.com/youcheng10d/what-to-eat/actions/workflows/ci.yml/badge.svg)](https://github.com/youcheng10d/what-to-eat/actions/workflows/ci.yml)
+[![Deploy Pages](https://github.com/youcheng10d/what-to-eat/actions/workflows/pages.yml/badge.svg)](https://github.com/youcheng10d/what-to-eat/actions/workflows/pages.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**在线体验：<https://youcheng10d.github.io/what-to-eat/>**（手机浏览器打开效果最佳）
+
 v2.0 （传智杯 Vibe Coding 参赛作品） · What to Eat
 
 > 说一句偏好，替你把“今天吃啥”这顿定了。
