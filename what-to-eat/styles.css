@@ -570,3 +570,18 @@ body.modal-open { overflow: hidden; }
 .fav-meta { font-size: 12.5px; color: var(--text-sub); margin-top: 2px; }
 .fav-actions { display: flex; gap: 6px; flex-shrink: 0; }
 .fav-del { color: #ff4d6d !important; border-color: #ffd6de !important; }
+
+/* —— "已记下"撤销链接 —— */
+.pick-undo {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary);
+  background: rgba(232, 89, 12, 0.08);
+  cursor: pointer;
+  user-select: none;
+}
+.pick-undo:active { background: rgba(232, 89, 12, 0.15); }

@@ -393,6 +393,9 @@
       </div>`;
   }
 
+  // pickTimers: { [idx]: timeoutId } —— 每张卡独立的撤销倒计时
+  const pickTimers = {};
+
   function recordPick(idx) {
     const card = state.lastCards[idx];
     if (!card || !card.dish) return;
@@ -412,7 +415,38 @@
     if (d.category) fb.categories[d.category] = (fb.categories[d.category] || 0) + 1;
     saveJSON("wte.feedback", fb);
     const btn = els.result.querySelector(`[data-action="pick"][data-idx="${idx}"]`);
-    if (btn) { btn.classList.add("is-picked"); btn.disabled = true; btn.innerHTML = `${icon("check", 16)}已记下`; }
+    if (!btn) return;
+    btn.classList.add("is-picked");
+    btn.dataset.revocable = "1";
+    btn.innerHTML = `${icon("check", 16)}已记下 <span class="pick-undo" data-undo-idx="${idx}">撤销</span>`;
+    // 5 秒后撤销窗口关闭，按钮锁定
+    pickTimers[idx] = setTimeout(() => lockPicked(idx), 5000);
+  }
+  function lockPicked(idx) {
+    const btn = els.result.querySelector(`[data-action="pick"][data-idx="${idx}"]`);
+    if (btn) {
+      btn.dataset.revocable = "";
+      btn.disabled = true;
+      btn.innerHTML = `${icon("check", 16)}已记下`;
+    }
+    delete pickTimers[idx];
+  }
+  function undoPick(idx) {
+    const card = state.lastCards[idx];
+    if (!card || !card.dish) return;
+    // 从"今天吃过"移除，恢复推荐资格
+    state.eatenToday.ids = state.eatenToday.ids.filter((id) => id !== card.dish.id);
+    saveJSON("wte.eatenToday", state.eatenToday);
+    // 取消 5 秒倒计时
+    if (pickTimers[idx]) { clearTimeout(pickTimers[idx]); delete pickTimers[idx]; }
+    // 恢复按钮
+    const btn = els.result.querySelector(`[data-action="pick"][data-idx="${idx}"]`);
+    if (btn) {
+      btn.classList.remove("is-picked");
+      delete btn.dataset.revocable;
+      btn.disabled = false;
+      btn.innerHTML = `${icon("check", 16)}就这个`;
+    }
   }
 
   async function roll({ novelty = false, excludeCurrent = false } = {}) {
@@ -489,8 +523,14 @@
   els.novelty.addEventListener("click", () => roll({ novelty: true, excludeCurrent: true }));
   els.result.addEventListener("click", (e) => {
     if (e.target.closest('[data-action="compare"]')) { compareBoth(); return; }
+    const undo = e.target.closest(".pick-undo");
+    if (undo) { undoPick(Number(undo.dataset.undoIdx)); return; }
     const pick = e.target.closest('[data-action="pick"]');
-    if (pick) { recordPick(Number(pick.dataset.idx)); return; }
+    if (pick) {
+      // 已处于撤销窗口的按钮，点非撤销区域不重复触发
+      if (pick.dataset.revocable === "1") return;
+      recordPick(Number(pick.dataset.idx)); return;
+    }
     const favToggle = e.target.closest('[data-action="fav-toggle"]');
     if (favToggle) {
       const idx = Number(favToggle.dataset.idx);
