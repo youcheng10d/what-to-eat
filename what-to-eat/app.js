@@ -142,7 +142,7 @@
           <div class="fav-meta">¥${f.price || "?"} · ${f.stall || f.category || ""}</div>
         </div>
         <div class="fav-actions">
-          <button class="ghost-btn compact" data-action="fav-rec" data-id="${f.id}">推荐这个</button>
+          <button class="ghost-btn compact" data-action="fav-rec" data-id="${f.id}" title="用这道菜名找相似的">找类似的</button>
           <button class="ghost-btn compact fav-del" data-action="fav-del" data-id="${f.id}" aria-label="取消收藏">${icon("heart", 14)}</button>
         </div>
       </div>`).join("");
