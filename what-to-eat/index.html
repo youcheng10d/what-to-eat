@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="吃嘛 —— 拯救干饭人的选择困难症，从 1143 道真实食堂菜品里替你做决定。" />
   <title>吃嘛 · 拯救选择困难症</title>
-  <link rel="stylesheet" href="styles.css?v=20261024-8" />
+  <link rel="stylesheet" href="styles.css?v=20261026-1" />
 </head>
 <body>
   <div class="app">
@@ -62,6 +62,21 @@
         <p class="empty-title">选择困难？让我来拍板</p>
         <p class="empty-hint">写下偏好，或直接点下面的按钮</p>
       </div>
+    </section>
+
+    <!-- 我的收藏 · 浮动入口 -->
+    <button type="button" id="favFab" class="fav-fab" aria-label="我的收藏（已收藏 0 道）">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+      <span id="favCount" class="fav-count" hidden>0</span>
+    </button>
+
+    <!-- 收藏面板（点击 fab 展开） -->
+    <section id="favPanel" class="fav-panel" hidden aria-hidden="true">
+      <header class="fav-head">
+        <h3>我的收藏</h3>
+        <button type="button" class="ghost-btn compact" id="favClose">关闭</button>
+      </header>
+      <div id="favList" class="fav-list"></div>
     </section>
 
     <!-- 页脚 -->
@@ -131,9 +146,9 @@
     </div>
   </div>
 
-  <script src="mock.js?v=20261024-8" defer></script>
-  <script src="data/data.js?v=20261024-8" defer></script>
-  <script src="api.js?v=20261024-8" defer></script>
-  <script src="app.js?v=20261024-8" defer></script>
+  <script src="mock.js?v=20261026-1" defer></script>
+  <script src="data/data.js?v=20261026-1" defer></script>
+  <script src="api.js?v=20261026-1" defer></script>
+  <script src="app.js?v=20261026-1" defer></script>
 </body>
 </html>

@@ -24,6 +24,8 @@
     info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
     carrot: '<path d="M15 16a1 1 0 0 0-7-7q-4 4-5.987 12.385a.5.5 0 0 0 .602.602Q11 20 15 16l-3-3"/><path d="M15 9q4 4 7 0-3-4-7 0 4-4 0-7-4 3 0 7"/><path d="m8 15-2.58-2.58"/>',
     cookie: '<path d="M11 17h.01"/><path d="M11.496 2c.324-.016.558.292.529.615a4 4 0 004.235 4.368.713.713 0 01.758.757 4 4 0 004.366 4.237c.323-.03.63.204.614.527a10 10 0 01-2.915 6.566A1 1 0 114.93 4.918 10 10 0 0111.496 2"/><path d="M12 12h.01"/><path d="M16 16h.01"/><path d="M16 3h.01"/><path d="M21 4h.01"/><path d="M21 8h.01"/><path d="M7 14h.01"/><path d="M9 8h.01"/>',
+    heart: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
+    heartFilled: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" fill="currentColor"/>',
   };
   const icon = (name, size = 18) =>
     `<svg class="ic" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ""}</svg>`;
@@ -44,12 +46,19 @@
     avoid: $("#avoidInput"),
     profileSave: $("#profileSave"),
     profileSkip: $("#profileSkip"),
+    favFab: $("#favFab"),
+    favCount: $("#favCount"),
+    favPanel: $("#favPanel"),
+    favClose: $("#favClose"),
+    favList: $("#favList"),
   };
   const state = {
     loading: false,
     profile: loadJSON("wte.profile", null),
     feedback: loadJSON("wte.feedback", { stalls: {}, flavors: {}, categories: {}, clickedStalls: [] }),
     recentStalls: loadJSON("wte.recentStalls", []),
+    favorites: loadJSON("wte.favorites", []),
+    eatenToday: loadJSON("wte.eatenToday", { date: "", ids: [] }),
     lastCards: [],
     slotTimer: null,
   };
@@ -65,6 +74,78 @@
   }
   function saveJSON(key, value) {
     try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* 忽略隐私模式写入失败 */ }
+  }
+
+  // —— 今天吃过 · 日清零：日期换了就自动清空，不用手动过期 ——
+  function checkDayReset() {
+    const today = new Date().toDateString();
+    if (state.eatenToday.date !== today) {
+      state.eatenToday = { date: today, ids: [] };
+      saveJSON("wte.eatenToday", state.eatenToday);
+    }
+  }
+  function addEatenToday(dishId) {
+    checkDayReset();
+    if (!state.eatenToday.ids.includes(dishId)) {
+      state.eatenToday.ids.push(dishId);
+      saveJSON("wte.eatenToday", state.eatenToday);
+    }
+  }
+
+  // —— 收藏夹 ——
+  function isFavorite(dishId) {
+    return state.favorites.some((f) => f.id === dishId);
+  }
+  function toggleFavorite(dish) {
+    const idx = state.favorites.findIndex((f) => f.id === dish.id);
+    if (idx >= 0) {
+      state.favorites.splice(idx, 1);
+    } else {
+      state.favorites.push({
+        id: dish.id,
+        name: dish.name,
+        stall: dish.stall || "",
+        canteen: dish.canteen || "",
+        price: dish.price,
+        category: dish.category || "",
+        time: Date.now(),
+      });
+    }
+    saveJSON("wte.favorites", state.favorites);
+    updateFavFab();
+  }
+  function updateFavFab() {
+    const n = state.favorites.length;
+    els.favCount.textContent = n;
+    els.favCount.hidden = n === 0;
+    els.favFab.setAttribute("aria-label", `我的收藏（已收藏 ${n} 道）`);
+  }
+  function openFavPanel() {
+    renderFavoritesPanel();
+    els.favPanel.hidden = false;
+    els.favPanel.setAttribute("aria-hidden", "false");
+  }
+  function closeFavPanel() {
+    els.favPanel.hidden = true;
+    els.favPanel.setAttribute("aria-hidden", "true");
+  }
+  function renderFavoritesPanel() {
+    const favs = [...state.favorites].sort((a, b) => (b.time || 0) - (a.time || 0));
+    if (!favs.length) {
+      els.favList.innerHTML = `<div class="empty-hint" style="text-align:center;color:var(--text-sub);padding:20px 0">还没有收藏，看到喜欢的菜点 ❤️ 吧</div>`;
+      return;
+    }
+    els.favList.innerHTML = favs.map((f) => `
+      <div class="fav-item" data-fav-id="${f.id}">
+        <div class="fav-info">
+          <div class="fav-name">${f.name}</div>
+          <div class="fav-meta">¥${f.price || "?"} · ${f.stall || f.category || ""}</div>
+        </div>
+        <div class="fav-actions">
+          <button class="ghost-btn compact" data-action="fav-rec" data-id="${f.id}">推荐这个</button>
+          <button class="ghost-btn compact fav-del" data-action="fav-del" data-id="${f.id}" aria-label="取消收藏">${icon("heart", 14)}</button>
+        </div>
+      </div>`).join("");
   }
 
   // —— 初始化：日期问候 + 偏好草稿回填 ——
@@ -259,6 +340,7 @@
         ${matched.length ? `<div class="match">${matched.map((m) => `<span class="mchip">${icon("check", 13)}${m}</span>`).join("")}</div>` : ""}
         <div class="dish-actions">
           <button class="ghost-btn pick-btn" data-action="pick" data-idx="${idx}">${icon("check", 16)}就这个</button>
+          <button class="ghost-btn fav-btn${isFavorite(d.id) ? " is-faved" : ""}" data-action="fav-toggle" data-idx="${idx}" aria-label="${isFavorite(d.id) ? "取消收藏" : "收藏"}">${icon(isFavorite(d.id) ? "heartFilled" : "heart", 16)}</button>
         </div>
       </article>`;
   }
@@ -315,6 +397,7 @@
     const card = state.lastCards[idx];
     if (!card || !card.dish) return;
     const d = card.dish;
+    addEatenToday(d.id); // 今天吃过 → 自动排除
     const fb = state.feedback;
     if (!fb.stalls) fb.stalls = {};
     if (!fb.flavors) fb.flavors = {};
@@ -334,8 +417,12 @@
 
   async function roll({ novelty = false, excludeCurrent = false } = {}) {
     if (state.loading) return;
+    checkDayReset(); // 每天第一次 roll 自动清零
     const mode = state.profile && state.profile.mode === 3 ? 3 : 1;
-    const excludeIds = excludeCurrent ? state.lastCards.map((c) => c.dish && c.dish.id).filter(Boolean) : [];
+    const excludeIds = [
+      ...(excludeCurrent ? state.lastCards.map((c) => c.dish && c.dish.id).filter(Boolean) : []),
+      ...state.eatenToday.ids, // 今天吃过的也排除
+    ];
     state.loading = true;
     els.decide.disabled = true;
     els.novelty.disabled = true;
@@ -404,11 +491,70 @@
     if (e.target.closest('[data-action="compare"]')) { compareBoth(); return; }
     const pick = e.target.closest('[data-action="pick"]');
     if (pick) { recordPick(Number(pick.dataset.idx)); return; }
+    const favToggle = e.target.closest('[data-action="fav-toggle"]');
+    if (favToggle) {
+      const idx = Number(favToggle.dataset.idx);
+      const card = state.lastCards[idx];
+      if (card && card.dish) {
+        toggleFavorite(card.dish);
+        // 同步更新这张卡的按钮
+        const btn = els.result.querySelector(`[data-action="fav-toggle"][data-idx="${idx}"]`);
+        if (btn) {
+          const faved = isFavorite(card.dish.id);
+          btn.classList.toggle("is-faved", faved);
+          btn.innerHTML = icon(faved ? "heartFilled" : "heart", 16);
+          btn.setAttribute("aria-label", faved ? "取消收藏" : "收藏");
+        }
+      }
+      return;
+    }
     if (e.target.closest('[data-action="reroll"]') || e.target.closest("#reroll")) roll({ excludeCurrent: true });
+  });
+
+  // —— 收藏面板事件 ——
+  els.favFab.addEventListener("click", () => {
+    if (els.favPanel.hidden) openFavPanel(); else closeFavPanel();
+  });
+  els.favClose.addEventListener("click", closeFavPanel);
+  els.favPanel.addEventListener("click", (e) => {
+    const del = e.target.closest('[data-action="fav-del"]');
+    if (del) {
+      const id = Number(del.dataset.id);
+      state.favorites = state.favorites.filter((f) => f.id !== id);
+      saveJSON("wte.favorites", state.favorites);
+      updateFavFab();
+      renderFavoritesPanel();
+      // 如果当前卡片正在显示这道菜的❤️按钮，也更新状态
+      els.result.querySelectorAll('[data-action="fav-toggle"]').forEach((btn) => {
+        const cardIdx = Number(btn.dataset.idx);
+        const c = state.lastCards[cardIdx];
+        if (c && c.dish && c.dish.id === id) {
+          btn.classList.remove("is-faved");
+          btn.innerHTML = icon("heart", 16);
+          btn.setAttribute("aria-label", "收藏");
+        }
+      });
+      return;
+    }
+    const rec = e.target.closest('[data-action="fav-rec"]');
+    if (rec) {
+      // 直接用这道菜的名字作为偏好输入，强制推荐它
+      const id = Number(rec.dataset.id);
+      const fav = state.favorites.find((f) => f.id === id);
+      if (fav) {
+        els.pref.value = fav.name;
+        els.pref.dispatchEvent(new Event("input"));
+        closeFavPanel();
+        roll();
+      }
+      return;
+    }
   });
 
   initHeader();
   initDraft();
+  checkDayReset();
+  updateFavFab();
   updateProfileUI();
   if (!state.profile && !localStorage.getItem("wte.profileSeen")) {
     setTimeout(openProfile, 450);
