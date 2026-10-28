@@ -4,6 +4,10 @@
 [![Deploy Pages](https://github.com/youcheng10d/what-to-eat/actions/workflows/pages.yml/badge.svg)](https://github.com/youcheng10d/what-to-eat/actions/workflows/pages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+<p align="center">
+  <img src="docs/images/readme-hero.png" alt="吃嘛 · 说一句偏好，替你把今天这顿定了" width="100%">
+</p>
+
 **在线体验：<https://youcheng10d.github.io/what-to-eat/>**（手机浏览器打开效果最佳）
 
 v2.0 （传智杯 Vibe Coding 参赛作品） · What to Eat
@@ -54,6 +58,12 @@ v2.0 （传智杯 Vibe Coding 参赛作品） · What to Eat
 | 多卡堆叠 | 单卡与三卡横滑，一组内强制不同档口 | v2.0 |
 | 冲突处理 | 条件自相矛盾时实时提示，按后写优先裁决，可“两种都看看” | v2.0 |
 | 试试新的 | 按陌生度优先推荐近期未出现过的档口 | v2.0 |
+
+## 界面速览
+
+| 首页 | 一键决定 | 冲突处理 |
+| --- | --- | --- |
+| <img src="docs/images/fig01-home.jpg" width="200"> | <img src="docs/images/fig02-card.jpg" width="200"> | <img src="docs/images/fig04-verdict.jpg" width="200"> |
 
 ---
 
