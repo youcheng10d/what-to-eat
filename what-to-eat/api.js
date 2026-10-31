@@ -57,7 +57,7 @@
     const p = {
       maxPrice: null, maxCal: null,
       noSpicy: false, wantSpicy: false, wantVeg: false, wantMeat: false, lightIntent: false,
-      preferCat: [], preferTaste: [], preferTag: [], avoid: [],
+      preferCat: [], preferTaste: [], preferTag: [], avoid: [], avoidCats: [],
       keyword: "",
       conflicts: [],
     };
@@ -93,7 +93,34 @@
       p.noSpicy = NO_SPICY_RE.test(s);
       p.wantSpicy = !p.noSpicy && SPICY_RE.test(masked);
     }
-    if (/面|饺子/.test(s)) p.preferCat.push("面食");
+    // v2.1 修复：面食意图在“掩掉否定片段”的句子 上检测。原实现在原句检测，
+    // “不吃面”里的“面”会被当成“想吃面”，推荐出三张面食。
+    if (/面|饺子|米线|米粉|抄手|馄饨|拉面|刀削/.test(masked)) p.preferCat.push("面食");
+    // v2.2 通用否定宾语提取：“不吃X / 不要X / 别放X”→ X 进入忌口清单硬排除。
+    // 面类词（面/粉/米线…）→ 整个面类制品排除（含跨品类名字兜底，见 hardFilter）；
+    // 具体对象（水饺/馄饨/香菜/肥肉…）→ 关键词级排除，符合“今天只想吃别的东西”的语义。
+    {
+      const NEG_WORD = /^(?:什么|啥|东西|这个|那个|它|太|非常|很|超级|特别|有点)+$/;
+      const NOODLE_WORDS = /^(?:面|面食|面条|粉|米线|米粉|河粉|粉丝|挂面|意面|拉面|刀削|刀削面|螺蛳粉|酸辣粉|炒面|拌面)$/;
+      const NEG_RE = new RegExp(`(?:${NEG_GROUP})([^，,。、\\s！？]*)`, "g");
+      let m;
+      while ((m = NEG_RE.exec(s))) {
+        let w = (m[1] || "")
+          .replace(/^(?:吃|喝|点|放|来|整|搞|太|非常|很|超级|特别|有点)+/, "")
+          .replace(/[的了呢吧啊]$/g, "");
+        if (!w || NEG_WORD.test(w)) continue;
+        if (NOODLE_WORDS.test(w)) {
+          if (!p.avoidCats.includes("面食")) p.avoidCats.push("面食");
+          continue;
+        }
+        // “不吃饺子”要能覆盖数据里的水饺（“水饺”不含“饺子”二字）
+        if (w === "饺子") { p.avoid.push("饺子", "水饺"); continue; }
+        // 肉/荤/辣 由荤素与辣度意图机制负责（支持“后写优先”冲突裁决）
+        if (w === "辣") { if (!p.wantSpicy) p.noSpicy = true; continue; }
+        if (/^(?:肉|荤|肉类)$/.test(w)) continue;
+        if (w.length <= 8 && !p.avoid.includes(w)) p.avoid.push(w);
+      }
+    }
     if (/米饭|盖饭|盖浇饭|拌饭/.test(s)) p.preferCat.push("盖浇饭");
     if (/麻辣烫|冒菜|香锅/.test(s)) p.preferCat.push("麻辣系列");
     if (/炒菜|小炒|家常菜|下饭/.test(s)) p.preferCat.push("家常小炒");
@@ -137,9 +164,26 @@
       if (prof.main === "veg") p.mainPref = "veg";
       if (prof.main === "meat") p.mainPref = "meat";
     }
-    // 忌口自由填：按标点/空白拆词，命中菜名或描述即过滤
+    // 忌口自由填：按标点/空白拆词，命中菜名、描述或档口名即过滤
     if (typeof prof.avoid === "string") {
-      p.avoid = prof.avoid.split(/[，,、\s;；]+/).map((x) => x.trim()).filter((x) => x.length >= 1);
+      // v2.1：档案忌口与文本忌口合并，避免“文本说了不吃香菜、档案只填了档口”时丢掉一边
+      // v2.1.1：避雷框里写“不吃面”要先剥掉“不吃”这类前缀，否则整词去匹配菜名永远不中；
+      // 剥完剩下“面/米线/米粉…”这类泛品类词时，直接按面类制品整体排除
+      const NOODLE_WORD = /^(?:面|面食|面条|粉|米线|米粉|河粉|粉丝|挂面|意面|拉面|刀削面|刀削|酸辣粉|螺蛳粉)$/;
+      const NEG_PREFIX = /^(?:不想吃?|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了|不能)+/;
+      const fromProfile = [];
+      for (const tok of prof.avoid.split(/[，,、\s;；]+/)) {
+        const t = tok.trim().replace(NEG_PREFIX, "");
+        if (!t) continue;
+        if (NOODLE_WORD.test(t)) {
+          if (!p.avoidCats.includes("面食")) p.avoidCats.push("面食");
+          continue;
+        }
+        // v2.2：与文本路径一致 —— “饺子”要能覆盖数据里的“水饺”；具体对象走关键词
+        if (t === "饺子") { fromProfile.push("饺子", "水饺"); continue; }
+        fromProfile.push(t);
+      }
+      p.avoid = [...new Set([...p.avoid, ...fromProfile])];
     }
     // 口味多选：画像勾选 + 文本口味合并
     const wanted = new Set(pf);
@@ -151,6 +195,11 @@
 
   const isMeat = (d) => (d.main ? d.main === "荤" : !d.veg);
   const isVeg = (d) => (d.main ? d.main === "素" : !!d.veg);
+
+  // 面类制品判定：除“面食”品类外，名字里带面/粉/饺类字样的菜也算面类制品
+  // （数据里 32 道“拌饭/面/粉”“火鸡面套餐”挂在盖浇饭/家常小炒下，纯按品类会漏掉）
+  const NOODLE_NAME = /(?:面|粉|米线|饺子|水饺|抄手|馄饨|拉面|刀削|河粉|粉丝|螺蛳粉|挂面|意面)/;
+  const isNoodleLike = (d) => d.category === "面食" || NOODLE_NAME.test(d.name || "");
 
   // 轻食判定：轻食档口全量算轻食；其他档口看菜名（沙拉/鸡胸/健康餐等）
   const LIGHT_NAME = /轻食|沙拉|鸡胸|健康餐|糙米|紫米|藜麦|全麦|低脂|魔芋/;
@@ -165,8 +214,11 @@
       if (p.wantVeg && !isVeg(d)) return false;
       if (p.wantMeat && !isMeat(d)) return false;
       if (p.lightIntent && !isLightDish(d)) return false;
+      // 面类制品整体排除：品类为面食，或名字带面/粉类字样（覆盖跨品类挂靠的 32 道）
+      if (p.avoidCats && p.avoidCats.includes("面食") && isNoodleLike(d)) return false;
       if (p.avoid.length) {
-        const hay = `${d.name} ${d.desc || ""} ${dishTaste(d).join("")} ${dishFlavors(d).join("")}`;
+        // v2.1：匹配范围加上档口名 —— 在“避雷”里填“兰州拉面”就能整档排除
+        const hay = `${d.name} ${d.desc || ""} ${d.stall || ""} ${dishTaste(d).join("")} ${dishFlavors(d).join("")}`;
         if (p.avoid.some((k) => hay.includes(k))) return false;
       }
       return true;
@@ -193,6 +245,7 @@
       ["maxPrice", null],
       ["noSpicy", false],
       ["avoid", []],
+      ["avoidCats", []],
       ["lightIntent", false],
     ];
     for (const [key, fallback] of order) {
@@ -211,10 +264,12 @@
     let sc = Math.random() * 1.2;
     const fl = dishFlavors(d);
     const hits = p.wantFlavors.filter((f) => fl.includes(f));
-    sc += hits.length * 8;
+    // v2.1 调低画像权重：原 +8/项、可无限叠加，勾了“辣+咸鲜”后会近乎垄断。
+    // 改为 +5/项、封顶 +12，既保留导向又给随机性留空间。
+    sc += Math.min(12, hits.length * 5);
     if (p.wantSpicy && (d.spicy >= 2 || fl.includes("辣"))) sc += 12;
-    if (p.mainPref === "veg" && isVeg(d)) sc += 10;
-    if (p.mainPref === "meat" && isMeat(d)) sc += 10;
+    if (p.mainPref === "veg" && isVeg(d)) sc += 7;
+    if (p.mainPref === "meat" && isMeat(d)) sc += 7;
     if (p.preferCat.includes(d.category)) sc += 14;
     if (p.preferTag.some((t) => dishTaste(d).includes(t) || (d.tags || []).includes(t))) sc += 8;
     if (p.keyword && d.name.includes(p.keyword)) sc += 16;
@@ -250,6 +305,10 @@
 
   // 全池 softmax 抽样：不截 top5。截断会让“档口加成”变成最大值的优势
   // （菜多的档口 max(随机分+加成) 几乎必然排第一，公社 10 次 7 次就是这么来的）。
+  // v2.1：改为「档口分层」两段抽样 —— 先按档口抽一份，再在档口内按分数抽菜。
+  // 原来按菜等权，外公家米线一家 212 道菜 = 全库 18.5%，几乎每几轮就中一次；
+  // 面食档口菜品普遍多，也导致面食占比被放大。分层后每个档口只算一份。
+  // 另外按品类规模轻降权（1/√菜品数），避免 534 道菜的面食一家独大。
   function weightedPick(pool, p, ctx) {
     // 点名了菜品（关键词命中候选池）时只在命中菜里抽签，意图优先
     let cand = pool;
@@ -260,13 +319,30 @@
     const T = 1.5;
     const scored = cand.map((d) => ({ d, sc: scoreDish(d, p, ctx) }));
     const top = Math.max(...scored.map((x) => x.sc));
-    const weights = scored.map((x) => Math.exp((x.sc - top) / T));
-    let r = Math.random() * weights.reduce((a, b) => a + b, 0);
-    for (let i = 0; i < scored.length; i++) {
-      r -= weights[i];
-      if (r < 0) return scored[i].d;
+
+    // 第一段：按档口聚合，每个档口以“档内最高分”为代表，再乘品类规模系数
+    const byStall = new Map();
+    for (const x of scored) {
+      const key = x.d.stall || "";
+      if (!byStall.has(key)) byStall.set(key, []);
+      byStall.get(key).push(x);
     }
-    return scored[scored.length - 1].d;
+    const catCount = (ctx.stats && ctx.stats.cat) || {};
+    const groups = [...byStall.values()].map((g) => {
+      const gTop = Math.max(...g.map((x) => x.sc));
+      const catW = 1 / Math.sqrt(catCount[g[0].d.category] || 1);
+      return { g, gTop, w: Math.exp((gTop - top) / T) * catW };
+    });
+    let r = Math.random() * groups.reduce((a, x) => a + x.w, 0);
+    let chosen = groups[groups.length - 1];
+    for (const x of groups) { r -= x.w; if (r < 0) { chosen = x; break; } }
+
+    // 第二段：选中的档口内再按分数抽
+    const g = chosen.g;
+    const ws = g.map((x) => Math.exp((x.sc - chosen.gTop) / T));
+    let r2 = Math.random() * ws.reduce((a, b) => a + b, 0);
+    for (let i = 0; i < g.length; i++) { r2 -= ws[i]; if (r2 < 0) return g[i].d; }
+    return g[g.length - 1].d;
   }
 
   // —— 5) 命中说明 + 推荐理由 ——
@@ -310,6 +386,12 @@
     // TODO: replace with fetch('/api/recommend', { method: "POST", ... })
     const all = ((window.DB_REAL && window.DB_REAL.dishes) || window.DB.dishes);
     const meta = (window.DB_REAL && window.DB_REAL.stallMeta) || {};
+    // v2.1：全库规模统计，供品类降权使用（按全库而非筛选后的池子，保证基准稳定）
+    const stats = { cat: {}, stall: {} };
+    all.forEach((d) => {
+      stats.cat[d.category] = (stats.cat[d.category] || 0) + 1;
+      stats.stall[d.stall] = (stats.stall[d.stall] || 0) + 1;
+    });
     const cardCount = mode === 3 ? 3 : 1;
     const limit = MODE_LIMIT[cardCount] || 1;
     const prefs = buildPreferences(text, profile);
@@ -339,14 +421,14 @@
       if (!finalPool.length) { finalPool = pool; windowRelaxed = true; }
       if (!finalPool.length) break;
 
-      const dish = weightedPick(finalPool, prefs, { meta, feedback, novelty, recentStalls });
+      const dish = weightedPick(finalPool, prefs, { meta, feedback, novelty, recentStalls, stats });
       if (!dish) break;
       usedStalls.add(dish.stall);
       windowCounts[dish.stall] = (windowCounts[dish.stall] || 0) + 1;
 
       const matched = buildMatched(dish, prefs, droppedKeys);
       const relaxed = droppedKeys.size > 0 || windowRelaxed;
-      const labels = { maxCal: "低卡", maxPrice: "预算", wantVeg: "素食", wantMeat: "荤菜", noSpicy: "忌辣", avoid: "忌口", lightIntent: "轻食" };
+      const labels = { maxCal: "低卡", maxPrice: "预算", wantVeg: "素食", wantMeat: "荤菜", noSpicy: "忌辣", avoid: "忌口", avoidCats: "不吃面食", lightIntent: "轻食" };
       let relaxedNote = "";
       if (droppedKeys.size) {
         relaxedNote = `完全匹配的菜有点难找，放宽了${[...droppedKeys].map((k) => labels[k] || k).join("、")}要求，这碗最接近～`;

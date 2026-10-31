@@ -21,5 +21,13 @@ jobs:
           node --check what-to-eat/data/data.js
       - name: 数据契约校验
         run: node tools/validate-data.mjs
-      - name: 推荐引擎回归
+      - name: 推荐引擎单元回归
         run: node tests/recommend.test.mjs
+      - name: 冒烟测试
+        run: node tests/smoke.test.mjs
+      - name: 集成测试
+        run: node tests/integration.test.mjs
+      - name: 金文件测试（仅比对）
+        run: node tests/golden.test.mjs
+      - name: 变异测试
+        run: node tests/mutation.mjs
