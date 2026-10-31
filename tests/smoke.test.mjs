@@ -1,8 +1,10 @@
 // 冒烟测试：数据可加载、字段契约完整、三种推荐模式都能出卡
 import fs from "node:fs";
 import vm from "node:vm";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "D:/code/TRAE/项目一  今天吃啥/what-to-eat/";
+const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "what-to-eat") + path.sep;
 const sandbox = { window: { __WTE_FAST__: true }, Math, console };
 vm.runInNewContext(fs.readFileSync(ROOT + "data/data.js", "utf8"), sandbox);
 vm.runInNewContext(fs.readFileSync(ROOT + "api.js", "utf8"), sandbox);

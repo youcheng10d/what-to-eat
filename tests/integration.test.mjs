@@ -1,8 +1,10 @@
 // 集成测试：真实 1143 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
 import fs from "node:fs";
 import vm from "node:vm";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "D:/code/TRAE/项目一  今天吃啥/what-to-eat/";
+const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "what-to-eat") + path.sep;
 const sandbox = { window: { __WTE_FAST__: true }, Math, console };
 vm.runInNewContext(fs.readFileSync(ROOT + "data/data.js", "utf8"), sandbox);
 vm.runInNewContext(fs.readFileSync(ROOT + "api.js", "utf8"), sandbox);
