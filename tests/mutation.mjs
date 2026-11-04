@@ -23,8 +23,17 @@ const MUTANTS = [
   { name: "M10 通用否定提取失效（不吃水饺/不要葱 全落空）", from: "      while ((m = NEG_RE.exec(s))) {", to: "      while ((m = null)) {" },
 ];
 
+// 固定随机种子：每个变异体都从同一条随机序列开始，基线对照才公平，
+// 也避免 CI 因抽样波动偶发判错（真实随机下的额外覆盖由金文件测试承担）。
+const SEED = 20261104;
 function makeSandbox(src) {
-  const sb = { window: { __WTE_FAST__: true }, Math, console };
+  let s = SEED;
+  const M = Object.create(Math);
+  M.random = () => {
+    s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
+    return s / 4294967296;
+  };
+  const sb = { window: { __WTE_FAST__: true }, Math: M, console };
   vm.runInNewContext(dataSrc, sb);
   vm.runInNewContext(src, sb);
   return sb.window.API;

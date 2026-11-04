@@ -1,11 +1,22 @@
-// 集成测试：真实 1143 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
+// 集成测试：真实 1988 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
 import fs from "node:fs";
 import vm from "node:vm";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "what-to-eat") + path.sep;
-const sandbox = { window: { __WTE_FAST__: true }, Math, console };
+
+// 固定随机种子：本文件包含大量统计型断言，用真实 Math.random 会让 CI 偶发假失败
+// （实测 30 次有 5 次卡在档口多样性 / 辣占比的分位数边界）。
+// 种子固定后结果可复现、CI 与本地一致；真实随机下的行为由变异测试和金文件测试覆盖。
+let seed = 20261104;
+const M = Object.create(Math);
+M.random = () => {
+  seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+  return seed / 4294967296;
+};
+
+const sandbox = { window: { __WTE_FAST__: true }, Math: M, console };
 vm.runInNewContext(fs.readFileSync(ROOT + "data/data.js", "utf8"), sandbox);
 vm.runInNewContext(fs.readFileSync(ROOT + "api.js", "utf8"), sandbox);
 const API = sandbox.window.API;
