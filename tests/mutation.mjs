@@ -80,13 +80,20 @@ async function runAssertions(API) {
     });
   }
   if (spicy / all6 > 0.9) fails.push("K6 画像口味垄断");
-  // K7 面食占比回归：基线实测约 16%，M8 变异体约 33%；取 300 次取样降低波动
+  // K7 面食占比回归：基线 1000 抽实测 23%～25%，M8 变异体 33%～34%；取 1000 次取样降低波动
   const row7 = [];
-  for (let i = 0; i < 300; i++) {
+  for (let i = 0; i < 1000; i++) {
     const r = await API.recommend({ text: "", mode: 1 });
     row7.push(r.data.cards[0].dish);
   }
-  if (row7.filter((d) => d.category === "面食").length / row7.length >= 0.24) fails.push("K7 面食占比超标");
+  if (row7.filter((d) => d.category === "面食").length / row7.length >= 0.29) fails.push("K7 面食占比超标");
+  // K7b 档口分层：基线 1000 抽 top1 约 5%、top5 约 22%；M7 退化为等权后 top1 约 9%～13%、top5 约 32%～38%。
+  // 数据扩充后档口更多，单看面食占比不再敏感，直接看档口集中度。
+  const stall7 = {};
+  for (const d of row7) stall7[d.stall] = (stall7[d.stall] || 0) + 1;
+  const stall7Top = Object.values(stall7).sort((a, b) => b - a);
+  if (stall7Top[0] / row7.length >= 0.07) fails.push("K7b 单一档口垄断（分层失效）");
+  if (stall7Top.slice(0, 5).reduce((s, n) => s + n, 0) / row7.length >= 0.27) fails.push("K7b 前五档口集中度超标（分层失效）");
   // K8 override 卡带标签
   const ov = await API.recommend({ text: "不想吃肉，想吃肉", mode: 1, override: { main: "veg" } });
   if (!ov.data.cards[0].label) fails.push("K8 override 标签缺失");

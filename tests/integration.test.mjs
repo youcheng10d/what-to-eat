@@ -20,8 +20,8 @@ const check = (name, cond, extra = "") => {
 // —— 1) 面食占比回归：无档案时不应被数据分布（46.7% 面食）带跑 ——
 {
   const rows = [];
-  // 200 次取样：把抽样波动压到 ±3% 内，避免“刚好 30%”的假失败
-  for (let i = 0; i < 200; i++) {
+  // 500 次取样：数据扩充后仍把抽样波动压在阈值内，避免“刚好 30%”的假失败
+  for (let i = 0; i < 500; i++) {
     const r = await API.recommend({ text: "", mode: 1 });
     rows.push(r.data.cards[0].dish);
   }

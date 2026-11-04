@@ -202,7 +202,7 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     if ($veg) { $autoTags += "素食友好" }
     if ($cal -ge 500) { $autoTags += "管饱" }
 
-    $descBase = if ($f.food_introduce -and $f.food_introduce -notmatch "此处为菜品描述") { $f.food_introduce } else { "“$group”之选" }
+    $descBase = if ($f.food_introduce -and $f.food_introduce -notmatch "此处为菜品描述") { $f.food_introduce } else { ([char]0x201C + $group + [char]0x201D + '之选') }
     $descBase = $descBase -replace "[，,。；;、\s]+$", ""  # 去掉结尾标点，避免“，，约 xx kcal”
     $desc = $descBase + "，约 $cal kcal"
 
@@ -253,12 +253,40 @@ if (Test-Path $manualPath) {
   Write-Host "合并线下录入：$($manual.Count) 道，合并后总计 $($dishes.Count) 道" -ForegroundColor Cyan
 }
 
+# ---------- 6.6) 合并会长 mecca-eat 数据补充（只补缺失，不覆盖现有） ----------
+$meccaPath = Join-Path $PSScriptRoot ".\staging\mecca-supplement.json"
+if (Test-Path $meccaPath) {
+  $mecca = Get-Content $meccaPath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $byKey = @{}
+  foreach ($d in $dishes) { $byKey["$($d.stall)|$($d.name)"] = $d }
+  $added = 0
+  foreach ($md in $mecca) {
+    $key = "$($md.stall)|$($md.name)"
+    if (-not $byKey.ContainsKey($key)) { $byKey[$key] = $md; $added++ }
+  }
+  $dishes = @($byKey.Values)
+  $id = 10000
+  foreach ($d in $dishes) { $d.id = $id; $id++ }
+  Write-Host "合并会长补充：$added 道，合并后总计 $($dishes.Count) 道" -ForegroundColor Cyan
+}
+
 # ---------- 6.8) 档口名显示清理：去掉“_食堂”后缀（canteen 字段已单独存食堂名） ----------
 foreach ($d in $dishes) {
   if ($d.stall -match "^([^_]+)_") { $d.stall = $Matches[1] }
 }
 
-# ---------- 6.9) 档口级元数据：人气菜占比（v2.0 推荐加成 = 2 × hotRate） ----------
+# ---------- 6.9) 档口名校正 / 合并（2026-11-04 用户确认） ----------
+$stallRename = @{
+  "抄手馄饨大王" = "小火锅抄手水饺"   # 汇百味的实际档口名
+  "汤萌"        = "锅庐三汁焖锅"      # 汤萌的小锅并入锅庐焖锅
+}
+$renameHits = 0
+foreach ($d in $dishes) {
+  if ($stallRename.ContainsKey($d.stall)) { $d.stall = $stallRename[$d.stall]; $renameHits++ }
+}
+Write-Host "档口名校正：命中 $renameHits 道" -ForegroundColor Cyan
+
+# ---------- 6.10) 档口级元数据：人气菜占比（v2.0 推荐加成 = 2 × hotRate） ----------
 $stallMeta = @{}
 foreach ($g in ($dishes | Group-Object stall)) {
   $cnt = $g.Count

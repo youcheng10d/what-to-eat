@@ -26,7 +26,7 @@ const sandbox = {
         mkDish({ name: "素炒时蔬", stall: "公社小炒", price: 8, main: "素", cal: 300 }),
         // 面食两条：用于验证“不吃面”与面食意图
         mkDish({ name: "重庆小面", stall: "胖妹面庄", price: 9, category: "面食", main: "素", cal: 520, flavors: ["辣"], taste: ["辣"] }),
-        mkDish({ name: "清汤抄手", stall: "抄手馄饨大王", price: 8, category: "面食", main: "荤", cal: 480, taste: ["清淡"] }),
+        mkDish({ name: "清汤抄手", stall: "小火锅抄手水饺", price: 8, category: "面食", main: "荤", cal: 480, taste: ["清淡"] }),
         // v2.2 靶子：水饺（验证“不吃水饺”关键词排除）
         mkDish({ name: "韭菜鸡蛋水饺", stall: "惠芯意鲜饺坊", price: 10, category: "面食", main: "荤", cal: 450, taste: ["咸鲜"] }),
         // v2.2 靶子：跨品类面类泄漏（品类是盖浇饭、名字带面）

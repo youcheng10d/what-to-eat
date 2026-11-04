@@ -19,9 +19,9 @@ const check = (name, cond) => {
 
 // 1) 数据加载
 check("数据加载成功", !!DB && Array.isArray(DB.dishes));
-check("菜品总数 1143", DB.dishes.length === 1143);
+check("菜品总数 ≥ 1988", DB.dishes.length >= 1988);
 const stalls = new Set(DB.dishes.map((d) => d.stall));
-check("档口总数 49", stalls.size === 49);
+check("档口总数 ≥ 59", stalls.size >= 59);
 
 // 2) 字段契约
 const required = ["id", "name", "price", "cal", "category", "stall"];
