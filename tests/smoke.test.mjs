@@ -19,7 +19,7 @@ const check = (name, cond) => {
 
 // 1) 数据加载
 check("数据加载成功", !!DB && Array.isArray(DB.dishes));
-check("菜品总数 ≥ 1988", DB.dishes.length >= 1988);
+check("菜品总数 ≥ 3000", DB.dishes.length >= 3000);
 const stalls = new Set(DB.dishes.map((d) => d.stall));
 check("档口总数 ≥ 59", stalls.size >= 59);
 

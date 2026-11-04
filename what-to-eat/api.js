@@ -274,8 +274,9 @@
     if (p.preferTag.some((t) => dishTaste(d).includes(t) || (d.tags || []).includes(t))) sc += 8;
     if (p.keyword && d.name.includes(p.keyword)) sc += 16;
     // 人气归一：档口人气菜占比 ×2（公社 37/112 → +0.66，不再是固定 +2）
+    // 封顶 +1：新数据里出现整份菜单都在“热销”分组的档口（hotRate=1），会凭白拿满加成而垄断
     const meta = ctx.meta[d.stall];
-    if (meta) sc += 2 * (meta.hotRate || 0);
+    if (meta) sc += Math.min(1, 2 * (meta.hotRate || 0));
     // 正反馈：档口 +3 / 口味 +1 / 品类 +0.6，单维度累计封顶 +4
     const fb = ctx.feedback || {};
     if (d.stall && fb.stalls && fb.stalls[d.stall]) sc += Math.min(4, fb.stalls[d.stall] * 3);
@@ -330,7 +331,11 @@
     const catCount = (ctx.stats && ctx.stats.cat) || {};
     const groups = [...byStall.values()].map((g) => {
       const gTop = Math.max(...g.map((x) => x.sc));
-      const catW = 1 / Math.sqrt(catCount[g[0].d.category] || 1);
+      // 品类规模系数按档口主品类算，不能用 g[0]（第一个菜的品类是数据顺序，不具代表性）
+      const catHits = {};
+      g.forEach((x) => { catHits[x.d.category] = (catHits[x.d.category] || 0) + 1; });
+      const mainCat = Object.keys(catHits).sort((a, b) => catHits[b] - catHits[a])[0];
+      const catW = 1 / Math.sqrt(catCount[mainCat] || 1);
       return { g, gTop, w: Math.exp((gTop - top) / T) * catW };
     });
     let r = Math.random() * groups.reduce((a, x) => a + x.w, 0);

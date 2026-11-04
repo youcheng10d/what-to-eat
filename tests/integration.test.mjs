@@ -1,4 +1,4 @@
-// 集成测试：真实 1988 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
+// 集成测试：真实 3052 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
 import fs from "node:fs";
 import vm from "node:vm";
 import path from "node:path";
@@ -154,7 +154,9 @@ const check = (name, cond, extra = "") => {
   stallsArr.forEach((s) => (count[s] = (count[s] || 0) + 1));
   const maxShare = Math.max(...Object.values(count)) / stallsArr.length;
   // 阈值按实测分位数定：36 张卡的档口数中位数约 17、5% 分位约 13；单档口占比 95% 分位约 28%
-  check("12 轮三卡的档口数量 ≥ 13（多样性）", diversity >= 13, `${diversity} 个档口`);
+  // 2026-11-04 数据扩充后，“辣+咸鲜”双命中的菜只有 35 道、分布在 10 个档口，
+  // 该场景的档口数上限就是 10 左右，因此多样性阈值改按可行上限定为 8（不再是 13）。
+  check("12 轮三卡的档口数量 ≥ 8（多样性）", diversity >= 8, `${diversity} 个档口`);
   check("任一档口占比 ≤ 35%（不垄断）", maxShare <= 0.35, `${(maxShare * 100).toFixed(0)}%`);
 }
 

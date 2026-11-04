@@ -12,6 +12,9 @@ desktop.ini
 .vscode/
 .idea/
 
+# 采集断点缓存与探针/错误记录（collect-lcsw.ps1 可重新生成，不进仓库）
+what-to-eat/data/raw/*/
+
 # 日志
 *.log
 
