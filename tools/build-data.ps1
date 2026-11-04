@@ -160,14 +160,19 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
     $rawName = $f.food_name
     $cleanName = $rawName -replace $junkEmojis, "" -replace "^\s+|\s+$", ""
     if ($cleanName.Length -eq 0) { continue }
-    # 米饭单点不是菜（用户既定规则：只推荐主食菜品）
-    if ($cleanName -match "^(米饭|白米饭)$") { continue }
+    # 米饭单点不是菜（用户既定规则：只推荐主食菜品）；带备注的纯米饭 SKU 同样排除
+    if ($cleanName -match "^\s*[★☆]?\s*(白|紫|珍珠)?米饭") {
+      $riceRest = ($cleanName -replace "^\s*[★☆]?\s*(白|紫|珍珠)?米饭", "") -replace "（|\(|）|\)|\s", ""
+      if ($riceRest -eq "" -or $riceRest -match "(单点|不送|套餐里面有一份)$") { continue }
+    }
     # 蘸料/餐具/打包耗材不是菜品（新采集数据里出现“饺子蘸料”“打包盒”等条目）
     if ($cleanName -match "蘸料|蘸水|调料|小料|锅底料|餐盒|打包盒|打包袋|餐巾|纸巾|湿巾|筷子|餐具|塑料袋") { continue }
 
     $priceCent = if ($f.food_discount_price) { $f.food_discount_price } else { $f.food_price }
     $price = [math]::Round($priceCent / 100, 2)
     if ($price -le 0 -or $price -gt 60) { continue }
+    # 低价的纯酱/汁小料（“甜辣酱 ¥1.5”“塔塔酱 ¥1.5”）不是菜；按“整名以酱/汁结尾 + 低价”判定
+    if ($price -le 5 -and $cleanName.Length -le 8 -and $cleanName -match "(酱|汁)$") { continue }
 
     $cat = mapCategory $group $cleanName
     # 糖水铺/奶茶店档口残留的“其他”类菜品兜底为甜品饮品（名字多为杨枝甘露等无关键词甜点）

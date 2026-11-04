@@ -1,5 +1,5 @@
 ﻿// data.js — 真实食堂菜品（自动从 LCSW API 清洗生成）
-// Source: 重庆城市科技学院 ｜ Generated: 2026-11-04 16:57
+// Source: 重庆城市科技学院 ｜ Generated: 2026-11-04 17:24
 (function () {
   window.DB_REAL = {
     school: "重庆城市科技学院",
@@ -187,7 +187,7 @@
                    "floor":  "2楼"
                },
     "缘味先石锅饭":  {
-                   "dishCount":  53,
+                   "dishCount":  52,
                    "hotCount":  2,
                    "hotRate":  0.038,
                    "canteen":  "北山苑餐厅",
@@ -236,9 +236,9 @@
                  "floor":  "2楼"
              },
     "曾记面食":  {
-                 "dishCount":  98,
+                 "dishCount":  97,
                  "hotCount":  22,
-                 "hotRate":  0.224,
+                 "hotRate":  0.227,
                  "canteen":  "北山苑餐厅",
                  "floor":  "3楼"
              },
@@ -257,7 +257,7 @@
                  "floor":  "3楼"
              },
     "香灶火锅冒菜":  {
-                   "dishCount":  97,
+                   "dishCount":  96,
                    "hotCount":  6,
                    "hotRate":  0.062,
                    "canteen":  "北山苑餐厅",
@@ -306,9 +306,9 @@
                   "floor":  "2楼"
               },
     "胖妹面庄":  {
-                 "dishCount":  113,
+                 "dishCount":  112,
                  "hotCount":  28,
-                 "hotRate":  0.248,
+                 "hotRate":  0.25,
                  "canteen":  "北山苑餐厅",
                  "floor":  "3楼"
              },
@@ -341,14 +341,14 @@
                     "floor":  "2楼"
                 },
     "奥利堡炸鸡汉堡":  {
-                    "dishCount":  157,
+                    "dishCount":  145,
                     "hotCount":  7,
-                    "hotRate":  0.045,
+                    "hotRate":  0.048,
                     "canteen":  "北山苑餐厅",
                     "floor":  "3楼"
                 },
     "川哥小炒":  {
-                 "dishCount":  141,
+                 "dishCount":  140,
                  "hotCount":  7,
                  "hotRate":  0.05,
                  "canteen":  "汇百味餐厅",
@@ -369,9 +369,9 @@
                     "floor":  "2楼"
                 },
     "一万家干锅":  {
-                  "dishCount":  124,
-                  "hotCount":  42,
-                  "hotRate":  0.339,
+                  "dishCount":  122,
+                  "hotCount":  41,
+                  "hotRate":  0.336,
                   "canteen":  "北山苑餐厅",
                   "floor":  "3楼"
               },
@@ -594,36 +594,6 @@
     },
     {
         "id":  10005,
-        "name":  "酸奶酱",
-        "category":  "甜品饮品",
-        "icon":  "cup",
-        "taste":  [
-                      "甜"
-                  ],
-        "flavors":  [
-                        "甜",
-                        "酸甜",
-                        "咸鲜"
-                    ],
-        "price":  1.5,
-        "cal":  350,
-        "tags":  [
-                     "性价比",
-                     "低卡",
-                     "素食友好"
-                 ],
-        "desc":  "“调料包”之选，约 350 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "main":  "素",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  10006,
         "name":  "麻辣小面",
         "category":  "面食",
         "icon":  "wheat",
@@ -651,7 +621,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  10007,
+        "id":  10006,
         "name":  "香菇串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -676,7 +646,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  10008,
+        "id":  10007,
         "name":  "现炒干锅麻辣素菜锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -705,7 +675,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10009,
+        "id":  10008,
         "name":  "泡豇豆",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -731,7 +701,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  10010,
+        "id":  10009,
         "name":  "肉酱土豆泥套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -757,7 +727,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10011,
+        "id":  10010,
         "name":  "青椒肉丝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -783,7 +753,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10012,
+        "id":  10011,
         "name":  "牛肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -809,7 +779,7 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10013,
+        "id":  10012,
         "name":  "双椒鸡+叉烧套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -835,7 +805,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10014,
+        "id":  10013,
         "name":  "油麦菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -860,7 +830,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10015,
+        "id":  10014,
         "name":  "鸡汤鲜虾米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -886,7 +856,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10016,
+        "id":  10015,
         "name":  "青椒牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -910,7 +880,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  10017,
+        "id":  10016,
         "name":  "★★★手打虾滑4个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -934,7 +904,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  10018,
+        "id":  10017,
         "name":  "藤椒金针菇米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -962,7 +932,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10019,
+        "id":  10018,
         "name":  "原味螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -988,7 +958,7 @@
         "rawGroup":  "主食"
     },
     {
-        "id":  10020,
+        "id":  10019,
         "name":  "番茄云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -1015,7 +985,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10021,
+        "id":  10020,
         "name":  "绝味酱香鸭子半个（香迷糊了）卤烤",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1040,7 +1010,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10022,
+        "id":  10021,
         "name":  "双椒爆香鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -1066,7 +1036,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10023,
+        "id":  10022,
         "name":  "鸡汤鲜肉片米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -1092,7 +1062,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10024,
+        "id":  10023,
         "name":  "冬阴功肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -1116,7 +1086,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10025,
+        "id":  10024,
         "name":  "豆角茄子炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1142,7 +1112,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10026,
+        "id":  10025,
         "name":  "肝腰合炒小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1168,7 +1138,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10027,
+        "id":  10026,
         "name":  "山药",
         "category":  "其他",
         "icon":  "utensils",
@@ -1194,7 +1164,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  10028,
+        "id":  10027,
         "name":  "鱼香肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -1220,7 +1190,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10029,
+        "id":  10028,
         "name":  "鲜虾渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -1246,7 +1216,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10030,
+        "id":  10029,
         "name":  "番茄炒蛋盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -1270,7 +1240,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  10031,
+        "id":  10030,
         "name":  "西红柿炒蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -1296,7 +1266,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10032,
+        "id":  10031,
         "name":  "西红柿鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -1320,7 +1290,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10033,
+        "id":  10032,
         "name":  "杂酱面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -1345,7 +1315,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10034,
+        "id":  10033,
         "name":  "鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -1371,7 +1341,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10035,
+        "id":  10034,
         "name":  "大葱猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -1397,7 +1367,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10036,
+        "id":  10035,
         "name":  "木耳肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -1421,7 +1391,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  10037,
+        "id":  10036,
         "name":  "秘制炒饭加2素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -1447,7 +1417,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10038,
+        "id":  10037,
         "name":  "香辣牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -1473,7 +1443,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10039,
+        "id":  10038,
         "name":  "干锅去头小黄鱼（4条）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -1498,7 +1468,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10040,
+        "id":  10039,
         "name":  "藤椒渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -1525,7 +1495,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10041,
+        "id":  10040,
         "name":  "干锅香辣鸭（肉多学姐推荐）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -1552,7 +1522,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10042,
+        "id":  10041,
         "name":  "热狗芝士棒",
         "category":  "烧烤",
         "icon":  "flame",
@@ -1578,7 +1548,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10043,
+        "id":  10042,
         "name":  "红油干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -1604,7 +1574,7 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  10044,
+        "id":  10043,
         "name":  "回锅肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1628,7 +1598,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10045,
+        "id":  10044,
         "name":  "葱香鱼香肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1652,7 +1622,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10046,
+        "id":  10045,
         "name":  "干锅瘦肉片",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -1678,7 +1648,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10047,
+        "id":  10046,
         "name":  "香辣地锅肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1704,7 +1674,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10048,
+        "id":  10047,
         "name":  "脆皮炸鸡（半只）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -1730,7 +1700,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10049,
+        "id":  10048,
         "name":  "麻婆豆腐炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -1757,7 +1727,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10050,
+        "id":  10049,
         "name":  "火锅金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -1782,7 +1752,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10051,
+        "id":  10050,
         "name":  "鸡汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -1808,7 +1778,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10052,
+        "id":  10051,
         "name":  "豆干",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -1833,7 +1803,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  10053,
+        "id":  10052,
         "name":  "铁板里脊",
         "category":  "烧烤",
         "icon":  "flame",
@@ -1859,7 +1829,7 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10054,
+        "id":  10053,
         "name":  "银耳汤",
         "category":  "汤粥",
         "icon":  "soup",
@@ -1885,7 +1855,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10055,
+        "id":  10054,
         "name":  "农家一碗香盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -1911,7 +1881,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10056,
+        "id":  10055,
         "name":  "【新品】干锅蟹排组合丸子",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -1936,7 +1906,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10057,
+        "id":  10056,
         "name":  "小馆招牌炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -1962,7 +1932,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10058,
+        "id":  10057,
         "name":  "泡椒肉丝炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -1988,7 +1958,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10059,
+        "id":  10058,
         "name":  "羊杂米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2014,7 +1984,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10060,
+        "id":  10059,
         "name":  "韭菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -2040,7 +2010,7 @@
         "rawGroup":  "手工现包水饺"
     },
     {
-        "id":  10061,
+        "id":  10060,
         "name":  "招牌卤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2066,7 +2036,7 @@
         "rawGroup":  "现卤现捞"
     },
     {
-        "id":  10062,
+        "id":  10061,
         "name":  "干拌豌杂面",
         "category":  "面食",
         "icon":  "wheat",
@@ -2092,7 +2062,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  10063,
+        "id":  10062,
         "name":  "香辣牛杂焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2118,7 +2088,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10064,
+        "id":  10063,
         "name":  "椰奶",
         "category":  "其他",
         "icon":  "utensils",
@@ -2143,7 +2113,7 @@
         "rawGroup":  "饮料单点（热饮）"
     },
     {
-        "id":  10065,
+        "id":  10064,
         "name":  "大盘鸡盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2169,7 +2139,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10066,
+        "id":  10065,
         "name":  "冬阴功金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -2194,7 +2164,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10067,
+        "id":  10066,
         "name":  "手抓饼加火腿",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -2218,7 +2188,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  10068,
+        "id":  10067,
         "name":  "肥肠拌面刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -2244,7 +2214,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10069,
+        "id":  10068,
         "name":  "蒜香烤鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2270,7 +2240,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10070,
+        "id":  10069,
         "name":  "番茄炒鸡蛋拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2297,7 +2267,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10071,
+        "id":  10070,
         "name":  "酸菜滑肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2321,7 +2291,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10072,
+        "id":  10071,
         "name":  "娃娃菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2345,7 +2315,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  10073,
+        "id":  10072,
         "name":  "金陵咸水鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2371,7 +2341,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10074,
+        "id":  10073,
         "name":  "串香烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2397,7 +2367,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10075,
+        "id":  10074,
         "name":  "梅菜扣肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2423,7 +2393,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  10076,
+        "id":  10075,
         "name":  "干锅里脊",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -2447,7 +2417,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  10077,
+        "id":  10076,
         "name":  "碗杂拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -2471,7 +2441,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  10078,
+        "id":  10077,
         "name":  "招牌汉堡套餐六",
         "category":  "烧烤",
         "icon":  "flame",
@@ -2497,7 +2467,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10079,
+        "id":  10078,
         "name":  "蒜苔肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2523,7 +2493,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10080,
+        "id":  10079,
         "name":  "土豆肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2549,7 +2519,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10081,
+        "id":  10080,
         "name":  "火腿肠新疆炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2573,7 +2543,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  10082,
+        "id":  10081,
         "name":  "鸡柳麻辣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2600,7 +2570,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10083,
+        "id":  10082,
         "name":  "新品🥩干锅培根🥓",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -2627,7 +2597,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10084,
+        "id":  10083,
         "name":  "泡椒肉丝盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2653,7 +2623,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10085,
+        "id":  10084,
         "name":  "灌汤包",
         "category":  "汤粥",
         "icon":  "soup",
@@ -2680,7 +2650,7 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  10086,
+        "id":  10085,
         "name":  "娃娃菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2704,7 +2674,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10087,
+        "id":  10086,
         "name":  "芝士年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -2730,7 +2700,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10088,
+        "id":  10087,
         "name":  "尖椒仔鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2756,7 +2726,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10089,
+        "id":  10088,
         "name":  "酸菜全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -2780,7 +2750,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10090,
+        "id":  10089,
         "name":  "石锅双椒鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2806,7 +2776,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10091,
+        "id":  10090,
         "name":  "火腿饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -2830,7 +2800,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10092,
+        "id":  10091,
         "name":  "新派口水鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -2856,7 +2826,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10093,
+        "id":  10092,
         "name":  "小馆鲜肉炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2882,7 +2852,7 @@
         "rawGroup":  "小馆炒面"
     },
     {
-        "id":  10094,
+        "id":  10093,
         "name":  "鸡排拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -2908,7 +2878,7 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  10095,
+        "id":  10094,
         "name":  "蒜苔炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -2934,7 +2904,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  10096,
+        "id":  10095,
         "name":  "藤椒酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -2961,7 +2931,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10097,
+        "id":  10096,
         "name":  "宫保鸡丁盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -2987,7 +2957,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10098,
+        "id":  10097,
         "name":  "酸菜滑肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3013,7 +2983,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10099,
+        "id":  10098,
         "name":  "日式烧牛肉拼鸡排饭套餐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -3039,7 +3009,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10100,
+        "id":  10099,
         "name":  "拉丝豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3064,7 +3034,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10101,
+        "id":  10100,
         "name":  "冬阴功猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -3088,7 +3058,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10102,
+        "id":  10101,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3113,7 +3083,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10103,
+        "id":  10102,
         "name":  "炙烤鸡肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3139,7 +3109,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10104,
+        "id":  10103,
         "name":  "肉卷小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3165,7 +3135,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10105,
+        "id":  10104,
         "name":  "杏鲍菇炒肉片套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3191,7 +3161,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10106,
+        "id":  10105,
         "name":  "土豆肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3217,7 +3187,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10107,
+        "id":  10106,
         "name":  "美式烤半鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3243,7 +3213,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10108,
+        "id":  10107,
         "name":  "青椒鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3269,7 +3239,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10109,
+        "id":  10108,
         "name":  "地锅烤肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3295,7 +3265,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10110,
+        "id":  10109,
         "name":  "包心大鱼丸3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3319,7 +3289,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  10111,
+        "id":  10110,
         "name":  "蟹排①片",
         "category":  "其他",
         "icon":  "utensils",
@@ -3344,7 +3314,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  10112,
+        "id":  10111,
         "name":  "泡椒牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -3371,7 +3341,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10113,
+        "id":  10112,
         "name":  "酸菜素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -3397,7 +3367,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10114,
+        "id":  10113,
         "name":  "肉末菜心土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3423,7 +3393,7 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  10115,
+        "id":  10114,
         "name":  "热卤拌红油麻辣鸡（一个鸡腿量）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3451,7 +3421,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10116,
+        "id":  10115,
         "name":  "经典三荤泡椒苕粉（相当辣）",
         "category":  "面食",
         "icon":  "wheat",
@@ -3477,7 +3447,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10117,
+        "id":  10116,
         "name":  "西红柿炒鸡蛋面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -3502,7 +3472,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10118,
+        "id":  10117,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3528,7 +3498,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10119,
+        "id":  10118,
         "name":  "土豆丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3553,7 +3523,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10120,
+        "id":  10119,
         "name":  "香菇油菜炒肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3579,7 +3549,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10121,
+        "id":  10120,
         "name":  "酸萝卜炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -3603,7 +3573,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10122,
+        "id":  10121,
         "name":  "羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -3629,7 +3599,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10123,
+        "id":  10122,
         "name":  "麻辣肉片5片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3657,7 +3627,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10124,
+        "id":  10123,
         "name":  "乱劈才炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3681,7 +3651,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  10125,
+        "id":  10124,
         "name":  "地锅肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3707,7 +3677,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10126,
+        "id":  10125,
         "name":  "麻辣烫肥牛面",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -3734,7 +3704,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10127,
+        "id":  10126,
         "name":  "蛋炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -3761,7 +3731,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10128,
+        "id":  10127,
         "name":  "肉酱土豆泥火鸡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -3789,7 +3759,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10129,
+        "id":  10128,
         "name":  "糊辣荔枝鸡小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3815,7 +3785,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10130,
+        "id":  10129,
         "name":  "黑金排骨套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3841,7 +3811,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10131,
+        "id":  10130,
         "name":  "蔬菜瘦肉粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -3866,7 +3836,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10132,
+        "id":  10131,
         "name":  "绝味鸭茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -3892,7 +3862,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10133,
+        "id":  10132,
         "name":  "鸡肉双拼米粉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -3918,7 +3888,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10134,
+        "id":  10133,
         "name":  "核桃肉双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3944,7 +3914,7 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  10135,
+        "id":  10134,
         "name":  "酱香肉沫茄子焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -3970,7 +3940,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10136,
+        "id":  10135,
         "name":  "小馆羊杂面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -3995,7 +3965,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10137,
+        "id":  10136,
         "name":  "牙签肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -4019,7 +3989,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10138,
+        "id":  10137,
         "name":  "土豆肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -4045,7 +4015,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10139,
+        "id":  10138,
         "name":  "干锅香酥麻辣鱼块",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -4072,7 +4042,7 @@
         "rawGroup":  "招牌"
     },
     {
-        "id":  10140,
+        "id":  10139,
         "name":  "香菇滑鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -4098,7 +4068,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10141,
+        "id":  10140,
         "name":  "泡椒鸡杂茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4124,7 +4094,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10142,
+        "id":  10141,
         "name":  "馕芹菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -4150,7 +4120,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10143,
+        "id":  10142,
         "name":  "糖醋排骨盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4177,7 +4147,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10144,
+        "id":  10143,
         "name":  "套餐六海苔肉松炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -4203,7 +4173,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10145,
+        "id":  10144,
         "name":  "滑肉四荤泡椒苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -4229,7 +4199,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10146,
+        "id":  10145,
         "name":  "韩式套餐三",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -4255,7 +4225,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10147,
+        "id":  10146,
         "name":  "番茄鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -4279,7 +4249,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10148,
+        "id":  10147,
         "name":  "泡椒鱼片滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4305,7 +4275,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10149,
+        "id":  10148,
         "name":  "豆干肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4329,7 +4299,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10150,
+        "id":  10149,
         "name":  "包菜胡萝卜鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -4354,7 +4324,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10151,
+        "id":  10150,
         "name":  "酱香肉片焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -4380,7 +4350,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10152,
+        "id":  10151,
         "name":  "★加醋",
         "category":  "其他",
         "icon":  "utensils",
@@ -4405,7 +4375,7 @@
         "rawGroup":  "米饭调料"
     },
     {
-        "id":  10153,
+        "id":  10152,
         "name":  "原味螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -4431,7 +4401,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10154,
+        "id":  10153,
         "name":  "石锅鸡蛋茄子",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4455,7 +4425,7 @@
         "rawGroup":  "鸡蛋双拼系列"
     },
     {
-        "id":  10155,
+        "id":  10154,
         "name":  "热干面",
         "category":  "面食",
         "icon":  "wheat",
@@ -4480,7 +4450,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10156,
+        "id":  10155,
         "name":  "香辣猪脚（大份）",
         "category":  "其他",
         "icon":  "utensils",
@@ -4506,7 +4476,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10157,
+        "id":  10156,
         "name":  "南瓜",
         "category":  "其他",
         "icon":  "utensils",
@@ -4532,7 +4502,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10158,
+        "id":  10157,
         "name":  "红糖糍粑（5个）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -4559,7 +4529,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10159,
+        "id":  10158,
         "name":  "孜然肉排盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4584,7 +4554,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10160,
+        "id":  10159,
         "name":  "酸菜肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4610,7 +4580,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10161,
+        "id":  10160,
         "name":  "冬阴功土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -4635,7 +4605,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10162,
+        "id":  10161,
         "name":  "鲜椒油渣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -4661,7 +4631,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10163,
+        "id":  10162,
         "name":  "香辣小酥肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -4687,7 +4657,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10164,
+        "id":  10163,
         "name":  "奥尔良鸡丁套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4713,7 +4683,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10165,
+        "id":  10164,
         "name":  "切片窝笋头",
         "category":  "其他",
         "icon":  "utensils",
@@ -4738,7 +4708,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10166,
+        "id":  10165,
         "name":  "菌汤全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -4763,7 +4733,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10167,
+        "id":  10166,
         "name":  "纯素减脂餐（含米饭）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -4790,7 +4760,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10168,
+        "id":  10167,
         "name":  "梅菜扣肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -4816,7 +4786,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10169,
+        "id":  10168,
         "name":  "泡椒鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -4840,7 +4810,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10170,
+        "id":  10169,
         "name":  "香芋地瓜丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -4866,7 +4836,7 @@
         "rawGroup":  "单点(右侧邻屏)"
     },
     {
-        "id":  10171,
+        "id":  10170,
         "name":  "现包水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -4892,7 +4862,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10172,
+        "id":  10171,
         "name":  "青菜肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -4918,7 +4888,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  10173,
+        "id":  10172,
         "name":  "鸡杂酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -4945,7 +4915,7 @@
         "rawGroup":  "酸辣粉系列"
     },
     {
-        "id":  10174,
+        "id":  10173,
         "name":  "酸萝卜午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -4969,7 +4939,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10175,
+        "id":  10174,
         "name":  "卤蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -4993,7 +4963,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  10176,
+        "id":  10175,
         "name":  "翡翠烧椒干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -5019,7 +4989,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10177,
+        "id":  10176,
         "name":  "鲜虾煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5043,7 +5013,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  10178,
+        "id":  10177,
         "name":  "冬阴功酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -5067,7 +5037,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10179,
+        "id":  10178,
         "name":  "腊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5091,7 +5061,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  10180,
+        "id":  10179,
         "name":  "小馆混合炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -5115,7 +5085,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10181,
+        "id":  10180,
         "name":  "肉肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -5139,7 +5109,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  10182,
+        "id":  10181,
         "name":  "香菇牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5165,7 +5135,7 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10183,
+        "id":  10182,
         "name":  "豆鼓蒸肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5191,7 +5161,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10184,
+        "id":  10183,
         "name":  "麻辣肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5218,7 +5188,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10185,
+        "id":  10184,
         "name":  "香辣渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -5244,33 +5214,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10186,
-        "name":  "安格斯厚牛堡",
-        "category":  "烧烤",
-        "icon":  "flame",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-
-                    ],
-        "price":  17,
-        "cal":  650,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "菜单补录，约 650 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "0090汉堡工厂",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  10187,
+        "id":  10185,
         "name":  "老干妈火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5294,7 +5238,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10188,
+        "id":  10186,
         "name":  "油豆腐果",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5319,7 +5263,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10189,
+        "id":  10187,
         "name":  "小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5345,7 +5289,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10190,
+        "id":  10188,
         "name":  "三鲜小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5371,7 +5315,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10191,
+        "id":  10189,
         "name":  "海带结",
         "category":  "其他",
         "icon":  "utensils",
@@ -5397,7 +5341,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  10192,
+        "id":  10190,
         "name":  "回锅肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5423,7 +5367,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10193,
+        "id":  10191,
         "name":  "茄盒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5447,7 +5391,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  10194,
+        "id":  10192,
         "name":  "虎皮红烧肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -5471,7 +5415,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  10195,
+        "id":  10193,
         "name":  "千叶豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5496,7 +5440,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10196,
+        "id":  10194,
         "name":  "风味土豆牛肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5520,7 +5464,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  10197,
+        "id":  10195,
         "name":  "小麻花",
         "category":  "其他",
         "icon":  "utensils",
@@ -5545,7 +5489,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10198,
+        "id":  10196,
         "name":  "土豆烧牛肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5571,7 +5515,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10199,
+        "id":  10197,
         "name":  "黑椒肉柳盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5595,7 +5539,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10200,
+        "id":  10198,
         "name":  "青椒鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -5619,7 +5563,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10201,
+        "id":  10199,
         "name":  "金丝鸡排（藤椒味）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -5648,7 +5592,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10202,
+        "id":  10200,
         "name":  "风味撒尿牛丸2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5672,7 +5616,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10203,
+        "id":  10201,
         "name":  "现炒干锅麻辣鸭2人份",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -5699,7 +5643,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10204,
+        "id":  10202,
         "name":  "鱼香肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5723,7 +5667,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10205,
+        "id":  10203,
         "name":  "脆香鸭腿",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5749,7 +5693,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10206,
+        "id":  10204,
         "name":  "油泼面",
         "category":  "面食",
         "icon":  "wheat",
@@ -5775,7 +5719,7 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10207,
+        "id":  10205,
         "name":  "套餐一（香辣鸡腿堡1个+上校鸡块3个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5801,7 +5745,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10208,
+        "id":  10206,
         "name":  "卤香鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -5827,7 +5771,7 @@
         "rawGroup":  "现卤现捞"
     },
     {
-        "id":  10209,
+        "id":  10207,
         "name":  "特色油泼面",
         "category":  "面食",
         "icon":  "wheat",
@@ -5853,7 +5797,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10210,
+        "id":  10208,
         "name":  "荠菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -5879,7 +5823,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10211,
+        "id":  10209,
         "name":  "花菜蔬菜套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -5905,7 +5849,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10212,
+        "id":  10210,
         "name":  "素拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -5931,7 +5875,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10213,
+        "id":  10211,
         "name":  "木耳",
         "category":  "其他",
         "icon":  "utensils",
@@ -5957,7 +5901,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  10214,
+        "id":  10212,
         "name":  "经典牛肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -5983,7 +5927,7 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  10215,
+        "id":  10213,
         "name":  "严选套餐-2人世界双人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6009,7 +5953,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10216,
+        "id":  10214,
         "name":  "石锅鸡蛋金针菇",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -6033,7 +5977,7 @@
         "rawGroup":  "鸡蛋双拼系列"
     },
     {
-        "id":  10217,
+        "id":  10215,
         "name":  "脆皮鸡腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6057,7 +6001,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  10218,
+        "id":  10216,
         "name":  "双椒拌面/刀削河粉（配大骨汤）",
         "category":  "面食",
         "icon":  "wheat",
@@ -6082,7 +6026,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10219,
+        "id":  10217,
         "name":  "皮蛋大肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -6108,7 +6052,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10220,
+        "id":  10218,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6134,7 +6078,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10221,
+        "id":  10219,
         "name":  "鱼籽包2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6158,7 +6102,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10222,
+        "id":  10220,
         "name":  "手抓饼加里脊",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -6182,7 +6126,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  10223,
+        "id":  10221,
         "name":  "豌豆面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6210,7 +6154,7 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10224,
+        "id":  10222,
         "name":  "火腿鸡蛋炒面、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -6235,7 +6179,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10225,
+        "id":  10223,
         "name":  "维C鸡加泡椒鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6261,7 +6205,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10226,
+        "id":  10224,
         "name":  "小馆肉燥汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -6287,7 +6231,7 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  10227,
+        "id":  10225,
         "name":  "蒜苔肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6313,7 +6257,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10228,
+        "id":  10226,
         "name":  "豆干",
         "category":  "其他",
         "icon":  "utensils",
@@ -6338,7 +6282,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10229,
+        "id":  10227,
         "name":  "泡椒鸡杂盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -6364,7 +6308,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10230,
+        "id":  10228,
         "name":  "香辣鸡腿肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6388,7 +6332,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10231,
+        "id":  10229,
         "name":  "肥牛风味卷3卷",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6412,7 +6356,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10232,
+        "id":  10230,
         "name":  "奶汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -6438,7 +6382,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10233,
+        "id":  10231,
         "name":  "老干妈肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -6464,7 +6408,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10234,
+        "id":  10232,
         "name":  "黑椒肉柳烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -6490,7 +6434,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10235,
+        "id":  10233,
         "name":  "藤椒云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -6518,7 +6462,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10236,
+        "id":  10234,
         "name":  "火锅微辣",
         "category":  "其他",
         "icon":  "utensils",
@@ -6543,7 +6487,7 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  10237,
+        "id":  10235,
         "name":  "水煮肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6570,7 +6514,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10238,
+        "id":  10236,
         "name":  "肥肠铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6596,7 +6540,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10239,
+        "id":  10237,
         "name":  "小馆猪排汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6621,7 +6565,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10240,
+        "id":  10238,
         "name":  "藤椒鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -6648,7 +6592,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10241,
+        "id":  10239,
         "name":  "回锅肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6672,7 +6616,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10242,
+        "id":  10240,
         "name":  "剁椒牛肉酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6700,7 +6644,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10243,
+        "id":  10241,
         "name":  "招牌绝味软糯麻辣鸭翅（卤）3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6728,7 +6672,7 @@
         "rawGroup":  "卤味套餐饭"
     },
     {
-        "id":  10244,
+        "id":  10242,
         "name":  "韩式里脊拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -6754,7 +6698,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10245,
+        "id":  10243,
         "name":  "大肉云吞红油干拌（中份）",
         "category":  "面食",
         "icon":  "wheat",
@@ -6780,7 +6724,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10246,
+        "id":  10244,
         "name":  "泡椒铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6806,7 +6750,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10247,
+        "id":  10245,
         "name":  "泡椒牛肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6833,7 +6777,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10248,
+        "id":  10246,
         "name":  "泡椒猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -6857,7 +6801,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10249,
+        "id":  10247,
         "name":  "酸萝卜鸡丝米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -6883,7 +6827,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10250,
+        "id":  10248,
         "name":  "酸木瓜渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -6909,33 +6853,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10251,
-        "name":  "酥肉米线/面块",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-
-                    ],
-        "price":  14,
-        "cal":  600,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "“点菜”之选（另有：点菜14元/份），约 600 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "外公家米线",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "点菜"
-    },
-    {
-        "id":  10252,
+        "id":  10249,
         "name":  "黑椒肉柳炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -6959,7 +6877,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10253,
+        "id":  10250,
         "name":  "莲白肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -6983,7 +6901,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  10254,
+        "id":  10251,
         "name":  "亲亲肠2个",
         "category":  "其他",
         "icon":  "utensils",
@@ -7008,7 +6926,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10255,
+        "id":  10252,
         "name":  "蜜汁炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7034,7 +6952,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10256,
+        "id":  10253,
         "name":  "青菜鸡蛋甜肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7060,7 +6978,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10257,
+        "id":  10254,
         "name":  "老干妈蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7084,7 +7002,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10258,
+        "id":  10255,
         "name":  "贵州红酸汤鱼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7110,7 +7028,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10259,
+        "id":  10256,
         "name":  "脆香鸭大份",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7136,7 +7054,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10260,
+        "id":  10257,
         "name":  "香菇卤肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7164,7 +7082,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10261,
+        "id":  10258,
         "name":  "黑胡椒牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -7190,7 +7108,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10262,
+        "id":  10259,
         "name":  "招牌汉堡套餐一",
         "category":  "烧烤",
         "icon":  "flame",
@@ -7216,7 +7134,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10263,
+        "id":  10260,
         "name":  "藕片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7241,7 +7159,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10264,
+        "id":  10261,
         "name":  "鸭血米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -7267,7 +7185,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10265,
+        "id":  10262,
         "name":  "土豆片",
         "category":  "其他",
         "icon":  "utensils",
@@ -7293,7 +7211,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  10266,
+        "id":  10263,
         "name":  "红烧肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7319,7 +7237,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10267,
+        "id":  10264,
         "name":  "肉沫鸡哈豆花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7343,7 +7261,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10268,
+        "id":  10265,
         "name":  "葱爆牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7369,7 +7287,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10269,
+        "id":  10266,
         "name":  "香菇滑鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7395,7 +7313,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10270,
+        "id":  10267,
         "name":  "香酥年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -7419,7 +7337,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  10271,
+        "id":  10268,
         "name":  "土豆粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -7445,7 +7363,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10272,
+        "id":  10269,
         "name":  "严选套餐-2人世界双人套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -7469,7 +7387,7 @@
         "rawGroup":  "优质套餐"
     },
     {
-        "id":  10273,
+        "id":  10270,
         "name":  "火锅酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -7494,7 +7412,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10274,
+        "id":  10271,
         "name":  "外婆菜炒蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7520,7 +7438,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10275,
+        "id":  10272,
         "name":  "冒烤鸭火锅套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7546,7 +7464,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10276,
+        "id":  10273,
         "name":  "辣子鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7572,7 +7490,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10277,
+        "id":  10274,
         "name":  "泡椒鸡杂",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7598,7 +7516,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  10278,
+        "id":  10275,
         "name":  "热卤拌红油🥒麻辣鸡（一个鸡腿量）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7626,7 +7544,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10279,
+        "id":  10276,
         "name":  "蒸米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -7650,7 +7568,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  10280,
+        "id":  10277,
         "name":  "鸡脆骨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7674,7 +7592,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  10281,
+        "id":  10278,
         "name":  "雪花鸡柳小锅",
         "category":  "烧烤",
         "icon":  "flame",
@@ -7700,7 +7618,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10282,
+        "id":  10279,
         "name":  "咖喱鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7726,7 +7644,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10283,
+        "id":  10280,
         "name":  "爆炒郡肝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -7750,7 +7668,7 @@
         "rawGroup":  "现炒浇头面"
     },
     {
-        "id":  10284,
+        "id":  10281,
         "name":  "花菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7775,7 +7693,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10285,
+        "id":  10282,
         "name":  "地锅小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7801,7 +7719,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10286,
+        "id":  10283,
         "name":  "牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7827,7 +7745,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  10287,
+        "id":  10284,
         "name":  "海苔寿司",
         "category":  "其他",
         "icon":  "utensils",
@@ -7853,7 +7771,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10288,
+        "id":  10285,
         "name":  "现包鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -7879,7 +7797,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10289,
+        "id":  10286,
         "name":  "鱼排",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -7903,7 +7821,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  10290,
+        "id":  10287,
         "name":  "木耳鱼香肉丝拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7928,7 +7846,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10291,
+        "id":  10288,
         "name":  "香辣干锅鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -7953,7 +7871,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10292,
+        "id":  10289,
         "name":  "双人套餐十二（脆皮小鸡腿4个+洋葱鸡肉圈5个+锅巴土豆5块+无骨鸡块4块+薯条1份+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -7979,31 +7897,31 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  10293,
-        "name":  "把把签鱿鱼",
+        "id":  10290,
+        "name":  "鳕鱼蔬菜棒",
         "category":  "家常小炒",
         "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
         "flavors": [],
-        "price":  12,
+        "price":  3.5,
         "cal":  450,
         "tags":  [
-
+                     "性价比"
                  ],
-        "desc":  "“特色撸\n串荤”之选，约 450 kcal",
+        "desc":  "“关东煮\n”之选，约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "今喜炸串",
+        "stall":  "有家粥铺",
         "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/80695e5cb74446888ad47e6a685cec43.jpg",
-        "rawGroup":  "特色撸\n串荤"
+        "img":  "https://img.lcsw.cn/scan-order/foods/0a3bbd1d3c9a49999c78fc495777ba8f.jpg",
+        "rawGroup":  "关东煮\n"
     },
     {
-        "id":  10294,
+        "id":  10291,
         "name":  "酱香酥肉焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8029,7 +7947,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10295,
+        "id":  10292,
         "name":  "苕皮回锅肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8055,7 +7973,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10296,
+        "id":  10293,
         "name":  "豆干",
         "category":  "其他",
         "icon":  "utensils",
@@ -8080,7 +7998,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10297,
+        "id":  10294,
         "name":  "生菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8105,7 +8023,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10298,
+        "id":  10295,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8130,7 +8048,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  10299,
+        "id":  10296,
         "name":  "火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8154,7 +8072,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10300,
+        "id":  10297,
         "name":  "香辣地锅鸭（）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8180,7 +8098,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10301,
+        "id":  10298,
         "name":  "火锅大骨面",
         "category":  "面食",
         "icon":  "wheat",
@@ -8205,7 +8123,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10302,
+        "id":  10299,
         "name":  "藤椒土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -8233,7 +8151,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10303,
+        "id":  10300,
         "name":  "秘制炒饭加一荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8259,7 +8177,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10304,
+        "id":  10301,
         "name":  "海带苗",
         "category":  "其他",
         "icon":  "utensils",
@@ -8285,7 +8203,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10305,
+        "id":  10302,
         "name":  "去皮鸡腿排大满配",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8311,7 +8229,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10306,
+        "id":  10303,
         "name":  "私家种植的冬瓜",
         "category":  "其他",
         "icon":  "utensils",
@@ -8337,7 +8255,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10307,
+        "id":  10304,
         "name":  "番茄丸子面，河粉，刀肖",
         "category":  "面食",
         "icon":  "wheat",
@@ -8364,7 +8282,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10308,
+        "id":  10305,
         "name":  "酱香鸡翅尖（吃了跑不脱）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8388,7 +8306,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10309,
+        "id":  10306,
         "name":  "石锅鸡蛋焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -8414,7 +8332,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10310,
+        "id":  10307,
         "name":  "西红柿炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8438,7 +8356,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10311,
+        "id":  10308,
         "name":  "鱼香肉沫茄子拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8464,7 +8382,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10312,
+        "id":  10309,
         "name":  "椰奶西米露",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -8489,7 +8407,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10313,
+        "id":  10310,
         "name":  "石锅鸡蛋焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -8513,7 +8431,7 @@
         "rawGroup":  "鸡蛋双拼系列"
     },
     {
-        "id":  10314,
+        "id":  10311,
         "name":  "鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8537,7 +8455,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  10315,
+        "id":  10312,
         "name":  "小炒肉炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -8561,7 +8479,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  10316,
+        "id":  10313,
         "name":  "蛋炒面、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -8587,7 +8505,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10317,
+        "id":  10314,
         "name":  "霞迷饺2个",
         "category":  "其他",
         "icon":  "utensils",
@@ -8612,7 +8530,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10318,
+        "id":  10315,
         "name":  "石锅豆腐",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8639,7 +8557,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10319,
+        "id":  10316,
         "name":  "清汤云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -8666,7 +8584,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10320,
+        "id":  10317,
         "name":  "蟹味棒3根",
         "category":  "其他",
         "icon":  "utensils",
@@ -8691,7 +8609,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10321,
+        "id":  10318,
         "name":  "火锅宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -8716,7 +8634,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10322,
+        "id":  10319,
         "name":  "香菇滑鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8742,33 +8660,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10323,
-        "name":  "土豆牛肉盖浇面/饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-
-                    ],
-        "price":  14,
-        "cal":  700,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "“盖浇面/饭”之选（另有：盖浇面/饭14元），约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "兰州拉面",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "盖浇面/饭"
-    },
-    {
-        "id":  10324,
+        "id":  10320,
         "name":  "酱香土豆鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -8794,7 +8686,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10325,
+        "id":  10321,
         "name":  "尖椒鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8818,7 +8710,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10326,
+        "id":  10322,
         "name":  "芝士年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -8842,7 +8734,7 @@
         "rawGroup":  "新品"
     },
     {
-        "id":  10327,
+        "id":  10323,
         "name":  "五花肉片串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8866,7 +8758,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  10328,
+        "id":  10324,
         "name":  "杂酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -8892,7 +8784,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10329,
+        "id":  10325,
         "name":  "爆炒尖椒仔鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8918,7 +8810,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10330,
+        "id":  10326,
         "name":  "双拼—白菜+韭菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8944,7 +8836,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10331,
+        "id":  10327,
         "name":  "青椒肉丝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8968,7 +8860,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10332,
+        "id":  10328,
         "name":  "韭菜炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -8992,7 +8884,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10333,
+        "id":  10329,
         "name":  "肉沫土豆",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9018,7 +8910,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  10334,
+        "id":  10330,
         "name":  "鸡柳饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -9042,7 +8934,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10335,
+        "id":  10331,
         "name":  "姜鸭拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9068,7 +8960,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10336,
+        "id":  10332,
         "name":  "宫保鸡丁小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9092,7 +8984,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10337,
+        "id":  10333,
         "name":  "意式番茄肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9120,7 +9012,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10338,
+        "id":  10334,
         "name":  "孜香鸡排套餐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -9146,7 +9038,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10339,
+        "id":  10335,
         "name":  "糊辣壳云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -9173,7 +9065,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10340,
+        "id":  10336,
         "name":  "生爆盐煎肉+肉沫茄子+素菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9199,7 +9091,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10341,
+        "id":  10337,
         "name":  "藤椒油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -9226,7 +9118,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10342,
+        "id":  10338,
         "name":  "泡椒地锅鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9252,7 +9144,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10343,
+        "id":  10339,
         "name":  "碗杂铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9278,7 +9170,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10344,
+        "id":  10340,
         "name":  "肝腰合炒盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -9303,7 +9195,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10345,
+        "id":  10341,
         "name":  "木耳肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9327,7 +9219,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10346,
+        "id":  10342,
         "name":  "贵妃荔枝鸡+椒麻鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -9354,7 +9246,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10347,
+        "id":  10343,
         "name":  "★油碟 包含小米辣 耗油 蒜泥 香油",
         "category":  "其他",
         "icon":  "utensils",
@@ -9379,7 +9271,7 @@
         "rawGroup":  "米饭调料"
     },
     {
-        "id":  10348,
+        "id":  10344,
         "name":  "火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -9405,7 +9297,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10349,
+        "id":  10345,
         "name":  "骨肉相连",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9429,7 +9321,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  10350,
+        "id":  10346,
         "name":  "香拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -9455,7 +9347,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10351,
+        "id":  10347,
         "name":  "冬阴功火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -9479,7 +9371,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10352,
+        "id":  10348,
         "name":  "虾饺",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9503,7 +9395,32 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  10353,
+        "id":  10349,
+        "name":  "酸萝卜金针菇面块/米线",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors": [],
+        "price":  10,
+        "cal":  600,
+        "tags":  [
+                     "素食友好",
+                     "管饱"
+                 ],
+        "desc":  "“🥕酸萝卜🥕”之选，约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
+        "portion":  "regular",
+        "stall":  "外公家米线",
+        "canteen":  "汇百味餐厅",
+        "img":  "http://img-lib.saobei.cn/8731ae0c719b46c0a65ba16c3e1dad1b.jpg",
+        "rawGroup":  "🥕酸萝卜🥕"
+    },
+    {
+        "id":  10350,
         "name":  "自选健康餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9529,7 +9446,7 @@
         "rawGroup":  "自选健康餐"
     },
     {
-        "id":  10354,
+        "id":  10351,
         "name":  "蜜汁手扒鸡一只",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9555,7 +9472,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10355,
+        "id":  10352,
         "name":  "玫瑰豉油鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -9581,7 +9498,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10356,
+        "id":  10353,
         "name":  "藿香糯米鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9606,7 +9523,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10357,
+        "id":  10354,
         "name":  "干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9633,7 +9550,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  10358,
+        "id":  10355,
         "name":  "猪肚面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9659,7 +9576,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10359,
+        "id":  10356,
         "name":  "招牌浓酱鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -9685,7 +9602,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10360,
+        "id":  10357,
         "name":  "香辣鸡腿堡+香辣鸡肉卷+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -9711,7 +9628,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10361,
+        "id":  10358,
         "name":  "奥尔良鸡胸煎蛋三明治",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -9737,7 +9654,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10362,
+        "id":  10359,
         "name":  "麻辣鸡皮",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9764,7 +9681,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10363,
+        "id":  10360,
         "name":  "冬阴功鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -9788,7 +9705,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10364,
+        "id":  10361,
         "name":  "爆炒小炒肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9812,7 +9729,7 @@
         "rawGroup":  "现炒浇头面"
     },
     {
-        "id":  10365,
+        "id":  10362,
         "name":  "黑椒鸡柳拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9836,7 +9753,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10366,
+        "id":  10363,
         "name":  "火腿鸡蛋炒河粉、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -9862,7 +9779,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10367,
+        "id":  10364,
         "name":  "叉烧+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9888,7 +9805,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10368,
+        "id":  10365,
         "name":  "糊辣壳抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -9914,7 +9831,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10369,
+        "id":  10366,
         "name":  "软皮牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -9940,7 +9857,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10370,
+        "id":  10367,
         "name":  "酸汤肥牛面",
         "category":  "面食",
         "icon":  "wheat",
@@ -9966,7 +9883,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10371,
+        "id":  10368,
         "name":  "二荤一素",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -9992,7 +9909,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10372,
+        "id":  10369,
         "name":  "肉夹馍",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10018,7 +9935,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10373,
+        "id":  10370,
         "name":  "台湾卤肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -10042,7 +9959,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  10374,
+        "id":  10371,
         "name":  "葱爆牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -10068,7 +9985,7 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10375,
+        "id":  10372,
         "name":  "干锅鱼块（香酥小黄鱼）好吃",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -10094,7 +10011,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10376,
+        "id":  10373,
         "name":  "酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10122,7 +10039,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10377,
+        "id":  10374,
         "name":  "西红柿",
         "category":  "其他",
         "icon":  "utensils",
@@ -10148,7 +10065,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  10378,
+        "id":  10375,
         "name":  "大肉云吞藤椒干拌（中份）",
         "category":  "面食",
         "icon":  "wheat",
@@ -10175,7 +10092,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10379,
+        "id":  10376,
         "name":  "泡椒肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -10199,7 +10116,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10380,
+        "id":  10377,
         "name":  "石锅鸡柳",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -10225,7 +10142,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10381,
+        "id":  10378,
         "name":  "牛肉煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10249,7 +10166,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  10382,
+        "id":  10379,
         "name":  "招牌酱香拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -10275,7 +10192,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10383,
+        "id":  10380,
         "name":  "薯条三拼",
         "category":  "烧烤",
         "icon":  "flame",
@@ -10301,7 +10218,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10384,
+        "id":  10381,
         "name":  "鸡柳套餐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -10326,7 +10243,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10385,
+        "id":  10382,
         "name":  "南瓜粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -10352,31 +10269,33 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10386,
-        "name":  "香辣猪肝面块/米线",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  10383,
+        "name":  "花生汤圆",
+        "category":  "甜品饮品",
+        "icon":  "cup",
         "taste":  [
-                      "微辣"
+                      "甜"
                   ],
-        "flavors": ["辣"],
-        "price":  13,
-        "cal":  600,
+        "flavors": ["甜"],
+        "price":  8,
+        "cal":  350,
         "tags":  [
-                     "管饱"
+                     "性价比",
+                     "折扣",
+                     "低卡"
                  ],
-        "desc":  "“🌶香辣🌶”之选，约 600 kcal",
+        "desc":  "“🔥美味汤圆🔥”之选，约 350 kcal",
         "veg":  false,
-        "spicy":  1,
+        "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "外公家米线",
-        "canteen":  "汇百味餐厅",
-        "img":  "http://img-lib.saobei.cn/8714cc8d0829445e951ecf4e7cbaffe1.jpg",
-        "rawGroup":  "🌶香辣🌶"
+        "stall":  "惠芯意鲜抄手饺子",
+        "canteen":  "北山苑餐厅",
+        "img":  "https://img.lcsw.cn/scan-order/foods/9e5a436590334fc3a4df3b631209063c.jpg",
+        "rawGroup":  "🔥美味汤圆🔥"
     },
     {
-        "id":  10387,
+        "id":  10384,
         "name":  "红油抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -10402,7 +10321,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10388,
+        "id":  10385,
         "name":  "热干面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10428,7 +10347,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10389,
+        "id":  10386,
         "name":  "烟熏培根风味厚牛堡+鸡米花+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -10454,7 +10373,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10390,
+        "id":  10387,
         "name":  "鸡公煲单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10480,7 +10399,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10391,
+        "id":  10388,
         "name":  "小馆肉燥酸菜面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10505,7 +10424,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10392,
+        "id":  10389,
         "name":  "鲜肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10530,7 +10449,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10393,
+        "id":  10390,
         "name":  "番茄鸡蛋拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -10555,7 +10474,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  10394,
+        "id":  10391,
         "name":  "肉沫焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -10581,7 +10500,7 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10395,
+        "id":  10392,
         "name":  "干锅里脊",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -10607,7 +10526,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10396,
+        "id":  10393,
         "name":  "豌杂拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -10633,7 +10552,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10397,
+        "id":  10394,
         "name":  "乱劈才蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -10659,7 +10578,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10398,
+        "id":  10395,
         "name":  "荤豆花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10683,7 +10602,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10399,
+        "id":  10396,
         "name":  "麻辣鱼",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -10710,7 +10629,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  10400,
+        "id":  10397,
         "name":  "鸭翅/1个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10734,7 +10653,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10401,
+        "id":  10398,
         "name":  "素食减脂套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10760,7 +10679,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10402,
+        "id":  10399,
         "name":  "特色鸡肉炒石榴花粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10786,7 +10705,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10403,
+        "id":  10400,
         "name":  "石锅焖面+鱼丸",
         "category":  "面食",
         "icon":  "wheat",
@@ -10812,7 +10731,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10404,
+        "id":  10401,
         "name":  "辣子鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10836,7 +10755,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  10405,
+        "id":  10402,
         "name":  "海味馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -10863,7 +10782,7 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10406,
+        "id":  10403,
         "name":  "火腿肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -10887,7 +10806,7 @@
         "rawGroup":  "石锅饭加菜区"
     },
     {
-        "id":  10407,
+        "id":  10404,
         "name":  "香菇卤肉拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10913,7 +10832,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10408,
+        "id":  10405,
         "name":  "麻辣小龙虾酱拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10941,7 +10860,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  10409,
+        "id":  10406,
         "name":  "青椒鸡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -10967,7 +10886,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10410,
+        "id":  10407,
         "name":  "小馆酸豆角拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -10994,7 +10913,7 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  10411,
+        "id":  10408,
         "name":  "火锅鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -11018,7 +10937,32 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10412,
+        "id":  10409,
+        "name":  "旋风鸡排拌饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors": [],
+        "price":  13,
+        "cal":  700,
+        "tags":  [
+                     "人气",
+                     "管饱"
+                 ],
+        "desc":  "现炸鸡排 肉感十足 口感劲道 咔吱脆搭配酱汁更美味哦，约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "沈大爷拌饭拌面拌粉",
+        "canteen":  "汇百味餐厅",
+        "img":  "https://img.lcsw.cn/scan-order/foods/ac59b04ef7904aa3b0cb975271a7ffdf.jpg",
+        "rawGroup":  "推荐"
+    },
+    {
+        "id":  10410,
         "name":  "五香卤蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11044,7 +10988,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10413,
+        "id":  10411,
         "name":  "红油干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -11070,7 +11014,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10414,
+        "id":  10412,
         "name":  "排骨煲单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11094,7 +11038,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10415,
+        "id":  10413,
         "name":  "白水蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11120,7 +11064,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10416,
+        "id":  10414,
         "name":  "双椒鸡+锅包肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11146,7 +11090,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10417,
+        "id":  10415,
         "name":  "火锅炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -11170,7 +11114,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10418,
+        "id":  10416,
         "name":  "麻辣烫/麻辣拌",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -11198,7 +11142,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10419,
+        "id":  10417,
         "name":  "孜香蜜汁鸡排套餐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -11224,7 +11168,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10420,
+        "id":  10418,
         "name":  "蜜汁手扒鸡一只",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11248,7 +11192,7 @@
         "rawGroup":  "脆皮炸鸡"
     },
     {
-        "id":  10421,
+        "id":  10419,
         "name":  "土豆肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11272,33 +11216,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10422,
-        "name":  "虎皮红烧肉",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-                        "咸鲜"
-                    ],
-        "price":  15,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "菜单补录，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "沈大爷",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  10423,
+        "id":  10420,
         "name":  "泡椒肉丝拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -11322,7 +11240,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  10424,
+        "id":  10421,
         "name":  "番茄炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11349,7 +11267,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10425,
+        "id":  10422,
         "name":  "脆皮炸鸡一只",
         "category":  "烧烤",
         "icon":  "flame",
@@ -11375,7 +11293,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10426,
+        "id":  10423,
         "name":  "椒麻鸡+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11402,7 +11320,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10427,
+        "id":  10424,
         "name":  "鱼香肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -11426,7 +11344,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10428,
+        "id":  10425,
         "name":  "冬阴功鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -11450,7 +11368,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10429,
+        "id":  10426,
         "name":  "肉片焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -11476,7 +11394,7 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  10430,
+        "id":  10427,
         "name":  "莴笋肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -11501,7 +11419,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10431,
+        "id":  10428,
         "name":  "尖椒鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -11527,7 +11445,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10432,
+        "id":  10429,
         "name":  "小馆清汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -11554,7 +11472,7 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  10433,
+        "id":  10430,
         "name":  "石锅焖面+双椒鸡丁",
         "category":  "面食",
         "icon":  "wheat",
@@ -11580,7 +11498,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10434,
+        "id":  10431,
         "name":  "小馆肉燥酸菜拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -11606,7 +11524,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10435,
+        "id":  10432,
         "name":  "杂酱拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -11632,7 +11550,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10436,
+        "id":  10433,
         "name":  "烤鸭拼里脊",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11658,7 +11576,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10437,
+        "id":  10434,
         "name":  "蔬菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11683,7 +11601,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  10438,
+        "id":  10435,
         "name":  "酸萝卜鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -11707,7 +11625,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10439,
+        "id":  10436,
         "name":  "火锅花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -11731,7 +11649,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10440,
+        "id":  10437,
         "name":  "香辣鸡腿堡＋椒麻鸡米花＋可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -11758,7 +11676,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10441,
+        "id":  10438,
         "name":  "番茄鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -11782,7 +11700,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10442,
+        "id":  10439,
         "name":  "午餐肉+煎蛋🍳",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -11806,7 +11724,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10443,
+        "id":  10440,
         "name":  "烧白面",
         "category":  "面食",
         "icon":  "wheat",
@@ -11831,7 +11749,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10444,
+        "id":  10441,
         "name":  "鸡蛋新疆炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -11857,7 +11775,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10445,
+        "id":  10442,
         "name":  "青椒肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -11881,7 +11799,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  10446,
+        "id":  10443,
         "name":  "小馆特色卤肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -11907,7 +11825,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10447,
+        "id":  10444,
         "name":  "一荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -11934,7 +11852,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10448,
+        "id":  10445,
         "name":  "香酥鸭+绝味鸭套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -11960,7 +11878,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10449,
+        "id":  10446,
         "name":  "鸡汤云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -11986,7 +11904,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10450,
+        "id":  10447,
         "name":  "酸菜猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -12010,7 +11928,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10451,
+        "id":  10448,
         "name":  "姜鸭拌面刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -12036,7 +11954,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10452,
+        "id":  10449,
         "name":  "狮子头",
         "category":  "其他",
         "icon":  "utensils",
@@ -12061,7 +11979,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  10453,
+        "id":  10450,
         "name":  "干锅千叶豆腐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -12087,7 +12005,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10454,
+        "id":  10451,
         "name":  "碗碗羊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12111,7 +12029,7 @@
         "rawGroup":  "碗碗羊肉"
     },
     {
-        "id":  10455,
+        "id":  10452,
         "name":  "绿豆粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -12139,7 +12057,7 @@
         "rawGroup":  "凉面系列"
     },
     {
-        "id":  10456,
+        "id":  10453,
         "name":  "小馆肉燥酸豆角汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -12165,7 +12083,7 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  10457,
+        "id":  10454,
         "name":  "青椒鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12190,7 +12108,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10458,
+        "id":  10455,
         "name":  "椒麻鸡+绝味鸭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12217,7 +12135,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10459,
+        "id":  10456,
         "name":  "红烧牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12243,7 +12161,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10460,
+        "id":  10457,
         "name":  "土豆肉丝炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -12267,7 +12185,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  10461,
+        "id":  10458,
         "name":  "西兰花🥦",
         "category":  "其他",
         "icon":  "utensils",
@@ -12293,7 +12211,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10462,
+        "id":  10459,
         "name":  "肉沫火腿肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12319,7 +12237,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10463,
+        "id":  10460,
         "name":  "土豆肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12343,7 +12261,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10464,
+        "id":  10461,
         "name":  "小馆酸菜汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -12369,7 +12287,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10465,
+        "id":  10462,
         "name":  "双椒鸡+小炒肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12395,31 +12313,32 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10466,
-        "name":  "秘制拌粉",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  10463,
+        "name":  "腊肠鸡蛋炒饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
                       "咸香"
                   ],
         "flavors": [],
-        "price":  9,
-        "cal":  600,
+        "price":  10,
+        "cal":  700,
         "tags":  [
+                     "人气",
                      "管饱"
                  ],
-        "desc":  "“沈大爷拌粉系列”之选，约 600 kcal",
+        "desc":  "“推荐”之选，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "沈大爷拌饭拌面拌粉",
+        "stall":  "今喜炸串",
         "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/233028a4d8be43a9b3bf1bb262f010e8.jpg",
-        "rawGroup":  "沈大爷拌粉系列"
+        "img":  "https://img.lcsw.cn/scan-order/foods/a29306328e584a58b88f079f2d4c4128.jpg",
+        "rawGroup":  "推荐"
     },
     {
-        "id":  10467,
+        "id":  10464,
         "name":  "黑芝麻拼花生汤圆",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -12446,7 +12365,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10468,
+        "id":  10465,
         "name":  "二荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12472,7 +12391,7 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  10469,
+        "id":  10466,
         "name":  "原味烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12498,7 +12417,7 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10470,
+        "id":  10467,
         "name":  "烤无骨鸡扒盖码饭（鸡腿不辣）",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12524,7 +12443,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10471,
+        "id":  10468,
         "name":  "招牌鸡肉新疆炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -12548,7 +12467,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  10472,
+        "id":  10469,
         "name":  "五香鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12572,7 +12491,7 @@
         "rawGroup":  "卤味套餐饭"
     },
     {
-        "id":  10473,
+        "id":  10470,
         "name":  "牛肉拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -12598,7 +12517,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10474,
+        "id":  10471,
         "name":  "芝士热狗棒",
         "category":  "其他",
         "icon":  "utensils",
@@ -12624,7 +12543,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  10475,
+        "id":  10472,
         "name":  "小酥肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -12650,7 +12569,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10476,
+        "id":  10473,
         "name":  "蹄花面",
         "category":  "面食",
         "icon":  "wheat",
@@ -12676,7 +12595,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10477,
+        "id":  10474,
         "name":  "鸡蛋火腿烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12702,7 +12621,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10478,
+        "id":  10475,
         "name":  "二荤",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12728,7 +12647,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10479,
+        "id":  10476,
         "name":  "黄金全鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12754,7 +12673,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10480,
+        "id":  10477,
         "name":  "牛肉炒刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -12778,7 +12697,7 @@
         "rawGroup":  "炒面类"
     },
     {
-        "id":  10481,
+        "id":  10478,
         "name":  "酸汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -12805,7 +12724,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10482,
+        "id":  10479,
         "name":  "一荤两素",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12831,7 +12750,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10483,
+        "id":  10480,
         "name":  "香辣肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -12855,7 +12774,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  10484,
+        "id":  10481,
         "name":  "石锅鸡蛋茄子",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -12881,7 +12800,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10485,
+        "id":  10482,
         "name":  "全家福/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -12907,7 +12826,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10486,
+        "id":  10483,
         "name":  "双拼米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -12933,7 +12852,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10487,
+        "id":  10484,
         "name":  "酸辣金汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -12960,7 +12879,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10488,
+        "id":  10485,
         "name":  "鸡公煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -12984,7 +12903,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  10489,
+        "id":  10486,
         "name":  "本帮咸水鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13010,7 +12929,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10490,
+        "id":  10487,
         "name":  "麻辣肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13037,7 +12956,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10491,
+        "id":  10488,
         "name":  "麻将鸡丝拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -13061,7 +12980,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10492,
+        "id":  10489,
         "name":  "火腿鸡蛋炒河粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -13087,7 +13006,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10493,
+        "id":  10490,
         "name":  "金汤肥牛渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -13113,7 +13032,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10494,
+        "id":  10491,
         "name":  "酸菜地锅鲜肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13139,7 +13058,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10495,
+        "id":  10492,
         "name":  "鱿鱼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13163,7 +13082,7 @@
         "rawGroup":  "8元区"
     },
     {
-        "id":  10496,
+        "id":  10493,
         "name":  "紫米粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -13189,7 +13108,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10497,
+        "id":  10494,
         "name":  "豌豆拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -13215,7 +13134,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  10498,
+        "id":  10495,
         "name":  "鲜肉炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -13241,7 +13160,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10499,
+        "id":  10496,
         "name":  "干锅狼牙土豆",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -13268,7 +13187,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10500,
+        "id":  10497,
         "name":  "干锅虾",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -13294,7 +13213,7 @@
         "rawGroup":  "招牌"
     },
     {
-        "id":  10501,
+        "id":  10498,
         "name":  "清汤鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -13318,7 +13237,7 @@
         "rawGroup":  "🔥🔥现包鲜肉云吞🔥🔥"
     },
     {
-        "id":  10502,
+        "id":  10499,
         "name":  "洋葱",
         "category":  "其他",
         "icon":  "utensils",
@@ -13343,7 +13262,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  10503,
+        "id":  10500,
         "name":  "火鸡面套餐三",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13367,7 +13286,7 @@
         "rawGroup":  "火鸡面系列"
     },
     {
-        "id":  10504,
+        "id":  10501,
         "name":  "排骨煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13391,7 +13310,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  10505,
+        "id":  10502,
         "name":  "照烧鸡肉饭（招牌）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13417,7 +13336,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  10506,
+        "id":  10503,
         "name":  "椰子鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13443,7 +13362,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10507,
+        "id":  10504,
         "name":  "招牌汉堡套餐九",
         "category":  "其他",
         "icon":  "utensils",
@@ -13467,7 +13386,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  10508,
+        "id":  10505,
         "name":  "无骨鸡柳",
         "category":  "烧烤",
         "icon":  "flame",
@@ -13492,7 +13411,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  10509,
+        "id":  10506,
         "name":  "金汤酸菜鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -13518,7 +13437,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10510,
+        "id":  10507,
         "name":  "手抓饼加培根",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -13542,7 +13461,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  10511,
+        "id":  10508,
         "name":  "维C鸡加椒麻鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13569,7 +13488,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10512,
+        "id":  10509,
         "name":  "乱劈才炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13595,7 +13514,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10513,
+        "id":  10510,
         "name":  "青椒鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13619,7 +13538,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10514,
+        "id":  10511,
         "name":  "蛋炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -13645,7 +13564,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10515,
+        "id":  10512,
         "name":  "卤肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13671,7 +13590,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10516,
+        "id":  10513,
         "name":  "虫草花",
         "category":  "其他",
         "icon":  "utensils",
@@ -13696,7 +13615,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10517,
+        "id":  10514,
         "name":  "土豆肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13722,7 +13641,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10518,
+        "id":  10515,
         "name":  "本帮酱鸭饭咸水鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -13748,7 +13667,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10519,
+        "id":  10516,
         "name":  "肉肠面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -13773,7 +13692,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10520,
+        "id":  10517,
         "name":  "鸡蛋灌饼(生菜、鸡蛋)",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13799,7 +13718,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10521,
+        "id":  10518,
         "name":  "剁椒干拌米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -13826,7 +13745,7 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10522,
+        "id":  10519,
         "name":  "虾仁大肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -13852,7 +13771,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10523,
+        "id":  10520,
         "name":  "辣子鸡",
         "category":  "面食",
         "icon":  "wheat",
@@ -13878,7 +13797,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  10524,
+        "id":  10521,
         "name":  "大漠鸡排拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -13902,7 +13821,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  10525,
+        "id":  10522,
         "name":  "五荤五素＋面饼无米饭",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -13928,7 +13847,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10526,
+        "id":  10523,
         "name":  "紫薯丸子3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -13952,7 +13871,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  10527,
+        "id":  10524,
         "name":  "干拌泡椒肉丝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -13978,7 +13897,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  10528,
+        "id":  10525,
         "name":  "苕皮肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14004,7 +13923,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10529,
+        "id":  10526,
         "name":  "猪肝肠粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -14029,7 +13948,7 @@
         "rawGroup":  "折扣"
     },
     {
-        "id":  10530,
+        "id":  10527,
         "name":  "芋头粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -14054,7 +13973,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10531,
+        "id":  10528,
         "name":  "麻辣烫日式乌冬面",
         "category":  "面食",
         "icon":  "wheat",
@@ -14081,7 +14000,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10532,
+        "id":  10529,
         "name":  "百事可乐鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14107,7 +14026,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  10533,
+        "id":  10530,
         "name":  "爆炒五花肉丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14131,7 +14050,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10534,
+        "id":  10531,
         "name":  "豌杂汤面/河粉/刀削（",
         "category":  "面食",
         "icon":  "wheat",
@@ -14157,7 +14076,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10535,
+        "id":  10532,
         "name":  "鸡腿单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14183,7 +14102,7 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  10536,
+        "id":  10533,
         "name":  "西红柿拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -14210,7 +14129,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10537,
+        "id":  10534,
         "name":  "劲爆鸡米花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14234,7 +14153,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  10538,
+        "id":  10535,
         "name":  "烧白",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14258,7 +14177,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  10539,
+        "id":  10536,
         "name":  "韩式套餐二",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14284,7 +14203,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10540,
+        "id":  10537,
         "name":  "蜜汁叉烧饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14311,7 +14230,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10541,
+        "id":  10538,
         "name":  "黄焖土豆鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14337,7 +14256,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10542,
+        "id":  10539,
         "name":  "蟹排芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -14363,7 +14282,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  10543,
+        "id":  10540,
         "name":  "黄焖香菇鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14389,7 +14308,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10544,
+        "id":  10541,
         "name":  "烧麦",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -14414,7 +14333,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10545,
+        "id":  10542,
         "name":  "火焰辣子鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14440,7 +14359,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  10546,
+        "id":  10543,
         "name":  "香菇肉蒸饺",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14465,7 +14384,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10547,
+        "id":  10544,
         "name":  "新派口水鸡饭猪脚饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14491,7 +14410,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10548,
+        "id":  10545,
         "name":  "黄金半鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14517,15 +14436,16 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10549,
-        "name":  "泡椒肉丝盖饭",
+        "id":  10546,
+        "name":  "番茄炒蛋盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
         "taste":  [
-                      "咸香"
+                      "清淡"
                   ],
         "flavors":  [
-
+                        "酸甜",
+                        "清淡"
                     ],
         "price":  14,
         "cal":  700,
@@ -14537,13 +14457,13 @@
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "公社食堂小炒",
+        "stall":  "兰州拉面",
         "canteen":  "北山苑餐厅",
         "img":  "",
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10550,
+        "id":  10547,
         "name":  "凉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -14570,7 +14490,7 @@
         "rawGroup":  "凉面凉皮"
     },
     {
-        "id":  10551,
+        "id":  10548,
         "name":  "茴香猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -14596,7 +14516,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10552,
+        "id":  10549,
         "name":  "红油猪头肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14622,7 +14542,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  10553,
+        "id":  10550,
         "name":  "辣子鸡/面/刀削/河粉（",
         "category":  "面食",
         "icon":  "wheat",
@@ -14648,7 +14568,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10554,
+        "id":  10551,
         "name":  "藤椒馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -14676,7 +14596,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10555,
+        "id":  10552,
         "name":  "椒麻鸡+叉烧套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14704,7 +14624,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10556,
+        "id":  10553,
         "name":  "里脊饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -14730,7 +14650,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10557,
+        "id":  10554,
         "name":  "上校鸡块",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14754,7 +14674,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  10558,
+        "id":  10555,
         "name":  "番茄鸡蛋拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14781,7 +14701,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10559,
+        "id":  10556,
         "name":  "两荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14807,7 +14727,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10560,
+        "id":  10557,
         "name":  "豪华肥牛双人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14831,7 +14751,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10561,
+        "id":  10558,
         "name":  "凤爪煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14855,7 +14775,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  10562,
+        "id":  10559,
         "name":  "番茄丸子面",
         "category":  "面食",
         "icon":  "wheat",
@@ -14882,7 +14802,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  10563,
+        "id":  10560,
         "name":  "红烧肥肠（5个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14906,7 +14826,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  10564,
+        "id":  10561,
         "name":  "孜然麻辣鸭盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -14933,7 +14853,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10565,
+        "id":  10562,
         "name":  "麻辣烫素菜面",
         "category":  "面食",
         "icon":  "wheat",
@@ -14964,7 +14884,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10566,
+        "id":  10563,
         "name":  "酱香绝味大大大鸭腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -14989,7 +14909,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10567,
+        "id":  10564,
         "name":  "小馆招牌炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15013,7 +14933,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10568,
+        "id":  10565,
         "name":  "小白菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15038,7 +14958,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10569,
+        "id":  10566,
         "name":  "三荤",
         "category":  "其他",
         "icon":  "utensils",
@@ -15063,7 +14983,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10570,
+        "id":  10567,
         "name":  "冬阴功肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15087,7 +15007,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10571,
+        "id":  10568,
         "name":  "龙虾丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15111,7 +15031,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  10572,
+        "id":  10569,
         "name":  "石锅肉沫茄子",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -15137,7 +15057,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10573,
+        "id":  10570,
         "name":  "新品-酸辣金汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -15161,7 +15081,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  10574,
+        "id":  10571,
         "name":  "菌汤午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15185,7 +15105,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10575,
+        "id":  10572,
         "name":  "肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15209,7 +15129,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  10576,
+        "id":  10573,
         "name":  "三鲜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -15235,7 +15155,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10577,
+        "id":  10574,
         "name":  "香菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15260,7 +15180,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10578,
+        "id":  10575,
         "name":  "鸡汤鱼丸米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15286,7 +15206,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10579,
+        "id":  10576,
         "name":  "肉肠饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -15310,7 +15230,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10580,
+        "id":  10577,
         "name":  "回锅肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -15334,7 +15254,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10581,
+        "id":  10578,
         "name":  "火腿鸡蛋炒河粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -15359,7 +15279,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10582,
+        "id":  10579,
         "name":  "香菇牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15383,7 +15303,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  10583,
+        "id":  10580,
         "name":  "香菇冬瓜乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -15409,7 +15329,7 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  10584,
+        "id":  10581,
         "name":  "酸萝卜肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15433,7 +15353,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10585,
+        "id":  10582,
         "name":  "海味馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -15460,7 +15380,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10586,
+        "id":  10583,
         "name":  "鱼香肉丝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15484,7 +15404,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10587,
+        "id":  10584,
         "name":  "五星鸡块2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15508,7 +15428,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10588,
+        "id":  10585,
         "name":  "鱼香肉丝拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15534,7 +15454,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10589,
+        "id":  10586,
         "name":  "澳门烧肉/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15560,7 +15480,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10590,
+        "id":  10587,
         "name":  "锅巴土豆+小酥肉+年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -15586,7 +15506,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10591,
+        "id":  10588,
         "name":  "脆香鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -15612,7 +15532,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10592,
+        "id":  10589,
         "name":  "椒香鸭胸拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15636,7 +15556,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  10593,
+        "id":  10590,
         "name":  "酸萝卜油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15661,7 +15581,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10594,
+        "id":  10591,
         "name":  "芝士火鸡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15686,7 +15606,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10595,
+        "id":  10592,
         "name":  "炸鸡腿",
         "category":  "烧烤",
         "icon":  "flame",
@@ -15711,7 +15631,7 @@
         "rawGroup":  "特色小吃"
     },
     {
-        "id":  10596,
+        "id":  10593,
         "name":  "冬阴功炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15735,7 +15655,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  10597,
+        "id":  10594,
         "name":  "酸豆角肉沫拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15761,7 +15681,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10598,
+        "id":  10595,
         "name":  "小馆肉燥酸菜面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -15787,7 +15707,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10599,
+        "id":  10596,
         "name":  "两荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -15813,7 +15733,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10600,
+        "id":  10597,
         "name":  "小酥肉汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -15839,7 +15759,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10601,
+        "id":  10598,
         "name":  "严选套餐-肥牛单人套餐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -15865,7 +15785,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10602,
+        "id":  10599,
         "name":  "火腿饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -15891,7 +15811,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10603,
+        "id":  10600,
         "name":  "番茄猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -15915,7 +15835,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10604,
+        "id":  10601,
         "name":  "一荤一素",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15941,7 +15861,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10605,
+        "id":  10602,
         "name":  "石锅鸡蛋火腿",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -15965,7 +15885,7 @@
         "rawGroup":  "特色石锅饭"
     },
     {
-        "id":  10606,
+        "id":  10603,
         "name":  "香菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -15990,7 +15910,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10607,
+        "id":  10604,
         "name":  "鱼香肉丝拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -16014,7 +15934,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  10608,
+        "id":  10605,
         "name":  "金牌茄子套单",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16040,7 +15960,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10609,
+        "id":  10606,
         "name":  "香辣干锅鸡小炒",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -16064,7 +15984,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10610,
+        "id":  10607,
         "name":  "生爆盐煎肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16090,7 +16010,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10611,
+        "id":  10608,
         "name":  "海味抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -16116,7 +16036,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10612,
+        "id":  10609,
         "name":  "泡椒肉丝拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16142,7 +16062,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  10613,
+        "id":  10610,
         "name":  "特惠B香辣鸡腿堡2+黑椒鸡块+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -16168,7 +16088,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10614,
+        "id":  10611,
         "name":  "外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16194,7 +16114,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10615,
+        "id":  10612,
         "name":  "手抓饼加鸡蛋",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -16218,7 +16138,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  10616,
+        "id":  10613,
         "name":  "双人套餐十二",
         "category":  "其他",
         "icon":  "utensils",
@@ -16242,7 +16162,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  10617,
+        "id":  10614,
         "name":  "椒麻伴粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -16272,7 +16192,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10618,
+        "id":  10615,
         "name":  "小青菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16297,7 +16217,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10619,
+        "id":  10616,
         "name":  "油麦菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16322,7 +16242,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10620,
+        "id":  10617,
         "name":  "套餐3（火鸡面+辣翅1对+年糕条3个+锅巴土豆3个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16348,7 +16268,7 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  10621,
+        "id":  10618,
         "name":  "番茄鸡蛋面",
         "category":  "面食",
         "icon":  "wheat",
@@ -16375,7 +16295,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10622,
+        "id":  10619,
         "name":  "豆皮米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -16402,7 +16322,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10623,
+        "id":  10620,
         "name":  "石锅焖面+肥牛",
         "category":  "面食",
         "icon":  "wheat",
@@ -16428,7 +16348,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10624,
+        "id":  10621,
         "name":  "芝士年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -16452,7 +16372,31 @@
         "rawGroup":  "6元区"
     },
     {
-        "id":  10625,
+        "id":  10622,
+        "name":  "韭菜鸡蛋炒河粉，米粉，面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors": [],
+        "price":  12,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "“炒河粉，米粉，面”之选，约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "川哥小炒",
+        "canteen":  "汇百味餐厅",
+        "img":  "https://img-lib.saobei.cn/32d47ac2c8b24b27bee00f36e198b5a4.jpg",
+        "rawGroup":  "炒河粉，米粉，面"
+    },
+    {
+        "id":  10623,
         "name":  "石锅滑肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16478,7 +16422,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  10626,
+        "id":  10624,
         "name":  "杂酱拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -16504,7 +16448,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10627,
+        "id":  10625,
         "name":  "纯猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -16530,7 +16474,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10628,
+        "id":  10626,
         "name":  "土豆片",
         "category":  "其他",
         "icon":  "utensils",
@@ -16556,7 +16500,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10629,
+        "id":  10627,
         "name":  "肉肠饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -16582,7 +16526,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10630,
+        "id":  10628,
         "name":  "干拌辣子鸡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -16608,7 +16552,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  10631,
+        "id":  10629,
         "name":  "龙江锅包肉茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16634,7 +16578,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10632,
+        "id":  10630,
         "name":  "红油馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -16659,7 +16603,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  10633,
+        "id":  10631,
         "name":  "冻豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16684,7 +16628,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10634,
+        "id":  10632,
         "name":  "柠檬手撕鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16710,7 +16654,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10635,
+        "id":  10633,
         "name":  "手抓饼加肉肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -16734,7 +16678,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  10636,
+        "id":  10634,
         "name":  "❤️小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16759,7 +16703,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10637,
+        "id":  10635,
         "name":  "香辣牙签肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16785,7 +16729,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  10638,
+        "id":  10636,
         "name":  "双椒拌面/刀削河粉（配大骨汤）",
         "category":  "面食",
         "icon":  "wheat",
@@ -16811,7 +16755,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10639,
+        "id":  10637,
         "name":  "鸭心4个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16835,7 +16779,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10640,
+        "id":  10638,
         "name":  "双椒拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -16859,7 +16803,7 @@
         "rawGroup":  "干拌系列特色"
     },
     {
-        "id":  10641,
+        "id":  10639,
         "name":  "鬼城麻辣鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -16886,7 +16830,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  10642,
+        "id":  10640,
         "name":  "酸汤水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -16912,7 +16856,7 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  10643,
+        "id":  10641,
         "name":  "番茄丸子面，河粉，刀肖",
         "category":  "面食",
         "icon":  "wheat",
@@ -16936,7 +16880,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  10644,
+        "id":  10642,
         "name":  "火腿鸡蛋炒河粉、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -16961,7 +16905,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10645,
+        "id":  10643,
         "name":  "明炉烧鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -16987,7 +16931,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  10646,
+        "id":  10644,
         "name":  "香辣鸡腿中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -17013,7 +16957,7 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10647,
+        "id":  10645,
         "name":  "火锅馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -17037,7 +16981,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  10648,
+        "id":  10646,
         "name":  "韭菜肉蒸饺",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17062,7 +17006,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10649,
+        "id":  10647,
         "name":  "铁板鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -17088,7 +17032,7 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10650,
+        "id":  10648,
         "name":  "日式烧牛肉饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17114,7 +17058,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10651,
+        "id":  10649,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17140,7 +17084,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10652,
+        "id":  10650,
         "name":  "土豆片",
         "category":  "其他",
         "icon":  "utensils",
@@ -17167,7 +17111,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10653,
+        "id":  10651,
         "name":  "番茄包一包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17192,7 +17136,7 @@
         "rawGroup":  "调料包"
     },
     {
-        "id":  10654,
+        "id":  10652,
         "name":  "莲白肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -17218,7 +17162,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10655,
+        "id":  10653,
         "name":  "培根金针菇烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -17244,7 +17188,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10656,
+        "id":  10654,
         "name":  "千张",
         "category":  "其他",
         "icon":  "utensils",
@@ -17269,7 +17213,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10657,
+        "id":  10655,
         "name":  "青椒肉丝拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -17293,7 +17237,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  10658,
+        "id":  10656,
         "name":  "肉沫薯角+曹鸭子",
         "category":  "烧烤",
         "icon":  "flame",
@@ -17319,7 +17263,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10659,
+        "id":  10657,
         "name":  "菌汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -17345,7 +17289,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10660,
+        "id":  10658,
         "name":  "老干妈外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -17369,7 +17313,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10661,
+        "id":  10659,
         "name":  "酸菜肉片焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -17395,7 +17339,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10662,
+        "id":  10660,
         "name":  "招牌汉堡套餐七",
         "category":  "其他",
         "icon":  "utensils",
@@ -17419,7 +17363,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  10663,
+        "id":  10661,
         "name":  "香辣牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17445,7 +17389,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10664,
+        "id":  10662,
         "name":  "经典三荤胡辣子苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -17471,7 +17415,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10665,
+        "id":  10663,
         "name":  "蒜苔炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -17496,7 +17440,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10666,
+        "id":  10664,
         "name":  "鸡公煲单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17520,7 +17464,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10667,
+        "id":  10665,
         "name":  "麻辣香锅炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -17547,7 +17491,7 @@
         "rawGroup":  "新增香锅"
     },
     {
-        "id":  10668,
+        "id":  10666,
         "name":  "小馆肉燥酸菜拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -17571,7 +17515,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10669,
+        "id":  10667,
         "name":  "至珍七虾汉堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17595,7 +17539,7 @@
         "rawGroup":  "汉堡肉卷"
     },
     {
-        "id":  10670,
+        "id":  10668,
         "name":  "大骨汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -17622,7 +17566,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  10671,
+        "id":  10669,
         "name":  "豆干",
         "category":  "其他",
         "icon":  "utensils",
@@ -17647,7 +17591,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  10672,
+        "id":  10670,
         "name":  "香辣花甲米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -17673,7 +17617,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10673,
+        "id":  10671,
         "name":  "照烧鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -17699,7 +17643,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10674,
+        "id":  10672,
         "name":  "鲜虾煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17723,7 +17667,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  10675,
+        "id":  10673,
         "name":  "西红柿炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17749,7 +17693,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10676,
+        "id":  10674,
         "name":  "酸萝卜鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -17773,7 +17717,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10677,
+        "id":  10675,
         "name":  "干锅蟹排组合丸子",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -17799,32 +17743,34 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10678,
-        "name":  "小馆燥酸豆角拌面/粉",
+        "id":  10676,
+        "name":  "鸡杂酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
         "taste":  [
-                      "咸香"
+                      "微辣",
+                      "微酸"
                   ],
-        "flavors": [],
-        "price":  12,
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  13,
         "cal":  600,
         "tags":  [
-                     "素食友好",
                      "管饱"
                  ],
-        "desc":  "“小馆拌面”之选，约 600 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "main":  "素",
+        "desc":  "“酸辣粉”之选（另有：酸辣粉13元），约 600 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
         "portion":  "regular",
-        "stall":  "朱家小馆辣肉面",
-        "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/saobei/app/ba17f8d6a2fd4055a7dbaa6e795d8e7e.jpg",
-        "rawGroup":  "小馆拌面"
+        "stall":  "胖妹面庄",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "酸辣粉"
     },
     {
-        "id":  10679,
+        "id":  10677,
         "name":  "辣子鸡小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17848,7 +17794,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  10680,
+        "id":  10678,
         "name":  "猪肝",
         "category":  "其他",
         "icon":  "utensils",
@@ -17873,7 +17819,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  10681,
+        "id":  10679,
         "name":  "把把签玉米串",
         "category":  "其他",
         "icon":  "utensils",
@@ -17899,7 +17845,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  10682,
+        "id":  10680,
         "name":  "椒麻鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -17926,7 +17872,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10683,
+        "id":  10681,
         "name":  "红烧茄子盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -17952,7 +17898,33 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10684,
+        "id":  10682,
+        "name":  "泡椒肉丝盖饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  14,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "菜单补录，约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "公社食堂小炒",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
+    },
+    {
+        "id":  10683,
         "name":  "泡椒午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -17976,7 +17948,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10685,
+        "id":  10684,
         "name":  "香蕉（2个）",
         "category":  "其他",
         "icon":  "utensils",
@@ -18001,7 +17973,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  10686,
+        "id":  10685,
         "name":  "腊肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18025,7 +17997,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10687,
+        "id":  10686,
         "name":  "泡椒鸡杂铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -18051,7 +18023,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10688,
+        "id":  10687,
         "name":  "鸡翅尖火腿肠套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18077,7 +18049,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  10689,
+        "id":  10688,
         "name":  "宫保鸡丁盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18101,7 +18073,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10690,
+        "id":  10689,
         "name":  "西红柿炒鸡蛋擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18127,7 +18099,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10691,
+        "id":  10690,
         "name":  "牛肉炒拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -18153,7 +18125,7 @@
         "rawGroup":  "炒拉面/刀削面"
     },
     {
-        "id":  10692,
+        "id":  10691,
         "name":  "五星鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -18178,7 +18150,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  10693,
+        "id":  10692,
         "name":  "油炸小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18204,7 +18176,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10694,
+        "id":  10693,
         "name":  "小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18230,7 +18202,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10695,
+        "id":  10694,
         "name":  "青椒鸡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18254,7 +18226,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10696,
+        "id":  10695,
         "name":  "鸡汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -18280,7 +18252,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10697,
+        "id":  10696,
         "name":  "葱油拌面配（配大骨汤）",
         "category":  "面食",
         "icon":  "wheat",
@@ -18306,7 +18278,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10698,
+        "id":  10697,
         "name":  "招牌汉堡套餐八",
         "category":  "烧烤",
         "icon":  "flame",
@@ -18332,7 +18304,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10699,
+        "id":  10698,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18357,7 +18329,7 @@
         "rawGroup":  "石锅饭加菜区"
     },
     {
-        "id":  10700,
+        "id":  10699,
         "name":  "方便面",
         "category":  "面食",
         "icon":  "wheat",
@@ -18382,7 +18354,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  10701,
+        "id":  10700,
         "name":  "手抓饼加肉松",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -18408,7 +18380,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10702,
+        "id":  10701,
         "name":  "土豆牛肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18434,7 +18406,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10703,
+        "id":  10702,
         "name":  "韭菜炒蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18459,7 +18431,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10704,
+        "id":  10703,
         "name":  "外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18483,7 +18455,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10705,
+        "id":  10704,
         "name":  "酱香小酥肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -18509,7 +18481,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10706,
+        "id":  10705,
         "name":  "豪华套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18535,7 +18507,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10707,
+        "id":  10706,
         "name":  "猪排麻辣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -18562,7 +18534,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  10708,
+        "id":  10707,
         "name":  "炸酱土豆泥拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -18589,7 +18561,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10709,
+        "id":  10708,
         "name":  "辣子鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18614,7 +18586,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10710,
+        "id":  10709,
         "name":  "火腿米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -18639,32 +18611,7 @@
         "rawGroup":  "🫅交个朋友🫅"
     },
     {
-        "id":  10711,
-        "name":  "金丝鸡柳",
-        "category":  "烧烤",
-        "icon":  "flame",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  4,
-        "cal":  650,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“特色撸\n串荤”之选，约 650 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "今喜炸串",
-        "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/54fca86d634340bea0e1f3f55a6dff5b.jpg",
-        "rawGroup":  "特色撸\n串荤"
-    },
-    {
-        "id":  10712,
+        "id":  10710,
         "name":  "红油肘子瘦瘦肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18690,7 +18637,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  10713,
+        "id":  10711,
         "name":  "辣子鸡盖",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18714,7 +18661,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10714,
+        "id":  10712,
         "name":  "老肉片5片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18740,7 +18687,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10715,
+        "id":  10713,
         "name":  "宜宾燃面",
         "category":  "面食",
         "icon":  "wheat",
@@ -18767,7 +18714,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10716,
+        "id":  10714,
         "name":  "咖喱鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18791,7 +18738,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10717,
+        "id":  10715,
         "name":  "藤椒鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -18818,7 +18765,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10718,
+        "id":  10716,
         "name":  "五花肉（放入干锅）不可单点",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -18843,7 +18790,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10719,
+        "id":  10717,
         "name":  "特色素拌面刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -18870,7 +18817,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10720,
+        "id":  10718,
         "name":  "烤肠土豆烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -18896,7 +18843,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10721,
+        "id":  10719,
         "name":  "风味鱼肉卷2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -18920,7 +18867,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10722,
+        "id":  10720,
         "name":  "松脆酪酪薯",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -18946,7 +18893,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10723,
+        "id":  10721,
         "name":  "小馆鸡柳面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -18972,7 +18919,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  10724,
+        "id":  10722,
         "name":  "手抓饼加肉肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -18998,7 +18945,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10725,
+        "id":  10723,
         "name":  "绝味酱香鸭翅/1个（镇店之宝）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19023,7 +18970,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10726,
+        "id":  10724,
         "name":  "深海鳕鱼堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19047,7 +18994,7 @@
         "rawGroup":  "汉堡肉卷"
     },
     {
-        "id":  10727,
+        "id":  10725,
         "name":  "卤鸭腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19071,7 +19018,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  10728,
+        "id":  10726,
         "name":  "番茄鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -19095,7 +19042,7 @@
         "rawGroup":  "🔥🔥现包鲜肉云吞🔥🔥"
     },
     {
-        "id":  10729,
+        "id":  10727,
         "name":  "曹鸭子+香菇滑鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19121,7 +19068,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10730,
+        "id":  10728,
         "name":  "麻辣小龙虾酱拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -19149,7 +19096,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10731,
+        "id":  10729,
         "name":  "甜麻辣鸡腿排大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19178,7 +19125,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10732,
+        "id":  10730,
         "name":  "韩式套餐一",
         "category":  "其他",
         "icon":  "utensils",
@@ -19202,7 +19149,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  10733,
+        "id":  10731,
         "name":  "大漠鸡排拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -19226,7 +19173,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  10734,
+        "id":  10732,
         "name":  "辣子鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -19250,7 +19197,7 @@
         "rawGroup":  "干拌系列特色"
     },
     {
-        "id":  10735,
+        "id":  10733,
         "name":  "桂花糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -19276,7 +19223,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10736,
+        "id":  10734,
         "name":  "美式烤全腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19302,32 +19249,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10737,
-        "name":  "腊肠鸡蛋炒饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  10,
-        "cal":  700,
-        "tags":  [
-                     "人气",
-                     "管饱"
-                 ],
-        "desc":  "“推荐”之选，约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "今喜炸串",
-        "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/a29306328e584a58b88f079f2d4c4128.jpg",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  10738,
+        "id":  10735,
         "name":  "桂花米酒",
         "category":  "汤粥",
         "icon":  "soup",
@@ -19352,7 +19274,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10739,
+        "id":  10736,
         "name":  "石锅鸡蛋土豆",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19376,7 +19298,7 @@
         "rawGroup":  "鸡蛋双拼系列"
     },
     {
-        "id":  10740,
+        "id":  10737,
         "name":  "花甲米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -19402,7 +19324,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  10741,
+        "id":  10738,
         "name":  "干拌蒜香皮蛋大肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -19428,7 +19350,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10742,
+        "id":  10739,
         "name":  "干锅鸭架",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -19454,7 +19376,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  10743,
+        "id":  10740,
         "name":  "鱼排",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19478,7 +19400,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  10744,
+        "id":  10741,
         "name":  "卤肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -19504,7 +19426,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10745,
+        "id":  10742,
         "name":  "香干炒肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19530,7 +19452,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10746,
+        "id":  10743,
         "name":  "虎皮红烧肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -19556,7 +19478,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10747,
+        "id":  10744,
         "name":  "干煸牛肉丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19580,7 +19502,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10748,
+        "id":  10745,
         "name":  "香菇卤肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -19606,7 +19528,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10749,
+        "id":  10746,
         "name":  "奥尔良去皮鸡腿排大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19632,7 +19554,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10750,
+        "id":  10747,
         "name":  "澳门烧肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19658,7 +19580,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  10751,
+        "id":  10748,
         "name":  "海鲜菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19683,7 +19605,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  10752,
+        "id":  10749,
         "name":  "椒麻伴粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -19710,7 +19632,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10753,
+        "id":  10750,
         "name":  "芝士鳕鱼中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -19736,7 +19658,7 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  10754,
+        "id":  10751,
         "name":  "火锅豆皮面皮/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -19762,7 +19684,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10755,
+        "id":  10752,
         "name":  "现蒸土豆泥",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19792,7 +19714,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10756,
+        "id":  10753,
         "name":  "火腿鸡蛋炒河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -19817,7 +19739,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10757,
+        "id":  10754,
         "name":  "黑椒肉柳",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19843,7 +19765,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  10758,
+        "id":  10755,
         "name":  "香菇卤肉拌面刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -19869,7 +19791,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10759,
+        "id":  10756,
         "name":  "茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19894,7 +19816,7 @@
         "rawGroup":  "石锅饭加菜区"
     },
     {
-        "id":  10760,
+        "id":  10757,
         "name":  "加一两抄手（5个，不单卖）",
         "category":  "面食",
         "icon":  "wheat",
@@ -19920,7 +19842,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  10761,
+        "id":  10758,
         "name":  "玉米粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -19947,7 +19869,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10762,
+        "id":  10759,
         "name":  "糊辣荔枝鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -19973,7 +19895,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10763,
+        "id":  10760,
         "name":  "白菜肉蒸饺",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -19998,7 +19920,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10764,
+        "id":  10761,
         "name":  "石锅焖面+鸡块",
         "category":  "面食",
         "icon":  "wheat",
@@ -20024,7 +19946,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10765,
+        "id":  10762,
         "name":  "酸菜鸡丝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20050,7 +19972,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  10766,
+        "id":  10763,
         "name":  "酸萝卜火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -20074,7 +19996,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10767,
+        "id":  10764,
         "name":  "鸭血",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20098,7 +20020,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10768,
+        "id":  10765,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -20125,7 +20047,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10769,
+        "id":  10766,
         "name":  "鲜椒油渣拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20151,7 +20073,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10770,
+        "id":  10767,
         "name":  "葱油拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20177,7 +20099,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  10771,
+        "id":  10768,
         "name":  "菌汤酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -20201,7 +20123,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10772,
+        "id":  10769,
         "name":  "虾饺3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20226,7 +20148,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10773,
+        "id":  10770,
         "name":  "菜鸡蛋培根",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20252,7 +20174,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10774,
+        "id":  10771,
         "name":  "千叶豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20277,7 +20199,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  10775,
+        "id":  10772,
         "name":  "双层牛肉堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20303,7 +20225,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  10776,
+        "id":  10773,
         "name":  "咖喱鸡肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -20329,7 +20251,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10777,
+        "id":  10774,
         "name":  "小炒黄牛肉盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -20355,7 +20277,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  10778,
+        "id":  10775,
         "name":  "黄金酥肉焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20381,7 +20303,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10779,
+        "id":  10776,
         "name":  "五荤五素套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -20406,7 +20328,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10780,
+        "id":  10777,
         "name":  "酱香鸡翅尖",
         "category":  "烧烤",
         "icon":  "flame",
@@ -20432,7 +20354,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10781,
+        "id":  10778,
         "name":  "金汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20458,7 +20380,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10782,
+        "id":  10779,
         "name":  "香芋派一个",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -20482,7 +20404,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  10783,
+        "id":  10780,
         "name":  "干锅香辣鸭",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -20508,7 +20430,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  10784,
+        "id":  10781,
         "name":  "番茄抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -20537,7 +20459,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  10785,
+        "id":  10782,
         "name":  "广式腊肠炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20563,7 +20485,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10786,
+        "id":  10783,
         "name":  "土豆牛肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -20588,7 +20510,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10787,
+        "id":  10784,
         "name":  "腊肠鸡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -20614,7 +20536,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10788,
+        "id":  10785,
         "name":  "火箭鱿鱼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20640,7 +20562,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10789,
+        "id":  10786,
         "name":  "莲菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -20666,7 +20588,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10790,
+        "id":  10787,
         "name":  "郡肝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20692,7 +20614,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10791,
+        "id":  10788,
         "name":  "酸菜馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -20719,7 +20641,7 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  10792,
+        "id":  10789,
         "name":  "酸菜鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -20743,7 +20665,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  10793,
+        "id":  10790,
         "name":  "干锅鸭翅软糯3个、可以双拼翅根备",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -20769,7 +20691,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10794,
+        "id":  10791,
         "name":  "莲白肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -20794,7 +20716,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  10795,
+        "id":  10792,
         "name":  "番茄鱼丸米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -20821,7 +20743,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  10796,
+        "id":  10793,
         "name":  "卤鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20846,7 +20768,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10797,
+        "id":  10794,
         "name":  "蚂蚁上树",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20872,7 +20794,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10798,
+        "id":  10795,
         "name":  "鸡翅尖",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -20896,7 +20818,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10799,
+        "id":  10796,
         "name":  "伊美葱油饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -20922,7 +20844,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  10800,
+        "id":  10797,
         "name":  "干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -20946,7 +20868,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  10801,
+        "id":  10798,
         "name":  "小炒肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -20972,7 +20894,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10802,
+        "id":  10799,
         "name":  "糖醋里脊拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -20999,7 +20921,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10803,
+        "id":  10800,
         "name":  "铁板猪扒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21025,7 +20947,7 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  10804,
+        "id":  10801,
         "name":  "加牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21049,7 +20971,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  10805,
+        "id":  10802,
         "name":  "奶汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -21074,7 +20996,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  10806,
+        "id":  10803,
         "name":  "泡椒地锅鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21100,7 +21022,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10807,
+        "id":  10804,
         "name":  "鱼籽烧1个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21124,7 +21046,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10808,
+        "id":  10805,
         "name":  "新品❤️咖喱鸡排拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21149,7 +21071,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10809,
+        "id":  10806,
         "name":  "烤肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -21173,7 +21095,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  10810,
+        "id":  10807,
         "name":  "鸭肉（放入干锅炒）不可单点",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -21198,7 +21120,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10811,
+        "id":  10808,
         "name":  "招牌土豆泥拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -21226,7 +21148,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10812,
+        "id":  10809,
         "name":  "经典酱肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -21252,7 +21174,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10813,
+        "id":  10810,
         "name":  "鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -21277,7 +21199,7 @@
         "rawGroup":  "加料区"
     },
     {
-        "id":  10814,
+        "id":  10811,
         "name":  "红薯粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -21302,7 +21224,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10815,
+        "id":  10812,
         "name":  "椒麻鸡+锅包肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21329,7 +21251,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10816,
+        "id":  10813,
         "name":  "鸡哈豆花盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21353,7 +21275,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10817,
+        "id":  10814,
         "name":  "玫瑰豉油鸡一例2份米饭菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21379,7 +21301,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10818,
+        "id":  10815,
         "name":  "绝味鸭翅套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21405,7 +21327,7 @@
         "rawGroup":  "招牌"
     },
     {
-        "id":  10819,
+        "id":  10816,
         "name":  "火腿鸡蛋炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -21430,7 +21352,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10820,
+        "id":  10817,
         "name":  "招牌汉堡套餐五",
         "category":  "烧烤",
         "icon":  "flame",
@@ -21456,7 +21378,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10821,
+        "id":  10818,
         "name":  "火焰辣子鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21482,7 +21404,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10822,
+        "id":  10819,
         "name":  "莲藕猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -21508,7 +21430,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10823,
+        "id":  10820,
         "name":  "麻辣肥肠鸡焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21535,7 +21457,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10824,
+        "id":  10821,
         "name":  "小青菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -21561,7 +21483,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10825,
+        "id":  10822,
         "name":  "鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21587,7 +21509,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10826,
+        "id":  10823,
         "name":  "鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -21614,7 +21536,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10827,
+        "id":  10824,
         "name":  "酸汤云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -21641,7 +21563,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  10828,
+        "id":  10825,
         "name":  "辣椒炒肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -21667,7 +21589,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10829,
+        "id":  10826,
         "name":  "卤蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21691,7 +21613,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  10830,
+        "id":  10827,
         "name":  "麻辣鱼块（香酥小黄鱼）好吃",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -21718,7 +21640,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10831,
+        "id":  10828,
         "name":  "菜鸡蛋瘦肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21742,7 +21664,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10832,
+        "id":  10829,
         "name":  "经典拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -21769,7 +21691,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  10833,
+        "id":  10830,
         "name":  "深海鳕鱼堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -21795,7 +21717,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10834,
+        "id":  10831,
         "name":  "清汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -21821,7 +21743,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10835,
+        "id":  10832,
         "name":  "《超级吃货🤪》豪华套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -21847,7 +21769,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10836,
+        "id":  10833,
         "name":  "藤椒肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -21875,7 +21797,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  10837,
+        "id":  10834,
         "name":  "酸罗卜老鸭汤",
         "category":  "汤粥",
         "icon":  "soup",
@@ -21900,7 +21822,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10838,
+        "id":  10835,
         "name":  "红油馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -21927,7 +21849,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10839,
+        "id":  10836,
         "name":  "土豆肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21951,7 +21873,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10840,
+        "id":  10837,
         "name":  "酱香烤鸭焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -21977,7 +21899,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10841,
+        "id":  10838,
         "name":  "玫瑰油鸡例1米饭小菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22003,7 +21925,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10842,
+        "id":  10839,
         "name":  "酸萝卜鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -22027,7 +21949,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10843,
+        "id":  10840,
         "name":  "全家福小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22053,7 +21975,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  10844,
+        "id":  10841,
         "name":  "外婆菜擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22079,7 +22001,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  10845,
+        "id":  10842,
         "name":  "外婆菜老干妈蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22105,7 +22027,7 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10846,
+        "id":  10843,
         "name":  "紫薯糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -22131,7 +22053,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  10847,
+        "id":  10844,
         "name":  "特色鸡肉炒年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -22157,7 +22079,7 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  10848,
+        "id":  10845,
         "name":  "雪花芝士炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -22184,7 +22106,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  10849,
+        "id":  10846,
         "name":  "皮蛋瘦肉粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -22209,7 +22131,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  10850,
+        "id":  10847,
         "name":  "酱香鸡块",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22233,7 +22155,7 @@
         "rawGroup":  "石锅饭加菜区"
     },
     {
-        "id":  10851,
+        "id":  10848,
         "name":  "酸汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -22260,7 +22182,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10852,
+        "id":  10849,
         "name":  "豌豆拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -22288,7 +22210,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10853,
+        "id":  10850,
         "name":  "小馆牛肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -22313,7 +22235,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10854,
+        "id":  10851,
         "name":  "椒麻汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -22340,7 +22262,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10855,
+        "id":  10852,
         "name":  "木耳肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22366,7 +22288,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10856,
+        "id":  10853,
         "name":  "红油核桃肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22392,7 +22314,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  10857,
+        "id":  10854,
         "name":  "鸡汤花甲米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -22418,7 +22340,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10858,
+        "id":  10855,
         "name":  "玲珑鸡腿排大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22444,7 +22366,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10859,
+        "id":  10856,
         "name":  "秘制炒饭加二荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22469,7 +22391,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10860,
+        "id":  10857,
         "name":  "招牌汉堡套餐九",
         "category":  "烧烤",
         "icon":  "flame",
@@ -22495,7 +22417,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10861,
+        "id":  10858,
         "name":  "香菇黄焖鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22521,7 +22443,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  10862,
+        "id":  10859,
         "name":  "肉丝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -22547,7 +22469,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10863,
+        "id":  10860,
         "name":  "荤豆花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22573,7 +22495,7 @@
         "rawGroup":  "特色菜"
     },
     {
-        "id":  10864,
+        "id":  10861,
         "name":  "手抓麻辣骨饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22600,7 +22522,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10865,
+        "id":  10862,
         "name":  "干锅香辣翅根3个",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -22626,7 +22548,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10866,
+        "id":  10863,
         "name":  "狮子头",
         "category":  "其他",
         "icon":  "utensils",
@@ -22651,7 +22573,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  10867,
+        "id":  10864,
         "name":  "红烧排骨盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22675,7 +22597,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  10868,
+        "id":  10865,
         "name":  "曹鸭子+咖喱鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22701,7 +22623,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10869,
+        "id":  10866,
         "name":  "骨肉相连干锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -22727,7 +22649,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10870,
+        "id":  10867,
         "name":  "清汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -22753,7 +22675,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  10871,
+        "id":  10868,
         "name":  "千叶豆腐3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22778,7 +22700,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10872,
+        "id":  10869,
         "name":  "素炒双拼米粉炒年糕",
         "category":  "面食",
         "icon":  "wheat",
@@ -22805,7 +22727,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10873,
+        "id":  10870,
         "name":  "玉米渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -22831,7 +22753,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10874,
+        "id":  10871,
         "name":  "石锅金针肥牛",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22855,7 +22777,7 @@
         "rawGroup":  "特色石锅饭"
     },
     {
-        "id":  10875,
+        "id":  10872,
         "name":  "两荤两素加面饼（无米饭）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -22881,7 +22803,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10876,
+        "id":  10873,
         "name":  "肉沫薯角+叉烧套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22907,7 +22829,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10877,
+        "id":  10874,
         "name":  "秘制炒饭加二荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -22933,7 +22855,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10878,
+        "id":  10875,
         "name":  "蛋炒河粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -22960,7 +22882,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10879,
+        "id":  10876,
         "name":  "青菜鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -22985,7 +22907,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  10880,
+        "id":  10877,
         "name":  "火锅米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -23009,7 +22931,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  10881,
+        "id":  10878,
         "name":  "酱焖牛肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23035,7 +22957,7 @@
         "rawGroup":  "酱焖擂饭系列"
     },
     {
-        "id":  10882,
+        "id":  10879,
         "name":  "鸡蛋火腿炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -23061,7 +22983,7 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  10883,
+        "id":  10880,
         "name":  "洋葱牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23087,7 +23009,7 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  10884,
+        "id":  10881,
         "name":  "麻辣小面+狮子头",
         "category":  "面食",
         "icon":  "wheat",
@@ -23115,7 +23037,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10885,
+        "id":  10882,
         "name":  "王牌茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -23141,7 +23063,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  10886,
+        "id":  10883,
         "name":  "韭菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -23166,7 +23088,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10887,
+        "id":  10884,
         "name":  "双拼擂饭（选11.8及以下不能拼鸡鸭腿）",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23192,7 +23114,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10888,
+        "id":  10885,
         "name":  "风味鲍鱼片2片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -23216,7 +23138,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10889,
+        "id":  10886,
         "name":  "泡椒鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -23240,7 +23162,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  10890,
+        "id":  10887,
         "name":  "铁板烤鸭",
         "category":  "烧烤",
         "icon":  "flame",
@@ -23266,7 +23188,7 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  10891,
+        "id":  10888,
         "name":  "里脊串",
         "category":  "其他",
         "icon":  "utensils",
@@ -23291,7 +23213,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  10892,
+        "id":  10889,
         "name":  "酸菜馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -23317,7 +23239,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  10893,
+        "id":  10890,
         "name":  "❤️香菇滑鸡拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23342,7 +23264,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10894,
+        "id":  10891,
         "name":  "酸菜地锅小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -23368,7 +23290,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10895,
+        "id":  10892,
         "name":  "杂酱",
         "category":  "面食",
         "icon":  "wheat",
@@ -23394,7 +23316,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  10896,
+        "id":  10893,
         "name":  "蒜苔肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23420,7 +23342,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10897,
+        "id":  10894,
         "name":  "火腿外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23446,7 +23368,7 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  10898,
+        "id":  10895,
         "name":  "肉沫豇豆蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23472,7 +23394,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  10899,
+        "id":  10896,
         "name":  "菜鸡蛋火腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -23496,7 +23418,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  10900,
+        "id":  10897,
         "name":  "招牌汉堡套餐三",
         "category":  "烧烤",
         "icon":  "flame",
@@ -23522,7 +23444,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10901,
+        "id":  10898,
         "name":  "全肉肠拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -23546,7 +23468,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  10902,
+        "id":  10899,
         "name":  "香辣炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23572,7 +23494,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  10903,
+        "id":  10900,
         "name":  "椒麻鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23599,7 +23521,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10904,
+        "id":  10901,
         "name":  "金汤面（",
         "category":  "面食",
         "icon":  "wheat",
@@ -23625,7 +23547,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10905,
+        "id":  10902,
         "name":  "豌杂面",
         "category":  "面食",
         "icon":  "wheat",
@@ -23651,7 +23573,7 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10906,
+        "id":  10903,
         "name":  "石锅焖面+鸡柳",
         "category":  "面食",
         "icon":  "wheat",
@@ -23677,7 +23599,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  10907,
+        "id":  10904,
         "name":  "肉丝米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -23703,7 +23625,7 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  10908,
+        "id":  10905,
         "name":  "泡椒青笋肉丝拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23729,7 +23651,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10909,
+        "id":  10906,
         "name":  "麻酱凉面凉皮",
         "category":  "面食",
         "icon":  "wheat",
@@ -23756,7 +23678,7 @@
         "rawGroup":  "凉面系列"
     },
     {
-        "id":  10910,
+        "id":  10907,
         "name":  "火腿鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -23781,7 +23703,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10911,
+        "id":  10908,
         "name":  "香辣烤肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -23807,7 +23729,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10912,
+        "id":  10909,
         "name":  "老肉片5片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -23831,7 +23753,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  10913,
+        "id":  10910,
         "name":  "黑椒肉柳擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23857,7 +23779,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10914,
+        "id":  10911,
         "name":  "腊肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23883,7 +23805,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10915,
+        "id":  10912,
         "name":  "青椒肉丝拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -23909,7 +23831,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10916,
+        "id":  10913,
         "name":  "三荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -23935,7 +23857,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  10917,
+        "id":  10914,
         "name":  "土豆泥牛肉杂酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -23961,7 +23883,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  10918,
+        "id":  10915,
         "name":  "西红柿鸡蛋拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -23987,7 +23909,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  10919,
+        "id":  10916,
         "name":  "兰花串",
         "category":  "其他",
         "icon":  "utensils",
@@ -24012,7 +23934,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  10920,
+        "id":  10917,
         "name":  "烤鸭拼鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -24038,7 +23960,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10921,
+        "id":  10918,
         "name":  "肉沫土豆擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -24064,7 +23986,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10922,
+        "id":  10919,
         "name":  "小炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -24089,7 +24011,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10923,
+        "id":  10920,
         "name":  "麻辣什锦丸子（小份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -24117,7 +24039,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10924,
+        "id":  10921,
         "name":  "番茄炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -24141,7 +24063,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10925,
+        "id":  10922,
         "name":  "美式烤全翅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24167,7 +24089,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10926,
+        "id":  10923,
         "name":  "豌杂铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -24193,7 +24115,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10927,
+        "id":  10924,
         "name":  "麻辣干拌",
         "category":  "其他",
         "icon":  "utensils",
@@ -24221,7 +24143,7 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  10928,
+        "id":  10925,
         "name":  "韩式套餐三",
         "category":  "其他",
         "icon":  "utensils",
@@ -24246,7 +24168,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10929,
+        "id":  10926,
         "name":  "菌汤土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -24271,7 +24193,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  10930,
+        "id":  10927,
         "name":  "特色大盘鸡（小份）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24297,7 +24219,7 @@
         "rawGroup":  "特色大盘鸡"
     },
     {
-        "id":  10931,
+        "id":  10928,
         "name":  "红糖馒头",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -24322,7 +24244,7 @@
         "rawGroup":  "馒头"
     },
     {
-        "id":  10932,
+        "id":  10929,
         "name":  "小馆鸡蛋炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -24346,7 +24268,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  10933,
+        "id":  10930,
         "name":  "蟹排",
         "category":  "其他",
         "icon":  "utensils",
@@ -24371,7 +24293,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  10934,
+        "id":  10931,
         "name":  "火腿肠新疆炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -24397,7 +24319,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10935,
+        "id":  10932,
         "name":  "酸菜肉丝铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -24423,7 +24345,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  10936,
+        "id":  10933,
         "name":  "双人套餐十",
         "category":  "其他",
         "icon":  "utensils",
@@ -24447,7 +24369,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  10937,
+        "id":  10934,
         "name":  "小馆辣肉拌面粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -24472,7 +24394,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10938,
+        "id":  10935,
         "name":  "辣条饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -24498,7 +24420,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10939,
+        "id":  10936,
         "name":  "肉沫鸡哈豆花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24524,7 +24446,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10940,
+        "id":  10937,
         "name":  "严选套餐-肥牛单人套餐（送米饭）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24548,7 +24470,7 @@
         "rawGroup":  "优质套餐"
     },
     {
-        "id":  10941,
+        "id":  10938,
         "name":  "人气套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24574,7 +24496,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10942,
+        "id":  10939,
         "name":  "五花肉红肠套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24600,7 +24522,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10943,
+        "id":  10940,
         "name":  "回锅肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -24624,7 +24546,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  10944,
+        "id":  10941,
         "name":  "热干粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -24650,7 +24572,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10945,
+        "id":  10942,
         "name":  "鸡哈豆花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24674,7 +24596,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  10946,
+        "id":  10943,
         "name":  "干锅花菜",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -24701,7 +24623,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10947,
+        "id":  10944,
         "name":  "夏威夷风味厚牛堡+黑椒鸡块+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -24727,7 +24649,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10948,
+        "id":  10945,
         "name":  "热干面",
         "category":  "面食",
         "icon":  "wheat",
@@ -24753,7 +24675,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10949,
+        "id":  10946,
         "name":  "红烧牛肉面/河粉/刀削（",
         "category":  "面食",
         "icon":  "wheat",
@@ -24778,7 +24700,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10950,
+        "id":  10947,
         "name":  "三拼绝味干锅（鸭翅，锁骨，鸡翅尖）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -24804,7 +24726,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10951,
+        "id":  10948,
         "name":  "小青菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -24830,7 +24752,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  10952,
+        "id":  10949,
         "name":  "千叶豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24855,7 +24777,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  10953,
+        "id":  10950,
         "name":  "酸汤酥肉面/刀削/韭叶面/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -24881,7 +24803,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10954,
+        "id":  10951,
         "name":  "滑肉四荤红酸汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -24907,7 +24829,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10955,
+        "id":  10952,
         "name":  "麻婆豆腐炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -24934,7 +24856,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10956,
+        "id":  10953,
         "name":  "严选套餐-超值单人套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -24959,7 +24881,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10957,
+        "id":  10954,
         "name":  "黑椒烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -24985,7 +24907,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  10958,
+        "id":  10955,
         "name":  "肉末番茄土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -25012,7 +24934,7 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  10959,
+        "id":  10956,
         "name":  "宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -25037,7 +24959,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  10960,
+        "id":  10957,
         "name":  "小酥肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25061,7 +24983,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  10961,
+        "id":  10958,
         "name":  "石锅焖面土豆",
         "category":  "面食",
         "icon":  "wheat",
@@ -25087,7 +25009,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10962,
+        "id":  10959,
         "name":  "青菜鸡蛋甜肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25111,7 +25033,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  10963,
+        "id":  10960,
         "name":  "手打虾滑4个",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -25137,7 +25059,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10964,
+        "id":  10961,
         "name":  "酸菜面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25164,7 +25086,7 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  10965,
+        "id":  10962,
         "name":  "地锅锅包肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25190,32 +25112,31 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  10966,
-        "name":  "米饭（套餐里面有一份）",
-        "category":  "麻辣系列",
-        "icon":  "cooking-pot",
+        "id":  10963,
+        "name":  "秘制拌粉",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
         "flavors": [],
-        "price":  2,
-        "cal":  750,
+        "price":  9,
+        "cal":  600,
         "tags":  [
-                     "性价比",
                      "管饱"
                  ],
-        "desc":  "“现炒麻辣干锅”之选，约 750 kcal",
+        "desc":  "“沈大爷拌粉系列”之选，约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/saobei/app/edc20029c71546b69ec664fb7557c19f.jpg",
-        "rawGroup":  "现炒麻辣干锅"
+        "stall":  "沈大爷拌饭拌面拌粉",
+        "canteen":  "汇百味餐厅",
+        "img":  "https://img.lcsw.cn/scan-order/foods/233028a4d8be43a9b3bf1bb262f010e8.jpg",
+        "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  10967,
+        "id":  10964,
         "name":  "午餐肉3片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25239,7 +25160,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  10968,
+        "id":  10965,
         "name":  "红烧肥肠面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25265,7 +25186,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  10969,
+        "id":  10966,
         "name":  "杂酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25290,7 +25211,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  10970,
+        "id":  10967,
         "name":  "黑椒肉柳干锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -25314,7 +25235,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  10971,
+        "id":  10968,
         "name":  "胡椒壳抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -25340,7 +25261,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10972,
+        "id":  10969,
         "name":  "牛肉米粉炒年糕",
         "category":  "面食",
         "icon":  "wheat",
@@ -25366,7 +25287,7 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  10973,
+        "id":  10970,
         "name":  "港式香妃鸡饭明炉烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25392,7 +25313,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10974,
+        "id":  10971,
         "name":  "青椒肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -25418,7 +25339,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  10975,
+        "id":  10972,
         "name":  "酸萝卜土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -25443,7 +25364,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  10976,
+        "id":  10973,
         "name":  "锅包肉+金蒜茄子套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25469,7 +25390,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10977,
+        "id":  10974,
         "name":  "火锅鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -25493,7 +25414,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  10978,
+        "id":  10975,
         "name":  "+鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25517,7 +25438,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  10979,
+        "id":  10976,
         "name":  "番茄酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -25541,7 +25462,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  10980,
+        "id":  10977,
         "name":  "农家一碗香擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -25567,7 +25488,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10981,
+        "id":  10978,
         "name":  "鸡丝干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25591,7 +25512,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  10982,
+        "id":  10979,
         "name":  "干锅包菜",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -25618,7 +25539,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10983,
+        "id":  10980,
         "name":  "香辣地锅鲜肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25644,7 +25565,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10984,
+        "id":  10981,
         "name":  "藤椒肉丝拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25671,7 +25592,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  10985,
+        "id":  10982,
         "name":  "莲白肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -25697,7 +25618,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  10986,
+        "id":  10983,
         "name":  "沾水抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -25723,7 +25644,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10987,
+        "id":  10984,
         "name":  "贵妃荔枝鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25749,7 +25670,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  10988,
+        "id":  10985,
         "name":  "火锅抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -25775,7 +25696,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  10989,
+        "id":  10986,
         "name":  "肥肠铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -25801,7 +25722,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10990,
+        "id":  10987,
         "name":  "香菇牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -25827,7 +25748,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10991,
+        "id":  10988,
         "name":  "菠菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25852,7 +25773,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  10992,
+        "id":  10989,
         "name":  "绝味鸭+香菇滑鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -25878,7 +25799,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10993,
+        "id":  10990,
         "name":  "鱿鱼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25904,7 +25825,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10994,
+        "id":  10991,
         "name":  "芝士安格斯厚牛堡+薯条+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -25930,7 +25851,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10995,
+        "id":  10992,
         "name":  "曹鸭子+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -25956,7 +25877,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10996,
+        "id":  10993,
         "name":  "香辣鸡腿堡+蛋挞+水果派",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -25982,7 +25903,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  10997,
+        "id":  10994,
         "name":  "腐竹",
         "category":  "其他",
         "icon":  "utensils",
@@ -26008,7 +25929,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  10998,
+        "id":  10995,
         "name":  "小炒肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26032,7 +25953,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  10999,
+        "id":  10996,
         "name":  "严选套餐-超值单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26058,7 +25979,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11000,
+        "id":  10997,
         "name":  "青菜鸡蛋瘦肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26082,7 +26003,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  11001,
+        "id":  10998,
         "name":  "爆炒小炒肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26108,7 +26029,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11002,
+        "id":  10999,
         "name":  "孜然肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26134,7 +26055,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  11003,
+        "id":  11000,
         "name":  "贵妃荔枝鸡+泡椒鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -26160,7 +26081,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11004,
+        "id":  11001,
         "name":  "番茄鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -26184,7 +26105,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11005,
+        "id":  11002,
         "name":  "黄金糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -26208,7 +26129,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11006,
+        "id":  11003,
         "name":  "土豆肉丝炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26234,7 +26155,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11007,
+        "id":  11004,
         "name":  "老干妈火腿外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -26258,7 +26179,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11008,
+        "id":  11005,
         "name":  "酥肉四荤泡椒苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -26284,7 +26205,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11009,
+        "id":  11006,
         "name":  "辣条饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -26308,7 +26229,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11010,
+        "id":  11007,
         "name":  "酸菜肉丝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26334,7 +26255,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11011,
+        "id":  11008,
         "name":  "凤爪煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26358,7 +26279,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  11012,
+        "id":  11009,
         "name":  "鸡块拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26385,7 +26306,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11013,
+        "id":  11010,
         "name":  "小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26409,7 +26330,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11014,
+        "id":  11011,
         "name":  "纯淀粉肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -26434,7 +26355,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  11015,
+        "id":  11012,
         "name":  "【CP组合】豌杂面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26459,7 +26380,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11016,
+        "id":  11013,
         "name":  "肉末豇豆炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26483,7 +26404,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  11017,
+        "id":  11014,
         "name":  "金汤",
         "category":  "汤粥",
         "icon":  "soup",
@@ -26508,7 +26429,7 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  11018,
+        "id":  11015,
         "name":  "手打猪肉丸子擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -26534,7 +26455,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11019,
+        "id":  11016,
         "name":  "鱼籽烧",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26559,7 +26480,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  11020,
+        "id":  11017,
         "name":  "小馆辣肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26585,7 +26506,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  11021,
+        "id":  11018,
         "name":  "黑椒肉柳",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26611,7 +26532,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  11022,
+        "id":  11019,
         "name":  "方便面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26636,7 +26557,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11023,
+        "id":  11020,
         "name":  "回锅肉炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26660,7 +26581,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  11024,
+        "id":  11021,
         "name":  "鸡蛋新疆炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -26684,7 +26605,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  11025,
+        "id":  11022,
         "name":  "农家酥肉（煮冒菜里面不单独装）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -26709,7 +26630,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11026,
+        "id":  11023,
         "name":  "番茄豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -26734,7 +26655,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11027,
+        "id":  11024,
         "name":  "番茄丸子面/刀削/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -26759,7 +26680,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11028,
+        "id":  11025,
         "name":  "肉酱土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -26787,7 +26708,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11029,
+        "id":  11026,
         "name":  "老坛酸菜面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -26813,7 +26734,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11030,
+        "id":  11027,
         "name":  "辣子鸡拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -26839,7 +26760,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  11031,
+        "id":  11028,
         "name":  "里脊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26863,7 +26784,7 @@
         "rawGroup":  "6元区"
     },
     {
-        "id":  11032,
+        "id":  11029,
         "name":  "椒麻鸡+香菇滑鸡套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -26890,7 +26811,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11033,
+        "id":  11030,
         "name":  "香辣干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -26916,7 +26837,7 @@
         "rawGroup":  "招牌"
     },
     {
-        "id":  11034,
+        "id":  11031,
         "name":  "可乐鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -26942,7 +26863,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11035,
+        "id":  11032,
         "name":  "双椒拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -26968,7 +26889,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11036,
+        "id":  11033,
         "name":  "酸菜午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -26992,7 +26913,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11037,
+        "id":  11034,
         "name":  "番茄鸡蛋拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -27016,7 +26937,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11038,
+        "id":  11035,
         "name":  "葱油拌面配（配大骨汤）",
         "category":  "面食",
         "icon":  "wheat",
@@ -27041,7 +26962,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11039,
+        "id":  11036,
         "name":  "小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27067,7 +26988,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  11040,
+        "id":  11037,
         "name":  "泡椒牛肉干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27093,7 +27014,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11041,
+        "id":  11038,
         "name":  "腊肠鸡蛋炒米粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -27119,7 +27040,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11042,
+        "id":  11039,
         "name":  "干锅狼牙土豆",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -27144,7 +27065,7 @@
         "rawGroup":  "现炒麻辣干锅"
     },
     {
-        "id":  11043,
+        "id":  11040,
         "name":  "本帮咸水鸡饭明炉烤鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27170,7 +27091,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11044,
+        "id":  11041,
         "name":  "仔姜肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27196,7 +27117,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11045,
+        "id":  11042,
         "name":  "蔬菜拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27223,7 +27144,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11046,
+        "id":  11043,
         "name":  "招牌鸡肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27249,7 +27170,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11047,
+        "id":  11044,
         "name":  "菜鸡蛋玉米",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -27275,7 +27196,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11048,
+        "id":  11045,
         "name":  "酱香肥肠鸡焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27301,7 +27222,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11049,
+        "id":  11046,
         "name":  "鸡柳卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -27327,7 +27248,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  11050,
+        "id":  11047,
         "name":  "套餐十五",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27353,7 +27274,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11051,
+        "id":  11048,
         "name":  "石锅水煮鱼",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27380,7 +27301,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11052,
+        "id":  11049,
         "name":  "小馆混合炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27406,7 +27327,7 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  11053,
+        "id":  11050,
         "name":  "老北京杂酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27430,7 +27351,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  11054,
+        "id":  11051,
         "name":  "番茄馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -27458,7 +27379,7 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  11055,
+        "id":  11052,
         "name":  "白菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -27484,7 +27405,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11056,
+        "id":  11053,
         "name":  "酸萝卜面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27512,7 +27433,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  11057,
+        "id":  11054,
         "name":  "套餐九（七虾堡1个+辣翅一对+薯条1份+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -27538,7 +27459,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11058,
+        "id":  11055,
         "name":  "秘制炒饭加一荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27563,7 +27484,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11059,
+        "id":  11056,
         "name":  "孜然牛肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27589,7 +27510,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  11060,
+        "id":  11057,
         "name":  "虾皮鸡柳",
         "category":  "烧烤",
         "icon":  "flame",
@@ -27615,7 +27536,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  11061,
+        "id":  11058,
         "name":  "鸭腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27639,7 +27560,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  11062,
+        "id":  11059,
         "name":  "豆干肉丝套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27665,7 +27586,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11063,
+        "id":  11060,
         "name":  "叉烧",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27691,7 +27612,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11064,
+        "id":  11061,
         "name":  "铁板牛肉饼饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27717,7 +27638,7 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  11065,
+        "id":  11062,
         "name":  "酸萝卜豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -27742,7 +27663,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11066,
+        "id":  11063,
         "name":  "手抓饼加肉松",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -27766,7 +27687,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  11067,
+        "id":  11064,
         "name":  "花菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27791,7 +27712,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11068,
+        "id":  11065,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27816,7 +27737,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11069,
+        "id":  11066,
         "name":  "椒麻拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -27843,7 +27764,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11070,
+        "id":  11067,
         "name":  "酱香毛豆烧鸡焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27869,7 +27790,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11071,
+        "id":  11068,
         "name":  "重庆小面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27896,7 +27817,7 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  11072,
+        "id":  11069,
         "name":  "广式盐焗鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -27922,7 +27843,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  11073,
+        "id":  11070,
         "name":  "肉沫",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -27946,7 +27867,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  11074,
+        "id":  11071,
         "name":  "小馆鸡蛋炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27972,7 +27893,7 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  11075,
+        "id":  11072,
         "name":  "黑椒鸡柳汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -27998,7 +27919,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11076,
+        "id":  11073,
         "name":  "木耳",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28024,7 +27945,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  11077,
+        "id":  11074,
         "name":  "粉条鸡蛋炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28050,7 +27971,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11078,
+        "id":  11075,
         "name":  "青椒肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28075,7 +27996,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11079,
+        "id":  11076,
         "name":  "新火锅抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -28101,7 +28022,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11080,
+        "id":  11077,
         "name":  "酸菜抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -28127,7 +28048,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  11081,
+        "id":  11078,
         "name":  "番茄",
         "category":  "面食",
         "icon":  "wheat",
@@ -28156,7 +28077,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  11082,
+        "id":  11079,
         "name":  "川味藤椒鸡饭明炉烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28183,7 +28104,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11083,
+        "id":  11080,
         "name":  "大盘鸡炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -28209,7 +28130,7 @@
         "rawGroup":  "新增香锅"
     },
     {
-        "id":  11084,
+        "id":  11081,
         "name":  "鲜肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -28235,7 +28156,7 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  11085,
+        "id":  11082,
         "name":  "辣子鸡丁盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28261,7 +28182,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11086,
+        "id":  11083,
         "name":  "玉米肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -28286,7 +28207,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11087,
+        "id":  11084,
         "name":  "玉米猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -28312,7 +28233,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11088,
+        "id":  11085,
         "name":  "酱香麻辣鸭子半边",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28340,7 +28261,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  11089,
+        "id":  11086,
         "name":  "伊美春卷",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -28366,7 +28287,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  11090,
+        "id":  11087,
         "name":  "黑椒牛肉拼大满配",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28392,7 +28313,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  11091,
+        "id":  11088,
         "name":  "铁板鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28418,7 +28339,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11092,
+        "id":  11089,
         "name":  "火锅中辣",
         "category":  "其他",
         "icon":  "utensils",
@@ -28443,7 +28364,7 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  11093,
+        "id":  11090,
         "name":  "小馆麻辣凉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -28470,7 +28391,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11094,
+        "id":  11091,
         "name":  "鲜椒拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -28495,7 +28416,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11095,
+        "id":  11092,
         "name":  "卤肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28519,7 +28440,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  11096,
+        "id":  11093,
         "name":  "鹌鹑蛋3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28543,7 +28464,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11097,
+        "id":  11094,
         "name":  "猪肉玉米水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -28569,7 +28490,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11098,
+        "id":  11095,
         "name":  "玫瑰油鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28595,7 +28516,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  11099,
+        "id":  11096,
         "name":  "新派口水鸡例米饭小菜1",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28621,7 +28542,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11100,
+        "id":  11097,
         "name":  "招牌‼️鸡腿煲(酱香/五香）绝味",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28645,7 +28566,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11101,
+        "id":  11098,
         "name":  "火腿，鸡蛋炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -28669,7 +28590,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11102,
+        "id":  11099,
         "name":  "老麻抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -28695,7 +28616,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11103,
+        "id":  11100,
         "name":  "新品❤️黑椒鸡排拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28720,7 +28641,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11104,
+        "id":  11101,
         "name":  "泡椒肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28744,7 +28665,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  11105,
+        "id":  11102,
         "name":  "椒麻拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -28773,7 +28694,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11106,
+        "id":  11103,
         "name":  "干锅排骨",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -28797,7 +28718,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  11107,
+        "id":  11104,
         "name":  "酸菜地锅肉丸子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -28823,7 +28744,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11108,
+        "id":  11105,
         "name":  "酥肉四荤红酸汤苕粉1",
         "category":  "面食",
         "icon":  "wheat",
@@ -28849,7 +28770,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11109,
+        "id":  11106,
         "name":  "小炒鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -28875,7 +28796,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  11110,
+        "id":  11107,
         "name":  "二荤四素套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -28901,33 +28822,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  11111,
-        "name":  "香辣鸡杂拌面",
-        "category":  "面食",
-        "icon":  "wheat",
-        "taste":  [
-                      "微辣"
-                  ],
-        "flavors":  [
-                        "辣"
-                    ],
-        "price":  14,
-        "cal":  600,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "菜单补录，约 600 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "沈大爷",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  11112,
+        "id":  11108,
         "name":  "鱼香肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -28953,7 +28848,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11113,
+        "id":  11109,
         "name":  "泡椒肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -28977,7 +28872,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11114,
+        "id":  11110,
         "name":  "黑椒肉柳小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -29001,7 +28896,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11115,
+        "id":  11111,
         "name":  "椒麻拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -29028,7 +28923,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  11116,
+        "id":  11112,
         "name":  "番茄汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -29055,7 +28950,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11117,
+        "id":  11113,
         "name":  "豆干肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -29081,7 +28976,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  11118,
+        "id":  11114,
         "name":  "焦香尖椒鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -29107,7 +29002,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11119,
+        "id":  11115,
         "name":  "粉条鸡蛋炒肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -29133,7 +29028,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11120,
+        "id":  11116,
         "name":  "蹄花面",
         "category":  "面食",
         "icon":  "wheat",
@@ -29158,32 +29053,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11121,
-        "name":  "蜂蜜芥末酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": ["咸鲜"],
-        "price":  1.5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "一小盒，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  11122,
+        "id":  11117,
         "name":  "辣子鸡拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -29207,7 +29077,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11123,
+        "id":  11118,
         "name":  "藤椒鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -29234,7 +29104,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11124,
+        "id":  11119,
         "name":  "黑椒鸡柳拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -29260,7 +29130,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11125,
+        "id":  11120,
         "name":  "大排",
         "category":  "面食",
         "icon":  "wheat",
@@ -29286,7 +29156,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  11126,
+        "id":  11121,
         "name":  "麻辣酥肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -29314,7 +29184,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11127,
+        "id":  11122,
         "name":  "鸭血+煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -29338,7 +29208,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  11128,
+        "id":  11123,
         "name":  "奥尔良鸡肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -29364,7 +29234,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11129,
+        "id":  11124,
         "name":  "香菇鸡腿肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -29390,7 +29260,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11130,
+        "id":  11125,
         "name":  "脆皮炸鸡一只",
         "category":  "烧烤",
         "icon":  "flame",
@@ -29414,58 +29284,59 @@
         "rawGroup":  "脆皮炸鸡"
     },
     {
-        "id":  11131,
-        "name":  "旋风鸡排拌饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
+        "id":  11126,
+        "name":  "香辣鸡杂拌面",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微辣"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  14,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "菜单补录，约 600 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "沈大爷",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
+    },
+    {
+        "id":  11127,
+        "name":  "酥肉米线/面块",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
                       "咸香"
                   ],
-        "flavors": [],
-        "price":  13,
-        "cal":  700,
-        "tags":  [
-                     "人气",
-                     "管饱"
-                 ],
-        "desc":  "现炸鸡排 肉感十足 口感劲道 咔吱脆搭配酱汁更美味哦，约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "沈大爷拌饭拌面拌粉",
-        "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/ac59b04ef7904aa3b0cb975271a7ffdf.jpg",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  11132,
-        "name":  "蜜汁烤肉双拼",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "甜"
-                  ],
         "flavors":  [
-                        "甜"
+
                     ],
         "price":  14,
-        "cal":  450,
+        "cal":  600,
         "tags":  [
-
+                     "管饱"
                  ],
-        "desc":  "“双拼”之选（另有：双拼14元），约 450 kcal",
+        "desc":  "“点菜”之选（另有：点菜14元/份），约 600 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "烤肉饭",
+        "stall":  "外公家米线",
         "canteen":  "汇百味餐厅",
         "img":  "",
-        "rawGroup":  "双拼"
+        "rawGroup":  "点菜"
     },
     {
-        "id":  11133,
+        "id":  11128,
         "name":  "鸡腿擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -29491,7 +29362,7 @@
         "rawGroup":  "卤肉擂饭系列"
     },
     {
-        "id":  11134,
+        "id":  11129,
         "name":  "腐竹炒肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -29517,7 +29388,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11135,
+        "id":  11130,
         "name":  "鸡柳薯条年糕三合一",
         "category":  "烧烤",
         "icon":  "flame",
@@ -29543,7 +29414,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11136,
+        "id":  11131,
         "name":  "狼牙土豆",
         "category":  "其他",
         "icon":  "utensils",
@@ -29570,7 +29441,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  11137,
+        "id":  11132,
         "name":  "番茄牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -29598,7 +29469,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11138,
+        "id":  11133,
         "name":  "麻将鸡丝拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -29624,7 +29495,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11139,
+        "id":  11134,
         "name":  "双人套餐十（香辣鸡腿堡2个+薯条1份+辣翅一对+脆皮鸡腿1个+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -29650,7 +29521,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11140,
+        "id":  11135,
         "name":  "孜然脆骨（5片）",
         "category":  "其他",
         "icon":  "utensils",
@@ -29676,7 +29547,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11141,
+        "id":  11136,
         "name":  "干锅时蔬盲盒搭配",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -29702,7 +29573,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11142,
+        "id":  11137,
         "name":  "竹笋",
         "category":  "其他",
         "icon":  "utensils",
@@ -29728,7 +29599,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11143,
+        "id":  11138,
         "name":  "火腿米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -29754,7 +29625,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11144,
+        "id":  11139,
         "name":  "两荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -29780,7 +29651,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11145,
+        "id":  11140,
         "name":  "超级三鲜米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -29804,7 +29675,7 @@
         "rawGroup":  "🎉新品推荐🎉"
     },
     {
-        "id":  11146,
+        "id":  11141,
         "name":  "牛肉煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -29830,7 +29701,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11147,
+        "id":  11142,
         "name":  "香辣猪肝面/刀削/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -29856,7 +29727,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11148,
+        "id":  11143,
         "name":  "酸豆角肉末土豆泥拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -29882,7 +29753,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11149,
+        "id":  11144,
         "name":  "紫薯包",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -29907,7 +29778,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11150,
+        "id":  11145,
         "name":  "曹鸭子+金牌茄子套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -29933,7 +29804,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11151,
+        "id":  11146,
         "name":  "纯素减脂餐（含米饭）",
         "category":  "其他",
         "icon":  "utensils",
@@ -29959,7 +29830,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11152,
+        "id":  11147,
         "name":  "秘制拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -29985,7 +29856,7 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  11153,
+        "id":  11148,
         "name":  "鸭血小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30011,7 +29882,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  11154,
+        "id":  11149,
         "name":  "鲜甜酱汁鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30038,7 +29909,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  11155,
+        "id":  11150,
         "name":  "小馆招牌炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -30064,7 +29935,7 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  11156,
+        "id":  11151,
         "name":  "香辣鸡杂拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -30090,7 +29961,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11157,
+        "id":  11152,
         "name":  "酸菜豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -30115,7 +29986,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11158,
+        "id":  11153,
         "name":  "卤豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30140,7 +30011,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  11159,
+        "id":  11154,
         "name":  "肉丸子米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -30166,7 +30037,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11160,
+        "id":  11155,
         "name":  "大盘鸡炒米粉肉多多！",
         "category":  "面食",
         "icon":  "wheat",
@@ -30192,7 +30063,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11161,
+        "id":  11156,
         "name":  "油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30217,7 +30088,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11162,
+        "id":  11157,
         "name":  "火锅午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -30242,7 +30113,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  11163,
+        "id":  11158,
         "name":  "汉堡+麦穗肠+饮料",
         "category":  "其他",
         "icon":  "utensils",
@@ -30267,7 +30138,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  11164,
+        "id":  11159,
         "name":  "鸡丝拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -30294,7 +30165,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11165,
+        "id":  11160,
         "name":  "小馆肉燥拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -30320,7 +30191,7 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  11166,
+        "id":  11161,
         "name":  "香菇牛肉干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -30346,7 +30217,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11167,
+        "id":  11162,
         "name":  "红烧肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30372,7 +30243,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11168,
+        "id":  11163,
         "name":  "素炒双拼米粉宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -30399,7 +30270,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11169,
+        "id":  11164,
         "name":  "粉蒸排骨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30425,7 +30296,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11170,
+        "id":  11165,
         "name":  "秘制拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -30451,7 +30322,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  11171,
+        "id":  11166,
         "name":  "老板疯了！单人套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -30477,7 +30348,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11172,
+        "id":  11167,
         "name":  "鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -30503,7 +30374,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11173,
+        "id":  11168,
         "name":  "小馆辣肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -30527,7 +30398,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  11174,
+        "id":  11169,
         "name":  "里脊肉片小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30553,7 +30424,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  11175,
+        "id":  11170,
         "name":  "青菜鸡蛋虾米",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30579,7 +30450,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11176,
+        "id":  11171,
         "name":  "干锅虾",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -30603,7 +30474,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  11177,
+        "id":  11172,
         "name":  "乱劈才盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -30627,7 +30498,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  11178,
+        "id":  11173,
         "name":  "泡椒肉沫粉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30653,7 +30524,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11179,
+        "id":  11174,
         "name":  "干锅鸡翅尖",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -30679,7 +30550,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  11180,
+        "id":  11175,
         "name":  "咸鸭蛋饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -30703,7 +30574,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11181,
+        "id":  11176,
         "name":  "烧白（梅菜扣肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30727,7 +30598,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11182,
+        "id":  11177,
         "name":  "猪脚饭咸水鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30753,7 +30624,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11183,
+        "id":  11178,
         "name":  "双层鸡腿堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -30779,7 +30650,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  11184,
+        "id":  11179,
         "name":  "猪排麻酱拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -30805,7 +30676,7 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  11185,
+        "id":  11180,
         "name":  "三鲜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -30831,7 +30702,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11186,
+        "id":  11181,
         "name":  "杏鲍菇炒肉片+金牌茄子套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -30857,7 +30728,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11187,
+        "id":  11182,
         "name":  "鸡蛋卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -30883,7 +30754,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  11188,
+        "id":  11183,
         "name":  "肉末丝瓜土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -30909,7 +30780,7 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  11189,
+        "id":  11184,
         "name":  "贵州红酸汤螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -30935,7 +30806,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11190,
+        "id":  11185,
         "name":  "开花脆皮肠干锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -30961,7 +30832,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11191,
+        "id":  11186,
         "name":  "香煎鸡排小炒",
         "category":  "烧烤",
         "icon":  "flame",
@@ -30985,7 +30856,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11192,
+        "id":  11187,
         "name":  "香菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31009,7 +30880,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11193,
+        "id":  11188,
         "name":  "黄瓜鸡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31033,7 +30904,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11194,
+        "id":  11189,
         "name":  "黑椒肉片拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31059,7 +30930,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11195,
+        "id":  11190,
         "name":  "莴笋",
         "category":  "其他",
         "icon":  "utensils",
@@ -31085,7 +30956,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  11196,
+        "id":  11191,
         "name":  "香菇卤肉",
         "category":  "面食",
         "icon":  "wheat",
@@ -31111,7 +30982,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  11197,
+        "id":  11192,
         "name":  "鱼香肉丝拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31137,7 +31008,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11198,
+        "id":  11193,
         "name":  "卤味干锅五花肉",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -31164,7 +31035,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11199,
+        "id":  11194,
         "name":  "龙虾风味球2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31188,7 +31059,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11200,
+        "id":  11195,
         "name":  "原味年糕（2个）",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -31213,7 +31084,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11201,
+        "id":  11196,
         "name":  "曹鸭子+龙江锅包肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31239,7 +31110,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11202,
+        "id":  11197,
         "name":  "鱼芙蓉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31263,7 +31134,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  11203,
+        "id":  11198,
         "name":  "土豆肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31289,7 +31160,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  11204,
+        "id":  11199,
         "name":  "扬州炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31315,7 +31186,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11205,
+        "id":  11200,
         "name":  "香菇牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31339,7 +31210,7 @@
         "rawGroup":  "盖浇饭类"
     },
     {
-        "id":  11206,
+        "id":  11201,
         "name":  "麻辣渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -31366,7 +31237,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11207,
+        "id":  11202,
         "name":  "七虾卷",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31392,7 +31263,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  11208,
+        "id":  11203,
         "name":  "明炉烤鸭饭蜜汁叉烧",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31419,7 +31290,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11209,
+        "id":  11204,
         "name":  "木耳鱼香肉丝拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31445,7 +31316,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11210,
+        "id":  11205,
         "name":  "猪排",
         "category":  "其他",
         "icon":  "utensils",
@@ -31470,7 +31341,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  11211,
+        "id":  11206,
         "name":  "老北京杂酱粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -31494,7 +31365,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11212,
+        "id":  11207,
         "name":  "鱼香茄子小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31518,7 +31389,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11213,
+        "id":  11208,
         "name":  "小馆青椒鸡蛋炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -31544,35 +31415,7 @@
         "rawGroup":  "海报（实拍图价目）"
     },
     {
-        "id":  11214,
-        "name":  "红果山楂酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-                        "酸甜",
-                        "咸鲜"
-                    ],
-        "price":  1.5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“调料包”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  11215,
+        "id":  11209,
         "name":  "黄焖金针菇鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31598,7 +31441,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11216,
+        "id":  11210,
         "name":  "干海椒干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -31624,7 +31467,7 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  11217,
+        "id":  11211,
         "name":  "广东香肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31650,7 +31493,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  11218,
+        "id":  11212,
         "name":  "香辣鸡干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -31676,7 +31519,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11219,
+        "id":  11213,
         "name":  "一荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31702,7 +31545,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11220,
+        "id":  11214,
         "name":  "酸菜花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -31726,7 +31569,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11221,
+        "id":  11215,
         "name":  "香辣猪脚",
         "category":  "其他",
         "icon":  "utensils",
@@ -31751,7 +31594,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11222,
+        "id":  11216,
         "name":  "小馆肉燥酸菜汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -31777,7 +31620,7 @@
         "rawGroup":  "海报（汤面拌面都可以做）"
     },
     {
-        "id":  11223,
+        "id":  11217,
         "name":  "咖喱鸡肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31801,7 +31644,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  11224,
+        "id":  11218,
         "name":  "麻辣烤鸭焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31828,7 +31671,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11225,
+        "id":  11219,
         "name":  "番茄花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -31852,33 +31695,33 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11226,
-        "name":  "花生汤圆",
-        "category":  "甜品饮品",
-        "icon":  "cup",
+        "id":  11220,
+        "name":  "虎皮红烧肉拌饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
-                      "甜"
+                      "咸香"
                   ],
-        "flavors": ["甜"],
-        "price":  8,
-        "cal":  350,
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  15,
+        "cal":  700,
         "tags":  [
-                     "性价比",
-                     "折扣",
-                     "低卡"
+                     "管饱"
                  ],
-        "desc":  "“🔥美味汤圆🔥”之选，约 350 kcal",
+        "desc":  "菜单补录，约 700 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "惠芯意鲜抄手饺子",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/9e5a436590334fc3a4df3b631209063c.jpg",
-        "rawGroup":  "🔥美味汤圆🔥"
+        "stall":  "沈大爷",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
     },
     {
-        "id":  11227,
+        "id":  11221,
         "name":  "小馆燥酸豆角拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -31905,7 +31748,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11228,
+        "id":  11222,
         "name":  "青椒鸡蛋小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -31929,7 +31772,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11229,
+        "id":  11223,
         "name":  "鱼香肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31955,7 +31798,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  11230,
+        "id":  11224,
         "name":  "腊肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -31981,7 +31824,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11231,
+        "id":  11225,
         "name":  "香煎鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32007,7 +31850,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  11232,
+        "id":  11226,
         "name":  "牛肉丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32031,7 +31874,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  11233,
+        "id":  11227,
         "name":  "牛肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -32057,7 +31900,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11234,
+        "id":  11228,
         "name":  "老干妈火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32083,7 +31926,7 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  11235,
+        "id":  11229,
         "name":  "菌汤花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -32107,7 +31950,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  11236,
+        "id":  11230,
         "name":  "虎皮红烧肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32132,7 +31975,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11237,
+        "id":  11231,
         "name":  "香辣锅包肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -32158,7 +32001,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11238,
+        "id":  11232,
         "name":  "大白菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32183,7 +32026,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  11239,
+        "id":  11233,
         "name":  "干锅排骨",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -32209,7 +32052,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11240,
+        "id":  11234,
         "name":  "臭豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32234,7 +32077,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11241,
+        "id":  11235,
         "name":  "鱼香肉沫茄子拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32260,7 +32103,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11242,
+        "id":  11236,
         "name":  "酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32287,7 +32130,7 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  11243,
+        "id":  11237,
         "name":  "土豆粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32313,7 +32156,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  11244,
+        "id":  11238,
         "name":  "西红柿炒蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32339,7 +32182,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11245,
+        "id":  11239,
         "name":  "猪排拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -32365,7 +32208,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11246,
+        "id":  11240,
         "name":  "乐享套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32391,7 +32234,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11247,
+        "id":  11241,
         "name":  "火腿，鸡蛋炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32417,7 +32260,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11248,
+        "id":  11242,
         "name":  "杨州炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32441,7 +32284,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11249,
+        "id":  11243,
         "name":  "锅包肉+湖南小炒肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32467,7 +32310,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11250,
+        "id":  11244,
         "name":  "蒙古烤肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32491,7 +32334,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11251,
+        "id":  11245,
         "name":  "毛血旺",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -32517,7 +32360,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  11252,
+        "id":  11246,
         "name":  "番茄全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -32542,7 +32385,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11253,
+        "id":  11247,
         "name":  "牛肉饼/鱼肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -32568,7 +32411,7 @@
         "rawGroup":  "自选健康餐"
     },
     {
-        "id":  11254,
+        "id":  11248,
         "name":  "韩式套餐五",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32594,7 +32437,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11255,
+        "id":  11249,
         "name":  "红烧排骨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32620,7 +32463,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11256,
+        "id":  11250,
         "name":  "泡椒肉丝面/刀削",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32644,7 +32487,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11257,
+        "id":  11251,
         "name":  "孜然烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32670,7 +32513,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11258,
+        "id":  11252,
         "name":  "藕片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32695,7 +32538,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11259,
+        "id":  11253,
         "name":  "(新)椒麻汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -32722,7 +32565,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  11260,
+        "id":  11254,
         "name":  "菌香鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32748,7 +32591,7 @@
         "rawGroup":  "新增香锅"
     },
     {
-        "id":  11261,
+        "id":  11255,
         "name":  "泡椒油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -32772,7 +32615,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11262,
+        "id":  11256,
         "name":  "糖醋里脊盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -32801,7 +32644,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11263,
+        "id":  11257,
         "name":  "面包排",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -32826,7 +32669,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11264,
+        "id":  11258,
         "name":  "鲜肉片渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32852,7 +32695,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11265,
+        "id":  11259,
         "name":  "鲜肉小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32878,7 +32721,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  11266,
+        "id":  11260,
         "name":  "蒜蓉龙虾尾盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32904,7 +32747,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  11267,
+        "id":  11261,
         "name":  "蜜汁手扒鸡半只",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32928,7 +32771,7 @@
         "rawGroup":  "脆皮炸鸡"
     },
     {
-        "id":  11268,
+        "id":  11262,
         "name":  "小馆麻辣凉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -32955,7 +32798,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  11269,
+        "id":  11263,
         "name":  "二荤四素套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -32981,7 +32824,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11270,
+        "id":  11264,
         "name":  "意式番茄肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
@@ -33009,7 +32852,7 @@
         "rawGroup":  "低卡意面系列"
     },
     {
-        "id":  11271,
+        "id":  11265,
         "name":  "原汤羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -33035,7 +32878,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11272,
+        "id":  11266,
         "name":  "石锅鸡蛋土豆",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -33061,7 +32904,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11273,
+        "id":  11267,
         "name":  "红油云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -33088,7 +32931,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  11274,
+        "id":  11268,
         "name":  "川香回锅肉盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -33114,7 +32957,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  11275,
+        "id":  11269,
         "name":  "鸡块干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -33140,7 +32983,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11276,
+        "id":  11270,
         "name":  "风味培根2根",
         "category":  "其他",
         "icon":  "utensils",
@@ -33165,7 +33008,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11277,
+        "id":  11271,
         "name":  "冬瓜",
         "category":  "其他",
         "icon":  "utensils",
@@ -33191,7 +33034,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11278,
+        "id":  11272,
         "name":  "泡椒鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -33215,7 +33058,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11279,
+        "id":  11273,
         "name":  "酸菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33239,7 +33082,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  11280,
+        "id":  11274,
         "name":  "隆江猪脚饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -33265,7 +33108,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  11281,
+        "id":  11275,
         "name":  "酸菜土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -33290,7 +33133,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11282,
+        "id":  11276,
         "name":  "奥尔良鸡肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -33316,7 +33159,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11283,
+        "id":  11277,
         "name":  "炙烧蟹柳大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33342,7 +33185,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  11284,
+        "id":  11278,
         "name":  "黑椒鸡柳汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -33367,7 +33210,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11285,
+        "id":  11279,
         "name":  "鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -33393,7 +33236,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11286,
+        "id":  11280,
         "name":  "青椒肉丝蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -33419,7 +33262,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  11287,
+        "id":  11281,
         "name":  "把把牛肉串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33443,7 +33286,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  11288,
+        "id":  11282,
         "name":  "香菜丸子3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33467,7 +33310,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11289,
+        "id":  11283,
         "name":  "平菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33492,7 +33335,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  11290,
+        "id":  11284,
         "name":  "豆沙包",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -33517,7 +33360,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11291,
+        "id":  11285,
         "name":  "小酥肉渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -33543,7 +33386,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11292,
+        "id":  11286,
         "name":  "三鲜炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -33569,7 +33412,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  11293,
+        "id":  11287,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33594,7 +33437,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  11294,
+        "id":  11288,
         "name":  "豌杂酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -33621,7 +33464,7 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  11295,
+        "id":  11289,
         "name":  "番茄肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -33645,7 +33488,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11296,
+        "id":  11290,
         "name":  "白粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -33673,7 +33516,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  11297,
+        "id":  11291,
         "name":  "泡椒金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -33698,7 +33541,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11298,
+        "id":  11292,
         "name":  "火腿鸡蛋黄瓜小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33724,7 +33567,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11299,
+        "id":  11293,
         "name":  "青菜鸡蛋猪肝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33748,7 +33591,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  11300,
+        "id":  11294,
         "name":  "包菜胡萝卜鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -33774,7 +33617,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11301,
+        "id":  11295,
         "name":  "面筋串",
         "category":  "其他",
         "icon":  "utensils",
@@ -33800,7 +33643,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11302,
+        "id":  11296,
         "name":  "撒尿牛肉丸3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33824,7 +33667,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11303,
+        "id":  11297,
         "name":  "酥肉四荤糊辣子苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -33850,7 +33693,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11304,
+        "id":  11298,
         "name":  "胡辣壳抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -33876,7 +33719,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11305,
+        "id":  11299,
         "name":  "甜不辣芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -33903,7 +33746,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  11306,
+        "id":  11300,
         "name":  "墨椒牛肉饼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -33929,7 +33772,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11307,
+        "id":  11301,
         "name":  "香菇油菜炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -33955,7 +33798,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11308,
+        "id":  11302,
         "name":  "藤椒干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -33982,7 +33825,7 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  11309,
+        "id":  11303,
         "name":  "辣翅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34006,7 +33849,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11310,
+        "id":  11304,
         "name":  "招牌鸡肉新疆炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -34032,7 +33875,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11311,
+        "id":  11305,
         "name":  "石锅焖面+糖醋里脊",
         "category":  "面食",
         "icon":  "wheat",
@@ -34059,7 +33902,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11312,
+        "id":  11306,
         "name":  "肉沫茄子盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -34084,7 +33927,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11313,
+        "id":  11307,
         "name":  "套餐十三",
         "category":  "其他",
         "icon":  "utensils",
@@ -34108,7 +33951,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  11314,
+        "id":  11308,
         "name":  "油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34133,7 +33976,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11315,
+        "id":  11309,
         "name":  "二荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -34159,7 +34002,7 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  11316,
+        "id":  11310,
         "name":  "金陵咸水鸭饭本帮咸水鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -34185,7 +34028,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11317,
+        "id":  11311,
         "name":  "烧白面",
         "category":  "面食",
         "icon":  "wheat",
@@ -34211,7 +34054,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11318,
+        "id":  11312,
         "name":  "烤肠芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -34237,7 +34080,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  11319,
+        "id":  11313,
         "name":  "黄金鸡柳（藤椒味）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -34266,7 +34109,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11320,
+        "id":  11314,
         "name":  "菜鸡蛋培根",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34290,7 +34133,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11321,
+        "id":  11315,
         "name":  "薏仁山药乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -34316,7 +34159,7 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  11322,
+        "id":  11316,
         "name":  "黑椒牛肉饼大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34342,7 +34185,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11323,
+        "id":  11317,
         "name":  "肉丝米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -34367,7 +34210,7 @@
         "rawGroup":  "🎉新品推荐🎉"
     },
     {
-        "id":  11324,
+        "id":  11318,
         "name":  "炸鸡套餐二",
         "category":  "烧烤",
         "icon":  "flame",
@@ -34393,7 +34236,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11325,
+        "id":  11319,
         "name":  "鱼豆腐+豆皮",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34417,7 +34260,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  11326,
+        "id":  11320,
         "name":  "凉皮",
         "category":  "面食",
         "icon":  "wheat",
@@ -34445,7 +34288,7 @@
         "rawGroup":  "凉面凉皮"
     },
     {
-        "id":  11327,
+        "id":  11321,
         "name":  "猪肉三鲜水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -34471,7 +34314,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11328,
+        "id":  11322,
         "name":  "酱香鸡腿单点（销冠）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34496,7 +34339,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11329,
+        "id":  11323,
         "name":  "日式烧牛肉拼鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -34522,7 +34365,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  11330,
+        "id":  11324,
         "name":  "五花肉火腿肠套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34548,7 +34391,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  11331,
+        "id":  11325,
         "name":  "肉丸+火腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34572,7 +34415,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  11332,
+        "id":  11326,
         "name":  "香辣鸡杂拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -34596,7 +34439,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  11333,
+        "id":  11327,
         "name":  "红番茄鸡肉炒米粉不辣",
         "category":  "面食",
         "icon":  "wheat",
@@ -34623,7 +34466,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11334,
+        "id":  11328,
         "name":  "青椒肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -34649,7 +34492,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11335,
+        "id":  11329,
         "name":  "现切鲜牛肉4片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34675,7 +34518,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11336,
+        "id":  11330,
         "name":  "冬阴功午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -34699,7 +34542,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  11337,
+        "id":  11331,
         "name":  "金汤酸菜抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -34723,7 +34566,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  11338,
+        "id":  11332,
         "name":  "小酥肉小锅米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -34749,7 +34592,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11339,
+        "id":  11333,
         "name":  "魔芋丝",
         "category":  "其他",
         "icon":  "utensils",
@@ -34774,7 +34617,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  11340,
+        "id":  11334,
         "name":  "原汤羊杂米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -34800,7 +34643,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11341,
+        "id":  11335,
         "name":  "新疆炒素米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -34827,7 +34670,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11342,
+        "id":  11336,
         "name":  "西红柿鸡蛋面",
         "category":  "面食",
         "icon":  "wheat",
@@ -34853,7 +34696,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  11343,
+        "id":  11337,
         "name":  "藤椒肉丝椒麻面",
         "category":  "面食",
         "icon":  "wheat",
@@ -34880,7 +34723,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11344,
+        "id":  11338,
         "name":  "干锅香辣翅根3个",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -34905,7 +34748,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11345,
+        "id":  11339,
         "name":  "酸菜地锅肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -34931,7 +34774,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11346,
+        "id":  11340,
         "name":  "冬阴功鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -34955,7 +34798,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  11347,
+        "id":  11341,
         "name":  "藤椒火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -34982,7 +34825,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  11348,
+        "id":  11342,
         "name":  "番茄肉酱土豆泥盖码饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -35010,7 +34853,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11349,
+        "id":  11343,
         "name":  "梅菜扣肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -35034,7 +34877,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  11350,
+        "id":  11344,
         "name":  "金汤酸菜抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -35060,7 +34903,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  11351,
+        "id":  11345,
         "name":  "韩式炸年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -35085,7 +34928,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11352,
+        "id":  11346,
         "name":  "麻辣肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35112,7 +34955,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11353,
+        "id":  11347,
         "name":  "泡椒肉丝拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -35137,7 +34980,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11354,
+        "id":  11348,
         "name":  "湖南小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35163,7 +35006,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  11355,
+        "id":  11349,
         "name":  "青笋肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35189,7 +35032,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11356,
+        "id":  11350,
         "name":  "功夫脆皮鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35215,7 +35058,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11357,
+        "id":  11351,
         "name":  "干锅包菜",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -35241,7 +35084,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11358,
+        "id":  11352,
         "name":  "番茄油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -35266,7 +35109,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11359,
+        "id":  11353,
         "name":  "凤爪煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35292,7 +35135,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11360,
+        "id":  11354,
         "name":  "贵妃荔枝鸡+曹鸭子套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -35318,7 +35161,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11361,
+        "id":  11355,
         "name":  "小馆肉酸豆角面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -35344,7 +35187,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11362,
+        "id":  11356,
         "name":  "泡椒羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -35370,7 +35213,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11363,
+        "id":  11357,
         "name":  "土豆",
         "category":  "其他",
         "icon":  "utensils",
@@ -35396,7 +35239,7 @@
         "rawGroup":  "石锅饭加菜区"
     },
     {
-        "id":  11364,
+        "id":  11358,
         "name":  "辣椒蒸排骨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35423,7 +35266,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11365,
+        "id":  11359,
         "name":  "特色炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -35449,7 +35292,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11366,
+        "id":  11360,
         "name":  "兰花豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35474,7 +35317,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11367,
+        "id":  11361,
         "name":  "经典鸡排套餐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -35500,7 +35343,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11368,
+        "id":  11362,
         "name":  "蒜香烤鸭腿饭豉油鸡饭1",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35526,7 +35369,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11369,
+        "id":  11363,
         "name":  "把把签鸭肠串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35550,7 +35393,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  11370,
+        "id":  11364,
         "name":  "海味馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -35576,7 +35419,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11371,
+        "id":  11365,
         "name":  "招牌干锅鸡套餐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -35602,7 +35445,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  11372,
+        "id":  11366,
         "name":  "鲍菇肉片茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -35628,7 +35471,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11373,
+        "id":  11367,
         "name":  "生菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35653,7 +35496,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  11374,
+        "id":  11368,
         "name":  "套餐十五",
         "category":  "其他",
         "icon":  "utensils",
@@ -35677,7 +35520,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  11375,
+        "id":  11369,
         "name":  "维C摇鸡茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -35703,7 +35546,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11376,
+        "id":  11370,
         "name":  "苕皮肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -35728,7 +35571,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11377,
+        "id":  11371,
         "name":  "大骨汤面/刀削河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -35754,7 +35597,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11378,
+        "id":  11372,
         "name":  "孜然肉排",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -35780,7 +35623,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11379,
+        "id":  11373,
         "name":  "泡椒素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -35806,7 +35649,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11380,
+        "id":  11374,
         "name":  "现包鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -35832,7 +35675,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11381,
+        "id":  11375,
         "name":  "红烧肥肠面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -35857,7 +35700,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11382,
+        "id":  11376,
         "name":  "龙虾风味饼2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35881,7 +35724,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11383,
+        "id":  11377,
         "name":  "套餐1（火鸡面+无骨鸡块2个+年糕条2个+锅巴土豆2个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35907,7 +35750,7 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  11384,
+        "id":  11378,
         "name":  "香菇青菜包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35934,7 +35777,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  11385,
+        "id":  11379,
         "name":  "粉蒸肉排",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -35960,7 +35803,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11386,
+        "id":  11380,
         "name":  "香辣花卷",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -35987,7 +35830,7 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  11387,
+        "id":  11381,
         "name":  "蒜蓉干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -36013,7 +35856,7 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  11388,
+        "id":  11382,
         "name":  "青椒肉肠盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -36039,7 +35882,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  11389,
+        "id":  11383,
         "name":  "虫草花玉米乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36065,7 +35908,7 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  11390,
+        "id":  11384,
         "name":  "黄瓜条",
         "category":  "其他",
         "icon":  "utensils",
@@ -36091,7 +35934,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11391,
+        "id":  11385,
         "name":  "手抓饼加里脊",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -36117,7 +35960,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11392,
+        "id":  11386,
         "name":  "爆炒土豆肉丝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -36141,7 +35984,7 @@
         "rawGroup":  "现炒浇头面"
     },
     {
-        "id":  11393,
+        "id":  11387,
         "name":  "干锅花菜",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -36167,7 +36010,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11394,
+        "id":  11388,
         "name":  "金牌紫茄子茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36194,7 +36037,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11395,
+        "id":  11389,
         "name":  "奥尔良鸡肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36220,7 +36063,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11396,
+        "id":  11390,
         "name":  "奶香糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -36246,7 +36089,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  11397,
+        "id":  11391,
         "name":  "烧椒鸡滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36272,7 +36115,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11398,
+        "id":  11392,
         "name":  "麻辣肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36299,7 +36142,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11399,
+        "id":  11393,
         "name":  "番茄鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -36323,7 +36166,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11400,
+        "id":  11394,
         "name":  "椒麻藤椒鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36350,7 +36193,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  11401,
+        "id":  11395,
         "name":  "香辣炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -36374,7 +36217,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11402,
+        "id":  11396,
         "name":  "糊辣壳干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -36400,7 +36243,7 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  11403,
+        "id":  11397,
         "name":  "酸菜肉丝铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -36426,7 +36269,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11404,
+        "id":  11398,
         "name":  "千叶豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36451,7 +36294,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11405,
+        "id":  11399,
         "name":  "金刚大鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -36476,7 +36319,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  11406,
+        "id":  11400,
         "name":  "双人套餐十一",
         "category":  "其他",
         "icon":  "utensils",
@@ -36500,7 +36343,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  11407,
+        "id":  11401,
         "name":  "酥肉小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36526,7 +36369,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  11408,
+        "id":  11402,
         "name":  "双拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36552,7 +36395,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11409,
+        "id":  11403,
         "name":  "麻辣鸭脖卤味饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36580,7 +36423,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11410,
+        "id":  11404,
         "name":  "酸汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -36606,7 +36449,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11411,
+        "id":  11405,
         "name":  "辣子鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -36631,7 +36474,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  11412,
+        "id":  11406,
         "name":  "铁板鸡扒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36657,7 +36500,7 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  11413,
+        "id":  11407,
         "name":  "墨鱼爆蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36682,7 +36525,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  11414,
+        "id":  11408,
         "name":  "鸡汤酥肉米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -36708,7 +36551,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11415,
+        "id":  11409,
         "name":  "菜鸡蛋火腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36734,7 +36577,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11416,
+        "id":  11410,
         "name":  "老干妈",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36759,7 +36602,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  11417,
+        "id":  11411,
         "name":  "武汉热干面",
         "category":  "面食",
         "icon":  "wheat",
@@ -36783,7 +36626,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  11418,
+        "id":  11412,
         "name":  "狼牙锅巴土豆双拼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36809,7 +36652,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  11419,
+        "id":  11413,
         "name":  "咖啡蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36835,7 +36678,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11420,
+        "id":  11414,
         "name":  "铁板五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36861,7 +36704,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11421,
+        "id":  11415,
         "name":  "黑芝麻汤圆",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -36887,7 +36730,7 @@
         "rawGroup":  "🔥美味汤圆🔥"
     },
     {
-        "id":  11422,
+        "id":  11416,
         "name":  "火鸡面套餐二",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36913,7 +36756,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11423,
+        "id":  11417,
         "name":  "香辣鸭子套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -36939,7 +36782,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11424,
+        "id":  11418,
         "name":  "锅巴土豆",
         "category":  "其他",
         "icon":  "utensils",
@@ -36966,7 +36809,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11425,
+        "id":  11419,
         "name":  "西域肉排",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -36990,7 +36833,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11426,
+        "id":  11420,
         "name":  "腊肠鸡蛋炒河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -37016,7 +36859,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11427,
+        "id":  11421,
         "name":  "肉沫豇豆炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37042,7 +36885,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11428,
+        "id":  11422,
         "name":  "番茄素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -37068,7 +36911,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11429,
+        "id":  11423,
         "name":  "黑椒肉柳（5片）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37093,7 +36936,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11430,
+        "id":  11424,
         "name":  "豆角茄子小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37117,7 +36960,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11431,
+        "id":  11425,
         "name":  "墨西哥鸡肉卷",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37143,7 +36986,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  11432,
+        "id":  11426,
         "name":  "辣子鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37169,7 +37012,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11433,
+        "id":  11427,
         "name":  "鸡柳饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -37195,7 +37038,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11434,
+        "id":  11428,
         "name":  "干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -37221,7 +37064,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11435,
+        "id":  11429,
         "name":  "干拌蒜香虾仁大肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -37247,7 +37090,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11436,
+        "id":  11430,
         "name":  "山药",
         "category":  "其他",
         "icon":  "utensils",
@@ -37273,7 +37116,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11437,
+        "id":  11431,
         "name":  "核桃肉单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37299,7 +37142,7 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  11438,
+        "id":  11432,
         "name":  "青椒鸡蛋炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -37325,7 +37168,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  11439,
+        "id":  11433,
         "name":  "湖南小炒肉茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37351,7 +37194,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11440,
+        "id":  11434,
         "name":  "麻辣小面+狮子头",
         "category":  "面食",
         "icon":  "wheat",
@@ -37378,7 +37221,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11441,
+        "id":  11435,
         "name":  "清香小炒鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37404,7 +37247,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11442,
+        "id":  11436,
         "name":  "菌汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -37428,7 +37271,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  11443,
+        "id":  11437,
         "name":  "铁板烤鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37454,7 +37297,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11444,
+        "id":  11438,
         "name":  "肥肠鸡焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37480,7 +37323,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11445,
+        "id":  11439,
         "name":  "酸菜鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -37504,7 +37347,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11446,
+        "id":  11440,
         "name":  "广式盐焗鸡明炉烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37530,7 +37373,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11447,
+        "id":  11441,
         "name":  "薯条",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -37554,7 +37397,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11448,
+        "id":  11442,
         "name":  "泡椒猪肝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37578,7 +37421,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  11449,
+        "id":  11443,
         "name":  "龙口粉丝",
         "category":  "其他",
         "icon":  "utensils",
@@ -37604,7 +37447,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11450,
+        "id":  11444,
         "name":  "素手抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37632,7 +37475,7 @@
         "rawGroup":  "左侧配图（新疆特色手抓饭）"
     },
     {
-        "id":  11451,
+        "id":  11445,
         "name":  "火锅肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -37656,7 +37499,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  11452,
+        "id":  11446,
         "name":  "脆饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -37682,7 +37525,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  11453,
+        "id":  11447,
         "name":  "椒麻拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -37711,7 +37554,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11454,
+        "id":  11448,
         "name":  "番茄鸡蛋干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -37738,7 +37581,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11455,
+        "id":  11449,
         "name":  "大排",
         "category":  "其他",
         "icon":  "utensils",
@@ -37764,7 +37607,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11456,
+        "id":  11450,
         "name":  "玉米鲜肉干拌蒜香",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37790,7 +37633,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11457,
+        "id":  11451,
         "name":  "牛肉煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37816,7 +37659,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11458,
+        "id":  11452,
         "name":  "加粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -37841,7 +37684,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  11459,
+        "id":  11453,
         "name":  "杂酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -37867,7 +37710,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11460,
+        "id":  11454,
         "name":  "藕盒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37892,7 +37735,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11461,
+        "id":  11455,
         "name":  "培根小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -37918,7 +37761,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  11462,
+        "id":  11456,
         "name":  "金汤河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -37944,7 +37787,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11463,
+        "id":  11457,
         "name":  "肉末豇豆炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -37968,7 +37811,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  11464,
+        "id":  11458,
         "name":  "鱼丸米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -37994,7 +37837,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11465,
+        "id":  11459,
         "name":  "桂花卷",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -38019,7 +37862,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  11466,
+        "id":  11460,
         "name":  "无骨鸡柳",
         "category":  "烧烤",
         "icon":  "flame",
@@ -38045,7 +37888,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11467,
+        "id":  11461,
         "name":  "素炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -38072,7 +37915,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11468,
+        "id":  11462,
         "name":  "小油条（3个）",
         "category":  "其他",
         "icon":  "utensils",
@@ -38097,7 +37940,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11469,
+        "id":  11463,
         "name":  "辣子鸡/面/刀削/河粉（",
         "category":  "面食",
         "icon":  "wheat",
@@ -38122,7 +37965,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11470,
+        "id":  11464,
         "name":  "小馆混合炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -38148,7 +37991,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  11471,
+        "id":  11465,
         "name":  "酸菜鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -38174,7 +38017,7 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  11472,
+        "id":  11466,
         "name":  "猪肝米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -38200,7 +38043,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11473,
+        "id":  11467,
         "name":  "韭菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38225,7 +38068,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11474,
+        "id":  11468,
         "name":  "韭菜肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -38251,7 +38094,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  11475,
+        "id":  11469,
         "name":  "风味包心鱼丸2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38275,7 +38118,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11476,
+        "id":  11470,
         "name":  "盐焗鸡咸水鸭烧鸭3份米饭2份菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38301,7 +38144,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11477,
+        "id":  11471,
         "name":  "红油馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -38328,7 +38171,7 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  11478,
+        "id":  11472,
         "name":  "凤爪煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38354,7 +38197,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11479,
+        "id":  11473,
         "name":  "经典鸡排大满配",
         "category":  "烧烤",
         "icon":  "flame",
@@ -38380,7 +38223,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  11480,
+        "id":  11474,
         "name":  "猪脚",
         "category":  "面食",
         "icon":  "wheat",
@@ -38406,7 +38249,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  11481,
+        "id":  11475,
         "name":  "鸡公煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38430,7 +38273,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  11482,
+        "id":  11476,
         "name":  "瓦香鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -38456,7 +38299,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11483,
+        "id":  11477,
         "name":  "水滑肉火锅套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38482,7 +38325,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11484,
+        "id":  11478,
         "name":  "椒香鸭胸拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -38508,7 +38351,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11485,
+        "id":  11479,
         "name":  "包浆小豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38534,7 +38377,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11486,
+        "id":  11480,
         "name":  "火锅馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -38560,7 +38403,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11487,
+        "id":  11481,
         "name":  "套餐十四（香辣鸡腿堡2个 或 鸡肉卷2个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38586,7 +38429,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11488,
+        "id":  11482,
         "name":  "西红柿鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38610,7 +38453,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  11489,
+        "id":  11483,
         "name":  "招牌汉堡套餐二",
         "category":  "烧烤",
         "icon":  "flame",
@@ -38636,7 +38479,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11490,
+        "id":  11484,
         "name":  "豆干肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -38660,7 +38503,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  11491,
+        "id":  11485,
         "name":  "泡椒铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -38686,7 +38529,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11492,
+        "id":  11486,
         "name":  "干锅琅琊土豆",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -38713,7 +38556,7 @@
         "rawGroup":  "招牌"
     },
     {
-        "id":  11493,
+        "id":  11487,
         "name":  "菜鸡蛋玉米",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -38737,7 +38580,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  11494,
+        "id":  11488,
         "name":  "酸菜地锅鱼丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38763,7 +38606,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11495,
+        "id":  11489,
         "name":  "肉丸+金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38787,7 +38630,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  11496,
+        "id":  11490,
         "name":  "干锅排骨",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -38813,7 +38656,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11497,
+        "id":  11491,
         "name":  "藤椒鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -38840,7 +38683,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  11498,
+        "id":  11492,
         "name":  "素蒸碗",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38867,7 +38710,7 @@
         "rawGroup":  "小份蒸菜"
     },
     {
-        "id":  11499,
+        "id":  11493,
         "name":  "火腿粉丝包",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -38892,7 +38735,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11500,
+        "id":  11494,
         "name":  "小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38918,7 +38761,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11501,
+        "id":  11495,
         "name":  "干溜面",
         "category":  "面食",
         "icon":  "wheat",
@@ -38943,7 +38786,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  11502,
+        "id":  11496,
         "name":  "青花椒鸡肉片（5片）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -38971,7 +38814,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11503,
+        "id":  11497,
         "name":  "牛肉铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -38997,7 +38840,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11504,
+        "id":  11498,
         "name":  "毛豆烧鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39023,7 +38866,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11505,
+        "id":  11499,
         "name":  "蟹肉棒①个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39047,7 +38890,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11506,
+        "id":  11500,
         "name":  "黄金蛋饺2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39071,7 +38914,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11507,
+        "id":  11501,
         "name":  "鸡柳1支",
         "category":  "烧烤",
         "icon":  "flame",
@@ -39096,7 +38939,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11508,
+        "id":  11502,
         "name":  "招牌汉堡套餐七",
         "category":  "烧烤",
         "icon":  "flame",
@@ -39122,7 +38965,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11509,
+        "id":  11503,
         "name":  "粉蒸肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39148,7 +38991,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11510,
+        "id":  11504,
         "name":  "香菇卤肉拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -39172,7 +39015,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11511,
+        "id":  11505,
         "name":  "石锅焖面+土豆",
         "category":  "面食",
         "icon":  "wheat",
@@ -39199,7 +39042,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11512,
+        "id":  11506,
         "name":  "酱肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -39225,7 +39068,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11513,
+        "id":  11507,
         "name":  "羊杂粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -39250,7 +39093,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11514,
+        "id":  11508,
         "name":  "地锅鱼丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39276,7 +39119,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  11515,
+        "id":  11509,
         "name":  "生菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39301,7 +39144,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11516,
+        "id":  11510,
         "name":  "焗鲜虾肉饼饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -39327,7 +39170,7 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  11517,
+        "id":  11511,
         "name":  "青椒肉丝炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -39351,7 +39194,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11518,
+        "id":  11512,
         "name":  "至珍七虾汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -39377,7 +39220,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11519,
+        "id":  11513,
         "name":  "红烧排骨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39403,7 +39246,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11520,
+        "id":  11514,
         "name":  "番茄鸡蛋面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -39433,7 +39276,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11521,
+        "id":  11515,
         "name":  "香菇串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39458,7 +39301,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11522,
+        "id":  11516,
         "name":  "澳洲肉扒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -39484,7 +39327,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11523,
+        "id":  11517,
         "name":  "干锅虾",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -39510,7 +39353,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11524,
+        "id":  11518,
         "name":  "金针菇米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -39537,7 +39380,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11525,
+        "id":  11519,
         "name":  "鲜肉炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -39561,7 +39404,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11526,
+        "id":  11520,
         "name":  "泡椒地锅锅包肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39587,7 +39430,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11527,
+        "id":  11521,
         "name":  "松脆酪酪鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39613,7 +39456,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11528,
+        "id":  11522,
         "name":  "番茄炒蛋盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -39640,7 +39483,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11529,
+        "id":  11523,
         "name":  "锁骨",
         "category":  "其他",
         "icon":  "utensils",
@@ -39665,7 +39508,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  11530,
+        "id":  11524,
         "name":  "土家原味焖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -39691,7 +39534,7 @@
         "rawGroup":  "土家焖饭"
     },
     {
-        "id":  11531,
+        "id":  11525,
         "name":  "珍珠汤圆",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -39716,7 +39559,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  11532,
+        "id":  11526,
         "name":  "薯角",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -39742,7 +39585,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  11533,
+        "id":  11527,
         "name":  "泡椒鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -39766,7 +39609,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11534,
+        "id":  11528,
         "name":  "鬼城麻辣鸡例米饭小菜1",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39793,7 +39636,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11535,
+        "id":  11529,
         "name":  "干锅千叶豆腐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -39820,7 +39663,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11536,
+        "id":  11530,
         "name":  "招牌汉堡套餐五",
         "category":  "其他",
         "icon":  "utensils",
@@ -39844,7 +39687,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  11537,
+        "id":  11531,
         "name":  "椒麻汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -39871,7 +39714,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11538,
+        "id":  11532,
         "name":  "青菜鸡蛋瘦肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39897,7 +39740,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11539,
+        "id":  11533,
         "name":  "素菜（木耳、蒜台、青椒、土豆丝、莲白、鸡蛋、豆干、蔬菜、火腿肠、外婆菜、老干妈、豇豆）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39923,7 +39766,7 @@
         "rawGroup":  "加配菜"
     },
     {
-        "id":  11540,
+        "id":  11534,
         "name":  "奶香小馒头",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -39948,7 +39791,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11541,
+        "id":  11535,
         "name":  "蟹排",
         "category":  "其他",
         "icon":  "utensils",
@@ -39973,7 +39816,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11542,
+        "id":  11536,
         "name":  "鸭胗花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -39997,7 +39840,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11543,
+        "id":  11537,
         "name":  "老腌菜红烧肉盖码饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40023,7 +39866,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11544,
+        "id":  11538,
         "name":  "番茄馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -40050,7 +39893,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  11545,
+        "id":  11539,
         "name":  "香辣鸡腿堡＋薯条（中）+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -40076,7 +39919,33 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11546,
+        "id":  11540,
+        "name":  "韭菜鸡蛋水饺",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  9.9,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "菜单补录，约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "惠芯意鲜饺坊",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
+    },
+    {
+        "id":  11541,
         "name":  "青椒牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40102,7 +39971,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  11547,
+        "id":  11542,
         "name":  "藤椒肉丝拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40129,7 +39998,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11548,
+        "id":  11543,
         "name":  "酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40153,7 +40022,7 @@
         "rawGroup":  "8元区"
     },
     {
-        "id":  11549,
+        "id":  11544,
         "name":  "酸汤面/刀削/韭叶面/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40179,7 +40048,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11550,
+        "id":  11545,
         "name":  "韩式套餐五",
         "category":  "其他",
         "icon":  "utensils",
@@ -40203,7 +40072,7 @@
         "rawGroup":  "韩式炸鸡套餐系列"
     },
     {
-        "id":  11551,
+        "id":  11546,
         "name":  "手撕雪花鸡柳",
         "category":  "烧烤",
         "icon":  "flame",
@@ -40230,7 +40099,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11552,
+        "id":  11547,
         "name":  "火鸡面套餐三",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40256,32 +40125,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11553,
-        "name":  "塔塔酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": ["咸鲜"],
-        "price":  1.5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“调料包”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  11554,
+        "id":  11548,
         "name":  "冬阴功油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -40305,7 +40149,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  11555,
+        "id":  11549,
         "name":  "香酥小黄鱼1个（放干锅里面炒）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -40330,7 +40174,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  11556,
+        "id":  11550,
         "name":  "辣子鸡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -40356,7 +40200,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  11557,
+        "id":  11551,
         "name":  "菌汤火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -40380,7 +40224,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  11558,
+        "id":  11552,
         "name":  "石锅焖面+红烧肉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40406,7 +40250,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11559,
+        "id":  11553,
         "name":  "石锅焖面+茄子",
         "category":  "面食",
         "icon":  "wheat",
@@ -40433,7 +40277,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11560,
+        "id":  11554,
         "name":  "酱香肉沫油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40459,7 +40303,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11561,
+        "id":  11555,
         "name":  "芝士牛肉中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -40485,7 +40329,7 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  11562,
+        "id":  11556,
         "name":  "琅琊土豆时蔬盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40511,7 +40355,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11563,
+        "id":  11557,
         "name":  "腊肠鸡蛋炒河粉、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -40536,7 +40380,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11564,
+        "id":  11558,
         "name":  "火鸡面套餐一",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40560,7 +40404,7 @@
         "rawGroup":  "火鸡面系列"
     },
     {
-        "id":  11565,
+        "id":  11559,
         "name":  "石锅鸡",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40586,7 +40430,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  11566,
+        "id":  11560,
         "name":  "石锅焖面+小酥肉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40612,7 +40456,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11567,
+        "id":  11561,
         "name":  "肥肠面",
         "category":  "面食",
         "icon":  "wheat",
@@ -40637,7 +40481,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11568,
+        "id":  11562,
         "name":  "伊美牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -40663,7 +40507,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  11569,
+        "id":  11563,
         "name":  "香辣鸡杂拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40687,7 +40531,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11570,
+        "id":  11564,
         "name":  "秘制叉烧/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40713,7 +40557,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  11571,
+        "id":  11565,
         "name":  "盖码饭双拼",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40739,7 +40583,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11572,
+        "id":  11566,
         "name":  "玉米大肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -40765,7 +40609,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11573,
+        "id":  11567,
         "name":  "腊肠鸡蛋炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40790,7 +40634,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11574,
+        "id":  11568,
         "name":  "双椒鸡+香酥鸭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40816,7 +40660,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11575,
+        "id":  11569,
         "name":  "老干妈蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40842,7 +40686,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11576,
+        "id":  11570,
         "name":  "鹌鹑蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40866,7 +40710,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11577,
+        "id":  11571,
         "name":  "肝腰合炒盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -40892,7 +40736,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11578,
+        "id":  11572,
         "name":  "肉酱土豆泥拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -40921,7 +40765,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11579,
+        "id":  11573,
         "name":  "滑肉四荤糊辣子米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -40947,7 +40791,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11580,
+        "id":  11574,
         "name":  "腊肠鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -40972,7 +40816,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11581,
+        "id":  11575,
         "name":  "韭菜炒鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -40998,7 +40842,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  11582,
+        "id":  11576,
         "name":  "乱劈才蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41022,7 +40866,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11583,
+        "id":  11577,
         "name":  "麻辣肉片套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -41049,7 +40893,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11584,
+        "id":  11578,
         "name":  "酸菜小酥肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -41075,7 +40919,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11585,
+        "id":  11579,
         "name":  "煎饺《8个》",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -41099,33 +40943,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11586,
-        "name":  "米饭🍚单点",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  2,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "人气",
-                     "管饱"
-                 ],
-        "desc":  "我们套餐里面都有配饭，另外加米饭拍这个链接，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "一万家干锅",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/saobei/app/d24ad70a02f640dd8545c5d90b20062a.jpg",
-        "rawGroup":  "推荐"
-    },
-    {
-        "id":  11587,
+        "id":  11580,
         "name":  "泡椒鸡杂面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -41150,7 +40968,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11588,
+        "id":  11581,
         "name":  "仔姜肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -41174,7 +40992,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  11589,
+        "id":  11582,
         "name":  "火锅鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -41198,7 +41016,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  11590,
+        "id":  11583,
         "name":  "特色牛肉炒石榴花粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -41224,7 +41042,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  11591,
+        "id":  11584,
         "name":  "韩式鸡排拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41250,7 +41068,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11592,
+        "id":  11585,
         "name":  "奥尔良鸡中翅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -41276,7 +41094,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11593,
+        "id":  11586,
         "name":  "石锅红烧肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41302,7 +41120,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  11594,
+        "id":  11587,
         "name":  "酸汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -41328,7 +41146,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  11595,
+        "id":  11588,
         "name":  "贵妃荔枝鸡+豆干肉丝套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41354,7 +41172,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11596,
+        "id":  11589,
         "name":  "巴西烤肉拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -41378,7 +41196,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11597,
+        "id":  11590,
         "name":  "肉沫茄子擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41404,7 +41222,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11598,
+        "id":  11591,
         "name":  "奥尔良鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41430,7 +41248,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11599,
+        "id":  11592,
         "name":  "干锅鱼块（香酥小黄鱼）好吃",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -41455,7 +41273,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11600,
+        "id":  11593,
         "name":  "酸菜牛肉干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -41481,7 +41299,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11601,
+        "id":  11594,
         "name":  "烤肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -41507,7 +41325,7 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  11602,
+        "id":  11595,
         "name":  "培根饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -41531,7 +41349,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11603,
+        "id":  11596,
         "name":  "蒜蓉剁椒干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -41557,7 +41375,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  11604,
+        "id":  11597,
         "name":  "孜香鸡排大满配",
         "category":  "烧烤",
         "icon":  "flame",
@@ -41583,7 +41401,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11605,
+        "id":  11598,
         "name":  "石锅焖面+金针菇",
         "category":  "面食",
         "icon":  "wheat",
@@ -41610,7 +41428,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11606,
+        "id":  11599,
         "name":  "黄焖火腿肠鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41636,7 +41454,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11607,
+        "id":  11600,
         "name":  "芹菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -41662,7 +41480,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11608,
+        "id":  11601,
         "name":  "泡椒肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -41688,35 +41506,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11609,
-        "name":  "香辣酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "微辣"
-                  ],
-        "flavors":  [
-                        "辣",
-                        "咸鲜"
-                    ],
-        "price":  1.5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "一小盒，约 500 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  11610,
+        "id":  11602,
         "name":  "干锅锁骨（锁骨量多）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -41741,7 +41531,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11611,
+        "id":  11603,
         "name":  "荤菜（肉丝、腊肉、广式腊肠、肉沫、回锅肉、小炒肉）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -41767,7 +41557,7 @@
         "rawGroup":  "加配菜"
     },
     {
-        "id":  11612,
+        "id":  11604,
         "name":  "培根套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -41792,7 +41582,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11613,
+        "id":  11605,
         "name":  "秘制叉烧例米饭小菜1",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -41818,7 +41608,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11614,
+        "id":  11606,
         "name":  "香芋地瓜丸3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -41842,7 +41632,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11615,
+        "id":  11607,
         "name":  "伊美馅饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -41868,7 +41658,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  11616,
+        "id":  11608,
         "name":  "空气年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -41892,7 +41682,7 @@
         "rawGroup":  "新品"
     },
     {
-        "id":  11617,
+        "id":  11609,
         "name":  "三荤三素＋面饼无米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41917,7 +41707,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11618,
+        "id":  11610,
         "name":  "肉沫茄子拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41943,7 +41733,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11619,
+        "id":  11611,
         "name":  "肉沫豆腐擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -41969,7 +41759,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11620,
+        "id":  11612,
         "name":  "糊辣壳馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -41996,33 +41786,33 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  11621,
-        "name":  "原切烤鸡肉盖码饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
+        "id":  11613,
+        "name":  "玫瑰豉油鸡饭明炉烤鸭",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
         "flavors":  [
 
                     ],
-        "price":  12.99,
-        "cal":  700,
+        "price":  20.9,
+        "cal":  450,
         "tags":  [
-                     "管饱"
+
                  ],
-        "desc":  "菜单补录，约 700 kcal",
+        "desc":  "菜单补录，约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "原切烤肉饭",
-        "canteen":  "汇百味餐厅",
+        "stall":  "兴旺烧腊饭",
+        "canteen":  "北山苑餐厅",
         "img":  "",
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11622,
+        "id":  11614,
         "name":  "香辣鸡腿肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42047,7 +41837,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11623,
+        "id":  11615,
         "name":  "油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42072,7 +41862,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11624,
+        "id":  11616,
         "name":  "酸菜火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -42096,7 +41886,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11625,
+        "id":  11617,
         "name":  "肉沫薯角+椒麻鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -42123,7 +41913,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11626,
+        "id":  11618,
         "name":  "莴笋肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42147,7 +41937,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11627,
+        "id":  11619,
         "name":  "绝味鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42173,7 +41963,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  11628,
+        "id":  11620,
         "name":  "香菇鸡腿肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42199,7 +41989,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11629,
+        "id":  11621,
         "name":  "凤爪煲单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42225,7 +42015,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11630,
+        "id":  11622,
         "name":  "肉酱土豆泥拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -42254,7 +42044,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11631,
+        "id":  11623,
         "name":  "豆芽",
         "category":  "其他",
         "icon":  "utensils",
@@ -42280,7 +42070,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  11632,
+        "id":  11624,
         "name":  "肥牛套餐含米饭",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -42306,7 +42096,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11633,
+        "id":  11625,
         "name":  "芝士七虾中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -42332,7 +42122,7 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  11634,
+        "id":  11626,
         "name":  "特色油泼面",
         "category":  "面食",
         "icon":  "wheat",
@@ -42357,7 +42147,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11635,
+        "id":  11627,
         "name":  "土豆牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -42381,7 +42171,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  11636,
+        "id":  11628,
         "name":  "羊肉大葱水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -42407,7 +42197,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11637,
+        "id":  11629,
         "name":  "孜然肉片滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42433,7 +42223,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  11638,
+        "id":  11630,
         "name":  "土豆丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42460,7 +42250,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11639,
+        "id":  11631,
         "name":  "爆浆鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -42484,7 +42274,7 @@
         "rawGroup":  "鸡排类"
     },
     {
-        "id":  11640,
+        "id":  11632,
         "name":  "酸菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -42510,7 +42300,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11641,
+        "id":  11633,
         "name":  "鸡肉炒拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -42536,7 +42326,7 @@
         "rawGroup":  "炒拉面/刀削面"
     },
     {
-        "id":  11642,
+        "id":  11634,
         "name":  "蒜苔肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42560,7 +42350,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  11643,
+        "id":  11635,
         "name":  "招牌纯素炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -42587,7 +42377,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  11644,
+        "id":  11636,
         "name":  "宫保鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42613,7 +42403,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  11645,
+        "id":  11637,
         "name":  "蒜苔肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42637,7 +42427,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11646,
+        "id":  11638,
         "name":  "蒜苔肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42661,7 +42451,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  11647,
+        "id":  11639,
         "name":  "腰花肠3个",
         "category":  "其他",
         "icon":  "utensils",
@@ -42686,7 +42476,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11648,
+        "id":  11640,
         "name":  "骨头汤小面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -42712,7 +42502,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11649,
+        "id":  11641,
         "name":  "青椒肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42736,7 +42526,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11650,
+        "id":  11642,
         "name":  "海带丝",
         "category":  "其他",
         "icon":  "utensils",
@@ -42762,7 +42552,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  11651,
+        "id":  11643,
         "name":  "荤蒸碗",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42788,7 +42578,7 @@
         "rawGroup":  "小份蒸菜"
     },
     {
-        "id":  11652,
+        "id":  11644,
         "name":  "番茄炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42815,7 +42605,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11653,
+        "id":  11645,
         "name":  "小炒肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42841,7 +42631,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11654,
+        "id":  11646,
         "name":  "肉沫薯角+豆干肉丝",
         "category":  "烧烤",
         "icon":  "flame",
@@ -42867,7 +42657,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11655,
+        "id":  11647,
         "name":  "青椒",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42893,7 +42683,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  11656,
+        "id":  11648,
         "name":  "风味土豆牛肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42919,7 +42709,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11657,
+        "id":  11649,
         "name":  "洋葱鸡肉圈",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42943,7 +42733,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11658,
+        "id":  11650,
         "name":  "宫保鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -42969,7 +42759,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11659,
+        "id":  11651,
         "name":  "广式叉烧",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -42995,7 +42785,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11660,
+        "id":  11652,
         "name":  "热卤猪头肉拌豆干（小肥）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43021,7 +42811,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11661,
+        "id":  11653,
         "name":  "套餐五（香辣鸡腿堡1个+脆皮小鸡腿4个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43047,7 +42837,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11662,
+        "id":  11654,
         "name":  "青菜鸡蛋虾米",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43071,7 +42861,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  11663,
+        "id":  11655,
         "name":  "猪脚饭明炉烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43097,7 +42887,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11664,
+        "id":  11656,
         "name":  "凉皮凉面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -43125,7 +42915,7 @@
         "rawGroup":  "凉面凉皮"
     },
     {
-        "id":  11665,
+        "id":  11657,
         "name":  "泡椒猪肝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43151,7 +42941,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11666,
+        "id":  11658,
         "name":  "鱼籽福袋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43175,7 +42965,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  11667,
+        "id":  11659,
         "name":  "杂酱酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -43203,7 +42993,7 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  11668,
+        "id":  11660,
         "name":  "特色牛肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43229,7 +43019,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  11669,
+        "id":  11661,
         "name":  "招牌甜辣黑鸭煲",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43257,7 +43047,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11670,
+        "id":  11662,
         "name":  "柠檬手撕鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43283,7 +43073,7 @@
         "rawGroup":  "现卤现捞"
     },
     {
-        "id":  11671,
+        "id":  11663,
         "name":  "香辣鸡腿肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -43309,7 +43099,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  11672,
+        "id":  11664,
         "name":  "肥牛米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -43335,7 +43125,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11673,
+        "id":  11665,
         "name":  "新疆拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -43361,7 +43151,7 @@
         "rawGroup":  "特色"
     },
     {
-        "id":  11674,
+        "id":  11666,
         "name":  "凉面凉皮",
         "category":  "面食",
         "icon":  "wheat",
@@ -43389,7 +43179,7 @@
         "rawGroup":  "凉面系列"
     },
     {
-        "id":  11675,
+        "id":  11667,
         "name":  "红豆派一个",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -43413,7 +43203,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11676,
+        "id":  11668,
         "name":  "鸡丝米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -43439,7 +43229,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11677,
+        "id":  11669,
         "name":  "牛肉粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -43465,7 +43255,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11678,
+        "id":  11670,
         "name":  "杂粮饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -43492,7 +43282,7 @@
         "rawGroup":  "自选健康餐"
     },
     {
-        "id":  11679,
+        "id":  11671,
         "name":  "火锅火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -43516,7 +43306,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  11680,
+        "id":  11672,
         "name":  "火锅肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -43540,7 +43330,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  11681,
+        "id":  11673,
         "name":  "烧椒小炒鸡盖码饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -43566,7 +43356,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11682,
+        "id":  11674,
         "name":  "鱼排①片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43590,7 +43380,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11683,
+        "id":  11675,
         "name":  "肉沫粉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43616,7 +43406,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  11684,
+        "id":  11676,
         "name":  "香菇牛肉干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -43640,7 +43430,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11685,
+        "id":  11677,
         "name":  "贵妃荔枝鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -43666,7 +43456,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11686,
+        "id":  11678,
         "name":  "两荤一素",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43692,7 +43482,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11687,
+        "id":  11679,
         "name":  "肉沫油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -43718,7 +43508,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  11688,
+        "id":  11680,
         "name":  "麻酱凉皮凉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -43743,7 +43533,7 @@
         "rawGroup":  "凉面 凉皮"
     },
     {
-        "id":  11689,
+        "id":  11681,
         "name":  "小馆卤肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -43769,7 +43559,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11690,
+        "id":  11682,
         "name":  "辣子鸡",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -43795,7 +43585,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11691,
+        "id":  11683,
         "name":  "牛肉炒刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -43821,7 +43611,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11692,
+        "id":  11684,
         "name":  "木耳",
         "category":  "其他",
         "icon":  "utensils",
@@ -43847,7 +43637,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11693,
+        "id":  11685,
         "name":  "番茄鸡蛋拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -43874,7 +43664,7 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  11694,
+        "id":  11686,
         "name":  "滑肉小锅米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -43900,7 +43690,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11695,
+        "id":  11687,
         "name":  "酸萝卜花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -43924,7 +43714,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11696,
+        "id":  11688,
         "name":  "双椒回锅肉滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -43950,7 +43740,7 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  11697,
+        "id":  11689,
         "name":  "红烧牛肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -43976,7 +43766,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  11698,
+        "id":  11690,
         "name":  "西红柿拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44001,7 +43791,7 @@
         "rawGroup":  "干拌系列特色"
     },
     {
-        "id":  11699,
+        "id":  11691,
         "name":  "大肉云吞双椒干拌（中份）",
         "category":  "面食",
         "icon":  "wheat",
@@ -44027,7 +43817,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11700,
+        "id":  11692,
         "name":  "韭菜鸡蛋水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -44053,7 +43843,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11701,
+        "id":  11693,
         "name":  "素豆肠3个",
         "category":  "其他",
         "icon":  "utensils",
@@ -44078,7 +43868,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11702,
+        "id":  11694,
         "name":  "青椒牛肉盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44104,7 +43894,7 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  11703,
+        "id":  11695,
         "name":  "梅菜扣肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44128,7 +43918,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  11704,
+        "id":  11696,
         "name":  "脆皮年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -44152,7 +43942,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11705,
+        "id":  11697,
         "name":  "杂粮煎饼(生菜鸡蛋、薄脆)",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44178,7 +43968,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11706,
+        "id":  11698,
         "name":  "热卤红油拌麻辣鸭（好评多多）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44207,7 +43997,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11707,
+        "id":  11699,
         "name":  "苗家小豆芽",
         "category":  "其他",
         "icon":  "utensils",
@@ -44233,7 +44023,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11708,
+        "id":  11700,
         "name":  "肉沫豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44259,7 +44049,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11709,
+        "id":  11701,
         "name":  "土家腊肠焖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44285,7 +44075,7 @@
         "rawGroup":  "土家焖饭"
     },
     {
-        "id":  11710,
+        "id":  11702,
         "name":  "小馆鸡蛋火腿炒面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -44311,7 +44101,7 @@
         "rawGroup":  "小馆炒面"
     },
     {
-        "id":  11711,
+        "id":  11703,
         "name":  "鱼香肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44337,7 +44127,7 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  11712,
+        "id":  11704,
         "name":  "酸萝卜全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -44362,7 +44152,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11713,
+        "id":  11705,
         "name":  "椒香鸭胸拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44387,7 +44177,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11714,
+        "id":  11706,
         "name":  "脆皮肠2个",
         "category":  "其他",
         "icon":  "utensils",
@@ -44412,7 +44202,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11715,
+        "id":  11707,
         "name":  "香菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44437,7 +44227,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  11716,
+        "id":  11708,
         "name":  "西红柿鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44462,7 +44252,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11717,
+        "id":  11709,
         "name":  "干锅素拼",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -44489,7 +44279,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  11718,
+        "id":  11710,
         "name":  "酸菜牛肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44515,7 +44305,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11719,
+        "id":  11711,
         "name":  "江门甜肠2节",
         "category":  "其他",
         "icon":  "utensils",
@@ -44540,7 +44330,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11720,
+        "id":  11712,
         "name":  "冬阴功花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -44564,7 +44354,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  11721,
+        "id":  11713,
         "name":  "贵州红酸汤鱼",
         "category":  "面食",
         "icon":  "wheat",
@@ -44590,7 +44380,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  11722,
+        "id":  11714,
         "name":  "羊杂粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -44616,7 +44406,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11723,
+        "id":  11715,
         "name":  "午餐肉/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -44642,7 +44432,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11724,
+        "id":  11716,
         "name":  "剁椒番茄拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44672,7 +44462,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  11725,
+        "id":  11717,
         "name":  "泡椒血旺盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44696,7 +44486,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  11726,
+        "id":  11718,
         "name":  "大葱牛肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -44722,7 +44512,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11727,
+        "id":  11719,
         "name":  "泡椒鸡杂铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44748,7 +44538,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11728,
+        "id":  11720,
         "name":  "奥尔良去皮鸡腿排套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44774,7 +44564,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11729,
+        "id":  11721,
         "name":  "酸菜面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44800,7 +44590,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11730,
+        "id":  11722,
         "name":  "油泼面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44826,7 +44616,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11731,
+        "id":  11723,
         "name":  "香辣里脊饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -44852,7 +44642,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11732,
+        "id":  11724,
         "name":  "番茄肉酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -44880,7 +44670,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  11733,
+        "id":  11725,
         "name":  "蛋炒面、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -44907,7 +44697,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11734,
+        "id":  11726,
         "name":  "排骨煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44933,7 +44723,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11735,
+        "id":  11727,
         "name":  "香辣花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -44957,7 +44747,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11736,
+        "id":  11728,
         "name":  "龙江锅包肉+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -44983,7 +44773,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11737,
+        "id":  11729,
         "name":  "【新品】开花脆皮肠干锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -45008,7 +44798,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11738,
+        "id":  11730,
         "name":  "番茄鸡蛋拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45038,7 +44828,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11739,
+        "id":  11731,
         "name":  "豆干肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -45064,7 +44854,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11740,
+        "id":  11732,
         "name":  "香辣酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -45088,7 +44878,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11741,
+        "id":  11733,
         "name":  "黄焖千叶豆腐鸡+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45114,7 +44904,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11742,
+        "id":  11734,
         "name":  "杏鲍菇肉片套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45140,7 +44930,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11743,
+        "id":  11735,
         "name":  "肥牛套餐含米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45165,7 +44955,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11744,
+        "id":  11736,
         "name":  "泡椒鸡杂擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45191,7 +44981,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11745,
+        "id":  11737,
         "name":  "维C鸡+曹鸭子套餐饭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45217,7 +45007,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11746,
+        "id":  11738,
         "name":  "大肉串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45241,7 +45031,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  11747,
+        "id":  11739,
         "name":  "菌汤鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -45265,7 +45055,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  11748,
+        "id":  11740,
         "name":  "姜葱白切鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45291,7 +45081,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11749,
+        "id":  11741,
         "name":  "土豆泥炸酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -45318,7 +45108,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11750,
+        "id":  11742,
         "name":  "水煮鱼片+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45345,7 +45135,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11751,
+        "id":  11743,
         "name":  "单加萝卜",
         "category":  "其他",
         "icon":  "utensils",
@@ -45371,7 +45161,7 @@
         "rawGroup":  "碗碗羊肉"
     },
     {
-        "id":  11752,
+        "id":  11744,
         "name":  "焗豉汁排骨饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45397,7 +45187,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  11753,
+        "id":  11745,
         "name":  "香豆腐2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45422,7 +45212,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11754,
+        "id":  11746,
         "name":  "咖喱鸡肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45448,7 +45238,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11755,
+        "id":  11747,
         "name":  "D香辣鸡腿堡+椰椰鸡排+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -45474,7 +45264,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11756,
+        "id":  11748,
         "name":  "辣子鸡面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -45499,7 +45289,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11757,
+        "id":  11749,
         "name":  "肉沫豇豆蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45523,7 +45313,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  11758,
+        "id":  11750,
         "name":  "椒麻藤椒鸡例1米饭小菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45550,7 +45340,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11759,
+        "id":  11751,
         "name":  "鱼香茄子",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -45577,7 +45367,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  11760,
+        "id":  11752,
         "name":  "双拼鸡肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -45603,7 +45393,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11761,
+        "id":  11753,
         "name":  "卤鸡腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45627,7 +45417,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  11762,
+        "id":  11754,
         "name":  "牛肉炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -45652,7 +45442,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11763,
+        "id":  11755,
         "name":  "黄瓜肉丝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45676,7 +45466,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  11764,
+        "id":  11756,
         "name":  "煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45700,7 +45490,7 @@
         "rawGroup":  "特色小吃"
     },
     {
-        "id":  11765,
+        "id":  11757,
         "name":  "龙江锅包肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45726,7 +45516,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11766,
+        "id":  11758,
         "name":  "肥牛风味套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45750,7 +45540,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11767,
+        "id":  11759,
         "name":  "芝士厚牛堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45776,7 +45566,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  11768,
+        "id":  11760,
         "name":  "小馆猪排面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -45802,7 +45592,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  11769,
+        "id":  11761,
         "name":  "脆皮肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -45827,7 +45617,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11770,
+        "id":  11762,
         "name":  "红烧牛肉（4-5个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45853,7 +45643,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11771,
+        "id":  11763,
         "name":  "干锅兔",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -45879,7 +45669,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11772,
+        "id":  11764,
         "name":  "套餐三（香辣鸡腿堡1个+脆皮鸡腿1个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45905,7 +45695,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11773,
+        "id":  11765,
         "name":  "鹌鹑蛋+火腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -45929,7 +45719,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  11774,
+        "id":  11766,
         "name":  "鸡汤肥牛米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -45955,7 +45745,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11775,
+        "id":  11767,
         "name":  "青椒肉丝炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -45981,7 +45771,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11776,
+        "id":  11768,
         "name":  "青椒肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46007,7 +45797,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  11777,
+        "id":  11769,
         "name":  "麻辣肉扒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46034,7 +45824,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  11778,
+        "id":  11770,
         "name":  "千层肚",
         "category":  "其他",
         "icon":  "utensils",
@@ -46058,7 +45848,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11779,
+        "id":  11771,
         "name":  "小青瓜串",
         "category":  "其他",
         "icon":  "utensils",
@@ -46083,7 +45873,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11780,
+        "id":  11772,
         "name":  "紫薯包",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -46109,7 +45899,7 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  11781,
+        "id":  11773,
         "name":  "曹鸭子+台式烧肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46135,7 +45925,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11782,
+        "id":  11774,
         "name":  "+火腿肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46159,7 +45949,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  11783,
+        "id":  11775,
         "name":  "香辣鸡干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46183,7 +45973,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  11784,
+        "id":  11776,
         "name":  "肉丸+煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46207,32 +45997,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  11785,
-        "name":  "奶香芝士酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": ["咸鲜"],
-        "price":  1.5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "一小盒，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  11786,
+        "id":  11777,
         "name":  "新品-酸辣金汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -46256,7 +46021,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  11787,
+        "id":  11778,
         "name":  "酱香肉沫焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46282,7 +46047,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11788,
+        "id":  11779,
         "name":  "韩式肉肠拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46308,7 +46073,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11789,
+        "id":  11780,
         "name":  "青椒牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46334,7 +46099,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11790,
+        "id":  11781,
         "name":  "金牌猪肘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46360,7 +46125,7 @@
         "rawGroup":  "现卤现捞"
     },
     {
-        "id":  11791,
+        "id":  11782,
         "name":  "秘制炒饭加一荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46386,7 +46151,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11792,
+        "id":  11783,
         "name":  "巴西烤肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46410,7 +46175,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  11793,
+        "id":  11784,
         "name":  "鸡肉炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46436,7 +46201,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11794,
+        "id":  11785,
         "name":  "三鲜铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46462,7 +46227,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11795,
+        "id":  11786,
         "name":  "维C鸡+香酥鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46488,7 +46253,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11796,
+        "id":  11787,
         "name":  "青椒鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46514,7 +46279,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  11797,
+        "id":  11788,
         "name":  "土豆肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46538,7 +46303,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  11798,
+        "id":  11789,
         "name":  "咖喱鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46562,7 +46327,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  11799,
+        "id":  11790,
         "name":  "丸子套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46586,7 +46351,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11800,
+        "id":  11791,
         "name":  "肥牛卷5片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46610,7 +46375,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11801,
+        "id":  11792,
         "name":  "石锅焖面+泡椒鸡杂",
         "category":  "面食",
         "icon":  "wheat",
@@ -46636,7 +46401,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  11802,
+        "id":  11793,
         "name":  "牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -46663,7 +46428,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  11803,
+        "id":  11794,
         "name":  "糖醋排骨小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46690,7 +46455,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11804,
+        "id":  11795,
         "name":  "烤鸡单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46716,7 +46481,7 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  11805,
+        "id":  11796,
         "name":  "麻辣鱼（大份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -46743,7 +46508,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11806,
+        "id":  11797,
         "name":  "宫保鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46769,7 +46534,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11807,
+        "id":  11798,
         "name":  "凉皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -46795,7 +46560,7 @@
         "rawGroup":  "凉面 凉皮"
     },
     {
-        "id":  11808,
+        "id":  11799,
         "name":  "台式烧肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46821,7 +46586,7 @@
         "rawGroup":  "卤肉擂饭系列"
     },
     {
-        "id":  11809,
+        "id":  11800,
         "name":  "番茄土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -46846,7 +46611,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11810,
+        "id":  11801,
         "name":  "酱香麻辣鸡翅尖试吃",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46875,7 +46640,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11811,
+        "id":  11802,
         "name":  "芝士爆浆鸡排汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -46901,7 +46666,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11812,
+        "id":  11803,
         "name":  "排骨煲单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -46927,7 +46692,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11813,
+        "id":  11804,
         "name":  "土豆焖鸡拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -46953,7 +46718,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11814,
+        "id":  11805,
         "name":  "鸡柳薯条年糕三合一",
         "category":  "烧烤",
         "icon":  "flame",
@@ -46977,7 +46742,7 @@
         "rawGroup":  "新品"
     },
     {
-        "id":  11815,
+        "id":  11806,
         "name":  "广味香肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -47002,7 +46767,7 @@
         "rawGroup":  "6元区"
     },
     {
-        "id":  11816,
+        "id":  11807,
         "name":  "招牌绝味软糯麻辣鸭翅（卤）3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47030,7 +46795,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11817,
+        "id":  11808,
         "name":  "泡椒鸡杂面",
         "category":  "面食",
         "icon":  "wheat",
@@ -47056,7 +46821,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  11818,
+        "id":  11809,
         "name":  "辣子鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -47080,7 +46845,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  11819,
+        "id":  11810,
         "name":  "干拌鸡杂面",
         "category":  "面食",
         "icon":  "wheat",
@@ -47106,7 +46871,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  11820,
+        "id":  11811,
         "name":  "鸡蛋炒拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -47132,7 +46897,7 @@
         "rawGroup":  "炒拉面/刀削面"
     },
     {
-        "id":  11821,
+        "id":  11812,
         "name":  "香酥鸡小锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47158,7 +46923,7 @@
         "rawGroup":  "酥肉小锅"
     },
     {
-        "id":  11822,
+        "id":  11813,
         "name":  "肉肠拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -47184,7 +46949,7 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  11823,
+        "id":  11814,
         "name":  "干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -47210,7 +46975,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11824,
+        "id":  11815,
         "name":  "青椒豆豉小炒肉盖码饭（瘦肉）",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -47236,7 +47001,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11825,
+        "id":  11816,
         "name":  "农家一碗香",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47262,7 +47027,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  11826,
+        "id":  11817,
         "name":  "发鱿鱼3段",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47286,7 +47051,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11827,
+        "id":  11818,
         "name":  "招牌汉堡套餐三",
         "category":  "其他",
         "icon":  "utensils",
@@ -47310,7 +47075,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  11828,
+        "id":  11819,
         "name":  "酸萝卜鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -47334,7 +47099,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11829,
+        "id":  11820,
         "name":  "大热狗",
         "category":  "其他",
         "icon":  "utensils",
@@ -47360,7 +47125,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11830,
+        "id":  11821,
         "name":  "酸汤面/刀削/韭叶面/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -47385,7 +47150,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11831,
+        "id":  11822,
         "name":  "香辣猪头皮茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -47411,7 +47176,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11832,
+        "id":  11823,
         "name":  "鱼排芹菜炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -47437,7 +47202,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  11833,
+        "id":  11824,
         "name":  "肥牛卷",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47461,7 +47226,7 @@
         "rawGroup":  "8元区"
     },
     {
-        "id":  11834,
+        "id":  11825,
         "name":  "经典螺蛳粉响铃卷（两个）",
         "category":  "面食",
         "icon":  "wheat",
@@ -47487,7 +47252,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11835,
+        "id":  11826,
         "name":  "泡椒肉丝拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -47513,7 +47278,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11836,
+        "id":  11827,
         "name":  "酸菜鸡丝面/河粉/刀削（",
         "category":  "面食",
         "icon":  "wheat",
@@ -47538,7 +47303,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11837,
+        "id":  11828,
         "name":  "酥肉火锅套餐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -47564,7 +47329,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11838,
+        "id":  11829,
         "name":  "酸菜肉沫粉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47590,7 +47355,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11839,
+        "id":  11830,
         "name":  "木耳肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47616,7 +47381,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  11840,
+        "id":  11831,
         "name":  "小馆辣肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -47642,7 +47407,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  11841,
+        "id":  11832,
         "name":  "火腿肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47666,7 +47431,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  11842,
+        "id":  11833,
         "name":  "麻婆豆腐",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -47694,7 +47459,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11843,
+        "id":  11834,
         "name":  "孜然牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -47720,7 +47485,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11844,
+        "id":  11835,
         "name":  "酸菜地锅鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47746,7 +47511,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11845,
+        "id":  11836,
         "name":  "竹笋",
         "category":  "其他",
         "icon":  "utensils",
@@ -47772,7 +47537,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11846,
+        "id":  11837,
         "name":  "包菜炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -47797,7 +47562,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11847,
+        "id":  11838,
         "name":  "泡椒地锅肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47823,7 +47588,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11848,
+        "id":  11839,
         "name":  "魔芋丝",
         "category":  "其他",
         "icon":  "utensils",
@@ -47848,7 +47613,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11849,
+        "id":  11840,
         "name":  "烤鸡双拼",
         "category":  "烧烤",
         "icon":  "flame",
@@ -47874,7 +47639,7 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  11850,
+        "id":  11841,
         "name":  "红烧肥肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47900,7 +47665,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  11851,
+        "id":  11842,
         "name":  "油豆腐串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -47925,7 +47690,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11852,
+        "id":  11843,
         "name":  "照烧腿肉块擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -47951,7 +47716,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  11853,
+        "id":  11844,
         "name":  "泡椒火腿米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -47977,7 +47742,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  11854,
+        "id":  11845,
         "name":  "酸菜炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -48001,7 +47766,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11855,
+        "id":  11846,
         "name":  "藤椒肉丝拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48029,7 +47794,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11856,
+        "id":  11847,
         "name":  "藤椒馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -48057,7 +47822,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  11857,
+        "id":  11848,
         "name":  "香辣豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -48082,7 +47847,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11858,
+        "id":  11849,
         "name":  "青椒鸡蛋炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48106,7 +47871,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11859,
+        "id":  11850,
         "name":  "猪尾巴",
         "category":  "其他",
         "icon":  "utensils",
@@ -48131,7 +47896,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  11860,
+        "id":  11851,
         "name":  "小食拼盘",
         "category":  "其他",
         "icon":  "utensils",
@@ -48155,7 +47920,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  11861,
+        "id":  11852,
         "name":  "烤翅一对",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48179,7 +47944,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11862,
+        "id":  11853,
         "name":  "番茄馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -48204,7 +47969,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  11863,
+        "id":  11854,
         "name":  "咖喱蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48230,7 +47995,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11864,
+        "id":  11855,
         "name":  "香辣全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -48254,7 +48019,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11865,
+        "id":  11856,
         "name":  "鸭血",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48278,7 +48043,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  11866,
+        "id":  11857,
         "name":  "鸡肉米粉炒年糕",
         "category":  "面食",
         "icon":  "wheat",
@@ -48304,7 +48069,7 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  11867,
+        "id":  11858,
         "name":  "黑椒肉柳炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48330,7 +48095,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11868,
+        "id":  11859,
         "name":  "牛肉丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48354,7 +48119,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  11869,
+        "id":  11860,
         "name":  "藤椒抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -48381,7 +48146,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  11870,
+        "id":  11861,
         "name":  "黄瓜肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48405,7 +48170,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  11871,
+        "id":  11862,
         "name":  "梅菜扣肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48431,7 +48196,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11872,
+        "id":  11863,
         "name":  "炸全鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48457,7 +48222,7 @@
         "rawGroup":  "单点"
     },
     {
-        "id":  11873,
+        "id":  11864,
         "name":  "大脸鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -48484,7 +48249,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  11874,
+        "id":  11865,
         "name":  "鲜玉米",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -48510,7 +48275,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11875,
+        "id":  11866,
         "name":  "红烧茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48536,7 +48301,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11876,
+        "id":  11867,
         "name":  "地锅鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48562,7 +48327,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  11877,
+        "id":  11868,
         "name":  "香煎鸡排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48588,7 +48353,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11878,
+        "id":  11869,
         "name":  "肉酱土豆泥拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48614,7 +48379,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  11879,
+        "id":  11870,
         "name":  "番茄午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -48638,35 +48403,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11880,
-        "name":  "菠萝咕噜肉酱",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-                        "甜",
-                        "酸甜",
-                        "咸鲜"
-                    ],
-        "price":  1.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "“调料包”之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img-lib.saobei.cn/b570fb76d79f481d8db2e72f0daced0f.jpg",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  11881,
+        "id":  11871,
         "name":  "酸菜地锅烤肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48692,7 +48429,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11882,
+        "id":  11872,
         "name":  "原味炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48718,7 +48455,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  11883,
+        "id":  11873,
         "name":  "把把签哇塞甜肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -48744,7 +48481,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  11884,
+        "id":  11874,
         "name":  "金汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -48771,7 +48508,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  11885,
+        "id":  11875,
         "name":  "秘制炒饭加一荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48796,7 +48533,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11886,
+        "id":  11876,
         "name":  "鬼城麻辣鸡饭明炉烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48823,7 +48560,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11887,
+        "id":  11877,
         "name":  "毛血旺（小份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -48848,7 +48585,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11888,
+        "id":  11878,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48874,7 +48611,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  11889,
+        "id":  11879,
         "name":  "火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -48899,7 +48636,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11890,
+        "id":  11880,
         "name":  "香辣小面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -48925,7 +48662,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11891,
+        "id":  11881,
         "name":  "锅包肉+小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48951,7 +48688,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  11892,
+        "id":  11882,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -48976,7 +48713,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11893,
+        "id":  11883,
         "name":  "热卤红油拌麻辣鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49004,7 +48741,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11894,
+        "id":  11884,
         "name":  "藤椒肉丝椒麻面",
         "category":  "面食",
         "icon":  "wheat",
@@ -49033,7 +48770,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11895,
+        "id":  11885,
         "name":  "韭菜炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49059,31 +48796,33 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  11896,
-        "name":  "韭菜鸡蛋炒河粉，米粉，面",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  11886,
+        "name":  "安格斯厚牛堡",
+        "category":  "烧烤",
+        "icon":  "flame",
         "taste":  [
                       "咸香"
                   ],
-        "flavors": [],
-        "price":  12,
-        "cal":  600,
+        "flavors":  [
+
+                    ],
+        "price":  17,
+        "cal":  650,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "“炒河粉，米粉，面”之选，约 600 kcal",
+        "desc":  "菜单补录，约 650 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "川哥小炒",
+        "stall":  "0090汉堡工厂",
         "canteen":  "汇百味餐厅",
-        "img":  "https://img-lib.saobei.cn/32d47ac2c8b24b27bee00f36e198b5a4.jpg",
-        "rawGroup":  "炒河粉，米粉，面"
+        "img":  "",
+        "rawGroup":  "菜单补录"
     },
     {
-        "id":  11897,
+        "id":  11887,
         "name":  "武汉热干粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -49107,7 +48846,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  11898,
+        "id":  11888,
         "name":  "红番茄鸡肉炒米粉(不辣)",
         "category":  "面食",
         "icon":  "wheat",
@@ -49134,7 +48873,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  11899,
+        "id":  11889,
         "name":  "干锅千叶豆腐盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -49160,7 +48899,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11900,
+        "id":  11890,
         "name":  "C香辣鸡腿堡+黑椒鸡块+薯条+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -49186,7 +48925,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11901,
+        "id":  11891,
         "name":  "韩式套餐四",
         "category":  "其他",
         "icon":  "utensils",
@@ -49210,7 +48949,7 @@
         "rawGroup":  "韩式炸鸡套餐系列"
     },
     {
-        "id":  11902,
+        "id":  11892,
         "name":  "泡椒酸菜",
         "category":  "面食",
         "icon":  "wheat",
@@ -49238,7 +48977,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  11903,
+        "id":  11893,
         "name":  "一荤两素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -49264,7 +49003,7 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  11904,
+        "id":  11894,
         "name":  "照烧鸡肉杂粮饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -49290,7 +49029,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11905,
+        "id":  11895,
         "name":  "番茄渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -49317,7 +49056,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11906,
+        "id":  11896,
         "name":  "菌汤金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -49342,7 +49081,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  11907,
+        "id":  11897,
         "name":  "招牌原切烤肉饭（五花）不辣",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49368,7 +49107,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11908,
+        "id":  11898,
         "name":  "韩式套餐一",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49394,7 +49133,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11909,
+        "id":  11899,
         "name":  "麻辣什锦丸子（大份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -49421,7 +49160,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11910,
+        "id":  11900,
         "name":  "盖饭双拼",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -49447,7 +49186,7 @@
         "rawGroup":  "规则"
     },
     {
-        "id":  11911,
+        "id":  11901,
         "name":  "黄金Q弹鱼豆腐3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49471,7 +49210,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  11912,
+        "id":  11902,
         "name":  "青椒鸡蛋炸酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -49495,7 +49234,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  11913,
+        "id":  11903,
         "name":  "焗豉汁滑鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -49521,7 +49260,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  11914,
+        "id":  11904,
         "name":  "酸菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -49547,7 +49286,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  11915,
+        "id":  11905,
         "name":  "套餐十三（香辣鸡腿堡+鸡肉卷 二选一 +小鸡腿1个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49573,7 +49312,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11916,
+        "id":  11906,
         "name":  "热狗芝士棒",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -49597,32 +49336,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  11917,
-        "name":  "米饭需要单点",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  2,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“特色干锅\n”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "川哥小炒",
-        "canteen":  "汇百味餐厅",
-        "img":  "https://img-lib.saobei.cn/fe95f0583fc84c65a551e714e9b7784b.jpg",
-        "rawGroup":  "特色干锅\n"
-    },
-    {
-        "id":  11918,
+        "id":  11907,
         "name":  "手抓饼加火腿",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -49648,7 +49362,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11919,
+        "id":  11908,
         "name":  "大肉云吞干拌（蒜蓉味）中份",
         "category":  "面食",
         "icon":  "wheat",
@@ -49674,7 +49388,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11920,
+        "id":  11909,
         "name":  "美年达",
         "category":  "其他",
         "icon":  "utensils",
@@ -49699,7 +49413,7 @@
         "rawGroup":  "饮料单点（冷饮）"
     },
     {
-        "id":  11921,
+        "id":  11910,
         "name":  "麻辣肉沫茄子焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49726,7 +49440,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11922,
+        "id":  11911,
         "name":  "梅菜扣肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -49752,7 +49466,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11923,
+        "id":  11912,
         "name":  "鸡公煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -49778,7 +49492,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11924,
+        "id":  11913,
         "name":  "A香辣鸡腿堡＋美食烤全翅＋薯条（中薯）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -49804,7 +49518,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11925,
+        "id":  11914,
         "name":  "香辣猪脚盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -49830,7 +49544,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11926,
+        "id":  11915,
         "name":  "鱼香肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -49854,7 +49568,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  11927,
+        "id":  11916,
         "name":  "海带",
         "category":  "其他",
         "icon":  "utensils",
@@ -49880,7 +49594,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11928,
+        "id":  11917,
         "name":  "牛肉酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -49904,7 +49618,7 @@
         "rawGroup":  "酸辣粉"
     },
     {
-        "id":  11929,
+        "id":  11918,
         "name":  "香辣三丁面",
         "category":  "面食",
         "icon":  "wheat",
@@ -49930,7 +49644,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11930,
+        "id":  11919,
         "name":  "小笼包（笼）",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -49956,7 +49670,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  11931,
+        "id":  11920,
         "name":  "招牌鸡肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -49982,7 +49696,7 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  11932,
+        "id":  11921,
         "name":  "番茄鱼丸渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -50009,7 +49723,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11933,
+        "id":  11922,
         "name":  "小笼包《笼》",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -50033,7 +49747,7 @@
         "rawGroup":  "包子"
     },
     {
-        "id":  11934,
+        "id":  11923,
         "name":  "火腿肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50057,7 +49771,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  11935,
+        "id":  11924,
         "name":  "三拼擂饭（选11.8元及以下鸡鸭腿不拼）",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50083,7 +49797,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11936,
+        "id":  11925,
         "name":  "功夫脆皮鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50109,7 +49823,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11937,
+        "id":  11926,
         "name":  "宫爆鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50133,7 +49847,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  11938,
+        "id":  11927,
         "name":  "至尊七虾汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -50159,7 +49873,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  11939,
+        "id":  11928,
         "name":  "肉蛋堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50185,7 +49899,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  11940,
+        "id":  11929,
         "name":  "酸萝卜猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -50209,7 +49923,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11941,
+        "id":  11930,
         "name":  "双人套餐十一（香辣鸡腿堡1个+鸡肉卷1个+无骨鸡块4块+锅巴土豆5块+洋葱鸡肉圈5个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50235,7 +49949,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  11942,
+        "id":  11931,
         "name":  "酸萝卜肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -50259,7 +49973,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  11943,
+        "id":  11932,
         "name":  "泡椒炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -50283,7 +49997,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  11944,
+        "id":  11933,
         "name":  "番茄肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -50307,7 +50021,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11945,
+        "id":  11934,
         "name":  "番茄鸡蛋铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -50334,7 +50048,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11946,
+        "id":  11935,
         "name":  "现烤中式汉堡×2",
         "category":  "烧烤",
         "icon":  "flame",
@@ -50360,7 +50074,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11947,
+        "id":  11936,
         "name":  "番茄鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -50387,7 +50101,7 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  11948,
+        "id":  11937,
         "name":  "新派口水鸡一例酱鸭腿2米饭2菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50413,7 +50127,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11949,
+        "id":  11938,
         "name":  "香辣肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -50437,7 +50151,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11950,
+        "id":  11939,
         "name":  "鱼豆腐米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -50463,7 +50177,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  11951,
+        "id":  11940,
         "name":  "鸡汤米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -50489,7 +50203,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11952,
+        "id":  11941,
         "name":  "铁板里脊饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50515,7 +50229,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11953,
+        "id":  11942,
         "name":  "小馆辣肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -50541,7 +50255,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  11954,
+        "id":  11943,
         "name":  "鸡肉手抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50567,7 +50281,7 @@
         "rawGroup":  "左侧配图（新疆特色手抓饭）"
     },
     {
-        "id":  11955,
+        "id":  11944,
         "name":  "油豆皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -50593,7 +50307,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  11956,
+        "id":  11945,
         "name":  "黄瓜鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50619,7 +50333,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  11957,
+        "id":  11946,
         "name":  "酸菜鸡肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -50645,7 +50359,7 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  11958,
+        "id":  11947,
         "name":  "土豆肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50669,7 +50383,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  11959,
+        "id":  11948,
         "name":  "奶汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -50696,7 +50410,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11960,
+        "id":  11949,
         "name":  "肠旺五荤油辣子苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -50722,7 +50436,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11961,
+        "id":  11950,
         "name":  "单加血",
         "category":  "其他",
         "icon":  "utensils",
@@ -50747,7 +50461,7 @@
         "rawGroup":  "碗碗羊肉"
     },
     {
-        "id":  11962,
+        "id":  11951,
         "name":  "煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50772,7 +50486,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11963,
+        "id":  11952,
         "name":  "爆炒五花肉丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -50798,7 +50512,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11964,
+        "id":  11953,
         "name":  "双椒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -50824,7 +50538,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  11965,
+        "id":  11954,
         "name":  "鸭腿单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50850,7 +50564,7 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  11966,
+        "id":  11955,
         "name":  "五香鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50876,7 +50590,7 @@
         "rawGroup":  "现卤现捞"
     },
     {
-        "id":  11967,
+        "id":  11956,
         "name":  "酥肉四荤清汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -50902,7 +50616,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11968,
+        "id":  11957,
         "name":  "沙拉烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -50928,7 +50642,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  11969,
+        "id":  11958,
         "name":  "小酥肉汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -50953,7 +50667,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11970,
+        "id":  11959,
         "name":  "干锅小酥肉",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -50979,7 +50693,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11971,
+        "id":  11960,
         "name":  "港式香妃鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51005,7 +50719,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  11972,
+        "id":  11961,
         "name":  "孜然肉片小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51029,7 +50743,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11973,
+        "id":  11962,
         "name":  "双层鸡腿堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -51055,7 +50769,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11974,
+        "id":  11963,
         "name":  "香辣鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51079,7 +50793,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  11975,
+        "id":  11964,
         "name":  "火腿肠",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51103,7 +50817,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  11976,
+        "id":  11965,
         "name":  "无骨鸡块",
         "category":  "烧烤",
         "icon":  "flame",
@@ -51129,7 +50843,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11977,
+        "id":  11966,
         "name":  "石锅肥牛",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51155,7 +50869,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  11978,
+        "id":  11967,
         "name":  "湖南小炒肉+米饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51181,7 +50895,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11979,
+        "id":  11968,
         "name":  "隆江猪蹄饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51207,7 +50921,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  11980,
+        "id":  11969,
         "name":  "酸菜酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51231,7 +50945,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  11981,
+        "id":  11970,
         "name":  "烧椒肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51257,7 +50971,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  11982,
+        "id":  11971,
         "name":  "藤椒肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51284,7 +50998,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  11983,
+        "id":  11972,
         "name":  "番茄鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51308,7 +51022,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  11984,
+        "id":  11973,
         "name":  "加一份配菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51332,7 +51046,7 @@
         "rawGroup":  "碗碗羊肉"
     },
     {
-        "id":  11985,
+        "id":  11974,
         "name":  "金针菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51357,7 +51071,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  11986,
+        "id":  11975,
         "name":  "黄瓜肉丝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51383,7 +51097,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11987,
+        "id":  11976,
         "name":  "藤椒抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -51410,7 +51124,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  11988,
+        "id":  11977,
         "name":  "干锅（鸡、兔、虾、排骨、里脊、黑椒肉柳、骨肉相连）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -51436,7 +51150,7 @@
         "rawGroup":  "特色菜"
     },
     {
-        "id":  11989,
+        "id":  11978,
         "name":  "孜然牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51460,7 +51174,7 @@
         "rawGroup":  "盖浇饭类"
     },
     {
-        "id":  11990,
+        "id":  11979,
         "name":  "鸡肉抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51486,7 +51200,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11991,
+        "id":  11980,
         "name":  "真香可乐鸡拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51512,7 +51226,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11992,
+        "id":  11981,
         "name":  "辣子鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -51538,7 +51252,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  11993,
+        "id":  11982,
         "name":  "排骨红烧肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51562,7 +51276,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  11994,
+        "id":  11983,
         "name":  "干溜面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -51589,7 +51303,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  11995,
+        "id":  11984,
         "name":  "甜玉米2段",
         "category":  "其他",
         "icon":  "utensils",
@@ -51615,7 +51329,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  11996,
+        "id":  11985,
         "name":  "台湾卤肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51640,7 +51354,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  11997,
+        "id":  11986,
         "name":  "菌汤肉丸子米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51666,7 +51380,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  11998,
+        "id":  11987,
         "name":  "日式烧牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51692,7 +51406,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  11999,
+        "id":  11988,
         "name":  "椒麻鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51719,7 +51433,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12000,
+        "id":  11989,
         "name":  "秘制炒饭加2素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -51746,7 +51460,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12001,
+        "id":  11990,
         "name":  "小馆肉燥汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -51771,7 +51485,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12002,
+        "id":  11991,
         "name":  "蛋炒米粉、河粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -51798,7 +51512,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12003,
+        "id":  11992,
         "name":  "干煸牛肉丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51824,7 +51538,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12004,
+        "id":  11993,
         "name":  "素炒年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -51850,7 +51564,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12005,
+        "id":  11994,
         "name":  "麻辣烤鱼焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -51877,7 +51591,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12006,
+        "id":  11995,
         "name":  "酸菜肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51901,7 +51615,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  12007,
+        "id":  11996,
         "name":  "香辣鸭血渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -51927,7 +51641,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12008,
+        "id":  11997,
         "name":  "石锅焖面+西红柿鸡蛋",
         "category":  "面食",
         "icon":  "wheat",
@@ -51953,7 +51667,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  12009,
+        "id":  11998,
         "name":  "冬阴功鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -51977,7 +51691,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  12010,
+        "id":  11999,
         "name":  "豆干",
         "category":  "其他",
         "icon":  "utensils",
@@ -52002,7 +51716,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  12011,
+        "id":  12000,
         "name":  "双椒香肠滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52028,7 +51742,7 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  12012,
+        "id":  12001,
         "name":  "干锅千叶豆腐盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52055,7 +51769,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12013,
+        "id":  12002,
         "name":  "炒腊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52081,7 +51795,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  12014,
+        "id":  12003,
         "name":  "蒜苔",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52107,7 +51821,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  12015,
+        "id":  12004,
         "name":  "小馆牛肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -52133,7 +51847,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12016,
+        "id":  12005,
         "name":  "小馆卤肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -52158,7 +51872,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12017,
+        "id":  12006,
         "name":  "小馆羊杂面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -52184,7 +51898,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  12018,
+        "id":  12007,
         "name":  "木耳肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -52210,7 +51924,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12019,
+        "id":  12008,
         "name":  "孜然鸡柳擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52236,7 +51950,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  12020,
+        "id":  12009,
         "name":  "明炉烧鸭例1米饭小菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52262,7 +51976,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12021,
+        "id":  12010,
         "name":  "麻辣烫日式乌冬面",
         "category":  "面食",
         "icon":  "wheat",
@@ -52290,7 +52004,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12022,
+        "id":  12011,
         "name":  "全肉肠拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -52314,7 +52028,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  12023,
+        "id":  12012,
         "name":  "★加蚝油",
         "category":  "其他",
         "icon":  "utensils",
@@ -52339,7 +52053,7 @@
         "rawGroup":  "米饭调料"
     },
     {
-        "id":  12024,
+        "id":  12013,
         "name":  "新派口水鸡/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52365,7 +52079,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  12025,
+        "id":  12014,
         "name":  "藤椒肉丝拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52392,7 +52106,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  12026,
+        "id":  12015,
         "name":  "火锅抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -52418,7 +52132,7 @@
         "rawGroup":  "抄手(按两)"
     },
     {
-        "id":  12027,
+        "id":  12016,
         "name":  "烧白",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52444,7 +52158,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12028,
+        "id":  12017,
         "name":  "小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52468,7 +52182,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12029,
+        "id":  12018,
         "name":  "川味藤椒鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52495,7 +52209,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  12030,
+        "id":  12019,
         "name":  "椒麻抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -52522,7 +52236,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12031,
+        "id":  12020,
         "name":  "老干妈火腿外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52548,7 +52262,7 @@
         "rawGroup":  "全家福蛋炒饭"
     },
     {
-        "id":  12032,
+        "id":  12021,
         "name":  "煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52573,7 +52287,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12033,
+        "id":  12022,
         "name":  "火锅素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -52599,7 +52313,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12034,
+        "id":  12023,
         "name":  "毛血旺（大份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -52623,7 +52337,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12035,
+        "id":  12024,
         "name":  "烧椒回锅肉滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52649,7 +52363,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  12036,
+        "id":  12025,
         "name":  "酸菜肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -52673,7 +52387,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  12037,
+        "id":  12026,
         "name":  "至臻七虾堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -52699,7 +52413,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12038,
+        "id":  12027,
         "name":  "咖喱鸡拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52724,7 +52438,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12039,
+        "id":  12028,
         "name":  "广式腊肠炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52748,7 +52462,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12040,
+        "id":  12029,
         "name":  "五花肉把把串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52772,7 +52486,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12041,
+        "id":  12030,
         "name":  "油麦菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52797,7 +52511,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  12042,
+        "id":  12031,
         "name":  "泡椒猪肝炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -52823,7 +52537,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  12043,
+        "id":  12032,
         "name":  "脆皮烧鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52849,7 +52563,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12044,
+        "id":  12033,
         "name":  "香菇滑鸡拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52874,7 +52588,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  12045,
+        "id":  12034,
         "name":  "任意双拼饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52900,7 +52614,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12046,
+        "id":  12035,
         "name":  "鸡公煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -52926,7 +52640,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12047,
+        "id":  12036,
         "name":  "泡椒肉丝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -52952,7 +52666,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  12048,
+        "id":  12037,
         "name":  "土家鸡腿焖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -52978,7 +52692,7 @@
         "rawGroup":  "土家焖饭"
     },
     {
-        "id":  12049,
+        "id":  12038,
         "name":  "紫薯糯米丸，2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53002,7 +52716,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12050,
+        "id":  12039,
         "name":  "老干妈外婆菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -53028,7 +52742,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12051,
+        "id":  12040,
         "name":  "秘制叉烧饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -53054,7 +52768,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12052,
+        "id":  12041,
         "name":  "泡椒嫩滑肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53080,7 +52794,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  12053,
+        "id":  12042,
         "name":  "曹鸭子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53106,7 +52820,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  12054,
+        "id":  12043,
         "name":  "小馆清汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -53131,7 +52845,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12055,
+        "id":  12044,
         "name":  "法式黑椒肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53157,7 +52871,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12056,
+        "id":  12045,
         "name":  "香辣猪肝面/刀削/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -53182,7 +52896,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12057,
+        "id":  12046,
         "name":  "香菇木耳包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53208,7 +52922,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12058,
+        "id":  12047,
         "name":  "排骨红烧肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -53236,7 +52950,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12059,
+        "id":  12048,
         "name":  "素菜米线套餐",
         "category":  "面食",
         "icon":  "wheat",
@@ -53263,7 +52977,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12060,
+        "id":  12049,
         "name":  "金汤肥牛面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53289,7 +53003,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12061,
+        "id":  12050,
         "name":  "辣子饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -53315,7 +53029,7 @@
         "rawGroup":  "特色小吃"
     },
     {
-        "id":  12062,
+        "id":  12051,
         "name":  "蟹味棒",
         "category":  "其他",
         "icon":  "utensils",
@@ -53340,7 +53054,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  12063,
+        "id":  12052,
         "name":  "小笼包（8个）",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -53366,7 +53080,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12064,
+        "id":  12053,
         "name":  "菌汤鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -53390,7 +53104,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12065,
+        "id":  12054,
         "name":  "农家一碗香",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -53416,7 +53130,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  12066,
+        "id":  12055,
         "name":  "咖喱鸡肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -53442,7 +53156,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12067,
+        "id":  12056,
         "name":  "石锅焖面+烤肠",
         "category":  "面食",
         "icon":  "wheat",
@@ -53468,7 +53182,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  12068,
+        "id":  12057,
         "name":  "干拌",
         "category":  "其他",
         "icon":  "utensils",
@@ -53493,7 +53207,33 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  12069,
+        "id":  12058,
+        "name":  "肠旺五荤清汤苕粉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "清淡"
+                  ],
+        "flavors":  [
+                        "清淡"
+                    ],
+        "price":  14.99,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "菜单补录，约 600 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "骨汤米粉",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
+    },
+    {
+        "id":  12059,
         "name":  "小馆肉酸豆角面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -53518,7 +53258,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12070,
+        "id":  12060,
         "name":  "番茄烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -53545,7 +53285,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12071,
+        "id":  12061,
         "name":  "麻辣酥肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53572,7 +53312,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12072,
+        "id":  12062,
         "name":  "香辣干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -53598,7 +53338,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  12073,
+        "id":  12063,
         "name":  "石锅焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53624,7 +53364,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12074,
+        "id":  12064,
         "name":  "套餐六海苔肉松炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -53648,7 +53388,7 @@
         "rawGroup":  "韩式炸鸡套餐系列"
     },
     {
-        "id":  12075,
+        "id":  12065,
         "name":  "泡椒肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53672,7 +53412,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  12076,
+        "id":  12066,
         "name":  "椒麻干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -53700,7 +53440,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12077,
+        "id":  12067,
         "name":  "肉丸套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53726,7 +53466,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  12078,
+        "id":  12068,
         "name":  "香脆猪排饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -53752,7 +53492,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  12079,
+        "id":  12069,
         "name":  "肉酱土豆泥拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53778,7 +53518,7 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  12080,
+        "id":  12070,
         "name":  "白菜包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53804,7 +53544,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12081,
+        "id":  12071,
         "name":  "香辣猪肝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53830,7 +53570,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12082,
+        "id":  12072,
         "name":  "西域肉排套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53854,7 +53594,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12083,
+        "id":  12073,
         "name":  "酱香烤肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -53880,7 +53620,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12084,
+        "id":  12074,
         "name":  "澳门烧肉一例蒜香鸭腿2米饭2菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -53906,7 +53646,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12085,
+        "id":  12075,
         "name":  "海味鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -53932,7 +53672,7 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  12086,
+        "id":  12076,
         "name":  "新疆炒素米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -53957,7 +53697,7 @@
         "rawGroup":  "新疆炒米粉"
     },
     {
-        "id":  12087,
+        "id":  12077,
         "name":  "香辣土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -53982,7 +53722,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12088,
+        "id":  12078,
         "name":  "去皮鸡腿排套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54008,7 +53748,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12089,
+        "id":  12079,
         "name":  "香菇酿肉双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54034,7 +53774,7 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  12090,
+        "id":  12080,
         "name":  "白馒头",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -54060,7 +53800,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12091,
+        "id":  12081,
         "name":  "蟹排",
         "category":  "其他",
         "icon":  "utensils",
@@ -54085,7 +53825,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12092,
+        "id":  12082,
         "name":  "酸菜鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -54109,7 +53849,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  12093,
+        "id":  12083,
         "name":  "孜然麻辣鸭小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54136,7 +53876,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12094,
+        "id":  12084,
         "name":  "QQ鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54160,7 +53900,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12095,
+        "id":  12085,
         "name":  "火锅面单人套餐（不含米饭）",
         "category":  "其他",
         "icon":  "utensils",
@@ -54185,7 +53925,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12096,
+        "id":  12086,
         "name":  "香菇牛肉拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -54210,7 +53950,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12097,
+        "id":  12087,
         "name":  "泡椒牛肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -54235,7 +53975,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12098,
+        "id":  12088,
         "name":  "盐煎肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -54259,7 +53999,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12099,
+        "id":  12089,
         "name":  "鸭腿鸡排双拼",
         "category":  "烧烤",
         "icon":  "flame",
@@ -54285,7 +54025,7 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  12100,
+        "id":  12090,
         "name":  "辣味干拌米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -54312,7 +54052,7 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  12101,
+        "id":  12091,
         "name":  "酸辣鸡杂盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -54337,7 +54077,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12102,
+        "id":  12092,
         "name":  "石锅糖醋里脊",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -54364,7 +54104,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12103,
+        "id":  12093,
         "name":  "清香小炒鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54390,7 +54130,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  12104,
+        "id":  12094,
         "name":  "千张豆皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -54416,7 +54156,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  12105,
+        "id":  12095,
         "name":  "加羊杂",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54440,7 +54180,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  12106,
+        "id":  12096,
         "name":  "香辣鸡锁骨",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54466,7 +54206,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12107,
+        "id":  12097,
         "name":  "锅包肉+咖喱鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -54492,7 +54232,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12108,
+        "id":  12098,
         "name":  "翡翠烧椒干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -54516,7 +54256,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  12109,
+        "id":  12099,
         "name":  "清汤鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -54542,7 +54282,7 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  12110,
+        "id":  12100,
         "name":  "青椒肉丝盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -54568,7 +54308,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12111,
+        "id":  12101,
         "name":  "香辣鸡腿堡×2",
         "category":  "烧烤",
         "icon":  "flame",
@@ -54594,7 +54334,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12112,
+        "id":  12102,
         "name":  "包浆豆腐串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54619,7 +54359,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  12113,
+        "id":  12103,
         "name":  "野山椒蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -54645,7 +54385,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  12114,
+        "id":  12104,
         "name":  "红汤鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -54669,7 +54409,7 @@
         "rawGroup":  "🔥🔥现包鲜肉云吞🔥🔥"
     },
     {
-        "id":  12115,
+        "id":  12105,
         "name":  "火锅猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -54693,7 +54433,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  12116,
+        "id":  12106,
         "name":  "麻辣烫肥牛面",
         "category":  "面食",
         "icon":  "wheat",
@@ -54722,7 +54462,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12117,
+        "id":  12107,
         "name":  "香酥麻辣猪脆骨",
         "category":  "其他",
         "icon":  "utensils",
@@ -54749,7 +54489,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12118,
+        "id":  12108,
         "name":  "大块卤肉面/刀削/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -54774,7 +54514,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12119,
+        "id":  12109,
         "name":  "炸酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -54800,34 +54540,33 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  12120,
-        "name":  "牛肉酸辣粉",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  12110,
+        "name":  "土豆牛肉盖浇面/饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
         "taste":  [
-                      "微辣",
-                      "微酸"
+                      "咸香"
                   ],
         "flavors":  [
-                        "辣"
+
                     ],
-        "price":  15,
-        "cal":  600,
+        "price":  14,
+        "cal":  700,
         "tags":  [
                      "管饱"
                  ],
-        "desc":  "菜单补录，约 600 kcal",
+        "desc":  "“盖浇面/饭”之选（另有：盖浇面/饭14元），约 700 kcal",
         "veg":  false,
-        "spicy":  1,
+        "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "曾记面食",
+        "stall":  "兰州拉面",
         "canteen":  "北山苑餐厅",
         "img":  "",
-        "rawGroup":  "菜单补录"
+        "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  12121,
+        "id":  12111,
         "name":  "龙口粉丝",
         "category":  "其他",
         "icon":  "utensils",
@@ -54853,7 +54592,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12122,
+        "id":  12112,
         "name":  "番茄鸡蛋",
         "category":  "面食",
         "icon":  "wheat",
@@ -54880,7 +54619,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  12123,
+        "id":  12113,
         "name":  "杂酱面",
         "category":  "面食",
         "icon":  "wheat",
@@ -54906,7 +54645,7 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  12124,
+        "id":  12114,
         "name":  "排骨煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54932,7 +54671,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12125,
+        "id":  12115,
         "name":  "小炒肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54956,7 +54695,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12126,
+        "id":  12116,
         "name":  "川香回锅肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -54982,7 +54721,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  12127,
+        "id":  12117,
         "name":  "任意双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55008,7 +54747,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12128,
+        "id":  12118,
         "name":  "豆干肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -55032,7 +54771,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12129,
+        "id":  12119,
         "name":  "香菇滑鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -55058,7 +54797,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12130,
+        "id":  12120,
         "name":  "鸡排拼里脊",
         "category":  "烧烤",
         "icon":  "flame",
@@ -55084,7 +54823,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12131,
+        "id":  12121,
         "name":  "蒙古烤肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -55109,7 +54848,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12132,
+        "id":  12122,
         "name":  "鳕鱼堡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55135,7 +54874,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  12133,
+        "id":  12123,
         "name":  "双层芝士厚牛堡+咔咔脆鸡腿+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -55161,7 +54900,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12134,
+        "id":  12124,
         "name":  "藤椒肉丝拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -55188,7 +54927,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12135,
+        "id":  12125,
         "name":  "酱香肉沫豆腐焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55214,7 +54953,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12136,
+        "id":  12126,
         "name":  "肥牛+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -55240,7 +54979,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12137,
+        "id":  12127,
         "name":  "《老板力推🤪》人气套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -55266,7 +55005,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12138,
+        "id":  12128,
         "name":  "嫩烧鱼肉饼大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55292,7 +55031,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  12139,
+        "id":  12129,
         "name":  "招牌酱香拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -55316,7 +55055,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  12140,
+        "id":  12130,
         "name":  "农家一碗香盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -55341,7 +55080,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12141,
+        "id":  12131,
         "name":  "白馒头",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -55366,7 +55105,7 @@
         "rawGroup":  "馒头"
     },
     {
-        "id":  12142,
+        "id":  12132,
         "name":  "藤椒豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -55394,7 +55133,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12143,
+        "id":  12133,
         "name":  "咖喱蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -55418,7 +55157,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  12144,
+        "id":  12134,
         "name":  "笑脸薯",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -55444,7 +55183,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  12145,
+        "id":  12135,
         "name":  "韩式奶香鸡套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55470,7 +55209,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12146,
+        "id":  12136,
         "name":  "炸鸡套餐一",
         "category":  "烧烤",
         "icon":  "flame",
@@ -55496,7 +55235,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12147,
+        "id":  12137,
         "name":  "脆皮炸鸡（半只）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -55521,7 +55260,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12148,
+        "id":  12138,
         "name":  "招牌汉堡套餐八",
         "category":  "其他",
         "icon":  "utensils",
@@ -55545,7 +55284,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  12149,
+        "id":  12139,
         "name":  "泡椒渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -55571,7 +55310,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12150,
+        "id":  12140,
         "name":  "咖啡",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -55596,7 +55335,7 @@
         "rawGroup":  "饮料单点（热饮）"
     },
     {
-        "id":  12151,
+        "id":  12141,
         "name":  "石锅焖面烤肠",
         "category":  "面食",
         "icon":  "wheat",
@@ -55620,7 +55359,7 @@
         "rawGroup":  "特色石锅饭"
     },
     {
-        "id":  12152,
+        "id":  12142,
         "name":  "骨肉相连干锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -55644,7 +55383,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  12153,
+        "id":  12143,
         "name":  "土豆肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -55670,7 +55409,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12154,
+        "id":  12144,
         "name":  "干锅兔",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -55695,7 +55434,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12155,
+        "id":  12145,
         "name":  "炸鸡套餐一",
         "category":  "烧烤",
         "icon":  "flame",
@@ -55720,7 +55459,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12156,
+        "id":  12146,
         "name":  "麻辣烫素菜面",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -55749,7 +55488,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12157,
+        "id":  12147,
         "name":  "南瓜粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -55777,7 +55516,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  12158,
+        "id":  12148,
         "name":  "白菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -55803,7 +55542,7 @@
         "rawGroup":  "手工现包水饺"
     },
     {
-        "id":  12159,
+        "id":  12149,
         "name":  "宽苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -55828,7 +55567,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12160,
+        "id":  12150,
         "name":  "曹鸭子+湖南小炒肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55854,7 +55593,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12161,
+        "id":  12151,
         "name":  "特惠c香辣鸡腿堡+美食烤全腿+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -55880,7 +55619,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12162,
+        "id":  12152,
         "name":  "藕片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55905,7 +55644,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  12163,
+        "id":  12153,
         "name":  "午餐肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -55929,7 +55668,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12164,
+        "id":  12154,
         "name":  "金汤渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -55955,7 +55694,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12165,
+        "id":  12155,
         "name":  "腊肠鸡蛋炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -55981,7 +55720,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12166,
+        "id":  12156,
         "name":  "外婆菜火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -56007,7 +55746,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12167,
+        "id":  12157,
         "name":  "金汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -56034,7 +55773,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12168,
+        "id":  12158,
         "name":  "鲜虾煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56060,7 +55799,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12169,
+        "id":  12159,
         "name":  "芹菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -56086,7 +55825,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12170,
+        "id":  12160,
         "name":  "双椒肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -56112,7 +55851,7 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  12171,
+        "id":  12161,
         "name":  "火腿鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -56138,7 +55877,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12172,
+        "id":  12162,
         "name":  "旋风鸡排拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -56164,7 +55903,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12173,
+        "id":  12163,
         "name":  "火腿鸡蛋炒面、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -56190,7 +55929,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12174,
+        "id":  12164,
         "name":  "维C鸡锅包肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56216,7 +55955,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12175,
+        "id":  12165,
         "name":  "紫米饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -56241,7 +55980,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12176,
+        "id":  12166,
         "name":  "原味渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -56267,7 +56006,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12177,
+        "id":  12167,
         "name":  "香辣猪肝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -56291,7 +56030,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  12178,
+        "id":  12168,
         "name":  "火锅味渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -56317,7 +56056,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12179,
+        "id":  12169,
         "name":  "韭菜鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -56342,7 +56081,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12180,
+        "id":  12170,
         "name":  "土豆丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56366,7 +56105,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12181,
+        "id":  12171,
         "name":  "鸡珍（3个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56390,7 +56129,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12182,
+        "id":  12172,
         "name":  "灌汤包（单买）",
         "category":  "汤粥",
         "icon":  "soup",
@@ -56417,7 +56156,7 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  12183,
+        "id":  12173,
         "name":  "大盘鸡盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -56441,7 +56180,7 @@
         "rawGroup":  "盖浇饭类"
     },
     {
-        "id":  12184,
+        "id":  12174,
         "name":  "小炒肉炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -56465,7 +56204,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  12185,
+        "id":  12175,
         "name":  "炸鸡块串",
         "category":  "烧烤",
         "icon":  "flame",
@@ -56490,7 +56229,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12186,
+        "id":  12176,
         "name":  "小馆鸡蛋炸酱面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -56516,7 +56255,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  12187,
+        "id":  12177,
         "name":  "红烧肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56540,7 +56279,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12188,
+        "id":  12178,
         "name":  "煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56564,7 +56303,7 @@
         "rawGroup":  "加菜"
     },
     {
-        "id":  12189,
+        "id":  12179,
         "name":  "红烧牛肚面",
         "category":  "面食",
         "icon":  "wheat",
@@ -56588,7 +56327,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  12190,
+        "id":  12180,
         "name":  "牛肉煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56612,7 +56351,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  12191,
+        "id":  12181,
         "name":  "小馆肉燥拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -56636,7 +56375,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  12192,
+        "id":  12182,
         "name":  "椒香鸭胸拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -56660,7 +56399,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  12193,
+        "id":  12183,
         "name":  "辣番茄鸡蛋拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -56689,7 +56428,7 @@
         "rawGroup":  "小馆炸酱面"
     },
     {
-        "id":  12194,
+        "id":  12184,
         "name":  "油黄鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56713,7 +56452,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12195,
+        "id":  12185,
         "name":  "黄瓜鸡蛋炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56739,7 +56478,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12196,
+        "id":  12186,
         "name":  "凉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -56765,7 +56504,7 @@
         "rawGroup":  "凉面 凉皮"
     },
     {
-        "id":  12197,
+        "id":  12187,
         "name":  "红糖馒头",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -56791,7 +56530,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12198,
+        "id":  12188,
         "name":  "叉烧+金蒜茄子套餐饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56817,7 +56556,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12199,
+        "id":  12189,
         "name":  "卤豆卷",
         "category":  "其他",
         "icon":  "utensils",
@@ -56843,7 +56582,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12200,
+        "id":  12190,
         "name":  "鲜虾煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56869,7 +56608,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12201,
+        "id":  12191,
         "name":  "曹鸭子+叉烧",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56895,7 +56634,7 @@
         "rawGroup":  "海报推荐（实拍图价目）"
     },
     {
-        "id":  12202,
+        "id":  12192,
         "name":  "流沙鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -56921,7 +56660,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  12203,
+        "id":  12193,
         "name":  "石锅鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -56947,7 +56686,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12204,
+        "id":  12194,
         "name":  "红番茄牛肉炒米粉不辣",
         "category":  "面食",
         "icon":  "wheat",
@@ -56974,7 +56713,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12205,
+        "id":  12195,
         "name":  "菌汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -57000,7 +56739,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  12206,
+        "id":  12196,
         "name":  "一大碗锁骨",
         "category":  "其他",
         "icon":  "utensils",
@@ -57025,33 +56764,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12207,
-        "name":  "玫瑰豉油鸡饭明炉烤鸭",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-
-                    ],
-        "price":  20.9,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "菜单补录，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "兴旺烧腊饭",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  12208,
+        "id":  12197,
         "name":  "杂酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -57075,7 +56788,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  12209,
+        "id":  12198,
         "name":  "湖南小炒肉擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -57101,7 +56814,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12210,
+        "id":  12199,
         "name":  "开花肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -57126,7 +56839,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12211,
+        "id":  12200,
         "name":  "碗碗羊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57152,7 +56865,7 @@
         "rawGroup":  "特色菜"
     },
     {
-        "id":  12212,
+        "id":  12201,
         "name":  "金汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -57179,7 +56892,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  12213,
+        "id":  12202,
         "name":  "鱼香肉丝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57205,7 +56918,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12214,
+        "id":  12203,
         "name":  "原味煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57229,7 +56942,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  12215,
+        "id":  12204,
         "name":  "金汤肥牛面",
         "category":  "面食",
         "icon":  "wheat",
@@ -57254,7 +56967,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12216,
+        "id":  12205,
         "name":  "火鸡面套餐二",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57278,7 +56991,7 @@
         "rawGroup":  "火鸡面系列"
     },
     {
-        "id":  12217,
+        "id":  12206,
         "name":  "清汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -57305,7 +57018,7 @@
         "rawGroup":  "特色馄饨"
     },
     {
-        "id":  12218,
+        "id":  12207,
         "name":  "鱼香肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -57329,7 +57042,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12219,
+        "id":  12208,
         "name":  "牛肉煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57353,7 +57066,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  12220,
+        "id":  12209,
         "name":  "新火锅抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -57377,7 +57090,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  12221,
+        "id":  12210,
         "name":  "肉沫薯角+香酥鸭块套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -57403,7 +57116,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12222,
+        "id":  12211,
         "name":  "煎蛋拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -57430,7 +57143,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12223,
+        "id":  12212,
         "name":  "泡椒肉丝拌面刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -57456,7 +57169,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12224,
+        "id":  12213,
         "name":  "黑椒肉柳干锅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -57482,7 +57195,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12225,
+        "id":  12214,
         "name":  "肉酱土豆泥火鸡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -57508,7 +57221,7 @@
         "rawGroup":  "热销推荐（海报）"
     },
     {
-        "id":  12226,
+        "id":  12215,
         "name":  "炒腊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57532,7 +57245,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12227,
+        "id":  12216,
         "name":  "经典三荤清汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -57558,7 +57271,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12228,
+        "id":  12217,
         "name":  "酸菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -57584,7 +57297,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  12229,
+        "id":  12218,
         "name":  "土豆米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -57611,7 +57324,33 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  12230,
+        "id":  12219,
+        "name":  "原切烤鸡肉盖码饭",
+        "category":  "盖浇饭",
+        "icon":  "utensils",
+        "taste":  [
+                      "咸香"
+                  ],
+        "flavors":  [
+
+                    ],
+        "price":  12.99,
+        "cal":  700,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "菜单补录，约 700 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "原切烤肉饭",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
+    },
+    {
+        "id":  12220,
         "name":  "鲜肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57637,7 +57376,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12231,
+        "id":  12221,
         "name":  "凉面凉皮混,.,配泡菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57663,7 +57402,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12232,
+        "id":  12222,
         "name":  "肉末豆角包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57689,7 +57428,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12233,
+        "id":  12223,
         "name":  "手工杂酱酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -57717,7 +57456,7 @@
         "rawGroup":  "酸辣粉系列"
     },
     {
-        "id":  12234,
+        "id":  12224,
         "name":  "火腿鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -57741,7 +57480,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  12235,
+        "id":  12225,
         "name":  "土豆片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57765,33 +57504,31 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12236,
-        "name":  "肠旺五荤清汤苕粉",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  12226,
+        "name":  "把把签鱿鱼",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
-                      "清淡"
+                      "咸香"
                   ],
-        "flavors":  [
-                        "清淡"
-                    ],
-        "price":  14.99,
-        "cal":  600,
+        "flavors": [],
+        "price":  12,
+        "cal":  450,
         "tags":  [
-                     "管饱"
+
                  ],
-        "desc":  "菜单补录，约 600 kcal",
+        "desc":  "“特色撸\n串荤”之选，约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "骨汤米粉",
+        "stall":  "今喜炸串",
         "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
+        "img":  "https://img.lcsw.cn/scan-order/foods/80695e5cb74446888ad47e6a685cec43.jpg",
+        "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12237,
+        "id":  12227,
         "name":  "青菜鸡蛋甜肠粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -57816,35 +57553,7 @@
         "rawGroup":  "交个朋友"
     },
     {
-        "id":  12238,
-        "name":  "泰式酸辣酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "微辣"
-                  ],
-        "flavors":  [
-                        "辣",
-                        "咸鲜"
-                    ],
-        "price":  1.5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“调料包”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  12239,
+        "id":  12228,
         "name":  "现炒干锅麻辣鸭2人份",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -57872,7 +57581,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12240,
+        "id":  12229,
         "name":  "土豆肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -57897,7 +57606,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12241,
+        "id":  12230,
         "name":  "短片熏培根2片",
         "category":  "其他",
         "icon":  "utensils",
@@ -57922,7 +57631,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12242,
+        "id":  12231,
         "name":  "千叶豆腐套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -57948,7 +57657,7 @@
         "rawGroup":  "炸串拌饭套餐类"
     },
     {
-        "id":  12243,
+        "id":  12232,
         "name":  "丰都鬼城糊辣壳面",
         "category":  "面食",
         "icon":  "wheat",
@@ -57974,7 +57683,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12244,
+        "id":  12233,
         "name":  "双椒爆香鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58000,7 +57709,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  12245,
+        "id":  12234,
         "name":  "土豆丁腊肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58026,7 +57735,7 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  12246,
+        "id":  12235,
         "name":  "豆皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -58052,7 +57761,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12247,
+        "id":  12236,
         "name":  "川味香酥鸭盖码饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58078,7 +57787,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12248,
+        "id":  12237,
         "name":  "蒜苔肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58102,7 +57811,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12249,
+        "id":  12238,
         "name":  "泡椒肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58128,7 +57837,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  12250,
+        "id":  12239,
         "name":  "新品现炒❤️小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58152,7 +57861,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12251,
+        "id":  12240,
         "name":  "素米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -58180,34 +57889,32 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  12252,
-        "name":  "鸡杂酸辣粉",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  12241,
+        "name":  "金丝鸡柳",
+        "category":  "烧烤",
+        "icon":  "flame",
         "taste":  [
-                      "微辣",
-                      "微酸"
+                      "咸香"
                   ],
-        "flavors":  [
-                        "辣"
-                    ],
-        "price":  13,
-        "cal":  600,
+        "flavors": [],
+        "price":  4,
+        "cal":  650,
         "tags":  [
+                     "性价比",
                      "管饱"
                  ],
-        "desc":  "“酸辣粉”之选（另有：酸辣粉13元），约 600 kcal",
+        "desc":  "“特色撸\n串荤”之选，约 650 kcal",
         "veg":  false,
-        "spicy":  1,
+        "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "胖妹面庄",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "酸辣粉"
+        "stall":  "今喜炸串",
+        "canteen":  "汇百味餐厅",
+        "img":  "https://img.lcsw.cn/scan-order/foods/54fca86d634340bea0e1f3f55a6dff5b.jpg",
+        "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12253,
+        "id":  12242,
         "name":  "肥牛",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58231,7 +57938,7 @@
         "rawGroup":  "石锅饭加菜区"
     },
     {
-        "id":  12254,
+        "id":  12243,
         "name":  "马拉糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -58256,7 +57963,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12255,
+        "id":  12244,
         "name":  "干锅土豆",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -58283,7 +57990,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  12256,
+        "id":  12245,
         "name":  "石锅鸡蛋豆腐",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58309,7 +58016,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12257,
+        "id":  12246,
         "name":  "泡椒全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -58333,7 +58040,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12258,
+        "id":  12247,
         "name":  "黑椒牛肉饼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58359,7 +58066,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12259,
+        "id":  12248,
         "name":  "（现包）双拼—白菜+韭菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58384,7 +58091,7 @@
         "rawGroup":  "❤手工现包水饺"
     },
     {
-        "id":  12260,
+        "id":  12249,
         "name":  "鱼香肉丝拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -58408,7 +58115,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  12261,
+        "id":  12250,
         "name":  "地锅鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58434,7 +58141,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  12262,
+        "id":  12251,
         "name":  "奥尔良鸡肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58458,7 +58165,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12263,
+        "id":  12252,
         "name":  "期末助力优惠套餐双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58484,7 +58191,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12264,
+        "id":  12253,
         "name":  "韩式套餐二",
         "category":  "其他",
         "icon":  "utensils",
@@ -58508,7 +58215,7 @@
         "rawGroup":  "韩式炸鸡套餐系列"
     },
     {
-        "id":  12265,
+        "id":  12254,
         "name":  "大油条",
         "category":  "其他",
         "icon":  "utensils",
@@ -58533,7 +58240,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12266,
+        "id":  12255,
         "name":  "韩式套餐四",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58559,7 +58266,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12267,
+        "id":  12256,
         "name":  "咖喱鸡肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58585,7 +58292,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12268,
+        "id":  12257,
         "name":  "石锅鸡蛋金针菇",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58611,7 +58318,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12269,
+        "id":  12258,
         "name":  "肉沫火腿肠",
         "category":  "面食",
         "icon":  "wheat",
@@ -58637,7 +58344,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  12270,
+        "id":  12259,
         "name":  "猪排拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -58661,7 +58368,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  12271,
+        "id":  12260,
         "name":  "叉烧+咖喱鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58687,7 +58394,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12272,
+        "id":  12261,
         "name":  "海味抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -58713,7 +58420,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  12273,
+        "id":  12262,
         "name":  "土豆粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -58740,7 +58447,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12274,
+        "id":  12263,
         "name":  "酱香烤鱼焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58766,7 +58473,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12275,
+        "id":  12264,
         "name":  "猪肝+火腿🍳",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58790,7 +58497,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  12276,
+        "id":  12265,
         "name":  "金汤面（",
         "category":  "面食",
         "icon":  "wheat",
@@ -58815,7 +58522,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12277,
+        "id":  12266,
         "name":  "酸菜牛肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -58839,7 +58546,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  12278,
+        "id":  12267,
         "name":  "藕片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58864,7 +58571,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12279,
+        "id":  12268,
         "name":  "鸭腿擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58890,7 +58597,7 @@
         "rawGroup":  "卤肉擂饭系列"
     },
     {
-        "id":  12280,
+        "id":  12269,
         "name":  "杨州炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58916,7 +58623,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12281,
+        "id":  12270,
         "name":  "清汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -58942,7 +58649,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  12282,
+        "id":  12271,
         "name":  "豆腐皮",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -58967,7 +58674,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  12283,
+        "id":  12272,
         "name":  "土豆丁火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -58993,7 +58700,7 @@
         "rawGroup":  "人气推荐"
     },
     {
-        "id":  12284,
+        "id":  12273,
         "name":  "小太阳煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59019,7 +58726,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12285,
+        "id":  12274,
         "name":  "菌汤肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -59043,7 +58750,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12286,
+        "id":  12275,
         "name":  "泡椒肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59069,7 +58776,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12287,
+        "id":  12276,
         "name":  "炸蛋米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -59095,7 +58802,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  12288,
+        "id":  12277,
         "name":  "里脊饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -59119,7 +58826,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12289,
+        "id":  12278,
         "name":  "腊肠鸡蛋炒河粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -59144,7 +58851,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12290,
+        "id":  12279,
         "name":  "腰花风味肠3个",
         "category":  "其他",
         "icon":  "utensils",
@@ -59169,7 +58876,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12291,
+        "id":  12280,
         "name":  "经典三荤红酸汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -59195,7 +58902,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12292,
+        "id":  12281,
         "name":  "红油冷吃核桃肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59221,7 +58928,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12293,
+        "id":  12282,
         "name":  "招牌五拼烤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -59247,7 +58954,7 @@
         "rawGroup":  "招牌五拼烤肉饭"
     },
     {
-        "id":  12294,
+        "id":  12283,
         "name":  "伊美生煎饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -59273,7 +58980,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  12295,
+        "id":  12284,
         "name":  "鸡排拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -59299,7 +59006,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12296,
+        "id":  12285,
         "name":  "【新品】干锅瘦肉片",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -59324,7 +59031,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12297,
+        "id":  12286,
         "name":  "百香果渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -59350,7 +59057,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12298,
+        "id":  12287,
         "name":  "番茄鸡蛋拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -59377,7 +59084,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12299,
+        "id":  12288,
         "name":  "香辣地锅肉沫焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -59403,7 +59110,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12300,
+        "id":  12289,
         "name":  "酸菜米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -59430,7 +59137,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12301,
+        "id":  12290,
         "name":  "糖醋里脊拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -59459,7 +59166,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12302,
+        "id":  12291,
         "name":  "鸡排拼五花肉",
         "category":  "烧烤",
         "icon":  "flame",
@@ -59485,7 +59192,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12303,
+        "id":  12292,
         "name":  "滑肉土豆泥拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -59511,7 +59218,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12304,
+        "id":  12293,
         "name":  "火锅全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -59535,7 +59242,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  12305,
+        "id":  12294,
         "name":  "麻辣炒鸡架擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -59562,7 +59269,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  12306,
+        "id":  12295,
         "name":  "软皮猪肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -59588,7 +59295,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  12307,
+        "id":  12296,
         "name":  "麻辣牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59615,7 +59322,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12308,
+        "id":  12297,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -59642,7 +59349,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  12309,
+        "id":  12298,
         "name":  "火锅全家福米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -59668,7 +59375,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  12310,
+        "id":  12299,
         "name":  "海带结",
         "category":  "其他",
         "icon":  "utensils",
@@ -59694,7 +59401,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12311,
+        "id":  12300,
         "name":  "招牌麻辣绝味鸭翅（卤）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59722,7 +59429,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  12312,
+        "id":  12301,
         "name":  "明炉烧鸭一例2份米饭菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59748,7 +59455,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12313,
+        "id":  12302,
         "name":  "油条",
         "category":  "其他",
         "icon":  "utensils",
@@ -59773,7 +59480,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  12314,
+        "id":  12303,
         "name":  "地锅肉丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59799,7 +59506,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  12315,
+        "id":  12304,
         "name":  "奶汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -59824,7 +59531,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  12316,
+        "id":  12305,
         "name":  "黄豆炖猪蹄",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59848,7 +59555,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12317,
+        "id":  12306,
         "name":  "香辣鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -59872,7 +59579,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12318,
+        "id":  12307,
         "name":  "午餐肉米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -59897,7 +59604,7 @@
         "rawGroup":  "🫅交个朋友🫅"
     },
     {
-        "id":  12319,
+        "id":  12308,
         "name":  "奥尔良鸡肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59922,7 +59629,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12320,
+        "id":  12309,
         "name":  "孜然牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -59948,7 +59655,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  12321,
+        "id":  12310,
         "name":  "肥牛卷",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59972,7 +59679,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12322,
+        "id":  12311,
         "name":  "黑鱼片1盒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -59996,7 +59703,7 @@
         "rawGroup":  "精品菜"
     },
     {
-        "id":  12323,
+        "id":  12312,
         "name":  "香辣三丁拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -60021,7 +59728,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  12324,
+        "id":  12313,
         "name":  "西红柿鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -60047,7 +59754,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  12325,
+        "id":  12314,
         "name":  "芝士球",
         "category":  "其他",
         "icon":  "utensils",
@@ -60072,7 +59779,7 @@
         "rawGroup":  "新品"
     },
     {
-        "id":  12326,
+        "id":  12315,
         "name":  "番茄土豆泥肉酱饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -60100,7 +59807,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12327,
+        "id":  12316,
         "name":  "酸菜牛肉炒宽粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -60126,7 +59833,7 @@
         "rawGroup":  "特色宽粉"
     },
     {
-        "id":  12328,
+        "id":  12317,
         "name":  "黑椒肉柳滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -60152,7 +59859,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12329,
+        "id":  12318,
         "name":  "卤味干锅五花肉（好吃香）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -60180,7 +59887,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12330,
+        "id":  12319,
         "name":  "爆炒肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60204,7 +59911,7 @@
         "rawGroup":  "现炒浇头面"
     },
     {
-        "id":  12331,
+        "id":  12320,
         "name":  "盐煎肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -60230,7 +59937,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12332,
+        "id":  12321,
         "name":  "无骨鸡块",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60254,7 +59961,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  12333,
+        "id":  12322,
         "name":  "山椒酸萝卜铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -60281,7 +59988,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12334,
+        "id":  12323,
         "name":  "酸菜云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -60307,7 +60014,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  12335,
+        "id":  12324,
         "name":  "蛋炒河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -60334,7 +60041,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12336,
+        "id":  12325,
         "name":  "绝味招牌‼️酱香大鸭腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60361,7 +60068,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12337,
+        "id":  12326,
         "name":  "蘸饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -60387,7 +60094,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12338,
+        "id":  12327,
         "name":  "凉面凉皮双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -60415,7 +60122,7 @@
         "rawGroup":  "凉面系列"
     },
     {
-        "id":  12339,
+        "id":  12328,
         "name":  "蛋炒河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -60441,7 +60148,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12340,
+        "id":  12329,
         "name":  "小炒肉炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -60467,7 +60174,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12341,
+        "id":  12330,
         "name":  "肥牛+火腿🍳",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60491,7 +60198,7 @@
         "rawGroup":  "最受欢迎组合"
     },
     {
-        "id":  12342,
+        "id":  12331,
         "name":  "肉肠（70g）",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -60515,7 +60222,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12343,
+        "id":  12332,
         "name":  "状元卤肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60541,7 +60248,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12344,
+        "id":  12333,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -60568,7 +60275,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12345,
+        "id":  12334,
         "name":  "台式烧肉茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -60594,7 +60301,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12346,
+        "id":  12335,
         "name":  "台湾椰椰大鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -60620,7 +60327,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12347,
+        "id":  12336,
         "name":  "毛肚",
         "category":  "其他",
         "icon":  "utensils",
@@ -60644,7 +60351,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12348,
+        "id":  12337,
         "name":  "手抓饼加鸡柳",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -60668,7 +60375,7 @@
         "rawGroup":  "手抓饼"
     },
     {
-        "id":  12349,
+        "id":  12338,
         "name":  "酸菜牛肉拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -60695,7 +60402,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12350,
+        "id":  12339,
         "name":  "脆木耳",
         "category":  "其他",
         "icon":  "utensils",
@@ -60721,33 +60428,33 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12351,
-        "name":  "韭菜鸡蛋水饺",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  12340,
+        "name":  "葱香鱼香肉丝",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
-                      "咸香"
+                      "甜"
                   ],
         "flavors":  [
-
+                        "甜"
                     ],
-        "price":  9.9,
-        "cal":  600,
+        "price":  14,
+        "cal":  450,
         "tags":  [
-                     "管饱"
+
                  ],
-        "desc":  "菜单补录，约 600 kcal",
+        "desc":  "菜单补录，约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "惠芯意鲜饺坊",
-        "canteen":  "北山苑餐厅",
+        "stall":  "沈大爷",
+        "canteen":  "汇百味餐厅",
         "img":  "",
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12352,
+        "id":  12341,
         "name":  "葱爆牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -60771,7 +60478,7 @@
         "rawGroup":  "盖浇饭类"
     },
     {
-        "id":  12353,
+        "id":  12342,
         "name":  "特惠D香辣鸡腿堡+无骨韩式炸鸡+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -60797,7 +60504,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12354,
+        "id":  12343,
         "name":  "油条",
         "category":  "其他",
         "icon":  "utensils",
@@ -60822,7 +60529,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  12355,
+        "id":  12344,
         "name":  "清汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -60847,7 +60554,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  12356,
+        "id":  12345,
         "name":  "虎皮红烧肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60871,7 +60578,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  12357,
+        "id":  12346,
         "name":  "肉丸面",
         "category":  "面食",
         "icon":  "wheat",
@@ -60897,7 +60604,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12358,
+        "id":  12347,
         "name":  "现切鲜牛肉4片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60921,7 +60628,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12359,
+        "id":  12348,
         "name":  "午餐肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60945,7 +60652,7 @@
         "rawGroup":  "6元区"
     },
     {
-        "id":  12360,
+        "id":  12349,
         "name":  "鲜虾煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60969,7 +60676,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  12361,
+        "id":  12350,
         "name":  "鸡公煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -60993,32 +60700,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12362,
-        "name":  "米饭(单点不送)",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  2,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "每个套餐配一份米饭 如需多加米饭请拍此链接，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "缘味先石锅饭",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/saobei/app/ee2e5f5ce7bd48a099a42e488db0a228.jpg",
-        "rawGroup":  "主食"
-    },
-    {
-        "id":  12363,
+        "id":  12351,
         "name":  "辣番茄鸡蛋拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -61045,7 +60727,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  12364,
+        "id":  12352,
         "name":  "泡椒血旺炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61071,7 +60753,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12365,
+        "id":  12353,
         "name":  "豆皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -61097,7 +60779,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  12366,
+        "id":  12354,
         "name":  "腊肉炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61121,7 +60803,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12367,
+        "id":  12355,
         "name":  "撒尿牛丸套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61145,7 +60827,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12368,
+        "id":  12356,
         "name":  "菌汤鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -61169,7 +60851,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12369,
+        "id":  12357,
         "name":  "蔬菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61195,7 +60877,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  12370,
+        "id":  12358,
         "name":  "酱烧猪脆骨擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61221,7 +60903,7 @@
         "rawGroup":  "酱焖擂饭系列"
     },
     {
-        "id":  12371,
+        "id":  12359,
         "name":  "经典螺蛳粉牛肉丸（3个）",
         "category":  "面食",
         "icon":  "wheat",
@@ -61247,7 +60929,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12372,
+        "id":  12360,
         "name":  "铁板葱油鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61273,7 +60955,7 @@
         "rawGroup":  "料理扒类"
     },
     {
-        "id":  12373,
+        "id":  12361,
         "name":  "腊味麻辣香肠炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -61300,7 +60982,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12374,
+        "id":  12362,
         "name":  "藤椒全家福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -61327,7 +61009,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12375,
+        "id":  12363,
         "name":  "泡椒肉丝拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -61351,7 +61033,7 @@
         "rawGroup":  "沈大爷拌粉系列"
     },
     {
-        "id":  12376,
+        "id":  12364,
         "name":  "麻辣酱香鸭子套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61379,7 +61061,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  12377,
+        "id":  12365,
         "name":  "火鸡面套餐一",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61405,7 +61087,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12378,
+        "id":  12366,
         "name":  "酸菜肉沫油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61431,7 +61113,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12379,
+        "id":  12367,
         "name":  "鲜椒拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -61457,7 +61139,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12380,
+        "id":  12368,
         "name":  "小馆麻酱鸡丝拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -61483,7 +61165,7 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  12381,
+        "id":  12369,
         "name":  "肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61507,7 +61189,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12382,
+        "id":  12370,
         "name":  "姜鸭铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -61533,7 +61215,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12383,
+        "id":  12371,
         "name":  "番茄金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -61558,7 +61240,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  12384,
+        "id":  12372,
         "name":  "广式腊肠炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61584,7 +61266,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12385,
+        "id":  12373,
         "name":  "鸡肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61608,7 +61290,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12386,
+        "id":  12374,
         "name":  "菌汤猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -61632,7 +61314,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12387,
+        "id":  12375,
         "name":  "青椒鸡蛋炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61658,7 +61340,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12388,
+        "id":  12376,
         "name":  "章鱼丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61682,7 +61364,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  12389,
+        "id":  12377,
         "name":  "番茄火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -61706,7 +61388,7 @@
         "rawGroup":  "🍅番茄🍅"
     },
     {
-        "id":  12390,
+        "id":  12378,
         "name":  "鸭胸肉3片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61730,7 +61412,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12391,
+        "id":  12379,
         "name":  "无骨韩式炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -61756,7 +61438,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12392,
+        "id":  12380,
         "name":  "热干粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -61781,7 +61463,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12393,
+        "id":  12381,
         "name":  "魔芋",
         "category":  "其他",
         "icon":  "utensils",
@@ -61806,7 +61488,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  12394,
+        "id":  12382,
         "name":  "土豆片",
         "category":  "其他",
         "icon":  "utensils",
@@ -61832,7 +61514,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  12395,
+        "id":  12383,
         "name":  "卤香鸡腿套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61858,7 +61540,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12396,
+        "id":  12384,
         "name":  "港式香妃鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61884,7 +61566,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  12397,
+        "id":  12385,
         "name":  "炒粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -61910,7 +61592,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12398,
+        "id":  12386,
         "name":  "黄瓜肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -61936,7 +61618,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  12399,
+        "id":  12387,
         "name":  "香辣地锅小酥肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -61962,7 +61644,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12400,
+        "id":  12388,
         "name":  "香辣鸡腿堡+咔咔脆鸡腿+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -61988,7 +61670,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12401,
+        "id":  12389,
         "name":  "奥尔良鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -62014,7 +61696,31 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12402,
+        "id":  12390,
+        "name":  "香辣猪肝面块/米线",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微辣"
+                  ],
+        "flavors": ["辣"],
+        "price":  13,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "“🌶香辣🌶”之选，约 600 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "外公家米线",
+        "canteen":  "汇百味餐厅",
+        "img":  "http://img-lib.saobei.cn/8714cc8d0829445e951ecf4e7cbaffe1.jpg",
+        "rawGroup":  "🌶香辣🌶"
+    },
+    {
+        "id":  12391,
         "name":  "丸子套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62040,7 +61746,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12403,
+        "id":  12392,
         "name":  "玉米猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -62066,7 +61772,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12404,
+        "id":  12393,
         "name":  "炸鸡套餐二",
         "category":  "烧烤",
         "icon":  "flame",
@@ -62090,7 +61796,7 @@
         "rawGroup":  "脆皮炸鸡"
     },
     {
-        "id":  12405,
+        "id":  12394,
         "name":  "干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -62117,7 +61823,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12406,
+        "id":  12395,
         "name":  "猪杂米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -62143,7 +61849,7 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  12407,
+        "id":  12396,
         "name":  "爆炒肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62169,7 +61875,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12408,
+        "id":  12397,
         "name":  "香辣鸡腿中国汉堡加可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -62195,7 +61901,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12409,
+        "id":  12398,
         "name":  "奥尔良烤全鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62221,7 +61927,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12410,
+        "id":  12399,
         "name":  "泡椒肥牛面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -62245,7 +61951,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12411,
+        "id":  12400,
         "name":  "藤椒花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -62272,7 +61978,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12412,
+        "id":  12401,
         "name":  "香酥烤鸭焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62298,7 +62004,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12413,
+        "id":  12402,
         "name":  "酥肉四荤红酸汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -62324,7 +62030,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12414,
+        "id":  12403,
         "name":  "鸡柳麻辣拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -62351,7 +62057,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  12415,
+        "id":  12404,
         "name":  "干锅小酥肉",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -62376,7 +62082,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12416,
+        "id":  12405,
         "name":  "素刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -62402,7 +62108,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12417,
+        "id":  12406,
         "name":  "叉烧+湖南小炒肉套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62428,7 +62134,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12418,
+        "id":  12407,
         "name":  "泡椒花甲面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -62452,7 +62158,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12419,
+        "id":  12408,
         "name":  "酸菜肉丝",
         "category":  "面食",
         "icon":  "wheat",
@@ -62478,7 +62184,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  12420,
+        "id":  12409,
         "name":  "香辣粉丝包",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -62505,7 +62211,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12421,
+        "id":  12410,
         "name":  "雪花鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -62530,7 +62236,7 @@
         "rawGroup":  "鸡排类"
     },
     {
-        "id":  12422,
+        "id":  12411,
         "name":  "酸菜鱼（大份）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62554,7 +62260,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12423,
+        "id":  12412,
         "name":  "嫩烤鱼饼套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62580,7 +62286,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12424,
+        "id":  12413,
         "name":  "卤鸡腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62604,7 +62310,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  12425,
+        "id":  12414,
         "name":  "辣白菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -62630,7 +62336,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  12426,
+        "id":  12415,
         "name":  "香酥鸭茶泡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -62656,7 +62362,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12427,
+        "id":  12416,
         "name":  "红烧排骨炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -62680,7 +62386,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12428,
+        "id":  12417,
         "name":  "大块卤肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -62706,7 +62412,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  12429,
+        "id":  12418,
         "name":  "绝味鸭+金牌茄子套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -62732,7 +62438,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12430,
+        "id":  12419,
         "name":  "芝士炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -62758,7 +62464,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12431,
+        "id":  12420,
         "name":  "青椒肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -62782,7 +62488,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12432,
+        "id":  12421,
         "name":  "蛋炒米粉、河粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -62808,7 +62514,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12433,
+        "id":  12422,
         "name":  "开胃酸萝卜面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -62836,7 +62542,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12434,
+        "id":  12423,
         "name":  "冬阴功素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -62862,7 +62568,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  12435,
+        "id":  12424,
         "name":  "3两螺蛳粉+蔬菜+腐竹+酸笋木耳+花生",
         "category":  "面食",
         "icon":  "wheat",
@@ -62888,7 +62594,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12436,
+        "id":  12425,
         "name":  "汤和抄手分开装",
         "category":  "面食",
         "icon":  "wheat",
@@ -62913,33 +62619,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  12437,
-        "name":  "葱香鱼香肉丝",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "甜"
-                  ],
-        "flavors":  [
-                        "甜"
-                    ],
-        "price":  14,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "菜单补录，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "沈大爷",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  12438,
+        "id":  12426,
         "name":  "麻辣龙虾酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -62967,7 +62647,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12439,
+        "id":  12427,
         "name":  "干锅琅琊土豆（特别好吃）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -62994,7 +62674,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12440,
+        "id":  12428,
         "name":  "酸菜油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -63018,7 +62698,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  12441,
+        "id":  12429,
         "name":  "牛肉炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -63044,7 +62724,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12442,
+        "id":  12430,
         "name":  "豪华肥牛双人套餐",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -63070,33 +62750,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12443,
-        "name":  "沙拉酱",
-        "category":  "轻食沙拉",
-        "icon":  "salad",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": ["咸鲜"],
-        "price":  1.5,
-        "cal":  280,
-        "tags":  [
-                     "性价比",
-                     "低卡",
-                     "素食友好"
-                 ],
-        "desc":  "一小盒，约 280 kcal",
-        "veg":  true,
-        "spicy":  0,
-        "main":  "素",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
-    },
-    {
-        "id":  12444,
+        "id":  12431,
         "name":  "加一份羊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63120,7 +62774,7 @@
         "rawGroup":  "碗碗羊肉"
     },
     {
-        "id":  12445,
+        "id":  12432,
         "name":  "泰式咖喱鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63146,7 +62800,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12446,
+        "id":  12433,
         "name":  "泡椒血旺",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63172,7 +62826,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  12447,
+        "id":  12434,
         "name":  "牛肉手抓饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63198,7 +62852,7 @@
         "rawGroup":  "左侧配图（新疆特色手抓饭）"
     },
     {
-        "id":  12448,
+        "id":  12435,
         "name":  "套餐六（香辣鸡腿堡1个+无骨鸡块4块+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63224,7 +62878,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  12449,
+        "id":  12436,
         "name":  "油条/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -63250,7 +62904,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  12450,
+        "id":  12437,
         "name":  "泡椒鸡杂",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63276,7 +62930,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  12451,
+        "id":  12438,
         "name":  "洋葱牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -63300,7 +62954,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  12452,
+        "id":  12439,
         "name":  "脆排1个",
         "category":  "其他",
         "icon":  "utensils",
@@ -63325,7 +62979,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12453,
+        "id":  12440,
         "name":  "桂花糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -63350,7 +63004,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12454,
+        "id":  12441,
         "name":  "手抓饼(生菜、鸡蛋)",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -63376,7 +63030,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12455,
+        "id":  12442,
         "name":  "馕芹菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -63402,7 +63056,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  12456,
+        "id":  12443,
         "name":  "火腿鸡蛋黄瓜盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63428,7 +63082,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12457,
+        "id":  12444,
         "name":  "手抓饼加鸡柳",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -63454,7 +63108,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12458,
+        "id":  12445,
         "name":  "辣子鸡盖",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63480,7 +63134,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12459,
+        "id":  12446,
         "name":  "安格斯牛肉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -63506,7 +63160,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12460,
+        "id":  12447,
         "name":  "葱爆肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63532,7 +63186,7 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  12461,
+        "id":  12448,
         "name":  "鸡哈豆花",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63558,7 +63212,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  12462,
+        "id":  12449,
         "name":  "凤爪煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63584,7 +63238,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12463,
+        "id":  12450,
         "name":  "老麻抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -63610,7 +63264,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  12464,
+        "id":  12451,
         "name":  "螺蛳粉+广味香肠",
         "category":  "面食",
         "icon":  "wheat",
@@ -63636,7 +63290,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12465,
+        "id":  12452,
         "name":  "套餐八（双层牛肉堡1个+脆皮鸡腿1个+薯条1份+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -63662,7 +63316,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  12466,
+        "id":  12453,
         "name":  "酸菜肉丝面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -63687,7 +63341,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12467,
+        "id":  12454,
         "name":  "鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -63711,7 +63365,7 @@
         "rawGroup":  "炒面类"
     },
     {
-        "id":  12468,
+        "id":  12455,
         "name":  "香辣鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -63735,7 +63389,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12469,
+        "id":  12456,
         "name":  "红油干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -63761,7 +63415,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  12470,
+        "id":  12457,
         "name":  "薯格",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -63787,7 +63441,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  12471,
+        "id":  12458,
         "name":  "风味鱼豆腐3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63811,7 +63465,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12472,
+        "id":  12459,
         "name":  "海味鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -63835,7 +63489,7 @@
         "rawGroup":  "🔥🔥现包鲜肉云吞🔥🔥"
     },
     {
-        "id":  12473,
+        "id":  12460,
         "name":  "火锅油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -63860,7 +63514,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12474,
+        "id":  12461,
         "name":  "三杯鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -63886,7 +63540,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12475,
+        "id":  12462,
         "name":  "西红柿炒鸡蛋面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -63912,7 +63566,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12476,
+        "id":  12463,
         "name":  "番茄抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -63939,7 +63593,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  12477,
+        "id":  12464,
         "name":  "菌汤油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -63964,7 +63618,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12478,
+        "id":  12465,
         "name":  "酱肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -63990,7 +63644,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12479,
+        "id":  12466,
         "name":  "酸菜酥肉米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -64016,7 +63670,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  12480,
+        "id":  12467,
         "name":  "鱼香肉丝拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64042,7 +63696,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12481,
+        "id":  12468,
         "name":  "嫩烤鱼肉饼大满配",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64068,7 +63722,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12482,
+        "id":  12469,
         "name":  "辣白菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64094,7 +63748,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  12483,
+        "id":  12470,
         "name":  "秘汁烤堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -64121,7 +63775,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  12484,
+        "id":  12471,
         "name":  "玫瑰豆沙包",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -64147,7 +63801,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12485,
+        "id":  12472,
         "name":  "麻辣鸭脖卤味饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -64175,7 +63829,7 @@
         "rawGroup":  "卤味套餐饭"
     },
     {
-        "id":  12486,
+        "id":  12473,
         "name":  "山椒酸萝卜铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -64202,7 +63856,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12487,
+        "id":  12474,
         "name":  "土豆牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -64226,7 +63880,7 @@
         "rawGroup":  "盖浇饭类"
     },
     {
-        "id":  12488,
+        "id":  12475,
         "name":  "套餐二（香辣鸡腿堡1个+鸡肉卷1个+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64252,7 +63906,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  12489,
+        "id":  12476,
         "name":  "小炒双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64278,7 +63932,7 @@
         "rawGroup":  "规则"
     },
     {
-        "id":  12490,
+        "id":  12477,
         "name":  "酸辣渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64305,7 +63959,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12491,
+        "id":  12478,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -64331,7 +63985,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12492,
+        "id":  12479,
         "name":  "酸菜馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -64356,7 +64010,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  12493,
+        "id":  12480,
         "name":  "鹌鹑蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64380,33 +64034,7 @@
         "rawGroup":  "关东煮\n"
     },
     {
-        "id":  12494,
-        "name":  "泡椒地锅小酥肉",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-
-                    ],
-        "price":  14.5,
-        "cal":  450,
-        "tags":  [
-
-                 ],
-        "desc":  "菜单补录，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "牛伯叔铁锅炖",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  12495,
+        "id":  12481,
         "name":  "野山椒蛋炒饭《辣》",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -64430,7 +64058,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  12496,
+        "id":  12482,
         "name":  "老坛酸菜面",
         "category":  "面食",
         "icon":  "wheat",
@@ -64457,7 +64085,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  12497,
+        "id":  12483,
         "name":  "冬阴功全福面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -64481,7 +64109,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  12498,
+        "id":  12484,
         "name":  "五花串1串",
         "category":  "其他",
         "icon":  "utensils",
@@ -64506,7 +64134,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12499,
+        "id":  12485,
         "name":  "超级酱大骨套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64532,7 +64160,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12500,
+        "id":  12486,
         "name":  "肠旺五荤红酸汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64558,7 +64186,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12501,
+        "id":  12487,
         "name":  "酱肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64583,7 +64211,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12502,
+        "id":  12488,
         "name":  "玉米肠1个",
         "category":  "其他",
         "icon":  "utensils",
@@ -64608,7 +64236,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12503,
+        "id":  12489,
         "name":  "娃娃菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64632,7 +64260,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12504,
+        "id":  12490,
         "name":  "肉酱土豆泥拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64658,7 +64286,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12505,
+        "id":  12491,
         "name":  "小馆辣肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64683,7 +64311,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12506,
+        "id":  12492,
         "name":  "香菇卤肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -64707,7 +64335,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  12507,
+        "id":  12493,
         "name":  "双椒干拌抄手/云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -64733,7 +64361,7 @@
         "rawGroup":  "特色干拌"
     },
     {
-        "id":  12508,
+        "id":  12494,
         "name":  "酱香土豆鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -64759,7 +64387,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  12509,
+        "id":  12495,
         "name":  "炙烤鸡肉尝鲜餐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -64785,7 +64413,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12510,
+        "id":  12496,
         "name":  "天妇罗蟹柳中国汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -64811,7 +64439,7 @@
         "rawGroup":  "中国汉堡专区"
     },
     {
-        "id":  12511,
+        "id":  12497,
         "name":  "葱爆牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -64835,7 +64463,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  12512,
+        "id":  12498,
         "name":  "黄金蟹黄堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -64861,7 +64489,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12513,
+        "id":  12499,
         "name":  "蒜苔肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -64885,7 +64513,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  12514,
+        "id":  12500,
         "name":  "泡椒豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -64910,7 +64538,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12515,
+        "id":  12501,
         "name":  "干锅鸭翅",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -64936,7 +64564,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  12516,
+        "id":  12502,
         "name":  "腊肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -64962,7 +64590,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12517,
+        "id":  12503,
         "name":  "辣子鸡丁",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -64988,7 +64616,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  12518,
+        "id":  12504,
         "name":  "泡椒肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65012,7 +64640,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12519,
+        "id":  12505,
         "name":  "贡菜牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -65038,7 +64666,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  12520,
+        "id":  12506,
         "name":  "超级三鲜米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -65064,7 +64692,7 @@
         "rawGroup":  "米线"
     },
     {
-        "id":  12521,
+        "id":  12507,
         "name":  "淋糖糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -65090,7 +64718,7 @@
         "rawGroup":  "糕点/蛋/粥"
     },
     {
-        "id":  12522,
+        "id":  12508,
         "name":  "尖椒鸡",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65116,7 +64744,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  12523,
+        "id":  12509,
         "name":  "糖醋里脊",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65143,7 +64771,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  12524,
+        "id":  12510,
         "name":  "香菇鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -65169,7 +64797,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  12525,
+        "id":  12511,
         "name":  "石锅小酥肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65195,7 +64823,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12526,
+        "id":  12512,
         "name":  "干豆角腊肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65221,7 +64849,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12527,
+        "id":  12513,
         "name":  "姜鸭铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -65247,7 +64875,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12528,
+        "id":  12514,
         "name":  "土豆牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65273,7 +64901,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12529,
+        "id":  12515,
         "name":  "双椒鸡+豆干肉丝套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65299,7 +64927,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12530,
+        "id":  12516,
         "name":  "外婆菜炒蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65323,7 +64951,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12531,
+        "id":  12517,
         "name":  "耙豌豆",
         "category":  "其他",
         "icon":  "utensils",
@@ -65349,7 +64977,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  12532,
+        "id":  12518,
         "name":  "大盘鸡盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65375,7 +65003,7 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  12533,
+        "id":  12519,
         "name":  "青椒猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -65401,7 +65029,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12534,
+        "id":  12520,
         "name":  "梅菜扣肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65427,7 +65055,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12535,
+        "id":  12521,
         "name":  "黄瓜炒虾仁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65451,7 +65079,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12536,
+        "id":  12522,
         "name":  "糖醋里脊小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65478,7 +65106,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12537,
+        "id":  12523,
         "name":  "外婆菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65502,7 +65130,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  12538,
+        "id":  12524,
         "name":  "藤椒午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -65529,7 +65157,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12539,
+        "id":  12525,
         "name":  "鬼城麻辣鸡一例2米饭2菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65556,7 +65184,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12540,
+        "id":  12526,
         "name":  "老麻抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -65582,33 +65210,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  12541,
-        "name":  "虎皮红烧肉拌饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors":  [
-                        "咸鲜"
-                    ],
-        "price":  15,
-        "cal":  700,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "菜单补录，约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "沈大爷",
-        "canteen":  "汇百味餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  12542,
+        "id":  12527,
         "name":  "黄瓜鸡蛋炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65632,7 +65234,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12543,
+        "id":  12528,
         "name":  "❤️爆炒尖椒仔鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65656,7 +65258,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12544,
+        "id":  12529,
         "name":  "藤椒鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -65683,7 +65285,7 @@
         "rawGroup":  "🔥🔥现包鲜肉云吞🔥🔥"
     },
     {
-        "id":  12545,
+        "id":  12530,
         "name":  "咸鸭蛋饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -65709,7 +65311,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12546,
+        "id":  12531,
         "name":  "爆浆鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -65735,7 +65337,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12547,
+        "id":  12532,
         "name":  "香辣午餐肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -65759,7 +65361,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12548,
+        "id":  12533,
         "name":  "大盘鸡盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -65783,7 +65385,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  12549,
+        "id":  12534,
         "name":  "泡椒肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -65807,7 +65409,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12550,
+        "id":  12535,
         "name":  "孜然脆骨烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65833,7 +65435,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12551,
+        "id":  12536,
         "name":  "鸡汤火腿米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -65859,7 +65461,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12552,
+        "id":  12537,
         "name":  "鸡杂",
         "category":  "面食",
         "icon":  "wheat",
@@ -65885,7 +65487,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  12553,
+        "id":  12538,
         "name":  "台湾卤肉拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -65911,7 +65513,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  12554,
+        "id":  12539,
         "name":  "酸菜肉沫焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -65937,7 +65539,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12555,
+        "id":  12540,
         "name":  "豌杂",
         "category":  "面食",
         "icon":  "wheat",
@@ -65963,7 +65565,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  12556,
+        "id":  12541,
         "name":  "孜然牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -65989,7 +65591,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12557,
+        "id":  12542,
         "name":  "番茄鸡蛋盖浇面/饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66016,7 +65618,7 @@
         "rawGroup":  "盖浇面/饭"
     },
     {
-        "id":  12558,
+        "id":  12543,
         "name":  "奶茶",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -66041,7 +65643,7 @@
         "rawGroup":  "饮料单点（热饮）"
     },
     {
-        "id":  12559,
+        "id":  12544,
         "name":  "番茄鸡蛋拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -66069,7 +65671,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12560,
+        "id":  12545,
         "name":  "素菜套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66095,7 +65697,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12561,
+        "id":  12546,
         "name":  "火腿鸡蛋炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -66121,7 +65723,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12562,
+        "id":  12547,
         "name":  "西红柿面",
         "category":  "面食",
         "icon":  "wheat",
@@ -66148,7 +65750,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  12563,
+        "id":  12548,
         "name":  "啤酒鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66174,7 +65776,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  12564,
+        "id":  12549,
         "name":  "【吃的过瘾】耙豌豆面/刀削",
         "category":  "其他",
         "icon":  "utensils",
@@ -66201,7 +65803,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12565,
+        "id":  12550,
         "name":  "百事可乐鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66227,7 +65829,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12566,
+        "id":  12551,
         "name":  "牛肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66252,7 +65854,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12567,
+        "id":  12552,
         "name":  "现磨豆浆",
         "category":  "甜品饮品",
         "icon":  "cup",
@@ -66278,7 +65880,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  12568,
+        "id":  12553,
         "name":  "五香鸡腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66304,7 +65906,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12569,
+        "id":  12554,
         "name":  "全场饺子9.9",
         "category":  "其他",
         "icon":  "utensils",
@@ -66330,7 +65932,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12570,
+        "id":  12555,
         "name":  "牛肉煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66356,7 +65958,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12571,
+        "id":  12556,
         "name":  "菌汤素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -66382,7 +65984,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12572,
+        "id":  12557,
         "name":  "小馆酸豆角汤面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -66409,7 +66011,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  12573,
+        "id":  12558,
         "name":  "香菇鸡滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66435,7 +66037,7 @@
         "rawGroup":  "滑蛋饭系列（左列）"
     },
     {
-        "id":  12574,
+        "id":  12559,
         "name":  "冬阴功豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -66460,7 +66062,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  12575,
+        "id":  12560,
         "name":  "排骨煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66486,7 +66088,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12576,
+        "id":  12561,
         "name":  "鱼香肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66512,7 +66114,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  12577,
+        "id":  12562,
         "name":  "肉沫蒸蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66538,7 +66140,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  12578,
+        "id":  12563,
         "name":  "原子蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66564,7 +66166,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12579,
+        "id":  12564,
         "name":  "豆皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -66590,32 +66192,33 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  12580,
-        "name":  "酸萝卜金针菇面块/米线",
-        "category":  "面食",
-        "icon":  "wheat",
+        "id":  12565,
+        "name":  "虎皮红烧肉",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
-        "flavors": [],
-        "price":  10,
-        "cal":  600,
+        "flavors":  [
+                        "咸鲜"
+                    ],
+        "price":  15,
+        "cal":  450,
         "tags":  [
-                     "素食友好",
-                     "管饱"
+
                  ],
-        "desc":  "“🥕酸萝卜🥕”之选，约 600 kcal",
-        "veg":  true,
+        "desc":  "菜单补录，约 450 kcal",
+        "veg":  false,
         "spicy":  0,
-        "main":  "素",
+        "main":  "荤",
         "portion":  "regular",
-        "stall":  "外公家米线",
+        "stall":  "沈大爷",
         "canteen":  "汇百味餐厅",
-        "img":  "http://img-lib.saobei.cn/8731ae0c719b46c0a65ba16c3e1dad1b.jpg",
-        "rawGroup":  "🥕酸萝卜🥕"
+        "img":  "",
+        "rawGroup":  "菜单补录"
     },
     {
-        "id":  12581,
+        "id":  12566,
         "name":  "燕麦粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -66641,7 +66244,7 @@
         "rawGroup":  "粥类"
     },
     {
-        "id":  12582,
+        "id":  12567,
         "name":  "一大碗锁骨",
         "category":  "其他",
         "icon":  "utensils",
@@ -66667,7 +66270,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12583,
+        "id":  12568,
         "name":  "现烤中式汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -66693,7 +66296,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12584,
+        "id":  12569,
         "name":  "泡椒肉丝炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -66719,7 +66322,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  12585,
+        "id":  12570,
         "name":  "炒螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -66745,7 +66348,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12586,
+        "id":  12571,
         "name":  "小炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66769,7 +66372,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12587,
+        "id":  12572,
         "name":  "❤️黑椒肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66793,7 +66396,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12588,
+        "id":  12573,
         "name":  "姜爆鸭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66819,7 +66422,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  12589,
+        "id":  12574,
         "name":  "香辣包一包",
         "category":  "其他",
         "icon":  "utensils",
@@ -66844,7 +66447,7 @@
         "rawGroup":  "调料包"
     },
     {
-        "id":  12590,
+        "id":  12575,
         "name":  "香辣锅包肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66870,7 +66473,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12591,
+        "id":  12576,
         "name":  "腊肠鸡蛋炒米粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -66895,7 +66498,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12592,
+        "id":  12577,
         "name":  "火锅鸭肠（建议吃火锅味）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66920,7 +66523,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12593,
+        "id":  12578,
         "name":  "火锅面单人套餐（不含米饭）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66946,7 +66549,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12594,
+        "id":  12579,
         "name":  "排骨煲中煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -66970,7 +66573,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  12595,
+        "id":  12580,
         "name":  "鬼城麻辣鸡饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -66997,7 +66600,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  12596,
+        "id":  12581,
         "name":  "肉末豆腐土豆泥拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67023,7 +66626,7 @@
         "rawGroup":  "土豆泥拌饭"
     },
     {
-        "id":  12597,
+        "id":  12582,
         "name":  "麦片奶粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -67049,7 +66652,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  12598,
+        "id":  12583,
         "name":  "五荤五素＋面饼无米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67074,7 +66677,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12599,
+        "id":  12584,
         "name":  "照烧鸡肉饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67100,7 +66703,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12600,
+        "id":  12585,
         "name":  "手抓饼加培根",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -67126,7 +66729,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12601,
+        "id":  12586,
         "name":  "蟹味排1个",
         "category":  "其他",
         "icon":  "utensils",
@@ -67151,32 +66754,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12602,
-        "name":  "杂酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": ["咸鲜"],
-        "price":  4,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“臊子单点”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "曾记面食",
-        "canteen":  "北山苑餐厅",
-        "img":  "http://img-lib.saobei.cn/c0ee2da195ce47e49800f34f30ba14ac.jpg",
-        "rawGroup":  "臊子单点"
-    },
-    {
-        "id":  12603,
+        "id":  12587,
         "name":  "酸萝卜酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -67200,7 +66778,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  12604,
+        "id":  12588,
         "name":  "香辣鸡杂拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67224,7 +66802,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  12605,
+        "id":  12589,
         "name":  "酥饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -67250,7 +66828,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  12606,
+        "id":  12590,
         "name":  "石锅焖面茄子",
         "category":  "面食",
         "icon":  "wheat",
@@ -67276,7 +66854,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  12607,
+        "id":  12591,
         "name":  "酸辣金汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -67303,7 +66881,7 @@
         "rawGroup":  "抄手(按两)"
     },
     {
-        "id":  12608,
+        "id":  12592,
         "name":  "肉末豇豆炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67329,7 +66907,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12609,
+        "id":  12593,
         "name":  "锅巴土豆",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -67354,7 +66932,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  12610,
+        "id":  12594,
         "name":  "红烧牛肚面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67380,7 +66958,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12611,
+        "id":  12595,
         "name":  "黄瓜肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67404,7 +66982,7 @@
         "rawGroup":  "肉类炒饭系列"
     },
     {
-        "id":  12612,
+        "id":  12596,
         "name":  "蔬菜蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67428,7 +67006,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  12613,
+        "id":  12597,
         "name":  "蛋炒河粉/米粉/面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67454,7 +67032,7 @@
         "rawGroup":  "全家福蛋炒饭"
     },
     {
-        "id":  12614,
+        "id":  12598,
         "name":  "石锅焖面+小鲜肉",
         "category":  "面食",
         "icon":  "wheat",
@@ -67480,7 +67058,7 @@
         "rawGroup":  "焖面双拼系列"
     },
     {
-        "id":  12615,
+        "id":  12599,
         "name":  "椒麻汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -67507,7 +67085,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  12616,
+        "id":  12600,
         "name":  "泡椒牛肉干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67531,7 +67109,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  12617,
+        "id":  12601,
         "name":  "卤肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67557,7 +67135,7 @@
         "rawGroup":  "店长推荐"
     },
     {
-        "id":  12618,
+        "id":  12602,
         "name":  "泡椒火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -67581,7 +67159,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12619,
+        "id":  12603,
         "name":  "鸡肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67605,7 +67183,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12620,
+        "id":  12604,
         "name":  "腊肠鸡蛋炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67631,7 +67209,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12621,
+        "id":  12605,
         "name":  "绝味鸭+香酥鸭套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -67657,7 +67235,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12622,
+        "id":  12606,
         "name":  "牛肉包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67683,7 +67261,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12623,
+        "id":  12607,
         "name":  "香辣鸡腿堡+美式烤半鸡+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -67709,7 +67287,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12624,
+        "id":  12608,
         "name":  "现炒小炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67735,7 +67313,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12625,
+        "id":  12609,
         "name":  "雪花芝士无骨炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -67762,7 +67340,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  12626,
+        "id":  12610,
         "name":  "莴笋炒肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67788,7 +67366,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  12627,
+        "id":  12611,
         "name":  "青椒",
         "category":  "其他",
         "icon":  "utensils",
@@ -67814,7 +67392,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  12628,
+        "id":  12612,
         "name":  "尖椒鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67839,7 +67417,7 @@
         "rawGroup":  "干拌系列特色"
     },
     {
-        "id":  12629,
+        "id":  12613,
         "name":  "香辣鸡腿汉堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -67866,7 +67444,7 @@
         "rawGroup":  "汉堡/卷"
     },
     {
-        "id":  12630,
+        "id":  12614,
         "name":  "五花肉把把串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67892,7 +67470,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12631,
+        "id":  12615,
         "name":  "湖南小炒肉+金牌茄子套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -67918,7 +67496,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12632,
+        "id":  12616,
         "name":  "姜鸭",
         "category":  "面食",
         "icon":  "wheat",
@@ -67944,7 +67522,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  12633,
+        "id":  12617,
         "name":  "土豆泥炸酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -67970,7 +67548,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12634,
+        "id":  12618,
         "name":  "干锅盲盒",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -67994,7 +67572,7 @@
         "rawGroup":  "特色干锅\n"
     },
     {
-        "id":  12635,
+        "id":  12619,
         "name":  "干锅去头小黄鱼（4条）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -68020,7 +67598,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12636,
+        "id":  12620,
         "name":  "香辣鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -68044,7 +67622,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12637,
+        "id":  12621,
         "name":  "《优惠多多🤪》乐享套餐",
         "category":  "其他",
         "icon":  "utensils",
@@ -68070,7 +67648,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12638,
+        "id":  12622,
         "name":  "麻酱凉皮凉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -68097,7 +67675,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12639,
+        "id":  12623,
         "name":  "一荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -68124,7 +67702,7 @@
         "rawGroup":  "精品套餐"
     },
     {
-        "id":  12640,
+        "id":  12624,
         "name":  "肉沫薯角+锅包肉",
         "category":  "烧烤",
         "icon":  "flame",
@@ -68150,7 +67728,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12641,
+        "id":  12625,
         "name":  "小炒肉炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -68176,7 +67754,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12642,
+        "id":  12626,
         "name":  "番茄鸡蛋拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -68203,7 +67781,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12643,
+        "id":  12627,
         "name":  "开胃酸萝卜面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -68231,7 +67809,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12644,
+        "id":  12628,
         "name":  "香辣鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -68255,7 +67833,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12645,
+        "id":  12629,
         "name":  "麻辣毛豆烧鸡焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68283,7 +67861,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12646,
+        "id":  12630,
         "name":  "麻婆豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68310,7 +67888,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12647,
+        "id":  12631,
         "name":  "干锅翅根（4个）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -68335,7 +67913,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12648,
+        "id":  12632,
         "name":  "全肉肠拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -68361,7 +67939,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12649,
+        "id":  12633,
         "name":  "火锅滑肉5片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68387,7 +67965,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12650,
+        "id":  12634,
         "name":  "醋蒸鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68413,7 +67991,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12651,
+        "id":  12635,
         "name":  "蒜蓉剁椒干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -68438,7 +68016,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12652,
+        "id":  12636,
         "name":  "鱼香肉丝盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -68464,7 +68042,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  12653,
+        "id":  12637,
         "name":  "虾滑",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68488,7 +68066,7 @@
         "rawGroup":  "精品菜"
     },
     {
-        "id":  12654,
+        "id":  12638,
         "name":  "腊肠鸡蛋炒河粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -68514,7 +68092,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12655,
+        "id":  12639,
         "name":  "凤爪煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68538,7 +68116,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  12656,
+        "id":  12640,
         "name":  "脆香鸭小份",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68564,7 +68142,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12657,
+        "id":  12641,
         "name":  "玉米猪肉蒸饺",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68589,7 +68167,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12658,
+        "id":  12642,
         "name":  "特色牛肉炒年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -68615,7 +68193,7 @@
         "rawGroup":  "年糕系列"
     },
     {
-        "id":  12659,
+        "id":  12643,
         "name":  "炸酱酸辣粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -68643,7 +68221,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12660,
+        "id":  12644,
         "name":  "烤鸭拼五花肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68669,7 +68247,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12661,
+        "id":  12645,
         "name":  "蒜台肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -68695,7 +68273,7 @@
         "rawGroup":  "菜品（炒饭/盖饭/炒菜）"
     },
     {
-        "id":  12662,
+        "id":  12646,
         "name":  "番茄鸡蛋拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -68723,7 +68301,7 @@
         "rawGroup":  "拌面"
     },
     {
-        "id":  12663,
+        "id":  12647,
         "name":  "黑椒肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
@@ -68749,7 +68327,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12664,
+        "id":  12648,
         "name":  "干捞螺蛳粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -68775,7 +68353,7 @@
         "rawGroup":  "主食"
     },
     {
-        "id":  12665,
+        "id":  12649,
         "name":  "火腿鸡蛋炒河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -68801,7 +68379,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12666,
+        "id":  12650,
         "name":  "单加蔬菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68826,7 +68404,7 @@
         "rawGroup":  "碗碗羊肉"
     },
     {
-        "id":  12667,
+        "id":  12651,
         "name":  "姜爆鸭盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -68850,7 +68428,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12668,
+        "id":  12652,
         "name":  "石锅泡椒鸡杂",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -68876,7 +68454,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12669,
+        "id":  12653,
         "name":  "香辣肉片焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -68902,7 +68480,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12670,
+        "id":  12654,
         "name":  "鸡杂",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68926,7 +68504,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  12671,
+        "id":  12655,
         "name":  "姜鸭面",
         "category":  "面食",
         "icon":  "wheat",
@@ -68952,7 +68530,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12672,
+        "id":  12656,
         "name":  "凉面凉皮混,.,配泡菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -68979,7 +68557,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12673,
+        "id":  12657,
         "name":  "牛肉米线/面块/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -69005,7 +68583,7 @@
         "rawGroup":  "现煮现卖"
     },
     {
-        "id":  12674,
+        "id":  12658,
         "name":  "花生莲藕乌鸡汤+3素+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -69031,7 +68609,7 @@
         "rawGroup":  "瓦罐汤套饭"
     },
     {
-        "id":  12675,
+        "id":  12659,
         "name":  "青菜鸡蛋培根",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69057,7 +68635,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12676,
+        "id":  12660,
         "name":  "泡椒鸡杂面/河粉/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -69082,7 +68660,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12677,
+        "id":  12661,
         "name":  "鸡公煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69108,7 +68686,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12678,
+        "id":  12662,
         "name":  "干锅鸡",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -69134,7 +68712,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12679,
+        "id":  12663,
         "name":  "泡椒肉丝滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -69160,7 +68738,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12680,
+        "id":  12664,
         "name":  "地锅肉沫粉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69186,7 +68764,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12681,
+        "id":  12665,
         "name":  "鸭胸石锅拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -69212,7 +68790,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12682,
+        "id":  12666,
         "name":  "回锅肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -69237,7 +68815,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12683,
+        "id":  12667,
         "name":  "开花肠2个",
         "category":  "其他",
         "icon":  "utensils",
@@ -69262,7 +68840,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12684,
+        "id":  12668,
         "name":  "青椒牛肉盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -69286,7 +68864,7 @@
         "rawGroup":  "盖浇饭类"
     },
     {
-        "id":  12685,
+        "id":  12669,
         "name":  "番茄鸡蛋面",
         "category":  "面食",
         "icon":  "wheat",
@@ -69313,7 +68891,7 @@
         "rawGroup":  "重庆小面"
     },
     {
-        "id":  12686,
+        "id":  12670,
         "name":  "蝴蝶腿",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69339,7 +68917,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12687,
+        "id":  12671,
         "name":  "回锅肉炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -69365,7 +68943,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12688,
+        "id":  12672,
         "name":  "鲜虾煲大煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69391,7 +68969,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12689,
+        "id":  12673,
         "name":  "蜜汁叉烧饭明炉烤鸭1",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69418,7 +68996,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12690,
+        "id":  12674,
         "name":  "孜然牛肉盖浇面",
         "category":  "面食",
         "icon":  "wheat",
@@ -69442,7 +69020,7 @@
         "rawGroup":  "盖浇面类"
     },
     {
-        "id":  12691,
+        "id":  12675,
         "name":  "红烧牛肉（4-5个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69466,7 +69044,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  12692,
+        "id":  12676,
         "name":  "粉丝",
         "category":  "其他",
         "icon":  "utensils",
@@ -69492,7 +69070,7 @@
         "rawGroup":  "2元区"
     },
     {
-        "id":  12693,
+        "id":  12677,
         "name":  "泡椒鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -69516,7 +69094,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12694,
+        "id":  12678,
         "name":  "干锅培根",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -69542,7 +69120,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12695,
+        "id":  12679,
         "name":  "鱼豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69566,7 +69144,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  12696,
+        "id":  12680,
         "name":  "红油卤味瘦瘦肉（瘦）拌豆干/黄瓜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69592,7 +69170,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12697,
+        "id":  12681,
         "name":  "热卤猪头肉拌豆干（小肥）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69617,7 +69195,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12698,
+        "id":  12682,
         "name":  "茶树菇鸡汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -69643,7 +69221,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  12699,
+        "id":  12683,
         "name":  "小块苕皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -69669,7 +69247,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  12700,
+        "id":  12684,
         "name":  "牛肉串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69693,7 +69271,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12701,
+        "id":  12685,
         "name":  "鸡肉（不可单点）放入干锅炒",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -69718,7 +69296,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  12702,
+        "id":  12686,
         "name":  "干锅五花肉",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -69744,7 +69322,7 @@
         "rawGroup":  "干锅现炒"
     },
     {
-        "id":  12703,
+        "id":  12687,
         "name":  "酸菜牛肉蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -69770,7 +69348,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  12704,
+        "id":  12688,
         "name":  "秘制拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -69796,7 +69374,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12705,
+        "id":  12689,
         "name":  "牛肉粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -69821,7 +69399,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12706,
+        "id":  12690,
         "name":  "撒尿牛丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69845,7 +69423,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  12707,
+        "id":  12691,
         "name":  "明炉烧鸭/例",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -69871,7 +69449,7 @@
         "rawGroup":  "例份（右栏）"
     },
     {
-        "id":  12708,
+        "id":  12692,
         "name":  "松脆酪酪薯",
         "category":  "烧烤",
         "icon":  "flame",
@@ -69897,7 +69475,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12709,
+        "id":  12693,
         "name":  "肉肠拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -69923,7 +69501,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12710,
+        "id":  12694,
         "name":  "韩式炸鸡MAX",
         "category":  "烧烤",
         "icon":  "flame",
@@ -69949,7 +69527,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12711,
+        "id":  12695,
         "name":  "火锅特辣特辣",
         "category":  "其他",
         "icon":  "utensils",
@@ -69974,7 +69552,7 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  12712,
+        "id":  12696,
         "name":  "鸡丝拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -69999,7 +69577,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12713,
+        "id":  12697,
         "name":  "黄金土豆片",
         "category":  "其他",
         "icon":  "utensils",
@@ -70025,7 +69603,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  12714,
+        "id":  12698,
         "name":  "招牌汉堡套餐四",
         "category":  "烧烤",
         "icon":  "flame",
@@ -70051,7 +69629,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12715,
+        "id":  12699,
         "name":  "两荤一素",
         "category":  "其他",
         "icon":  "utensils",
@@ -70076,7 +69654,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12716,
+        "id":  12700,
         "name":  "阳春面",
         "category":  "面食",
         "icon":  "wheat",
@@ -70102,7 +69680,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12717,
+        "id":  12701,
         "name":  "空心菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70127,7 +69705,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12718,
+        "id":  12702,
         "name":  "加辣肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70151,7 +69729,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  12719,
+        "id":  12703,
         "name":  "石锅招牌三样",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -70177,7 +69755,7 @@
         "rawGroup":  "俱味鲜石锅饭"
     },
     {
-        "id":  12720,
+        "id":  12704,
         "name":  "藤椒馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -70205,7 +69783,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  12721,
+        "id":  12705,
         "name":  "素手抓饭8",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -70233,7 +69811,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12722,
+        "id":  12706,
         "name":  "老坛酸菜包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70259,7 +69837,7 @@
         "rawGroup":  "包子类"
     },
     {
-        "id":  12723,
+        "id":  12707,
         "name":  "金汤抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -70285,7 +69863,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12724,
+        "id":  12708,
         "name":  "红番茄牛肉炒米粉(不辣)",
         "category":  "面食",
         "icon":  "wheat",
@@ -70312,7 +69890,7 @@
         "rawGroup":  "特制炒粉"
     },
     {
-        "id":  12725,
+        "id":  12709,
         "name":  "韭菜鸡蛋小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70336,7 +69914,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12726,
+        "id":  12710,
         "name":  "煎蛋火锅米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -70361,7 +69939,7 @@
         "rawGroup":  "4月新品"
     },
     {
-        "id":  12727,
+        "id":  12711,
         "name":  "胡辣汤",
         "category":  "汤粥",
         "icon":  "soup",
@@ -70387,7 +69965,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12728,
+        "id":  12712,
         "name":  "酸汤酥肉面/刀削/韭叶面/河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -70412,7 +69990,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12729,
+        "id":  12713,
         "name":  "干锅翅根（4个）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -70438,7 +70016,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12730,
+        "id":  12714,
         "name":  "水煮猪瘦肉片+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -70465,7 +70043,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12731,
+        "id":  12715,
         "name":  "酸菜地锅鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70491,7 +70069,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12732,
+        "id":  12716,
         "name":  "酸菜素炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -70518,7 +70096,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12733,
+        "id":  12717,
         "name":  "菠萝派一个",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -70545,7 +70123,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  12734,
+        "id":  12718,
         "name":  "牛肉丸拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -70569,7 +70147,7 @@
         "rawGroup":  "小馆拌面"
     },
     {
-        "id":  12735,
+        "id":  12719,
         "name":  "全肉肠拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -70595,7 +70173,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  12736,
+        "id":  12720,
         "name":  "小面",
         "category":  "面食",
         "icon":  "wheat",
@@ -70622,7 +70200,7 @@
         "rawGroup":  "面/米线/长寿粉/河粉（清汤/麻辣可选）（细面/非叶面/酸辣粉/刀削面）"
     },
     {
-        "id":  12737,
+        "id":  12721,
         "name":  "香菇牛肉拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -70649,7 +70227,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12738,
+        "id":  12722,
         "name":  "广式腊肠",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -70674,7 +70252,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  12739,
+        "id":  12723,
         "name":  "冒烤鸭火锅套餐（送米饭）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70698,7 +70276,7 @@
         "rawGroup":  "优质套餐"
     },
     {
-        "id":  12740,
+        "id":  12724,
         "name":  "泡椒地锅烤肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70724,7 +70302,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12741,
+        "id":  12725,
         "name":  "苕皮肉丝小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70748,7 +70326,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12742,
+        "id":  12726,
         "name":  "素拉面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -70776,7 +70354,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12743,
+        "id":  12727,
         "name":  "蜜汁手扒鸡半只",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70802,7 +70380,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12744,
+        "id":  12728,
         "name":  "蘸饺",
         "category":  "其他",
         "icon":  "utensils",
@@ -70826,7 +70404,7 @@
         "rawGroup":  "特色类"
     },
     {
-        "id":  12745,
+        "id":  12729,
         "name":  "泡椒酥肉面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -70850,7 +70428,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12746,
+        "id":  12730,
         "name":  "肉丁烧卖",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -70874,7 +70452,7 @@
         "rawGroup":  "小吃"
     },
     {
-        "id":  12747,
+        "id":  12731,
         "name":  "酸萝卜",
         "category":  "其他",
         "icon":  "utensils",
@@ -70900,7 +70478,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  12748,
+        "id":  12732,
         "name":  "菌汤炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -70924,7 +70502,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12749,
+        "id":  12733,
         "name":  "藤椒鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -70951,7 +70529,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12750,
+        "id":  12734,
         "name":  "香猪大肉云吞（海味）",
         "category":  "面食",
         "icon":  "wheat",
@@ -70978,7 +70556,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12751,
+        "id":  12735,
         "name":  "套餐2（火鸡面+脆皮鸡腿1个+年糕条3个+锅巴土豆3个）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71004,7 +70582,7 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  12752,
+        "id":  12736,
         "name":  "回锅肉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71030,32 +70608,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  12753,
-        "name":  "橙汁",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  4,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“饮料单点（热饮）”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/saobei/app/c4e2137a9d4a44ec9126bf15714a208a.jpg",
-        "rawGroup":  "饮料单点（热饮）"
-    },
-    {
-        "id":  12754,
+        "id":  12737,
         "name":  "里脊单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71081,7 +70634,7 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  12755,
+        "id":  12738,
         "name":  "麻辣龙虾酱拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -71110,7 +70663,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  12756,
+        "id":  12739,
         "name":  "豇豆包",
         "category":  "其他",
         "icon":  "utensils",
@@ -71137,7 +70690,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12757,
+        "id":  12740,
         "name":  "山药",
         "category":  "其他",
         "icon":  "utensils",
@@ -71164,7 +70717,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12758,
+        "id":  12741,
         "name":  "黑米粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -71190,34 +70743,7 @@
         "rawGroup":  "粥类"
     },
     {
-        "id":  12759,
-        "name":  "番茄炒蛋盖浇饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "清淡"
-                  ],
-        "flavors":  [
-                        "酸甜",
-                        "清淡"
-                    ],
-        "price":  14,
-        "cal":  700,
-        "tags":  [
-                     "管饱"
-                 ],
-        "desc":  "菜单补录，约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "兰州拉面",
-        "canteen":  "北山苑餐厅",
-        "img":  "",
-        "rawGroup":  "菜单补录"
-    },
-    {
-        "id":  12760,
+        "id":  12742,
         "name":  "招牌汉堡套餐六",
         "category":  "其他",
         "icon":  "utensils",
@@ -71241,7 +70767,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  12761,
+        "id":  12743,
         "name":  "木耳肉丝炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -71265,7 +70791,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  12762,
+        "id":  12744,
         "name":  "干拌牛肉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -71291,7 +70817,7 @@
         "rawGroup":  "干拌系列"
     },
     {
-        "id":  12763,
+        "id":  12745,
         "name":  "五香鸡腿套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71317,7 +70843,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  12764,
+        "id":  12746,
         "name":  "曹鸭子+绝味鸭套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71343,7 +70869,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12765,
+        "id":  12747,
         "name":  "金枪鱼拌饭（镇店）",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71369,7 +70895,7 @@
         "rawGroup":  "大满配/拌饭"
     },
     {
-        "id":  12766,
+        "id":  12748,
         "name":  "辣子鸡丁小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71393,7 +70919,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12767,
+        "id":  12749,
         "name":  "藤椒素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -71422,7 +70948,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12768,
+        "id":  12750,
         "name":  "咖喱鸡拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71448,7 +70974,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  12769,
+        "id":  12751,
         "name":  "肉沫豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71474,7 +71000,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  12770,
+        "id":  12752,
         "name":  "素米线套餐",
         "category":  "面食",
         "icon":  "wheat",
@@ -71501,7 +71027,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12771,
+        "id":  12753,
         "name":  "套餐十四",
         "category":  "其他",
         "icon":  "utensils",
@@ -71526,7 +71052,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  12772,
+        "id":  12754,
         "name":  "年糕1根",
         "category":  "其他",
         "icon":  "utensils",
@@ -71551,7 +71077,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12773,
+        "id":  12755,
         "name":  "土豆片🥔",
         "category":  "其他",
         "icon":  "utensils",
@@ -71577,7 +71103,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12774,
+        "id":  12756,
         "name":  "鸡排拌饭/面/粉",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71603,7 +71129,7 @@
         "rawGroup":  "拌饭/面/粉"
     },
     {
-        "id":  12775,
+        "id":  12757,
         "name":  "红汤鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -71629,7 +71155,7 @@
         "rawGroup":  "美味云吞系列"
     },
     {
-        "id":  12776,
+        "id":  12758,
         "name":  "牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71655,7 +71181,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12777,
+        "id":  12759,
         "name":  "巴西烤肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -71679,7 +71205,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  12778,
+        "id":  12760,
         "name":  "鸡酱松板肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71705,7 +71231,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  12779,
+        "id":  12761,
         "name":  "红糖糍粑（5个）",
         "category":  "其他",
         "icon":  "utensils",
@@ -71731,7 +71257,7 @@
         "rawGroup":  "热销"
     },
     {
-        "id":  12780,
+        "id":  12762,
         "name":  "荠菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -71757,7 +71283,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12781,
+        "id":  12763,
         "name":  "泰式咖喱鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71783,7 +71309,7 @@
         "rawGroup":  "擂椒鸡肉系列"
     },
     {
-        "id":  12782,
+        "id":  12764,
         "name":  "泡椒鸡杂小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71807,7 +71333,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12783,
+        "id":  12765,
         "name":  "火锅冒菜",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -71833,7 +71359,7 @@
         "rawGroup":  "称重计价"
     },
     {
-        "id":  12784,
+        "id":  12766,
         "name":  "火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71859,7 +71385,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12785,
+        "id":  12767,
         "name":  "金汤河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -71884,7 +71410,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12786,
+        "id":  12768,
         "name":  "秘制炒饭加一荤一素",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71909,7 +71435,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12787,
+        "id":  12769,
         "name":  "里脊拼五花肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -71935,7 +71461,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12788,
+        "id":  12770,
         "name":  "酱香鸭腿饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -71961,7 +71487,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  12789,
+        "id":  12771,
         "name":  "腐竹",
         "category":  "其他",
         "icon":  "utensils",
@@ -71987,7 +71513,7 @@
         "rawGroup":  "素菜"
     },
     {
-        "id":  12790,
+        "id":  12772,
         "name":  "菌汤豆皮面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -72012,7 +71538,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12791,
+        "id":  12773,
         "name":  "卤五花肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72036,7 +71562,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  12792,
+        "id":  12774,
         "name":  "包菜炒肉小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72060,7 +71586,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12793,
+        "id":  12775,
         "name":  "番茄抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -72087,7 +71613,7 @@
         "rawGroup":  "汤锅类"
     },
     {
-        "id":  12794,
+        "id":  12776,
         "name":  "培根拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72113,7 +71639,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12795,
+        "id":  12777,
         "name":  "青椒鸡蛋",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72139,7 +71665,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  12796,
+        "id":  12778,
         "name":  "火锅鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -72163,7 +71689,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  12797,
+        "id":  12779,
         "name":  "二荤二素",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72189,7 +71715,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12798,
+        "id":  12780,
         "name":  "麻辣肉沫豆腐焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72216,7 +71742,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12799,
+        "id":  12781,
         "name":  "青菜牛肉滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72242,7 +71768,7 @@
         "rawGroup":  "滑蛋饭系列（右列）"
     },
     {
-        "id":  12800,
+        "id":  12782,
         "name":  "剁椒蒸肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72268,7 +71794,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12801,
+        "id":  12783,
         "name":  "酱鸭蒜香鸭腿烧鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72294,7 +71820,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12802,
+        "id":  12784,
         "name":  "鲜肉蔬菜粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -72321,7 +71847,7 @@
         "rawGroup":  "左侧加页"
     },
     {
-        "id":  12803,
+        "id":  12785,
         "name":  "香菇卤肉拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72347,7 +71873,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12804,
+        "id":  12786,
         "name":  "肉末豇豆炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -72373,7 +71899,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12805,
+        "id":  12787,
         "name":  "麻辣鱼（小份）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -72402,7 +71928,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12806,
+        "id":  12788,
         "name":  "筋头巴脑牛肉面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -72428,7 +71954,7 @@
         "rawGroup":  "小馆汤面"
     },
     {
-        "id":  12807,
+        "id":  12789,
         "name":  "广味香肠3段",
         "category":  "其他",
         "icon":  "utensils",
@@ -72453,7 +71979,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12808,
+        "id":  12790,
         "name":  "铁板五花肉",
         "category":  "烧烤",
         "icon":  "flame",
@@ -72479,7 +72005,7 @@
         "rawGroup":  "铁板/烤鸭饭"
     },
     {
-        "id":  12809,
+        "id":  12791,
         "name":  "宫保鸡丁盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72505,7 +72031,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12810,
+        "id":  12792,
         "name":  "香菇猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -72531,7 +72057,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12811,
+        "id":  12793,
         "name":  "盖饭双拼（备注菜名，15以上不拼）",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72556,7 +72082,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12812,
+        "id":  12794,
         "name":  "干锅兔",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -72582,7 +72108,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12813,
+        "id":  12795,
         "name":  "酸萝卜鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -72606,7 +72132,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  12814,
+        "id":  12796,
         "name":  "尖椒鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72630,7 +72156,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12815,
+        "id":  12797,
         "name":  "宫爆鸡丁",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72656,7 +72182,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12816,
+        "id":  12798,
         "name":  "酸菜鱼（小份）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72680,7 +72206,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12817,
+        "id":  12799,
         "name":  "香辣地锅鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72706,7 +72232,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12818,
+        "id":  12800,
         "name":  "套餐七（鸡肉卷1个+鸡米花1份+无骨鸡块4块+饮料）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72732,7 +72258,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  12819,
+        "id":  12801,
         "name":  "西红柿炒蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72758,7 +72284,7 @@
         "rawGroup":  "擂椒现炒系列"
     },
     {
-        "id":  12820,
+        "id":  12802,
         "name":  "酸萝卜素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -72784,7 +72310,7 @@
         "rawGroup":  "🥕酸萝卜🥕"
     },
     {
-        "id":  12821,
+        "id":  12803,
         "name":  "煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72808,7 +72334,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  12822,
+        "id":  12804,
         "name":  "包心鱼丸",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72832,7 +72358,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  12823,
+        "id":  12805,
         "name":  "套餐四（香辣鸡腿堡1个+薯条1份+脆皮鸡腿1个+饮料）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -72858,7 +72384,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  12824,
+        "id":  12806,
         "name":  "白萝卜",
         "category":  "其他",
         "icon":  "utensils",
@@ -72884,7 +72410,7 @@
         "rawGroup":  "这是素菜"
     },
     {
-        "id":  12825,
+        "id":  12807,
         "name":  "咖喱鸡+金蒜茄子套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72910,7 +72436,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12826,
+        "id":  12808,
         "name":  "曹鸭子+咖喱鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -72936,7 +72462,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12827,
+        "id":  12809,
         "name":  "西红柿炒鸡蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72962,7 +72488,7 @@
         "rawGroup":  "盖饭/小炒（左一列）"
     },
     {
-        "id":  12828,
+        "id":  12810,
         "name":  "肝腰合炒小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -72986,7 +72512,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12829,
+        "id":  12811,
         "name":  "扬州炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73012,7 +72538,7 @@
         "rawGroup":  "炒饭"
     },
     {
-        "id":  12830,
+        "id":  12812,
         "name":  "麦穗肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -73038,7 +72564,7 @@
         "rawGroup":  "小吃单点"
     },
     {
-        "id":  12831,
+        "id":  12813,
         "name":  "番茄肉沫拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -73065,7 +72591,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12832,
+        "id":  12814,
         "name":  "辣白菜素炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -73092,7 +72618,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12833,
+        "id":  12815,
         "name":  "招牌汉堡套餐四",
         "category":  "其他",
         "icon":  "utensils",
@@ -73116,31 +72642,7 @@
         "rawGroup":  "招牌汉堡套餐系列"
     },
     {
-        "id":  12834,
-        "name":  "鳕鱼蔬菜棒",
-        "category":  "家常小炒",
-        "icon":  "beef",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  3.5,
-        "cal":  450,
-        "tags":  [
-                     "性价比"
-                 ],
-        "desc":  "“关东煮\n”之选，约 450 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "有家粥铺",
-        "canteen":  "汇百味餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/0a3bbd1d3c9a49999c78fc495777ba8f.jpg",
-        "rawGroup":  "关东煮\n"
-    },
-    {
-        "id":  12835,
+        "id":  12816,
         "name":  "鸡丝干拌面/刀削面",
         "category":  "面食",
         "icon":  "wheat",
@@ -73166,7 +72668,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  12836,
+        "id":  12817,
         "name":  "莲白肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73190,7 +72692,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12837,
+        "id":  12818,
         "name":  "鸡肉炒面",
         "category":  "面食",
         "icon":  "wheat",
@@ -73214,7 +72716,7 @@
         "rawGroup":  "炒面类"
     },
     {
-        "id":  12838,
+        "id":  12819,
         "name":  "酸菜鱼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73240,7 +72742,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  12839,
+        "id":  12820,
         "name":  "卤豆干",
         "category":  "其他",
         "icon":  "utensils",
@@ -73266,7 +72768,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12840,
+        "id":  12821,
         "name":  "深海鳕鱼堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -73293,7 +72795,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12841,
+        "id":  12822,
         "name":  "三拼绝味干锅（鸭翅，锁骨，鸡翅尖）",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -73318,7 +72820,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12842,
+        "id":  12823,
         "name":  "蒜苔肉丝炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73344,7 +72846,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12843,
+        "id":  12824,
         "name":  "青菜鸡蛋培根",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73368,7 +72870,7 @@
         "rawGroup":  "广东肠粉"
     },
     {
-        "id":  12844,
+        "id":  12825,
         "name":  "经典油泼面",
         "category":  "面食",
         "icon":  "wheat",
@@ -73394,7 +72896,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12845,
+        "id":  12826,
         "name":  "牛肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73418,7 +72920,7 @@
         "rawGroup":  "臊子单点"
     },
     {
-        "id":  12846,
+        "id":  12827,
         "name":  "干锅锁骨",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -73444,7 +72946,33 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12847,
+        "id":  12828,
+        "name":  "蜜汁烤肉双拼",
+        "category":  "家常小炒",
+        "icon":  "beef",
+        "taste":  [
+                      "甜"
+                  ],
+        "flavors":  [
+                        "甜"
+                    ],
+        "price":  14,
+        "cal":  450,
+        "tags":  [
+
+                 ],
+        "desc":  "“双拼”之选（另有：双拼14元），约 450 kcal",
+        "veg":  false,
+        "spicy":  0,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "烤肉饭",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "双拼"
+    },
+    {
+        "id":  12829,
         "name":  "火鸡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -73471,7 +72999,7 @@
         "rawGroup":  "火鸡面+炸鸡套餐"
     },
     {
-        "id":  12848,
+        "id":  12830,
         "name":  "泡椒猪肝面",
         "category":  "面食",
         "icon":  "wheat",
@@ -73497,7 +73025,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  12849,
+        "id":  12831,
         "name":  "香辣油条面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -73521,7 +73049,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12850,
+        "id":  12832,
         "name":  "泡椒猪肝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73547,7 +73075,7 @@
         "rawGroup":  "菜品（盖饭/炒菜）"
     },
     {
-        "id":  12851,
+        "id":  12833,
         "name":  "菌汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -73571,7 +73099,7 @@
         "rawGroup":  "🔥小金鱼馄饨🔥"
     },
     {
-        "id":  12852,
+        "id":  12834,
         "name":  "八宝粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -73597,7 +73125,7 @@
         "rawGroup":  "精品营养粥"
     },
     {
-        "id":  12853,
+        "id":  12835,
         "name":  "招牌渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -73623,7 +73151,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12854,
+        "id":  12836,
         "name":  "火锅滑肉5片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73647,7 +73175,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12855,
+        "id":  12837,
         "name":  "藤椒抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -73674,7 +73202,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  12856,
+        "id":  12838,
         "name":  "腊味甜香肠炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -73700,7 +73228,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12857,
+        "id":  12839,
         "name":  "鹌鹑蛋3个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73724,7 +73252,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12858,
+        "id":  12840,
         "name":  "澳门烧肉饭（脆皮五花肉）明炉烤鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73750,7 +73278,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12859,
+        "id":  12841,
         "name":  "台式烧肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73776,7 +73304,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12860,
+        "id":  12842,
         "name":  "奥尔良鸡中翅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73800,7 +73328,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12861,
+        "id":  12843,
         "name":  "花甲渔粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -73826,7 +73354,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12862,
+        "id":  12844,
         "name":  "猪脚",
         "category":  "其他",
         "icon":  "utensils",
@@ -73852,7 +73380,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12863,
+        "id":  12845,
         "name":  "鸡皮串",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73876,7 +73404,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12864,
+        "id":  12846,
         "name":  "泡菜炙烤五花肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73902,7 +73430,7 @@
         "rawGroup":  "炙烤类"
     },
     {
-        "id":  12865,
+        "id":  12847,
         "name":  "排骨煲小煲（米饭需单点）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -73926,7 +73454,7 @@
         "rawGroup":  "煲底"
     },
     {
-        "id":  12866,
+        "id":  12848,
         "name":  "鲜甜蜜汁鸡擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73952,7 +73480,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12867,
+        "id":  12849,
         "name":  "酱焖鸡块擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -73978,7 +73506,7 @@
         "rawGroup":  "酱焖擂饭系列"
     },
     {
-        "id":  12868,
+        "id":  12850,
         "name":  "牛肉拌面刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -74004,7 +73532,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12869,
+        "id":  12851,
         "name":  "红油冷吃核桃肉（发家产品）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74028,7 +73556,7 @@
         "rawGroup":  "卤味套餐饭"
     },
     {
-        "id":  12870,
+        "id":  12852,
         "name":  "蜜汁烤堡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -74055,7 +73583,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12871,
+        "id":  12853,
         "name":  "麻辣酥肉焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74082,7 +73610,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12872,
+        "id":  12854,
         "name":  "苕皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -74108,7 +73636,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  12873,
+        "id":  12855,
         "name":  "肉酱土豆泥拌粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -74134,7 +73662,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12874,
+        "id":  12856,
         "name":  "藤椒炸蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -74161,7 +73689,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12875,
+        "id":  12857,
         "name":  "芝士炸鸡",
         "category":  "烧烤",
         "icon":  "flame",
@@ -74185,7 +73713,7 @@
         "rawGroup":  "新品"
     },
     {
-        "id":  12876,
+        "id":  12858,
         "name":  "包菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74210,7 +73738,7 @@
         "rawGroup":  "干锅加菜"
     },
     {
-        "id":  12877,
+        "id":  12859,
         "name":  "年糕",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -74234,7 +73762,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  12878,
+        "id":  12860,
         "name":  "大鸡排",
         "category":  "烧烤",
         "icon":  "flame",
@@ -74259,7 +73787,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12879,
+        "id":  12861,
         "name":  "炸酱土豆泥拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74284,7 +73812,7 @@
         "rawGroup":  "沈大爷拌面系列"
     },
     {
-        "id":  12880,
+        "id":  12862,
         "name":  "香辣火腿面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -74308,7 +73836,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12881,
+        "id":  12863,
         "name":  "蟹肉棒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74332,7 +73860,7 @@
         "rawGroup":  "4元区"
     },
     {
-        "id":  12882,
+        "id":  12864,
         "name":  "香菇酱肉拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -74358,7 +73886,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  12883,
+        "id":  12865,
         "name":  "香辣鸡拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74385,7 +73913,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12884,
+        "id":  12866,
         "name":  "菌汤肉丸子面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -74409,7 +73937,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  12885,
+        "id":  12867,
         "name":  "蜜汁烤堡",
         "category":  "其他",
         "icon":  "utensils",
@@ -74434,7 +73962,7 @@
         "rawGroup":  "汉堡肉卷"
     },
     {
-        "id":  12886,
+        "id":  12868,
         "name":  "维C鸡+豆干肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74460,7 +73988,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12887,
+        "id":  12869,
         "name":  "金汤云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -74487,7 +74015,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  12888,
+        "id":  12870,
         "name":  "法式黑椒肉酱意面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74513,7 +74041,7 @@
         "rawGroup":  "低卡意面系列"
     },
     {
-        "id":  12889,
+        "id":  12871,
         "name":  "金汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74538,7 +74066,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12890,
+        "id":  12872,
         "name":  "招牌四点金饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -74564,7 +74092,7 @@
         "rawGroup":  "烧腊饭（中栏）"
     },
     {
-        "id":  12891,
+        "id":  12873,
         "name":  "八宝粥",
         "category":  "汤粥",
         "icon":  "soup",
@@ -74590,7 +74118,7 @@
         "rawGroup":  "粥类"
     },
     {
-        "id":  12892,
+        "id":  12874,
         "name":  "台湾卤肉拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74616,7 +74144,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12893,
+        "id":  12875,
         "name":  "椒麻拌面/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -74643,7 +74171,7 @@
         "rawGroup":  "拌面系列"
     },
     {
-        "id":  12894,
+        "id":  12876,
         "name":  "狼牙土豆",
         "category":  "其他",
         "icon":  "utensils",
@@ -74670,7 +74198,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12895,
+        "id":  12877,
         "name":  "西红柿鸡蛋小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74694,7 +74222,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12896,
+        "id":  12878,
         "name":  "泡椒肉丝面/河粉/刀削",
         "category":  "面食",
         "icon":  "wheat",
@@ -74719,7 +74247,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12897,
+        "id":  12879,
         "name":  "鱼香肉丝拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -74748,7 +74276,7 @@
         "rawGroup":  "沈大爷拌饭系列"
     },
     {
-        "id":  12898,
+        "id":  12880,
         "name":  "芋儿鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74774,7 +74302,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12899,
+        "id":  12881,
         "name":  "贡菜鸡肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -74800,7 +74328,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  12900,
+        "id":  12882,
         "name":  "孜然肉片盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -74825,7 +74353,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12901,
+        "id":  12883,
         "name":  "鲜肉酸汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74851,7 +74379,7 @@
         "rawGroup":  "清汤系列"
     },
     {
-        "id":  12902,
+        "id":  12884,
         "name":  "梅菜扣肉（烧白）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74877,7 +74405,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  12903,
+        "id":  12885,
         "name":  "狼牙土豆锅巴土豆双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74903,7 +74431,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12904,
+        "id":  12886,
         "name":  "无骨烤鱼焖锅",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -74929,7 +74457,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12905,
+        "id":  12887,
         "name":  "广式腊肠炒河粉，米粉，面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74953,7 +74481,7 @@
         "rawGroup":  "炒河粉，米粉，面"
     },
     {
-        "id":  12906,
+        "id":  12888,
         "name":  "小酥肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -74979,7 +74507,7 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  12907,
+        "id":  12889,
         "name":  "酸菜鸭血面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -75003,7 +74531,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  12908,
+        "id":  12890,
         "name":  "福利麻辣翅根（1人1单）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75032,7 +74560,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12909,
+        "id":  12891,
         "name":  "港式香妃鸡例米饭小菜1",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75058,7 +74586,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12910,
+        "id":  12892,
         "name":  "麻辣小面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -75087,7 +74615,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12911,
+        "id":  12893,
         "name":  "蛋炒河粉、面双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -75113,7 +74641,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12912,
+        "id":  12894,
         "name":  "虾滑",
         "category":  "面食",
         "icon":  "wheat",
@@ -75139,7 +74667,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  12913,
+        "id":  12895,
         "name":  "泡椒羊杂米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -75165,7 +74693,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12914,
+        "id":  12896,
         "name":  "湖南小炒肉盖浇面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -75191,7 +74719,7 @@
         "rawGroup":  "盖浇面/粉"
     },
     {
-        "id":  12915,
+        "id":  12897,
         "name":  "糖醋里脊",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75218,7 +74746,7 @@
         "rawGroup":  "盖饭/小炒（右列）"
     },
     {
-        "id":  12916,
+        "id":  12898,
         "name":  "香菇猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -75244,7 +74772,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12917,
+        "id":  12899,
         "name":  "椒麻干拌抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -75271,7 +74799,7 @@
         "rawGroup":  "美味抄手系列"
     },
     {
-        "id":  12918,
+        "id":  12900,
         "name":  "秘制炒饭加一荤",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75297,7 +74825,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12919,
+        "id":  12901,
         "name":  "蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75322,7 +74850,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  12920,
+        "id":  12902,
         "name":  "卤肠",
         "category":  "其他",
         "icon":  "utensils",
@@ -75347,7 +74875,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  12921,
+        "id":  12903,
         "name":  "凤爪煲单人套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75371,7 +74899,7 @@
         "rawGroup":  "套餐"
     },
     {
-        "id":  12922,
+        "id":  12904,
         "name":  "辣子鸡",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75395,7 +74923,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12923,
+        "id":  12905,
         "name":  "香煎鸡排盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75420,7 +74948,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12924,
+        "id":  12906,
         "name":  "肉沫茄子擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75446,7 +74974,7 @@
         "rawGroup":  "炒菜擂饭系列"
     },
     {
-        "id":  12925,
+        "id":  12907,
         "name":  "薯塔",
         "category":  "其他",
         "icon":  "utensils",
@@ -75471,7 +74999,7 @@
         "rawGroup":  "特色撸\n串荤"
     },
     {
-        "id":  12926,
+        "id":  12908,
         "name":  "农家一碗香小炒",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75495,7 +75023,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  12927,
+        "id":  12909,
         "name":  "仔姜肉丝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75521,7 +75049,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12928,
+        "id":  12910,
         "name":  "泡椒肉沫油豆腐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75547,7 +75075,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12929,
+        "id":  12911,
         "name":  "咖喱鸡盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75573,7 +75101,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12930,
+        "id":  12912,
         "name":  "地锅鲜肉片",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75599,7 +75127,7 @@
         "rawGroup":  "地锅类"
     },
     {
-        "id":  12931,
+        "id":  12913,
         "name":  "红烧排骨炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -75625,7 +75153,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12932,
+        "id":  12914,
         "name":  "小食拼盘（鸡米花/薯条/鸡肉圈/无骨鸡柳/锅巴土豆/香芋地瓜丸/上校鸡块/黄金鸡柳 八选四）",
         "category":  "烧烤",
         "icon":  "flame",
@@ -75651,32 +75179,7 @@
         "rawGroup":  "招牌汉堡套餐"
     },
     {
-        "id":  12933,
-        "name":  "杂酱",
-        "category":  "其他",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": ["咸鲜"],
-        "price":  5,
-        "cal":  500,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "“臊子单点”之选，约 500 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "胖妹面庄",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img-lib.saobei.cn/a5f191a5c66c47c88ee8ab2c744a4343.jpg",
-        "rawGroup":  "臊子单点"
-    },
-    {
-        "id":  12934,
+        "id":  12915,
         "name":  "招牌汉堡套餐二",
         "category":  "其他",
         "icon":  "utensils",
@@ -75701,7 +75204,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  12935,
+        "id":  12916,
         "name":  "A香辣鸡腿堡+霸王鸡架+薯条（中",
         "category":  "烧烤",
         "icon":  "flame",
@@ -75727,7 +75230,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12936,
+        "id":  12917,
         "name":  "香辣金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -75752,7 +75255,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  12937,
+        "id":  12918,
         "name":  "【招牌】红烧牛肉面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -75777,7 +75280,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12938,
+        "id":  12919,
         "name":  "仔姜肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75801,7 +75304,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12939,
+        "id":  12920,
         "name":  "咖喱鸡拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -75827,7 +75330,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12940,
+        "id":  12921,
         "name":  "豆角茄子炒肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -75854,7 +75357,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12941,
+        "id":  12922,
         "name":  "干锅鸭翅软糯（现炒）3个、可以双拼翅根备",
         "category":  "麻辣系列",
         "icon":  "cooking-pot",
@@ -75879,7 +75382,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12942,
+        "id":  12923,
         "name":  "酸菜牛肉拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -75904,7 +75407,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12943,
+        "id":  12924,
         "name":  "海鲜抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -75930,7 +75433,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12944,
+        "id":  12925,
         "name":  "冬阴功鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -75954,7 +75457,7 @@
         "rawGroup":  "🥘冬阴功🥘"
     },
     {
-        "id":  12945,
+        "id":  12926,
         "name":  "小馆酸菜拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -75980,7 +75483,7 @@
         "rawGroup":  "麻酱系列"
     },
     {
-        "id":  12946,
+        "id":  12927,
         "name":  "蛋饺2个",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76004,7 +75507,7 @@
         "rawGroup":  "肉食"
     },
     {
-        "id":  12947,
+        "id":  12928,
         "name":  "糖醋里脊擂饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76031,7 +75534,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12948,
+        "id":  12929,
         "name":  "烧椒肉片滑蛋饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76057,7 +75560,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12949,
+        "id":  12930,
         "name":  "火锅鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -76081,7 +75584,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  12950,
+        "id":  12931,
         "name":  "炸杏鲍菇",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76106,7 +75609,7 @@
         "rawGroup":  "新品"
     },
     {
-        "id":  12951,
+        "id":  12932,
         "name":  "黑椒肉柳",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76132,7 +75635,7 @@
         "rawGroup":  "盖饭/小炒（左三列）"
     },
     {
-        "id":  12952,
+        "id":  12933,
         "name":  "红烧肉沫茄子",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76157,7 +75660,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12953,
+        "id":  12934,
         "name":  "海味云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -76184,7 +75687,7 @@
         "rawGroup":  "香猪大肉云吞"
     },
     {
-        "id":  12954,
+        "id":  12935,
         "name":  "金汤酸菜鲜肉云吞",
         "category":  "面食",
         "icon":  "wheat",
@@ -76208,7 +75711,7 @@
         "rawGroup":  "🔥🔥现包鲜肉云吞🔥🔥"
     },
     {
-        "id":  12955,
+        "id":  12936,
         "name":  "西红柿肉丸米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -76234,7 +75737,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12956,
+        "id":  12937,
         "name":  "两荤两素加面饼（无米饭）",
         "category":  "其他",
         "icon":  "utensils",
@@ -76260,7 +75763,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12957,
+        "id":  12938,
         "name":  "香辣地锅烤肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76286,7 +75789,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12958,
+        "id":  12939,
         "name":  "娃娃菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76310,7 +75813,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  12959,
+        "id":  12940,
         "name":  "酥肉",
         "category":  "面食",
         "icon":  "wheat",
@@ -76336,7 +75839,7 @@
         "rawGroup":  "砂锅粉系列"
     },
     {
-        "id":  12960,
+        "id":  12941,
         "name":  "青椒肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76360,7 +75863,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12961,
+        "id":  12942,
         "name":  "煎蛋拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -76385,7 +75888,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  12962,
+        "id":  12943,
         "name":  "藤椒猪肝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -76412,7 +75915,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  12963,
+        "id":  12944,
         "name":  "泡椒血旺炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76436,32 +75939,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  12964,
-        "name":  "★珍珠米饭",
-        "category":  "盖浇饭",
-        "icon":  "utensils",
-        "taste":  [
-                      "咸香"
-                  ],
-        "flavors": [],
-        "price":  2,
-        "cal":  700,
-        "tags":  [
-                     "性价比",
-                     "管饱"
-                 ],
-        "desc":  "用的是珍珠米，约 700 kcal",
-        "veg":  false,
-        "spicy":  0,
-        "main":  "荤",
-        "portion":  "regular",
-        "stall":  "香灶火锅冒菜",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/foods/f830659874c04973a811ffb378fae5f8.jpg",
-        "rawGroup":  "米饭调料"
-    },
-    {
-        "id":  12965,
+        "id":  12945,
         "name":  "牛肉铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -76487,7 +75965,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12966,
+        "id":  12946,
         "name":  "酸菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -76513,7 +75991,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12967,
+        "id":  12947,
         "name":  "自选烤盘饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76539,7 +76017,7 @@
         "rawGroup":  "自选烤盘饭"
     },
     {
-        "id":  12968,
+        "id":  12948,
         "name":  "孜然肉排盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76563,7 +76041,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12969,
+        "id":  12949,
         "name":  "培根饭团",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -76589,7 +76067,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12970,
+        "id":  12950,
         "name":  "招牌‼️酱香鸭子锅（好吃量足）卤烤",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76620,7 +76098,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12971,
+        "id":  12951,
         "name":  "火锅土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -76645,7 +76123,7 @@
         "rawGroup":  "🍲火锅🍲"
     },
     {
-        "id":  12972,
+        "id":  12952,
         "name":  "苕皮",
         "category":  "其他",
         "icon":  "utensils",
@@ -76671,7 +76149,7 @@
         "rawGroup":  "3元区"
     },
     {
-        "id":  12973,
+        "id":  12953,
         "name":  "大葱猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -76697,7 +76175,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12974,
+        "id":  12954,
         "name":  "连白",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76722,7 +76200,7 @@
         "rawGroup":  "炒饭加料区"
     },
     {
-        "id":  12975,
+        "id":  12955,
         "name":  "本帮酱鸭饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76748,7 +76226,7 @@
         "rawGroup":  "烧腊饭（左栏）"
     },
     {
-        "id":  12976,
+        "id":  12956,
         "name":  "纯肉肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -76772,7 +76250,34 @@
         "rawGroup":  "加料区"
     },
     {
-        "id":  12977,
+        "id":  12957,
+        "name":  "牛肉酸辣粉",
+        "category":  "面食",
+        "icon":  "wheat",
+        "taste":  [
+                      "微辣",
+                      "微酸"
+                  ],
+        "flavors":  [
+                        "辣"
+                    ],
+        "price":  15,
+        "cal":  600,
+        "tags":  [
+                     "管饱"
+                 ],
+        "desc":  "菜单补录，约 600 kcal",
+        "veg":  false,
+        "spicy":  1,
+        "main":  "荤",
+        "portion":  "regular",
+        "stall":  "曾记面食",
+        "canteen":  "北山苑餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
+    },
+    {
+        "id":  12958,
         "name":  "肠旺五荤泡椒苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -76798,37 +76303,32 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12978,
-        "name":  "甜辣酱",
-        "category":  "其他",
-        "icon":  "utensils",
+        "id":  12959,
+        "name":  "小馆燥酸豆角拌面/粉",
+        "category":  "面食",
+        "icon":  "wheat",
         "taste":  [
-                      "微辣",
-                      "甜"
+                      "咸香"
                   ],
-        "flavors":  [
-                        "辣",
-                        "甜",
-                        "咸鲜"
-                    ],
-        "price":  1.5,
-        "cal":  500,
+        "flavors": [],
+        "price":  12,
+        "cal":  600,
         "tags":  [
-                     "性价比",
+                     "素食友好",
                      "管饱"
                  ],
-        "desc":  "一小盒，约 500 kcal",
-        "veg":  false,
-        "spicy":  1,
-        "main":  "荤",
+        "desc":  "“小馆拌面”之选，约 600 kcal",
+        "veg":  true,
+        "spicy":  0,
+        "main":  "素",
         "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
+        "stall":  "朱家小馆辣肉面",
+        "canteen":  "汇百味餐厅",
+        "img":  "https://img.lcsw.cn/saobei/app/ba17f8d6a2fd4055a7dbaa6e795d8e7e.jpg",
+        "rawGroup":  "小馆拌面"
     },
     {
-        "id":  12979,
+        "id":  12960,
         "name":  "黑椒肉柳盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76853,7 +76353,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12980,
+        "id":  12961,
         "name":  "黄瓜鸡蛋盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -76877,7 +76377,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  12981,
+        "id":  12962,
         "name":  "番茄鸡蛋铺盖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -76904,7 +76404,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  12982,
+        "id":  12963,
         "name":  "山珍菌汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -76930,7 +76430,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12983,
+        "id":  12964,
         "name":  "小馆猪排汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -76956,7 +76456,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12984,
+        "id":  12965,
         "name":  "QQ鸡肉（5片）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -76981,7 +76481,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12985,
+        "id":  12966,
         "name":  "琅琊土豆时蔬盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -77008,7 +76508,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12986,
+        "id":  12967,
         "name":  "维C鸡香菇滑鸡套餐饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -77034,7 +76534,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12987,
+        "id":  12968,
         "name":  "泡椒土豆面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77059,7 +76559,7 @@
         "rawGroup":  "🌶️泡椒🌶️"
     },
     {
-        "id":  12988,
+        "id":  12969,
         "name":  "展肉片（5片）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77084,7 +76584,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  12989,
+        "id":  12970,
         "name":  "招牌汉堡套餐一",
         "category":  "其他",
         "icon":  "utensils",
@@ -77108,7 +76608,7 @@
         "rawGroup":  "特价"
     },
     {
-        "id":  12990,
+        "id":  12971,
         "name":  "现捞套餐素拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77134,7 +76634,7 @@
         "rawGroup":  "辣味拌饭"
     },
     {
-        "id":  12991,
+        "id":  12972,
         "name":  "香辣鸡腿堡+好巴适麻麻大串+可乐",
         "category":  "烧烤",
         "icon":  "flame",
@@ -77160,7 +76660,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12992,
+        "id":  12973,
         "name":  "菜鸡蛋瘦肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77186,32 +76686,33 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  12993,
-        "name":  "蒜香酱油酱",
-        "category":  "其他",
-        "icon":  "utensils",
+        "id":  12974,
+        "name":  "泡椒地锅小酥肉",
+        "category":  "家常小炒",
+        "icon":  "beef",
         "taste":  [
                       "咸香"
                   ],
-        "flavors": ["咸鲜"],
-        "price":  1.5,
-        "cal":  500,
+        "flavors":  [
+
+                    ],
+        "price":  14.5,
+        "cal":  450,
         "tags":  [
-                     "性价比",
-                     "管饱"
+
                  ],
-        "desc":  "一小盒，约 500 kcal",
+        "desc":  "菜单补录，约 450 kcal",
         "veg":  false,
         "spicy":  0,
         "main":  "荤",
         "portion":  "regular",
-        "stall":  "奥利堡炸鸡汉堡",
-        "canteen":  "北山苑餐厅",
-        "img":  "https://img.lcsw.cn/scan-order/images/default_food.png",
-        "rawGroup":  "调料包"
+        "stall":  "牛伯叔铁锅炖",
+        "canteen":  "汇百味餐厅",
+        "img":  "",
+        "rawGroup":  "菜单补录"
     },
     {
-        "id":  12994,
+        "id":  12975,
         "name":  "新品】香酥麻辣猪脆骨（牙口不好勿拍）",
         "category":  "其他",
         "icon":  "utensils",
@@ -77239,7 +76740,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12995,
+        "id":  12976,
         "name":  "番茄鸡蛋拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -77270,7 +76771,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12996,
+        "id":  12977,
         "name":  "红烧牛肉饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -77296,7 +76797,7 @@
         "rawGroup":  "西域烤肉饭"
     },
     {
-        "id":  12997,
+        "id":  12978,
         "name":  "凉皮，，配泡菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77322,7 +76823,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12998,
+        "id":  12979,
         "name":  "豌杂汤面/河粉/刀削（",
         "category":  "面食",
         "icon":  "wheat",
@@ -77347,7 +76848,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  12999,
+        "id":  12980,
         "name":  "姜爆鸭",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77371,7 +76872,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  13000,
+        "id":  12981,
         "name":  "木耳肉丝盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -77395,7 +76896,7 @@
         "rawGroup":  "盖饭系列"
     },
     {
-        "id":  13001,
+        "id":  12982,
         "name":  "藤椒鹌鹑蛋面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77422,7 +76923,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  13002,
+        "id":  12983,
         "name":  "菌汤鱼丸面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77446,7 +76947,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  13003,
+        "id":  12984,
         "name":  "素羊肉米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -77473,7 +76974,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  13004,
+        "id":  12985,
         "name":  "外婆菜火腿蛋炒饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -77497,7 +76998,7 @@
         "rawGroup":  "蛋炒饭系列"
     },
     {
-        "id":  13005,
+        "id":  12986,
         "name":  "玉米肠①根",
         "category":  "其他",
         "icon":  "utensils",
@@ -77522,7 +77023,7 @@
         "rawGroup":  "来点肉食"
     },
     {
-        "id":  13006,
+        "id":  12987,
         "name":  "热狗卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -77548,7 +77049,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  13007,
+        "id":  12988,
         "name":  "腊肠鸡蛋炒河粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -77573,7 +77074,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13008,
+        "id":  12989,
         "name":  "牛肉丸汤面",
         "category":  "面食",
         "icon":  "wheat",
@@ -77598,7 +77099,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13009,
+        "id":  12990,
         "name":  "泡椒猪肝炒菜",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77622,7 +77123,7 @@
         "rawGroup":  "小炒系列（不含米饭需要单点米饭）"
     },
     {
-        "id":  13010,
+        "id":  12991,
         "name":  "番茄",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77647,7 +77148,7 @@
         "rawGroup":  "口味必选"
     },
     {
-        "id":  13011,
+        "id":  12992,
         "name":  "菌汤鸡丝面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77671,7 +77172,7 @@
         "rawGroup":  "🍄菌汤🍄"
     },
     {
-        "id":  13012,
+        "id":  12993,
         "name":  "土豆丝卷饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -77698,7 +77199,7 @@
         "rawGroup":  "馅饼·卷饼"
     },
     {
-        "id":  13013,
+        "id":  12994,
         "name":  "豌杂面",
         "category":  "面食",
         "icon":  "wheat",
@@ -77724,7 +77225,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  13014,
+        "id":  12995,
         "name":  "鹌鹑蛋米线/面块",
         "category":  "面食",
         "icon":  "wheat",
@@ -77750,7 +77251,7 @@
         "rawGroup":  "点菜"
     },
     {
-        "id":  13015,
+        "id":  12996,
         "name":  "火腿鸡蛋炒面/刀削/河粉/米粉/泡面",
         "category":  "面食",
         "icon":  "wheat",
@@ -77776,7 +77277,7 @@
         "rawGroup":  "炒面"
     },
     {
-        "id":  13016,
+        "id":  12997,
         "name":  "藤椒金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77804,7 +77305,7 @@
         "rawGroup":  "🌶️藤椒🌶️"
     },
     {
-        "id":  13017,
+        "id":  12998,
         "name":  "酸菜滑肉盖饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -77829,7 +77330,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13018,
+        "id":  12999,
         "name":  "经典浓酱牛肉炒米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -77855,7 +77356,7 @@
         "rawGroup":  "招牌炒粉"
     },
     {
-        "id":  13019,
+        "id":  13000,
         "name":  "煎蛋",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77879,7 +77380,7 @@
         "rawGroup":  "小馆卤味"
     },
     {
-        "id":  13020,
+        "id":  13001,
         "name":  "石锅焖面金针菇",
         "category":  "面食",
         "icon":  "wheat",
@@ -77904,7 +77405,7 @@
         "rawGroup":  "特色石锅饭"
     },
     {
-        "id":  13021,
+        "id":  13002,
         "name":  "梅干菜包",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -77929,7 +77430,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13022,
+        "id":  13003,
         "name":  "酸菜鱼豆腐面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77953,7 +77454,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  13023,
+        "id":  13004,
         "name":  "香辣素面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -77979,7 +77480,7 @@
         "rawGroup":  "🌶香辣🌶"
     },
     {
-        "id":  13024,
+        "id":  13005,
         "name":  "红烧肉",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -78005,7 +77506,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13025,
+        "id":  13006,
         "name":  "滑肉四荤清汤苕粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -78031,7 +77532,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13026,
+        "id":  13007,
         "name":  "大面筋",
         "category":  "其他",
         "icon":  "utensils",
@@ -78057,7 +77558,7 @@
         "rawGroup":  "特色撸\n串素"
     },
     {
-        "id":  13027,
+        "id":  13008,
         "name":  "腊肠鸡蛋炒河粉、米粉双拼",
         "category":  "面食",
         "icon":  "wheat",
@@ -78083,7 +77584,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13028,
+        "id":  13009,
         "name":  "清汤馄饨",
         "category":  "面食",
         "icon":  "wheat",
@@ -78110,7 +77611,7 @@
         "rawGroup":  "美味馄饨系列"
     },
     {
-        "id":  13029,
+        "id":  13010,
         "name":  "小馆麻辣拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -78137,7 +77638,7 @@
         "rawGroup":  "麻辣系列"
     },
     {
-        "id":  13030,
+        "id":  13011,
         "name":  "鸡排单拼套饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -78163,7 +77664,7 @@
         "rawGroup":  "单拼套饭"
     },
     {
-        "id":  13031,
+        "id":  13012,
         "name":  "青菜鸡蛋猪肝",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -78189,7 +77690,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13032,
+        "id":  13013,
         "name":  "海味抄手",
         "category":  "面食",
         "icon":  "wheat",
@@ -78213,7 +77714,7 @@
         "rawGroup":  "🔥特色鲜抄手🔥"
     },
     {
-        "id":  13033,
+        "id":  13014,
         "name":  "韭菜猪肉水饺",
         "category":  "面食",
         "icon":  "wheat",
@@ -78239,7 +77740,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13034,
+        "id":  13015,
         "name":  "蒸米粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -78265,7 +77766,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13035,
+        "id":  13016,
         "name":  "鱼香肉丝",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -78291,7 +77792,7 @@
         "rawGroup":  "盖饭/小炒（左二列）"
     },
     {
-        "id":  13036,
+        "id":  13017,
         "name":  "鸭腿面/刀削/韭叶面",
         "category":  "面食",
         "icon":  "wheat",
@@ -78316,7 +77817,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13037,
+        "id":  13018,
         "name":  "酸菜金针菇面块/米线",
         "category":  "面食",
         "icon":  "wheat",
@@ -78341,7 +77842,7 @@
         "rawGroup":  "🍲酸菜🍲"
     },
     {
-        "id":  13038,
+        "id":  13019,
         "name":  "小炒双拼（不含25元以上）",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -78365,7 +77866,7 @@
         "rawGroup":  "炒菜"
     },
     {
-        "id":  13039,
+        "id":  13020,
         "name":  "锅包肉焖面",
         "category":  "面食",
         "icon":  "wheat",
@@ -78391,7 +77892,7 @@
         "rawGroup":  "焖面类"
     },
     {
-        "id":  13040,
+        "id":  13021,
         "name":  "香辣鸡拉面",
         "category":  "面食",
         "icon":  "wheat",
@@ -78416,7 +77917,7 @@
         "rawGroup":  "拉面类"
     },
     {
-        "id":  13041,
+        "id":  13022,
         "name":  "蛋饼双拼",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -78442,7 +77943,7 @@
         "rawGroup":  "双拼"
     },
     {
-        "id":  13042,
+        "id":  13023,
         "name":  "水煮鸡肉片+米饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -78469,7 +77970,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13043,
+        "id":  13024,
         "name":  "番茄鸡蛋干拌面",
         "category":  "面食",
         "icon":  "wheat",
@@ -78493,7 +77994,7 @@
         "rawGroup":  "干拌面类"
     },
     {
-        "id":  13044,
+        "id":  13025,
         "name":  "金蒜茄子+米饭套餐",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -78519,7 +78020,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13045,
+        "id":  13026,
         "name":  "炸香肠",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -78543,7 +78044,7 @@
         "rawGroup":  "特色小吃"
     },
     {
-        "id":  13046,
+        "id":  13027,
         "name":  "椒麻拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -78570,7 +78071,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  13047,
+        "id":  13028,
         "name":  "原味牛肉饼",
         "category":  "早餐小吃",
         "icon":  "croissant",
@@ -78596,7 +78097,7 @@
         "rawGroup":  ""
     },
     {
-        "id":  13048,
+        "id":  13029,
         "name":  "绝味酱香鸭子半个卤烤",
         "category":  "家常小炒",
         "icon":  "beef",
@@ -78622,7 +78123,7 @@
         "rawGroup":  "菜单补录"
     },
     {
-        "id":  13049,
+        "id":  13030,
         "name":  "秘制拌面/粉",
         "category":  "面食",
         "icon":  "wheat",
@@ -78648,7 +78149,7 @@
         "rawGroup":  "拌面/粉"
     },
     {
-        "id":  13050,
+        "id":  13031,
         "name":  "瓦香鸡拌饭",
         "category":  "盖浇饭",
         "icon":  "utensils",
@@ -78673,7 +78174,7 @@
         "rawGroup":  "推荐"
     },
     {
-        "id":  13051,
+        "id":  13032,
         "name":  "番茄炒蛋盖浇饭",
         "category":  "盖浇饭",
         "icon":  "utensils",

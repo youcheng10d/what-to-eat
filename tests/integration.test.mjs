@@ -1,4 +1,4 @@
-// 集成测试：真实 3052 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
+// 集成测试：真实 3033 道菜数据上跑完整推荐流程（含 v2.1 的档口均衡与避雷）
 import fs from "node:fs";
 import vm from "node:vm";
 import path from "node:path";

@@ -113,8 +113,8 @@
           if (!p.avoidCats.includes("面食")) p.avoidCats.push("面食");
           continue;
         }
-        // “不吃饺子”要能覆盖数据里的水饺（“水饺”不含“饺子”二字）
-        if (w === "饺子") { p.avoid.push("饺子", "水饺"); continue; }
+        // “不吃饺子 / 不吃水饺”都要覆盖两种写法：数据里两个词互不包含（“全场饺子9.9”就漏过水饺规则）
+        if (w === "饺子" || w === "水饺") { p.avoid.push("饺子", "水饺"); continue; }
         // 肉/荤/辣 由荤素与辣度意图机制负责（支持“后写优先”冲突裁决）
         if (w === "辣") { if (!p.wantSpicy) p.noSpicy = true; continue; }
         if (/^(?:肉|荤|肉类)$/.test(w)) continue;
@@ -179,8 +179,8 @@
           if (!p.avoidCats.includes("面食")) p.avoidCats.push("面食");
           continue;
         }
-        // v2.2：与文本路径一致 —— “饺子”要能覆盖数据里的“水饺”；具体对象走关键词
-        if (t === "饺子") { fromProfile.push("饺子", "水饺"); continue; }
+        // v2.2：与文本路径一致 —— “饺子 / 水饺”双向覆盖；具体对象走关键词
+        if (t === "饺子" || t === "水饺") { fromProfile.push("饺子", "水饺"); continue; }
         fromProfile.push(t);
       }
       p.avoid = [...new Set([...p.avoid, ...fromProfile])];
