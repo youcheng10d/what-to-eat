@@ -15,6 +15,9 @@ desktop.ini
 # 采集断点缓存与探针/错误记录（collect-lcsw.ps1 可重新生成，不进仓库）
 what-to-eat/data/raw/*/
 
+# 城科复采用于校验脚本稳定性，不重复入库
+what-to-eat/data/raw/cqcst2-*.json
+
 # 日志
 *.log
 
