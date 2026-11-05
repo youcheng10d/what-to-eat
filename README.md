@@ -180,4 +180,4 @@ v2.0 之后：
 - [04 · v2.0：24 份问卷，和一次按答案做的换代](docs/blog/blog-04-v2.0.md)
 - [05 · v2.1：一句“不吃面”，和它的三层防线](docs/blog/blog-05-v2.1.md)
 - [06 · v2.1.2：一次数据补采，和四个旧账](docs/blog/blog-06-v2.1.2.md)
-- [07 · 学府e生活菜单采集：一次跨校实验](docs/blog/blog-07-wenli.md)
+- [07 · v2.2.2：学府e生活菜单采集：一次跨校实验](docs/blog/blog-07-wenli.md)
