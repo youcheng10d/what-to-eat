@@ -57,6 +57,8 @@
     profile: loadJSON("wte.profile", null),
     feedback: loadJSON("wte.feedback", { stalls: {}, flavors: {}, categories: {}, clickedStalls: [] }),
     recentStalls: loadJSON("wte.recentStalls", []),
+    // 最近 10 张卡的口味槽位（f=主角口味，e=是否换口味，s=是否强反差），用于欠账制探索
+    flavorHistory: loadJSON("wte.flavorHistory", []),
     favorites: loadJSON("wte.favorites", []),
     eatenToday: loadJSON("wte.eatenToday", { date: "", ids: [] }),
     lastCards: [],
@@ -378,9 +380,14 @@
     state.lastCards = cards;
     cards.forEach((c) => {
       if (c.dish && c.dish.stall) state.recentStalls.push(c.dish.stall);
+      if (c.slot && c.slot.flavor) {
+        state.flavorHistory.push({ f: c.slot.flavor, e: c.slot.explore ? 1 : 0, s: c.slot.strong ? 1 : 0 });
+      }
     });
     state.recentStalls = state.recentStalls.slice(-10);
+    state.flavorHistory = state.flavorHistory.slice(-10);
     saveJSON("wte.recentStalls", state.recentStalls);
+    saveJSON("wte.flavorHistory", state.flavorHistory);
   }
 
   function renderError() {
@@ -470,6 +477,7 @@
         feedback: state.feedback,
         excludeIds,
         recentStalls: state.recentStalls,
+        flavorHistory: state.flavorHistory,
         mode,
         novelty,
       });
@@ -500,6 +508,7 @@
       feedback: state.feedback,
       excludeIds: [],
       recentStalls: state.recentStalls,
+      flavorHistory: state.flavorHistory,
       mode: 1,
     };
     try {

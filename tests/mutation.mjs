@@ -15,8 +15,8 @@ const MUTANTS = [
   { name: "M2 否定宾语剥词失效（“吃水饺”永远匹配不上菜名）", from: '.replace(/^(?:吃|喝|点|放|来|整|搞|太|非常|很|超级|特别|有点)+/, "")', to: "" },
   { name: "M3 避雷匹配范围去掉档口名", from: '${d.stall || ""} ', to: "" },
   { name: "M4 预算上限整体放宽 5 元", from: "if (p.maxPrice != null && d.price > p.maxPrice) return false;", to: "if (p.maxPrice != null && d.price > p.maxPrice + 5) return false;" },
-  { name: "M5 忌辣硬过滤失效", from: "if (p.noSpicy && d.spicy > 0) return false;", to: "if (p.noSpicy && d.spicy > 99) return false;" },
-  { name: "M6 画像口味权重翻倍并放开封顶", from: "sc += Math.min(12, hits.length * 5);", to: "sc += Math.min(24, hits.length * 12);" },
+  { name: "M5 忌辣硬过滤整体失效（spicy / 口味标签 / 口味避雷三条通道全断）", from: ["if (p.noSpicy && (d.spicy > 0 || dishFlavors(d).includes(\"辣\"))) return false;", "if (p.avoidFlavors && p.avoidFlavors.length\n        && dishFlavors(d).some((f) => p.avoidFlavors.includes(f))) return false;"], to: ["if (false) return false;", "if (false) return false;"] },
+  { name: "M6 换口味配额失效（永远只推喜欢的口味）", from: "if (usedExplore < 1 && wantExplore(flavorStats, pendingSlots)) {", to: "if (false) {" },
   { name: "M7 档口分层退化为按菜品等权", from: "      if (!byStall.has(key)) byStall.set(key, []);\n      byStall.get(key).push(x);", to: "      byStall.set(key + Math.random(), [x]);" },
   { name: "M8 去掉品类规模归一", from: "w: Math.exp((gTop - top) / T) * catW", to: "w: Math.exp((gTop - top) / T)" },
   { name: "M9 面类判定退化：丢掉跨品类名字兜底", from: "const isNoodleLike = (d) => d.category === \"面食\" || NOODLE_NAME.test(d.name || \"\");", to: "const isNoodleLike = (d) => d.category === \"面食\";" },
@@ -61,10 +61,12 @@ async function runAssertions(API) {
     const r = await API.recommend({ text: "预算5元", mode: 3 });
     if (r.data.cards.some((c) => !c.relaxed && c.dish.price > 5)) { fails.push("K2 预算越界"); break; }
   }
-  // K3 忌辣不得推辣（未放宽时）
+  // K3 忌辣不得推辣（未放宽时）。v2.3.1：辣度口径含 flavors —— 库里 73 道
+  // spicy=0 但标签带辣的菜（椒麻抄手/藤椒渔粉）正是最容易漏网的一批。
+  const flOf = (d) => (Array.isArray(d.flavors) ? d.flavors : String(d.flavors || "").split("|"));
   for (let i = 0; i < 8; i++) {
     const r = await API.recommend({ text: "不能吃辣", mode: 3 });
-    if (r.data.cards.some((c) => !c.relaxed && (c.dish.spicy || 0) > 0)) { fails.push("K3 忌辣失效"); break; }
+    if (r.data.cards.some((c) => !c.relaxed && ((c.dish.spicy || 0) > 0 || flOf(c.dish).includes("辣")))) { fails.push("K3 忌辣失效"); break; }
   }
   // K4 避雷档口名：用菜名关键词定向把该档口的菜钓出来，避免靠随机抽样碰运气
   for (let i = 0; i < 6; i++) {
@@ -101,11 +103,36 @@ async function runAssertions(API) {
   const stall7 = {};
   for (const d of row7) stall7[d.stall] = (stall7[d.stall] || 0) + 1;
   const stall7Top = Object.values(stall7).sort((a, b) => b - a);
-  if (stall7Top[0] / row7.length >= 0.07) fails.push("K7b 单一档口垄断（分层失效）");
-  if (stall7Top.slice(0, 5).reduce((s, n) => s + n, 0) / row7.length >= 0.27) fails.push("K7b 前五档口集中度超标（分层失效）");
+  // v2.3 清洗后档口从 78 降到 65、剩 2670 道，单档口占比的抽样波动变大（实测 5.6%～7.1%）；
+  // 阈值放到 8% / 29%，M7 变异体仍在 9%～13% / 32%～38%，判据依旧能杀死变异。
+  if (stall7Top[0] / row7.length >= 0.08) fails.push(`K7b 单一档口垄断（分层失效）top1=${(stall7Top[0] / row7.length * 100).toFixed(1)}%`);
+  if (stall7Top.slice(0, 5).reduce((s, n) => s + n, 0) / row7.length >= 0.29) fails.push(`K7b 前五档口集中度超标（分层失效）top5=${(stall7Top.slice(0, 5).reduce((s, n) => s + n, 0) / row7.length * 100).toFixed(1)}%`);
   // K8 override 卡带标签
   const ov = await API.recommend({ text: "不想吃肉，想吃肉", mode: 1, override: { main: "veg" } });
   if (!ov.data.cards[0].label) fails.push("K8 override 标签缺失");
+  // K10 换口味配额：3 口味 × 30 轮，单次请求最多 1 张探索，
+  // 10 张短窗口在 30% 目标下统计下限是 2 张（期望 3 张），故守 2。
+  {
+    let hist = [], seq = [];
+    for (let i = 0; i < 30; i++) {
+      const r = await API.recommend({
+        text: "", mode: 3,
+        profile: { flavors: ["辣", "酸甜", "咸鲜"], main: "any", budget: "any" },
+        flavorHistory: hist,
+      });
+      r.data.cards.forEach((c) => {
+        if (!c.slot) return;
+        seq.push(c.slot.explore ? 1 : 0);
+        hist.push({ f: c.slot.flavor, e: c.slot.explore ? 1 : 0, s: c.slot.strong ? 1 : 0 });
+      });
+      hist = hist.slice(-10);
+    }
+    let minExplore = 99;
+    for (let i = 10; i + 10 <= seq.length; i++) {
+      minExplore = Math.min(minExplore, seq.slice(i, i + 10).reduce((a, b) => a + b, 0));
+    }
+    if (minExplore < 2) fails.push(`K10 换口味配额失效 min=${minExplore}`);
+  }
   // K9 通用否定提取：不吃土豆/不要葱 不得推相关菜（土豆全库 49 道，40 轮×3 张必现形）
   for (let i = 0; i < 40; i++) {
     const r = await API.recommend({ text: "不吃土豆", mode: 3 });
@@ -128,11 +155,14 @@ console.log("原始代码：断言集全过，可以开始变异\n");
 
 let killed = 0;
 for (const m of MUTANTS) {
-  if (!apiSrc.includes(m.from)) {
+  const froms = Array.isArray(m.from) ? m.from : [m.from];
+  const tos = Array.isArray(m.to) ? m.to : [m.to];
+  if (froms.some((f) => !apiSrc.includes(f))) {
     console.log(`SKIP  ${m.name}（未找到目标代码，可能已改动）`);
     continue;
   }
-  const mutated = apiSrc.replace(m.from, m.to);
+  let mutated = apiSrc;
+  for (let i = 0; i < froms.length; i++) mutated = mutated.replace(froms[i], tos[i]);
   let fails;
   try {
     fails = await runAssertions(makeSandbox(mutated));

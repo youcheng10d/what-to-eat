@@ -19,7 +19,8 @@ const check = (name, cond) => {
 
 // 1) 数据加载
 check("数据加载成功", !!DB && Array.isArray(DB.dishes));
-check("菜品总数 ≥ 3000", DB.dishes.length >= 3000);
+// v2.3 清洗掉约 330 条“加菜/小料/元区/必选”条目，并把自选档口折叠成虚拟菜
+check("菜品总数 ≥ 2500", DB.dishes.length >= 2500);
 const stalls = new Set(DB.dishes.map((d) => d.stall));
 check("档口总数 ≥ 59", stalls.size >= 59);
 
@@ -33,6 +34,16 @@ const badCal = DB.dishes.filter((d) => !(typeof d.cal === "number" && d.cal >= 0
 check(`热量区间合理（异常 ${badCal.length} 条）`, badCal.length === 0);
 const idDup = DB.dishes.length - new Set(DB.dishes.map((d) => d.id)).size;
 check(`id 唯一（重复 ${idDup} 条）`, idDup === 0);
+
+// 2.1) 数据卫生：加菜数据是用户实测反馈的头号问题，必须守住
+const ADDON_GROUP = /(加菜|加料|小料|必选|锅底|汤底|蘸料|调料包|餐具|打包盒|餐盒|温馨提示|点餐前|辣度|味型|选酱|加配菜|加量|单点|元区|撸串|关东煮)/;
+const addonLeft = DB.dishes.filter((d) => ADDON_GROUP.test((d.rawGroup || "").replace(/\s/g, "")) && !/不含米饭/.test(d.rawGroup || ""));
+check(`无加菜分组残留（${addonLeft.length} 条）`, addonLeft.length === 0);
+const BARE = /^(番茄|西红柿|土豆|藕片|莲藕|金针菇|香菇|平菇|木耳|豆干|豆皮|腐竹|宽粉|粉丝|苕皮|年糕|生菜|白菜|娃娃菜|油麦菜|豆芽|海带|洋葱|青椒|芹菜|花菜|西兰花|山药|玉米|南瓜|黄瓜|茄子|竹笋|莴笋|煎蛋|卤蛋|卤鸡蛋|茶叶蛋|鹌鹑蛋|火腿肠|午餐肉|蟹排|鱼豆腐|虾饺|牛肉丸|鱼丸|甜不辣|油条|麻花|锁骨|鸭翅|鸭血|包菜|土豆片|土豆粉|千叶豆腐|方便面|肥牛|酥肉|鱿鱼)$/;
+const bareLeft = DB.dishes.filter((d) => BARE.test(d.name) && d.price <= 8);
+check(`无低价纯原料条目（${bareLeft.length} 条）`, bareLeft.length === 0);
+const noFlavor = DB.dishes.filter((d) => !Array.isArray(d.flavors) || d.flavors.length === 0);
+check(`口味标签覆盖 ≥ 95%（缺失 ${noFlavor.length} 条）`, noFlavor.length <= DB.dishes.length * 0.05);
 
 // 3) API 就位
 check("API 三个方法齐全", typeof API.recommend === "function" && typeof API.inspect === "function" && typeof API.recommendDish === "function");

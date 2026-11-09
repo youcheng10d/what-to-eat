@@ -1,14 +1,14 @@
 /* styles.css — 吃嘛 · 暖调食堂编辑风（mobile-first） */
 :root {
-  --primary: #e8590c;
-  --primary-hover: #d9480f;
+  --primary: #c2410c;
+  --primary-hover: #a8380a;
   --accent: #c92a2a;
   --spicy: #e03131;
   --bg: #fbf3e7;
   --surface: #ffffff;
   --border: #eedfc9;
   --text: #2b1a10;
-  --text-sub: #96755c;
+  --text-sub: #7a5c46;
   --success: #2f9e44;
   --warning: #e8930c;
   --font-display: "Kaiti SC", "STKaiti", "KaiTi", "FangSong", serif;
@@ -104,7 +104,7 @@ body {
   resize: none;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
-#pref::placeholder { color: #c4ab93; }
+#pref::placeholder { color: #7a5c46; }
 #pref:focus {
   outline: none;
   border-color: var(--primary);
@@ -513,7 +513,7 @@ body.modal-open { overflow: hidden; }
   height: 18px;
   padding: 0 5px;
   border-radius: 9px;
-  background: #ff6b6b;
+  background: var(--accent);
   color: #fff;
   font-size: 11px;
   font-weight: 700;

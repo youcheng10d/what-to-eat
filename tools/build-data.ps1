@@ -115,7 +115,36 @@ function inferFlavors($name, $spicy, $cat, $taste) {
   if ($name -match "糖醋|酸甜|咕咾|茄汁|番茄|西红柿|菠萝|山楂|酸梅|柠檬|百香果|酸奶") { $fl += "酸甜" }
   if ($name -match "卤|酱|蒸|炖|烧(?!麦|烤)|白灼") { $fl += "咸鲜" }
   if (($taste -contains "清淡") -or ($name -match "清汤|白汤|清蒸|白灼|粥")) { $fl += "清淡" }
+  # v2.3 口味默认兜底：此前 68% 的菜没有口味标签，勾了口味后只有那一小撮有标签的菜
+  # 在响应，表现为“选了酸甜就反复那几道、不选的口味永远不出现”。按品类补默认主味。
+  if ($fl.Count -eq 0) {
+    switch ($cat) {
+      "汤粥"       { $fl += "清淡" }
+      "甜品饮品"   { $fl += "甜" }
+      "麻辣系列"   { $fl += "辣" }
+      "轻食沙拉"   { $fl += "清淡" }
+      default      { $fl += "咸鲜" }
+    }
+  }
   return @($fl | Select-Object -Unique)
+}
+
+# ---------- 4.4) 加菜/小料/原料分组判定（v2.3） ----------
+# 采集菜单里混着“加菜/加料/元区/口味必选/单点”等选项分组，它们不是菜。
+# 例：冒菜的“口味必选”里有一份 ¥1 的番茄，会被当成“酸甜家常小炒”推给用户。
+# 分组名里的换行要先去掉（采集数据里有“特色撸\n串素”这种）。
+$addonGroupRe = '(加菜|加料|小料|必选|锅底|汤底|蘸料|调料包|餐具|打包盒|餐盒|温馨提示|点餐前|辣度|味型|选酱|加配菜|加量|臊子单点|小吃单点|饮料单点|^单点|单点\(|^\d+元区?$|另加|加饭|自选酱|免费小料|加购)'
+# 自选称重档口的原料分组：单价 2-4 元的“素菜/肉食”条目，不是一道菜
+$ingredientGroupRe = '^(素菜|肉食|来点肉食|这是素菜|特色撸.?串(素|荤)|关东煮)$'
+function Test-AddonGroup($group) {
+  $g = ($group -replace "\s", "")
+  if ($g -match "不含米饭") { return $false }  # “小炒系列（不含米饭需要单点米饭）”是正餐
+  return ($g -match $addonGroupRe) -or ($g -match $ingredientGroupRe)
+}
+function Get-Median($nums) {
+  $a = @($nums | Sort-Object)
+  if (-not $a.Count) { return 0 }
+  return [math]::Round($a[[int][math]::Floor($a.Count / 2)], 1)
 }
 
 # ---------- 5) 图标映射 ----------
@@ -135,6 +164,7 @@ $calMap = @{
 }
 
 $dishes = @()
+$stallStats = @{}
 $id = 10000
 foreach ($mKey in $menus.PSObject.Properties.Name) {
   $m = $menus.$mKey
@@ -147,6 +177,10 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
   foreach ($f in $m.foods) {
     if (-not $f) { continue }
     $group = $f.group_name
+    if (-not $stallStats.ContainsKey($stallName)) { $stallStats[$stallName] = @{ total = 0; addon = 0; canteen = $canteen } }
+    $stallStats[$stallName].total++
+    # 加菜/小料/元区/必选/单点等选项分组不是菜，直接不进推荐池
+    if (Test-AddonGroup $group) { $stallStats[$stallName].addon++; continue }
     # 过滤非食品分组/单品
     $isNonFoodGroup = $NON_FOOD | Where-Object { $group -like "*$_*" }
     $isDrinkItem = $drinkKeywords | Where-Object { $f.food_name -like "*$_*" }
@@ -238,6 +272,46 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
   }
 }
 
+# ---------- 5.5) 自选称重档口：原料条目折叠成一条虚拟菜（v2.3） ----------
+# 麻辣烫/冒菜/炸串整份菜单都是 2-4 元的原料，全删会让档口消失，全留会推出“生菜 ¥2”。
+# 规则：加菜/原料条目占比 ≥ 60% 的档口，折叠成一条“自选 XX”，价格取该档口真菜中位价。
+$mergedStalls = @()
+foreach ($stallName in $stallStats.Keys) {
+  $st = $stallStats[$stallName]
+  # 只折叠整份菜单都是原料的自选档口；鸡公煲这类有正经煲仔的档口只丢加菜，不造虚拟菜
+  if ($stallName -notmatch "麻辣烫|冒菜|炸串") { continue }
+  if ($st.total -lt 8 -or $st.addon -lt 8) { continue }
+  if ($st.addon / $st.total -lt 0.5) { continue }
+  $real = @($dishes | Where-Object { $_.stall -eq $stallName })
+  $price = Get-Median @($real | ForEach-Object { $_.price })
+  if ($price -lt 8) { $price = 8 }
+  $name = if ($stallName -match "麻辣烫") { "自选麻辣烫" } elseif ($stallName -match "冒菜") { "自选冒菜" } elseif ($stallName -match "炸串") { "自选炸串" } else { "自选称重" }
+  $cat  = if ($stallName -match "炸串") { "烧烤" } else { "麻辣系列" }
+  $dishes += [PSCustomObject]@{
+    id        = $id
+    name      = $name
+    category  = $cat
+    icon      = $iconMap[$cat]
+    taste     = @("微辣")
+    flavors   = @("辣", "咸鲜")
+    price     = $price
+    cal       = $calMap[$cat]
+    tags      = @("管饱")
+    desc      = "自选称重，按实际取量结算，参考约 $price 元"
+    veg       = $false
+    spicy     = 1
+    main      = "荤"
+    portion   = "regular"
+    stall     = $stallName
+    canteen   = $st.canteen
+    img       = ""
+    rawGroup  = "自选称重"
+  }
+  $id++
+  $mergedStalls += "$stallName（$($st.addon) 条原料 → 1 条自选）"
+}
+if ($mergedStalls.Count) { Write-Host "自选档口合并：$($mergedStalls -join '；')" -ForegroundColor Cyan }
+
 # 去重（同名同价）
 $seen = @{}
 $uniq = @()
@@ -292,6 +366,39 @@ foreach ($d in $dishes) {
   if ($stallRename.ContainsKey($d.stall)) { $d.stall = $stallRename[$d.stall]; $renameHits++ }
 }
 Write-Host "档口名校正：命中 $renameHits 道" -ForegroundColor Cyan
+
+# ---------- 6.95) 终检：补充数据里的加菜兜底过滤 + 口味补全（v2.3） ----------
+# 线下录入与会长补充是两份独立 JSON，不走前面的分组过滤，必须在合并后再扫一遍。
+$bareIngredient = '^(番茄|西红柿|土豆|藕片|莲藕|金针菇|香菇|平菇|木耳|豆干|豆皮|腐竹|宽粉|粉丝|苕皮|年糕|生菜|白菜|娃娃菜|油麦菜|豆芽|海带|海带丝|洋葱|青椒|蒜苔|芹菜|花菜|西兰花|山药|玉米|南瓜|冬瓜|黄瓜|茄子|竹笋|莴笋|鸡蛋|煎蛋|卤蛋|卤鸡蛋|茶叶蛋|鹌鹑蛋|火腿肠|午餐肉|蟹排|鱼豆腐|虾饺|牛肉丸|鱼丸|甜不辣|油条|麻花|锁骨|鸡翅尖|鸭翅|鸭血|包菜|土豆片|土豆粉|千叶豆腐|方便面|里脊肉|肥牛|酥肉|鱿鱼)$'
+$beforeHygiene = $dishes.Count
+$dishes = @($dishes | Where-Object {
+  $g = ([string]$_.rawGroup -replace "\s", "")
+  $n = [string]$_.name
+  if ((Test-AddonGroup $g) -and ($g -notmatch "不含米饭")) { return $false }
+  if ($n -match "^\s*[+＋★☆]|单加|不单卖|不可单点|放入干锅|加一两|^加醋|另加米饭") { return $false }
+  # “麻辣肉片5片 ¥4”“素豆肠3个 ¥2”是按份加的原料，不是一道菜
+  if (($n -match "\d+\s*(片|串|根|只|个)$") -and ($_.price -le 5)) { return $false }
+  # 纯原料名 + 低价 = 加菜/浇头（“番茄 ¥8”“煎蛋 ¥2”），不是一顿饭
+  if (($n -match $bareIngredient) -and ($_.price -le 8)) { return $false }
+  return $true
+})
+Write-Host "终检过滤加菜条目：$($beforeHygiene - $dishes.Count) 道" -ForegroundColor Cyan
+
+$flavorFilled = 0
+foreach ($d in $dishes) {
+  $fl = @($d.flavors | Where-Object { $_ })
+  if ($fl.Count -eq 0) {
+    $spicy = if ($null -ne $d.spicy) { [int]$d.spicy } else { 0 }
+    $taste = @($d.taste | Where-Object { $_ })
+    $newFl = @(inferFlavors ([string]$d.name) $spicy ([string]$d.category) $taste)
+    if ($d.PSObject.Properties.Name -contains "flavors") { $d.flavors = $newFl }
+    else { $d | Add-Member -NotePropertyName flavors -NotePropertyValue $newFl }
+    $flavorFilled++
+  }
+}
+Write-Host "口味补全：$flavorFilled 道" -ForegroundColor Cyan
+$id = 10000
+foreach ($d in $dishes) { $d.id = $id; $id++ }
 
 # ---------- 6.10) 档口级元数据：人气菜占比（v2.0 推荐加成 = 2 × hotRate） ----------
 $stallMeta = @{}
