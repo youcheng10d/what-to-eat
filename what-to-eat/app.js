@@ -58,6 +58,7 @@
     oracleResult: $("#oracleResult"),
     wheel: $("#wheel"),
     wheelStage: $("#wheelStage"),
+    wheelStatus: $("#wheelStatus"),
     shotBtn: $("#shotBtn"),
     stateModal: $("#stateModal"),
     shotZone: $("#shotZone"),
@@ -456,11 +457,13 @@
         </div>
         <div class="dish-stats">
           <div class="stat">${icon("wallet")}<b class="price">¥${d.price}</b><small>${isWeight ? "元·估" : "元"}</small></div>
-          <div class="stat">${icon("flame")}<b class="cal-num">${cal}</b><small>kcal</small></div>
+          <button type="button" class="stat stat-cal" data-action="nutri" data-idx="${idx}" aria-expanded="false" aria-label="查看热量是怎么算出来的">
+            ${icon("flame")}<b class="cal-num">${cal}</b><small>kcal · 算出来的</small>
+          </button>
         </div>
         ${isWeight ? `<p class="weight-note">牌面 ${d.unitPrice} 元/${d.unit}，按 400g 估一份；实际以称重结算</p>` : ""}
-        <button type="button" class="nutri-toggle" data-action="nutri" data-idx="${idx}">
-          ${icon("sparkles", 15)}<span>AI 拆解这盘菜</span><em>热量是算出来的</em>
+        <button type="button" class="nutri-toggle" data-action="nutri" data-idx="${idx}" aria-expanded="false">
+          ${icon("sparkles", 15)}<span>看算式</span><em>模型只估克数</em>
         </button>
         <div class="nutri-body" data-nutri-body="${idx}" hidden></div>
         ${d.stall ? `<div class="dish-stall">${icon("pin", 14)}<span>${d.stall}${d.canteen ? ` · ${d.canteen}` : ""}</span></div>` : ""}
@@ -820,6 +823,7 @@
     const miss = r.missing && r.missing.length
       ? `<p class="nutri-miss">成分表未收录、未计入：${r.missing.join("、")}</p>` : "";
     return `
+      <p class="nutri-lead">模型只估克数，热量按成分表相乘</p>
       <div class="nutri-head">
         <div><b>${r.total}</b><small>kcal · 按成分表算</small></div>
         <span class="nutri-src${isAI ? " is-ai" : ""}">${srcLabel}</span>
@@ -837,13 +841,20 @@
     const card = state.lastCards[idx];
     const body = els.result.querySelector(`[data-nutri-body="${idx}"]`);
     if (!card || !body) return;
+    // 两个入口（热量数字 / 看算式）共用同一块展开区，aria-expanded 要一起同步
+    const setExpanded = (on) => {
+      els.result.querySelectorAll(`[data-action="nutri"][data-idx="${idx}"]`).forEach((b) => {
+        b.setAttribute("aria-expanded", String(on));
+        b.classList.toggle("is-open", on);
+      });
+    };
     if (!body.hidden) {
       body.hidden = true;
-      btn.classList.remove("is-open");
+      setExpanded(false);
       return;
     }
     body.hidden = false;
-    btn.classList.add("is-open");
+    setExpanded(true);
     if (body.dataset.filled === "1") return;
 
     // 先用本地成分表秒出结果（几十毫秒），AI 只做后台校准 —— 不让用户等模型。
@@ -1232,7 +1243,12 @@
     if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
     void els.wheel.offsetWidth;
 
+    const statusTimer = setTimeout(() => {
+      if (els.wheelStatus) els.wheelStatus.hidden = false;
+    }, 200);
     const r = await window.AI.oracle(text);
+    clearTimeout(statusTimer);
+    if (els.wheelStatus) els.wheelStatus.hidden = true;
     const dish = oraclePool(r.constraints, r.seed);
     oracleLast = { r, dish };
 

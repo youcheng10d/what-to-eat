@@ -783,6 +783,22 @@ body.modal-open { overflow: hidden; }
   transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .wheel-wrap.is-landing .wheel-hub { transform: scale(1.09); }
+/* AI 解签要 2–3 秒，轮盘还没开始转的这段时间得让人知道在等什么 */
+.wheel-status {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -26px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-sub);
+  animation: status-breathe 1.2s ease-in-out infinite;
+}
+@keyframes status-breathe {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
 .wheel-pointer {
   position: absolute;
   left: 50%;
@@ -943,6 +959,7 @@ body.modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .wheel { transition-duration: 0.01ms; }
   .wheel-hub { transition-duration: 0.01ms; }
+  .wheel-status { animation: none; opacity: 1; }
   .wheel.is-landing { box-shadow: 0 10px 30px rgba(43, 26, 16, 0.16), inset 0 0 0 1px var(--border); }
 }
 
@@ -1035,4 +1052,25 @@ body.modal-open { overflow: hidden; }
   border: 2.5px solid rgba(255, 255, 255, 0.45);
   border-top-color: #fff;
   animation: spin 0.7s linear infinite;
+}
+
+/* 热量数字本身作为 AI 入口：它是评委最先看到的位置，不该藏在小按钮后面 */
+.stat-cal {
+  border: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.16s, background 0.16s, transform 0.16s;
+}
+.stat-cal:hover { border-color: #f0d7bd; background: #fff2e2; }
+.stat-cal:active { transform: scale(0.985); }
+.stat-cal.is-open { border-color: var(--primary); background: #fef0e6; }
+.stat-cal small { color: var(--primary); }
+.stat-cal:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+.nutri-lead {
+  margin-bottom: 8px;
+  font-size: 11.5px;
+  letter-spacing: 0.2px;
+  color: var(--text-sub);
 }
