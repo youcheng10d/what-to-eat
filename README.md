@@ -8,8 +8,8 @@
   <img src="docs/images/readme-hero.png" alt="吃嘛 · 说一句偏好，替你把今天这顿定了" width="100%">
 </p>
 
-**Pro 版在线体验：<https://youcheng10d.github.io/what-to-eat-pro/>**（手机浏览器打开效果最佳）
-**普通版在线体验：<https://youcheng10d.github.io/what-to-eat/>**（无 AI，纯规则引擎）
+**在线体验：<https://youcheng10d.github.io/what-to-eat/>**（手机浏览器打开效果最佳）
+**普通版：<https://youcheng10d.github.io/what-to-eat/standard/>**（无 AI，纯规则引擎）
 
 v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
@@ -32,18 +32,16 @@ v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
 ## 两个版本
 
-两个独立仓库，共享同一段历史到 v2.3.2，之后分叉。代码、提交记录、Issue、Actions 完全隔离：
+作品只能提交一个仓库，所以两个版本放在同一仓库的两个目录，各自独立部署：
 
-| 版本 | 仓库 | 线上地址 | 说明 |
+| 版本 | 目录 | 线上地址 | 说明 |
 | --- | --- | --- | --- |
-| **Pro** v2.4.0 | `youcheng10d/what-to-eat-pro` | <https://youcheng10d.github.io/what-to-eat-pro/> | 规则引擎 + AI 理解层，参赛与演示用这个 |
-| **普通版** v2.3.2 | `youcheng10d/what-to-eat` | <https://youcheng10d.github.io/what-to-eat/> | 无 AI，纯规则引擎，长期维护的数据源 |
+| **Pro** v2.4.0 | `what-to-eat/` | <https://youcheng10d.github.io/what-to-eat/> | 规则引擎 + AI 理解层，参赛与演示用这个 |
+| **普通版** v2.3.2 | `what-to-eat/standard/` | <https://youcheng10d.github.io/what-to-eat/standard/> | 无 AI，纯规则引擎，永久保留 |
 
-分叉点就是接入 AI 的那次提交：Pro 的每一条 AI 提交都在，普通版仓库里一行 AI 代码都没有。
+两者互不引用：普通版目录里没有 `ai.js`、没有 AI 入口、没有摄像头调用、没有 Worker 地址。CI 里的 `tests/edition.test.mjs` 会逐项校验，任何一项被污染都会让流水线变红。
 
-菜品数据以普通版为准，Pro 单向同步：先在普通版跑 `tools/build-data.ps1`，再把 `what-to-eat/data/data.js` 覆盖到 Pro。
-
-> 本仓库内的 `what-to-eat/standard/` 是普通版的随附快照，方便在同一个部署里对比；真正独立发布的普通版在另一个仓库。
+普通版是冻结快照，只在数据修正时同步 `data/data.js`；Pro 出问题时把 `standard/` 的内容覆盖回根目录即可回退。
 
 ---
 
