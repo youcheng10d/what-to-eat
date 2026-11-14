@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="吃嘛 —— 拯救干饭人的选择困难症，从 3033 道真实食堂菜品里替你做决定。" />
+  <meta name="description" content="吃嘛 —— 拯救干饭人的选择困难症，从两千多道真实食堂菜品里替你做决定。" />
   <title>吃嘛 · 拯救选择困难症</title>
-  <link rel="stylesheet" href="styles.css?v=20261026-2" />
+  <link rel="stylesheet" href="styles.css?v=20261113-wheel" />
 </head>
 <body>
   <div class="app">
@@ -23,45 +23,81 @@
       <img src="assets/hero.jpg" alt="食堂美食插画：盖饭、牛肉面、小炒与轻食沙拉" onerror="this.parentElement.classList.add('noimg')" />
     </figure>
 
-    <!-- 偏好输入 -->
-    <section class="panel reveal" style="--d:2">
-      <label for="pref">我的饮食偏好 <span class="opt">（可不填，随意聊聊）</span></label>
-      <textarea id="pref" rows="2" placeholder="例如：减肥、预算 15 元、不想吃辣…"></textarea>
-      <p id="conflictHint" class="conflict-hint" hidden></p>
-      <div class="chips" aria-label="快捷偏好">
-        <button type="button" class="chip" data-add="减肥">减脂轻食</button>
-        <button type="button" class="chip" data-add="预算15元">预算 15 元</button>
-        <button type="button" class="chip" data-add="不想吃辣">不吃辣</button>
-        <button type="button" class="chip" data-add="想吃肉">无肉不欢</button>
-        <button type="button" class="chip" data-add="想吃面食">来碗面</button>
-        <button type="button" class="chip" data-add="清淡养生">清淡养生</button>
-      </div>
-      <div class="pref-foot">
-        <button type="button" id="profileBtn" class="ghost-btn compact">建立口味档案</button>
-        <p id="profileSummary" class="profile-summary" hidden></p>
-      </div>
-    </section>
+    <!-- 双引擎切换：正经推荐 / 食堂罗盘 -->
+    <nav class="mode-tabs reveal" style="--d:2" role="tablist" aria-label="推荐引擎">
+      <button type="button" class="mode-tab is-on" data-mode="normal" role="tab" aria-selected="true">正经推荐</button>
+      <button type="button" class="mode-tab" data-mode="oracle" role="tab" aria-selected="false">食堂罗盘</button>
+    </nav>
 
-    <!-- 决定按钮 -->
-    <div class="actions reveal" style="--d:3">
-      <button type="button" id="decide" class="decide">
-        <svg class="dice-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg>
-        <span class="spinner" aria-hidden="true"></span>
-        <span id="decideText">替我决定！</span>
-      </button>
-      <button type="button" id="novelty" class="ghost-btn novelty-btn">
-        <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
-        试试新的！
-      </button>
+    <div id="normalView">
+      <!-- 偏好输入 -->
+      <section class="panel reveal" style="--d:2">
+        <label for="pref">我的饮食偏好 <span class="opt">（可不填，随意聊聊）</span></label>
+        <textarea id="pref" rows="2" placeholder="例如：减肥、预算 15 元、不想吃辣…"></textarea>
+        <p id="conflictHint" class="conflict-hint" hidden></p>
+        <div class="chips" aria-label="快捷偏好">
+          <button type="button" class="chip" data-add="减肥">减脂轻食</button>
+          <button type="button" class="chip" data-add="预算15元">预算 15 元</button>
+          <button type="button" class="chip" data-add="不想吃辣">不吃辣</button>
+          <button type="button" class="chip" data-add="想吃肉">无肉不欢</button>
+          <button type="button" class="chip" data-add="想吃面食">来碗面</button>
+          <button type="button" class="chip" data-add="清淡养生">清淡养生</button>
+        </div>
+        <div class="pref-foot">
+          <div class="pref-foot-row">
+            <button type="button" id="profileBtn" class="ghost-btn compact">建立口味档案</button>
+            <button type="button" id="shotBtn" class="ghost-btn compact shot-btn">
+              <svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg>
+              拍张照问问我
+            </button>
+          </div>
+          <p id="profileSummary" class="profile-summary" hidden></p>
+        </div>
+      </section>
+
+      <!-- 决定按钮 -->
+      <div class="actions reveal" style="--d:3">
+        <button type="button" id="decide" class="decide">
+          <svg class="dice-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg>
+          <span class="spinner" aria-hidden="true"></span>
+          <span id="decideText">替我决定！</span>
+        </button>
+        <button type="button" id="novelty" class="ghost-btn novelty-btn">
+          <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
+          试试新的！
+        </button>
+      </div>
+
+      <!-- 结果区 -->
+      <section id="result" class="reveal" style="--d:4" aria-live="polite">
+        <div class="empty">
+          <svg class="ghost-ic" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/><path d="m2.1 21.8 6.4-6.3"/><path d="m19 5-7 7"/></svg>
+          <p class="empty-title">选择困难？让我来拍板</p>
+          <p class="empty-hint">写下偏好，或直接点下面的按钮</p>
+        </div>
+      </section>
     </div>
 
-    <!-- 结果区 -->
-    <section id="result" class="reveal" style="--d:4" aria-live="polite">
-      <div class="empty">
-        <svg class="ghost-ic" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/><path d="m2.1 21.8 6.4-6.3"/><path d="m19 5-7 7"/></svg>
-        <p class="empty-title">选择困难？让我来拍板</p>
-        <p class="empty-hint">写下偏好，或直接点下面的按钮</p>
+    <!-- 食堂罗盘：和正经推荐完全分开的第二个引擎 -->
+    <section id="oracleView" class="oracle-view" hidden>
+      <p class="oracle-lead">说一句离谱的，罗盘替你转。<br /><small>同一句话，今天抽到的菜是固定的 —— 这不是玄学，是 seed。</small></p>
+      <div class="oracle-input">
+        <input id="oracleText" type="text" maxlength="60" placeholder="高数要挂了 / 帮我看看手相 / 月底只剩十块钱" />
+        <button id="oracleGo" type="button" class="decide compact">转</button>
       </div>
+      <div class="chips oracle-chips">
+        <button type="button" class="chip" data-oracle="高数要挂了，吃啥">高数要挂了</button>
+        <button type="button" class="chip" data-oracle="帮我看看手相，今天该吃啥">看手相</button>
+        <button type="button" class="chip" data-oracle="感冒了，喉咙痛">感冒了</button>
+        <button type="button" class="chip" data-oracle="月底只剩十块钱">月底没钱</button>
+        <button type="button" class="chip" data-oracle="今天想家">想家了</button>
+      </div>
+      <div class="wheel-stage" id="wheelStage" hidden>
+        <div class="wheel-pointer" aria-hidden="true"></div>
+        <div class="wheel" id="wheel"></div>
+        <div class="wheel-hub">吃嘛</div>
+      </div>
+      <div id="oracleResult" class="oracle-result" aria-live="polite"></div>
     </section>
 
     <!-- 我的收藏 · 浮动入口 -->
@@ -82,7 +118,7 @@
     <!-- 页脚 -->
     <footer class="foot reveal" style="--d:5">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      数据来自汇百味 + 北山苑餐厅菜单与线下档口实拍（3033 道，持续扩充中） · 卡路里为品类估算值，仅供参考
+      <span>数据来自汇百味 + 北山苑餐厅菜单与线下档口实拍（<b id="dishTotal">2382</b> 道） · <button type="button" class="foot-link" id="aiBtn">AI 服务</button> · <span class="build-tag">v20261113-wheel</span></span>
     </footer>
   </div>
 
@@ -146,9 +182,113 @@
     </div>
   </div>
 
-  <script src="mock.js?v=20261026-2" defer></script>
-  <script src="data/data.js?v=20261026-2" defer></script>
-  <script src="api.js?v=20261026-2" defer></script>
-  <script src="app.js?v=20261026-2" defer></script>
+  <!-- 拍照问诊 -->
+  <div class="modal" id="stateModal" hidden>
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="stateTitle">
+      <div class="modal-head">
+        <div>
+          <h2 id="stateTitle">看看你今天适合吃什么</h2>
+          <p>照片只在内存里压缩后上传，不保存、不展示给任何人。</p>
+        </div>
+        <button type="button" class="modal-x" data-close="1" aria-label="关闭">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="shot-zone" id="shotZone">
+          <!-- 相册走原生 label；相机走 getUserMedia 自绘，因为 Firefox 安卓等浏览器不认 capture 属性 -->
+          <input type="file" id="shotInput" accept="image/*" hidden />
+          <input type="file" id="shotCam" accept="image/*" capture="environment" hidden />
+          <img id="shotPreview" alt="待分析的照片" hidden />
+          <div class="shot-empty" id="shotEmpty">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg>
+            <p>拍一张，或从相册选</p>
+            <small>自然光、别开美颜，准确率更高</small>
+            <div class="shot-actions">
+              <button type="button" class="shot-act primary" id="shotTake">拍一张</button>
+              <label class="shot-act" for="shotInput">从相册选</label>
+            </div>
+          </div>
+          <div class="shot-cam" id="shotCamView" hidden>
+            <video id="shotVideo" playsinline muted autoplay></video>
+            <div class="shot-cam-actions">
+              <button type="button" class="shot-act" id="shotCamCancel">取消</button>
+              <button type="button" class="shot-act" id="shotFlip">翻转</button>
+              <button type="button" class="shot-act primary" id="shotSnap">拍</button>
+            </div>
+          </div>
+        </div>
+        <p id="shotStatus" class="shot-status" hidden></p>
+        <div id="shotTags" class="shot-tags"></div>
+        <p class="shot-disclaimer">这是基于可见表面状态的饮食建议，不是医疗诊断；标签可以自己取消或补充。</p>
+      </div>
+      <div class="modal-foot">
+        <button type="button" class="ghost-btn compact" data-close="1">取消</button>
+        <button type="button" class="decide compact" id="shotApply" disabled>按这个状态推荐</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI 服务设置（演示用） -->
+  <div class="modal" id="aiModal" hidden>
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="aiTitle">
+      <div class="modal-head">
+        <div>
+          <h2 id="aiTitle">AI 服务</h2>
+          <p>填 Cloudflare Worker 地址，Key 保存在 Worker 里，前端拿不到。</p>
+        </div>
+        <button type="button" class="modal-x" data-close="1" aria-label="关闭">×</button>
+      </div>
+      <div class="modal-body">
+        <section class="field">
+          <h3>Worker 地址</h3>
+          <input type="url" id="aiWorker" placeholder="https://chima-ai.xxx.workers.dev" />
+          <p class="field-hint">留空则进入本地模式：营养拆解用规则估算，罗盘用本地签文。</p>
+        </section>
+        <p id="aiStatus" class="shot-status" hidden></p>
+      </div>
+      <div class="modal-foot">
+        <button type="button" class="ghost-btn compact" id="aiTest">测试连接</button>
+        <button type="button" class="decide compact" id="aiSave">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI 服务地址：已部署的 Cloudflare Worker。页脚「AI 设置」里填的地址会覆盖这里的默认值。 -->
+  <script>
+    window.WTE_AI_CONFIG = { worker: "https://chima-ai.chima-ai.workers.dev" };
+  </script>
+  <script src="mock.js?v=20261113-wheel" defer></script>
+  <script src="data/data.js?v=20261113-wheel" defer></script>
+  <script src="data/ingredients.js?v=20261113-wheel" defer></script>
+  <script src="ai.js?v=20261113-wheel" defer></script>
+  <script src="api.js?v=20261113-wheel" defer></script>
+  <script src="app.js?v=20261113-wheel" defer></script>
+
+  <!-- 排障：资源没加载全时（样式/数据），用内联样式给一句人话，不依赖 styles.css -->
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        var cssOK = false;
+        try {
+          for (var i = 0; i < document.styleSheets.length; i++) {
+            var s = document.styleSheets[i];
+            if ((s.href || "").indexOf("styles.css") > -1 && s.cssRules && s.cssRules.length) { cssOK = true; break; }
+          }
+        } catch (e) { cssOK = true; }
+        var dataOK = !!(window.DB_REAL || window.DB);
+        if (cssOK && dataOK) return;
+        var msg = !cssOK && !dataOK
+          ? "页面样式和菜品数据都没加载成功。请确认地址栏是 https://chima-4qg.pages.dev（不是本地保存的 index.html），网络通畅后刷新。"
+          : !cssOK
+            ? "样式没加载成功。请确认地址栏是 https://chima-4qg.pages.dev，然后刷新。"
+            : "菜品数据（2MB）没加载完，网络不稳，再刷新一次。";
+        var bar = document.createElement("div");
+        bar.setAttribute("style", "position:fixed;left:0;right:0;top:0;z-index:99999;padding:12px 16px;background:#b91c1c;color:#fff;font:14px/1.7 -apple-system,sans-serif;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.2)");
+        bar.textContent = msg;
+        document.body.appendChild(bar);
+      }, 1500);
+    });
+  </script>
 </body>
 </html>

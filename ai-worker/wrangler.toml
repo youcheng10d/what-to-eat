@@ -1,0 +1,20 @@
+name = "chima-ai"
+main = "index.js"
+compatibility_date = "2025-06-01"
+
+# 文本模型：硅基流动（OpenAI 兼容）。换成别家只改这三行。
+[vars]
+AI_BASE = "https://api.siliconflow.cn/v1"
+TEXT_MODEL = "zai-org/GLM-5.3-Flash"
+# 营养拆解单独用小模型：只输出 4-6 行 JSON，响应能压到几秒内（前端另有本地兜底，秒出结果）。
+# MoE 模型激活参数少，速度接近 4B，但菜名理解明显更好。留空则回落到 TEXT_MODEL。
+NUTRITION_MODEL = "Qwen/Qwen3.6-35B-A3B"
+
+# 视觉模型：同一套 Key 即可，模型单独指定。
+# 不填则 /portrait 返回 502，前端自动隐藏拍照入口并提示未配置。
+VISION_BASE = "https://api.siliconflow.cn/v1"
+VISION_MODEL = "Qwen/Qwen3-VL-8B-Instruct"
+
+# Key 不要写在这里：
+#   wrangler secret put AI_KEY
+#   wrangler secret put VISION_KEY   （留空则回落到 AI_KEY，同一把 key 可通用）

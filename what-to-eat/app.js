@@ -51,6 +51,35 @@
     favPanel: $("#favPanel"),
     favClose: $("#favClose"),
     favList: $("#favList"),
+    normalView: $("#normalView"),
+    oracleView: $("#oracleView"),
+    oracleText: $("#oracleText"),
+    oracleGo: $("#oracleGo"),
+    oracleResult: $("#oracleResult"),
+    wheel: $("#wheel"),
+    wheelStage: $("#wheelStage"),
+    shotBtn: $("#shotBtn"),
+    stateModal: $("#stateModal"),
+    shotZone: $("#shotZone"),
+    shotInput: $("#shotInput"),
+    shotCam: $("#shotCam"),
+    shotTake: $("#shotTake"),
+    shotCamView: $("#shotCamView"),
+    shotVideo: $("#shotVideo"),
+    shotCamCancel: $("#shotCamCancel"),
+    shotSnap: $("#shotSnap"),
+    shotFlip: $("#shotFlip"),
+    shotPreview: $("#shotPreview"),
+    shotEmpty: $("#shotEmpty"),
+    shotStatus: $("#shotStatus"),
+    shotTags: $("#shotTags"),
+    shotApply: $("#shotApply"),
+    aiBtn: $("#aiBtn"),
+    aiModal: $("#aiModal"),
+    aiWorker: $("#aiWorker"),
+    aiStatus: $("#aiStatus"),
+    aiTest: $("#aiTest"),
+    aiSave: $("#aiSave"),
   };
   const state = {
     loading: false,
@@ -61,6 +90,8 @@
     flavorHistory: loadJSON("wte.flavorHistory", []),
     favorites: loadJSON("wte.favorites", []),
     eatenToday: loadJSON("wte.eatenToday", { date: "", ids: [] }),
+    // 每道菜吃过几次：按钮上直接显示“吃过 n 次”，比“已记下”更能说明发生了什么
+    dishCount: loadJSON("wte.dishCount", {}),
     lastCards: [],
     slotTimer: null,
   };
@@ -315,6 +346,12 @@
   function cardHTML(card, idx, total) {
     const { dish: d, matched, reason, relaxed, relaxedNote } = card;
     const tastes = Array.isArray(d.taste) ? d.taste : [];
+    const eaten = state.dishCount[d.id] || 0;
+    const pickLabel = eaten > 0 ? `吃过 ${eaten} 次` : "就这个";
+    // 热量统一用成分表估算值，和「AI 拆解」面板里的总数是同一个数
+    const cal = window.AI && window.AI.calOf ? window.AI.calOf(d) : d.cal;
+    // 称重计价：price 是按 400g 估的一份价，牌面单价另存在 unitPrice，两者都要说清楚
+    const isWeight = d.pricing === "weight";
     return `
       <article class="dish-card">
         ${total > 1 ? `<div class="card-index">推荐 ${idx + 1} / ${total}</div>` : ""}
@@ -330,9 +367,14 @@
           </div>
         </div>
         <div class="dish-stats">
-          <div class="stat">${icon("wallet")}<b class="price">¥${d.price}</b><small>元</small></div>
-          <div class="stat">${icon("flame")}<b>${d.cal}</b><small>kcal</small></div>
+          <div class="stat">${icon("wallet")}<b class="price">¥${d.price}</b><small>${isWeight ? "元·估" : "元"}</small></div>
+          <div class="stat">${icon("flame")}<b class="cal-num">${cal}</b><small>kcal</small></div>
         </div>
+        ${isWeight ? `<p class="weight-note">牌面 ${d.unitPrice} 元/${d.unit}，按 400g 估一份；实际以称重结算</p>` : ""}
+        <button type="button" class="nutri-toggle" data-action="nutri" data-idx="${idx}">
+          ${icon("sparkles", 15)}<span>AI 拆解这盘菜</span><em>热量是算出来的</em>
+        </button>
+        <div class="nutri-body" data-nutri-body="${idx}" hidden></div>
         ${d.stall ? `<div class="dish-stall">${icon("pin", 14)}<span>${d.stall}${d.canteen ? ` · ${d.canteen}` : ""}</span></div>` : ""}
         ${relaxed ? `<p class="relaxed-note">${relaxedNote}</p>` : ""}
         <div class="reason">
@@ -341,7 +383,7 @@
         </div>
         ${matched.length ? `<div class="match">${matched.map((m) => `<span class="mchip">${icon("check", 13)}${m}</span>`).join("")}</div>` : ""}
         <div class="dish-actions">
-          <button class="ghost-btn pick-btn" data-action="pick" data-idx="${idx}">${icon("check", 16)}就这个</button>
+          <button class="ghost-btn pick-btn" data-action="pick" data-idx="${idx}">${icon("check", 16)}${pickLabel}</button>
           <button class="ghost-btn fav-btn${isFavorite(d.id) ? " is-faved" : ""}" data-action="fav-toggle" data-idx="${idx}" aria-label="${isFavorite(d.id) ? "取消收藏" : "收藏"}">${icon(isFavorite(d.id) ? "heartFilled" : "heart", 16)}</button>
         </div>
       </article>`;
@@ -421,20 +463,25 @@
     flavors.filter(Boolean).forEach((f) => { fb.flavors[f] = (fb.flavors[f] || 0) + 1; });
     if (d.category) fb.categories[d.category] = (fb.categories[d.category] || 0) + 1;
     saveJSON("wte.feedback", fb);
+    state.dishCount[d.id] = (state.dishCount[d.id] || 0) + 1;
+    saveJSON("wte.dishCount", state.dishCount);
+    const times = state.dishCount[d.id];
     const btn = els.result.querySelector(`[data-action="pick"][data-idx="${idx}"]`);
     if (!btn) return;
     btn.classList.add("is-picked");
     btn.dataset.revocable = "1";
-    btn.innerHTML = `${icon("check", 16)}已记下 <span class="pick-undo" data-undo-idx="${idx}">撤销</span>`;
+    btn.innerHTML = `${icon("check", 16)}吃过 ${times} 次 <span class="pick-undo" data-undo-idx="${idx}">撤销</span>`;
     // 5 秒后撤销窗口关闭，按钮锁定
     pickTimers[idx] = setTimeout(() => lockPicked(idx), 5000);
   }
   function lockPicked(idx) {
+    const card = state.lastCards[idx];
+    const times = card && card.dish ? (state.dishCount[card.dish.id] || 0) : 0;
     const btn = els.result.querySelector(`[data-action="pick"][data-idx="${idx}"]`);
     if (btn) {
       btn.dataset.revocable = "";
       btn.disabled = true;
-      btn.innerHTML = `${icon("check", 16)}已记下`;
+      btn.innerHTML = `${icon("check", 16)}吃过 ${times} 次`;
     }
     delete pickTimers[idx];
   }
@@ -444,6 +491,10 @@
     // 从"今天吃过"移除，恢复推荐资格
     state.eatenToday.ids = state.eatenToday.ids.filter((id) => id !== card.dish.id);
     saveJSON("wte.eatenToday", state.eatenToday);
+    // 吃过的次数也要退回去，否则一次误点会永久抬高这道菜的计数
+    const left = Math.max(0, (state.dishCount[card.dish.id] || 0) - 1);
+    state.dishCount[card.dish.id] = left;
+    saveJSON("wte.dishCount", state.dishCount);
     // 取消 5 秒倒计时
     if (pickTimers[idx]) { clearTimeout(pickTimers[idx]); delete pickTimers[idx]; }
     // 恢复按钮
@@ -452,7 +503,7 @@
       btn.classList.remove("is-picked");
       delete btn.dataset.revocable;
       btn.disabled = false;
-      btn.innerHTML = `${icon("check", 16)}就这个`;
+      btn.innerHTML = `${icon("check", 16)}${left > 0 ? `吃过 ${left} 次` : "就这个"}`;
     }
   }
 
@@ -532,6 +583,8 @@
   els.novelty.addEventListener("click", () => roll({ novelty: true, excludeCurrent: true }));
   els.result.addEventListener("click", (e) => {
     if (e.target.closest('[data-action="compare"]')) { compareBoth(); return; }
+    const nutri = e.target.closest('[data-action="nutri"]');
+    if (nutri) { toggleNutrition(Number(nutri.dataset.idx), nutri); return; }
     const undo = e.target.closest(".pick-undo");
     if (undo) { undoPick(Number(undo.dataset.undoIdx)); return; }
     const pick = e.target.closest('[data-action="pick"]');
@@ -600,11 +653,539 @@
     }
   });
 
+  // ================= AI 部分 =================
+
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  const dishFlavorsLocal = (d) => {
+    if (!d) return [];
+    if (Array.isArray(d.flavors)) return d.flavors.filter(Boolean);
+    if (typeof d.flavors === "string") return d.flavors.split("|").filter(Boolean);
+    return [];
+  };
+
+  let toastTimer = null;
+  function toast(msg) {
+    let el = document.getElementById("toast");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "toast";
+      el.className = "toast";
+      document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove("is-on"), 2400);
+  }
+
+  // —— 一、营养拆解 ——
+  function nutritionHTML(r) {
+    const isAI = String(r.source).indexOf("ai") === 0;
+    const srcLabel = isAI ? "AI 拆解" : "本地估算";
+    const rows = r.rows.slice(0, 6);
+    const list = rows.map((x) => `
+      <li>
+        <div class="nutri-line">
+          <span class="nutri-name">${x.name}</span>
+          <span class="nutri-g">${x.g} g</span>
+          <b class="nutri-val">${x.kcal}</b>
+          <span class="nutri-unit">kcal</span>
+        </div>
+        <div class="nutri-bar"><i style="width:${Math.max(3, Math.round(x.share * 100))}%"></i></div>
+      </li>`).join("");
+    const more = r.rows.length > 6 ? `<li class="nutri-more">另有 ${r.rows.length - 6} 项未展开</li>` : "";
+    const formula = r.rows.map((x) => `${x.name} ${x.g}g×${x.per100}/100`).join(" + ") + ` = ${r.total}`;
+    let delta = "";
+    if (r.menuCal) {
+      const d = r.delta;
+      delta = Math.abs(d) <= 30
+        ? `<p class="nutri-delta ok">菜单标 ${r.menuCal} kcal，拆解值差 ${d > 0 ? "+" : ""}${d}，基本对得上。</p>`
+        : `<p class="nutri-delta">菜单标 ${r.menuCal} kcal，按原料算是 ${r.total} kcal，差 ${d > 0 ? "+" : ""}${d} kcal。</p>`;
+    }
+    const miss = r.missing && r.missing.length
+      ? `<p class="nutri-miss">成分表未收录、未计入：${r.missing.join("、")}</p>` : "";
+    return `
+      <div class="nutri-head">
+        <div><b>${r.total}</b><small>kcal · 按成分表算</small></div>
+        <span class="nutri-src${isAI ? " is-ai" : ""}">${srcLabel}</span>
+      </div>
+      <ul class="nutri-list">${list}${more}</ul>
+      <details class="nutri-formula">
+        <summary>看算式</summary>
+        <p>${formula}</p>
+        <p class="nutri-note">克数由${isAI ? "模型估算" : "本地规则估算"}，热量由成分表逐项相乘求和，每一行都能自己按计算器复核。</p>
+      </details>
+      ${delta}${miss}`;
+  }
+
+  async function toggleNutrition(idx, btn) {
+    const card = state.lastCards[idx];
+    const body = els.result.querySelector(`[data-nutri-body="${idx}"]`);
+    if (!card || !body) return;
+    if (!body.hidden) {
+      body.hidden = true;
+      btn.classList.remove("is-open");
+      return;
+    }
+    body.hidden = false;
+    btn.classList.add("is-open");
+    if (body.dataset.filled === "1") return;
+
+    // 先用本地成分表秒出结果（几十毫秒），AI 只做后台校准 —— 不让用户等模型。
+    const syncCardCal = (total) => {
+      if (!total) return;
+      const cardEl = btn.closest(".dish-card");
+      const calEl = cardEl && cardEl.querySelector(".cal-num");
+      if (calEl) calEl.textContent = String(total);
+    };
+    const local = window.AI.localNutrition(card.dish);
+    body.innerHTML = nutritionHTML(local);
+    body.dataset.filled = "1";
+    syncCardCal(local.total);
+
+    if (!window.AI.enabled()) return;
+    body.innerHTML += `<p class="nutri-refining"><i></i>AI 正在校准克数…</p>`;
+    try {
+      const r = await window.AI.nutrition(card.dish);
+      // 只有真的拿到 AI 结果才替换，失败就保持本地估算，别闪回
+      if (!/^ai/.test(String(r.source))) return;
+      body.innerHTML = nutritionHTML(r);
+      syncCardCal(r.total);
+    } catch (e) { /* 保持本地结果 */ } finally {
+      const tip = body.querySelector(".nutri-refining");
+      if (tip) tip.remove();
+    }
+  }
+
+  // —— 二、双引擎切换 ——
+  const modeTabs = $$(".mode-tab");
+  function setMode(mode) {
+    modeTabs.forEach((b) => {
+      const on = b.dataset.mode === mode;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-selected", String(on));
+    });
+    if (els.normalView) els.normalView.hidden = mode !== "normal";
+    if (els.oracleView) els.oracleView.hidden = mode !== "oracle";
+    if (mode === "oracle") {
+      buildWheel();
+      setTimeout(() => els.oracleText && els.oracleText.focus(), 60);
+    }
+  }
+  modeTabs.forEach((b) => b.addEventListener("click", () => setMode(b.dataset.mode)));
+
+  // —— 三、拍照问诊 ——
+  const STATE_TAGS = ["痘", "油腻", "上火", "干燥", "浮肿", "气色暗", "疲惫", "黑眼圈", "泛红"];
+
+  function openShot() {
+    // 旧 HTML 缓存缺元素时，友好提示而不是静默崩溃
+    if (!els.shotPreview || !els.stateModal || !els.shotEmpty) {
+      toast("页面版本过旧，请刷新（下拉或强制重载）");
+      return;
+    }
+    els.shotPreview.hidden = true;
+    els.shotPreview.removeAttribute("src");
+    els.shotEmpty.hidden = false;
+    els.shotStatus.hidden = true;
+    els.shotTags.innerHTML = "";
+    els.shotApply.disabled = true;
+    if (els.shotCamView) els.shotCamView.hidden = true;
+    els.stateModal.hidden = false;
+    requestAnimationFrame(() => els.stateModal.classList.add("is-open"));
+    document.body.classList.add("modal-open");
+  }
+  function closeShot() {
+    stopCamera();
+    els.stateModal.classList.remove("is-open");
+    document.body.classList.remove("modal-open");
+    setTimeout(() => { els.stateModal.hidden = true; }, 180);
+  }
+  function syncShotApply() {
+    const n = els.shotTags.querySelectorAll('.state-chip[aria-pressed="true"]').length;
+    els.shotApply.disabled = n === 0;
+  }
+  function renderShotState(tags, note) {
+    const picked = {};
+    (tags || []).forEach((t) => { picked[t.label] = t.evidence || ""; });
+    const extra = STATE_TAGS.filter((t) => !(t in picked));
+    const chip = (label, on, evidence) => `
+      <button type="button" class="state-chip${on ? " is-on" : ""}" data-tag="${label}" aria-pressed="${on}">
+        <b>${label}</b>${evidence ? `<small>${evidence}</small>` : ""}
+      </button>`;
+    els.shotTags.innerHTML = `
+      <p class="shot-note">${note}</p>
+      <div class="state-chips">
+        ${(tags || []).map((t) => chip(t.label, true, t.evidence)).join("")}
+        ${extra.map((t) => chip(t, false, "")).join("")}
+      </div>`;
+    syncShotApply();
+  }
+
+  function compressImage(file, max, quality) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        const scale = Math.min(1, max / Math.max(img.width, img.height));
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(img.width * scale);
+        canvas.height = Math.round(img.height * scale);
+        canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
+        URL.revokeObjectURL(url);
+        resolve(canvas.toDataURL("image/jpeg", quality));
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); reject(new Error("READ_FAIL")); };
+      img.src = url;
+    });
+  }
+
+  async function analyzeShot(file) {
+    els.shotPreview.src = URL.createObjectURL(file);
+    els.shotPreview.hidden = false;
+    els.shotEmpty.hidden = true;
+    els.shotStatus.hidden = false;
+    els.shotStatus.textContent = "正在看这张照片…";
+    els.shotTags.innerHTML = "";
+    els.shotApply.disabled = true;
+    try {
+      const dataUrl = await compressImage(file, 768, 0.82);
+      const r = await window.AI.portrait(dataUrl);
+      if (r.source === "ai" && r.tags.length) {
+        els.shotStatus.textContent = r.summary || "看完了，标签可以自己改。";
+        renderShotState(r.observations, "AI 看到的：");
+        return;
+      }
+      if (r.source === "ai") {
+        els.shotStatus.textContent = "没看清人脸，你可以在下面自己选。";
+      } else {
+        els.shotStatus.textContent = "AI 服务还没连上，先手动选今天的状态。";
+      }
+      renderShotState([], "手动选：");
+    } catch (e) {
+      els.shotStatus.textContent = "这张照片读不出来，换一张试试。";
+      renderShotState([], "手动选：");
+    }
+  }
+
+  // —— 拍照问诊模块 ——
+  // 相机走 getUserMedia 自绘：Firefox 安卓、微信内置浏览器都不认 input 的 capture 属性，
+  // 只靠 capture 会出现「点了完全没反应」，所以这里自己开摄像头。
+  let camStream = null;
+  let camOpening = false;
+  let camFacing = "environment";
+
+  function stopCamera() {
+    if (camStream) {
+      camStream.getTracks().forEach((t) => { try { t.stop(); } catch (e) {} });
+      camStream = null;
+    }
+    if (els.shotVideo) els.shotVideo.srcObject = null;
+    if (els.shotCamView) els.shotCamView.hidden = true;
+  }
+
+  // 前置预览按自拍习惯镜像，真正拍下来的画面不镜像
+  function syncFacingUI() {
+    if (els.shotVideo) els.shotVideo.classList.toggle("is-front", camFacing === "user");
+  }
+
+  async function acquireCamera(facing) {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: { ideal: facing }, width: { ideal: 1280 } },
+      audio: false,
+    });
+    camStream = stream;
+    camFacing = facing;
+    els.shotVideo.srcObject = stream;
+    syncFacingUI();
+    try { await els.shotVideo.play(); } catch (e) { /* 个别浏览器要再点一次才播 */ }
+  }
+
+  async function openCamera() {
+    if (camOpening) return;
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      toast("这个浏览器不支持网页调相机，已改用系统拍照");
+      if (els.shotCam) els.shotCam.click();
+      return;
+    }
+    camOpening = true;
+    try {
+      await acquireCamera(camFacing);
+      els.shotEmpty.hidden = true;
+      els.shotCamView.hidden = false;
+    } catch (e) {
+      const name = (e && e.name) || "";
+      if (name === "NotAllowedError" || name === "SecurityError") {
+        toast("相机权限被拒绝：在浏览器里允许本站使用相机，或从相册选一张");
+      } else if (name === "NotFoundError" || name === "OverconstrainedError") {
+        toast("没找到摄像头，从相册选一张吧");
+      } else {
+        toast("相机打不开，改用系统拍照");
+        if (els.shotCam) els.shotCam.click();
+      }
+    } finally {
+      camOpening = false;
+    }
+  }
+
+  async function flipCamera() {
+    if (camOpening || !camStream) return;
+    const prev = camFacing;
+    const next = prev === "environment" ? "user" : "environment";
+    camOpening = true;
+    try {
+      // 先释放旧流：部分安卓机不允许前后摄同时被占用，否则切成黑屏
+      camStream.getTracks().forEach((t) => { try { t.stop(); } catch (e) {} });
+      camStream = null;
+      await acquireCamera(next);
+    } catch (e) {
+      // 切不过去就把原来的摄像头接回来，别让画面停在黑屏
+      try { await acquireCamera(prev); } catch (e2) { /* 彻底失败就保持黑屏并提示 */ }
+      toast("切换失败，这台设备可能只有一个摄像头");
+    } finally {
+      camOpening = false;
+    }
+  }
+
+  function snapPhoto() {
+    const v = els.shotVideo;
+    if (!v || !v.videoWidth) { toast("相机还在启动，等一秒再拍"); return; }
+    const canvas = document.createElement("canvas");
+    canvas.width = v.videoWidth;
+    canvas.height = v.videoHeight;
+    canvas.getContext("2d").drawImage(v, 0, 0, canvas.width, canvas.height);
+    canvas.toBlob((blob) => {
+      stopCamera();
+      if (blob) analyzeShot(new File([blob], "camera.jpg", { type: "image/jpeg" }));
+    }, "image/jpeg", 0.9);
+  }
+
+  try {
+    if (els.shotBtn) els.shotBtn.addEventListener("click", openShot);
+    const onShotFile = (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (file) analyzeShot(file);
+      e.target.value = "";
+    };
+    if (els.shotInput) els.shotInput.addEventListener("change", onShotFile);
+    if (els.shotCam) els.shotCam.addEventListener("change", onShotFile);
+    if (els.shotTake) els.shotTake.addEventListener("click", openCamera);
+    if (els.shotSnap) els.shotSnap.addEventListener("click", snapPhoto);
+    if (els.shotFlip) els.shotFlip.addEventListener("click", flipCamera);
+    if (els.shotCamCancel) els.shotCamCancel.addEventListener("click", () => {
+      stopCamera();
+      els.shotEmpty.hidden = false;
+    });
+    // 注意：这里不再给整个 shotZone 绑 click 弹相册。
+    // 之前 label 触发 input 的点击会冒泡到 zone，又去点第二个 input，
+    // 同一个手势里开两个文件选择器会互相取消，表现就是「点了没反应」。
+    if (els.shotTags) els.shotTags.addEventListener("click", (e) => {
+      const chip = e.target.closest(".state-chip");
+      if (!chip) return;
+      chip.setAttribute("aria-pressed", String(chip.getAttribute("aria-pressed") !== "true"));
+      chip.classList.toggle("is-on", chip.getAttribute("aria-pressed") === "true");
+      syncShotApply();
+    });
+    if (els.shotApply) els.shotApply.addEventListener("click", () => {
+      const tags = $$('#shotTags .state-chip[aria-pressed="true"]').map((b) => b.dataset.tag);
+      const m = window.AI.mappingFor(tags);
+      // 只把 AI 的观察翻译成一句人话写进输入框，用户还能改 —— 决策权仍然在人手里
+      const text = m.text || "";
+      if (text) {
+        const cur = els.pref.value.trim();
+        els.pref.value = cur ? cur + "、" + text : text;
+        els.pref.dispatchEvent(new Event("input"));
+      }
+      closeShot();
+      setMode("normal");
+      setTimeout(() => roll({ excludeCurrent: true }), 120);
+    });
+  } catch (e) {
+    console.warn("[app] 拍照模块初始化失败，已跳过", e);
+  }
+
+  // —— 四、食堂罗盘 ——
+  const WHEEL_CATS = ["面食", "盖浇饭", "家常小炒", "麻辣系列", "烧烤", "早餐小吃", "甜品饮品", "汤粥"];
+  let wheelBuilt = false;
+  let wheelSpins = 0;
+  let oracleBusy = false;
+  let oracleLast = null;
+
+  function buildWheel() {
+    if (wheelBuilt || !els.wheel) return;
+    els.wheel.innerHTML = WHEEL_CATS.map((c, i) =>
+      `<span class="wheel-label" style="transform:rotate(${i * 45}deg) translateY(-96px) rotate(${-i * 45}deg)">${c}</span>`
+    ).join("");
+    wheelBuilt = true;
+  }
+
+  function oraclePool(constraints, seed) {
+    const all = ((window.DB_REAL && window.DB_REAL.dishes) || window.DB.dishes)
+      .filter((d) => !state.eatenToday.ids.includes(d.id));
+    let pool = all;
+    const c = constraints || {};
+    const narrow = (fn) => { const next = pool.filter(fn); if (next.length) pool = next; };
+    if (c.avoid && c.avoid.length) narrow((d) => !c.avoid.some((k) => d.name.includes(k)));
+    if (c.category) narrow((d) => d.category === c.category);
+    if (c.flavors && c.flavors.length) narrow((d) => dishFlavorsLocal(d).some((f) => c.flavors.includes(f)));
+    if (c.tags && c.tags.length) narrow((d) => (d.tags || []).some((t) => c.tags.includes(t)));
+    if (!pool.length) pool = all;
+    return pool[seed % pool.length];
+  }
+
+  function renderOracle(r, dish) {
+    const c = r.constraints || {};
+    const bits = [];
+    if (c.category) bits.push(c.category);
+    (c.flavors || []).forEach((f) => bits.push(f));
+    (c.tags || []).forEach((t) => bits.push(t));
+    (c.avoid || []).forEach((a) => bits.push("避开" + a));
+    const isAI = String(r.source).indexOf("ai") === 0;
+    els.oracleResult.innerHTML = `
+      <div class="oracle-card">
+        <p class="oracle-sign">「${r.sign}」</p>
+        ${r.why ? `<p class="oracle-why">${r.why}</p>` : ""}
+        <div class="oracle-dish">
+          <span class="oracle-kicker">落到这道</span>
+          <h3>${dish.name}</h3>
+          <p>¥${dish.price}${dish.pricing === "weight" ? "（称重估）" : ""} · ${window.AI && window.AI.calOf ? window.AI.calOf(dish) : dish.cal} kcal · ${dish.stall || dish.category}</p>
+        </div>
+        <p class="oracle-trace">
+          条件：${bits.length ? bits.join(" / ") : "不加限制"}<br />
+          seed ${r.seed} · ${isAI ? "AI 解签" : "本地签文"} · 今天同一句话结果固定
+        </p>
+        <div class="oracle-actions">
+          <button type="button" class="ghost-btn compact" data-action="oracle-clear">换一句话</button>
+          <button type="button" class="decide compact" data-action="oracle-pick">就吃这个</button>
+        </div>
+      </div>`;
+  }
+
+  async function spin() {
+    if (oracleBusy) return;
+    const text = (els.oracleText.value || "").trim();
+    if (!text) {
+      els.oracleText.focus();
+      toast("先写一句话，越离谱越准");
+      return;
+    }
+    oracleBusy = true;
+    els.oracleGo.disabled = true;
+    els.wheelStage.hidden = false;
+    els.oracleResult.innerHTML = "";
+    buildWheel();
+    // 首次点「转」时 wheelStage 刚从 display:none 变可见。如果同一帧就写目标角度，
+    // 浏览器会把 rotate(1080deg) 当成初始样式，CSS 的 2.4s 过渡不会触发 —— 表现就是“首次不转”。
+    // 先把 0deg 落地并强制一次布局，给过渡一个明确的起始值。
+    if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
+    void els.wheel.offsetWidth;
+
+    const r = await window.AI.oracle(text);
+    const dish = oraclePool(r.constraints, r.seed);
+    oracleLast = { r, dish };
+
+    let idx = WHEEL_CATS.indexOf(dish.category);
+    if (idx < 0) idx = r.seed % WHEEL_CATS.length;
+    wheelSpins += 1;
+    const jitter = (r.seed % 23) - 11;
+    const deg = 360 * (3 + wheelSpins) - idx * 45 + jitter;
+    els.wheel.style.transform = `rotate(${deg}deg)`;
+
+    await wait(reducedMotion ? 60 : 2450);
+    renderOracle(r, dish);
+    const cardEl = els.oracleResult.querySelector(".oracle-card");
+    if (cardEl && !reducedMotion) cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
+    oracleBusy = false;
+    els.oracleGo.disabled = false;
+  }
+
+  els.oracleGo.addEventListener("click", spin);
+  els.oracleText.addEventListener("keydown", (e) => { if (e.key === "Enter") spin(); });
+  $$(".chip[data-oracle]").forEach((chip) =>
+    chip.addEventListener("click", () => {
+      els.oracleText.value = chip.dataset.oracle;
+      spin();
+    })
+  );
+  els.oracleResult.addEventListener("click", (e) => {
+    if (e.target.closest('[data-action="oracle-clear"]')) {
+      els.oracleText.value = "";
+      els.oracleText.focus();
+      els.oracleResult.innerHTML = "";
+      return;
+    }
+    if (e.target.closest('[data-action="oracle-pick"]') && oracleLast) {
+      const d = oracleLast.dish;
+      state.dishCount[d.id] = (state.dishCount[d.id] || 0) + 1;
+      saveJSON("wte.dishCount", state.dishCount);
+      addEatenToday(d.id);
+      toast(`记下了：${d.name}。今天不会再推它`);
+      els.oracleResult.querySelector('[data-action="oracle-pick"]').disabled = true;
+    }
+  });
+
+  // —— 五、AI 服务设置 ——
+  function openAI() {
+    els.aiWorker.value = window.AI.config().worker || "";
+    els.aiStatus.hidden = true;
+    els.aiModal.hidden = false;
+    requestAnimationFrame(() => els.aiModal.classList.add("is-open"));
+    document.body.classList.add("modal-open");
+  }
+  function closeAI() {
+    els.aiModal.classList.remove("is-open");
+    document.body.classList.remove("modal-open");
+    setTimeout(() => { els.aiModal.hidden = true; }, 180);
+  }
+  els.aiBtn.addEventListener("click", openAI);
+  els.aiSave.addEventListener("click", () => {
+    const url = els.aiWorker.value.trim();
+    window.AI.setConfig({ worker: url });
+    closeAI();
+    toast(url ? "已保存，试试 AI 拆解" : "已切回本地模式");
+  });
+  els.aiTest.addEventListener("click", async () => {
+    const url = els.aiWorker.value.trim().replace(/\/+$/, "");
+    els.aiStatus.hidden = false;
+    if (!url) {
+      els.aiStatus.textContent = "没填地址。留空就是本地模式，功能照样能演示。";
+      return;
+    }
+    els.aiStatus.textContent = "正在连接…";
+    try {
+      const res = await fetch(url + "/health");
+      const data = await res.json();
+      els.aiStatus.textContent = data.ok
+        ? `已连上：文本 ${data.text ? "✓" : "×"} · 视觉 ${data.vision ? "✓" : "×"}`
+        : "连上了，但 Worker 说没配好 Key。";
+    } catch (e) {
+      els.aiStatus.textContent = "连不上，检查地址或 Worker 是否已 deploy。";
+    }
+  });
+
+  [els.stateModal, els.aiModal].forEach((m) => {
+    if (!m) return;
+    m.addEventListener("click", (e) => {
+      if (!e.target.closest("[data-close]")) return;
+      if (m === els.stateModal) closeShot(); else closeAI();
+    });
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    if (!els.stateModal.hidden) closeShot();
+    if (!els.aiModal.hidden) closeAI();
+  });
+
   initHeader();
   initDraft();
   checkDayReset();
   updateFavFab();
   updateProfileUI();
+  // 页脚菜品数跟着数据走，避免每次重采后手改 HTML 忘记同步
+  {
+    const total = (window.DB_REAL && window.DB_REAL.dishes ? window.DB_REAL.dishes : window.DB.dishes).length;
+    const elTotal = $("#dishTotal");
+    if (elTotal) elTotal.textContent = String(total);
+  }
   if (!state.profile && !localStorage.getItem("wte.profileSeen")) {
     setTimeout(openProfile, 450);
   }

@@ -213,11 +213,19 @@
   const LIGHT_NAME = /轻食|沙拉|鸡胸|健康餐|糙米|紫米|藜麦|全麦|低脂|魔芋/;
   const isLightDish = (d) => /轻食/.test(d.stall || "") || LIGHT_NAME.test(d.name || "");
 
+  // 热量统一取 AI 侧的估算（成分表逐项相加），拿不到才回落到数据里的品类值
+  function dishCal(d) {
+    if (typeof window !== "undefined" && window.AI && window.AI.calOf) {
+      try { return window.AI.calOf(d); } catch (e) { /* 估算失败就用原值 */ }
+    }
+    return d.cal;
+  }
+
   // —— 3) 硬过滤层：预算 / 热量 / 忌辣 / 文本荤素 / 忌口 ——
   function hardFilter(p, pool) {
     return pool.filter((d) => {
       if (p.maxPrice != null && d.price > p.maxPrice) return false;
-      if (p.maxCal != null && d.cal > p.maxCal) return false;
+      if (p.maxCal != null && dishCal(d) > p.maxCal) return false;
       // v2.3.1：辣度不能只看 spicy 字段 —— 库里 73 道菜 flavors 标了辣但 spicy=0
       // （椒麻抄手、藤椒渔粉、椒麻藤椒鸡…），只查 spicy 会让“不能吃辣”漏掉它们。
       if (p.noSpicy && (d.spicy > 0 || dishFlavors(d).includes("辣"))) return false;
@@ -475,12 +483,11 @@
 
   // —— 5) 命中说明 + 推荐理由 ——
   const OPENERS = ["纠结的时候，交给手感准没错！", "闭眼选也不会错的人气之选。", "这顿就交给命运抽签吧——"];
-  const CLOSINGS = ["今天就让它治愈你的胃！", "食堂阿姨已经为你打好饭啦。", "别纠结了，就它了！", "干饭人，冲！", "这一口下去，值回饭钱。"];
 
   function buildMatched(d, p, dropped, slot) {
     const m = [];
     if (p.maxPrice != null && !dropped.has("maxPrice")) m.push(`预算 ${p.maxPrice} 元内`);
-    if (p.maxCal != null && !dropped.has("maxCal")) m.push(`热量仅 ${d.cal} kcal`);
+    if (p.maxCal != null && !dropped.has("maxCal")) m.push(`热量仅 ${dishCal(d)} kcal`);
     if (p.noSpicy && !dropped.has("noSpicy")) m.push("完全不辣");
     if (p.wantVeg && !dropped.has("wantVeg")) m.push("素食友好");
     if (p.wantMeat && !dropped.has("wantMeat") && isMeat(d)) m.push("有肉，解馋过瘾");
@@ -500,10 +507,27 @@
     if (p.lightIntent && isLightDish(d)) m.push("轻食档口，减脂友好");
     return m;
   }
-  function buildReason(d, m) {
+  // 收尾只写能在界面上核对的事实：预算差多少、档口在最近 10 张卡里出现几次、辣度标记。
+  // 不再用“食堂阿姨已经为你打好饭啦”这类随机煽情句——它既不可验证，也和自提/外卖的事实冲突。
+  function buildFact(d, p, ctx) {
+    const facts = [];
+    if (p.maxPrice != null && d.price < p.maxPrice) {
+      const gap = Math.round((p.maxPrice - d.price) * 10) / 10;
+      facts.push(`比预算上限低 ${gap} 元`);
+    }
+    const seen = (recentWindow(ctx && ctx.recentStalls)[d.stall] || 0);
+    facts.push(seen === 0 ? "最近 10 张卡里没出现过这个档口" : `最近 10 张卡里这个档口出现过 ${seen} 次`);
+    if (p.noSpicy) facts.push(`辣度标记为 ${d.spicy || 0}`);
+    return facts.length ? facts[0] + "。" : "";
+  }
+  function buildReason(d, m, p, ctx) {
     const head = m.length ? m.slice(0, 3).join("，") + "。" : rand(OPENERS);
-    const desc = String(d.desc || "").replace(/[，,。；;、\s]*$/, "") + "。";
-    return head + desc + rand(CLOSINGS);
+    let desc = String(d.desc || "").replace(/[，,。；;、\s]*$/, "");
+    // 命中说明里已经报了热量，描述里的“约 xxx kcal”就不再重复
+    if (/kcal/.test(head)) desc = desc.replace(/[，,]?\s*约\s*\d+\s*kcal/, "");
+    // “XX系列”之选 / 另有：… / 菜单补录 都是后台分组与来源标记，不是菜品描述，不进推荐理由
+    const isLabel = !desc || /^[“"][^”"]*[”"]\s*之选/.test(desc) || /另有：/.test(desc) || /^菜单补录/.test(desc);
+    return head + (isLabel ? "" : desc + "。") + buildFact(d, p || {}, ctx);
   }
 
   function recentWindow(recentStalls) {
@@ -593,7 +617,7 @@
       cards.push({
         dish,
         matched,
-        reason: buildReason(dish, matched),
+        reason: buildReason(dish, matched, prefs, { recentStalls }),
         relaxed,
         relaxedNote,
         slot,
@@ -608,7 +632,7 @@
       cards.push({
         dish,
         matched: [],
-        reason: buildReason(dish, []),
+        reason: buildReason(dish, [], prefs, { recentStalls }),
         relaxed: true,
         relaxedNote: "条件有点苛刻，这次先给你一张随机卡～",
       });
