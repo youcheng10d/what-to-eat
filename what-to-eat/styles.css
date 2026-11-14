@@ -934,3 +934,52 @@ body.modal-open { overflow: hidden; }
   .wheel { transition-duration: 0.01ms; }
 }
 
+
+/* ================= v2.4.1 交互打磨 ================= */
+
+/* 双引擎：外层被包进 #normalView 后，这里接住原来的 18px 节奏 */
+#normalView { display: flex; flex-direction: column; gap: 18px; }
+
+/* 切换用 140ms 淡出淡入，替掉原来的 display:none 硬切 */
+.app > #normalView,
+.app > #oracleView { transition: opacity 0.14s ease, transform 0.14s ease; }
+.app.is-switching > #normalView:not([hidden]),
+.app.is-switching > #oracleView:not([hidden]) {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+/* 三卡页码：让评委一眼看到还有两张 */
+.card-dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+.card-dot {
+  width: 8px; height: 8px; padding: 0;
+  border: none; border-radius: 50%;
+  background: #e5d5c2; cursor: pointer;
+  transition: width 0.18s, background 0.18s, border-radius 0.18s;
+}
+.card-dot.is-on { width: 20px; border-radius: 4px; background: var(--primary); }
+
+/* toast 带撤销按钮时可点，平时不挡操作 */
+.toast { display: flex; align-items: center; gap: 10px; }
+.toast.has-act { pointer-events: auto; }
+.toast-act {
+  flex: none;
+  border: none; border-radius: 999px;
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff; font-family: var(--font-body);
+  font-size: 12.5px; font-weight: 600;
+  cursor: pointer;
+}
+.toast-act:active { transform: scale(0.96); }
+
+/* 命中区补到 40px：原来 13/54 个可点区域偏小，手机上容易点空 */
+.chip { min-height: 40px; display: inline-flex; align-items: center; }
+.mode-tab { min-height: 40px; }
+.ghost-btn.compact { min-height: 40px; }
+
+/* 命中区续：审计里剩下的四个偏小控件 */
+.nutri-toggle { min-height: 44px; }
+.dish-actions .ghost-btn { min-height: 44px; }
+.foot-link { padding: 11px 6px; }
+.toast-act { min-height: 40px; padding: 0 14px; display: inline-flex; align-items: center; }

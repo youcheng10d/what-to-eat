@@ -25,11 +25,11 @@
 
     <!-- 双引擎切换：正经推荐 / 食堂罗盘 -->
     <nav class="mode-tabs reveal" style="--d:2" role="tablist" aria-label="推荐引擎">
-      <button type="button" class="mode-tab is-on" data-mode="normal" role="tab" aria-selected="true">正经推荐</button>
-      <button type="button" class="mode-tab" data-mode="oracle" role="tab" aria-selected="false">食堂罗盘</button>
+      <button type="button" class="mode-tab is-on" data-mode="normal" role="tab" id="tabNormal" aria-controls="normalView" aria-selected="true">正经推荐</button>
+      <button type="button" class="mode-tab" data-mode="oracle" role="tab" id="tabOracle" aria-controls="oracleView" aria-selected="false">食堂罗盘</button>
     </nav>
 
-    <div id="normalView">
+    <div id="normalView" role="tabpanel" aria-labelledby="tabNormal">
       <!-- 偏好输入 -->
       <section class="panel reveal" style="--d:2">
         <label for="pref">我的饮食偏好 <span class="opt">（可不填，随意聊聊）</span></label>
@@ -79,7 +79,7 @@
     </div>
 
     <!-- 食堂罗盘：和正经推荐完全分开的第二个引擎 -->
-    <section id="oracleView" class="oracle-view" hidden>
+    <section id="oracleView" class="oracle-view" role="tabpanel" aria-labelledby="tabOracle" hidden>
       <p class="oracle-lead">说一句离谱的，罗盘替你转。<br /><small>同一句话，今天抽到的菜是固定的 —— 这不是玄学，是 seed。</small></p>
       <div class="oracle-input">
         <input id="oracleText" type="text" maxlength="60" placeholder="高数要挂了 / 帮我看看手相 / 月底只剩十块钱" />
@@ -107,7 +107,7 @@
     </button>
 
     <!-- 收藏面板（点击 fab 展开） -->
-    <section id="favPanel" class="fav-panel" hidden aria-hidden="true">
+    <section id="favPanel" class="fav-panel" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="我的收藏">
       <header class="fav-head">
         <h3>我的收藏</h3>
         <button type="button" class="ghost-btn compact" id="favClose">关闭</button>
