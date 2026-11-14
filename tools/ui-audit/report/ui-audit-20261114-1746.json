@@ -1,0 +1,128 @@
+{
+  "base": "http://127.0.0.1:50736",
+  "viewport": "390x844@2x",
+  "at": "2026-11-14T09:46:47.541Z",
+  "results": [
+    {
+      "id": "first-run.modal",
+      "title": "首次进入自动打开口味档案",
+      "status": "PASS",
+      "detail": "hidden=false is-open=true"
+    },
+    {
+      "id": "a11y.focus-on-open",
+      "title": "弹窗打开后焦点进入对话框",
+      "status": "WARN",
+      "detail": "activeElement=<BODY> id=\"\" class=\"modal-open\" inDialog=false"
+    },
+    {
+      "id": "a11y.focus-trap",
+      "title": "Tab 键不会跑出弹窗",
+      "status": "FAIL",
+      "detail": "第 1 次 Tab 就跑到了弹窗外"
+    },
+    {
+      "id": "modal.esc",
+      "title": "ESC 关闭口味档案",
+      "status": "PASS",
+      "detail": "hidden=true"
+    },
+    {
+      "id": "modal.backdrop-close-form",
+      "title": "表单类弹窗点蒙层即关闭（有未保存选择）",
+      "status": "WARN",
+      "detail": "点蒙层前「辣」=true；关闭=true，档案摘要=\"\"，profileSeen=1。表单未保存就关闭，属误触丢数据风险"
+    },
+    {
+      "id": "a11y.focus-restore",
+      "title": "关闭后焦点回到触发按钮",
+      "status": "PASS",
+      "detail": "activeElement=<BUTTON> id=\"profileBtn\"，期望 \"profileBtn\""
+    },
+    {
+      "id": "motion.mode-switch",
+      "title": "两个引擎之间切换有过渡动画",
+      "status": "WARN",
+      "detail": "瞬时切换：transition=0s、animation=none、120ms 后 opacity 仍=1；滚动位置 268→0"
+    },
+    {
+      "id": "flow.decide",
+      "title": "「替我决定」能出卡片",
+      "status": "PASS",
+      "detail": "首卡出现耗时 912ms"
+    },
+    {
+      "id": "flow.reroll-double",
+      "title": "连点「换一个」不会叠出多组结果",
+      "status": "PASS",
+      "detail": "卡片数=1（单卡模式应为 1），残留骨架=0"
+    },
+    {
+      "id": "flow.favorite",
+      "title": "收藏后有计数与轻提示",
+      "status": "WARN",
+      "detail": "计数=\"1\" 隐藏=false toast=\"\""
+    },
+    {
+      "id": "flow.fav-panel-open",
+      "title": "收藏面板可展开",
+      "status": "PASS",
+      "detail": "hidden=false"
+    },
+    {
+      "id": "modal.fav-panel-esc",
+      "title": "ESC 可关闭收藏面板",
+      "status": "WARN",
+      "detail": "面板不受 ESC 控制，只能点「关闭」"
+    },
+    {
+      "id": "flow.favorite-delete",
+      "title": "取消收藏有确认或撤销入口",
+      "status": "WARN",
+      "detail": "剩余条目=0，toast=\"\"；一步删除、无撤销，属破坏性操作裸奔"
+    },
+    {
+      "id": "modal.ai-esc",
+      "title": "AI 设置弹窗 ESC 可关",
+      "status": "PASS",
+      "detail": "打开=true 关闭=true"
+    },
+    {
+      "id": "a11y.tap-targets",
+      "title": "可点区域不小于 40×40",
+      "status": "WARN",
+      "detail": "13/54 个偏小：正经推荐(168×39)、食堂罗盘(168×39)、减脂轻食(78×31)、预算 15 元(87×31)、不吃辣(65×31)、无肉不欢(78×31)、来碗面(65×31)、清淡养生(78×31)、建立口味档案(108×35)、拍张照问问我(128×35)"
+    },
+    {
+      "id": "flow.oracle",
+      "title": "食堂罗盘能出结果",
+      "status": "PASS",
+      "detail": "oracleResult 有内容=true"
+    },
+    {
+      "id": "health.console",
+      "title": "控制台错误",
+      "status": "WARN",
+      "detail": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "id": "health.pageerror",
+      "title": "未捕获异常",
+      "status": "PASS",
+      "detail": "无"
+    },
+    {
+      "id": "health.external",
+      "title": "外部请求拦截（断网模拟）",
+      "status": "INFO",
+      "detail": "1 条：https://chima-ai.chima-ai.workers.dev/oracle"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "pageErrors": [],
+  "blockedRequests": [
+    "https://chima-ai.chima-ai.workers.dev/oracle"
+  ]
+}

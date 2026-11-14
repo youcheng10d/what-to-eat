@@ -1,0 +1,14 @@
+{
+  "name": "chima-ui-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "吃嘛 · 交互与页面切换体检（Playwright，复用本机已缓存的 Chromium）",
+  "scripts": {
+    "audit": "node audit.mjs",
+    "audit:headed": "node audit.mjs --headed"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}
