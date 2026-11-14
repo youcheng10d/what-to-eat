@@ -361,6 +361,9 @@ body {
 .novelty-btn { width: 100%; }
 
 .card-stack { display: flex; flex-direction: column; gap: 14px; }
+/* 三卡依次落位，别三张同时弹出来 */
+.card-stack > .dish-card:nth-child(2) { animation-delay: 0.07s; }
+.card-stack > .dish-card:nth-child(3) { animation-delay: 0.14s; }
 /* 三卡：竖屏内横向滑动，一屏露出约 1.4 张，左右滑动看其余 */
 .card-stack.is-multi {
   flex-direction: row;
@@ -741,8 +744,13 @@ body.modal-open { overflow: hidden; }
     #fffdfa 90deg 135deg, #fdf0e2 135deg 180deg,
     #fffdfa 180deg 225deg, #fdf0e2 225deg 270deg,
     #fffdfa 270deg 315deg, #fdf0e2 315deg 360deg);
-  transition: transform 2.4s cubic-bezier(0.16, 0.84, 0.24, 1);
+  transition: transform 1.6s cubic-bezier(0.12, 0.72, 0.06, 1);
 }
+/* 落点反馈：外圈脉冲 + 命中的品类加深，停下来的瞬间要有“咬合感” */
+.wheel.is-landing {
+  box-shadow: 0 0 0 8px rgba(201, 42, 42, 0.13), 0 10px 30px rgba(43, 26, 16, 0.16), inset 0 0 0 1px var(--border);
+}
+.wheel-label.is-hit { color: var(--accent); font-weight: 700; }
 .wheel-label {
   position: absolute;
   left: 50%;
@@ -772,7 +780,9 @@ body.modal-open { overflow: hidden; }
   font-weight: 700;
   letter-spacing: 1px;
   box-shadow: 0 4px 14px rgba(232, 89, 12, 0.35);
+  transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+.wheel-wrap.is-landing .wheel-hub { transform: scale(1.09); }
 .wheel-pointer {
   position: absolute;
   left: 50%;
@@ -932,6 +942,8 @@ body.modal-open { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .wheel { transition-duration: 0.01ms; }
+  .wheel-hub { transition-duration: 0.01ms; }
+  .wheel.is-landing { box-shadow: 0 10px 30px rgba(43, 26, 16, 0.16), inset 0 0 0 1px var(--border); }
 }
 
 
@@ -983,3 +995,44 @@ body.modal-open { overflow: hidden; }
 .dish-actions .ghost-btn { min-height: 44px; }
 .foot-link { padding: 11px 6px; }
 .toast-act { min-height: 40px; padding: 0 14px; display: inline-flex; align-items: center; }
+
+/* 罗盘入场：与正经推荐同一套 rise 节奏，逐块浮现而不是整页硬切 */
+#oracleView.is-entering > * { animation: rise 0.5s ease-out both; }
+#oracleView.is-entering > *:nth-child(1) { animation-delay: 0.02s; }
+#oracleView.is-entering > *:nth-child(2) { animation-delay: 0.08s; }
+#oracleView.is-entering > *:nth-child(3) { animation-delay: 0.14s; }
+#oracleView.is-entering > *:nth-child(4) { animation-delay: 0.2s; }
+#oracleView.is-entering > *:nth-child(5) { animation-delay: 0.26s; }
+
+/* 「转」按钮：原来只有一层阴影，看着像禁用。补 hover / 按下 / 聚焦 / 转动中四态 */
+.oracle-input .decide.compact {
+  width: 76px;
+  border-radius: 16px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  box-shadow: 0 6px 18px rgba(232, 89, 12, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  transition: transform 0.16s, box-shadow 0.16s, filter 0.16s;
+}
+.oracle-input .decide.compact:hover:not(:disabled) {
+  filter: brightness(1.07);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(232, 89, 12, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.32);
+}
+.oracle-input .decide.compact:active:not(:disabled) {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(232, 89, 12, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.oracle-input .decide.compact:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.oracle-input .decide.compact.is-spinning { position: relative; color: transparent; }
+.oracle-input .decide.compact.is-spinning::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(255, 255, 255, 0.45);
+  border-top-color: #fff;
+  animation: spin 0.7s linear infinite;
+}

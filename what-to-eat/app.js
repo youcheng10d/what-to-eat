@@ -413,6 +413,24 @@
     }, 90);
   }
 
+  // 结果常常几十毫秒就回来，骨架一闪而过反而像闪屏：延迟 110ms 再出，出了就至少留 320ms
+  async function withSkeleton(mode, task) {
+    const startedAt = performance.now();
+    let shown = false;
+    const timer = setTimeout(() => { shown = true; renderLoading(mode); }, 110);
+    try {
+      const out = await task();
+      clearTimeout(timer);
+      if (shown) {
+        const left = 320 - (performance.now() - startedAt);
+        if (left > 0) await wait(left);
+      }
+      return out;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
   function cardHTML(card, idx, total) {
     const { dish: d, matched, reason, relaxed, relaxedNote } = card;
     const tastes = Array.isArray(d.taste) ? d.taste : [];
@@ -610,9 +628,8 @@
     els.novelty.disabled = true;
     els.decide.classList.add("loading");
     els.decideText.textContent = "正在翻找菜谱…";
-    renderLoading(mode);
     try {
-      const res = await window.API.recommend({
+      const res = await withSkeleton(mode, () => window.API.recommend({
         text: els.pref.value.trim(),
         profile: state.profile,
         feedback: state.feedback,
@@ -621,7 +638,7 @@
         flavorHistory: state.flavorHistory,
         mode,
         novelty,
-      });
+      }));
       renderResult(res.data);
     } catch (err) {
       renderError();
@@ -642,7 +659,6 @@
     els.novelty.disabled = true;
     els.decide.classList.add("loading");
     els.decideText.textContent = "两种都翻一下…";
-    renderLoading(1);
     const args = {
       text: els.pref.value.trim(),
       profile: state.profile,
@@ -653,10 +669,10 @@
       mode: 1,
     };
     try {
-      const [a, b] = await Promise.all([
+      const [a, b] = await withSkeleton(1, () => Promise.all([
         window.API.recommend({ ...args, override: { main: "veg" } }),
         window.API.recommend({ ...args, override: { main: "meat" } }),
-      ]);
+      ]));
       renderResult({ cards: [a.data.cards[0], b.data.cards[0]].filter(Boolean), conflicts: [] });
     } catch (err) {
       renderError();
@@ -759,7 +775,8 @@
       el.setAttribute("aria-live", "polite");
       document.body.appendChild(el);
       el.addEventListener("click", (ev) => {
-        if (!ev.target.closest(".toast-act") || !toastAction) return;
+        // 整条 toast 都能点撤销，不必精确戳中那个小按钮
+        if (!toastAction) return;
         const run = toastAction;
         toastAction = null;
         run();
@@ -874,8 +891,14 @@
       currentMode = mode;
       window.scrollTo({ top: modeScroll[mode] || 0 });
       if (mode === "oracle") {
+        // 转盘是罗盘的主角，进页面就该在，而不是等点了「转」才凭空出现
+        if (els.wheelStage) els.wheelStage.hidden = false;
         buildWheel();
-        setTimeout(() => els.oracleText && els.oracleText.focus(), 60);
+        // 和正经推荐同一套入场节奏：逐块上浮，而不是整页硬切过来
+        els.oracleView.classList.remove("is-entering");
+        void els.oracleView.offsetWidth;
+        els.oracleView.classList.add("is-entering");
+        setTimeout(() => els.oracleText && els.oracleText.focus({ preventScroll: true }), 220);
       }
     };
     // 硬切会让「入场有动效、切换零过渡」显得割裂；这里做 140ms 淡出淡入，并保留各自滚动位置
@@ -1172,6 +1195,22 @@
       </div>`;
   }
 
+  // 停下来的那一帧要“咬住”：外圈脉冲 + 命中品类加深，0.9s 后收回
+  function markWheelLanding(idx) {
+    if (!els.wheel) return;
+    els.wheel.querySelectorAll(".wheel-label.is-hit").forEach((l) => l.classList.remove("is-hit"));
+    const wrap = els.wheelStage ? els.wheelStage.querySelector(".wheel-wrap") : null;
+    const label = els.wheel.querySelector(`.wheel-label:nth-child(${idx + 1})`);
+    els.wheel.classList.add("is-landing");
+    if (wrap) wrap.classList.add("is-landing");
+    if (label) label.classList.add("is-hit");
+    setTimeout(() => {
+      els.wheel.classList.remove("is-landing");
+      if (wrap) wrap.classList.remove("is-landing");
+      if (label) label.classList.remove("is-hit");
+    }, 900);
+  }
+
   async function spin() {
     if (oracleBusy) return;
     const text = (els.oracleText.value || "").trim();
@@ -1182,11 +1221,13 @@
     }
     oracleBusy = true;
     els.oracleGo.disabled = true;
+    els.oracleGo.classList.add("is-spinning");
+    els.oracleGo.setAttribute("aria-busy", "true");
     els.wheelStage.hidden = false;
     els.oracleResult.innerHTML = "";
     buildWheel();
     // 首次点「转」时 wheelStage 刚从 display:none 变可见。如果同一帧就写目标角度，
-    // 浏览器会把 rotate(1080deg) 当成初始样式，CSS 的 2.4s 过渡不会触发 —— 表现就是“首次不转”。
+    // 浏览器会把 rotate(1080deg) 当成初始样式，CSS 的 1.6s 过渡不会触发 —— 表现就是“首次不转”。
     // 先把 0deg 落地并强制一次布局，给过渡一个明确的起始值。
     if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
     void els.wheel.offsetWidth;
@@ -1198,16 +1239,21 @@
     let idx = WHEEL_CATS.indexOf(dish.category);
     if (idx < 0) idx = r.seed % WHEEL_CATS.length;
     wheelSpins += 1;
-    const jitter = (r.seed % 23) - 11;
+    // 留一点角度差让它像手转的，但不超过 ±3°，指针要咬在品类中心
+    const jitter = (r.seed % 7) - 3;
     const deg = 360 * (3 + wheelSpins) - idx * 45 + jitter;
     els.wheel.style.transform = `rotate(${deg}deg)`;
 
-    await wait(reducedMotion ? 60 : 2450);
+    await wait(reducedMotion ? 60 : 1620);
+    markWheelLanding(idx);
+    await wait(reducedMotion ? 0 : 200);
     renderOracle(r, dish);
     const cardEl = els.oracleResult.querySelector(".oracle-card");
     if (cardEl && !reducedMotion) cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
     oracleBusy = false;
     els.oracleGo.disabled = false;
+    els.oracleGo.classList.remove("is-spinning");
+    els.oracleGo.removeAttribute("aria-busy");
   }
 
   els.oracleGo.addEventListener("click", spin);
