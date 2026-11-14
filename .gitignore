@@ -40,3 +40,8 @@ what-to-eat/data/raw/cqcst2-*.json
 
 # 问卷原始数据（仅本地分析，不进公开仓库）
 已收集学生偏好数据/
+
+# 第三方 skill 的安装产物（含 20MB Windows 二进制与本地 hook 配置），不属于项目内容
+.github/skills/
+.github/agents/
+.github/hooks/
