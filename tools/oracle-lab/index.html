@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>食堂罗盘 · 交互 A/B 实验</title>
+<link rel="stylesheet" href="lab.css" />
+</head>
+<body>
+<div class="lab">
+  <header class="lab-head">
+    <p class="kicker">交互 A/B 实验 · 不接线上</p>
+    <h1>食堂罗盘 · 两种交付</h1>
+    <p class="sub">同一句话、同一份菜品数据、同一套签文；只换“把决定交出去”的方式。</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="交互方案">
+    <button type="button" class="tab is-on" data-variant="qian" role="tab" aria-selected="true">A · 签筒翻签</button>
+    <button type="button" class="tab" data-variant="wheel" role="tab" aria-selected="false">B · 罗盘提速</button>
+  </nav>
+
+  <section class="panel">
+    <label for="ask" class="label">说一句离谱的</label>
+    <input id="ask" type="text" maxlength="60" placeholder="高数要挂了 / 月底只剩十块钱 / 帮我看看手相" />
+    <div class="quick">
+      <button type="button" class="chip" data-fill="高数要挂了，吃啥">高数要挂了</button>
+      <button type="button" class="chip" data-fill="帮我看看手相，今天该吃啥">看手相</button>
+      <button type="button" class="chip" data-fill="感冒了，喉咙痛">感冒了</button>
+      <button type="button" class="chip" data-fill="月底只剩十块钱">月底没钱</button>
+      <button type="button" class="chip" data-fill="今天想家">想家了</button>
+    </div>
+    <button id="go" type="button" class="go">摇一签</button>
+    <p class="hint" id="hint">同一句话，今天结果固定；换一天才会变。</p>
+  </section>
+
+  <!-- A：签筒 -->
+  <section id="stageQian" class="stage">
+    <div class="tube-wrap">
+      <div class="tube" id="tube" aria-hidden="true">
+        <div class="sticks" id="sticks"></div>
+        <div class="tube-mouth"></div>
+        <div class="tube-body"><span>吃</span><span>嘛</span></div>
+      </div>
+    </div>
+    <p class="stage-tip" id="tipQian">点“摇一签”，或摇一摇手机</p>
+  </section>
+
+  <!-- B：罗盘 -->
+  <section id="stageWheel" class="stage" hidden>
+    <div class="wheel-wrap">
+      <div class="pointer" aria-hidden="true"></div>
+      <div class="wheel" id="wheel">
+        <div class="wheel-labels" id="wheelLabels"></div>
+        <div class="wheel-hub">吃嘛</div>
+      </div>
+    </div>
+    <p class="stage-tip">指针停在哪个品类，就从哪个品类里落一道</p>
+  </section>
+
+  <!-- 翻签卡：A 专用，B 也复用为揭晓卡 -->
+  <div class="draw" id="draw" hidden>
+    <div class="draw-inner" id="drawInner">
+      <div class="face face-front">
+        <p class="sign-vertical" id="signText"></p>
+        <span class="sign-mark" id="signTopic">随缘</span>
+      </div>
+      <div class="face face-back">
+        <p class="back-kicker">落到这道</p>
+        <h2 id="backName"></h2>
+        <p id="backMeta"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 共用结果 -->
+  <section class="result" id="result" hidden aria-live="polite"></section>
+
+  <footer class="lab-foot">
+    数据读自 <code>what-to-eat/data/data.js</code>，签文复用 <code>ai.js</code> 的本地签池；此页只用于比对交互，不改动线上代码。
+  </footer>
+</div>
+
+<script src="../../what-to-eat/data/data.js"></script>
+<script src="../../what-to-eat/data/ingredients.js"></script>
+<script src="../../what-to-eat/ai.js"></script>
+<script src="core.js"></script>
+<script src="qian.js"></script>
+<script src="wheel.js"></script>
+<script src="lab.js"></script>
+</body>
+</html>
