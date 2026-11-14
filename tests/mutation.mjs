@@ -154,11 +154,15 @@ if (baseFails.length) {
 console.log("原始代码：断言集全过，可以开始变异\n");
 
 let killed = 0;
+let skipped = 0;
 for (const m of MUTANTS) {
   const froms = Array.isArray(m.from) ? m.from : [m.from];
   const tos = Array.isArray(m.to) ? m.to : [m.to];
   if (froms.some((f) => !apiSrc.includes(f))) {
-    console.log(`SKIP  ${m.name}（未找到目标代码，可能已改动）`);
+    // SKIP 不算存活：目标代码已重构（例如 api.js 引入 dishCal 后片段变了），
+    // 这次变异根本没注入进去，不能拿它当“测试没抓到”。
+    skipped++;
+    console.log(`SKIP  ${m.name}（目标代码已改动，本次未注入）`);
     continue;
   }
   let mutated = apiSrc;
@@ -177,6 +181,7 @@ for (const m of MUTANTS) {
   }
 }
 
-const rate = (killed / MUTANTS.length) * 100;
-console.log(`\n变异体 ${MUTANTS.length} 个，杀死 ${killed} 个，杀死率 ${rate.toFixed(0)}%`);
-if (killed < MUTANTS.length) process.exit(1);
+const applied = MUTANTS.length - skipped;
+const rate = applied ? (killed / applied) * 100 : 0;
+console.log(`\n变异体 ${MUTANTS.length} 个（注入 ${applied}，跳过 ${skipped}），杀死 ${killed} 个，杀死率 ${rate.toFixed(0)}%`);
+if (killed < applied) process.exit(1);
