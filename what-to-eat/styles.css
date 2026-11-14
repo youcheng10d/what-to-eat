@@ -1074,3 +1074,6 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.2px;
   color: var(--text-sub);
 }
+
+/* 结果区留出下限高度：空态与卡片高度差是 CLS 的主要来源，先兜掉一半跳动 */
+#result { min-height: 360px; }

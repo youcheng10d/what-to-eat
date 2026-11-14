@@ -1266,8 +1266,13 @@
       const start = currentRotation(els.wheel);
       wheelAnim = spinWheel(start, start + 1080, 3600, "linear");
     }
-    // 轮盘在首屏下方，点完「转」要把它带进视野，否则整段转动发生在屏幕外
-    if (els.wheelStage) els.wheelStage.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+    // 轮盘在首屏下方，点完「转」要把它带进视野；已经在视野里就别再滚，
+    // 否则会和落点后的 scrollIntoView 叠加成两段位移
+    if (els.wheelStage) {
+      const box = els.wheelStage.getBoundingClientRect();
+      const inView = box.top >= 0 && box.bottom <= window.innerHeight;
+      if (!inView) els.wheelStage.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+    }
 
     const statusTimer = setTimeout(() => {
       if (els.wheelStatus) els.wheelStatus.hidden = false;
@@ -1285,8 +1290,16 @@
     const base = -idx * 45 + jitter;
 
     if (reducedMotion) {
+      // 系统开了「减少动态效果」也不能瞬移：给一段 0.7s、单圈的落位，保留可感知的反馈
       els.wheel.style.transition = "none";
-      els.wheel.style.transform = `rotate(${base}deg)`;
+      const start = currentRotation(els.wheel);
+      let target = start + 360;
+      target += ((base - target) % 360 + 360) % 360;
+      wheelAnim = spinWheel(start, target, 700, "cubic-bezier(0.2, 0.8, 0.2, 1)");
+      await wheelAnim.finished;
+      els.wheel.style.transform = `rotate(${target}deg)`;
+      wheelAnim.cancel();
+      wheelAnim = null;
       renderOracle(r, dish);
     } else {
       // 从当前角度接力，至少再转一圈半，再减速停在品类中心
