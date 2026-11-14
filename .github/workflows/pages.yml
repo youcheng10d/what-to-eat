@@ -25,6 +25,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # data/raw 是采集原始包（约 80 MB），只用于离线重建数据，站点运行时不需要。
+      # 不剔除的话每次 Pages 上传都要多传几十兆，逼近站点 1 GB 上限。
+      - name: 剔除运行时用不到的大文件
+        run: |
+          rm -rf what-to-eat/data/raw
+          rm -rf what-to-eat/original/data/raw
+          find what-to-eat -name "*.mp4" -delete
       - uses: actions/upload-pages-artifact@v3
         with:
           path: what-to-eat
