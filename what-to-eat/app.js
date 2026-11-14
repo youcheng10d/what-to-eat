@@ -1234,10 +1234,10 @@
   let wheelAnim = null;
   // 用 WAAPI 而不是 CSS transition：中途改目标时，transition 会按矩阵分解走最短路径，
   // 可能倒转；关键帧里写死角度，转多少就是多少。
-  function spinWheel(fromDeg, toDeg, duration, easing) {
+  function spinWheel(fromDeg, toDeg, duration, easing, iterations = 1) {
     return els.wheel.animate(
       [{ transform: `rotate(${fromDeg}deg)` }, { transform: `rotate(${toDeg}deg)` }],
-      { duration, easing, fill: "forwards" }
+      { duration, easing, iterations, fill: "forwards" }
     );
   }
 
@@ -1260,12 +1260,16 @@
     if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
     void els.wheel.offsetWidth;
 
-    // AI 解签要几秒，这几秒不该是静止的：先匀速转起来，结果回来再减速落位
-    if (!reducedMotion) {
+    // 按下就转，不等 AI。之前把这段放在 reducedMotion 判断里，系统关了动画的机器会
+    // 静止等到解签回来才动，看起来像「点了没反应」；这里改成无条件起转，只是快慢不同。
+    // 用无限循环而不是固定 3.6s：AI 一旦比预设慢，轮盘会在中途二次静止。
+    {
       els.wheel.style.transition = "none";
       const start = currentRotation(els.wheel);
-      wheelAnim = spinWheel(start, start + 1080, 3600, "linear");
+      const idleMs = reducedMotion ? 5200 : 1800;
+      wheelAnim = spinWheel(start, start + 360, idleMs, "linear", Infinity);
     }
+    const spinStart = performance.now();
     // 轮盘在首屏下方，点完「转」要把它带进视野；已经在视野里就别再滚，
     // 否则会和落点后的 scrollIntoView 叠加成两段位移
     if (els.wheelStage) {
@@ -1279,6 +1283,8 @@
     }, 200);
     const r = await window.AI.oracle(text);
     clearTimeout(statusTimer);
+    // 模型秒回时轮盘还没转开，先补足 1.2s 再落，避免只抖一下就停
+    await wait(Math.max(0, 1200 - (performance.now() - spinStart)));
     if (els.wheelStatus) els.wheelStatus.hidden = true;
     const dish = oraclePool(r.constraints, r.seed);
     oracleLast = { r, dish };
@@ -1293,6 +1299,10 @@
       // 系统开了「减少动态效果」也不能瞬移：给一段 0.7s、单圈的落位，保留可感知的反馈
       els.wheel.style.transition = "none";
       const start = currentRotation(els.wheel);
+      els.wheel.style.transform = `rotate(${start}deg)`;
+      // 起转用的是无限循环动画，落位前必须先取消，否则它会一直转到后台
+      if (wheelAnim) { wheelAnim.cancel(); wheelAnim = null; }
+      void els.wheel.offsetWidth;
       let target = start + 360;
       target += ((base - target) % 360 + 360) % 360;
       wheelAnim = spinWheel(start, target, 700, "cubic-bezier(0.2, 0.8, 0.2, 1)");
@@ -1309,7 +1319,7 @@
       void els.wheel.offsetWidth;
       let target = cur + 540;
       target += ((base - target) % 360 + 360) % 360;
-      wheelAnim = spinWheel(cur, target, 2000, "cubic-bezier(0.16, 0.84, 0.24, 1)");
+      wheelAnim = spinWheel(cur, target, 2200, "cubic-bezier(0.16, 0.84, 0.24, 1)");
       await wheelAnim.finished;
       els.wheel.style.transform = `rotate(${target}deg)`;
       wheelAnim.cancel();
