@@ -10,7 +10,7 @@
   const CFG_KEY = "wte.aiCfg";
   const CACHE_VERSION = 1;
   const NUTRI_LIMIT = 400;
-  const TIMEOUT = 9000;
+  const TIMEOUT = 2500;
 
   // 食材名 → 筛选关键词。表里没有的标签一律不进推荐条件，避免模型自由发挥。
   const MAPPING = {
@@ -369,6 +369,8 @@
     const key = "o:" + hash(text + "|" + today());
     const hit = cacheGet("oracle", key);
     if (hit) return Object.assign({}, hit, { source: hit.source + "-cache" });
+    // 离线时不撞超时，直接把本地签文端上来
+    if (typeof navigator !== "undefined" && navigator.onLine === false) return localOracle(text);
     if (enabled()) {
       try {
         const res = await call("/oracle", { text });

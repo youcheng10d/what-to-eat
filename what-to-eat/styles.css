@@ -731,7 +731,7 @@ body.modal-open { overflow: hidden; }
   position: relative;
   width: 240px;
   height: 240px;
-  margin: 6px auto 0;
+  margin: 6px auto 26px;
 }
 .wheel {
   position: absolute;
@@ -748,7 +748,7 @@ body.modal-open { overflow: hidden; }
 }
 /* 落点反馈：外圈脉冲 + 命中的品类加深，停下来的瞬间要有“咬合感” */
 .wheel.is-landing {
-  box-shadow: 0 0 0 8px rgba(201, 42, 42, 0.13), 0 10px 30px rgba(43, 26, 16, 0.16), inset 0 0 0 1px var(--border);
+  box-shadow: 0 0 0 6px rgba(201, 42, 42, 0.11), 0 10px 30px rgba(43, 26, 16, 0.16), inset 0 0 0 1px var(--border);
 }
 .wheel-label.is-hit { color: var(--accent); font-weight: 700; }
 .wheel-label {
@@ -782,8 +782,8 @@ body.modal-open { overflow: hidden; }
   box-shadow: 0 4px 14px rgba(232, 89, 12, 0.35);
   transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.wheel-wrap.is-landing .wheel-hub { transform: scale(1.09); }
-/* AI 解签要 2–3 秒，轮盘还没开始转的这段时间得让人知道在等什么 */
+.wheel-wrap.is-landing .wheel-hub { transform: scale(1.05); }
+/* AI 解签这几秒轮盘在匀速空转，这句话负责说明“它在等什么” */
 .wheel-status {
   position: absolute;
   left: 0;

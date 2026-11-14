@@ -1222,6 +1222,25 @@
     }, 900);
   }
 
+  // 读当前实际角度（度）。转场中途也能读到插值后的值，用来接力，不会跳。
+  function currentRotation(el) {
+    const m = getComputedStyle(el).transform;
+    if (!m || m === "none") return 0;
+    const p = m.replace(/^matrix\(|\)$/g, "").split(",").map(Number);
+    if (p.length < 2) return 0;
+    return (Math.atan2(p[1], p[0]) * 180) / Math.PI;
+  }
+
+  let wheelAnim = null;
+  // 用 WAAPI 而不是 CSS transition：中途改目标时，transition 会按矩阵分解走最短路径，
+  // 可能倒转；关键帧里写死角度，转多少就是多少。
+  function spinWheel(fromDeg, toDeg, duration, easing) {
+    return els.wheel.animate(
+      [{ transform: `rotate(${fromDeg}deg)` }, { transform: `rotate(${toDeg}deg)` }],
+      { duration, easing, fill: "forwards" }
+    );
+  }
+
   async function spin() {
     if (oracleBusy) return;
     const text = (els.oracleText.value || "").trim();
@@ -1237,11 +1256,18 @@
     els.wheelStage.hidden = false;
     els.oracleResult.innerHTML = "";
     buildWheel();
-    // 首次点「转」时 wheelStage 刚从 display:none 变可见。如果同一帧就写目标角度，
-    // 浏览器会把 rotate(1080deg) 当成初始样式，CSS 的 1.6s 过渡不会触发 —— 表现就是“首次不转”。
-    // 先把 0deg 落地并强制一次布局，给过渡一个明确的起始值。
+    // 首次点「转」时 wheelStage 刚变可见：先落一次 0deg 并强制布局，给过渡一个明确起点
     if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
     void els.wheel.offsetWidth;
+
+    // AI 解签要几秒，这几秒不该是静止的：先匀速转起来，结果回来再减速落位
+    if (!reducedMotion) {
+      els.wheel.style.transition = "none";
+      const start = currentRotation(els.wheel);
+      wheelAnim = spinWheel(start, start + 1080, 3600, "linear");
+    }
+    // 轮盘在首屏下方，点完「转」要把它带进视野，否则整段转动发生在屏幕外
+    if (els.wheelStage) els.wheelStage.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
 
     const statusTimer = setTimeout(() => {
       if (els.wheelStatus) els.wheelStatus.hidden = false;
@@ -1254,18 +1280,33 @@
 
     let idx = WHEEL_CATS.indexOf(dish.category);
     if (idx < 0) idx = r.seed % WHEEL_CATS.length;
-    wheelSpins += 1;
     // 留一点角度差让它像手转的，但不超过 ±3°，指针要咬在品类中心
     const jitter = (r.seed % 7) - 3;
-    const deg = 360 * (3 + wheelSpins) - idx * 45 + jitter;
-    els.wheel.style.transform = `rotate(${deg}deg)`;
+    const base = -idx * 45 + jitter;
 
-    await wait(reducedMotion ? 60 : 1620);
-    markWheelLanding(idx);
-    await wait(reducedMotion ? 0 : 200);
-    renderOracle(r, dish);
+    if (reducedMotion) {
+      els.wheel.style.transition = "none";
+      els.wheel.style.transform = `rotate(${base}deg)`;
+      renderOracle(r, dish);
+    } else {
+      // 从当前角度接力，至少再转一圈半，再减速停在品类中心
+      const cur = currentRotation(els.wheel);
+      els.wheel.style.transform = `rotate(${cur}deg)`;
+      if (wheelAnim) { wheelAnim.cancel(); wheelAnim = null; }
+      void els.wheel.offsetWidth;
+      let target = cur + 540;
+      target += ((base - target) % 360 + 360) % 360;
+      wheelAnim = spinWheel(cur, target, 2000, "cubic-bezier(0.16, 0.84, 0.24, 1)");
+      await wheelAnim.finished;
+      els.wheel.style.transform = `rotate(${target}deg)`;
+      wheelAnim.cancel();
+      wheelAnim = null;
+      markWheelLanding(idx);
+      await wait(200);
+      renderOracle(r, dish);
+    }
     const cardEl = els.oracleResult.querySelector(".oracle-card");
-    if (cardEl && !reducedMotion) cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (cardEl && !reducedMotion) cardEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
     oracleBusy = false;
     els.oracleGo.disabled = false;
     els.oracleGo.classList.remove("is-spinning");

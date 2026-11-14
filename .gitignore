@@ -45,3 +45,6 @@ what-to-eat/data/raw/cqcst2-*.json
 .github/skills/
 .github/agents/
 .github/hooks/
+
+# 罗盘实验台的验收截图
+tools/oracle-lab/shots/
