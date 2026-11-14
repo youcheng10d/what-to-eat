@@ -422,7 +422,9 @@ async function main() {
     await page.waitForTimeout(500);
     await page.locator("#oracleText").fill("高数要挂了");
     await page.locator("#oracleGo").click();
-    await page.waitForTimeout(2800);
+    // 轮盘先起转再落位，总时长随 AI 响应变化（最坏约 4.7s），等卡片而不是等固定时长
+    await page.waitForSelector("#oracleResult .oracle-card", { timeout: 9000 }).catch(() => {});
+    await page.waitForTimeout(300);
     await page.screenshot({ path: path.join(SHOTS, "02-oracle.png") });
     const oracleHas = await page.evaluate(() => !!document.querySelector("#oracleResult .oracle-card, #oracleResult .dish-card, #oracleResult *"));
     add("flow.oracle", "食堂罗盘能出结果", oracleHas ? "PASS" : "FAIL", `oracleResult 有内容=${oracleHas}`);
