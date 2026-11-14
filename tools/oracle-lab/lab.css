@@ -273,6 +273,8 @@ body {
   box-shadow: var(--sh-md), inset 0 0 0 2px rgba(194, 65, 12, 0.18);
   transition: transform 1.6s cubic-bezier(0.12, 0.72, 0.06, 1);
 }
+.wheel.is-hit { box-shadow: 0 0 0 7px rgba(201, 42, 42, 0.16), var(--sh-md), inset 0 0 0 2px rgba(194, 65, 12, 0.18); }
+.wheel-label.is-hit { color: var(--accent); font-weight: 800; }
 .wheel-labels { position: absolute; inset: 0; }
 .wheel-label {
   position: absolute;
