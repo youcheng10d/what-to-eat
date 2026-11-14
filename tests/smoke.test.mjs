@@ -20,7 +20,8 @@ const check = (name, cond) => {
 // 1) 数据加载
 check("数据加载成功", !!DB && Array.isArray(DB.dishes));
 // v2.3 清洗掉约 330 条“加菜/小料/元区/必选”条目，并把自选档口折叠成虚拟菜
-check("菜品总数 ≥ 2500", DB.dishes.length >= 2500);
+// v2.4.0 收敛掉 200 条被两个来源重复录入的菜，基数从 2582 降到 2382
+check("菜品总数 ≥ 2300", DB.dishes.length >= 2300);
 const stalls = new Set(DB.dishes.map((d) => d.stall));
 check("档口总数 ≥ 59", stalls.size >= 59);
 

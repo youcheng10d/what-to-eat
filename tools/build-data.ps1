@@ -19,7 +19,8 @@ $menus = Get-Content (Join-Path $PSScriptRoot $SchoolMenus) -Raw -Encoding UTF8 
 # ---------- 1) 筛选可食用分组（排除便利店非食品等） ----------
 $NON_FOOD = @("饮用水","苏打水","茶饮","碳酸饮料","康师傅饮料","统一饮料","功能饮料","啤酒","家居日用","口香糖","香烟")
 $drinkKeywords = @("水","茶","可乐","雪碧","康师傅","统一","脉动","红牛","啤酒","口香糖","雪糕")
-$junkEmojis = "🔥|⭐|✨|👍|🎉|👏"
+# 菜名里的装饰符号与 emoji：只清开头会漏掉“《老板力推😋》人气套餐”“❤️小炒肉”“新品🥩干锅培根🥓”
+$junkEmojis = "[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u2190-\u21FF\u2300-\u23FF]|[\uD83C-\uDBFF][\uDC00-\uDFFF]"
 
 # ---------- 2) 类别映射：菜名关键词优先，分组名兜底 ----------
 $catMap = @{
@@ -267,6 +268,8 @@ foreach ($mKey in $menus.PSObject.Properties.Name) {
       canteen   = $canteen
       img       = $f.food_img_url
       rawGroup  = $group
+      # 数据来源：api = 小程序接口采集，manual = 线下拍照录入，mecca = 会长数据补充
+      src       = "api"
     }
     $id++
   }
@@ -306,6 +309,7 @@ foreach ($stallName in $stallStats.Keys) {
     canteen   = $st.canteen
     img       = ""
     rawGroup  = "自选称重"
+    src       = "api"
   }
   $id++
   $mergedStalls += "$stallName（$($st.addon) 条原料 → 1 条自选）"
@@ -327,7 +331,10 @@ if (Test-Path $manualPath) {
   $manual = Get-Content $manualPath -Raw -Encoding UTF8 | ConvertFrom-Json
   $byKey = @{}
   foreach ($d in $dishes) { $byKey["$($d.stall)|$($d.name)"] = $d }
-  foreach ($md in $manual) { $byKey["$($md.stall)|$($md.name)"] = $md }
+  foreach ($md in $manual) {
+    $md | Add-Member -NotePropertyName src -NotePropertyValue "manual" -Force
+    $byKey["$($md.stall)|$($md.name)"] = $md
+  }
   $dishes = @($byKey.Values)
   $id = 10000
   foreach ($d in $dishes) { $d.id = $id; $id++ }
@@ -343,7 +350,10 @@ if (Test-Path $meccaPath) {
   $added = 0
   foreach ($md in $mecca) {
     $key = "$($md.stall)|$($md.name)"
-    if (-not $byKey.ContainsKey($key)) { $byKey[$key] = $md; $added++ }
+    if (-not $byKey.ContainsKey($key)) {
+      $md | Add-Member -NotePropertyName src -NotePropertyValue "mecca" -Force
+      $byKey[$key] = $md; $added++
+    }
   }
   $dishes = @($byKey.Values)
   $id = 10000
@@ -368,6 +378,23 @@ foreach ($d in $dishes) {
 Write-Host "档口名校正：命中 $renameHits 道" -ForegroundColor Cyan
 
 # ---------- 6.95) 终检：补充数据里的加菜兜底过滤 + 口味补全（v2.3） ----------
+# 线下录入与会长补充是两份独立 JSON，不走前面的菜名清洗，先统一去一次 emoji 与首尾空白
+# 营销标签和主观评价不是菜名的一部分：“《老板力推》人气套餐”“【新品】干锅…”“招牌汉堡套餐三”
+$marketingWord = '老板力推|优惠多多|超级吃货|吃的过瘾|CP组合|新品|招牌|特惠|超值|严选|必点|爆款|镇店之宝|好吃'
+$bracketRe     = '[《【〖（(]([^》】〗）)]*)[》】〗）)]'
+$stripAnywhere = '招牌|特色|新品|特惠|超值|严选|老板力推|优惠多多|超级吃货|吃的过瘾|好吃'
+foreach ($d in $dishes) {
+  $n = [string]$d.name
+  $n = [regex]::Replace($n, $junkEmojis, "")
+  # 括号内是营销/主观评价就整块去掉；《辣》《8个》《笼》这类信息性括号保留
+  $n = [regex]::Replace($n, $bracketRe, { param($m) if ($m.Groups[1].Value -match $marketingWord) { '' } else { $m.Value } })
+  $n = $n -replace $stripAnywhere, ''
+  $n = $n -replace '[‼！!]+', ''
+  # 名称末尾的落单括号：“豌杂汤面/河粉/刀削（” 这种是原始数据截断，去掉
+  $n = ($n -replace '[（(【\[《]+$', '').Trim()
+  $n = ($n -replace '\s{2,}', ' ').Trim()
+  if ($n) { $d.name = $n }
+}
 # 线下录入与会长补充是两份独立 JSON，不走前面的分组过滤，必须在合并后再扫一遍。
 $bareIngredient = '^(番茄|西红柿|土豆|藕片|莲藕|金针菇|香菇|平菇|木耳|豆干|豆皮|腐竹|宽粉|粉丝|苕皮|年糕|生菜|白菜|娃娃菜|油麦菜|豆芽|海带|海带丝|洋葱|青椒|蒜苔|芹菜|花菜|西兰花|山药|玉米|南瓜|冬瓜|黄瓜|茄子|竹笋|莴笋|鸡蛋|煎蛋|卤蛋|卤鸡蛋|茶叶蛋|鹌鹑蛋|火腿肠|午餐肉|蟹排|鱼豆腐|虾饺|牛肉丸|鱼丸|甜不辣|油条|麻花|锁骨|鸡翅尖|鸭翅|鸭血|包菜|土豆片|土豆粉|千叶豆腐|方便面|里脊肉|肥牛|酥肉|鱿鱼)$'
 $beforeHygiene = $dishes.Count
@@ -380,6 +407,18 @@ $dishes = @($dishes | Where-Object {
   if (($n -match "\d+\s*(片|串|根|只|个)$") -and ($_.price -le 5)) { return $false }
   # 纯原料名 + 低价 = 加菜/浇头（“番茄 ¥8”“煎蛋 ¥2”），不是一顿饭
   if (($n -match $bareIngredient) -and ($_.price -le 8)) { return $false }
+  # 加料/加菜：名字整个就是“加牛肉”“加粉”“加羊杂”，不是一道菜（“加州鸡排”“加拿大”不算）
+  if ($n -match '^加(?!州|拿大|勒比)[\u4e00-\u9fa5]{1,3}$') { return $false }
+  # 试吃装/福利价不是正常售卖的一份（“鸡翅尖试吃 ¥0.6”“福利翅根 ¥1.2”）
+  if ($n -match '试吃|福利|1人1单') { return $false }
+  # 包装/蘸料/分装说明不是菜（“汤和抄手分开装 ¥1”“油碟 包含小米辣 ¥2.5”）
+  if ($n -match '分开装|油碟|餐盒|打包盒|（单买）|\(单买\)|（单点）|\(单点\)') { return $false }
+  # 单品小食：低于 5 元的粥/包子/馒头/蛋/饼/寿司/土豆泥不是一顿饭；称重价（麻辣烫/冒菜/自选）例外
+  $singleSuffix = '(粥|蛋|包|馒头|花卷|糕|饼|卷|串|丸|肠|饺|酥|条|块|片|麦|卖|司|泥|棒|腿|烧)$'
+  $snackWord    = '(糯米鸡|热狗|鱼籽烧|卤豆干|卤豆皮|卤豆腐|狮子头|虾皮鸡柳|琅琊土豆|鸭翅|鸡翅尖|翅根|里脊串)$'
+  $weighName    = '麻辣烫|麻辣拌|冒菜|香锅|自选|称重|按重|自助'
+  if (($_.price -lt 5) -and ($n -match $weighName)) { return $true }
+  if (($_.price -lt 5) -and (($n -match $singleSuffix) -or ($n -match $snackWord))) { return $false }
   return $true
 })
 Write-Host "终检过滤加菜条目：$($beforeHygiene - $dishes.Count) 道" -ForegroundColor Cyan
@@ -397,8 +436,60 @@ foreach ($d in $dishes) {
   }
 }
 Write-Host "口味补全：$flavorFilled 道" -ForegroundColor Cyan
-$id = 10000
-foreach ($d in $dishes) { $d.id = $id; $id++ }
+
+# ---------- 6.99) 来源标记兜底：没有 src 的一律算接口采集 ----------
+foreach ($d in $dishes) {
+  if (-not ($d.PSObject.Properties.Name -contains "src")) {
+    $d | Add-Member -NotePropertyName src -NotePropertyValue "api" -Force
+  }
+}
+$srcStat = $dishes | Group-Object src | ForEach-Object { "$($_.Name) $($_.Count)" }
+Write-Host ("来源分布：" + ($srcStat -join " ｜ ")) -ForegroundColor Cyan
+
+# ---------- 6.97) 重复收敛：同名同档口同价只保留信息最全的一条 ----------
+# 库里有近 200 组菜被两个来源各录了一次（api 带图 / 线下补录），
+# 它们在上游哈希表里谁被留下取决于枚举顺序，导致同一份输入两次构建结果不同
+# （实测 195 条菜的描述与 id 来回抖动）。这里用固定优先级收敛，结果与顺序无关。
+$pool = @{}
+foreach ($d in $dishes) {
+  $k = "$($d.stall)|$($d.name)"
+  if (-not $pool.ContainsKey($k)) { $pool[$k] = $d; continue }
+  $old = $pool[$k]
+  $ns = 0; $os = 0
+  if ("$($d.img)" -ne "") { $ns += 100 }
+  if ("$($old.img)" -ne "") { $os += 100 }
+  if ("$($d.src)" -eq "api") { $ns += 10 }
+  if ("$($old.src)" -eq "api") { $os += 10 }
+  $ns += [math]::Min(9, [int](("$($d.desc)").Length / 10))
+  $os += [math]::Min(9, [int](("$($old.desc)").Length / 10))
+  if ($ns -gt $os) { $pick = $d }
+  elseif ($ns -lt $os) { $pick = $old }
+  elseif ([string]::CompareOrdinal("$($d.desc)", "$($old.desc)") -le 0) { $pick = $d }
+  else { $pick = $old }
+  # 标签取并集：不能因为收敛把「人气」这类属性弄丢
+  $tags = @(@($old.tags) + @($d.tags) | Where-Object { $_ } | Sort-Object -Unique)
+  if ($tags.Count) { $pick | Add-Member -NotePropertyName tags -NotePropertyValue $tags -Force }
+  $pool[$k] = $pick
+}
+$dishes = @($pool.Values | Sort-Object { "$($_.stall)|$($_.name)" })
+Write-Host "重复收敛：$($dishes.Count) 道（$($pool.Count) 组）" -ForegroundColor Cyan
+
+# ---------- 6.98) 稳定 id：内容哈希，重建数据时不再整体漂移 ----------
+# 旧实现从 10000 顺序发号，任何一次增删都会让后面所有菜的 id 平移，
+# 用户 localStorage 里的收藏与“今天吃过”就指到别的菜上（实测重建后 200 条漂移）。
+# 6.97 已经把「档口+菜名」收敛为唯一，这里直接哈希该键，零碰撞、零漂移；
+# 价格不参与，调价不会让用户的收藏失效。
+$used = @{}
+foreach ($d in $dishes) {
+  $key = "$($d.stall)|$($d.name)"
+  $md5 = [System.Security.Cryptography.MD5]::Create()
+  $hash = $md5.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($key))
+  $newId = [int]([BitConverter]::ToUInt32($hash, 0) % 900000000) + 100000000
+  while ($used.ContainsKey($newId)) { $newId++ }
+  $used[$newId] = $true
+  $d.id = $newId
+}
+Write-Host "稳定 id：$($used.Count) 条（复合键哈希，重复 id 0）" -ForegroundColor Cyan
 
 # ---------- 6.10) 档口级元数据：人气菜占比（v2.0 推荐加成 = 2 × hotRate） ----------
 $stallMeta = @{}
@@ -415,6 +506,27 @@ foreach ($g in ($dishes | Group-Object stall)) {
     floor     = $floor
   }
 }
+
+# ---------- 6.95) 称重计价：把「元/50克」的单价换算成每份估价（v2.4.1） ----------
+# 问题：OCR 把牌面上的「1.98 元/50 克」当成了菜品售价，卡片上显示 ¥1.98，
+# 既误导用户，也会让预算过滤把麻辣烫当成一块九的菜放进 5 元预算里。
+# 处理：保留原始单价 unitPrice 供展示，price 改为按 400g 估算的每份价，供预算过滤使用。
+$weightFixed = 0
+foreach ($d in $dishes) {
+  $text = "$($d.name) $($d.desc)"
+  if ($text -notmatch '(\d+(?:\.\d+)?)\s*元?\s*/\s*50\s*克') { continue }
+  $unit = [double]$Matches[1]
+  if ($unit -le 0) { continue }
+  $est = [math]::Round($unit * 8, 1)
+  $d | Add-Member -NotePropertyName pricing   -NotePropertyValue "weight" -Force
+  $d | Add-Member -NotePropertyName unitPrice -NotePropertyValue $unit -Force
+  $d | Add-Member -NotePropertyName unit      -NotePropertyValue "50g" -Force
+  $d | Add-Member -NotePropertyName estPrice  -NotePropertyValue $est -Force
+  $d.price = $est
+  if (@($d.tags) -notcontains "称重") { $d.tags = @($d.tags) + "称重" }
+  $weightFixed++
+}
+Write-Host "称重计价换算：$weightFixed 道" -ForegroundColor Cyan
 
 # ---------- 7) 输出 JS ----------
 $jsBody = $dishes | ConvertTo-Json -Depth 10
