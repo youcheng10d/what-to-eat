@@ -1,0 +1,650 @@
+// api.js — 推荐服务层（v2.0 mock 实现，接口形状即未来真实后端）
+// API.recommend({ text, profile, feedback, excludeIds, recentStalls, mode, novelty })
+//   → { code: 0, data: { cards: [{ dish, matched, reason, relaxed, relaxedNote }], windowRelaxed, notes } }
+// TODO: 接入真实后端时，把内部实现替换为 fetch('/api/recommend')，入参与返回结构保持不变。
+(function () {
+  const delay = (ms) => (window.__WTE_FAST__ ? Promise.resolve() : new Promise((r) => setTimeout(r, ms)));
+  const rand = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+  const FLAVORS = ["辣", "麻", "酸甜", "咸鲜", "清淡", "甜"];
+  const BUDGET_MAX = { "10": 10, "10-15": 15, "15-20": 20 };
+  const WINDOW = 10;          // 滑窗长度：最近 10 张卡
+  const MODE_LIMIT = { 1: 1, 3: 3 }; // 单卡同档口 ≤1；3 卡同档口 ≤3
+
+  // 数据兼容：flavors 可能是数组、单字符串或以 | 分隔的字符串
+  function dishFlavors(d) {
+    const raw = d.flavors;
+    if (!raw) return [];
+    if (Array.isArray(raw)) return raw.filter((x) => typeof x === "string" && x);
+    if (typeof raw === "string") return raw.split("|").filter(Boolean);
+    return [];
+  }
+  function dishTaste(d) {
+    return Array.isArray(d.taste) ? d.taste : d.taste ? [d.taste] : [];
+  }
+
+  // 意图词库：正向与否定都收齐，“不喜欢肉”“吃不了辣”这类口语不再漏识别
+  const VEG_RE = /吃素|素食|不吃肉|不想吃肉|素一点|不喜欢肉|不爱吃肉|不吃荤|吃不了肉|不想碰肉/;
+  const MEAT_RE = /想吃肉|无肉不欢|荤一点|大口吃肉|想吃点肉|来点肉/;
+  const NO_SPICY_RE = /不想吃辣|不吃辣|忌辣|不能吃辣|别太辣|不要辣|免辣|怕辣|不喜欢辣|不爱吃辣|吃不了辣|受不了辣/;
+  const SPICY_RE = /想吃辣|无辣不欢|能吃辣|爱吃辣|辣一点|重口/;
+  const NEG_GROUP = "不想|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了|不能";
+
+  function lastIndexOfRe(s, re) {
+    let m, idx = -1;
+    const g = new RegExp(re.source, "g");
+    while ((m = g.exec(s))) idx = m.index;
+    return idx;
+  }
+
+  // 自相矛盾的输入不静默丢弃：后写的那句优先（人边想边改，后写通常是新主意），并把裁决讲出来。
+  // 正向意图必须在掩码句上检测，否则“不能吃辣”里的子串“能吃辣”会被误判成想吃辣。
+  function resolveConflict(posSrc, negSrc, posRe, negRe, posName, negName, type) {
+    const pos = lastIndexOfRe(posSrc, posRe);
+    const neg = lastIndexOfRe(negSrc, negRe);
+    if (pos < 0 || neg < 0) return null;
+    return {
+      type,
+      keepPos: pos > neg,
+      note: `你先说了“${negName}”，后面又说“${posName}”，这次按后一句算。`,
+    };
+  }
+
+  // —— 1) 偏好解析：把自然语言拆成结构化条件 ——
+  function parsePreferences(text) {
+    // 叠词先归一：肉肉 → 肉，方便意图词表命中
+    const s = (text || "").replace(/(肉|菜|辣|甜|面|汤|粥)\1/g, "$1").toLowerCase();
+    const p = {
+      maxPrice: null, maxCal: null,
+      noSpicy: false, wantSpicy: false, wantVeg: false, wantMeat: false, lightIntent: false,
+      preferCat: [], preferTaste: [], preferTag: [], avoid: [], avoidCats: [], avoidFlavors: [],
+      keyword: "",
+      conflicts: [],
+    };
+    // 预算分两档：说了“便宜/省钱”按 10 元档；写了“10-15 元”取上限，避免只取到 10 变成过严
+    const range = s.match(/(\d+(?:\.\d+)?)\s*[-~到至]\s*(\d+(?:\.\d+)?)\s*(?:元|块|rmb|￥|¥)/);
+    const budget = s.match(/(\d+(?:\.\d+)?)\s*(?:元|块|rmb|￥|¥)/);
+    if (range) p.maxPrice = parseFloat(range[2]);
+    else if (budget) p.maxPrice = parseFloat(budget[1]);
+    if (/便宜|省钱|预算.{0,4}(紧|少)|生活费不多/.test(s)) p.maxPrice = Math.min(p.maxPrice ?? 10, 10);
+    // 减脂/轻食意图：不是“热量低就是轻食”（那样只会推出包子粥），而是优先轻食档口与轻食菜
+    if (/减肥|减脂|瘦身|轻食|低卡|低脂|沙拉|卡路里|热量|控卡|轻负担|健身餐/.test(s)) {
+      p.lightIntent = true;
+      p.maxCal = 700;
+    }
+    // 否定片段等长掩码：索引与原句对齐，“不能吃辣”掩掉后不再误中“能吃辣”
+    const masked = s.replace(new RegExp(`[^，,。、\\s！？]*(?:${NEG_GROUP})[^，,。、\\s！？]*`, "g"), (m) => " ".repeat(m.length));
+
+    const mainConflict = resolveConflict(masked, s, MEAT_RE, VEG_RE, "想吃肉", "不吃肉", "荤素");
+    if (mainConflict) {
+      p.wantMeat = mainConflict.keepPos;
+      p.wantVeg = !mainConflict.keepPos;
+      p.conflicts.push(mainConflict);
+    } else {
+      p.wantVeg = VEG_RE.test(s);
+      p.wantMeat = MEAT_RE.test(masked);
+    }
+    const spicyConflict = resolveConflict(masked, s, SPICY_RE, NO_SPICY_RE, "想吃辣", "不吃辣", "辣度");
+    if (spicyConflict) {
+      p.wantSpicy = spicyConflict.keepPos;
+      p.noSpicy = !spicyConflict.keepPos;
+      p.conflicts.push(spicyConflict);
+    } else {
+      p.noSpicy = NO_SPICY_RE.test(s);
+      p.wantSpicy = !p.noSpicy && SPICY_RE.test(masked);
+    }
+    // v2.1 修复：面食意图在“掩掉否定片段”的句子 上检测。原实现在原句检测，
+    // “不吃面”里的“面”会被当成“想吃面”，推荐出三张面食。
+    if (/面|饺子|米线|米粉|抄手|馄饨|拉面|刀削/.test(masked)) p.preferCat.push("面食");
+    // v2.2 通用否定宾语提取：“不吃X / 不要X / 别放X”→ X 进入忌口清单硬排除。
+    // 面类词（面/粉/米线…）→ 整个面类制品排除（含跨品类名字兜底，见 hardFilter）；
+    // 具体对象（水饺/馄饨/香菜/肥肉…）→ 关键词级排除，符合“今天只想吃别的东西”的语义。
+    {
+      const NEG_WORD = /^(?:什么|啥|东西|这个|那个|它|太|非常|很|超级|特别|有点)+$/;
+      const NOODLE_WORDS = /^(?:面|面食|面条|粉|米线|米粉|河粉|粉丝|挂面|意面|拉面|刀削|刀削面|螺蛳粉|酸辣粉|炒面|拌面)$/;
+      const NEG_RE = new RegExp(`(?:${NEG_GROUP})([^，,。、\\s！？]*)`, "g");
+      let m;
+      while ((m = NEG_RE.exec(s))) {
+        let w = (m[1] || "")
+          .replace(/^(?:吃|喝|点|放|来|整|搞|太|非常|很|超级|特别|有点)+/, "")
+          .replace(/[的了呢吧啊]$/g, "");
+        if (!w || NEG_WORD.test(w)) continue;
+        if (NOODLE_WORDS.test(w)) {
+          if (!p.avoidCats.includes("面食")) p.avoidCats.push("面食");
+          continue;
+        }
+        // “不吃饺子 / 不吃水饺”都要覆盖两种写法：数据里两个词互不包含（“全场饺子9.9”就漏过水饺规则）
+        if (w === "饺子" || w === "水饺") { p.avoid.push("饺子", "水饺"); continue; }
+        // 肉/荤/辣 由荤素与辣度意图机制负责（支持“后写优先”冲突裁决）
+        if (w === "辣") { if (!p.wantSpicy) p.noSpicy = true; }
+        // 口味词单独走 avoidFlavors：它比菜名关键词宽（同名的菜不一定同口味），
+        // 且要参与“违例口味数最少”的分级放宽，而不是跟普通忌口一起整体丢弃。
+        if (FLAVORS.includes(w)) {
+          if (!p.avoidFlavors.includes(w)) p.avoidFlavors.push(w);
+          continue;
+        }
+        if (/^(?:肉|荤|肉类)$/.test(w)) continue;
+        if (w.length <= 8 && !p.avoid.includes(w)) p.avoid.push(w);
+      }
+    }
+    if (/米饭|盖饭|盖浇饭|拌饭/.test(s)) p.preferCat.push("盖浇饭");
+    if (/麻辣烫|冒菜|香锅/.test(s)) p.preferCat.push("麻辣系列");
+    if (/炒菜|小炒|家常菜|下饭/.test(s)) p.preferCat.push("家常小炒");
+
+    if (/汤|粥|暖胃/.test(s)) p.preferCat.push("汤粥");
+    // 正向口味/品类只认「没被否定」的片段：否则“不想吃清淡”会被读成想吃清淡，
+    // 顺手设上 maxCal=600；“不想吃甜”还会把甜品饮品拉进偏好池。
+    if (/甜|甜品|下午茶|奶茶|糖水|饮料|想喝|喝点/.test(masked)) { p.preferCat.push("甜品饮品"); p.preferTaste.push("甜"); }
+    if (/早餐|早上/.test(s)) p.preferCat.push("早餐小吃");
+    if (/清淡|养生|健康/.test(masked)) { p.preferTaste.push("清淡"); if (p.maxCal == null) p.maxCal = 600; }
+    if (/高蛋白|健身|增肌/.test(s)) p.preferTag.push("高蛋白");
+    if (/性价比|实惠|划算/.test(s)) p.preferTag.push("性价比");
+    // 菜名关键词：先删含否定的片段（防“不想吃辣”提取出“辣”），再删虚词取核心词匹配菜名。
+    // 已经交给硬过滤/软偏好的意图词（肉、素、辣、甜、清淡…）要从 core 里剔除，
+    // 否则“想吃肉”会被收窄成菜名带“肉”的 355 道，“吃素”只剩 28 道——都不是用户的本意。
+    const core = s
+      .replace(/[^，,。、\s！？]*(?:不想|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了|不能)[^，,。、\s！？]*/g, "")
+      .replace(/\d+(?:\.\d+)?\s*(?:元|块|rmb|￥|¥)|预算|减肥|减脂|瘦身|降重/g, "")
+      .replace(/想吃肉|想吃点肉|来点肉|无肉不欢|荤一点|大口吃肉|吃素|素食|素一点|无辣不欢|能吃辣|爱吃辣|辣一点|重口|清淡|养生|健康|低卡|低脂|轻食|控卡|轻负担|健身餐|高蛋白|健身|增肌|性价比|实惠|划算|便宜|省钱/g, "")
+      .replace(/想吃|想喝|喝点|来碗|来份|来个|来点|吃点|给我|替我|帮我|决定|早餐|午餐|晚餐|宵夜|今天|明天|一下|一点|随便|都行|什么|啥|口味/g, "")
+      .replace(/[，,。、\s！？]/g, "")
+      .replace(/[吃喝]/g, "")
+      .replace(/的$/, "");
+    // 单字意图词留在 core 里会误当菜名（例如“辣”“面”），统一走偏好层，不再锁关键词
+    const GENERIC = /^(?:肉|素|辣|甜|面|面食|饭|汤|粥|菜|早餐|午餐|晚餐|宵夜|清淡|健康|饮料|甜品)$/;
+    if (core.length >= 1 && core.length <= 6 && !GENERIC.test(core) && !/^[的了吧呢吗]?$/.test(core)) p.keyword = core;
+    return p;
+  }
+
+  // —— 2) 画像融合：不冲突维度合并，用户即时输入覆盖画像同名维度 ——
+  function buildPreferences(text, profile) {
+    const p = parsePreferences(text);
+    const prof = profile || {};
+    const pf = Array.isArray(prof.flavors) ? prof.flavors.filter((f) => FLAVORS.includes(f)) : [];
+
+    // 文本没写预算时才用画像预算（文本优先）
+    if (p.maxPrice == null && prof.budget && BUDGET_MAX[prof.budget] != null) {
+      p.maxPrice = BUDGET_MAX[prof.budget];
+    }
+    // 文本没表达荤素意图时才用画像倾向（软打分，不硬过滤）
+    p.mainPref = "any";
+    if (!p.wantVeg && !p.wantMeat) {
+      if (prof.main === "veg") p.mainPref = "veg";
+      if (prof.main === "meat") p.mainPref = "meat";
+    }
+    // 忌口自由填：按标点/空白拆词，命中菜名、描述或档口名即过滤
+    if (typeof prof.avoid === "string") {
+      // v2.1：档案忌口与文本忌口合并，避免“文本说了不吃香菜、档案只填了档口”时丢掉一边
+      // v2.1.1：避雷框里写“不吃面”要先剥掉“不吃”这类前缀，否则整词去匹配菜名永远不中；
+      // 剥完剩下“面/米线/米粉…”这类泛品类词时，直接按面类制品整体排除
+      const NOODLE_WORD = /^(?:面|面食|面条|粉|米线|米粉|河粉|粉丝|挂面|意面|拉面|刀削面|刀削|酸辣粉|螺蛳粉)$/;
+      const NEG_PREFIX = /^(?:不想吃?|不吃|不喝|不要|别|忌|不喜欢|不爱吃|吃不了|受不了|不能)+/;
+      const fromProfile = [];
+      for (const tok of prof.avoid.split(/[，,、\s;；]+/)) {
+        const t = tok.trim().replace(NEG_PREFIX, "");
+        if (!t) continue;
+        if (NOODLE_WORD.test(t)) {
+          if (!p.avoidCats.includes("面食")) p.avoidCats.push("面食");
+          continue;
+        }
+        // v2.2：与文本路径一致 —— “饺子 / 水饺”双向覆盖；具体对象走关键词
+        if (t === "饺子" || t === "水饺") { fromProfile.push("饺子", "水饺"); continue; }
+        fromProfile.push(t);
+      }
+      p.avoid = [...new Set([...p.avoid, ...fromProfile])];
+    }
+    // 口味多选：画像勾选 + 文本口味合并
+    const wanted = new Set(pf);
+    p.preferTaste.forEach((t) => { if (t === "清淡" || t === "甜") wanted.add(t); });
+    if (p.wantSpicy) wanted.add("辣");
+    p.wantFlavors = [...wanted];
+    return p;
+  }
+
+  const isMeat = (d) => (d.main ? d.main === "荤" : !d.veg);
+  const isVeg = (d) => (d.main ? d.main === "素" : !!d.veg);
+
+  // 面类制品判定：除“面食”品类外，名字里带面/粉/饺类字样的菜也算面类制品
+  // （数据里 32 道“拌饭/面/粉”“火鸡面套餐”挂在盖浇饭/家常小炒下，纯按品类会漏掉）
+  const NOODLE_NAME = /(?:面|粉|米线|饺子|水饺|抄手|馄饨|拉面|刀削|河粉|粉丝|螺蛳粉|挂面|意面)/;
+  const isNoodleLike = (d) => d.category === "面食" || NOODLE_NAME.test(d.name || "");
+
+  // 轻食判定：轻食档口全量算轻食；其他档口看菜名（沙拉/鸡胸/健康餐等）
+  const LIGHT_NAME = /轻食|沙拉|鸡胸|健康餐|糙米|紫米|藜麦|全麦|低脂|魔芋/;
+  const isLightDish = (d) => /轻食/.test(d.stall || "") || LIGHT_NAME.test(d.name || "");
+
+  // —— 3) 硬过滤层：预算 / 热量 / 忌辣 / 文本荤素 / 忌口 ——
+  function hardFilter(p, pool) {
+    return pool.filter((d) => {
+      if (p.maxPrice != null && d.price > p.maxPrice) return false;
+      if (p.maxCal != null && d.cal > p.maxCal) return false;
+      // v2.3.1：辣度不能只看 spicy 字段 —— 库里 73 道菜 flavors 标了辣但 spicy=0
+      // （椒麻抄手、藤椒渔粉、椒麻藤椒鸡…），只查 spicy 会让“不能吃辣”漏掉它们。
+      if (p.noSpicy && (d.spicy > 0 || dishFlavors(d).includes("辣"))) return false;
+      if (p.avoidFlavors && p.avoidFlavors.length
+        && dishFlavors(d).some((f) => p.avoidFlavors.includes(f))) return false;
+      if (p.wantVeg && !isVeg(d)) return false;
+      if (p.wantMeat && !isMeat(d)) return false;
+      if (p.lightIntent && !isLightDish(d)) return false;
+      // 面类制品整体排除：品类为面食，或名字带面/粉类字样（覆盖跨品类挂靠的 32 道）
+      if (p.avoidCats && p.avoidCats.includes("面食") && isNoodleLike(d)) return false;
+      if (p.avoid.length) {
+        // v2.1：匹配范围加上档口名 —— 在“避雷”里填“兰州拉面”就能整档排除
+        const hay = `${d.name} ${d.desc || ""} ${d.stall || ""} ${dishTaste(d).join("")} ${dishFlavors(d).join("")}`;
+        if (p.avoid.some((k) => hay.includes(k))) return false;
+      }
+      return true;
+    });
+  }
+
+  // 关键词放宽：全词没有命中时逐字去尾（烤鸭饭→烤鸭）；被排除时保留原词，不在矮子里拔将军
+  function relaxKeyword(p, all, base) {
+    if (!p.keyword) return;
+    const fullHit = all.some((d) => d.name.includes(p.keyword));
+    if (fullHit) return;
+    let kw = p.keyword;
+    while (kw.length > 1 && !base.some((d) => d.name.includes(kw))) kw = kw.slice(0, -1);
+    if (base.some((d) => d.name.includes(kw))) p.keyword = kw;
+  }
+
+  // 无解时逐级放宽：热量 → 荤素 → 预算 → 忌辣 → 忌口（滑窗约束在选卡时最后放宽）
+  function filterWithRelax(p, base, droppedKeys) {
+    let pool = hardFilter(p, base);
+    const order = [
+      ["maxCal", null],
+      ["wantMeat", false],
+      ["wantVeg", false],
+      ["maxPrice", null],
+      ["noSpicy", false],
+      ["avoid", []],
+      ["avoidCats", []],
+      ["lightIntent", false],
+    ];
+    for (const [key, fallback] of order) {
+      if (pool.length) break;
+      const val = p[key];
+      if (val == null || val === false || (Array.isArray(val) && !val.length)) continue;
+      p[key] = fallback;
+      droppedKeys.add(key);
+      pool = hardFilter(p, base);
+    }
+    // 口味避雷是软约束：池子空了才逐级放宽 —— 先允许违反 1 个口味，再 2 个…
+    // 旧实现把口味词塞进 avoid 整体丢弃，避开 4-5 个口味时会直接回落到全库随机，
+    // 结果违例里 100% 是最常见的“辣”。分级放宽保证“尽量少违例”。
+    if (!pool.length && p.avoidFlavors && p.avoidFlavors.length) {
+      const avoidFlavors = p.avoidFlavors;
+      p.avoidFlavors = [];
+      droppedKeys.add("avoidFlavors");
+      const full = hardFilter(p, base);
+      for (let k = 1; k <= avoidFlavors.length && !pool.length; k++) {
+        pool = full.filter((d) => dishFlavors(d).filter((f) => avoidFlavors.includes(f)).length <= k);
+      }
+      if (!pool.length) pool = full;
+    }
+    return pool;
+  }
+
+  // —— 3.5) 口味槽位（v2.3）——
+  // 旧实现是“命中几个口味就加几分”，多选时几乎人人命中，口味形同虚设。
+  // 改成每次抽卡先定一个主角口味（槽位），再只在这个口味里抽，多口味时按轮转分配。
+  const EXPLORE_WINDOW = 10;   // 最近 10 张卡
+  const EXPLORE_MIN = 3;       // 其中至少 3 张换口味
+  const STRONG_MAX = 1;        // 强反差（选酸甜推辣）每 10 张最多 1 张
+  const FLAVOR_FAMILY = { "辣": "辛辣", "麻": "辛辣", "酸甜": "甜酸", "甜": "甜酸", "咸鲜": "咸淡", "清淡": "咸淡" };
+
+  function recentStats(history) {
+    const recent = (history || []).filter((x) => x && x.f).slice(-EXPLORE_WINDOW);
+    const lastSeen = {};
+    recent.forEach((x, i) => { lastSeen[x.f] = i; });
+    return {
+      recent,
+      lastSeen,
+      explores: recent.filter((x) => x.e).length,
+      strongs: recent.filter((x) => x.s).length,
+    };
+  }
+
+  function pickByInverseFrequency(list, stats) {
+    const ws = list.map((f) => 1 + (EXPLORE_WINDOW - (stats.lastSeen[f] ?? -1)));
+    let r = Math.random() * ws.reduce((a, b) => a + b, 0);
+    for (let i = 0; i < list.length; i++) { r -= ws[i]; if (r < 0) return list[i]; }
+    return list[list.length - 1];
+  }
+
+  // 探索目标：优先同味系（酸甜↔甜、辣↔麻、咸鲜↔清淡），偶尔来一次强反差
+  function pickExploreFlavor(p, stats, dishPool) {
+    // 该口味在当前池子里有没有「纯净菜」：含它、且不含任何已选口味。
+    // “麻”在库里 0 道单口味菜（永远和辣或酸甜绑定），已选辣时选它探索
+    // 必然退化成假探索卡，还会白占一半探索配额（实测探索率被拖到 18%）。
+    const hasPure = (f) => !dishPool || dishPool.some((d) => {
+      const fl = dishFlavors(d);
+      return fl.includes(f) && !fl.some((x) => p.wantFlavors.includes(x));
+    });
+    let pool = FLAVORS.filter((f) => !p.wantFlavors.includes(f));
+    if (p.noSpicy) pool = pool.filter((f) => f !== "辣" && f !== "麻");
+    if (p.avoidFlavors && p.avoidFlavors.length) pool = pool.filter((f) => !p.avoidFlavors.includes(f));
+    pool = pool.filter(hasPure);
+    if (!pool.length) return null;
+    const mild = pool.filter((f) => p.wantFlavors.some((w) => FLAVOR_FAMILY[w] === FLAVOR_FAMILY[f]));
+    const strong = pool.filter((f) => !mild.includes(f));
+    // 味系被整组勾走时（辣+麻 / 酸甜+甜 / 咸鲜+清淡）mild 必然为空，
+    // 此时跨味系是唯一出路，不能再被强反差配额卡住 —— 否则这几组组合
+    // 实测 20 次只有 2 次探索，用户等满 10 张也等不到“换个口味”。
+    // 这种“唯一选项”不算刻意强反差，因此不置 strong，避免挤占 1/10 的反差配额。
+    if (!mild.length) {
+      return strong.length ? { flavor: pickByInverseFrequency(strong, stats), strong: false } : null;
+    }
+    const allowStrong = strong.length > 0 && stats.strongs < STRONG_MAX;
+    if (allowStrong && Math.random() < 0.34) {
+      return { flavor: pickByInverseFrequency(strong, stats), strong: true };
+    }
+    return { flavor: pickByInverseFrequency(mild, stats), strong: false };
+  }
+
+  // 欠账制：最近 10 张里换口味不足 3 张就该补。
+  // pending 是本次请求已发出的卡 —— 必须把它们先追加进窗口再算，
+  // 否则三卡模式会按“旧窗口”连判三次，出现 10 张里只有 2 张探索的漏网。
+  function wantExplore(stats, pending) {
+    const win = stats.recent.concat(pending).slice(-EXPLORE_WINDOW);
+    const now = win.filter((x) => x && x.e).length;
+    if (win.length < EXPLORE_WINDOW) {
+      // 窗口未满：按欠账比例撒点，避免开局连着三张都在换口味
+      if (now >= EXPLORE_MIN) return false;
+      return Math.random() < (EXPLORE_MIN - now) / (EXPLORE_WINDOW - win.length);
+    }
+    // 窗口已满：预演“这张不换”之后，最近 10 张还剩几次换口味；掉到 3 以下就现在补
+    const after = win.concat([{ e: 0 }]).slice(-EXPLORE_WINDOW).filter((x) => x && x.e).length;
+    return after < EXPLORE_MIN;
+  }
+
+  function orderFlavors(p, stats) {
+    const base = (p.wantFlavors || []).filter((f) => FLAVORS.includes(f));
+    // 最近没上过场的排前面，多轮下来各口味出场次数趋于均衡
+    return base.slice().sort((a, b) => (stats.lastSeen[a] ?? -1) - (stats.lastSeen[b] ?? -1));
+  }
+
+  // —— 4) 软打分：口味 / 荤素倾向 / 分类 / 关键词 / 人气归一 / 正反馈 ——
+  function scoreDish(d, p, ctx) {
+    let sc = Math.random() * 1.2;
+    const fl = dishFlavors(d);
+    // v2.3：口味按“本张卡的主角口味”给分，而不是命中个数线性累加。
+    // 命中主角 +12；命中其他已选口味只算配角 +2；明确是别的口味则降权。
+    if (ctx.slot) {
+      if (fl.includes(ctx.slot.flavor)) sc += 12;
+      else if (fl.length) sc -= ctx.slot.explore ? 4 : 6;
+      if (!ctx.slot.explore) {
+        p.wantFlavors.forEach((f) => {
+          if (f !== ctx.slot.flavor && fl.includes(f)) sc += 2;
+        });
+      }
+    }
+    if (p.wantSpicy && (d.spicy >= 2 || fl.includes("辣"))) sc += 12;
+    if (p.mainPref === "veg" && isVeg(d)) sc += 7;
+    if (p.mainPref === "meat" && isMeat(d)) sc += 7;
+    if (p.preferCat.includes(d.category)) sc += 14;
+    if (p.preferTag.some((t) => dishTaste(d).includes(t) || (d.tags || []).includes(t))) sc += 8;
+    if (p.keyword && d.name.includes(p.keyword)) sc += 16;
+    // 人气归一：档口人气菜占比 ×2（公社 37/112 → +0.66，不再是固定 +2）
+    // 封顶 +1：新数据里出现整份菜单都在“热销”分组的档口（hotRate=1），会凭白拿满加成而垄断
+    const meta = ctx.meta[d.stall];
+    if (meta) sc += Math.min(1, 2 * (meta.hotRate || 0));
+    // 正反馈：档口 +3 / 口味 +1 / 品类 +0.6，单维度累计封顶 +4
+    const fb = ctx.feedback || {};
+    if (d.stall && fb.stalls && fb.stalls[d.stall]) sc += Math.min(4, fb.stalls[d.stall] * 3);
+    if (fb.flavors) {
+      let sum = 0;
+      fl.forEach((f) => { if (fb.flavors[f]) sum += fb.flavors[f]; });
+      sc += Math.min(4, sum);
+    }
+    if (fb.categories && fb.categories[d.category]) sc += Math.min(4, fb.categories[d.category] * 0.6);
+    // 糖水/甜品饮品不当正餐推：用户没表达甜品意图时降权
+    const wantDessert = p.preferCat.includes("甜品饮品") || p.wantFlavors.includes("甜");
+    if (d.category === "甜品饮品" && !wantDessert) sc -= 8;
+    // 轻食意图：轻食档口/轻食菜强加权；包子粥等低卡早餐不再冒充轻食
+    if (p.lightIntent) {
+      if (isLightDish(d)) sc += 30;
+      else if (d.category === "早餐小吃" || d.category === "汤粥") sc -= 14;
+      else if (/包|粥|馒头|花卷|油条|豆浆|煎饼/.test(d.name)) sc -= 8;
+    }
+    // “试试新的！”：没点过“就这个”的档口优先，近期出现过的档口降权
+    if (ctx.novelty) {
+      const clicked = (fb.clickedStalls || []);
+      if (d.stall && !clicked.includes(d.stall)) sc += 20;
+      if (ctx.recentStalls.includes(d.stall)) sc -= 10;
+    }
+    return sc;
+  }
+
+  // 全池 softmax 抽样：不截 top5。截断会让“档口加成”变成最大值的优势
+  // （菜多的档口 max(随机分+加成) 几乎必然排第一，公社 10 次 7 次就是这么来的）。
+  // v2.1：改为「档口分层」两段抽样 —— 先按档口抽一份，再在档口内按分数抽菜。
+  // 原来按菜等权，外公家米线一家 212 道菜 = 全库 18.5%，几乎每几轮就中一次；
+  // 面食档口菜品普遍多，也导致面食占比被放大。分层后每个档口只算一份。
+  // 另外按品类规模轻降权（1/√菜品数），避免 534 道菜的面食一家独大。
+  function weightedPick(pool, p, ctx) {
+    // 点名了菜品（关键词命中候选池）时只在命中菜里抽签，意图优先
+    let cand = pool;
+    // 口味槽位：本张卡只在“主角口味”的菜里抽；该口味当前池子为空时才退回全池
+    if (ctx.slot) {
+      let flavored = cand.filter((d) => dishFlavors(d).includes(ctx.slot.flavor));
+      // 换口味必须换干净：同时带已选口味的菜（“辣+麻”之于已选辣）不算探索，
+      // 否则探索槽选了麻、推出来还是麻辣菜，用户根本感知不到换了口味。
+      // 实测不排它时探索纯度只有 64%，单口味“辣”更是只有 2/6。
+      if (ctx.slot.explore) {
+        const pure = flavored.filter((d) => !dishFlavors(d).some((f) => p.wantFlavors.includes(f)));
+        if (pure.length) flavored = pure;
+      }
+      if (flavored.length) cand = flavored;
+    }
+    if (p.keyword) {
+      const hits = cand.filter((d) => d.name.includes(p.keyword));
+      if (hits.length) cand = hits;
+    }
+    const T = 1.5;
+    const scored = cand.map((d) => ({ d, sc: scoreDish(d, p, ctx) }));
+    const top = Math.max(...scored.map((x) => x.sc));
+
+    // 第一段：按档口聚合，每个档口以“档内最高分”为代表，再乘品类规模系数
+    const byStall = new Map();
+    for (const x of scored) {
+      const key = x.d.stall || "";
+      if (!byStall.has(key)) byStall.set(key, []);
+      byStall.get(key).push(x);
+    }
+    const catCount = (ctx.stats && ctx.stats.cat) || {};
+    const groups = [...byStall.values()].map((g) => {
+      const gTop = Math.max(...g.map((x) => x.sc));
+      // 品类规模系数按档口主品类算，不能用 g[0]（第一个菜的品类是数据顺序，不具代表性）
+      const catHits = {};
+      g.forEach((x) => { catHits[x.d.category] = (catHits[x.d.category] || 0) + 1; });
+      const mainCat = Object.keys(catHits).sort((a, b) => catHits[b] - catHits[a])[0];
+      const catW = 1 / Math.sqrt(catCount[mainCat] || 1);
+      return { g, gTop, w: Math.exp((gTop - top) / T) * catW };
+    });
+    let r = Math.random() * groups.reduce((a, x) => a + x.w, 0);
+    let chosen = groups[groups.length - 1];
+    for (const x of groups) { r -= x.w; if (r < 0) { chosen = x; break; } }
+
+    // 第二段：选中的档口内再按分数抽
+    const g = chosen.g;
+    const ws = g.map((x) => Math.exp((x.sc - chosen.gTop) / T));
+    let r2 = Math.random() * ws.reduce((a, b) => a + b, 0);
+    for (let i = 0; i < g.length; i++) { r2 -= ws[i]; if (r2 < 0) return g[i].d; }
+    return g[g.length - 1].d;
+  }
+
+  // —— 5) 命中说明 + 推荐理由 ——
+  const OPENERS = ["纠结的时候，交给手感准没错！", "闭眼选也不会错的人气之选。", "这顿就交给命运抽签吧——"];
+
+  function buildMatched(d, p, dropped, slot) {
+    const m = [];
+    if (p.maxPrice != null && !dropped.has("maxPrice")) m.push(`预算 ${p.maxPrice} 元内`);
+    if (p.maxCal != null && !dropped.has("maxCal")) m.push(`热量仅 ${d.cal} kcal`);
+    if (p.noSpicy && !dropped.has("noSpicy")) m.push("完全不辣");
+    if (p.wantVeg && !dropped.has("wantVeg")) m.push("素食友好");
+    if (p.wantMeat && !dropped.has("wantMeat") && isMeat(d)) m.push("有肉，解馋过瘾");
+    if (p.mainPref === "veg" && isVeg(d)) m.push("偏素，吃着清爽");
+    if (p.mainPref === "meat" && isMeat(d)) m.push("有肉，跟着直觉走");
+    if (p.wantSpicy && (d.spicy >= 2 || dishFlavors(d).includes("辣"))) m.push("够辣够味");
+    if (p.preferCat.includes(d.category)) m.push(`正是你想吃的${d.category}`);
+    if (p.keyword && d.name.includes(p.keyword)) m.push(`名字里就有“${p.keyword}”`);
+    const fhits = p.wantFlavors.filter((f) => dishFlavors(d).includes(f));
+    if (slot && slot.explore) {
+      m.push(`换个口味：${slot.flavor}`);
+    } else if (fhits.length) {
+      m.push(`口味${fhits.join("、")}，很对你的胃口`);
+    }
+    const tg = p.preferTag.filter((t) => dishTaste(d).includes(t) || (d.tags || []).includes(t));
+    if (tg.length) m.push(`主打“${tg.join("、")}”`);
+    if (p.lightIntent && isLightDish(d)) m.push("轻食档口，减脂友好");
+    return m;
+  }
+  // 收尾只写能在界面上核对的事实：预算差多少、档口在最近 10 张卡里出现几次、辣度标记。
+  // 不再用“食堂阿姨已经为你打好饭啦”这类随机煽情句——它既不可验证，也和自提/外卖的事实冲突。
+  function buildFact(d, p, ctx) {
+    const facts = [];
+    if (p.maxPrice != null && d.price < p.maxPrice) {
+      const gap = Math.round((p.maxPrice - d.price) * 10) / 10;
+      facts.push(`比预算上限低 ${gap} 元`);
+    }
+    const seen = (recentWindow(ctx && ctx.recentStalls)[d.stall] || 0);
+    facts.push(seen === 0 ? "最近 10 张卡里没出现过这个档口" : `最近 10 张卡里这个档口出现过 ${seen} 次`);
+    if (p.noSpicy) facts.push(`辣度标记为 ${d.spicy || 0}`);
+    return facts.length ? facts[0] + "。" : "";
+  }
+  function buildReason(d, m, p, ctx) {
+    const head = m.length ? m.slice(0, 3).join("，") + "。" : rand(OPENERS);
+    let desc = String(d.desc || "").replace(/[，,。；;、\s]*$/, "");
+    // 命中说明里已经报了热量，描述里的“约 xxx kcal”就不再重复
+    if (/kcal/.test(head)) desc = desc.replace(/[，,]?\s*约\s*\d+\s*kcal/, "");
+    // “XX系列”之选 / 另有：… / 菜单补录 都是后台分组与来源标记，不是菜品描述，不进推荐理由
+    const isLabel = !desc || /^[“"][^”"]*[”"]\s*之选/.test(desc) || /另有：/.test(desc) || /^菜单补录/.test(desc);
+    return head + (isLabel ? "" : desc + "。") + buildFact(d, p || {}, ctx);
+  }
+
+  function recentWindow(recentStalls) {
+    const counts = {};
+    (recentStalls || []).slice(-WINDOW).forEach((s) => { if (s) counts[s] = (counts[s] || 0) + 1; });
+    return counts;
+  }
+
+  // —— 6) 对外接口：一次返回 1 张或 3 张卡（3 张强制不同档口，并遵守 10 次滑窗）——
+  async function recommend({ text = "", profile = null, feedback = null, excludeIds = [], recentStalls = [], flavorHistory = [], mode = 1, novelty = false, override = null } = {}) {
+    await delay(650); // 模拟网络延迟，保证 loading 态可见
+    // TODO: replace with fetch('/api/recommend', { method: "POST", ... })
+    const all = ((window.DB_REAL && window.DB_REAL.dishes) || window.DB.dishes);
+    const meta = (window.DB_REAL && window.DB_REAL.stallMeta) || {};
+    // v2.1：全库规模统计，供品类降权使用（按全库而非筛选后的池子，保证基准稳定）
+    const stats = { cat: {}, stall: {} };
+    all.forEach((d) => {
+      stats.cat[d.category] = (stats.cat[d.category] || 0) + 1;
+      stats.stall[d.stall] = (stats.stall[d.stall] || 0) + 1;
+    });
+    const cardCount = mode === 3 ? 3 : 1;
+    const limit = MODE_LIMIT[cardCount] || 1;
+    const prefs = buildPreferences(text, profile);
+    // “两种都看看”：按指定荤素倾向各推一张，不受冲突裁决影响
+    if (override) {
+      if (override.main === "veg") { prefs.wantVeg = true; prefs.wantMeat = false; }
+      if (override.main === "meat") { prefs.wantMeat = true; prefs.wantVeg = false; }
+      prefs.conflicts = [];
+    }
+
+    const base = all.filter((d) => !excludeIds.includes(d.id));
+    relaxKeyword(prefs, all, base);
+    const flavorStats = recentStats(flavorHistory);
+    const flavorOrder = orderFlavors(prefs, flavorStats);
+    const pendingSlots = [];
+    let usedExplore = 0;
+
+    const droppedKeys = new Set();
+    const usedStalls = new Set();
+    const windowCounts = recentWindow(recentStalls);
+    const cards = [];
+    let windowRelaxed = false;
+
+    for (let i = 0; i < cardCount; i++) {
+      const candBase = base.filter((d) => !usedStalls.has(d.stall));
+      let pool = filterWithRelax(prefs, candBase, droppedKeys);
+      if (!pool.length) pool = candBase.slice();
+      // 滑窗约束：单卡最近 10 次同档口 ≤1；3 卡模式 ≤3
+      const winPool = pool.filter((d) => (windowCounts[d.stall] || 0) < limit);
+      let finalPool = winPool;
+      if (!finalPool.length) { finalPool = pool; windowRelaxed = true; }
+      if (!finalPool.length) break;
+
+      // 本张卡的主角口味：已选口味轮转；欠账时为探索位（每次请求最多一张）
+      let slot = null;
+      if (flavorOrder.length) {
+        slot = { flavor: flavorOrder[i % flavorOrder.length], explore: false, strong: false };
+        if (usedExplore < 1 && wantExplore(flavorStats, pendingSlots)) {
+          const ex = pickExploreFlavor(prefs, flavorStats, finalPool);
+          // 目标口味在池子里至少要有一道「纯净菜」（不含任何已选口味），
+          // 否则宁可这次不探索，也不要推一张“换了口味却还是辣”的假探索卡。
+          if (ex && finalPool.some((d) => {
+            const fl = dishFlavors(d);
+            return fl.includes(ex.flavor) && !fl.some((f) => prefs.wantFlavors.includes(f));
+          })) {
+            slot = { flavor: ex.flavor, explore: true, strong: ex.strong };
+            usedExplore++;
+          }
+        }
+      }
+
+      const dish = weightedPick(finalPool, prefs, { meta, feedback, novelty, recentStalls, stats, slot });
+      if (!dish) break;
+      pendingSlots.push(slot ? { f: slot.flavor, e: slot.explore ? 1 : 0, s: slot.strong ? 1 : 0 } : { f: null });
+      usedStalls.add(dish.stall);
+      windowCounts[dish.stall] = (windowCounts[dish.stall] || 0) + 1;
+
+      const matched = buildMatched(dish, prefs, droppedKeys, slot);
+      const relaxed = droppedKeys.size > 0 || windowRelaxed;
+      const labels = { maxCal: "低卡", maxPrice: "预算", wantVeg: "素食", wantMeat: "荤菜", noSpicy: "忌辣", avoid: "忌口", avoidCats: "不吃面食", avoidFlavors: "口味避雷", lightIntent: "轻食" };
+      let relaxedNote = "";
+      if (droppedKeys.size) {
+        relaxedNote = `完全匹配的菜有点难找，放宽了${[...droppedKeys].map((k) => labels[k] || k).join("、")}要求，这碗最接近～`;
+      } else if (windowRelaxed) {
+        relaxedNote = "最近这几种档口推荐得有点频繁，这次稍微放宽了档口重复限制～";
+      }
+      cards.push({
+        dish,
+        matched,
+        reason: buildReason(dish, matched, prefs, { recentStalls }),
+        relaxed,
+        relaxedNote,
+        slot,
+        ...(override ? { label: override.main === "veg" ? "按“不吃肉”挑的" : "按“想吃肉”挑的" } : {}),
+        ...(slot && slot.explore ? { label: `换个口味·${slot.flavor}` } : {}),
+      });
+    }
+
+    if (!cards.length) {
+      // 极端兜底：全库随机一张，保证页面不空
+      const dish = rand(all);
+      cards.push({
+        dish,
+        matched: [],
+        reason: buildReason(dish, [], prefs, { recentStalls }),
+        relaxed: true,
+        relaxedNote: "条件有点苛刻，这次先给你一张随机卡～",
+      });
+    }
+
+    return { code: 0, data: { cards, windowRelaxed, conflicts: prefs.conflicts || [] } };
+  }
+
+  // 兼容旧调用（单卡）
+  async function recommendDish(preferences = "", opts = {}) {
+    const res = await recommend({ text: preferences, excludeIds: opts.excludeIds || [], mode: 1 });
+    const card = res.data.cards[0];
+    return { code: 0, data: { ...card, relaxed: card.relaxed } };
+  }
+
+  // 输入框实时预检：只做解析，不抽卡，供 UI 提前提示条件冲突
+  function inspect(text, profile) {
+    const p = buildPreferences(text, profile);
+    return { conflicts: p.conflicts || [] };
+  }
+
+  window.API = { recommend, recommendDish, inspect };
+})();
