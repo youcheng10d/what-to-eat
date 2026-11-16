@@ -10,7 +10,10 @@
   const CFG_KEY = "wte.aiCfg";
   const CACHE_VERSION = 1;
   const NUTRI_LIMIT = 400;
+  // 罗盘要等结果才能落盘，等待时间直接体现在转盘上，给 2.5s 上限；
+  // 营养拆解是后台校准——本地算式已经秒出，用户可以边看边等，超时放宽到 15s。
   const TIMEOUT = 2500;
+  const TIMEOUT_CAL = 15000;
 
   // 食材名 → 筛选关键词。表里没有的标签一律不进推荐条件，避免模型自由发挥。
   const MAPPING = {
@@ -119,11 +122,11 @@
   }
 
   // —— Worker 调用 ——
-  async function call(path, payload) {
+  async function call(path, payload, budget) {
     const c = config();
     if (!c.worker) throw new Error("NO_WORKER");
     const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), TIMEOUT);
+    const timer = setTimeout(() => ctrl.abort(), budget || TIMEOUT);
     try {
       const res = await fetch(c.worker + path, {
         method: "POST",
@@ -251,7 +254,7 @@
             price: dish.price,
             menuCal: dish.cal,
           },
-        });
+        }, TIMEOUT_CAL);
         const calc = compute(res.items);
         // 一条原料都没对上成分表，说明模型给的名字跑偏了，宁可降级也不展示假数据
         if (!calc.rows.length) throw new Error("NO_MATCH");
@@ -284,7 +287,8 @@
       } catch (e) { /* 落到本地 */ }
     }
     const local = localNutrition(dish);
-    cachePut("nutrition", key, local);
+    // 本地结果不入缓存：配了 Worker 却超时的话，下次展开还有机会拿到 AI 校准
+    if (!enabled()) cachePut("nutrition", key, local);
     return local;
   }
 
