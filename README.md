@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/youcheng10d/what-to-eat/actions/workflows/ci.yml/badge.svg)](https://github.com/youcheng10d/what-to-eat/actions/workflows/ci.yml)
 [![Deploy Pages](https://github.com/youcheng10d/what-to-eat/actions/workflows/pages.yml/badge.svg)](https://github.com/youcheng10d/what-to-eat/actions/workflows/pages.yml)
+[![Release](https://img.shields.io/github/v/release/youcheng10d/what-to-eat?label=release&color=f76707)](https://github.com/youcheng10d/what-to-eat/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <p align="center">
@@ -33,7 +34,7 @@ v2.5.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
 ## 两个版本
 
-作品只能提交一个仓库，所以两个版本放在同一仓库的两个目录，各自独立部署：
+作品只能提交一个仓库，所以两个版本放在同一仓库的两个目录，各自独立访问：
 
 | 版本 | 目录 | 线上地址 | 说明 |
 | --- | --- | --- | --- |
@@ -78,7 +79,7 @@ v2.5.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 | v2.3.2 | 口味改槽位制，63 组矩阵验收；数据清洗至 2582 道 / 65 档口 | 已发布 |
 | v2.4.0 | AI 接入：营养拆解、拍照问诊、食堂罗盘；AI 只做理解不做挑选 | 已发布 |
 | v2.4.1 | 称重计价按份换算，id 改内容哈希；2582 → 2382 道，重复收敛 198 组 | 已发布 |
-| v2.5.0 | 一份代码两个版本：Flash / Pro 统一 v2.5.0，10 项隔离校验；交互打磨与罗盘重写 | 本文档 |
+| v2.5.0 | 一份代码两个版本：Flash / Pro 统一 v2.5.0，10 项隔离校验；交互打磨与罗盘重写 | 当前版本 |
 
 ---
 
@@ -104,7 +105,7 @@ v2.5.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 | 食堂罗盘 | 荒诞输入 → 签文 + 约束 → seed 决定落点，与正经引擎分离 | v2.4 |
 | 断网降级 | 无 AI 服务时切本地规则估算，界面标注来源，不伪装 | v2.4 |
 | 称重计价 | 牌面单价与每份估价分开存，卡片标注“元·估”，预算按份价过滤 | v2.4.1 |
-| 版本隔离 | 同一仓库两个可运行版本，10 项校验防止 AI 代码混入 Flash | v2.5 |
+| 版本隔离 | 同一仓库两个可运行版本，10 项校验防止 AI 代码混入 Flash | v2.5.0 |
 
 ## 界面速览
 
@@ -255,14 +256,16 @@ wrangler deploy
 ### 3. 跑回归（2 分钟）
 
 ```bash
-node tests/smoke.test.mjs
+node tests/edition.test.mjs
 node tests/recommend.test.mjs
+node tests/smoke.test.mjs
 node tests/integration.test.mjs
 node tests/golden.test.mjs
 node tests/flavor-matrix.mjs
+node tests/mutation.mjs
 ```
 
-纯 Node 脚本，无测试框架依赖。最后一条会跑 63 组口味组合矩阵，约 30 秒。
+纯 Node 脚本，无测试框架依赖。`flavor-matrix` 会跑 63 组口味组合矩阵，约 30 秒；`mutation` 注入 10 个变异体，检查用例是否真的能抓到回归。
 
 ### 4. 重建数据（可选，需要 PowerShell）
 
@@ -293,7 +296,7 @@ v2.0：
 - [x] “试试新的！”按陌生度排序
 - [x] 依据 27 份问卷结论校准软打分权重
 
-v2.4 已完成：
+v2.4 系列已完成：
 
 - [x] AI 营养拆解：模型给克数，成分表算热量，算式可展开
 - [x] 拍照问诊：照片 → 标签 → 约束，标签可改可删
