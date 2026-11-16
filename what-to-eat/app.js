@@ -1158,9 +1158,13 @@
 
   function buildWheel() {
     if (wheelBuilt || !els.wheel) return;
-    els.wheel.innerHTML = WHEEL_CATS.map((c, i) =>
-      `<span class="wheel-label" style="transform:rotate(${i * 45}deg) translateY(-96px) rotate(${-i * 45}deg)">${c}</span>`
-    ).join("");
+    // 纯 translate 定位（与 rotate+translateY+rotate 渲染结果完全等价，只是少两次矩阵运算），
+    // 把基础位移存进 data-tf，落点时要在这串位移后面追加反向旋转，让命中的词回正。
+    els.wheel.innerHTML = WHEEL_CATS.map((c, i) => {
+      const a = (i * 45 * Math.PI) / 180;
+      const tf = `translate(${(96 * Math.sin(a)).toFixed(2)}px, ${(-96 * Math.cos(a)).toFixed(2)}px)`;
+      return `<span class="wheel-label" data-tf="${tf}" style="transform:${tf}">${c}</span>`;
+    }).join("");
     wheelBuilt = true;
   }
 
@@ -1195,15 +1199,37 @@
           <h3>${dish.name}</h3>
           <p>¥${dish.price}${dish.pricing === "weight" ? "（称重估）" : ""} · ${window.AI && window.AI.calOf ? window.AI.calOf(dish) : dish.cal} kcal · ${dish.stall || dish.category}</p>
         </div>
-        <p class="oracle-trace">
-          条件：${bits.length ? bits.join(" / ") : "不加限制"}<br />
-          seed ${r.seed} · ${isAI ? "AI 解签" : "本地签文"} · 今天同一句话结果固定
-        </p>
+        <p class="oracle-trace">条件：${bits.length ? bits.join(" / ") : "不加限制"}</p>
+        <div class="oracle-basis">
+          <button type="button" class="basis-toggle" data-action="oracle-basis" aria-expanded="false">抽签依据</button>
+          <p class="basis-body" hidden>seed ${r.seed} · ${isAI ? "AI 解签" : "本地签文"} · 今天同一句话结果固定</p>
+        </div>
         <div class="oracle-actions">
           <button type="button" class="ghost-btn compact" data-action="oracle-clear">换一句话</button>
           <button type="button" class="decide compact" data-action="oracle-pick">就吃这个</button>
         </div>
       </div>`;
+  }
+
+  // 落位后让命中的那个词在屏幕上正立。标签是随父轮盘一起转的，
+  // 落位角度 = -idx*45 + jitter，只有 idx=0 时它才恰好是正的；
+  // 其余品类的落点会让顶部那个词歪 45°×idx —— 这就是「罗盘上的字被甩歪」。
+  // 给命中词追加一个等量反向旋转，位置不动、朝向归正。
+  function faceUpHitLabel(idx) {
+    if (!els.wheel) return;
+    const label = els.wheel.querySelector(`.wheel-label:nth-child(${idx + 1})`);
+    if (!label || !label.dataset.tf) return;
+    const deg = currentRotation(els.wheel);
+    label.style.transform = `${label.dataset.tf} rotate(${(-deg).toFixed(2)}deg)`;
+  }
+
+  // 起转前把所有标签恢复成基础位移，否则上一轮的命中词会「钉住」不跟着转
+  function resetWheelLabels() {
+    if (!els.wheel) return;
+    els.wheel.querySelectorAll(".wheel-label").forEach((l) => {
+      l.classList.remove("is-hit");
+      if (l.dataset.tf) l.style.transform = l.dataset.tf;
+    });
   }
 
   // 停下来的那一帧要“咬住”：外圈脉冲 + 命中品类加深，0.9s 后收回
@@ -1214,7 +1240,10 @@
     const label = els.wheel.querySelector(`.wheel-label:nth-child(${idx + 1})`);
     els.wheel.classList.add("is-landing");
     if (wrap) wrap.classList.add("is-landing");
-    if (label) label.classList.add("is-hit");
+    if (label) {
+      faceUpHitLabel(idx);
+      label.classList.add("is-hit");
+    }
     setTimeout(() => {
       els.wheel.classList.remove("is-landing");
       if (wrap) wrap.classList.remove("is-landing");
@@ -1232,13 +1261,134 @@
   }
 
   let wheelAnim = null;
-  // 用 WAAPI 而不是 CSS transition：中途改目标时，transition 会按矩阵分解走最短路径，
-  // 可能倒转；关键帧里写死角度，转多少就是多少。
-  function spinWheel(fromDeg, toDeg, duration, easing, iterations = 1) {
-    return els.wheel.animate(
+
+  // —— 旋转驱动：WAAPI 优先，系统动画缩放为 0（安卓“移除动画”等）时自动降级 rAF 手驱 ——
+  // 背景：2026-11-14 真机录屏证实，系统级关动画会把 WAAPI 时钟一起冻结，
+  // element.animate 创建的无限循环卡在首帧，页面看起来像“点了没反应”。
+  // rAF 由 vsync 驱动、不受动画缩放影响，每帧直接写 inline transform 兜底。
+  function cubicBezier(x1, y1, x2, y2) {
+    const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
+    const cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+    const sx = (t) => ((ax * t + bx) * t + cx) * t;
+    const sy = (t) => ((ay * t + by) * t + cy) * t;
+    const dx = (t) => (3 * ax * t + 2 * bx) * t + cx;
+    const solve = (x) => {
+      let t = x;
+      for (let i = 0; i < 8; i++) {
+        const err = sx(t) - x;
+        if (Math.abs(err) < 1e-5) return t;
+        const d = dx(t);
+        if (Math.abs(d) < 1e-6) break;
+        t -= err / d;
+      }
+      let lo = 0, hi = 1;
+      t = x;
+      for (let i = 0; i < 16; i++) {
+        const v = sx(t);
+        if (Math.abs(v - x) < 1e-5) return t;
+        if (v < x) lo = t; else hi = t;
+        t = (lo + hi) / 2;
+      }
+      return t;
+    };
+    return (p) => sy(solve(p));
+  }
+
+  function parseEasing(easing) {
+    if (!easing || easing === "linear") return (p) => p;
+    const m = /cubic-bezier\(([^)]+)\)/.exec(easing);
+    if (!m) return (p) => p;
+    const [x1, y1, x2, y2] = m[1].split(",").map(Number);
+    return cubicBezier(x1, y1, x2, y2);
+  }
+
+  // rAF 手驱：每帧按时间戳算角度写 inline style，不经过任何动画系统
+  function rafRotate(el, fromDeg, toDeg, duration, easingFn, infinite) {
+    let raf = 0;
+    let startTs = null;
+    let done = false;
+    let resolveFinished;
+    const finished = new Promise((r) => { resolveFinished = r; });
+    const span = toDeg - fromDeg;
+    function frame(ts) {
+      if (done) return;
+      if (startTs === null) startTs = ts;
+      const p = (ts - startTs) / duration;
+      if (infinite) {
+        el.style.transform = `rotate(${fromDeg + span * (p % 1)}deg)`;
+      } else if (p >= 1) {
+        el.style.transform = `rotate(${toDeg}deg)`;
+        done = true;
+        resolveFinished();
+        return;
+      } else {
+        el.style.transform = `rotate(${fromDeg + span * easingFn(p)}deg)`;
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    raf = requestAnimationFrame(frame);
+    return {
+      driver: "raf",
+      finished,
+      cancel() {
+        if (done) return;
+        done = true;
+        cancelAnimationFrame(raf);
+        resolveFinished();
+      },
+    };
+  }
+
+  // 两帧采样：角度几乎没动 = WAAPI 被系统冻结。正常最慢的 RM 空转两帧也有 2° 以上
+  function probeFrozen(el) {
+    return new Promise((resolve) => {
+      const a = currentRotation(el);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          let d = Math.abs(currentRotation(el) - a) % 360;
+          if (d > 180) d = 360 - d;
+          resolve(d < 0.5);
+        });
+      });
+    });
+  }
+
+  // 统一入口，对外保持 { finished, cancel() } 与 WAAPI 一致
+  function createWheelRotation(fromDeg, toDeg, duration, easing, iterations = 1) {
+    const infinite = iterations === Infinity;
+    const easingFn = parseEasing(easing);
+    const wa = els.wheel.animate(
       [{ transform: `rotate(${fromDeg}deg)` }, { transform: `rotate(${toDeg}deg)` }],
       { duration, easing, iterations, fill: "forwards" }
     );
+    let active = wa;
+    let switched = false;
+    let resolveOuter;
+    const finished = new Promise((r) => { resolveOuter = r; });
+    wa.finished.then(() => { if (!switched) resolveOuter(); }, () => {});
+    probeFrozen(els.wheel).then((frozen) => {
+      if (!frozen || switched) return;
+      if (wa.playState === "finished" || wa.playState === "idle") return;
+      switched = true;
+      wa.cancel();
+      const cur = currentRotation(els.wheel);
+      active = rafRotate(els.wheel, cur, cur + (toDeg - fromDeg), duration, easingFn, infinite);
+      active.finished.then(resolveOuter, resolveOuter);
+    });
+    return {
+      get driver() { return switched ? "raf" : "waapi"; },
+      finished,
+      cancel() {
+        try { active.cancel(); } catch { /* 已结束的动画 cancel 无害 */ }
+        resolveOuter();
+      },
+    };
+  }
+
+  // 用 WAAPI 而不是 CSS transition：中途改目标时，transition 会按矩阵分解走最短路径，
+  // 可能倒转；关键帧里写死角度，转多少就是多少。
+  function spinWheel(fromDeg, toDeg, duration, easing, iterations = 1) {
+    return createWheelRotation(fromDeg, toDeg, duration, easing, iterations);
   }
 
   async function spin() {
@@ -1250,90 +1400,112 @@
       return;
     }
     oracleBusy = true;
+    // 按钮文案是不依赖动画系统的硬反馈：系统关掉所有动画时，转盘可能被冻结，
+    // 但“解签中”三个字一定能告诉用户点击已生效
+    const goLabel = els.oracleGo.textContent;
     els.oracleGo.disabled = true;
     els.oracleGo.classList.add("is-spinning");
     els.oracleGo.setAttribute("aria-busy", "true");
-    els.wheelStage.hidden = false;
-    els.oracleResult.innerHTML = "";
-    buildWheel();
-    // 首次点「转」时 wheelStage 刚变可见：先落一次 0deg 并强制布局，给过渡一个明确起点
-    if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
-    void els.wheel.offsetWidth;
-
-    // 按下就转，不等 AI。之前把这段放在 reducedMotion 判断里，系统关了动画的机器会
-    // 静止等到解签回来才动，看起来像「点了没反应」；这里改成无条件起转，只是快慢不同。
-    // 用无限循环而不是固定 3.6s：AI 一旦比预设慢，轮盘会在中途二次静止。
-    {
-      els.wheel.style.transition = "none";
-      const start = currentRotation(els.wheel);
-      const idleMs = reducedMotion ? 5200 : 1800;
-      wheelAnim = spinWheel(start, start + 360, idleMs, "linear", Infinity);
-    }
-    const spinStart = performance.now();
-    // 轮盘在首屏下方，点完「转」要把它带进视野；已经在视野里就别再滚，
-    // 否则会和落点后的 scrollIntoView 叠加成两段位移
-    if (els.wheelStage) {
-      const box = els.wheelStage.getBoundingClientRect();
-      const inView = box.top >= 0 && box.bottom <= window.innerHeight;
-      if (!inView) els.wheelStage.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
-    }
-
-    const statusTimer = setTimeout(() => {
-      if (els.wheelStatus) els.wheelStatus.hidden = false;
-    }, 200);
-    const r = await window.AI.oracle(text);
-    clearTimeout(statusTimer);
-    // 模型秒回时轮盘还没转开，先补足 1.2s 再落，避免只抖一下就停
-    await wait(Math.max(0, 1200 - (performance.now() - spinStart)));
-    if (els.wheelStatus) els.wheelStatus.hidden = true;
-    const dish = oraclePool(r.constraints, r.seed);
-    oracleLast = { r, dish };
-
-    let idx = WHEEL_CATS.indexOf(dish.category);
-    if (idx < 0) idx = r.seed % WHEEL_CATS.length;
-    // 留一点角度差让它像手转的，但不超过 ±3°，指针要咬在品类中心
-    const jitter = (r.seed % 7) - 3;
-    const base = -idx * 45 + jitter;
-
-    if (reducedMotion) {
-      // 系统开了「减少动态效果」也不能瞬移：给一段 0.7s、单圈的落位，保留可感知的反馈
-      els.wheel.style.transition = "none";
-      const start = currentRotation(els.wheel);
-      els.wheel.style.transform = `rotate(${start}deg)`;
-      // 起转用的是无限循环动画，落位前必须先取消，否则它会一直转到后台
-      if (wheelAnim) { wheelAnim.cancel(); wheelAnim = null; }
+    els.oracleGo.textContent = "解签中";
+    let statusTimer = null;
+    try {
+      els.wheelStage.hidden = false;
+      els.oracleResult.innerHTML = "";
+      buildWheel();
+      resetWheelLabels();
+      // 首次点「转」时 wheelStage 刚变可见：先落一次 0deg 并强制布局，给过渡一个明确起点
+      if (!els.wheel.style.transform) els.wheel.style.transform = "rotate(0deg)";
       void els.wheel.offsetWidth;
-      let target = start + 360;
-      target += ((base - target) % 360 + 360) % 360;
-      wheelAnim = spinWheel(start, target, 700, "cubic-bezier(0.2, 0.8, 0.2, 1)");
-      await wheelAnim.finished;
-      els.wheel.style.transform = `rotate(${target}deg)`;
-      wheelAnim.cancel();
-      wheelAnim = null;
-      renderOracle(r, dish);
-    } else {
-      // 从当前角度接力，至少再转一圈半，再减速停在品类中心
-      const cur = currentRotation(els.wheel);
-      els.wheel.style.transform = `rotate(${cur}deg)`;
-      if (wheelAnim) { wheelAnim.cancel(); wheelAnim = null; }
-      void els.wheel.offsetWidth;
-      let target = cur + 540;
-      target += ((base - target) % 360 + 360) % 360;
-      wheelAnim = spinWheel(cur, target, 2200, "cubic-bezier(0.16, 0.84, 0.24, 1)");
-      await wheelAnim.finished;
-      els.wheel.style.transform = `rotate(${target}deg)`;
-      wheelAnim.cancel();
-      wheelAnim = null;
-      markWheelLanding(idx);
-      await wait(200);
-      renderOracle(r, dish);
+
+      // 按下就转，不等 AI。之前把这段放在 reducedMotion 判断里，系统关了动画的机器会
+      // 静止等到解签回来才动，看起来像「点了没反应」；这里改成无条件起转，只是快慢不同。
+      // 用无限循环而不是固定 3.6s：AI 一旦比预设慢，轮盘会在中途二次静止。
+      // WAAPI 被系统动画缩放冻结时，createWheelRotation 会在两帧内自动切 rAF 手驱。
+      {
+        els.wheel.style.transition = "none";
+        const start = currentRotation(els.wheel);
+        const idleMs = reducedMotion ? 5200 : 1800;
+        wheelAnim = spinWheel(start, start + 360, idleMs, "linear", Infinity);
+      }
+      const spinStart = performance.now();
+      // 轮盘在首屏下方，点完「转」要把它带进视野；已经在视野里就别再滚，
+      // 否则会和落点后的 scrollIntoView 叠加成两段位移
+      if (els.wheelStage) {
+        const box = els.wheelStage.getBoundingClientRect();
+        const inView = box.top >= 0 && box.bottom <= window.innerHeight;
+        if (!inView) els.wheelStage.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+      }
+
+      statusTimer = setTimeout(() => {
+        if (els.wheelStatus) els.wheelStatus.hidden = false;
+      }, 200);
+      const r = await window.AI.oracle(text);
+      clearTimeout(statusTimer);
+      statusTimer = null;
+      // 模型秒回时轮盘还没转开，先补足 1.2s 再落，避免只抖一下就停
+      await wait(Math.max(0, 1200 - (performance.now() - spinStart)));
+      if (els.wheelStatus) els.wheelStatus.hidden = true;
+      const dish = oraclePool(r.constraints, r.seed);
+      oracleLast = { r, dish };
+
+      let idx = WHEEL_CATS.indexOf(dish.category);
+      if (idx < 0) idx = r.seed % WHEEL_CATS.length;
+      // 留一点角度差让它像手转的，但不超过 ±3°，指针要咬在品类中心
+      const jitter = (r.seed % 7) - 3;
+      const base = -idx * 45 + jitter;
+
+      if (reducedMotion) {
+        // 系统开了「减少动态效果」也不能瞬移：给一段 0.7s、单圈的落位，保留可感知的反馈
+        els.wheel.style.transition = "none";
+        const start = currentRotation(els.wheel);
+        let target = start + 360;
+        target += ((base - target) % 360 + 360) % 360;
+        // 先起落位动画、再取消无限循环：中间不留空档帧，避免轮盘（及上面的字）
+        // 在「无动画」那一瞬被合成器重排到错误角度
+        const oldAnim = wheelAnim;
+        wheelAnim = spinWheel(start, target, 700, "cubic-bezier(0.2, 0.8, 0.2, 1)");
+        if (oldAnim) oldAnim.cancel();
+        els.wheel.style.transform = `rotate(${start}deg)`;
+        await wheelAnim.finished;
+        els.wheel.style.transform = `rotate(${target}deg)`;
+        wheelAnim.cancel();
+        wheelAnim = null;
+        faceUpHitLabel(idx);
+        renderOracle(r, dish);
+      } else {
+        // 从当前角度接力，至少再转一圈半，再减速停在品类中心
+        const cur = currentRotation(els.wheel);
+        let target = cur + 540;
+        target += ((base - target) % 360 + 360) % 360;
+        // 先起落位动画、再取消无限循环：中间不留空档帧
+        const oldAnim = wheelAnim;
+        wheelAnim = spinWheel(cur, target, 2200, "cubic-bezier(0.16, 0.84, 0.24, 1)");
+        if (oldAnim) oldAnim.cancel();
+        els.wheel.style.transform = `rotate(${cur}deg)`;
+        await wheelAnim.finished;
+        els.wheel.style.transform = `rotate(${target}deg)`;
+        wheelAnim.cancel();
+        wheelAnim = null;
+        markWheelLanding(idx);
+        await wait(200);
+        renderOracle(r, dish);
+      }
+      const cardEl = els.oracleResult.querySelector(".oracle-card");
+      if (cardEl && !reducedMotion) cardEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    } catch (err) {
+      // 没有 try/finally 时，中途抛错会让 oracleBusy 永久锁死，之后点“转”全部静默 return
+      console.error("[oracle] spin failed:", err);
+      if (wheelAnim) { try { wheelAnim.cancel(); } catch { /* 已释放 */ } wheelAnim = null; }
+      toast("解签出了点问题，再试一次");
+    } finally {
+      if (statusTimer) clearTimeout(statusTimer);
+      if (els.wheelStatus) els.wheelStatus.hidden = true;
+      oracleBusy = false;
+      els.oracleGo.disabled = false;
+      els.oracleGo.classList.remove("is-spinning");
+      els.oracleGo.removeAttribute("aria-busy");
+      els.oracleGo.textContent = goLabel;
     }
-    const cardEl = els.oracleResult.querySelector(".oracle-card");
-    if (cardEl && !reducedMotion) cardEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    oracleBusy = false;
-    els.oracleGo.disabled = false;
-    els.oracleGo.classList.remove("is-spinning");
-    els.oracleGo.removeAttribute("aria-busy");
   }
 
   els.oracleGo.addEventListener("click", spin);
@@ -1345,6 +1517,14 @@
     })
   );
   els.oracleResult.addEventListener("click", (e) => {
+    const basisBtn = e.target.closest('[data-action="oracle-basis"]');
+    if (basisBtn) {
+      const open = basisBtn.getAttribute("aria-expanded") === "true";
+      basisBtn.setAttribute("aria-expanded", String(!open));
+      const body = basisBtn.parentElement.querySelector(".basis-body");
+      if (body) body.hidden = open;
+      return;
+    }
     if (e.target.closest('[data-action="oracle-clear"]')) {
       els.oracleText.value = "";
       els.oracleText.focus();

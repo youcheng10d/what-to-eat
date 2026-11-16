@@ -745,6 +745,8 @@ body.modal-open { overflow: hidden; }
     #fffdfa 180deg 225deg, #fdf0e2 225deg 270deg,
     #fffdfa 270deg 315deg, #fdf0e2 315deg 360deg);
   transition: transform 1.6s cubic-bezier(0.12, 0.72, 0.06, 1);
+  transform-origin: center;
+  will-change: transform;
 }
 /* 落点反馈：外圈脉冲 + 命中的品类加深，停下来的瞬间要有“咬合感” */
 .wheel.is-landing {
@@ -840,6 +842,27 @@ body.modal-open { overflow: hidden; }
 .oracle-dish h3 { margin-top: 6px; font-family: var(--font-display); font-size: 26px; line-height: 1.25; }
 .oracle-dish p { margin-top: 6px; font-size: 12.5px; color: var(--text-sub); }
 .oracle-trace { margin-top: 12px; font-size: 11.5px; line-height: 1.8; color: var(--text-sub); }
+/* 抽签依据：默认收起，答辩时可展开作证；整行可点，命中区做到 40px 高 */
+.oracle-basis { margin-top: 2px; }
+.basis-toggle {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 11px;
+  color: var(--text-sub);
+  opacity: 0.7;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.basis-toggle:hover { opacity: 1; }
+.basis-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.basis-body { margin: -6px 0 0; font-size: 11px; line-height: 1.7; color: var(--text-sub); }
 .oracle-actions { display: flex; gap: 10px; margin-top: 14px; }
 .oracle-actions .ghost-btn { flex: 1; }
 .oracle-actions .decide.compact { flex: 1; padding: 11px; font-size: 16px; letter-spacing: 1px; }
@@ -1040,18 +1063,13 @@ body.modal-open { overflow: hidden; }
   box-shadow: 0 3px 10px rgba(232, 89, 12, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .oracle-input .decide.compact:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
-.oracle-input .decide.compact.is-spinning { position: relative; color: transparent; }
-.oracle-input .decide.compact.is-spinning::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2.5px solid rgba(255, 255, 255, 0.45);
-  border-top-color: #fff;
-  animation: spin 0.7s linear infinite;
+/* 转动中：用文字而不是转圈。CSS animation 在系统“移除动画”设备上会一起被冻结，
+   转圈静止 + 文字透明等于零反馈；“解签中”三个字不依赖动画系统，任何设备都可见 */
+.oracle-input .decide.compact.is-spinning {
+  font-size: 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  opacity: 0.92;
 }
 
 /* 热量数字本身作为 AI 入口：它是评委最先看到的位置，不该藏在小按钮后面 */
