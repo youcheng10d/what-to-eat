@@ -143,9 +143,9 @@ AI 只接在两端，不进入中间的抽签环节：
 
 ## 数据来源
 
-- 小程序接口：从“学府 e 生活”（api-order.lcsw.cn）抓取入驻档口菜单，共 5 个档口。脚本为 tools/collect-lcsw.ps1，token 有效期 3 小时，需在本地手动运行
+- 小程序接口：从“学府 e 生活”（api-order.lcsw.cn）抓取入驻档口菜单，作为线下数据的补充。脚本为 tools/collect-lcsw.ps1，token 有效期 3 小时，需在本地手动运行
 - 线下实拍：逐档口拍菜单照片，多模态 OCR 结构化为 tools/staging/*.json，覆盖汇百味、北山苑两个食堂的 49 个档口
-- 清洗合并：tools/build-manual.ps1 清洗 OCR 数据，tools/build-data.ps1 合并两路数据生成 data/data.js
+- 清洗合并：tools/build-manual.ps1 清洗 OCR 数据，tools/build-data.ps1 合并两路数据、去重并生成 data/data.js；清洗后共 2382 道 / 65 个档口
 - 已剔除：商业街门店（古茗、古春堂）与便利店，只保留食堂正餐档口
 
 数据只取事实信息——菜名、价格、档口、营业时间——不含用户评论与个人信息。
@@ -181,7 +181,7 @@ AI 只接在两端，不进入中间的抽签环节：
 ## 目录结构
 
 ```
-项目一  今天吃啥/
+吃嘛/
 ├── README.md
 ├── docs/
 │   ├── AI-Collaboration.md    # AI 协作与 Prompt 链记录
@@ -225,19 +225,19 @@ python -m http.server 8080
 # 浏览器访问 http://localhost:8080
 ```
 
-此时全部功能可用，AI 部分会自动走**本地降级**，界面上标「本地估算」。
+此时全部功能可用。仓库内置了一个演示 Worker 地址：能联网时走 AI，断网或超时则自动降级为**本地估算**，界面会标注来源。要用自己的服务，见下一步在页脚覆盖。
 
-### 2. 接上 AI（3 分钟，可选）
+### 2. 换成自己的 AI 服务（3 分钟，可选）
 
 ```bash
 cd ai-worker
 npm i -g wrangler
 wrangler login
-wrangler secret put AI_KEY        # 默认接硅基流动；换服务商只改 wrangler.toml 前三行
+wrangler secret put AI_KEY        # 默认接硅基流动；换服务商改 wrangler.toml 里的 AI_BASE / TEXT_MODEL
 wrangler deploy
 ```
 
-拿到 `https://<name>.<account>.workers.dev` 后，打开应用 → 页脚「AI 服务」→ 填入地址 → 测试连接。
+拿到 `https://<name>.<account>.workers.dev` 后，打开应用 → 页脚「AI 服务」→ 填入地址覆盖内置演示地址 → 测试连接。
 
 拍照用的是同一把 Key 下的视觉模型（默认 `Qwen/Qwen3-VL-8B-Instruct`）。要换模型，改 `wrangler.toml` 里的 `VISION_BASE` / `VISION_MODEL`；`VISION_KEY` 留空时回落到 `AI_KEY`。`VISION_MODEL` 留空则 `/portrait` 返回 502，前端自动隐藏拍照入口。
 
@@ -325,7 +325,7 @@ v2.5 之后：
 
 菜品与价格来自线下实拍与小程序入驻档口接口，可能随档口调整而变化。
 
-热量分两层：卡片上的 `cal` 是采集时的品类估算值；「AI 拆解」展示的是按原料克数现算的值，两者会并列显示差额。AI 拆解的克数由模型估算，热量由本地成分表计算，属于**估算**，不是实验室测定，不构成营养或医疗建议。
+热量分两层：卡片上的数字在 Pro 里由本地成分表按规则估算，展开「AI 拆解」后与面板总数保持一致；面板还会给出与菜单标称值的差额。Flash 没有 AI 层，卡片沿用采集时的品类估算值。拆解用的克数由模型估算，热量由本地成分表计算，属于**估算**，不是实验室测定，不构成营养或医疗建议。
 
 称重计价菜品（麻辣烫 1.98 元/50g、自选健康餐 1.78 元/50g）在构建期被识别并换算：`price` 存按 400g 估的每份价，用于预算过滤；`unitPrice` 存牌面单价，卡片上两者并列显示，并注明“实际以称重结算”。识别规则见 `tools/build-data.ps1` 第 6.95 步（称重计价）。
 
