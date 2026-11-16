@@ -514,6 +514,13 @@ body.modal-open { overflow: hidden; }
 }
 .fav-fab:active { transform: scale(0.92); box-shadow: 0 2px 8px rgba(232, 89, 12, 0.3); }
 .fav-fab .ic { width: 22px; height: 22px; }
+/* 桌面端把收藏球收回应用栏内，并抬高到主按钮上方，避免贴边或压住按钮 */
+@media (min-width: 900px) {
+  .fav-fab {
+    right: calc(50% - 215px + 16px);
+    bottom: calc(150px + env(safe-area-inset-bottom, 0px));
+  }
+}
 .fav-count {
   position: absolute;
   top: -4px;
