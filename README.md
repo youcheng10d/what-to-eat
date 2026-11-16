@@ -10,6 +10,7 @@
 
 **在线体验：<https://youcheng10d.github.io/what-to-eat/>**（手机浏览器打开效果最佳）
 **Flash：<https://youcheng10d.github.io/what-to-eat/flash/>**（无 AI，纯规则引擎）
+**AI 协作记录：[docs/AI-Collaboration.md](docs/AI-Collaboration.md)**（每次迭代的人机分工、Prompt 与返工记录）
 
 v2.5.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
@@ -111,9 +112,9 @@ v2.5.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 | --- | --- | --- |
 | <img src="docs/images/fig01-home.jpg" width="200"> | <img src="docs/images/fig02-card.jpg" width="200"> | <img src="docs/images/fig04-verdict.jpg" width="200"> |
 
-| AI 营养拆解 | 食堂罗盘 |
-| --- | --- |
-| <img src="docs/images/fig12-nutrition.jpg" width="200"> | <img src="docs/images/fig13-oracle.jpg" width="200"> |
+| 口味档案 | AI 营养拆解 | 食堂罗盘 |
+| --- | --- | --- |
+| <img src="docs/images/fig08-profile.jpg" width="200"> | <img src="docs/images/fig12-nutrition.jpg" width="200"> | <img src="docs/images/fig13-oracle.jpg" width="200"> |
 
 ---
 
@@ -147,6 +148,20 @@ AI 只接在两端，不进入中间的抽签环节：
 - 已剔除：商业街门店（古茗、古春堂）与便利店，只保留食堂正餐档口
 
 数据只取事实信息——菜名、价格、档口、营业时间——不含用户评论与个人信息。
+
+---
+
+## 数据处理与管线
+
+数据在构建期生成，前端只读一份 JSON；同一份输入重建，结果一致。
+
+```
+小程序接口（LCSW） ─┐
+                     ├─→ tools/build-data.ps1 → what-to-eat/data/data.js → 前端只读
+线下实拍 OCR JSON ───┘
+```
+
+构建脚本做四件事：剔除加菜与配料条目、收敛两个来源的重复菜、把「元/50g」的称重单价换算成每份估价、用 `hash(档口|菜名)` 生成稳定 id。每一步都在本地可复跑，不依赖网络。
 
 ---
 
@@ -189,7 +204,6 @@ AI 只接在两端，不进入中间的抽签环节：
     ├── ai.js                  # AI 胶水层：缓存 / 超时 / 降级 / 来源标注
     ├── api.js                 # 推荐服务层
     ├── app.js                 # 状态管理与渲染
-    ├── original/              # 原版 v2.3.2 冻结快照（可直接运行）
     ├── flash/                 # Flash 版（无 AI），与根目录共用 data/data.js
     └── assets/
 ```
