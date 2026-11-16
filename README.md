@@ -9,9 +9,9 @@
 </p>
 
 **在线体验：<https://youcheng10d.github.io/what-to-eat/>**（手机浏览器打开效果最佳）
-**普通版：<https://youcheng10d.github.io/what-to-eat/standard/>**（无 AI，纯规则引擎）
+**Flash：<https://youcheng10d.github.io/what-to-eat/flash/>**（无 AI，纯规则引擎）
 
-v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
+v2.5.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
 > 说一句偏好，替你把“今天吃啥”这顿定了。
 
@@ -19,7 +19,7 @@ v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
 名字来自初中好友的口头禅“嘛？”——他没听清或没听懂时，就回这一个字，意思是“什么”。
 
-当前版本 v2.4.0：接入 AI，但只让它做「理解」，不做「挑选」也不做「计算」。
+当前版本 v2.5.0：接入 AI，但只让它做「理解」，不做「挑选」也不做「计算」；同一仓库里同时维护 Flash（无 AI）与 Pro（AI 版）两个可运行版本，版本号统一为 v2.5.0。
 
 - **AI 营养拆解**：模型只估算原料与克数，热量由本地《中国食物成分表》逐项相乘求和，算式可展开逐行复核；
 - **拍照问诊**：照片 → 可见状态标签 → 硬约束 → 池内推荐，标签用户可改可删；
@@ -36,12 +36,20 @@ v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 
 | 版本 | 目录 | 线上地址 | 说明 |
 | --- | --- | --- | --- |
-| **Pro** v2.4.0 | `what-to-eat/` | <https://youcheng10d.github.io/what-to-eat/> | 规则引擎 + AI 理解层，参赛与演示用这个 |
-| **普通版** v2.3.2 | `what-to-eat/standard/` | <https://youcheng10d.github.io/what-to-eat/standard/> | 无 AI，纯规则引擎，永久保留 |
+| **Flash** v2.5.0 | `what-to-eat/flash/` | <https://youcheng10d.github.io/what-to-eat/flash/> | 无 AI，纯规则引擎；界面停在本轮交互打磨之前 |
+| **Pro** v2.5.0 | `what-to-eat/` | <https://youcheng10d.github.io/what-to-eat/> | 同一份引擎与数据 + AI 理解层 + 本轮交互打磨 |
 
-两者互不引用：普通版目录里没有 `ai.js`、没有 AI 入口、没有摄像头调用、没有 Worker 地址。CI 里的 `tests/edition.test.mjs` 会逐项校验，任何一项被污染都会让流水线变红。
+![Flash 与 Pro 首屏对比](docs/images/fig14-flash-pro.png)
 
-普通版是冻结快照，只在数据修正时同步 `data/data.js`；Pro 出问题时把 `standard/` 的内容覆盖回根目录即可回退。
+*左边 Flash 没有引擎切换与拍照入口，右边 Pro 多一排“正经推荐 / 食堂罗盘”*
+
+两个版本共用同一个版本号 v2.5.0。版本号一致不代表代码逐行一致：Pro 多 AI 层与本轮交互打磨，Flash 尚未回灌。
+
+两者互不引用：Flash 目录里没有 `ai.js`、没有 AI 入口、没有摄像头调用、没有 Worker 地址。CI 里的 `tests/edition.test.mjs` 会逐项校验，任何一项被污染都会让流水线变红。
+
+**改动顺序**：通用逻辑（推荐引擎、数据、基础样式与交互）先落在 `flash/`，验证通过后再手工移植到 Pro 根目录，并确认 AI 层不受影响。AI 专属功能（罗盘、拍照问诊、营养拆解）只改 Pro。`data/data.js` 两处必须保持逐字节一致，由 `edition.test.mjs` 兜底。
+
+这条顺序目前只执行了一半：本轮交互打磨与罗盘重写直接落在 Pro，Flash 的界面仍是上一轮。回灌 Flash 已列入 Roadmap。Pro 的 AI 层出问题时，可以用 `flash/` 覆盖根目录退回无 AI 版本；`ai.js` 与 `data/ingredients.js` 会留在目录里但不再被引用。
 
 ---
 
@@ -67,7 +75,9 @@ v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 | v2.1.2 | 采集脚本重写（两组在营状态 / 分页双保险 / 断点续采），全量重采 3033 道 / 65 档口 | 已发布 |
 | v2.2.2 | 采集扩展到文理 e 生活（192 家店 / 8,355 道），城科复采校验脚本稳定性 | 已发布 |
 | v2.3.2 | 口味改槽位制，63 组矩阵验收；数据清洗至 2582 道 / 65 档口 | 已发布 |
-| v2.4.0 | AI 接入：营养拆解、拍照问诊、食堂罗盘；AI 只做理解不做挑选；重复收敛与稳定 id，2382 道 | 本文档 |
+| v2.4.0 | AI 接入：营养拆解、拍照问诊、食堂罗盘；AI 只做理解不做挑选 | 已发布 |
+| v2.4.1 | 称重计价按份换算，id 改内容哈希；2582 → 2382 道，重复收敛 198 组 | 已发布 |
+| v2.5.0 | 一份代码两个版本：Flash / Pro 统一 v2.5.0，10 项隔离校验；交互打磨与罗盘重写 | 本文档 |
 
 ---
 
@@ -92,12 +102,18 @@ v2.4.0 （传智杯 AI 创新应用挑战赛参赛作品） · What to Eat
 | 拍照问诊 | 照片 → 状态标签 → 硬约束，标签可改可删，不做医疗诊断 | v2.4 |
 | 食堂罗盘 | 荒诞输入 → 签文 + 约束 → seed 决定落点，与正经引擎分离 | v2.4 |
 | 断网降级 | 无 AI 服务时切本地规则估算，界面标注来源，不伪装 | v2.4 |
+| 称重计价 | 牌面单价与每份估价分开存，卡片标注“元·估”，预算按份价过滤 | v2.4.1 |
+| 版本隔离 | 同一仓库两个可运行版本，10 项校验防止 AI 代码混入 Flash | v2.5 |
 
 ## 界面速览
 
 | 首页 | 一键决定 | 冲突处理 |
 | --- | --- | --- |
 | <img src="docs/images/fig01-home.jpg" width="200"> | <img src="docs/images/fig02-card.jpg" width="200"> | <img src="docs/images/fig04-verdict.jpg" width="200"> |
+
+| AI 营养拆解 | 食堂罗盘 |
+| --- | --- |
+| <img src="docs/images/fig12-nutrition.jpg" width="200"> | <img src="docs/images/fig13-oracle.jpg" width="200"> |
 
 ---
 
@@ -154,7 +170,7 @@ AI 只接在两端，不进入中间的抽签环节：
 ├── docs/
 │   ├── AI-Collaboration.md    # AI 协作与 Prompt 链记录
 │   ├── api-recon.md           # 小程序接口侦察记录
-│   └── blog/                  # 开发日志 01-08
+│   └── blog/                  # 开发日志 01-11
 ├── ai-worker/
 │   ├── index.js               # Cloudflare Worker：营养 / 拍照 / 罗盘
 │   └── wrangler.toml
@@ -174,6 +190,7 @@ AI 只接在两端，不进入中间的抽签环节：
     ├── api.js                 # 推荐服务层
     ├── app.js                 # 状态管理与渲染
     ├── original/              # 原版 v2.3.2 冻结快照（可直接运行）
+    ├── flash/                 # Flash 版（无 AI），与根目录共用 data/data.js
     └── assets/
 ```
 
@@ -201,24 +218,25 @@ python -m http.server 8080
 cd ai-worker
 npm i -g wrangler
 wrangler login
-wrangler secret put AI_KEY        # 任意 OpenAI 兼容服务的 key，默认 DeepSeek
+wrangler secret put AI_KEY        # 默认接硅基流动；换服务商只改 wrangler.toml 前三行
 wrangler deploy
 ```
 
 拿到 `https://<name>.<account>.workers.dev` 后，打开应用 → 页脚「AI 服务」→ 填入地址 → 测试连接。
 
-拍照功能需要额外的视觉模型（DeepSeek 暂无视觉接口），在 `wrangler.toml` 里填 `VISION_BASE` / `VISION_MODEL`，再 `wrangler secret put VISION_KEY`。不填则拍照入口自动降级为手动选标签。
+拍照用的是同一把 Key 下的视觉模型（默认 `Qwen/Qwen3-VL-8B-Instruct`）。要换模型，改 `wrangler.toml` 里的 `VISION_BASE` / `VISION_MODEL`；`VISION_KEY` 留空时回落到 `AI_KEY`。`VISION_MODEL` 留空则 `/portrait` 返回 502，前端自动隐藏拍照入口。
 
 **环境变量模板**
 
 | 变量 | 位置 | 说明 |
 | --- | --- | --- |
-| `AI_BASE` | wrangler.toml `[vars]` | 默认 `https://api.deepseek.com` |
-| `TEXT_MODEL` | wrangler.toml `[vars]` | 默认 `deepseek-chat` |
-| `VISION_BASE` | wrangler.toml `[vars]` | 视觉模型服务地址，可留空 |
-| `VISION_MODEL` | wrangler.toml `[vars]` | 视觉模型名，可留空 |
-| `AI_KEY` | secret | 文本模型 key |
-| `VISION_KEY` | secret | 视觉模型 key，可与 `AI_KEY` 相同 |
+| `AI_BASE` | wrangler.toml `[vars]` | 默认 `https://api.siliconflow.cn/v1` |
+| `TEXT_MODEL` | wrangler.toml `[vars]` | 默认 `zai-org/GLM-5.3-Flash` |
+| `NUTRITION_MODEL` | wrangler.toml `[vars]` | 营养拆解专用，默认 `Qwen/Qwen3.6-35B-A3B` |
+| `VISION_BASE` | wrangler.toml `[vars]` | 默认同 `AI_BASE` |
+| `VISION_MODEL` | wrangler.toml `[vars]` | 默认 `Qwen/Qwen3-VL-8B-Instruct` |
+| `AI_KEY` | secret | 文本与营养模型 key |
+| `VISION_KEY` | secret | 视觉模型 key，留空回落到 `AI_KEY` |
 
 ### 3. 跑回归（2 分钟）
 
@@ -267,10 +285,18 @@ v2.4 已完成：
 - [x] 拍照问诊：照片 → 标签 → 约束，标签可改可删
 - [x] 食堂罗盘：荒诞输入 → 签文 → seed 决定落点，与正经引擎分离
 - [x] 断网降级：无 AI 服务时标「本地估算」，不伪装
+- [x] 称重计价菜品按份换算，修正 ¥1.98 这类单价展示
+- [x] 重复收敛与内容哈希 id，重建不再漂移
 
-v2.4 之后：
+v2.5 已完成：
 
-- [ ] 称重计价菜品按份换算，修正 ¥1.98 这类单价展示
+- [x] Flash / Pro 同仓库分目录，10 项隔离校验守住边界
+- [x] 交互打磨：焦点陷阱、引擎切换过渡、收藏撤销、三卡圆点
+- [x] 罗盘两段式转动，落点词回正，首屏位移降到 0.0004
+
+v2.5 之后：
+
+- [ ] 通用交互回灌 Flash，两端界面对齐
 - [ ] 采集脚本通用化，支持 LCSW 平台的其他高校
 - [ ] 定位与“校内吃 / 校外吃”切换
 - [ ] 推荐结果分享、历史记录
@@ -284,7 +310,7 @@ v2.4 之后：
 
 热量分两层：卡片上的 `cal` 是采集时的品类估算值；「AI 拆解」展示的是按原料克数现算的值，两者会并列显示差额。AI 拆解的克数由模型估算，热量由本地成分表计算，属于**估算**，不是实验室测定，不构成营养或医疗建议。
 
-称重计价菜品（麻辣烫 1.98 元/50g、自选健康餐 1.78 元/50g）在构建期被识别并换算：`price` 存按 400g 估的每份价，用于预算过滤；`unitPrice` 存牌面单价，卡片上两者并列显示，并注明“实际以称重结算”。识别规则见 `tools/build-data.ps1` 第 6.95 步。
+称重计价菜品（麻辣烫 1.98 元/50g、自选健康餐 1.78 元/50g）在构建期被识别并换算：`price` 存按 400g 估的每份价，用于预算过滤；`unitPrice` 存牌面单价，卡片上两者并列显示，并注明“实际以称重结算”。识别规则见 `tools/build-data.ps1` 第 6.95 步（称重计价）。
 
 ---
 
@@ -300,3 +326,6 @@ v2.4 之后：
 - [06 · v2.1.2：一次数据补采，和四个旧账](docs/blog/blog-06-v2.1.2.md)
 - [07 · v2.2.2：学府e生活菜单采集：一次跨校实验](docs/blog/blog-07-wenli.md)
 - [08 · v2.3.2：口味改成槽位，和一千二百六十张卡的验收](docs/blog/blog-08-v2.3.2.md)
+- [09 · v2.4.0：AI 只做理解，不做挑选，也不做计算](docs/blog/blog-09-v2.4.0.md)
+- [10 · v2.4.1：一块九的麻辣烫，和会漂的 id](docs/blog/blog-10-v2.4.1.md)
+- [11 · v2.5.0：一份代码，两个版本](docs/blog/blog-11-v2.5.0.md)
