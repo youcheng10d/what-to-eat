@@ -12,8 +12,10 @@
   const NUTRI_LIMIT = 400;
   // 罗盘要等结果才能落盘，等待时间直接体现在转盘上，给 2.5s 上限；
   // 营养拆解是后台校准——本地算式已经秒出，用户可以边看边等，超时放宽到 15s。
+  // 视觉接口实测 4–8s，2.5s 必然 abort，单独给 12s。
   const TIMEOUT = 2500;
   const TIMEOUT_CAL = 15000;
+  const TIMEOUT_VISION = 12000;
 
   // 食材名 → 筛选关键词。表里没有的标签一律不进推荐条件，避免模型自由发挥。
   const MAPPING = {
@@ -310,7 +312,7 @@
   async function portrait(dataUrl) {
     if (!enabled()) return { source: "off", observations: [], tags: [], summary: "" };
     try {
-      const res = await call("/portrait", { image: dataUrl });
+      const res = await call("/portrait", { image: dataUrl }, TIMEOUT_VISION);
       const tags = (res.observations || []).map((o) => o.label).filter(Boolean);
       return {
         source: "ai",

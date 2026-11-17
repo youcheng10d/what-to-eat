@@ -924,6 +924,7 @@
 
   // —— 三、拍照问诊 ——
   const STATE_TAGS = ["痘", "油腻", "上火", "干燥", "浮肿", "气色暗", "疲惫", "黑眼圈", "泛红"];
+  let shotSeq = 0;
 
   function openShot() {
     // 旧 HTML 缓存缺元素时，友好提示而不是静默崩溃
@@ -931,6 +932,7 @@
       toast("页面版本过旧，请刷新（下拉或强制重载）");
       return;
     }
+    shotSeq++;
     els.shotPreview.hidden = true;
     els.shotPreview.removeAttribute("src");
     els.shotEmpty.hidden = false;
@@ -986,6 +988,11 @@
   }
 
   async function analyzeShot(file) {
+    const seq = ++shotSeq;
+    const alive = () => seq === shotSeq && !els.stateModal.hidden;
+    let earlyTimer = null;
+    let manualShown = false;
+
     els.shotPreview.src = URL.createObjectURL(file);
     els.shotPreview.hidden = false;
     els.shotEmpty.hidden = true;
@@ -995,10 +1002,31 @@
     els.shotApply.disabled = true;
     try {
       const dataUrl = await compressImage(file, 768, 0.82);
-      const r = await window.AI.portrait(dataUrl);
+      if (!alive()) return;
+
+      // 视觉接口要 4-8s，别让用户干等：2.5s 先出人工标签，AI 回来再合并
+      const pending = window.AI.portrait(dataUrl);
+      earlyTimer = setTimeout(() => {
+        if (!alive() || manualShown) return;
+        manualShown = true;
+        els.shotStatus.textContent = "AI 还在看，先手动选也行。";
+        renderShotState([], "手动选：");
+      }, 2500);
+
+      const r = await pending;
+      clearTimeout(earlyTimer);
+      earlyTimer = null;
+      if (!alive()) return;
+
       if (r.source === "ai" && r.tags.length) {
         els.shotStatus.textContent = r.summary || "看完了，标签可以自己改。";
-        renderShotState(r.observations, "AI 看到的：");
+        // 用户可能已经手动选过，合并而不是覆盖
+        const picked = manualShown
+          ? $$('#shotTags .state-chip[aria-pressed="true"]').map((b) => ({ label: b.dataset.tag, evidence: "" }))
+          : [];
+        const aiLabels = new Set(r.observations.map((o) => o.label));
+        const merged = [...r.observations, ...picked.filter((t) => !aiLabels.has(t.label))];
+        renderShotState(merged, picked.length ? "AI 看到的（已和你选的合并）：" : "AI 看到的：");
         return;
       }
       if (r.source === "ai") {
@@ -1006,10 +1034,13 @@
       } else {
         els.shotStatus.textContent = "AI 服务还没连上，先手动选今天的状态。";
       }
-      renderShotState([], "手动选：");
+      if (!manualShown) renderShotState([], "手动选：");
+      else syncShotApply();
     } catch (e) {
+      clearTimeout(earlyTimer);
+      if (!alive()) return;
       els.shotStatus.textContent = "这张照片读不出来，换一张试试。";
-      renderShotState([], "手动选：");
+      if (!manualShown) renderShotState([], "手动选：");
     }
   }
 
